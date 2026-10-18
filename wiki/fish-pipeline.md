@@ -1,4 +1,4 @@
-# MiroFish And BettaFish: Qualify The Pipeline, Not The Name
+# MiroFish And BettaFish Pipeline Qualification
 
 ## Scope
 
