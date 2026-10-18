@@ -38,8 +38,18 @@ Replace the placeholders with the path printed by the collector. Keep raw result
 local until reviewed. A different path or platform may change result identifiers;
 compare exact source bytes, provider version, coverage and conclusions rather
 than assuming all output hashes should match. Rust/Go manual investigations have
-no JS analysis-input claim. No complete target build or scientific validation is
+no JS analysis-input claim. For QuickJS, only the explicitly listed JS test source
+was statically parsed; C host files were manually inspected. No complete target build or scientific validation is
 implied by any published entry.
+
+## Runtime Probes Are Separate Evidence
+
+`scripts/runtime-probe.test.mjs` contains eight original finite fixtures. It uses
+only installed Node APIs and synthetic text, not downloaded applications. Its
+type-stripping API may emit an experimental warning on supported Node versions.
+Results identify the running host and must not be relabeled as pinned TypeScript,
+QuickJS, Deno or Bun execution. The other runtime entries preserve their NOT_RUN
+status. No sandbox certification or full conformance suite is implied.
 
 ## Publishing New Evidence
 

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/microsoft/TypeScript",
+  "commit": "68cead182cc24afdc3f1ce7c8ff5853aba14b65a",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T19:23:55.397Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/microsoft/TypeScript/68cead182cc24afdc3f1ce7c8ff5853aba14b65a/LICENSE.txt",
+      "sizeBytes": 9197,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "gitBlobSha1": "8746124b277914d0f0fd9cf4aef2ed3b587143d9"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/microsoft/TypeScript/68cead182cc24afdc3f1ce7c8ff5853aba14b65a/package.json",
+      "sizeBytes": 3556,
+      "sha256": "15c5d1e5fdc345b6fda6ed8596a8c19ede5c079d203a571ad01106e38d0434aa",
+      "gitBlobSha1": "be91339c05551e419b595c86f9566813647a8778"
+    },
+    {
+      "name": "src/services/transpile.ts",
+      "url": "https://raw.githubusercontent.com/microsoft/TypeScript/68cead182cc24afdc3f1ce7c8ff5853aba14b65a/src/services/transpile.ts",
+      "sizeBytes": 10626,
+      "sha256": "376d399377fb3001d6d57ba217980ef98039b47dc9d1ab7b4b7c7fe54ebeecee",
+      "gitBlobSha1": "95722c88a5c05a73339e305713d925b9b8feb047"
+    },
+    {
+      "name": "src/compiler/transformers/ts.ts",
+      "url": "https://raw.githubusercontent.com/microsoft/TypeScript/68cead182cc24afdc3f1ce7c8ff5853aba14b65a/src/compiler/transformers/ts.ts",
+      "sizeBytes": 116176,
+      "sha256": "2e96a64de806c00f4e632729902e3a6f66bfd7490e66c210c53b6da388cc8c29",
+      "gitBlobSha1": "75656cf5aefab8122f3963b5614b0a1f6bce51fc"
+    }
+  ],
+  "analyzedFiles": [
+    "src/services/transpile.ts",
+    "src/compiler/transformers/ts.ts"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T19:23:55.468Z",
+    "finishedAt": "2026-10-18T19:24:22.984Z",
+    "parsedFiles": 2,
+    "parseFailures": 0,
+    "textBytesRead": 126802,
+    "findings": 239,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected source, binary execution and upstream test execution",
+    "C host files manually inspected; not parsed by the REA JavaScript provider",
+    "No runtime compatibility, sandbox, production integration or savings certification"
+  ]
+}

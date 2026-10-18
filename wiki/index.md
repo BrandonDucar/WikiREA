@@ -21,10 +21,15 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 | [NASA Open MCT](nasa-openmct.md) | Independent time contexts and historical/live telemetry providers | Selected JS static analysis; no mission-control runtime tested |
 | [PhotoCraft](photocraft-history.md) | Undo targets, snapshots and background-job restore guards | Selected Rust implementation/tests manually read; no Rust analysis or execution |
 | [JavaScript / Node.js](javascript-runtimes.md) | Event ordering, async completion and delivery boundaries | Selected core JS source analyzed; separate installed-runtime probes |
+| [TypeScript](typescript-emit.md) | Erasure, assertions, transpilation versus semantic checking | Two pinned TS files analyzed; Node strip probes are separate |
+| [QuickJS](quickjs-host.md) | Host-driven pending jobs and resource-limit hooks | Selected C manually read; one supplementary JS test file statically parsed |
+| [Deno](runtime-portability.md#deno-permission-scope-matters) | Resource-scoped permissions and native/subprocess boundaries | Official documentation only; runtime NOT_RUN |
+| [Bun](runtime-portability.md#bun-compatibility-is-a-test-obligation) | Node API compatibility as a workload test obligation | Official documentation only; runtime NOT_RUN |
 
-Nine REA-backed catalog entries cover **54 selected JS/TS files** with zero parse
-failures. Bor, Robinhood and PhotoCraft are additional investigations with different
-evidence stages, not three more completed REA runs. No target runtime or upstream tests ran.
+Eleven REA-backed catalog entries cover **57 selected JS/TS files** with zero parse
+failures. This includes one supplementary QuickJS builtin-test source, not its C
+host implementation. Bor, Robinhood, PhotoCraft, Deno and Bun carry different
+evidence stages, not five more completed REA runs. No target runtime or upstream tests ran.
 The retained source collections cover subsets, never entire apps by implication.
 
 ## Explore By Concept
@@ -33,7 +38,8 @@ The retained source collections cover subsets, never entire apps by implication.
 - [Finance glossary](finance-glossary.md): events, corrections, backfill, receipts and paper execution.
 - [Quantum and simulation glossary](quantum-glossary.md): 25 terms, including amplitude versus probability and replay versus reality.
 - [Operational and creative-state glossary](operations-glossary.md): 12 terms covering clocks, history, providers and snapshots.
-- [Ten reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
+- [Language and runtime glossary](runtime-glossary.md): 16 terms separating types, jobs, cancellation and authority.
+- [Twelve reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
 - [Big and unexpected targets](../TARGETS.md): a twenty-repository discovery shortlist, separate from completed investigations.
 
 ## For Builders And Agents
@@ -42,6 +48,7 @@ The retained source collections cover subsets, never entire apps by implication.
 - [Mechanics records](../mechanics.json): inputs, outputs, source bindings and acceptance cases.
 - [Entry template](../ENTRY_TEMPLATE.md): a consistent investigation contract.
 - [Project README](../README.md): reproduction and local validation commands.
+- [Runtime integration](runtime-integration.md): concrete consumer mapping without private source or activation claims.
 
 ## Reading The Evidence
 

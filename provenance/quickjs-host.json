@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/bellard/quickjs",
+  "commit": "84e723f1ace5e3823cef8149dd0f890fe74b77ce",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T19:24:28.438Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/bellard/quickjs/84e723f1ace5e3823cef8149dd0f890fe74b77ce/LICENSE",
+      "sizeBytes": 1130,
+      "sha256": "598fd7fc928e4350abce36e337ba5a1346923c5c692f5be92c3d8e29ddd7c18d",
+      "gitBlobSha1": "2cf449dd3eea4291da7470bd322211b61981ccd8"
+    },
+    {
+      "name": "quickjs.h",
+      "url": "https://raw.githubusercontent.com/bellard/quickjs/84e723f1ace5e3823cef8149dd0f890fe74b77ce/quickjs.h",
+      "sizeBytes": 51391,
+      "sha256": "09d208759171634a5b1e60aa314fd00da5d088ac28621b7ae4682ba2fb103415",
+      "gitBlobSha1": "32a54fb2adcda957a5e989eb33e180591db1a29b"
+    },
+    {
+      "name": "quickjs-libc.c",
+      "url": "https://raw.githubusercontent.com/bellard/quickjs/84e723f1ace5e3823cef8149dd0f890fe74b77ce/quickjs-libc.c",
+      "sizeBytes": 125243,
+      "sha256": "8c6c42619ab4edf1548b051c73bb2bee670003415b1de30d2910d71917859bce",
+      "gitBlobSha1": "26e9683a5d42088e8c57fd1f71e18878a3118af0"
+    },
+    {
+      "name": "qjs.c",
+      "url": "https://raw.githubusercontent.com/bellard/quickjs/84e723f1ace5e3823cef8149dd0f890fe74b77ce/qjs.c",
+      "sizeBytes": 17482,
+      "sha256": "cf61564687f6ea14d8e36fb6bdb9835d6ea09ce89e82e8d4c11e14f2198af44e",
+      "gitBlobSha1": "b39f15ca72c2540bd6cf2346b801863426cccc33"
+    },
+    {
+      "name": "tests/test_builtin.js",
+      "url": "https://raw.githubusercontent.com/bellard/quickjs/84e723f1ace5e3823cef8149dd0f890fe74b77ce/tests/test_builtin.js",
+      "sizeBytes": 34141,
+      "sha256": "bf19920189d43de4173cf825f724b7a6dc8e9558a73022b976361d9aec5d9113",
+      "gitBlobSha1": "c20d740c6709d0aeb1a1bdee160eec5df6f20599"
+    }
+  ],
+  "analyzedFiles": [
+    "tests/test_builtin.js"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T19:24:28.821Z",
+    "finishedAt": "2026-10-18T19:24:47.090Z",
+    "parsedFiles": 1,
+    "parseFailures": 0,
+    "textBytesRead": 34141,
+    "findings": 0,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected source, binary execution and upstream test execution",
+    "C host files manually inspected; not parsed by the REA JavaScript provider",
+    "No runtime compatibility, sandbox, production integration or savings certification"
+  ]
+}

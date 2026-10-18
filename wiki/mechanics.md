@@ -1,6 +1,6 @@
 # Reusable Mechanics
 
-These ten behavior patterns are source-backed **specification candidates**. They
+These twelve behavior patterns are source-backed **specification candidates**. They
 are not copied upstream modules, tested DreamNet integrations or execution grants.
 Each machine-readable record in [mechanics.json](../mechanics.json) names the exact
 catalog entry and retained source path from which it was derived, plus inputs,
@@ -18,6 +18,8 @@ outputs, constraints and acceptance cases. All adaptation runtime tests are NOT_
 | Explicit historical correction | Separate live appends from updates to old observations | Market Compiler / Trade Invader | Delayed bars, duplicates and correction rules |
 | Connection versus completeness | A connected transport does not establish a gap-free feed | Market Compiler | Disconnect, reconnect, backfill and duplicate handling |
 | Typed event time | Normalize each event's time units and preserve its meaning | Market Compiler / receipt replay | Millisecond/nanosecond fixtures and receive-time separation |
+| Separate emit, check, parse and authorize | Preserve four distinct outcomes instead of inferring one from another | KnowledgeCompiler / runtime admission | Semantic errors, wrong input shapes, stale evidence and missing authority |
+| Budgeted host pump | Advance bounded jobs and acknowledge only retained results | Worker / scenario runner | Rejections, finite budgets, late effects and restart boundaries |
 
 ## How It Plugs Into DreamNet
 
@@ -47,6 +49,10 @@ nor treat a stale achievement as current proof.
 
 These combinations are design hypotheses. No claim of novelty, live deployment,
 learning gain, trading edge or customer savings is established here.
+
+The [runtime integration map](runtime-integration.md) connects the new findings
+to existing consumers. Original Node probes test individual host behaviors, not
+complete adaptations of these mechanics.
 
 Navigation: [library home](index.md), [quantum terms](quantum-glossary.md),
 [finance investigations](finance-first-pass.md), [target shortlist](../TARGETS.md).

@@ -318,6 +318,82 @@
       "adaptationRuntimeTests": 0,
       "integrationStatus": "PROPOSED_NOT_WIRED",
       "authorityGranted": false
+    },
+    {
+      "id": "separate-emit-check-parse-authorize",
+      "title": "Separate emit, check, parse and authorize",
+      "sourceRefs": [
+        {
+          "entryId": "typescript-emit",
+          "sourcePath": "src/services/transpile.ts"
+        },
+        {
+          "entryId": "typescript-emit",
+          "sourcePath": "src/compiler/transformers/ts.ts"
+        }
+      ],
+      "inputs": [
+        "Source and compiler options",
+        "Untrusted input values",
+        "Evidence and execution scope"
+      ],
+      "outputs": [
+        "Independent transformation, semantic-check, schema and authority results"
+      ],
+      "invariants": [
+        "Successful emission grants no runtime validation or authority",
+        "An assertion cannot validate external data"
+      ],
+      "acceptanceCases": [
+        "Transpile success with a semantic error",
+        "Wrong field type despite an assertion",
+        "Valid shape with stale evidence",
+        "Valid evidence without an execution lease"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "budgeted-host-pump",
+      "title": "Budgeted host pump with durable completion",
+      "sourceRefs": [
+        {
+          "entryId": "quickjs-host",
+          "sourcePath": "quickjs-libc.c"
+        },
+        {
+          "entryId": "quickjs-host",
+          "sourcePath": "quickjs.h"
+        }
+      ],
+      "inputs": [
+        "Pending jobs",
+        "Host capability policy",
+        "Finite work budget",
+        "Persistent result sink"
+      ],
+      "outputs": [
+        "Progress, rejection, cancellation or budget-exhaustion state",
+        "Separate result acknowledgment"
+      ],
+      "invariants": [
+        "A host loop is not a persistence guarantee",
+        "Timeout is not rollback",
+        "Limits must be enforced by the host, not inferred from available hooks"
+      ],
+      "acceptanceCases": [
+        "Empty queue and nested jobs",
+        "Rejected pending job",
+        "Budget exhaustion",
+        "Late result after timeout",
+        "Restart between persistence and acknowledgment"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
     }
   ]
 }

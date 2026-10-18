@@ -149,6 +149,58 @@
         "All authenticated access and trading",
         "Equities/options API capabilities not established"
       ]
+    },
+    {
+      "id": "typescript-emit",
+      "title": "TypeScript: emit, assertions and runtime validation",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/typescript-emit.md",
+      "repository": "https://github.com/microsoft/TypeScript",
+      "commit": "68cead182cc24afdc3f1ce7c8ff5853aba14b65a",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/typescript-emit.json",
+      "targetExecuted": false,
+      "licenseNotes": "Apache-2.0 project notice; no upstream source bundled"
+    },
+    {
+      "id": "quickjs-host",
+      "title": "QuickJS: host job loop and resource hooks",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/quickjs-host.md",
+      "repository": "https://github.com/bellard/quickjs",
+      "commit": "84e723f1ace5e3823cef8149dd0f890fe74b77ce",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/quickjs-host.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT; C files manually inspected, supplementary JS test source statically parsed only"
+    },
+    {
+      "id": "deno-permissions",
+      "title": "Deno: documented permission and native-code boundaries",
+      "stage": "OFFICIAL_DOCUMENTATION_REVIEWED",
+      "article": "wiki/runtime-portability.md",
+      "documentation": "https://docs.deno.com/runtime/fundamentals/security/",
+      "observedAt": "2026-10-18",
+      "targetExecuted": false,
+      "omissions": [
+        "No source or binary inspection",
+        "No runtime conformance, security or performance tests",
+        "No production integration"
+      ]
+    },
+    {
+      "id": "bun-compatibility",
+      "title": "Bun: documented Node API compatibility boundaries",
+      "stage": "OFFICIAL_DOCUMENTATION_REVIEWED",
+      "article": "wiki/runtime-portability.md",
+      "documentation": "https://bun.sh/docs/runtime/nodejs-compat",
+      "observedAt": "2026-10-18",
+      "targetExecuted": false,
+      "omissions": [
+        "No source or binary inspection",
+        "No runtime conformance, security or performance tests",
+        "No production integration"
+      ]
     }
   ]
 }

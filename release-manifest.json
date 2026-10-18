@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "sizeBytes": 581,
-      "sha256": "02c26bba115eba46f30e19d09030d995536cf2207db4aa970485f7454c2bfab4"
+      "sizeBytes": 637,
+      "sha256": "c67005cdaf1f045272be8eb319e7c237906eed0cd26c83256e1a9cc3fadf9eac"
     },
     {
       "path": ".gitignore",
@@ -43,13 +43,13 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sizeBytes": 2449,
-      "sha256": "e255ad5a4a5165e1b880ef82d93a62232166b931d27c16e6c18143f6a7d37005"
+      "sizeBytes": 3081,
+      "sha256": "a9dc6f64051a700523567cfd3704f8e40be64378c76555277d2da60ac60d5886"
     },
     {
       "path": "README.md",
-      "sizeBytes": 3678,
-      "sha256": "b658a06d927b1b7b7669cca17b1791d62c1e68615f3f51a793eca9015f60abf2"
+      "sizeBytes": 3999,
+      "sha256": "51435b6d13e03cdc9587021d000f707560662b8b0cdbcc6e3cb3c3e5d93589ec"
     },
     {
       "path": "TARGETS.md",
@@ -63,13 +63,13 @@
     },
     {
       "path": "library.json",
-      "sizeBytes": 6631,
-      "sha256": "df1e9415d101123c0327f173216c145726382a00befc859ad0679d61b89e5faf"
+      "sizeBytes": 8739,
+      "sha256": "349188220e52320a9fcec3f4d3882fefcdc6f0296109f3d523e3502a748f4a08"
     },
     {
       "path": "mechanics.json",
-      "sizeBytes": 8817,
-      "sha256": "169f233082d5f545f689b3f66dba6e2b806d79b0bd1855ac046a78cb8b785e81"
+      "sizeBytes": 11180,
+      "sha256": "a461f2d677da7f83e4eb05f95ac9e95cfad2c97af1706a80df0747e6f17f5a65"
     },
     {
       "path": "provenance/bra-ket-vue.json",
@@ -122,9 +122,19 @@
       "sha256": "0557406d7e57c3943a3c419842e20eb8648996a14125922f150e270a90a97c2a"
     },
     {
+      "path": "provenance/quickjs-host.json",
+      "sizeBytes": 2812,
+      "sha256": "fd635eb445d3771691ee9e6545f3eef77aa6686e39e9f1a7284619b6b663a3d2"
+    },
+    {
       "path": "provenance/tradingview-lightweight-charts.json",
       "sizeBytes": 3753,
       "sha256": "aa4d31b289ccb2c24501cac88e3cca7a486e2d6607c89289d15351b136f97671"
+    },
+    {
+      "path": "provenance/typescript-emit.json",
+      "sizeBytes": 2615,
+      "sha256": "8d6e0b4d69b5fac88d9c4f549e6784c2ae228919a6c830f3227f8ddb073bb72d"
     },
     {
       "path": "provenance/wikipedia-api-observation.json",
@@ -142,14 +152,19 @@
       "sha256": "306c7c3f36ad0b943abc83f050f9c729b3134cefdb821dbb693daa09ee4018cd"
     },
     {
+      "path": "scripts/runtime-probe.test.mjs",
+      "sizeBytes": 3055,
+      "sha256": "079922dd959e0a04965d69b559154f5d0938646c870705230998bb41344d50cb"
+    },
+    {
       "path": "scripts/verify.mjs",
-      "sizeBytes": 7775,
-      "sha256": "462a6c3c98f55a3016e572d40ad7d51d1cdfba61a41181d5ba3c4d7e7fc46b88"
+      "sizeBytes": 7800,
+      "sha256": "970c197dd263d1209953cbdf7bcd41315e48d412114aa69f8d00afd8c9a21a30"
     },
     {
       "path": "scripts/verify.test.mjs",
-      "sizeBytes": 2137,
-      "sha256": "ccb2494efb155a09a6913b6c1b5d5dc61d8de66455ffe5506459873243b7e11e"
+      "sizeBytes": 3068,
+      "sha256": "fa0192f397d5fd0d32d68322e0e319c4e744d28e97acdaf9637c0a4c9eb1dff7"
     },
     {
       "path": "wiki/bra-ket-vue.md",
@@ -173,8 +188,8 @@
     },
     {
       "path": "wiki/index.md",
-      "sizeBytes": 4499,
-      "sha256": "0f4659b2fdc999ab207d326b152428d15ff123bc531337e925480c8db1e39135"
+      "sizeBytes": 5486,
+      "sha256": "3ab8c285c3b0f635f2a7e493979a00498c71deaa79f23679bd0074856c188b54"
     },
     {
       "path": "wiki/javascript-runtimes.md",
@@ -183,8 +198,8 @@
     },
     {
       "path": "wiki/mechanics.md",
-      "sizeBytes": 3864,
-      "sha256": "a4f7258b6a2b816207938698940a75b64a07fcf5396a3ff79640949d3456a5bb"
+      "sizeBytes": 4480,
+      "sha256": "4cb614e2cd0cc1807af62e1d39da18ca007b779cb2cca0bf2ede372ed7f72577"
     },
     {
       "path": "wiki/mediawiki.md",
@@ -225,6 +240,31 @@
       "path": "wiki/quantum-tensors.md",
       "sizeBytes": 3878,
       "sha256": "93d7d7f67fe1a932ab16b23015670dadbb265424abe83cf3ad722d2736a16cfb"
+    },
+    {
+      "path": "wiki/quickjs-host.md",
+      "sizeBytes": 3625,
+      "sha256": "a76b794e5a700e8f11929e330e570945efb46ff5a3b77dae390b1d4f959dd05d"
+    },
+    {
+      "path": "wiki/runtime-glossary.md",
+      "sizeBytes": 2187,
+      "sha256": "1d33ee63c53b770c7775cb7ce192b92e7271d29a04580adaff8181a1f4317391"
+    },
+    {
+      "path": "wiki/runtime-integration.md",
+      "sizeBytes": 3652,
+      "sha256": "516c6fe0b9209e0231524ec3909541b5ff2ee739541331c0070fc3f05bef0fca"
+    },
+    {
+      "path": "wiki/runtime-portability.md",
+      "sizeBytes": 3638,
+      "sha256": "f7584fd66a2b79966a09e30b69f179de177b5d48da01881d6b11a32424d25a52"
+    },
+    {
+      "path": "wiki/typescript-emit.md",
+      "sizeBytes": 3722,
+      "sha256": "99b14282ccf55b8cd55470f023c82042f1520bf8d639a637bea5e806cb8ee1a3"
     }
   ]
 }

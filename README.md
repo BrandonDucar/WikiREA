@@ -15,11 +15,13 @@ software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
 | Major software | [Wikipedia / MediaWiki](wiki/mediawiki.md), [NASA Open MCT](wiki/nasa-openmct.md), [PhotoCraft history](wiki/photocraft-history.md) |
 | Finance | [TradingView, Polygon.io / Massive, Polygon blockchain and Robinhood](wiki/finance-first-pass.md) |
 | Games and quantum visualization | [Quantum Game 2](wiki/quantum-game-2.md), [Quantum Tensors](wiki/quantum-tensors.md), [BraKetVue](wiki/bra-ket-vue.md), [Quantum Game Classic](wiki/quantum-game-classic.md) |
-| Languages and runtimes | [JavaScript and Node.js events](wiki/javascript-runtimes.md) |
+| Languages and runtimes | [JavaScript / Node.js](wiki/javascript-runtimes.md), [TypeScript emit](wiki/typescript-emit.md), [QuickJS host loop](wiki/quickjs-host.md), [Deno and Bun boundaries](wiki/runtime-portability.md) |
 
 Glossaries: [investigation](wiki/glossary.md), [finance](wiki/finance-glossary.md),
-[quantum/simulation](wiki/quantum-glossary.md), [operational state](wiki/operations-glossary.md).
+[quantum/simulation](wiki/quantum-glossary.md), [operational state](wiki/operations-glossary.md),
+[language/runtime](wiki/runtime-glossary.md).
 See [what to investigate next](TARGETS.md).
+For application ideas, see [how runtime findings can feed DreamNet](wiki/runtime-integration.md).
 
 ## What Makes An Entry Useful
 
@@ -40,12 +42,13 @@ project and is not affiliated with the organizations whose software is studied.
 
 ## Verify And Reproduce
 
-Node.js 22 or newer; no package installation is needed for these local checks:
+Node.js 24 or newer; no package installation is needed for these local checks:
 
 ```sh
 node scripts/verify.mjs
 node --test scripts/verify.test.mjs
 node --test scripts/events-probe.test.mjs
+node --test scripts/runtime-probe.test.mjs
 ```
 
 Preview an investigation's source-retrieval plan without network access:

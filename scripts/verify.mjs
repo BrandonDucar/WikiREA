@@ -12,7 +12,7 @@ const rootFiles = new Set(['README.md', 'LICENSE', 'LICENSE-DOCS.md', 'PROVENANC
 export function allowed(name) {
   return rootFiles.has(name) || /^wiki\/[a-z0-9-]+\.md$/.test(name) ||
     /^provenance\/[a-z0-9-]+\.json$/.test(name) ||
-    /^scripts\/(verify\.mjs|verify\.test\.mjs|fetch-source\.mjs|events-probe\.test\.mjs)$/.test(name) ||
+    /^scripts\/(verify\.mjs|verify\.test\.mjs|fetch-source\.mjs|events-probe\.test\.mjs|runtime-probe\.test\.mjs)$/.test(name) ||
     name === 'assets/wikirea-poster.png' || name === '.github/workflows/verify.yml';
 }
 export function safeRelative(name) {

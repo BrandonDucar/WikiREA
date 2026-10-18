@@ -5,7 +5,7 @@ import path from 'node:path';
 import { root, allowed, safeRelative, checkText, validateSource, verify } from './verify.mjs';
 
 test('public catalog, files, links, source bindings and release hashes validate', async () => {
-  const result = await verify(); assert(result.investigations >= 12); assert(result.reaParsedFiles >= 54);
+  const result = await verify(); assert(result.investigations >= 16); assert(result.reaParsedFiles >= 57);
 });
 for (const name of ['HANDOFF.md', '.env', 'evidence/raw.json', 'source/lib.js', 'scripts/unknown.mjs', 'assets/private.jpg']) {
   test(`rejects non-allowlisted file ${name}`, () => assert.equal(allowed(name), false));
@@ -33,4 +33,22 @@ for (const [name, change] of [
   ['independent reproduction claim', c => { c.analysisSummary.independentlyReproduced = true; }],
 ]) test(`rejects ${name}`, () => {
   const changed = structuredClone(original); change(changed); assert.throws(() => validateSource(changed));
+});
+
+test('QuickJS host findings do not pretend that C was analyzed as JavaScript', async () => {
+  const source = JSON.parse(await fs.readFile(path.join(root, 'provenance/quickjs-host.json'), 'utf8'));
+  validateSource(source);
+  assert.deepEqual(source.analyzedFiles, ['tests/test_builtin.js']);
+  assert(source.files.some(f => f.name === 'quickjs-libc.c'));
+  assert(source.omissions.some(text => text.includes('C host files manually inspected')));
+});
+
+test('Deno and Bun are documentation reviews, not invented static or runtime runs', async () => {
+  const catalog = JSON.parse(await fs.readFile(path.join(root, 'library.json'), 'utf8'));
+  for (const id of ['deno-permissions', 'bun-compatibility']) {
+    const entry = catalog.entries.find(e => e.id === id);
+    assert.equal(entry.stage, 'OFFICIAL_DOCUMENTATION_REVIEWED');
+    assert.equal(entry.targetExecuted, false);
+    assert.equal(entry.provenance, undefined);
+  }
 });
