@@ -18,7 +18,12 @@
 | Compatibility matrix | Version/API-specific behavior comparison | The same import name need not imply the same semantics |
 | Durable acknowledgment | Confirmation tied to a retained result | An emitted event or in-memory promise is insufficient |
 | Admission | Review permitting a bounded capability to be offered | Knowledge ingestion cannot grant execution rights |
+| Limit readback | What a runtime reports for a requested resource option | An accepted option or null value cannot establish enforcement |
+| External watchdog | Parent supervision that ends an over-budget child | Process termination is not rollback of earlier effects |
+| Immutable trial receipt | A retained result keyed to input, code, host policy and runtime | An existing conflicting result must not be overwritten |
+| Cost sensitivity | Conditional arithmetic over declared shocks, fees and slippage | It is not an empirical forecast, fill or realized return |
 
 Evidence: [TypeScript](typescript-emit.md), [QuickJS](quickjs-host.md),
 [runtime documentation](runtime-portability.md), [Node events](javascript-runtimes.md).
+See [actual runtime checks](runtime-execution.md) for concrete examples.
 These definitions orient investigation and proposed designs, not a new standard.

@@ -171,8 +171,10 @@
       "commit": "84e723f1ace5e3823cef8149dd0f890fe74b77ce",
       "sourceScope": "EXPLICIT_SUBSET",
       "provenance": "provenance/quickjs-host.json",
-      "targetExecuted": false,
-      "licenseNotes": "MIT; C files manually inspected, supplementary JS test source statically parsed only"
+      "targetExecuted": true,
+      "licenseNotes": "MIT; C files manually inspected, supplementary JS test source statically parsed only",
+      "runtimeEvidence": "provenance/runtime-execution.json",
+      "runtimeId": "quickjs"
     },
     {
       "id": "deno-permissions",
@@ -181,12 +183,14 @@
       "article": "wiki/runtime-portability.md",
       "documentation": "https://docs.deno.com/runtime/fundamentals/security/",
       "observedAt": "2026-10-18",
-      "targetExecuted": false,
+      "targetExecuted": true,
       "omissions": [
-        "No source or binary inspection",
-        "No runtime conformance, security or performance tests",
+        "No Deno/Bun source inspection",
+        "Only bounded original fixtures executed; no full conformance or security certification",
         "No production integration"
-      ]
+      ],
+      "runtimeEvidence": "provenance/runtime-execution.json",
+      "runtimeId": "deno"
     },
     {
       "id": "bun-compatibility",
@@ -195,12 +199,14 @@
       "article": "wiki/runtime-portability.md",
       "documentation": "https://bun.sh/docs/runtime/nodejs-compat",
       "observedAt": "2026-10-18",
-      "targetExecuted": false,
+      "targetExecuted": true,
       "omissions": [
-        "No source or binary inspection",
-        "No runtime conformance, security or performance tests",
+        "No Deno/Bun source inspection",
+        "Only bounded original fixtures executed; no full conformance or security certification",
         "No production integration"
-      ]
+      ],
+      "runtimeEvidence": "provenance/runtime-execution.json",
+      "runtimeId": "bun"
     }
   ]
 }

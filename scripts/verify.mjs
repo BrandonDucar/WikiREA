@@ -12,7 +12,7 @@ const rootFiles = new Set(['README.md', 'LICENSE', 'LICENSE-DOCS.md', 'PROVENANC
 export function allowed(name) {
   return rootFiles.has(name) || /^wiki\/[a-z0-9-]+\.md$/.test(name) ||
     /^provenance\/[a-z0-9-]+\.json$/.test(name) ||
-    /^scripts\/(verify\.mjs|verify\.test\.mjs|fetch-source\.mjs|events-probe\.test\.mjs|runtime-probe\.test\.mjs)$/.test(name) ||
+    /^scripts\/(verify\.mjs|verify\.test\.mjs|fetch-source\.mjs|events-probe\.test\.mjs|runtime-probe\.test\.mjs|portable-probe\.js|portable\.test\.mjs|run-portable\.mjs|quickjs\.Dockerfile)$/.test(name) ||
     name === 'assets/wikirea-poster.png' || name === '.github/workflows/verify.yml';
 }
 export function safeRelative(name) {
@@ -60,6 +60,28 @@ export function validateSource(manifest) {
     assert.equal(manifest.analysisSummary.parsedFiles, manifest.analyzedFiles.length);
   } else assert.equal(manifest.analyzedFiles.length, 0);
 }
+export function validateRuntimeSnapshot(report) {
+  assert.equal(report.schemaVersion, 'wikirea.runtime-execution.v1');
+  assert.equal(report.authorityGranted, false); assert.equal(report.productionActivated, false);
+  assert.equal(report.privateDataIncluded, false);
+  assert.equal(report.fixture, 'scripts/portable-probe.js');
+  assert.match(report.fixtureSha256, /^[a-f0-9]{64}$/);
+  assert(Number.isFinite(Date.parse(report.observedAt)));
+  assert(Array.isArray(report.runtimes) && report.runtimes.length > 0 && report.runtimes.length <= 3);
+  const ids = new Set();
+  for (const runtime of report.runtimes) {
+    assert(['deno', 'bun', 'quickjs'].includes(runtime.id) && !ids.has(runtime.id)); ids.add(runtime.id);
+    assert(typeof runtime.version === 'string' && runtime.version.length < 240);
+    assert.equal(runtime.fixtureSha256, report.fixtureSha256);
+    assert.match(runtime.archiveSha256, /^[a-f0-9]{64}$/);
+    if (runtime.sourceCommit !== null) assert.match(runtime.sourceCommit, /^[a-f0-9]{40}$/);
+    if (runtime.binarySha256 !== null) assert.match(runtime.binarySha256, /^[a-f0-9]{64}$/);
+    if (runtime.containerImage !== null) assert.match(runtime.containerImage, /^sha256:[a-f0-9]{64}$/);
+    assert(Array.isArray(runtime.cases) && runtime.cases.length > 0 && runtime.cases.length <= 64);
+    assert(new Set(runtime.cases.map(c => c.name)).size === runtime.cases.length);
+    for (const c of runtime.cases) { assert.match(c.name, /^[a-z0-9-]+$/); assert([true, false, null].includes(c.passed)); }
+  }
+}
 async function filesAt(folder, prefix = '') {
   const result = [];
   for (const ent of await fs.readdir(folder, { withFileTypes: true })) {
@@ -98,9 +120,20 @@ export async function verify(base = root, refresh = false) {
   assert.equal(catalog.rawEvidenceIncluded, false);
   assert.equal(catalog.sourceBodiesIncluded, false);
   const ids = new Set(); const sources = new Map(); let parsed = 0;
+  const runtimePath = 'provenance/runtime-execution.json';
+  const runtimeReport = names.includes(runtimePath) ? JSON.parse(await fs.readFile(path.join(base, runtimePath), 'utf8')) : null;
+  if (runtimeReport) {
+    validateRuntimeSnapshot(runtimeReport);
+    assert.equal(digest(await fs.readFile(path.join(base, runtimeReport.fixture))), runtimeReport.fixtureSha256);
+  }
   for (const entry of catalog.entries) {
     assert(!ids.has(entry.id)); ids.add(entry.id);
-    assert.equal(entry.targetExecuted, false);
+    if (entry.runtimeEvidence) {
+      assert.equal(entry.runtimeEvidence, runtimePath); assert(runtimeReport);
+      const runtime = runtimeReport.runtimes.find(r => r.id === entry.runtimeId); assert(runtime);
+      assert.equal(entry.targetExecuted, true);
+      if (runtime.sourceCommit) assert.equal(runtime.sourceCommit, entry.commit);
+    } else assert.equal(entry.targetExecuted, false);
     assert(['STATIC_ANALYZED_SUBSET', 'SOURCE_INSPECTED_SUBSET', 'OFFICIAL_DOCUMENTATION_REVIEWED'].includes(entry.stage));
     safeRelative(entry.article); assert(names.includes(entry.article));
     if (entry.provenance) {
@@ -126,7 +159,8 @@ export async function verify(base = root, refresh = false) {
     assert.equal(release.schemaVersion, 'wikirea.release.v1'); assert.deepEqual(release.files, inventory);
   }
   return { status: 'PUBLIC_RELEASE_CHECK_PASSED', files: inventory.length, localLinks: links,
-    investigations: ids.size, reaParsedFiles: parsed, mechanics: mechanics.mechanics.length };
+    investigations: ids.size, reaParsedFiles: parsed, mechanics: mechanics.mechanics.length,
+    separatelyProbedRuntimes: runtimeReport?.runtimes.length ?? 0 };
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const flags = process.argv.slice(2); assert(flags.every(x => x === '--refresh-manifest'));

@@ -29,7 +29,8 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 Eleven REA-backed catalog entries cover **57 selected JS/TS files** with zero parse
 failures. This includes one supplementary QuickJS builtin-test source, not its C
 host implementation. Bor, Robinhood, PhotoCraft, Deno and Bun carry different
-evidence stages, not five more completed REA runs. No target runtime or upstream tests ran.
+evidence stages, not five more completed REA runs. Upstream test suites did not run;
+separate [original runtime checks](runtime-execution.md) now cover Deno, Bun and QuickJS.
 The retained source collections cover subsets, never entire apps by implication.
 
 ## Explore By Concept
@@ -38,7 +39,7 @@ The retained source collections cover subsets, never entire apps by implication.
 - [Finance glossary](finance-glossary.md): events, corrections, backfill, receipts and paper execution.
 - [Quantum and simulation glossary](quantum-glossary.md): 25 terms, including amplitude versus probability and replay versus reality.
 - [Operational and creative-state glossary](operations-glossary.md): 12 terms covering clocks, history, providers and snapshots.
-- [Language and runtime glossary](runtime-glossary.md): 16 terms separating types, jobs, cancellation and authority.
+- [Language and runtime glossary](runtime-glossary.md): 20 terms separating types, jobs, cancellation, receipts and authority.
 - [Twelve reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
 - [Big and unexpected targets](../TARGETS.md): a twenty-repository discovery shortlist, separate from completed investigations.
 
@@ -49,6 +50,7 @@ The retained source collections cover subsets, never entire apps by implication.
 - [Entry template](../ENTRY_TEMPLATE.md): a consistent investigation contract.
 - [Project README](../README.md): reproduction and local validation commands.
 - [Runtime integration](runtime-integration.md): concrete consumer mapping without private source or activation claims.
+- [Runtime execution checks](runtime-execution.md): actual pinned-host observations and bounded reproduction.
 
 ## Reading The Evidence
 

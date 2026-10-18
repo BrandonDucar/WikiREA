@@ -10,7 +10,9 @@ REA 6.4.0 statically parsed the single JS test file (34,141 bytes), with zero pa
 failures. **The host-loop findings below come from manual C-source inspection,
 not a C decompiler or the JavaScript analyzer.** The JS file is supplementary
 builtin-test source; it does not validate the pending-job loop. No QuickJS binary
-or upstream test ran. [Manifest](../provenance/quickjs-host.json).
+or upstream test ran during that initial inspection. A subsequent pinned build
+executed original fixtures: [runtime follow-up](runtime-execution.md).
+[Static manifest](../provenance/quickjs-host.json).
 
 ## What The Source Shows
 
@@ -57,7 +59,8 @@ acknowledgment. A timeout must not be reported as rollback.
 
 MIT notice retained. No upstream source or bytecode is bundled. Engine internals,
 OS-specific binding safety, limits in native calls, isolation strength and
-performance were not established. No target or installed QuickJS runtime ran.
+performance were not established by the source pass. The bounded runtime checks
+are recorded separately and do not validate the full engine or host surface.
 
 Next: [runtime portability](runtime-portability.md), [terms](runtime-glossary.md),
 [integration proposal](runtime-integration.md), [library](index.md).

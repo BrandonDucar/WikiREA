@@ -48,8 +48,11 @@ implied by any published entry.
 only installed Node APIs and synthetic text, not downloaded applications. Its
 type-stripping API may emit an experimental warning on supported Node versions.
 Results identify the running host and must not be relabeled as pinned TypeScript,
-QuickJS, Deno or Bun execution. The other runtime entries preserve their NOT_RUN
-status. No sandbox certification or full conformance suite is implied.
+QuickJS, Deno or Bun execution. A later, separate runtime snapshot records actual
+executions of the portable fixture and additional bounded checks on those hosts;
+see [runtime execution](wiki/runtime-execution.md). The original source-analysis
+manifests still describe their inert static runs. Catalog execution flags now
+require a bound runtime record. No sandbox certification or full conformance suite is implied.
 
 ## Publishing New Evidence
 

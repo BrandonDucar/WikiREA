@@ -69,5 +69,17 @@ The commercial deliverable is a tested answer for a customer's authorized
 workload, not copied proprietary software or a guarantee of cost reduction.
 No revenue, runtime-speed advantage or measured customer savings is claimed.
 
+## Runtime Execution Follow-Up
+
+The later [execution checks](runtime-execution.md) exercised all three runtimes.
+A private, finite Fish sensitivity adapter now uses sanitized child environments,
+owned working directories, disabled Bun environment-file/autoinstall behavior,
+external deadlines, output limits, runtime/code/policy bindings and immutable
+read-back receipts. Failed and timed-out attempts cannot become completed
+scenarios. Trade Invader consumes its read-only projection in Simulation Lab.
+The earlier outline canary remains structural review evidence, not a semantic
+knowledge importer. The broader reusable mechanics still require qualification
+against each real workload; this partial adaptation grants no general admission.
+
 Navigation: [runtime findings](runtime-portability.md), [mechanics](mechanics.md),
 [library](index.md).

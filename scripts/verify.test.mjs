@@ -43,12 +43,13 @@ test('QuickJS host findings do not pretend that C was analyzed as JavaScript', a
   assert(source.omissions.some(text => text.includes('C host files manually inspected')));
 });
 
-test('Deno and Bun are documentation reviews, not invented static or runtime runs', async () => {
+test('Deno and Bun source coverage remains documentation-only while execution evidence is separate', async () => {
   const catalog = JSON.parse(await fs.readFile(path.join(root, 'library.json'), 'utf8'));
   for (const id of ['deno-permissions', 'bun-compatibility']) {
     const entry = catalog.entries.find(e => e.id === id);
     assert.equal(entry.stage, 'OFFICIAL_DOCUMENTATION_REVIEWED');
-    assert.equal(entry.targetExecuted, false);
+    assert.equal(entry.targetExecuted, true);
+    assert.equal(entry.runtimeEvidence, 'provenance/runtime-execution.json');
     assert.equal(entry.provenance, undefined);
   }
 });

@@ -22,6 +22,8 @@ Glossaries: [investigation](wiki/glossary.md), [finance](wiki/finance-glossary.m
 [language/runtime](wiki/runtime-glossary.md).
 See [what to investigate next](TARGETS.md).
 For application ideas, see [how runtime findings can feed DreamNet](wiki/runtime-integration.md).
+The [runtime execution follow-up](wiki/runtime-execution.md) records actual Deno,
+Bun and QuickJS checks and the private paper/sensitivity integration boundary.
 
 ## What Makes An Entry Useful
 
@@ -49,6 +51,7 @@ node scripts/verify.mjs
 node --test scripts/verify.test.mjs
 node --test scripts/events-probe.test.mjs
 node --test scripts/runtime-probe.test.mjs
+node --test scripts/portable.test.mjs
 ```
 
 Preview an investigation's source-retrieval plan without network access:

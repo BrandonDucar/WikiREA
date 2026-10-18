@@ -1,8 +1,9 @@
 # Runtime Portability And Permissions
 
-Method: official documentation reviewed on **2026-10-18**. Deno and Bun source
-trees and binaries were not examined or executed in this pass. Their catalog
-stage is documentation-reviewed, not REA-complete. Documentation can change.
+Initial method: official documentation reviewed on **2026-10-18**. Deno and Bun
+source coverage remains documentation-only, not REA-complete. A subsequent
+[bounded execution pass](runtime-execution.md) tested pinned binaries separately.
+Documentation can change; source coverage and runtime evidence are distinct.
 
 ## Evidence Matrix
 
@@ -10,9 +11,9 @@ stage is documentation-reviewed, not REA-complete. Documentation can change.
 | --- | --- | --- |
 | TypeScript | [Pinned emit/transpile source](typescript-emit.md) | Every build configuration or runtime validator |
 | Node.js | [Pinned event source](javascript-runtimes.md) plus original installed-host probes | Behavior of a freshly built pinned Node binary |
-| QuickJS | [Selected host/header C reading](quickjs-host.md) and supplementary static JS test parsing | Node API compatibility or verified isolation |
-| Deno | Official permission documentation | An installed, tested worker or per-module privilege isolation |
-| Bun | Official Node-compatibility documentation | Identical semantics for a given Node workload |
+| QuickJS | [Selected C reading](quickjs-host.md), supplementary JS parsing and later original runtime probes | Node API compatibility or complete isolation certification |
+| Deno | Permission documentation plus later scoped denial/behavior tests | Per-module privilege isolation or full application qualification |
+| Bun | Node-compatibility documentation plus later original behavior tests | Identical semantics for an arbitrary Node workload |
 
 ## Deno Permission Scope Matters
 
@@ -23,7 +24,7 @@ the JavaScript permission boundary. Static module loading has separate rules.
 The documentation recommends additional isolation for untrusted execution.
 Therefore a proposed adapter needs an explicit import policy, scoped I/O, no
 interactive permission expansion, and an externally enforced resource budget.
-These are design requirements, not verified Deno behavior in this library.
+These design requirements extend beyond the limited denial fixtures we later ran.
 [Official security and permissions guide](https://docs.deno.com/runtime/fundamentals/security/).
 
 ## Bun Compatibility Is A Test Obligation
@@ -55,6 +56,8 @@ rejected, rather than silently substituting a different transform.
 - Require durable results and restart checks separately from event-loop progress.
 - Preserve NOT_RUN cells instead of replacing them with compatibility guesses.
 
-No Deno, Bun or QuickJS runtime migration or production activation was performed.
+No production runtime migration or activation was performed. The finite local
+Fish adapter does not establish general workload compatibility. See the
+[actual runtime checks](runtime-execution.md) for the later local executions.
 See [glossary](runtime-glossary.md), [mechanics](mechanics.md),
 [DreamNet integration](runtime-integration.md).

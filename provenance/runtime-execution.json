@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "wikirea.runtime-execution.v1",
+  "observedAt": "2026-10-18T19:45:30.864Z",
+  "fixture": "scripts/portable-probe.js",
+  "fixtureSha256": "ce66f393066de5fe3b4478ea2c0cab77a2e6ad3090c14fc5afe52a781dcc1085",
+  "runtimes": [
+    {
+      "id": "deno",
+      "version": "deno 2.9.7 (stable, release, x86_64-pc-windows-msvc)\nv8 15.0.245.2-rusty\ntypescript 6.0.3",
+      "sourceCommit": null,
+      "tag": "v2.9.7",
+      "binarySha256": "e020f3e232bd16e33768dee528e5983349c962952051ced0a5d58ad42f5d9b33",
+      "archiveSha256": "a0c3101b4158d1dfb7d6a78a7bf0f3de80c96bb423c152beec8beb22786f2238",
+      "containerImage": null,
+      "platform": "windows-x64",
+      "fixtureSha256": "ce66f393066de5fe3b4478ea2c0cab77a2e6ad3090c14fc5afe52a781dcc1085",
+      "elapsedCommonMs": 1975,
+      "cases": [
+        {
+          "name": "portable-process-exited",
+          "passed": true
+        },
+        {
+          "name": "runtime-shape-check-required",
+          "passed": true
+        },
+        {
+          "name": "invalid-json-rejected",
+          "passed": true
+        },
+        {
+          "name": "non-finite-number-not-preserved-by-json",
+          "passed": true
+        },
+        {
+          "name": "finite-promise-order",
+          "passed": true
+        },
+        {
+          "name": "race-deadline-wins",
+          "passed": true
+        },
+        {
+          "name": "race-did-not-cancel-loser",
+          "passed": true
+        },
+        {
+          "name": "rejection-not-completion",
+          "passed": true
+        },
+        {
+          "name": "unhandled-rejection-visible",
+          "passed": true
+        },
+        {
+          "name": "unhandled-rejection-nonzero-exit",
+          "passed": true,
+          "observedExitCode": 1,
+          "requirement": "OBSERVE_NOT_ASSUME"
+        },
+        {
+          "name": "external-watchdog-terminates-loop",
+          "passed": true
+        },
+        {
+          "name": "filesystem-environment-network-denied",
+          "passed": true
+        },
+        {
+          "name": "execution-is-not-typechecking",
+          "passed": true
+        },
+        {
+          "name": "separate-typecheck-rejects-wrong-type",
+          "passed": true
+        }
+      ],
+      "scope": "ORIGINAL_SYNTHETIC_FIXTURES_NOT_CONFORMANCE_OR_SECURITY_CERTIFICATION"
+    },
+    {
+      "id": "bun",
+      "version": "1.4.3",
+      "sourceCommit": null,
+      "tag": "bun-v1.4.3",
+      "binarySha256": "095db4abae203d42f29fdec26da4a882fcde6333cdd84e40c0c7828c0cf543f6",
+      "archiveSha256": "d7a7d3eb216614544aab0cde2d8d9f2e4e87839bf5a30a1cd11d077f02d84e0c",
+      "containerImage": null,
+      "platform": "windows-x64",
+      "fixtureSha256": "ce66f393066de5fe3b4478ea2c0cab77a2e6ad3090c14fc5afe52a781dcc1085",
+      "elapsedCommonMs": 548,
+      "cases": [
+        {
+          "name": "portable-process-exited",
+          "passed": true
+        },
+        {
+          "name": "runtime-shape-check-required",
+          "passed": true
+        },
+        {
+          "name": "invalid-json-rejected",
+          "passed": true
+        },
+        {
+          "name": "non-finite-number-not-preserved-by-json",
+          "passed": true
+        },
+        {
+          "name": "finite-promise-order",
+          "passed": true
+        },
+        {
+          "name": "race-deadline-wins",
+          "passed": true
+        },
+        {
+          "name": "race-did-not-cancel-loser",
+          "passed": true
+        },
+        {
+          "name": "rejection-not-completion",
+          "passed": true
+        },
+        {
+          "name": "unhandled-rejection-visible",
+          "passed": true
+        },
+        {
+          "name": "unhandled-rejection-nonzero-exit",
+          "passed": true,
+          "observedExitCode": 1,
+          "requirement": "OBSERVE_NOT_ASSUME"
+        },
+        {
+          "name": "external-watchdog-terminates-loop",
+          "passed": true
+        },
+        {
+          "name": "execution-is-not-typechecking",
+          "passed": true
+        },
+        {
+          "name": "worker-resource-limits-observable",
+          "passed": true
+        },
+        {
+          "name": "worker-resource-limit-readback",
+          "observation": {
+            "resourceLimits": null
+          },
+          "passed": null,
+          "requirement": "NO_ENFORCEMENT_CLAIM_FROM_READBACK"
+        }
+      ],
+      "scope": "ORIGINAL_SYNTHETIC_FIXTURES_NOT_CONFORMANCE_OR_SECURITY_CERTIFICATION"
+    },
+    {
+      "id": "quickjs",
+      "version": "QuickJS version 2026-06-04",
+      "sourceCommit": "84e723f1ace5e3823cef8149dd0f890fe74b77ce",
+      "tag": null,
+      "binarySha256": null,
+      "archiveSha256": "a4e2341eee0cb98e40942fbaad9668de0bad96d6bd07c642aedd03681f669423",
+      "containerImage": "sha256:51aa1952aa2a9de2f9325a6414957255a14d4106d09d0802d91ab6261233fcec",
+      "platform": "linux-x64-musl-container",
+      "fixtureSha256": "ce66f393066de5fe3b4478ea2c0cab77a2e6ad3090c14fc5afe52a781dcc1085",
+      "elapsedCommonMs": 2106,
+      "cases": [
+        {
+          "name": "portable-process-exited",
+          "passed": true
+        },
+        {
+          "name": "runtime-shape-check-required",
+          "passed": true
+        },
+        {
+          "name": "invalid-json-rejected",
+          "passed": true
+        },
+        {
+          "name": "non-finite-number-not-preserved-by-json",
+          "passed": true
+        },
+        {
+          "name": "finite-promise-order",
+          "passed": true
+        },
+        {
+          "name": "race-deadline-wins",
+          "passed": true
+        },
+        {
+          "name": "race-did-not-cancel-loser",
+          "passed": true
+        },
+        {
+          "name": "rejection-not-completion",
+          "passed": true
+        },
+        {
+          "name": "unhandled-rejection-visible",
+          "passed": true
+        },
+        {
+          "name": "unhandled-rejection-nonzero-exit",
+          "passed": true,
+          "observedExitCode": 1,
+          "requirement": "OBSERVE_NOT_ASSUME"
+        },
+        {
+          "name": "external-watchdog-terminates-loop",
+          "passed": true
+        },
+        {
+          "name": "configured-memory-limit-rejects-allocation",
+          "passed": true
+        }
+      ],
+      "scope": "ORIGINAL_SYNTHETIC_FIXTURES_NOT_CONFORMANCE_OR_SECURITY_CERTIFICATION"
+    }
+  ],
+  "privateDataIncluded": false,
+  "authorityGranted": false,
+  "productionActivated": false,
+  "limitations": [
+    "Only selected synthetic behaviors",
+    "Bun and Deno binaries on Windows; QuickJS in restricted Linux container",
+    "Timing is not a performance comparison",
+    "No arbitrary untrusted code sandbox certification",
+    "All local operator observations, not independent third-party verification"
+  ]
+}
