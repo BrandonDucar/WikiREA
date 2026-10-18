@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/nasa/openmct",
+  "commit": "e09bfaf47856b2b7ae2ea74334800b26fd27a41e",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T18:46:27.406Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/nasa/openmct/e09bfaf47856b2b7ae2ea74334800b26fd27a41e/LICENSE.md",
+      "sizeBytes": 725,
+      "sha256": "c1ea2b0a88b05a699df10fa516f90d0979e62a6bf7aa1b69ba133e02969c2b08",
+      "gitBlobSha1": "6f5fecba6c397c7f1941776926c798cbe81ba467"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/nasa/openmct/e09bfaf47856b2b7ae2ea74334800b26fd27a41e/README.md",
+      "sizeBytes": 14735,
+      "sha256": "a74cb0b084d5a62a17d810ef70c511e6ae1c780f72ed3b92b22713e15b6150fd",
+      "gitBlobSha1": "a88036f481ab0c3c6e73c44bfc4daf934b45d792"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/nasa/openmct/e09bfaf47856b2b7ae2ea74334800b26fd27a41e/package.json",
+      "sizeBytes": 7215,
+      "sha256": "2ea2a977022354aa79606f223abe2bf41f88ee44373d2019390008fc051b432e",
+      "gitBlobSha1": "4394a2b7f1e9da3ef845010414c349591610c389"
+    },
+    {
+      "name": "src/api/time/TimeAPI.js",
+      "url": "https://raw.githubusercontent.com/nasa/openmct/e09bfaf47856b2b7ae2ea74334800b26fd27a41e/src/api/time/TimeAPI.js",
+      "sizeBytes": 8557,
+      "sha256": "a58423a29127e3a71ce9e42c74d832f4e6fef49375241d347b58f38c610711d6",
+      "gitBlobSha1": "cbec60ee0a471173c8f8391b819a522377fcc7fc"
+    },
+    {
+      "name": "src/api/time/TimeAPISpec.js",
+      "url": "https://raw.githubusercontent.com/nasa/openmct/e09bfaf47856b2b7ae2ea74334800b26fd27a41e/src/api/time/TimeAPISpec.js",
+      "sizeBytes": 12398,
+      "sha256": "951d248e54ca495e4d18e3a8a4a8e4f3caa6a2fc024d4a7b91c8655882b9b385",
+      "gitBlobSha1": "ef656903c06fe1d63d01cfed83fa67b2ca2f130f"
+    },
+    {
+      "name": "src/api/telemetry/TelemetryAPI.js",
+      "url": "https://raw.githubusercontent.com/nasa/openmct/e09bfaf47856b2b7ae2ea74334800b26fd27a41e/src/api/telemetry/TelemetryAPI.js",
+      "sizeBytes": 38038,
+      "sha256": "95c39cfe100fb27724927976a1cc50a0576becb28e9f70e58c159803bc827802",
+      "gitBlobSha1": "944e467fc38a3b27b3e4e77dc6c75be20e34054a"
+    }
+  ],
+  "analyzedFiles": [
+    "src/api/time/TimeAPI.js",
+    "src/api/time/TimeAPISpec.js",
+    "src/api/telemetry/TelemetryAPI.js"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T18:46:27.439Z",
+    "finishedAt": "2026-10-18T18:46:35.541Z",
+    "parsedFiles": 3,
+    "parseFailures": 0,
+    "textBytesRead": 58993,
+    "findings": 31,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected source and dependency behavior",
+    "All target execution and upstream test execution",
+    "Hosted services, assets, accounts and production integration",
+    "Rust files are retained for manual reading, not parsed by the JavaScript provider"
+  ]
+}

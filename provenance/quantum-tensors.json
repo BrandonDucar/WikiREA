@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/Quantum-Flytrap/quantum-tensors",
+  "commit": "b8c677c51475ba33644cb62658796b5a190fdf42",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T17:59:16.770Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/README.md",
+      "sizeBytes": 4492,
+      "sha256": "002f9dc5bcbab942a51e0215e03d9ecc067840eb2c1ebf9b8023591224139b13",
+      "gitBlobSha1": "c9ff19f204d2a0cda27d82942acbfc39ce77ec6f"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/package.json",
+      "sizeBytes": 2449,
+      "sha256": "61343a2297c40bb433e92195523905e449065f640fcb95ded634e86bb53aeee7",
+      "gitBlobSha1": "5385d4e8f0713554eb98fdb7c0192730d26c8500"
+    },
+    {
+      "name": "src/Complex.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/src/Complex.ts",
+      "sizeBytes": 6542,
+      "sha256": "f1071c7e7f05aecd2212ab95a3472bea14db87ef601b347a28d61ba7cc0298bd",
+      "gitBlobSha1": "5d042d804b405a7f354e389ac3e84d2d60aabe53"
+    },
+    {
+      "name": "src/Dimension.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/src/Dimension.ts",
+      "sizeBytes": 6203,
+      "sha256": "ac79883f575cd71caebe65507cdb42f1667b52d4693a056e977f565c5a0b34a1",
+      "gitBlobSha1": "505323008ab251b8a1e4cd66d3047a41514167e9"
+    },
+    {
+      "name": "src/Vector.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/src/Vector.ts",
+      "sizeBytes": 19842,
+      "sha256": "14be8eb3d3bb73b851e51fad3005a308be6e5437e98a8d4f68cdb4a52a5df6bf",
+      "gitBlobSha1": "21c42bb7962eb5065a451c62855edb7b13240c63"
+    },
+    {
+      "name": "src/Measurement.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/src/Measurement.ts",
+      "sizeBytes": 6201,
+      "sha256": "26944766627d9bbbbf032f41e13944acca571416f3d1013d76356f81b37ca44b",
+      "gitBlobSha1": "3b056caa317f70f7709e526cbe2550b0dbdc8cab"
+    },
+    {
+      "name": "src/Simulation.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/src/Simulation.ts",
+      "sizeBytes": 6325,
+      "sha256": "3e4ede8424220137e42cb3c57dbf177c261a8e970c8492f5e16d9cebf7a2c0c6",
+      "gitBlobSha1": "65989bffa4125a6753b4b51ed1827248dcfe8be6"
+    },
+    {
+      "name": "src/Photons.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/src/Photons.ts",
+      "sizeBytes": 22177,
+      "sha256": "254a38eb30f841b62b462716529df50cb9ae04101f0ea6fed4f88f5cfc3345cc",
+      "gitBlobSha1": "d32be93633d513cd4a1def766c21ed982490f36e"
+    },
+    {
+      "name": "src/Gates.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/src/Gates.ts",
+      "sizeBytes": 4211,
+      "sha256": "bc2b022efcf623ee341858eb387f7b5f067196c2a5473cc38ff6d091c8d97715",
+      "gitBlobSha1": "efb6b036d944f81aff39640585c944084009b03b"
+    },
+    {
+      "name": "tests/Measurement.test.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/tests/Measurement.test.ts",
+      "sizeBytes": 9821,
+      "sha256": "4d670b4a101ec9154c1becb78ed1f665b4f6afd8bd33648c48925d393eaeb474",
+      "gitBlobSha1": "6f8fb355a797f9a2ff2a277ca46d7a5d14da3f62"
+    },
+    {
+      "name": "tests/Simulation.test.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/tests/Simulation.test.ts",
+      "sizeBytes": 1945,
+      "sha256": "a9f959921eb096ca4e3fbb593cc38e339985c523c58aaeb44c206651ee2dd63d",
+      "gitBlobSha1": "f2bc629a442f4e1151769239428cc3ba5267906b"
+    },
+    {
+      "name": "tests/Gates.test.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/quantum-tensors/b8c677c51475ba33644cb62658796b5a190fdf42/tests/Gates.test.ts",
+      "sizeBytes": 2769,
+      "sha256": "9c2095e3e5a994982c9aad2dbdb0f84dcf3c354e6990e7e5e0bd131262c71264",
+      "gitBlobSha1": "d66951a5b28e31012f5e2413162fa3dfbbbe720f"
+    }
+  ],
+  "analyzedFiles": [
+    "src/Complex.ts",
+    "src/Dimension.ts",
+    "src/Vector.ts",
+    "src/Measurement.ts",
+    "src/Simulation.ts",
+    "src/Photons.ts",
+    "src/Gates.ts",
+    "tests/Measurement.test.ts",
+    "tests/Simulation.test.ts",
+    "tests/Gates.test.ts"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T17:59:16.804Z",
+    "finishedAt": "2026-10-18T17:59:35.341Z",
+    "parsedFiles": 10,
+    "parseFailures": 0,
+    "textBytesRead": 86036,
+    "findings": 131,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected repository files",
+    "Dependency installation and dependency source",
+    "All target execution and upstream test execution",
+    "Browser interaction, assets and hosted services",
+    "Quantum hardware; scientific validation outside the selected evidence"
+  ]
+}

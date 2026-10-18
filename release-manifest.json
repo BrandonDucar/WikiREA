@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "wikirea.release.v1",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sizeBytes": 32,
+      "sha256": "23302dd90b8bb74b44d365fafef8df20f809b61cb347023951ecf60a88a29651"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "sizeBytes": 581,
+      "sha256": "02c26bba115eba46f30e19d09030d995536cf2207db4aa970485f7454c2bfab4"
+    },
+    {
+      "path": ".gitignore",
+      "sizeBytes": 54,
+      "sha256": "ba8a91fca68794f2166c8263949208efa198657019b35b1fe1b7c6726ddf5ba2"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sizeBytes": 1121,
+      "sha256": "55daffef0dcd19ecab7f3d6bc9cfd1ddc405b758a6a29d0aca1d240e6e6112d4"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sizeBytes": 1477,
+      "sha256": "d23956190379293661dd12ea4ae8b9b7f3a03241547a4959ef6b6b5c6aab32c5"
+    },
+    {
+      "path": "ENTRY_TEMPLATE.md",
+      "sizeBytes": 1736,
+      "sha256": "7e4d669fae596f0a2227bbc88ba2706a55416ff43f8cda26c422c817cf8f9249"
+    },
+    {
+      "path": "LICENSE",
+      "sizeBytes": 1154,
+      "sha256": "6c2b2eb78ec03d801078e3cc8a3427e63d5953e41b1b9fb34ff5c51e192c9c30"
+    },
+    {
+      "path": "LICENSE-DOCS.md",
+      "sizeBytes": 926,
+      "sha256": "d594e14a9f404dfc730dd388c2f34720db2aa13e34f1ec8483bb9266de1a38c7"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sizeBytes": 2449,
+      "sha256": "e255ad5a4a5165e1b880ef82d93a62232166b931d27c16e6c18143f6a7d37005"
+    },
+    {
+      "path": "README.md",
+      "sizeBytes": 3678,
+      "sha256": "b658a06d927b1b7b7669cca17b1791d62c1e68615f3f51a793eca9015f60abf2"
+    },
+    {
+      "path": "TARGETS.md",
+      "sizeBytes": 4756,
+      "sha256": "f914575a13600d51305d5754e34169e0b69161ebc25d8b0b208bd300297aa891"
+    },
+    {
+      "path": "assets/wikirea-poster.png",
+      "sizeBytes": 2633593,
+      "sha256": "338c86caf21a95605b6b154c1867a7975bf323e77d452923504afc306ff6384a"
+    },
+    {
+      "path": "library.json",
+      "sizeBytes": 6631,
+      "sha256": "df1e9415d101123c0327f173216c145726382a00befc859ad0679d61b89e5faf"
+    },
+    {
+      "path": "mechanics.json",
+      "sizeBytes": 8817,
+      "sha256": "169f233082d5f545f689b3f66dba6e2b806d79b0bd1855ac046a78cb8b785e81"
+    },
+    {
+      "path": "provenance/bra-ket-vue.json",
+      "sizeBytes": 4957,
+      "sha256": "bff86c6de2d2683284b7d03f746d7a1c5493b642ab0c390e2ffa5a5c547e61e6"
+    },
+    {
+      "path": "provenance/mediawiki-foundation.json",
+      "sizeBytes": 7205,
+      "sha256": "3275b567874490c781d61977137a8849522edb64878728bfced1dd54eddc4295"
+    },
+    {
+      "path": "provenance/nasa-openmct.json",
+      "sizeBytes": 3314,
+      "sha256": "a6bf9f329f216bb13cdc0dd473a5f7005af6f70aa3ceb293460ab0da2fc3a840"
+    },
+    {
+      "path": "provenance/nodejs-events.json",
+      "sizeBytes": 1802,
+      "sha256": "28cde5b5f0d0b512dd1c2f01cfb84913df0cb56894cc34d2a44b981132ade03a"
+    },
+    {
+      "path": "provenance/photocraft-history.json",
+      "sizeBytes": 3184,
+      "sha256": "7dc4e1d8520b0f17f37fb60c26c2f1fb069ea176dda9c07c8e0ca53cfc4fba78"
+    },
+    {
+      "path": "provenance/polygon-bor.json",
+      "sizeBytes": 2409,
+      "sha256": "cbeef45d1cc4e921ba9ee85079dea37e52f003a63955ff51ff61070167dc5d36"
+    },
+    {
+      "path": "provenance/polygon-massive-client.json",
+      "sizeBytes": 4921,
+      "sha256": "9177a25bee2858e546d8dbf7336750faf3f053d8fef67d0855d761209868b45c"
+    },
+    {
+      "path": "provenance/quantum-game-2.json",
+      "sizeBytes": 5929,
+      "sha256": "0f89ce5e6be44932948453570f143df0ca58355522da2c7deb19d5d01875a5c3"
+    },
+    {
+      "path": "provenance/quantum-game-classic.json",
+      "sizeBytes": 5542,
+      "sha256": "a473887e30884e86d0b70490a609d0c407320ac20e439c3d7eb0ea8be5d4cfbd"
+    },
+    {
+      "path": "provenance/quantum-tensors.json",
+      "sizeBytes": 5734,
+      "sha256": "0557406d7e57c3943a3c419842e20eb8648996a14125922f150e270a90a97c2a"
+    },
+    {
+      "path": "provenance/tradingview-lightweight-charts.json",
+      "sizeBytes": 3753,
+      "sha256": "aa4d31b289ccb2c24501cac88e3cca7a486e2d6607c89289d15351b136f97671"
+    },
+    {
+      "path": "provenance/wikipedia-api-observation.json",
+      "sizeBytes": 993,
+      "sha256": "e3a0f61928d2cbd43d449c4233301d70ac9970be395429ef7176425e32961760"
+    },
+    {
+      "path": "scripts/events-probe.test.mjs",
+      "sizeBytes": 2049,
+      "sha256": "4703c3a1e0b144860983fc1bdbd319bee75208b47f8be3608d634f6f17338c28"
+    },
+    {
+      "path": "scripts/fetch-source.mjs",
+      "sizeBytes": 2847,
+      "sha256": "306c7c3f36ad0b943abc83f050f9c729b3134cefdb821dbb693daa09ee4018cd"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "sizeBytes": 7775,
+      "sha256": "462a6c3c98f55a3016e572d40ad7d51d1cdfba61a41181d5ba3c4d7e7fc46b88"
+    },
+    {
+      "path": "scripts/verify.test.mjs",
+      "sizeBytes": 2137,
+      "sha256": "ccb2494efb155a09a6913b6c1b5d5dc61d8de66455ffe5506459873243b7e11e"
+    },
+    {
+      "path": "wiki/bra-ket-vue.md",
+      "sizeBytes": 3123,
+      "sha256": "83d245ba34c941aada1537bf9bc0690d66e63b108e92a93cb502247e6fb42af9"
+    },
+    {
+      "path": "wiki/finance-first-pass.md",
+      "sizeBytes": 6782,
+      "sha256": "fdc0151b91afc837b39280c3352de8e663238ba6099d3a4886a2e99abc9913ae"
+    },
+    {
+      "path": "wiki/finance-glossary.md",
+      "sizeBytes": 1973,
+      "sha256": "0bfc05ae17de28d66f24a28539c00a1268bdf8182343da5a8c5c7c041de79d23"
+    },
+    {
+      "path": "wiki/glossary.md",
+      "sizeBytes": 6189,
+      "sha256": "a0fad3815af42bcf0a26762daf20344cf2e7b7d00589c39260e95a0ee1abfa92"
+    },
+    {
+      "path": "wiki/index.md",
+      "sizeBytes": 4499,
+      "sha256": "0f4659b2fdc999ab207d326b152428d15ff123bc531337e925480c8db1e39135"
+    },
+    {
+      "path": "wiki/javascript-runtimes.md",
+      "sizeBytes": 4451,
+      "sha256": "81486b98c517a13f01abe0a8442331313c1107525fc2d3d1c690f399cd4ff2b2"
+    },
+    {
+      "path": "wiki/mechanics.md",
+      "sizeBytes": 3864,
+      "sha256": "a4f7258b6a2b816207938698940a75b64a07fcf5396a3ff79640949d3456a5bb"
+    },
+    {
+      "path": "wiki/mediawiki.md",
+      "sizeBytes": 9006,
+      "sha256": "d8eec330d61aeacc56ee40150e4cde2bfa215ba19a65411a4c656b787f6580ac"
+    },
+    {
+      "path": "wiki/nasa-openmct.md",
+      "sizeBytes": 2811,
+      "sha256": "0a62134ad5a465798aa7a71bfce69a0b3e1d1529e808d5f2fb22fd5583e3e5c7"
+    },
+    {
+      "path": "wiki/operations-glossary.md",
+      "sizeBytes": 1754,
+      "sha256": "0b3549d34f69ab933883abb0d09f835559f043c65aa3d834780d02afdfd86f6d"
+    },
+    {
+      "path": "wiki/photocraft-history.md",
+      "sizeBytes": 3389,
+      "sha256": "4a543268e78b4e93444a7160633ebcad38c9e26979a4e1b038ade8573e44cd96"
+    },
+    {
+      "path": "wiki/quantum-game-2.md",
+      "sizeBytes": 3367,
+      "sha256": "18f91edabaa243d7ddb41b87c000303770bd15230b8c64128d1211e1c215d347"
+    },
+    {
+      "path": "wiki/quantum-game-classic.md",
+      "sizeBytes": 3109,
+      "sha256": "66234a9a54b9d28333148f4bea2bbacc3f78e11793cad62934cf9185b8347ab3"
+    },
+    {
+      "path": "wiki/quantum-glossary.md",
+      "sizeBytes": 3985,
+      "sha256": "3dfc3f8e3a5f6d8aaa1612859898bb3613ae9a3f974fd18531ff07382012cee9"
+    },
+    {
+      "path": "wiki/quantum-tensors.md",
+      "sizeBytes": 3878,
+      "sha256": "93d7d7f67fe1a932ab16b23015670dadbb265424abe83cf3ad722d2736a16cfb"
+    }
+  ]
+}

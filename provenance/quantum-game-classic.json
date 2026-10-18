@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/stared/quantum-game",
+  "commit": "531710c7b2eff76f61ea2afc036398abf4741b34",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T17:59:49.487Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/LICENSE.md",
+      "sizeBytes": 1097,
+      "sha256": "53a013060b9af97a60ee223cbcf7f6655868f07ff12969e368bf0cd07ad7ba96",
+      "gitBlobSha1": "f6f2d0ecb9854dae6030fb15172454726e2acd2e"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/README.md",
+      "sizeBytes": 3013,
+      "sha256": "690b742c3908ff9d4a8d088c749cfd84020d3c3839f926169ba37baa8830a2ad",
+      "gitBlobSha1": "52fbdc3709f4fbc83359daf6e3ee3d2edbcc17a1"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/package.json",
+      "sizeBytes": 859,
+      "sha256": "5a90f7aed34e85c436cd4df7c61c0c23b645f1ae7fe7263fde1b0ed9b709d6f3",
+      "gitBlobSha1": "9382c56528f67b720cc5fa3dc973e2e87db19432"
+    },
+    {
+      "name": "js/simulation.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/simulation.js",
+      "sizeBytes": 7321,
+      "sha256": "75cba88786b39e430314362488249feb0497e4ea02294bfa41c4c23d00eb6b8d",
+      "gitBlobSha1": "8000fb38c092cc2e25978363a06a3388c1cf0491"
+    },
+    {
+      "name": "js/winning_status.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/winning_status.js",
+      "sizeBytes": 2832,
+      "sha256": "03151602674e18e2be26f974196f90f08d8b49dff34673fd98dc10b5f198dacf",
+      "gitBlobSha1": "3aaa8d702e5771b6735e3afdfcacc55200ade388"
+    },
+    {
+      "name": "js/storage.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/storage.js",
+      "sizeBytes": 982,
+      "sha256": "2cad88e6768b7d15ec71aed9b2ba771bcc9bf73c922cfcc9cacc21d7a62d7115",
+      "gitBlobSha1": "966d12bc80e53c568af0e7d63316e46696bc8a01"
+    },
+    {
+      "name": "js/level_io_uri.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/level_io_uri.js",
+      "sizeBytes": 3093,
+      "sha256": "7edeae59a5b35ae96772af60cf69e21203b5978fb388c9634dc28204ebebdb22",
+      "gitBlobSha1": "881f4ac0daa78f0388fa4b693250e30591e07eca"
+    },
+    {
+      "name": "js/level.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/level.js",
+      "sizeBytes": 3068,
+      "sha256": "e5bf0ad486ab60dbca22a77b4e4cd603a76f6188b7728f40ccf7b479adc21ad7",
+      "gitBlobSha1": "81204890583540f4db8b5eefba3b7ad433e684ec"
+    },
+    {
+      "name": "js/game_board.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/game_board.js",
+      "sizeBytes": 12812,
+      "sha256": "93476b94911b81d3e329a03ba359babe1cea0102cf7cd4421073350efa8dbd8d",
+      "gitBlobSha1": "32d81326dd73821f58741e406d50b34584ba40f6"
+    },
+    {
+      "name": "js/level.spec.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/level.spec.js",
+      "sizeBytes": 2004,
+      "sha256": "b7198c2ca6db73b6518d857299d615192b6887fd4ffd7a9831efc2d4676781c6",
+      "gitBlobSha1": "5881c8fc2fe404614da33e033cd0af75dec2e863"
+    },
+    {
+      "name": "js/level_io_uri.spec.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/level_io_uri.spec.js",
+      "sizeBytes": 998,
+      "sha256": "dd8a62f24ca7fe58e185fbef95f66abc4c1c50218283c5131ca4a3a510a68a03",
+      "gitBlobSha1": "4b854e8281240daaa289ad098f587931450dfaac"
+    },
+    {
+      "name": "js/winning_status.spec.js",
+      "url": "https://raw.githubusercontent.com/stared/quantum-game/531710c7b2eff76f61ea2afc036398abf4741b34/js/winning_status.spec.js",
+      "sizeBytes": 1686,
+      "sha256": "f45134bfa4aa13322b619819509af838c382ca5e72d2aeebf0256596e636b509",
+      "gitBlobSha1": "df0439e4cdc3efd927730cef130eaec9bedfb023"
+    }
+  ],
+  "analyzedFiles": [
+    "js/simulation.js",
+    "js/winning_status.js",
+    "js/storage.js",
+    "js/level_io_uri.js",
+    "js/level.js",
+    "js/game_board.js",
+    "js/level.spec.js",
+    "js/level_io_uri.spec.js",
+    "js/winning_status.spec.js"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T17:59:49.555Z",
+    "finishedAt": "2026-10-18T18:00:00.640Z",
+    "parsedFiles": 9,
+    "parseFailures": 0,
+    "textBytesRead": 34796,
+    "findings": 98,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected repository files",
+    "Dependency installation and dependency source",
+    "All target execution and upstream test execution",
+    "Browser interaction, assets and hosted services",
+    "Quantum hardware; scientific validation outside the selected evidence"
+  ]
+}

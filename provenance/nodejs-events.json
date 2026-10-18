@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/nodejs/node",
+  "commit": "c5349f43cd66d2aa02d86414c9ed426f71d3ae48",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T18:51:58.177Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/nodejs/node/c5349f43cd66d2aa02d86414c9ed426f71d3ae48/LICENSE",
+      "sizeBytes": 142089,
+      "sha256": "b58bb782ec115892f61475a6199db165545926d93624ae172f25b7a6e1dafffe",
+      "gitBlobSha1": "7d64078649da3b6a670b5032c467714d0cbbfa97"
+    },
+    {
+      "name": "lib/events.js",
+      "url": "https://raw.githubusercontent.com/nodejs/node/c5349f43cd66d2aa02d86414c9ed426f71d3ae48/lib/events.js",
+      "sizeBytes": 35111,
+      "sha256": "69cbe28fa32cdbb4e5de4347647b718cd3063635e1ba48b2a7bfab16874860c8",
+      "gitBlobSha1": "999ee4ec746d189d5be3082f4d65a697450a9de8"
+    }
+  ],
+  "analyzedFiles": [
+    "lib/events.js"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T18:51:58.264Z",
+    "finishedAt": "2026-10-18T18:52:09.049Z",
+    "parsedFiles": 1,
+    "parseFailures": 0,
+    "textBytesRead": 35111,
+    "findings": 37,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected source and dependency behavior",
+    "All target execution and upstream test execution",
+    "Hosted services, assets, accounts and production integration",
+    "Rust files are retained for manual reading, not parsed by the JavaScript provider"
+  ]
+}

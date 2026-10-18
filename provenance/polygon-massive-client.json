@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/massive-com/client-js",
+  "commit": "e268c090f0879720887d172ed0ebff17e9a3f3df",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T18:27:40.814Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/LICENSE",
+      "sizeBytes": 1068,
+      "sha256": "6561b1727c438b85033cfaa45e40d3a70bb60477477c6acac1b7edc2944ee7be",
+      "gitBlobSha1": "c71c556605753d2ddf8e5096831bc903eb3e9692"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/README.md",
+      "sizeBytes": 11293,
+      "sha256": "851ceee243f98624f789740bc175c4fa7afe27128a97698d2dbbda024e7738d2",
+      "gitBlobSha1": "3f1865df06d6d8aecbfd42e4884539fcdf000482"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/package.json",
+      "sizeBytes": 2348,
+      "sha256": "636521f6c4e397462da1118acaf93f574740812d4e38df116e34c2d3e2c861aa",
+      "gitBlobSha1": "c2a2b3366ba57bdd0292f114923ef367e4467866"
+    },
+    {
+      "name": "src/main.ts",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/src/main.ts",
+      "sizeBytes": 1863,
+      "sha256": "0498d391ebf8f6d5d0477e64ce5b124bd38474fefa2de66b5291aa1e3d5b9066",
+      "gitBlobSha1": "e2c3f553dce76d3761207c053aceb0d1a0b64dfd"
+    },
+    {
+      "name": "src/rest/base.ts",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/src/rest/base.ts",
+      "sizeBytes": 1503,
+      "sha256": "9a3bff64a0abe9f471fa8afc3833eb04741be4fcfd08833f96f0ee6f59c108ec",
+      "gitBlobSha1": "f8b35ac851eb4f9aa46506be416eaa43f76c0727"
+    },
+    {
+      "name": "src/rest/common.ts",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/src/rest/common.ts",
+      "sizeBytes": 5763,
+      "sha256": "56ebab45e85165955a3e9fa521dd58144782a3b9ac0eddb6af70397e293b7bac",
+      "gitBlobSha1": "b20de5749bdff5643443f25f5f053746de957fce"
+    },
+    {
+      "name": "src/rest/configuration.ts",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/src/rest/configuration.ts",
+      "sizeBytes": 3837,
+      "sha256": "40b9f9837209e3fdcf97c7e5a089cb6723ffd8d3169fa38985342ad5f57efe3b",
+      "gitBlobSha1": "c09f6ed167d33fd342f36a2ddd45a088a878b48c"
+    },
+    {
+      "name": "src/websockets/index.ts",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/src/websockets/index.ts",
+      "sizeBytes": 1361,
+      "sha256": "e65f73e5216f83c3a6c95a3ee604d18c965ee6ac57e11ec0fae26cdbb7e82803",
+      "gitBlobSha1": "17f7fa07134814edb73911e406b1abf5fbd1bba6"
+    },
+    {
+      "name": "src/websockets/crypto/index.ts",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/src/websockets/crypto/index.ts",
+      "sizeBytes": 1478,
+      "sha256": "aca25f8b4b779837fd300b8d9105f494f042d26aa48f301903614c5daa4aa725",
+      "gitBlobSha1": "0dc56a5b00b5e518260232b7e706484fed14deb4"
+    },
+    {
+      "name": "src/websockets/transport/index.ts",
+      "url": "https://raw.githubusercontent.com/massive-com/client-js/e268c090f0879720887d172ed0ebff17e9a3f3df/src/websockets/transport/index.ts",
+      "sizeBytes": 345,
+      "sha256": "9a9c374a8b21b1f865544bdf634428351d11f458ef3556c39ea781423ea568a2",
+      "gitBlobSha1": "29e29921203fabab47a041961f368ffc5d03b04b"
+    }
+  ],
+  "analyzedFiles": [
+    "src/main.ts",
+    "src/rest/base.ts",
+    "src/rest/common.ts",
+    "src/rest/configuration.ts",
+    "src/websockets/index.ts",
+    "src/websockets/crypto/index.ts",
+    "src/websockets/transport/index.ts"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T18:27:40.845Z",
+    "finishedAt": "2026-10-18T18:27:46.962Z",
+    "parsedFiles": 7,
+    "parseFailures": 0,
+    "textBytesRead": 16150,
+    "findings": 85,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "All unselected files, dependencies and target execution",
+    "Hosted services, user accounts, API requests and trading",
+    "Generated Massive REST API and OpenAPI schema exceed the selected one-MiB file bound",
+    "Go files retained for manual inspection only; no Go analyzer run"
+  ]
+}

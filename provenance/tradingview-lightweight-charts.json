@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/tradingview/lightweight-charts",
+  "commit": "9db7ce733e95303ae1eeb79e664ee9be4ee5e696",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T18:26:55.885Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/tradingview/lightweight-charts/9db7ce733e95303ae1eeb79e664ee9be4ee5e696/LICENSE",
+      "sizeBytes": 11347,
+      "sha256": "70c9d5382506dd184465425c08a99ad9bd6d9ac1313c252968ba0b585e5ef823",
+      "gitBlobSha1": "174e92640b47a53b080f369188c83cced8cde52e"
+    },
+    {
+      "name": "NOTICE",
+      "url": "https://raw.githubusercontent.com/tradingview/lightweight-charts/9db7ce733e95303ae1eeb79e664ee9be4ee5e696/NOTICE",
+      "sizeBytes": 101,
+      "sha256": "f76c6afab94884448f0426e30d6e9d555ca7247894cd3484e477d2f87513036e",
+      "gitBlobSha1": "37971d0b7b5ec7110b759e73301c8fede45db174"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/tradingview/lightweight-charts/9db7ce733e95303ae1eeb79e664ee9be4ee5e696/README.md",
+      "sizeBytes": 8013,
+      "sha256": "ab4bb0bf16d36e75a97f44fab90515e3e4c2cde8f8e2563cdb98a1dac4d6d922",
+      "gitBlobSha1": "f9d02d99f4b44bb339e8d646f84e02175eedfe95"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/tradingview/lightweight-charts/9db7ce733e95303ae1eeb79e664ee9be4ee5e696/package.json",
+      "sizeBytes": 7126,
+      "sha256": "e82c7647e17ade84847b37c4303b65018e02f00e72b9f58fa11357d3f5183932",
+      "gitBlobSha1": "e45748bdf98512220128f7fe72d4b46846a1758c"
+    },
+    {
+      "name": "src/api/chart-api.ts",
+      "url": "https://raw.githubusercontent.com/tradingview/lightweight-charts/9db7ce733e95303ae1eeb79e664ee9be4ee5e696/src/api/chart-api.ts",
+      "sizeBytes": 18029,
+      "sha256": "091d5c5739a68a87dc213a92df12e643823107105691af9ff656fe33fcda815d",
+      "gitBlobSha1": "b9a3224dee624a045b709e13776972eff1ed706d"
+    },
+    {
+      "name": "src/model/data-layer.ts",
+      "url": "https://raw.githubusercontent.com/tradingview/lightweight-charts/9db7ce733e95303ae1eeb79e664ee9be4ee5e696/src/model/data-layer.ts",
+      "sizeBytes": 22036,
+      "sha256": "badd99decb05741ac2d331ac2acf3003a29f3768ffc7220387f5c5f7a081f1a5",
+      "gitBlobSha1": "67f595beb1c605b382c4a89eb339e864ec08b67a"
+    },
+    {
+      "name": "src/model/time-scale.ts",
+      "url": "https://raw.githubusercontent.com/tradingview/lightweight-charts/9db7ce733e95303ae1eeb79e664ee9be4ee5e696/src/model/time-scale.ts",
+      "sizeBytes": 39498,
+      "sha256": "64b744d841b9146ad8e23c9ff0b9d050e7c34c350e1968d1152e28342ed880ce",
+      "gitBlobSha1": "65bfef664b28828e53aedfd158c6f26ac8c68977"
+    }
+  ],
+  "analyzedFiles": [
+    "src/api/chart-api.ts",
+    "src/model/data-layer.ts",
+    "src/model/time-scale.ts"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T18:26:56.181Z",
+    "finishedAt": "2026-10-18T18:27:38.316Z",
+    "parsedFiles": 3,
+    "parseFailures": 0,
+    "textBytesRead": 79563,
+    "findings": 164,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "All unselected files, dependencies and target execution",
+    "Hosted services, user accounts, API requests and trading",
+    "Generated Massive REST API and OpenAPI schema exceed the selected one-MiB file bound",
+    "Go files retained for manual inspection only; no Go analyzer run"
+  ]
+}

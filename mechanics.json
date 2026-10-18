@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "wikirea.public-mechanics.v1",
+  "mechanics": [
+    {
+      "id": "goal-safety-gate",
+      "title": "Goal plus safety gate",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "quantum-game-2",
+          "sourcePath": "src/engine/controller/goals.ts"
+        }
+      ],
+      "inputs": [
+        "Loaded mission",
+        "Measured goal values",
+        "Explicit hard constraints"
+      ],
+      "outputs": [
+        "Completion classification",
+        "Failed-goal and failed-constraint reasons"
+      ],
+      "invariants": [
+        "Missing input cannot establish completion",
+        "Hard constraints override reward"
+      ],
+      "acceptanceCases": [
+        "Unloaded input is not success",
+        "Exact threshold boundary",
+        "Goal passed but hard constraint failed"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "bounded-playhead",
+      "title": "Bounded playhead",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "quantum-game-2",
+          "sourcePath": "src/engine/controller/playhead.ts"
+        }
+      ],
+      "inputs": [
+        "Retained frames",
+        "Requested cursor",
+        "Finite playback limit"
+      ],
+      "outputs": [
+        "Clamped cursor",
+        "Display state"
+      ],
+      "invariants": [
+        "Interpolation does not create observations",
+        "Replay cannot invoke external actions"
+      ],
+      "acceptanceCases": [
+        "Zero frames",
+        "Negative and beyond-end seek",
+        "Replay while new events arrive"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "named-dimensions",
+      "title": "Named state dimensions",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "quantum-tensors",
+          "sourcePath": "src/Dimension.ts"
+        }
+      ],
+      "inputs": [
+        "Ordered axis names",
+        "Units and sizes",
+        "Operation input/output dimensions"
+      ],
+      "outputs": [
+        "Compatibility decision"
+      ],
+      "invariants": [
+        "Incompatible axes cannot be silently composed",
+        "Unit conversions are explicit"
+      ],
+      "acceptanceCases": [
+        "Different component counts",
+        "Swapped axes",
+        "Same size but different identity"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "branch-ledger",
+      "title": "Branch ledger",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "quantum-tensors",
+          "sourcePath": "src/Measurement.ts"
+        }
+      ],
+      "inputs": [
+        "Versioned initial state",
+        "Branch labels and weights",
+        "Recorded random sequence or seed"
+      ],
+      "outputs": [
+        "Retained branch outcomes",
+        "Separately labeled sample"
+      ],
+      "invariants": [
+        "All trials remain inspectable",
+        "Sampled outcome is not the entire distribution"
+      ],
+      "acceptanceCases": [
+        "Unnormalized weights",
+        "Same inputs and seed",
+        "Failed and low-weight trial retention"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "semantic-legend",
+      "title": "Semantic state legend",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "bra-ket-vue",
+          "sourcePath": "src/lib-components/complex-legend.vue"
+        }
+      ],
+      "inputs": [
+        "Typed values",
+        "Selection",
+        "Declared color and size encoding"
+      ],
+      "outputs": [
+        "Inspectable marks",
+        "Numerical labels"
+      ],
+      "invariants": [
+        "Zero and missing data stay distinct",
+        "Numerical meaning is disclosed"
+      ],
+      "acceptanceCases": [
+        "Known magnitude and phase",
+        "Zero versus missing value",
+        "Color-accessible equivalent"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "checkpoint-achievement",
+      "title": "Checkpoint versus achievement",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "quantum-game-classic",
+          "sourcePath": "js/storage.js"
+        }
+      ],
+      "inputs": [
+        "Versioned saved work",
+        "Source evidence versions",
+        "Separate completion receipt"
+      ],
+      "outputs": [
+        "Restorable progress",
+        "Independent completion status"
+      ],
+      "invariants": [
+        "Checkpoint is not completion proof",
+        "Restore cannot repeat irreversible side effects"
+      ],
+      "acceptanceCases": [
+        "Malformed or old saved schema",
+        "Interrupted write and restart",
+        "Duplicate restore without repeated send"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "distribution-objective",
+      "title": "Distribution objective",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "quantum-game-classic",
+          "sourcePath": "js/winning_status.js"
+        }
+      ],
+      "inputs": [
+        "All retained trial outcomes",
+        "Goal thresholds",
+        "Failure and hazard outcomes"
+      ],
+      "outputs": [
+        "Distribution-level evaluation"
+      ],
+      "invariants": [
+        "A selected successful trial cannot certify the distribution",
+        "Holdout outcomes stay separate"
+      ],
+      "acceptanceCases": [
+        "Insufficient probability mass",
+        "One objective starved",
+        "Held-out failure despite successful training trials"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "historical-correction",
+      "title": "Explicit historical correction",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "tradingview-lightweight-charts",
+          "sourcePath": "src/model/data-layer.ts"
+        }
+      ],
+      "inputs": [
+        "Existing bars",
+        "New event",
+        "Explicit correction mode"
+      ],
+      "outputs": [
+        "Append or correction decision",
+        "Updated data projection"
+      ],
+      "invariants": [
+        "Old-time changes are not ordinary appends",
+        "Corrections retain their lineage"
+      ],
+      "acceptanceCases": [
+        "Duplicate newest bar",
+        "Older event in append mode",
+        "Historical point absent"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "stream-completeness",
+      "title": "Connection versus completeness",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "polygon-massive-client",
+          "sourcePath": "src/websockets/transport/index.ts"
+        }
+      ],
+      "inputs": [
+        "Transport state",
+        "Last accepted event",
+        "Bounded backfill policy"
+      ],
+      "outputs": [
+        "Connection health",
+        "Separate completeness assessment"
+      ],
+      "invariants": [
+        "Connected does not imply authenticated or complete",
+        "Gap recovery has finite bounds"
+      ],
+      "acceptanceCases": [
+        "Auth rejection after open",
+        "Disconnect with missing events",
+        "Reconnect duplicates"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "typed-event-time",
+      "title": "Typed event time",
+      "stage": "SPECIFIED",
+      "sourceRefs": [
+        {
+          "entryId": "polygon-massive-client",
+          "sourcePath": "src/websockets/crypto/index.ts"
+        }
+      ],
+      "inputs": [
+        "Event type",
+        "Raw time value and unit",
+        "Received-at value"
+      ],
+      "outputs": [
+        "Normalized event time",
+        "Preserved raw value and unit"
+      ],
+      "invariants": [
+        "Event units are resolved by schema",
+        "Receive time does not overwrite event time"
+      ],
+      "acceptanceCases": [
+        "Millisecond trade time",
+        "Nanosecond FMV time without precision loss",
+        "Unrecognized event type"
+      ],
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    }
+  ]
+}

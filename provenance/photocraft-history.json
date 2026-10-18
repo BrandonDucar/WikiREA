@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/storytold/photocraft",
+  "commit": "9185b64b94c07458038e768f4b31778590ba93ee",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T18:46:37.793Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/storytold/photocraft/9185b64b94c07458038e768f4b31778590ba93ee/LICENSE-MIT",
+      "sizeBytes": 1102,
+      "sha256": "1a8f66d8a86b146f5336fa0d4b1186576c8aa98e60823080c85c7811cfd810af",
+      "gitBlobSha1": "68facca4cf24f653b6656bccd8a31609deea88c8"
+    },
+    {
+      "name": "LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/storytold/photocraft/9185b64b94c07458038e768f4b31778590ba93ee/LICENSE-APACHE",
+      "sizeBytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "gitBlobSha1": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+    },
+    {
+      "name": "NOTICE",
+      "url": "https://raw.githubusercontent.com/storytold/photocraft/9185b64b94c07458038e768f4b31778590ba93ee/NOTICE",
+      "sizeBytes": 1646,
+      "sha256": "25a69f3364a0d7fea0ea486a9def19c3dc1af51608ec1218911a1a24069b4454",
+      "gitBlobSha1": "a7302a940c97bf5954ca9412e39e2e0879143784"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/storytold/photocraft/9185b64b94c07458038e768f4b31778590ba93ee/README.md",
+      "sizeBytes": 32749,
+      "sha256": "cd449fa4e70d6ac314ad3e69e6911dc4c0bf60019b82b6f83ab48c1ca92771aa",
+      "gitBlobSha1": "12e2ef4b12b284271b39fcff10249ba3bd0ef452"
+    },
+    {
+      "name": "crates/engine/src/history_cmds.rs",
+      "url": "https://raw.githubusercontent.com/storytold/photocraft/9185b64b94c07458038e768f4b31778590ba93ee/crates/engine/src/history_cmds.rs",
+      "sizeBytes": 26334,
+      "sha256": "1e19e8918f3c109a7458da8a5f872389df7a523b0ff2f71f423bc0ce72658362",
+      "gitBlobSha1": "c9c91b3d14ae0136a45d9943d6f84d28e930bebf"
+    },
+    {
+      "name": "crates/engine/tests/undo_keeps_active_layer.rs",
+      "url": "https://raw.githubusercontent.com/storytold/photocraft/9185b64b94c07458038e768f4b31778590ba93ee/crates/engine/tests/undo_keeps_active_layer.rs",
+      "sizeBytes": 3772,
+      "sha256": "127262a9b1e4cf979b895e55c2b0e29505063f989a088156fb1d04281e078042",
+      "gitBlobSha1": "257314546557a3a531b894cdd0cd74bd09f0dfad"
+    },
+    {
+      "name": "crates/engine/src/layer_nav_cmds.rs",
+      "url": "https://raw.githubusercontent.com/storytold/photocraft/9185b64b94c07458038e768f4b31778590ba93ee/crates/engine/src/layer_nav_cmds.rs",
+      "sizeBytes": 8436,
+      "sha256": "7e31e74bfecb7f834aa1e5cd4661f3afe0105f8280a726a75e81cadfeb479811",
+      "gitBlobSha1": "bd1ecb661a5a2d6217d69d2589cb40c366433661"
+    }
+  ],
+  "analyzedFiles": [],
+  "analysisSummary": null,
+  "omissions": [
+    "Unselected source and dependency behavior",
+    "All target execution and upstream test execution",
+    "Hosted services, assets, accounts and production integration",
+    "Rust files are retained for manual reading, not parsed by the JavaScript provider"
+  ]
+}

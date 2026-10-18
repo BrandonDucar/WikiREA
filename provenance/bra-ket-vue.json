@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/Quantum-Flytrap/bra-ket-vue",
+  "commit": "f9a53be960385ab051ede43456ab971f38522cf8",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T17:59:38.854Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/LICENSE",
+      "sizeBytes": 1125,
+      "sha256": "5b58643f4cad284f2fd3c44fe1d9188261c06f036b7e14ea68cc41709354bf72",
+      "gitBlobSha1": "ff4fb42df40b17ff77a44102d9c5cf19951b82ed"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/README.md",
+      "sizeBytes": 4608,
+      "sha256": "7dfb6a412966829eceaca22a0ac3e34582d6640c1885c7efd6b52a06f9010ff2",
+      "gitBlobSha1": "30373acf8e90de4824992938a651564556d98fab"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/package.json",
+      "sizeBytes": 2735,
+      "sha256": "bf6b0312179b85223e6cc1dc3b562db7a968978fa96fb5aab2302960462301f9",
+      "gitBlobSha1": "0797340c9f6ed933bcaf4c413a6d4330289aaa6b"
+    },
+    {
+      "name": "src/entry.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/src/entry.ts",
+      "sizeBytes": 40,
+      "sha256": "1b0976c0fe4138dc08e43445d0ce203d2a3a2ae51d2065e7ccc546c6980dd7d5",
+      "gitBlobSha1": "31b123254988f61ab5d4778390d34afd4aa3c6f3"
+    },
+    {
+      "name": "src/lib-components/colors.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/src/lib-components/colors.ts",
+      "sizeBytes": 3603,
+      "sha256": "0d265ec95dcf52f44e7045dd01a41b530ac85acd926cce817f99dbe86c937131",
+      "gitBlobSha1": "af43362d378733baf28fea0e62112187cda00c66"
+    },
+    {
+      "name": "src/lib-components/utils.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/src/lib-components/utils.ts",
+      "sizeBytes": 1145,
+      "sha256": "7582ccca927458d900150d84d31f407dfaba9582e5d8291b8a5ddb035cd9cf62",
+      "gitBlobSha1": "cc56c78f8cce44d94e499df77a48fda9362a26b4"
+    },
+    {
+      "name": "src/lib-components/index.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/src/lib-components/index.ts",
+      "sizeBytes": 781,
+      "sha256": "92aa0f43aad4811390bca5dba346153992c9468c5d66b1ee9dcce35d2d5f47e6",
+      "gitBlobSha1": "f44abe34a474505dc07a3cb97de4e86031ca4f62"
+    },
+    {
+      "name": "src/lib-components/ket.vue",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/src/lib-components/ket.vue",
+      "sizeBytes": 4219,
+      "sha256": "d2f89cb1f497696d64120db4a2e6cf0d5b6284bb0a7f1bf1301241cd6d83316d",
+      "gitBlobSha1": "0c22460215bf426a5b1b91de9faec09dccaf9689"
+    },
+    {
+      "name": "src/lib-components/matrix-viewer.vue",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/src/lib-components/matrix-viewer.vue",
+      "sizeBytes": 13867,
+      "sha256": "235f029abb1b1b8e6193008c1d04406e681dfcf090848bce2b7dd6500f02852c",
+      "gitBlobSha1": "9a88877f5f28061289be24f0f6670dc936d98f86"
+    },
+    {
+      "name": "src/lib-components/complex-legend.vue",
+      "url": "https://raw.githubusercontent.com/Quantum-Flytrap/bra-ket-vue/f9a53be960385ab051ede43456ab971f38522cf8/src/lib-components/complex-legend.vue",
+      "sizeBytes": 4210,
+      "sha256": "e2d4cd1eb43aeaf4170b116722e47e760adc4b72c19f2cafae9e61619ba6859e",
+      "gitBlobSha1": "9426e6d0ff9158b859902633b2af233eaf8fc046"
+    }
+  ],
+  "analyzedFiles": [
+    "src/entry.ts",
+    "src/lib-components/colors.ts",
+    "src/lib-components/utils.ts",
+    "src/lib-components/index.ts"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T17:59:38.889Z",
+    "finishedAt": "2026-10-18T17:59:47.323Z",
+    "parsedFiles": 4,
+    "parseFailures": 0,
+    "textBytesRead": 5569,
+    "findings": 32,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected repository files",
+    "Dependency installation and dependency source",
+    "All target execution and upstream test execution",
+    "Browser interaction, assets and hosted services",
+    "Quantum hardware; scientific validation outside the selected evidence"
+  ]
+}

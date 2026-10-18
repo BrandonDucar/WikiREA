@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "wikirea.public-library.v1",
+  "name": "WikiREA",
+  "updatedAt": "2026-10-18",
+  "rawEvidenceIncluded": false,
+  "sourceBodiesIncluded": false,
+  "entries": [
+    {
+      "id": "mediawiki-foundation",
+      "title": "Wikipedia software foundation: MediaWiki",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/mediawiki.md",
+      "repository": "https://github.com/wikimedia/mediawiki",
+      "commit": "099df524bb975d7e42e707c0b3299e8d11d1e05d",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/mediawiki-foundation.json",
+      "targetExecuted": false,
+      "licenseNotes": "GPL-2.0-or-later; per-file and dependency notices still apply"
+    },
+    {
+      "id": "tradingview-lightweight-charts",
+      "title": "TradingView: public chart data updates and crosshair controls",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/finance-first-pass.md",
+      "repository": "https://github.com/tradingview/lightweight-charts",
+      "commit": "9db7ce733e95303ae1eeb79e664ee9be4ee5e696",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/tradingview-lightweight-charts.json",
+      "targetExecuted": false,
+      "licenseNotes": "Apache-2.0; retain NOTICE and required attribution"
+    },
+    {
+      "id": "polygon-massive-client",
+      "title": "Polygon.io / Massive: public JavaScript market-data client",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/finance-first-pass.md",
+      "repository": "https://github.com/massive-com/client-js",
+      "commit": "e268c090f0879720887d172ed0ebff17e9a3f3df",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/polygon-massive-client.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT for client; data access and redistribution terms are separate"
+    },
+    {
+      "id": "quantum-game-2",
+      "title": "Quantum Game 2: objectives, safety and replay",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/quantum-game-2.md",
+      "repository": "https://github.com/Quantum-Game/quantum-game-2",
+      "commit": "dbeebfa51a4bc3e6be27784992cc24fb0450c503",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/quantum-game-2.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT; selected upstream notice retained; dependency and asset review separate"
+    },
+    {
+      "id": "quantum-tensors",
+      "title": "Quantum Tensors: typed dimensions and measurement branches",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/quantum-tensors.md",
+      "repository": "https://github.com/Quantum-Flytrap/quantum-tensors",
+      "commit": "b8c677c51475ba33644cb62658796b5a190fdf42",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/quantum-tensors.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT declared in package.json; standalone notice not found"
+    },
+    {
+      "id": "bra-ket-vue",
+      "title": "BraKetVue: inspectable complex-state visuals",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/bra-ket-vue.md",
+      "repository": "https://github.com/Quantum-Flytrap/bra-ket-vue",
+      "commit": "f9a53be960385ab051ede43456ab971f38522cf8",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/bra-ket-vue.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT; selected upstream notice retained; dependency and asset review separate"
+    },
+    {
+      "id": "quantum-game-classic",
+      "title": "Quantum Game Classic: checkpoints and distribution-based goals",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/quantum-game-classic.md",
+      "repository": "https://github.com/stared/quantum-game",
+      "commit": "531710c7b2eff76f61ea2afc036398abf4741b34",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/quantum-game-classic.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT; selected upstream notice retained; dependency and asset review separate"
+    },
+    {
+      "id": "nasa-openmct",
+      "title": "NASA Open MCT: mission time and telemetry providers",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/nasa-openmct.md",
+      "repository": "https://github.com/nasa/openmct",
+      "commit": "e09bfaf47856b2b7ae2ea74334800b26fd27a41e",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/nasa-openmct.json",
+      "targetExecuted": false,
+      "licenseNotes": "Apache-2.0 selected project notice; dependency notices separate"
+    },
+    {
+      "id": "nodejs-events",
+      "title": "JavaScript / Node.js: event completion boundaries",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/javascript-runtimes.md",
+      "repository": "https://github.com/nodejs/node",
+      "commit": "c5349f43cd66d2aa02d86414c9ed426f71d3ae48",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/nodejs-events.json",
+      "targetExecuted": false,
+      "licenseNotes": "Node.js license and component notices; no upstream code bundled"
+    },
+    {
+      "id": "polygon-bor",
+      "title": "Polygon blockchain: receipts and finality wrapper",
+      "stage": "SOURCE_INSPECTED_SUBSET",
+      "article": "wiki/finance-first-pass.md",
+      "repository": "https://github.com/0xPolygon/bor",
+      "commit": "1cdf43c99d97cb9e18860776d8f69a416b49adf4",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/polygon-bor.json",
+      "targetExecuted": false,
+      "licenseNotes": "Selected LGPL/GPL notices; file-level review required"
+    },
+    {
+      "id": "photocraft-history",
+      "title": "PhotoCraft: undo and snapshot identity",
+      "stage": "SOURCE_INSPECTED_SUBSET",
+      "article": "wiki/photocraft-history.md",
+      "repository": "https://github.com/storytold/photocraft",
+      "commit": "9185b64b94c07458038e768f4b31778590ba93ee",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/photocraft-history.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT/Apache-2.0 project notices; assets and branding separate"
+    },
+    {
+      "id": "robinhood-docs",
+      "title": "Robinhood: official Crypto API scope",
+      "stage": "OFFICIAL_DOCUMENTATION_REVIEWED",
+      "article": "wiki/finance-first-pass.md",
+      "targetExecuted": false,
+      "documentation": "https://robinhood.com/us/en/support/articles/crypto-api/",
+      "omissions": [
+        "Application source and backend",
+        "All authenticated access and trading",
+        "Equities/options API capabilities not established"
+      ]
+    }
+  ]
+}

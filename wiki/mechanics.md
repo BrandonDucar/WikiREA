@@ -1,0 +1,52 @@
+# Reusable Mechanics
+
+These ten behavior patterns are source-backed **specification candidates**. They
+are not copied upstream modules, tested DreamNet integrations or execution grants.
+Each machine-readable record in [mechanics.json](../mechanics.json) names the exact
+catalog entry and retained source path from which it was derived, plus inputs,
+outputs, constraints and acceptance cases. All adaptation runtime tests are NOT_RUN.
+
+| Mechanic | What To Reuse | Candidate Consumer | Required Check |
+| --- | --- | --- | --- |
+| Goal plus safety gate | Objectives and hard constraints evaluated independently | University / mission completion | Missing evidence cannot pass; check threshold boundaries |
+| Bounded playhead | Pause, step and seek over retained history | Trade Invader / Gods Eye | Empty history, end bounds and isolation from live actions |
+| Named state dimensions | Explicit identity, units and axis ordering | Agent-chain compiler / scenario inputs | Reject incompatible dimensions before composition |
+| Branch ledger | Retain every named outcome and weight before selection | Fish / MiroDream experiments | Reproducible sampling, trial retention and input hashes |
+| Semantic state legend | Inspectable marks with defined numerical meaning | Gods Eye / Trade Invader | Known-value rendering, zero/missing separation, accessibility |
+| Checkpoint versus achievement | Save work separately from a completion marker | Durable worker / University | Atomic/versioned restore and independently verified completion |
+| Distribution objective | Judge the outcome distribution instead of a lucky sample | Scenario evaluation / paper research | Retain losing trials and evaluate held-out data |
+| Explicit historical correction | Separate live appends from updates to old observations | Market Compiler / Trade Invader | Delayed bars, duplicates and correction rules |
+| Connection versus completeness | A connected transport does not establish a gap-free feed | Market Compiler | Disconnect, reconnect, backfill and duplicate handling |
+| Typed event time | Normalize each event's time units and preserve its meaning | Market Compiler / receipt replay | Millisecond/nanosecond fixtures and receive-time separation |
+
+## How It Plugs Into DreamNet
+
+The proposed path is retained source -> investigation -> behavior specification ->
+bounded fixture tests -> existing KnowledgeCompiler/Keeper review -> consumer
+integration -> independent outcome receipt. This folder supplies the first three
+steps and local binding checks, not the later production or authority stages.
+
+For an agent chain, each link needs explicit input/output contracts, evidence
+freshness and failure handling. Matching glossary terms is insufficient to prove
+two components compose correctly. A generated adaptation must retain lineage and
+test results; permission is evaluated separately at execution time.
+
+## Combining Patterns
+
+**Paper mission replay:** typed feed times + historical correction + bounded
+playhead + semantic legend. The display can explain what Jaggy saw and decided,
+while replay cannot place a live order.
+
+**Practice with consequences:** named inputs + retained scenario branches +
+distribution objectives + a safety gate. Score requirements actually satisfied,
+not visual activity or arbitrary XP. Future scenarios stay labeled hypothetical.
+
+**Resume a mission:** versioned checkpoint + original evidence references +
+completion verification. Restoring progress must neither repeat external sends
+nor treat a stale achievement as current proof.
+
+These combinations are design hypotheses. No claim of novelty, live deployment,
+learning gain, trading edge or customer savings is established here.
+
+Navigation: [library home](index.md), [quantum terms](quantum-glossary.md),
+[finance investigations](finance-first-pass.md), [target shortlist](../TARGETS.md).

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/Quantum-Game/quantum-game-2",
+  "commit": "dbeebfa51a4bc3e6be27784992cc24fb0450c503",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T17:59:05.114Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/LICENSE",
+      "sizeBytes": 1070,
+      "sha256": "654c0964517536d379e5923bf2f1f93cc7131025fd84176bd4bf0457023cc7e6",
+      "gitBlobSha1": "12988fdcb748e3139d3b8b74a85a23268c0d1c7f"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/README.md",
+      "sizeBytes": 3002,
+      "sha256": "92ae2931cd1d568b099b95bca06e8cccadc849b7e92637fc46b2bc6d77ee59a6",
+      "gitBlobSha1": "618a617fb2e91a4966b4e646b64b8b829b14ad25"
+    },
+    {
+      "name": "package.json",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/package.json",
+      "sizeBytes": 2343,
+      "sha256": "d6733716a963e4cdf6d5079c55b3d89367e0c987785063a9a8570dc0122d588e",
+      "gitBlobSha1": "66391608657b22f27dc0da41f3a0ad118cb2bf35"
+    },
+    {
+      "name": "src/engine/controller/goals.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/controller/goals.ts",
+      "sizeBytes": 1897,
+      "sha256": "ae5fb4deb6ed14b3a885f6c2cac4fe5de40aa07dd88b5576aae7dd414932b554",
+      "gitBlobSha1": "e25fcd0b9ec5cf758b10b90f3cb13846f224be5c"
+    },
+    {
+      "name": "src/engine/controller/playhead.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/controller/playhead.ts",
+      "sizeBytes": 6523,
+      "sha256": "49a057271ca31af6aa9095f4c9bb0216d1e5e335666fd8c9021827a61f7abb99",
+      "gitBlobSha1": "bd8fa83ec0670fd053e3f3fcdaf9f18d1bfaf8ef"
+    },
+    {
+      "name": "src/engine/controller/experiment.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/controller/experiment.ts",
+      "sizeBytes": 3515,
+      "sha256": "328c236bd84f560fe7caf3b732e3ffe816c8bc7af32c05076d1193eb86c0cee9",
+      "gitBlobSha1": "ea68ce507539bc490d278a3c6c3db4085fef3b2c"
+    },
+    {
+      "name": "src/engine/controller/game.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/controller/game.ts",
+      "sizeBytes": 2241,
+      "sha256": "75d3df9294feaa57cdf92bcfcaf2d668b2013f81cedf723f4d45bcaafbce80f6",
+      "gitBlobSha1": "9aab8170bd5ed9c2dac3e4804776d02b1b15ab1b"
+    },
+    {
+      "name": "src/engine/model/level.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/model/level.ts",
+      "sizeBytes": 9258,
+      "sha256": "3b26963330a5bd44bd4565102a695bf5b535a582f7fff74250c3ebc78eadb16d",
+      "gitBlobSha1": "941c909562206e5e19d50bcb9811fd4977f435ca"
+    },
+    {
+      "name": "src/engine/model/simulation.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/model/simulation.ts",
+      "sizeBytes": 5908,
+      "sha256": "a369acdb715f2c3686f61ccd1339cfa5ac1c5d73ef2c1245a257337403b5087f",
+      "gitBlobSha1": "b839939ec4074826d871b72b82eee30614442cc9"
+    },
+    {
+      "name": "src/engine/model/coord.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/model/coord.ts",
+      "sizeBytes": 4489,
+      "sha256": "064d4cc9335bcbbf29d26a46bf2fc75c76856193256c31706e2ca0ef6ae7b2c2",
+      "gitBlobSha1": "e83df7230ede5ee28ac4dde93783c62bc466b039"
+    },
+    {
+      "name": "src/engine/interfaces.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/engine/interfaces.ts",
+      "sizeBytes": 738,
+      "sha256": "a2b329857cda759be6aac971a9e9dde29f82a616c2429f02082de3df20d88190",
+      "gitBlobSha1": "d1884fa385dcaed8aa174bd56c942c192a481cd0"
+    },
+    {
+      "name": "src/store/gameModule.ts",
+      "url": "https://raw.githubusercontent.com/Quantum-Game/quantum-game-2/dbeebfa51a4bc3e6be27784992cc24fb0450c503/src/store/gameModule.ts",
+      "sizeBytes": 759,
+      "sha256": "56e266fb6989426d7f21d8f9e9a8aac4a64619125d19e76dd612be3c6e0cfcc8",
+      "gitBlobSha1": "44665954a32f61d15f1c6705876dc24ae444a07e"
+    }
+  ],
+  "analyzedFiles": [
+    "src/engine/controller/goals.ts",
+    "src/engine/controller/playhead.ts",
+    "src/engine/controller/experiment.ts",
+    "src/engine/controller/game.ts",
+    "src/engine/model/level.ts",
+    "src/engine/model/simulation.ts",
+    "src/engine/model/coord.ts",
+    "src/engine/interfaces.ts",
+    "src/store/gameModule.ts"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T17:59:05.183Z",
+    "finishedAt": "2026-10-18T17:59:13.856Z",
+    "parsedFiles": 9,
+    "parseFailures": 0,
+    "textBytesRead": 35328,
+    "findings": 137,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected repository files",
+    "Dependency installation and dependency source",
+    "All target execution and upstream test execution",
+    "Browser interaction, assets and hosted services",
+    "Quantum hardware; scientific validation outside the selected evidence"
+  ]
+}

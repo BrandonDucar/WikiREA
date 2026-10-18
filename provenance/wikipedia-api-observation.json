@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "wikirea.public-observation.v1",
+  "method": "GET",
+  "observedAt": "2026-10-18T17:48:50.9261190Z",
+  "sourceUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=info%7Crevisions%7Ccategories&rvprop=ids%7Ctimestamp%7Csha1&rvlimit=1&cllimit=5&titles=Quantum_game",
+  "requestedTitle": "Quantum_game",
+  "normalizedTitle": "Quantum game",
+  "resolvedTitle": "Quantum game theory",
+  "pageId": 7043646,
+  "revisionId": 1323199306,
+  "revisionTimestamp": "2025-11-20T08:21:50Z",
+  "categoryCountReturned": 5,
+  "complete": false,
+  "continuationRetained": true,
+  "articleBodyIncluded": false,
+  "writesPerformed": false,
+  "limitations": [
+    "Two metadata GET requests total; first observed the unresolved redirect",
+    "No continuation fetched",
+    "No article text or authors retained",
+    "No semantic validation of the article",
+    "This title is not automatically the intended quantum educational-game subject"
+  ]
+}

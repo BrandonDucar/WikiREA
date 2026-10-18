@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/0xPolygon/bor",
+  "commit": "1cdf43c99d97cb9e18860776d8f69a416b49adf4",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T18:27:48.447Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "COPYING",
+      "url": "https://raw.githubusercontent.com/0xPolygon/bor/1cdf43c99d97cb9e18860776d8f69a416b49adf4/COPYING",
+      "sizeBytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "gitBlobSha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "name": "COPYING.LESSER",
+      "url": "https://raw.githubusercontent.com/0xPolygon/bor/1cdf43c99d97cb9e18860776d8f69a416b49adf4/COPYING.LESSER",
+      "sizeBytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "gitBlobSha1": "65c5ca88a67c30becee01c5a8816d964b03862f9"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/0xPolygon/bor/1cdf43c99d97cb9e18860776d8f69a416b49adf4/README.md",
+      "sizeBytes": 7643,
+      "sha256": "6e3674507c4f4234359a9cff0267b88454da62602c0e222650833af561f3cdb8",
+      "gitBlobSha1": "a09e89e7a5636c9f900415c67d6c2e023984bbcc"
+    },
+    {
+      "name": "core/types/bor_receipt.go",
+      "url": "https://raw.githubusercontent.com/0xPolygon/bor/1cdf43c99d97cb9e18860776d8f69a416b49adf4/core/types/bor_receipt.go",
+      "sizeBytes": 3533,
+      "sha256": "722e674f752800a5a865b38137b921c317edc43618474e2a871fc15de8298472",
+      "gitBlobSha1": "176b748282c1666c5776d51995b9bd6d3b216071"
+    },
+    {
+      "name": "eth/downloader/whitelist/finality.go",
+      "url": "https://raw.githubusercontent.com/0xPolygon/bor/1cdf43c99d97cb9e18860776d8f69a416b49adf4/eth/downloader/whitelist/finality.go",
+      "sizeBytes": 3659,
+      "sha256": "24b031ed225a924add7b429c3e650e74222eb34cf79c04c3e2ba8e8f01f26ab4",
+      "gitBlobSha1": "ac35ec18edf11b75ef0ad1a55e80e6c5a7f0ea2c"
+    }
+  ],
+  "analyzedFiles": [],
+  "analysisSummary": null,
+  "omissions": [
+    "All unselected files, dependencies and target execution",
+    "Hosted services, user accounts, API requests and trading",
+    "Generated Massive REST API and OpenAPI schema exceed the selected one-MiB file bound",
+    "Go files retained for manual inspection only; no Go analyzer run"
+  ]
+}

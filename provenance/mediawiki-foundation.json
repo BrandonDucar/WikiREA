@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/wikimedia/mediawiki",
+  "commit": "099df524bb975d7e42e707c0b3299e8d11d1e05d",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "observedAt": "2026-10-18T17:46:56.214Z",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "COPYING",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/COPYING",
+      "sizeBytes": 19309,
+      "sha256": "ea5429175b5ed3b83131d2a3b848ef1bd0142a6192e1027be9e1efaf031a3928",
+      "gitBlobSha1": "2620be23617a894d981b7c9e6c0cef0e4fa588e7"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/README.md",
+      "sizeBytes": 1662,
+      "sha256": "807abc7c68c478c19e64150118576d2e9db5dbecee14db66f5eac481bc52f50d",
+      "gitBlobSha1": "c9a588d0a095f3545f486ff009e9670a1464504e"
+    },
+    {
+      "name": "sql/tables.json",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/sql/tables.json",
+      "sizeBytes": 119911,
+      "sha256": "578323bed2c700338f11cc24192e258ec39d747257b0a4af56cce03b87319568",
+      "gitBlobSha1": "2280ae1dc5d04fbb5139a416524eea82ca11906d"
+    },
+    {
+      "name": "includes/Api/ApiQueryRevisions.php",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/includes/Api/ApiQueryRevisions.php",
+      "sizeBytes": 17354,
+      "sha256": "773872f4e8573c2eeca9969ee803d7f6807cca72584e49c06f75cc596729a590",
+      "gitBlobSha1": "e804ac780612c8603d538685143f90fa696c2c08"
+    },
+    {
+      "name": "includes/Permissions/PermissionManager.php",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/includes/Permissions/PermissionManager.php",
+      "sizeBytes": 76032,
+      "sha256": "1475fd9c8244de96281d7316aaeef7a4d26376fea00c2898b6cc840780f4084d",
+      "gitBlobSha1": "26cc4d77340d7a8089e98a9628a0cea8c25b34a7"
+    },
+    {
+      "name": "includes/Revision/RevisionRecord.php",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/includes/Revision/RevisionRecord.php",
+      "sizeBytes": 21435,
+      "sha256": "74f2c93af579938e45787e865a91c2761fa544de5ac40293017fadaa8fc706fe",
+      "gitBlobSha1": "3c883d48aa1f12b0dbef7f8efbdb8f0f3abc15c0"
+    },
+    {
+      "name": "includes/Title/Title.php",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/includes/Title/Title.php",
+      "sizeBytes": 114376,
+      "sha256": "b94335b262a4313aed9385bac6fdc8663128adb2c2c4381ff0479c7d697c5d64",
+      "gitBlobSha1": "49cf99ba8f7b6bb8efac2b3a4147f4e440b15716"
+    },
+    {
+      "name": "resources/src/mediawiki.Title/Title.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.Title/Title.js",
+      "sizeBytes": 29362,
+      "sha256": "e7e32e6de1e7a8843cfba67cd045eb7e28e106e0650cd98a001e8e2394198526",
+      "gitBlobSha1": "ec39145b7e9599e5bc88a6f5b2a3885341075a69"
+    },
+    {
+      "name": "resources/src/mediawiki.api/AbortController.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.api/AbortController.js",
+      "sizeBytes": 3524,
+      "sha256": "ac0ddff03907ee2f09f6224129ee26181ce78178c605a6a7fcd42b269dafd04a",
+      "gitBlobSha1": "cb874e19ee2460ec18cf8e41397e223e72434b48"
+    },
+    {
+      "name": "resources/src/mediawiki.api/AbortablePromise.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.api/AbortablePromise.js",
+      "sizeBytes": 2108,
+      "sha256": "3db14306c6a93cfc1ffe16d021c6c53da4290f3466900471d410c7f9adda6673",
+      "gitBlobSha1": "58463517b5432fe4384a245b7c9ad2a0fb728ae6"
+    },
+    {
+      "name": "resources/src/mediawiki.api/index.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.api/index.js",
+      "sizeBytes": 28952,
+      "sha256": "3deec7485d7ca048ddc43ee58feb427629865e95d7b00e41711957c864c35d28",
+      "gitBlobSha1": "ab577face642d7fe0e2b29a09748fe0af1ec9e90"
+    },
+    {
+      "name": "resources/src/mediawiki.api/category.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.api/category.js",
+      "sizeBytes": 2326,
+      "sha256": "b24878a5fdc141dd4d47aca34387404297156d08418af4a81dedb3085795edff",
+      "gitBlobSha1": "1b6a0c9c36d5503f84e427cbe88ed13b2a055217"
+    },
+    {
+      "name": "resources/src/mediawiki.api/edit.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.api/edit.js",
+      "sizeBytes": 5250,
+      "sha256": "1c72f2f908637ed5a6c7b22a682d4fa7baf30891b43459c76b5e24bc7379655e",
+      "gitBlobSha1": "35806f0e47915c21d97f4262d7e309682742818a"
+    },
+    {
+      "name": "resources/src/mediawiki.api/parse.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.api/parse.js",
+      "sizeBytes": 1218,
+      "sha256": "cb32afbcfa5695723072717e861902b31db6d3df775d193a5bf661a96f7f269c",
+      "gitBlobSha1": "2f0a0881a77c61e5e5d736bed27ab3e87634e5ad"
+    },
+    {
+      "name": "resources/src/mediawiki.api/watch.js",
+      "url": "https://raw.githubusercontent.com/wikimedia/mediawiki/099df524bb975d7e42e707c0b3299e8d11d1e05d/resources/src/mediawiki.api/watch.js",
+      "sizeBytes": 2960,
+      "sha256": "e57d84cdede6b16f901b0e8433a2487d8dd1a3e11d2095f00c0c663e8bfcb599",
+      "gitBlobSha1": "46e67d236a37a13b31629091727be431ad0f5566"
+    }
+  ],
+  "analyzedFiles": [
+    "resources/src/mediawiki.Title/Title.js",
+    "resources/src/mediawiki.api/AbortController.js",
+    "resources/src/mediawiki.api/AbortablePromise.js",
+    "resources/src/mediawiki.api/index.js",
+    "resources/src/mediawiki.api/category.js",
+    "resources/src/mediawiki.api/edit.js",
+    "resources/src/mediawiki.api/parse.js",
+    "resources/src/mediawiki.api/watch.js"
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "startedAt": "2026-10-18T17:46:56.315Z",
+    "finishedAt": "2026-10-18T17:47:46.202Z",
+    "parsedFiles": 8,
+    "parseFailures": 0,
+    "textBytesRead": 75700,
+    "findings": 29,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported static run; raw local logs omitted. Not a runtime/security certificate."
+  },
+  "omissions": [
+    "Unselected repository files",
+    "All extensions and production configuration",
+    "PHP execution and backend integration",
+    "Wikipedia article corpus",
+    "Wikimedia infrastructure",
+    "Browser interaction and target runtime behavior"
+  ]
+}
