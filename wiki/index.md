@@ -23,8 +23,8 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 | [JavaScript / Node.js](javascript-runtimes.md) | Event ordering, async completion and delivery boundaries | Selected core JS source analyzed; separate installed-runtime probes |
 | [TypeScript](typescript-emit.md) | Erasure, assertions, transpilation versus semantic checking | Two pinned TS files analyzed; Node strip probes are separate |
 | [QuickJS](quickjs-host.md) | Host-driven pending jobs and resource-limit hooks | Selected C manually read; one supplementary JS test file statically parsed |
-| [Deno](runtime-portability.md#deno-permission-scope-matters) | Resource-scoped permissions and native/subprocess boundaries | Official documentation only; runtime NOT_RUN |
-| [Bun](runtime-portability.md#bun-compatibility-is-a-test-obligation) | Node API compatibility as a workload test obligation | Official documentation only; runtime NOT_RUN |
+| [Deno](runtime-portability.md#deno-permission-scope-matters) | Resource-scoped permissions and native/subprocess boundaries | Documentation-only source coverage; separate pinned-runtime probes passed |
+| [Bun](runtime-portability.md#bun-compatibility-is-a-test-obligation) | Node API compatibility as a workload test obligation | Documentation-only source coverage; separate pinned-runtime probes passed |
 
 Eleven REA-backed catalog entries cover **57 selected JS/TS files** with zero parse
 failures. This includes one supplementary QuickJS builtin-test source, not its C

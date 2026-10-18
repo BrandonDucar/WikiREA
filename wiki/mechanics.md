@@ -4,7 +4,9 @@ These twelve behavior patterns are source-backed **specification candidates**. T
 are not copied upstream modules, tested DreamNet integrations or execution grants.
 Each machine-readable record in [mechanics.json](../mechanics.json) names the exact
 catalog entry and retained source path from which it was derived, plus inputs,
-outputs, constraints and acceptance cases. All adaptation runtime tests are NOT_RUN.
+outputs, constraints and acceptance cases. Complete generic adaptations remain
+unqualified; the [runtime follow-up](runtime-execution.md) separately tests a
+partial private sensitivity-worker implementation, not every acceptance case here.
 
 | Mechanic | What To Reuse | Candidate Consumer | Required Check |
 | --- | --- | --- | --- |

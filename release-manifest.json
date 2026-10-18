@@ -213,8 +213,8 @@
     },
     {
       "path": "wiki/index.md",
-      "sizeBytes": 5689,
-      "sha256": "5e73ab53f2c32e9a718ff9fceb21a2048e0c71e5684c5408094085988d829c5b"
+      "sizeBytes": 5747,
+      "sha256": "ba37472a216b5307339944e1c3a52720ef7f76395e70cd841967a889c6a4b2aa"
     },
     {
       "path": "wiki/javascript-runtimes.md",
@@ -223,8 +223,8 @@
     },
     {
       "path": "wiki/mechanics.md",
-      "sizeBytes": 4480,
-      "sha256": "4cb614e2cd0cc1807af62e1d39da18ca007b779cb2cca0bf2ede372ed7f72577"
+      "sizeBytes": 4635,
+      "sha256": "d063c40d5658a8feae9cb7f68ff2cd443aefa34887c0c53d7a9320c743d92693"
     },
     {
       "path": "wiki/mediawiki.md",
