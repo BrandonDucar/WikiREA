@@ -253,13 +253,13 @@
     },
     {
       "path": "wiki/runtime-integration.md",
-      "sizeBytes": 3652,
-      "sha256": "516c6fe0b9209e0231524ec3909541b5ff2ee739541331c0070fc3f05bef0fca"
+      "sizeBytes": 4701,
+      "sha256": "217a6f98997d3f3841f46990ebd9ee143a3bd97caee3013b0b0bd4214d54351e"
     },
     {
       "path": "wiki/runtime-portability.md",
-      "sizeBytes": 3638,
-      "sha256": "f7584fd66a2b79966a09e30b69f179de177b5d48da01881d6b11a32424d25a52"
+      "sizeBytes": 3636,
+      "sha256": "1f9245d203d45642bfb716d13d9312b4ab2a00caa92a57f4d1248b08fe3af3a1"
     },
     {
       "path": "wiki/typescript-emit.md",

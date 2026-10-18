@@ -18,7 +18,9 @@ pages grants no execution authority.
 ## Bounded First Loop
 
 1. Treat public pages/manifests as review evidence, not executable plugins.
-2. Compile their structure through the existing repository adapter.
+2. Compile their structure through the existing repository adapter. Its Markdown
+   support is a bounded, filtered ATX heading index, not full-text/prose analysis;
+   test that the intended lookup terms actually produce candidates.
 3. Retrieve only the relevant version-bound packets for a mission.
 4. Pass those packets through the existing CIR/KnowledgeCompiler/Keeper path.
 5. Preserve candidate status, explicit omissions and unsigned evidence state.
@@ -29,6 +31,21 @@ in-process Keeper readback without contacting a model, database or production
 worker. It does not demonstrate remote delivery, automatic fact acceptance,
 cross-process Keeper persistence or live runtime deployment. Glossary text is not
 automatically promoted into canonical claims.
+
+### Local Canary Observation
+
+On 2026-10-18, the maintainer exercised the four TypeScript, QuickJS, portability
+and glossary documents through that existing path. Four outlines were indexed;
+a serialized warm snapshot reused all four with zero new parses. TypeScript,
+QuickJS, Deno and Bun lookups returned review candidates. The existing compiler
+created a schema-checked receipt and Keeper returned its candidate artifacts.
+Wrong tenant, wrong compiler revision, attempted execution promotion and a
+wrong-type receipt were rejected. No-match remained NO_MATCH.
+
+This is a maintainer-reported local observation, not independently reproduced
+delivery evidence. The receipt added no canonical claims; its Proof Drop stayed
+unsigned. Keeper readback was in-process only. No model/provider, remote database,
+production agent or live trade was involved; billed savings remain unmeasured.
 
 ## Where This Helps The Product
 

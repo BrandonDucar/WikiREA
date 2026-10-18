@@ -14,7 +14,7 @@ stage is documentation-reviewed, not REA-complete. Documentation can change.
 | Deno | Official permission documentation | An installed, tested worker or per-module privilege isolation |
 | Bun | Official Node-compatibility documentation | Identical semantics for a given Node workload |
 
-## Deno: Permission Scope Matters
+## Deno Permission Scope Matters
 
 Deno documents sensitive I/O as denied unless granted, with resource-scoped
 permissions. That is useful for designing least-privilege workers, but code on
@@ -26,7 +26,7 @@ interactive permission expansion, and an externally enforced resource budget.
 These are design requirements, not verified Deno behavior in this library.
 [Official security and permissions guide](https://docs.deno.com/runtime/fundamentals/security/).
 
-## Bun: Compatibility Is A Test Obligation
+## Bun Compatibility Is A Test Obligation
 
 Bun publishes a module-by-module Node compatibility matrix with stated gaps and
 behavioral differences. The reviewed page lists differences for worker resource
