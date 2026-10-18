@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "wikirea.mirofish-component-execution.v1",
+  "scope": "TWO_COMPONENTS_NOT_FULL_SIMULATION",
+  "observedAt": "2026-10-18T20:51:55.286Z",
+  "upstreamCommit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+  "executedSourceFiles": [
+    "backend/app/utils/file_parser.py",
+    "backend/scripts/action_logger.py"
+  ],
+  "chunkCount": 5,
+  "actionCount": 4,
+  "traceRows": 6,
+  "receiptDigest": "sha256:3181f60d805eb6569d201517a25e9bb20e1f27dda1f9f16b1e585d624689379b",
+  "secondProcessReusedReceipt": true,
+  "duplicateTraceRowsAdded": 0,
+  "cancellationRetainedAndReused": true,
+  "modifiedArtifactRejected": true,
+  "changedSourceRejected": true,
+  "incompleteRunBlocked": true,
+  "simulationExecuted": false,
+  "modelCalls": 0,
+  "billedCreditsSaved": null,
+  "authorityGranted": false,
+  "remoteDelivered": false,
+  "bettafishExecuted": false,
+  "privateDataIncluded": false,
+  "rawEvidenceIncluded": false,
+  "independentlyReproduced": false,
+  "reproduction": "scripts/mirofish-probe.py runs separate public fixtures, not the private paper task",
+  "limitations": [
+    "No OASIS/CAMEL model simulation",
+    "No graph or Zep memory task",
+    "No historical fork ancestry proved",
+    "Same operator verification; not certification",
+    "Local Python audit hook is not a hostile-code sandbox",
+    "Receipt reuse, not power-loss or mid-action recovery; incomplete runs require review"
+  ]
+}

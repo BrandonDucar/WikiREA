@@ -2,6 +2,30 @@
   "schemaVersion": "wikirea.public-mechanics.v1",
   "mechanics": [
     {
+      "id": "required-input-and-chunk-progress",
+      "title": "Required inputs and monotonic chunk progress",
+      "sourceRefs": [{"entryId": "mirofish-pipeline", "sourcePath": "backend/app/utils/file_parser.py"}],
+      "inputs": ["Required source manifest", "Extraction results", "Chunk size and overlap"],
+      "outputs": ["Validated seed chunks or explicit preparation failure"],
+      "invariants": ["Extraction failures cannot become source facts", "Every chunk iteration advances", "Omitted required inputs cannot pass silently"],
+      "acceptanceCases": ["Missing required file", "Mixed successful and failed extraction", "Overlap equal to size", "Early sentence boundary with overlap", "Whitespace-only text"],
+      "stage": "SPECIFIED", "adaptationRuntimeTests": 0, "integrationStatus": "PROPOSED_NOT_WIRED", "authorityGranted": false
+    },
+    {
+      "id": "simulation-clock-and-liveness-binding",
+      "title": "Bind simulation clock and process liveness separately",
+      "sourceRefs": [
+        {"entryId": "mirofish-pipeline", "sourcePath": "backend/scripts/action_logger.py"},
+        {"entryId": "mirofish-pipeline", "sourcePath": "backend/app/services/simulation_ipc.py"},
+        {"entryId": "mirofish-pipeline", "sourcePath": "backend/scripts/run_twitter_simulation.py"}
+      ],
+      "inputs": ["Round duration and index", "Wall-clock event time", "Process/session identity and heartbeat"],
+      "outputs": ["Consistent round totals", "Current liveness separately from historical trace"],
+      "invariants": ["An alive file alone cannot establish current work", "Round count uses the actual configured duration", "Log timestamps do not become simulated observation times"],
+      "acceptanceCases": ["Fifteen and thirty minute rounds", "Stale alive file after crash", "Reused process ID with different session", "Clock skew", "Historical result without a current worker"],
+      "stage": "SPECIFIED", "adaptationRuntimeTests": 0, "integrationStatus": "PROPOSED_NOT_WIRED", "authorityGranted": false
+    },
+    {
       "id": "goal-safety-gate",
       "title": "Goal plus safety gate",
       "stage": "SPECIFIED",

@@ -25,6 +25,7 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 | [QuickJS](quickjs-host.md) | Host-driven pending jobs and resource-limit hooks | Selected C manually read; one supplementary JS test file statically parsed |
 | [Deno](runtime-portability.md#deno-permission-scope-matters) | Resource-scoped permissions and native/subprocess boundaries | Documentation-only source coverage; separate pinned-runtime probes passed |
 | [Bun](runtime-portability.md#bun-compatibility-is-a-test-obligation) | Node API compatibility as a workload test obligation | Documentation-only source coverage; separate pinned-runtime probes passed |
+| [MiroFish / BettaFish](fish-pipeline.md) | Seed progress, action traces, clocks and stale liveness | Selected Python manually inspected; two MiroFish modules exercised, not a full simulation |
 
 Eleven REA-backed catalog entries cover **57 selected JS/TS files** with zero parse
 failures. This includes one supplementary QuickJS builtin-test source, not its C
@@ -40,7 +41,8 @@ The retained source collections cover subsets, never entire apps by implication.
 - [Quantum and simulation glossary](quantum-glossary.md): 25 terms, including amplitude versus probability and replay versus reality.
 - [Operational and creative-state glossary](operations-glossary.md): 12 terms covering clocks, history, providers and snapshots.
 - [Language and runtime glossary](runtime-glossary.md): 20 terms separating types, jobs, cancellation, receipts and authority.
-- [Twelve reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
+- [Fish pipeline glossary](fish-pipeline-glossary.md): preparation, manual/model actions, receipts, import lineage and stale liveness.
+- [Fourteen reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
 - [Big and unexpected targets](../TARGETS.md): a twenty-repository discovery shortlist, separate from completed investigations.
 
 ## For Builders And Agents
@@ -57,7 +59,8 @@ The retained source collections cover subsets, never entire apps by implication.
 **Documentation reviewed** means a source describes a capability. **Source inspected**
 means selected implementation text was read. **Statically analyzed** means an
 analyzer processed selected code. **Runtime tested** requires actual behavior
-checks, which are not claimed for these targets. None automatically means deployed,
+checks; explicitly scoped host/component checks do not qualify entire apps.
+None automatically means deployed,
 safe for every context, commercially validated or authorized to act.
 
 Public-source licenses do not automatically cover private services, market data,

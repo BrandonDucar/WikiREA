@@ -18,8 +18,8 @@
     },
     {
       "path": "ATTRIBUTION.md",
-      "sizeBytes": 1121,
-      "sha256": "55daffef0dcd19ecab7f3d6bc9cfd1ddc405b758a6a29d0aca1d240e6e6112d4"
+      "sizeBytes": 1453,
+      "sha256": "3dbdf7242c7e5b7c9f1a93994fef938156d429bb4aba77e2d81ee0e1e4e06589"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "sizeBytes": 4198,
-      "sha256": "6402c42300a1288b37125999793600dbe69ce8ce103d5f1cb41a587c8c86db0a"
+      "sizeBytes": 4479,
+      "sha256": "03d1041c9222b76adffbb731e12152a34aeb047233d896d58c7ff8fa5714e995"
     },
     {
       "path": "TARGETS.md",
@@ -63,13 +63,18 @@
     },
     {
       "path": "library.json",
-      "sizeBytes": 9069,
-      "sha256": "1401eac6837de6356108189a3b0579462e277dba78ef808c0b9ec75a21f604ec"
+      "sizeBytes": 10350,
+      "sha256": "5714c262e02b92db55f21a356d9278a2dd53fae3af790f7526ce6486af1e9506"
     },
     {
       "path": "mechanics.json",
-      "sizeBytes": 11180,
-      "sha256": "a461f2d677da7f83e4eb05f95ac9e95cfad2c97af1706a80df0747e6f17f5a65"
+      "sizeBytes": 13226,
+      "sha256": "8abaf995b674c0342ac5abf51ee816f60382a8f756ba31fd0d13532c0c30d621"
+    },
+    {
+      "path": "provenance/bettafish-pipeline.json",
+      "sizeBytes": 2049,
+      "sha256": "ae6bf52fea949bd5f194b497390b66d50ee90a7d4a4aa5495e5493342b153e75"
     },
     {
       "path": "provenance/bra-ket-vue.json",
@@ -80,6 +85,16 @@
       "path": "provenance/mediawiki-foundation.json",
       "sizeBytes": 7205,
       "sha256": "3275b567874490c781d61977137a8849522edb64878728bfced1dd54eddc4295"
+    },
+    {
+      "path": "provenance/mirofish-pipeline.json",
+      "sizeBytes": 2903,
+      "sha256": "703c983a120b087e2d025fe75bdc49d7a7513d8ea499f92eb9138ef5311c51bb"
+    },
+    {
+      "path": "provenance/mirofish-preparation-execution.json",
+      "sizeBytes": 1413,
+      "sha256": "41aa92984e86f425f593e30334c1edcc2a9ebe3adad1be0b4556ba0d802d5d1d"
     },
     {
       "path": "provenance/nasa-openmct.json",
@@ -157,6 +172,11 @@
       "sha256": "306c7c3f36ad0b943abc83f050f9c729b3134cefdb821dbb693daa09ee4018cd"
     },
     {
+      "path": "scripts/mirofish-probe.py",
+      "sizeBytes": 2850,
+      "sha256": "c676cb29e3fa81003fe5b7a25c023333b77a59d03d2404ced90f28f89dc645fa"
+    },
+    {
       "path": "scripts/portable-probe.js",
       "sizeBytes": 2001,
       "sha256": "ce66f393066de5fe3b4478ea2c0cab77a2e6ad3090c14fc5afe52a781dcc1085"
@@ -183,13 +203,13 @@
     },
     {
       "path": "scripts/verify.mjs",
-      "sizeBytes": 10193,
-      "sha256": "d7407a54e142b2e34e5b0b51dc8ffa16c8dadb0c049cc3f72f738803fd878ffa"
+      "sizeBytes": 12059,
+      "sha256": "3f7d045b708e685a26ef8dcf35a56c11b757a29c5bebfb5e56248ddc1db096d9"
     },
     {
       "path": "scripts/verify.test.mjs",
-      "sizeBytes": 3162,
-      "sha256": "8ec141f24a460bdf944c4650299da7d745e5122551ceb938a64f87431c24968d"
+      "sizeBytes": 3911,
+      "sha256": "fb59ac9002c0ddcc4701c327827ce008dac723d06186d290049666ce9e27db4e"
     },
     {
       "path": "wiki/bra-ket-vue.md",
@@ -207,14 +227,24 @@
       "sha256": "0bfc05ae17de28d66f24a28539c00a1268bdf8182343da5a8c5c7c041de79d23"
     },
     {
+      "path": "wiki/fish-pipeline-glossary.md",
+      "sizeBytes": 1829,
+      "sha256": "f9293b0d0d47d67606e6254662d2ff67946565d14f33c4c00d6d6b659909bca5"
+    },
+    {
+      "path": "wiki/fish-pipeline.md",
+      "sizeBytes": 6757,
+      "sha256": "244c6bfd3ff8af52247e6c8e9e86ab0230834cf6652f7502dfc80c774cc0eff5"
+    },
+    {
       "path": "wiki/glossary.md",
       "sizeBytes": 6189,
       "sha256": "a0fad3815af42bcf0a26762daf20344cf2e7b7d00589c39260e95a0ee1abfa92"
     },
     {
       "path": "wiki/index.md",
-      "sizeBytes": 5747,
-      "sha256": "ba37472a216b5307339944e1c3a52720ef7f76395e70cd841967a889c6a4b2aa"
+      "sizeBytes": 6106,
+      "sha256": "8788dd27c888646c7bcb15d7de181fa52da6d22354de7078a9f2b2c3d9f883bf"
     },
     {
       "path": "wiki/javascript-runtimes.md",
@@ -223,8 +253,8 @@
     },
     {
       "path": "wiki/mechanics.md",
-      "sizeBytes": 4635,
-      "sha256": "d063c40d5658a8feae9cb7f68ff2cd443aefa34887c0c53d7a9320c743d92693"
+      "sizeBytes": 5212,
+      "sha256": "3889482b77e7ed1db323adb1f96937e9c0880a90ecbef77a85efe4138954a2fe"
     },
     {
       "path": "wiki/mediawiki.md",

@@ -17,3 +17,8 @@ Names including Wikipedia, MediaWiki, TradingView, Robinhood, Polygon, Massive,
 NASA and Adobe identify investigation subjects. No affiliation, endorsement,
 complete compatibility or recreation of proprietary internals is asserted.
 PhotoCraft is studied as an independent editor, not as Adobe source.
+
+MiroFish and BettaFish are credited to their upstream contributors at the pinned
+revisions in the source manifests. Their AGPL-3.0 and GPL-2.0 license texts are
+upstream terms, not replaced by this wiki's documentation or original-probe license.
+No upstream code is bundled. See [pipeline scope and limits](wiki/fish-pipeline.md).

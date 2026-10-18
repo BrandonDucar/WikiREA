@@ -12,7 +12,7 @@ const rootFiles = new Set(['README.md', 'LICENSE', 'LICENSE-DOCS.md', 'PROVENANC
 export function allowed(name) {
   return rootFiles.has(name) || /^wiki\/[a-z0-9-]+\.md$/.test(name) ||
     /^provenance\/[a-z0-9-]+\.json$/.test(name) ||
-    /^scripts\/(verify\.mjs|verify\.test\.mjs|fetch-source\.mjs|events-probe\.test\.mjs|runtime-probe\.test\.mjs|portable-probe\.js|portable\.test\.mjs|run-portable\.mjs|quickjs\.Dockerfile)$/.test(name) ||
+    /^scripts\/(verify\.mjs|verify\.test\.mjs|fetch-source\.mjs|events-probe\.test\.mjs|runtime-probe\.test\.mjs|portable-probe\.js|portable\.test\.mjs|run-portable\.mjs|quickjs\.Dockerfile|mirofish-probe\.py)$/.test(name) ||
     name === 'assets/wikirea-poster.png' || name === '.github/workflows/verify.yml';
 }
 export function safeRelative(name) {
@@ -82,6 +82,25 @@ export function validateRuntimeSnapshot(report) {
     for (const c of runtime.cases) { assert.match(c.name, /^[a-z0-9-]+$/); assert([true, false, null].includes(c.passed)); }
   }
 }
+export function validateFishExecution(report, source) {
+  assert.equal(report.schemaVersion, 'wikirea.mirofish-component-execution.v1');
+  assert.equal(report.upstreamCommit, source.commit);
+  assert.equal(report.scope, 'TWO_COMPONENTS_NOT_FULL_SIMULATION');
+  assert.equal(report.simulationExecuted, false); assert.equal(report.bettafishExecuted, false);
+  assert.equal(report.privateDataIncluded, false); assert.equal(report.rawEvidenceIncluded, false);
+  assert.equal(report.authorityGranted, false); assert.equal(report.remoteDelivered, false);
+  assert.equal(report.modelCalls, 0); assert.equal(report.billedCreditsSaved, null);
+  assert.equal(report.independentlyReproduced, false);
+  assert(Number.isFinite(Date.parse(report.observedAt)));
+  assert.deepEqual(report.executedSourceFiles, ['backend/app/utils/file_parser.py', 'backend/scripts/action_logger.py']);
+  for (const name of report.executedSourceFiles) assert(source.files.some(f => f.name === name));
+  assert(Number.isSafeInteger(report.chunkCount) && report.chunkCount > 0 && report.chunkCount <= 256);
+  assert.equal(report.actionCount, 4); assert.equal(report.traceRows, 6);
+  assert.match(report.receiptDigest, /^sha256:[a-f0-9]{64}$/);
+  for (const key of ['secondProcessReusedReceipt', 'cancellationRetainedAndReused', 'modifiedArtifactRejected', 'changedSourceRejected', 'incompleteRunBlocked'])
+    assert.equal(report[key], true);
+  assert.equal(report.duplicateTraceRowsAdded, 0);
+}
 async function filesAt(folder, prefix = '') {
   const result = [];
   for (const ent of await fs.readdir(folder, { withFileTypes: true })) {
@@ -140,6 +159,11 @@ export async function verify(base = root, refresh = false) {
       safeRelative(entry.provenance); assert(names.includes(entry.provenance));
       const manifest = JSON.parse(await fs.readFile(path.join(base, entry.provenance), 'utf8'));
       validateSource(manifest); sources.set(entry.id, new Set(manifest.files.map(x => x.name)));
+      if (entry.componentExecutionEvidence) {
+        assert.equal(entry.componentExecutionEvidence, 'provenance/mirofish-preparation-execution.json');
+        assert.equal(entry.id, 'mirofish-pipeline'); assert.equal(entry.targetExecuted, false);
+        validateFishExecution(JSON.parse(await fs.readFile(path.join(base, entry.componentExecutionEvidence), 'utf8')), manifest);
+      }
       assert.equal(manifest.repository, entry.repository); assert.equal(manifest.commit, entry.commit);
       if (entry.stage === 'STATIC_ANALYZED_SUBSET') { assert(manifest.analysisSummary); parsed += manifest.analysisSummary.parsedFiles; }
       else assert(!manifest.analysisSummary);

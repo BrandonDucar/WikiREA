@@ -16,10 +16,13 @@ software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
 | Finance | [TradingView, Polygon.io / Massive, Polygon blockchain and Robinhood](wiki/finance-first-pass.md) |
 | Games and quantum visualization | [Quantum Game 2](wiki/quantum-game-2.md), [Quantum Tensors](wiki/quantum-tensors.md), [BraKetVue](wiki/bra-ket-vue.md), [Quantum Game Classic](wiki/quantum-game-classic.md) |
 | Languages and runtimes | [JavaScript / Node.js](wiki/javascript-runtimes.md), [TypeScript emit](wiki/typescript-emit.md), [QuickJS host loop](wiki/quickjs-host.md), [Deno and Bun boundaries](wiki/runtime-portability.md) |
+| Agent pipelines | [MiroFish and BettaFish](wiki/fish-pipeline.md): exact-source preparation, trace retention and remaining simulation gates |
 
 Glossaries: [investigation](wiki/glossary.md), [finance](wiki/finance-glossary.md),
 [quantum/simulation](wiki/quantum-glossary.md), [operational state](wiki/operations-glossary.md),
 [language/runtime](wiki/runtime-glossary.md).
+[Fish pipeline terms](wiki/fish-pipeline-glossary.md) distinguish personas,
+simulators, components, action traces and liveness bindings.
 See [what to investigate next](TARGETS.md).
 For application ideas, see [how runtime findings can feed DreamNet](wiki/runtime-integration.md).
 The [runtime execution follow-up](wiki/runtime-execution.md) records actual Deno,

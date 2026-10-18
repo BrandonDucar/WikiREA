@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/666ghj/BettaFish",
+  "commit": "b67928ff1ce515dd7672408221fb1e9500d0972d",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "sizeBytes": 33120,
+      "sha256": "44686cfd8b09cd489ecbd2f740e0a31d7006584b90e7446dd29661f06f0213ec",
+      "gitBlobSha1": "a4831ac3a432ee77b0718d8f4879cd1e88a26cf8",
+      "url": "https://raw.githubusercontent.com/666ghj/BettaFish/b67928ff1ce515dd7672408221fb1e9500d0972d/LICENSE"
+    },
+    {
+      "name": "THIRD_PARTY_NOTICES.md",
+      "sizeBytes": 1312,
+      "sha256": "c06c009e8ceec34acfdc74d28038011d4b5d38e3adb9112dfbc6cc8a3131fe60",
+      "gitBlobSha1": "54cb54b7c5ec32242dec556714aac4766f13b7e3",
+      "url": "https://raw.githubusercontent.com/666ghj/BettaFish/b67928ff1ce515dd7672408221fb1e9500d0972d/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "name": "QueryEngine/agent.py",
+      "sizeBytes": 19053,
+      "sha256": "ea0386b565e94b47f73f380b9c4867002a4ef553e71505d4be47704feae11476",
+      "gitBlobSha1": "10859810c45100b37fe7a67b40c5c98b1b6c1431",
+      "url": "https://raw.githubusercontent.com/666ghj/BettaFish/b67928ff1ce515dd7672408221fb1e9500d0972d/QueryEngine/agent.py"
+    },
+    {
+      "name": "ForumEngine/monitor.py",
+      "sizeBytes": 37835,
+      "sha256": "02849a53c7f52caaf44d4c1be1f02848543cb6599b7916c5cfd35804fe447689",
+      "gitBlobSha1": "5291a4845603060c5f082bdc58fd63800e9ca0c2",
+      "url": "https://raw.githubusercontent.com/666ghj/BettaFish/b67928ff1ce515dd7672408221fb1e9500d0972d/ForumEngine/monitor.py"
+    },
+    {
+      "name": "ReportEngine/agent.py",
+      "sizeBytes": 64464,
+      "sha256": "cadfdea86b88d8ff7e522bf5a3b1f804b97fa00549cfe2ebcdda6424f8e34773",
+      "gitBlobSha1": "ffbbd22699b0f2360d86a2593f73c6cbf457aacb",
+      "url": "https://raw.githubusercontent.com/666ghj/BettaFish/b67928ff1ce515dd7672408221fb1e9500d0972d/ReportEngine/agent.py"
+    }
+  ],
+  "analyzedFiles": []
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/666ghj/MiroFish",
+  "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "files": [
+    {
+      "name": "LICENSE",
+      "sizeBytes": 34523,
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+      "gitBlobSha1": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+      "url": "https://raw.githubusercontent.com/666ghj/MiroFish/7657031ac01184afe2cb220f5ee3545573b5e843/LICENSE"
+    },
+    {
+      "name": "backend/pyproject.toml",
+      "sizeBytes": 1080,
+      "sha256": "e923fa98056d1b6085ab789993a1d05f31bfc1e8cbbb6b9aa17d49663253c1a2",
+      "gitBlobSha1": "f972e1205ed5930442fb3f0b589e79eb0406fd5e",
+      "url": "https://raw.githubusercontent.com/666ghj/MiroFish/7657031ac01184afe2cb220f5ee3545573b5e843/backend/pyproject.toml"
+    },
+    {
+      "name": "backend/scripts/action_logger.py",
+      "sizeBytes": 10256,
+      "sha256": "2f446d46d95b334fc2fa07f3cf1b69c11dbd33b625d8c4a0cd6b9d9b076d7632",
+      "gitBlobSha1": "38d025a6c8afe79f614333503d2abe8d5a89a891",
+      "url": "https://raw.githubusercontent.com/666ghj/MiroFish/7657031ac01184afe2cb220f5ee3545573b5e843/backend/scripts/action_logger.py"
+    },
+    {
+      "name": "backend/scripts/run_twitter_simulation.py",
+      "sizeBytes": 27362,
+      "sha256": "cd766f1a55b5cec48a776ce5bb7b072dcfe7a07bd8b0f63f7c1b2b5464b772bf",
+      "gitBlobSha1": "caab9e9d35b63bcf6dcd765b080dc901a571fe69",
+      "url": "https://raw.githubusercontent.com/666ghj/MiroFish/7657031ac01184afe2cb220f5ee3545573b5e843/backend/scripts/run_twitter_simulation.py"
+    },
+    {
+      "name": "backend/app/utils/file_parser.py",
+      "sizeBytes": 5616,
+      "sha256": "f1adfdda1a6674ad7af76dc95a9b76f388470098e4cf514be908440c4167c398",
+      "gitBlobSha1": "5e540434140734f7fa3fac1e0c1e39f4d16c6063",
+      "url": "https://raw.githubusercontent.com/666ghj/MiroFish/7657031ac01184afe2cb220f5ee3545573b5e843/backend/app/utils/file_parser.py"
+    },
+    {
+      "name": "backend/app/services/text_processor.py",
+      "sizeBytes": 1743,
+      "sha256": "0760c306c7aebdb3d1457dbbdbfa503549fa9cb3b5201cb6a83845c7b9a5c046",
+      "gitBlobSha1": "91e32acc5df2ddff921f973109197e4273c8dadc",
+      "url": "https://raw.githubusercontent.com/666ghj/MiroFish/7657031ac01184afe2cb220f5ee3545573b5e843/backend/app/services/text_processor.py"
+    },
+    {
+      "name": "backend/app/services/simulation_ipc.py",
+      "sizeBytes": 12297,
+      "sha256": "2cd596faed552c29f8e486b6641677787c2c38eeab822a82512be07e9b4088d9",
+      "gitBlobSha1": "9d70d0bea60e6630cdfdcbf1f83b285d6d4f8718",
+      "url": "https://raw.githubusercontent.com/666ghj/MiroFish/7657031ac01184afe2cb220f5ee3545573b5e843/backend/app/services/simulation_ipc.py"
+    }
+  ],
+  "analyzedFiles": []
+}

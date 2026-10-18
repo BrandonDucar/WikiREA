@@ -6,6 +6,31 @@
   "sourceBodiesIncluded": false,
   "entries": [
     {
+      "id": "mirofish-pipeline",
+      "title": "MiroFish: seed preparation, action traces and simulation boundaries",
+      "stage": "SOURCE_INSPECTED_SUBSET",
+      "article": "wiki/fish-pipeline.md",
+      "repository": "https://github.com/666ghj/MiroFish",
+      "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/mirofish-pipeline.json",
+      "targetExecuted": false,
+      "componentExecutionEvidence": "provenance/mirofish-preparation-execution.json",
+      "licenseNotes": "AGPL-3.0 license text; source not bundled. Two component modules exercised separately, not a full application run."
+    },
+    {
+      "id": "bettafish-pipeline",
+      "title": "BettaFish: research interfaces are not a defensive veto helper",
+      "stage": "SOURCE_INSPECTED_SUBSET",
+      "article": "wiki/fish-pipeline.md",
+      "repository": "https://github.com/666ghj/BettaFish",
+      "commit": "b67928ff1ce515dd7672408221fb1e9500d0972d",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/bettafish-pipeline.json",
+      "targetExecuted": false,
+      "licenseNotes": "GPL-2.0 license text and third-party notices retained separately; source not bundled. No BettaFish execution."
+    },
+    {
       "id": "mediawiki-foundation",
       "title": "Wikipedia software foundation: MediaWiki",
       "stage": "STATIC_ANALYZED_SUBSET",

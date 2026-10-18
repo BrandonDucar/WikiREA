@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { root, allowed, safeRelative, checkText, validateSource, verify } from './verify.mjs';
+import { root, allowed, safeRelative, checkText, validateSource, validateFishExecution, verify } from './verify.mjs';
 
 test('public catalog, files, links, source bindings and release hashes validate', async () => {
   const result = await verify(); assert(result.investigations >= 16); assert(result.reaParsedFiles >= 57);
@@ -52,4 +52,14 @@ test('Deno and Bun source coverage remains documentation-only while execution ev
     assert.equal(entry.runtimeEvidence, 'provenance/runtime-execution.json');
     assert.equal(entry.provenance, undefined);
   }
+});
+
+test('MiroFish Python component execution is source-bound, not a full simulator or JS analysis', async () => {
+  const source = JSON.parse(await fs.readFile(path.join(root, 'provenance/mirofish-pipeline.json'), 'utf8'));
+  const report = JSON.parse(await fs.readFile(path.join(root, 'provenance/mirofish-preparation-execution.json'), 'utf8'));
+  validateSource(source); assert.deepEqual(source.analyzedFiles, []);
+  validateFishExecution(report, source);
+  for (const patch of [{ simulationExecuted: true }, { upstreamCommit: '0'.repeat(40) },
+    { privateDataIncluded: true }, { executedSourceFiles: ['missing.py'] }, { modelCalls: 1 }])
+    assert.throws(() => validateFishExecution({ ...report, ...patch }, source));
 });
