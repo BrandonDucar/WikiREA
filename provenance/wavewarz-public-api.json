@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/CandyToyBox/wavewarz-intelligence",
+  "commit": "c4ce342616b63c8dbfd621655ccfaa7b8363cc1c",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [],
+  "omissions": ["No REA analyzer or target application executed", "No deployed-source parity, chain indexing or settlement verification", "No authenticated chat, agent registration, audio analysis, votes, orders or wallet actions", "Imported database, event aggregation and price helpers not traced"],
+  "files": [
+    {"name":"README.md","sizeBytes":2652,"sha256":"a5d93d8c489348c57d15d3a2bbfd2b0fa563e16de14d2dbcb61baac63a55493d","gitBlobSha1":"605fc333a5abb96a0f4831ec66b35ebf875542eb","url":"https://raw.githubusercontent.com/CandyToyBox/wavewarz-intelligence/c4ce342616b63c8dbfd621655ccfaa7b8363cc1c/README.md"},
+    {"name":"src/app/api/public/stats/route.ts","sizeBytes":5750,"sha256":"5318ee374b0ec644a2528de42b833c0092243d2442cdaf6b40d8e69352ff80d5","gitBlobSha1":"ba534ca355d1f1e21085f9edef60ee5df960755e","url":"https://raw.githubusercontent.com/CandyToyBox/wavewarz-intelligence/c4ce342616b63c8dbfd621655ccfaa7b8363cc1c/src/app/api/public/stats/route.ts"},
+    {"name":"src/app/api/public/battles/route.ts","sizeBytes":8909,"sha256":"b8519ed0f5af947400290be0cda9f3e176c225788b8f2b3ab94d7d75444a4f1b","gitBlobSha1":"92ba856db6fde6f2f3dbbe00db3f979155b378b4","url":"https://raw.githubusercontent.com/CandyToyBox/wavewarz-intelligence/c4ce342616b63c8dbfd621655ccfaa7b8363cc1c/src/app/api/public/battles/route.ts"},
+    {"name":"src/app/api/public/events/route.ts","sizeBytes":2186,"sha256":"7f2143553f3daace796d85b15c6c6a9176e6ec4766be6e6e546c324d1cf25a75","gitBlobSha1":"84c76fb4a829c47e2019f1a9a55153abc744f6bd","url":"https://raw.githubusercontent.com/CandyToyBox/wavewarz-intelligence/c4ce342616b63c8dbfd621655ccfaa7b8363cc1c/src/app/api/public/events/route.ts"},
+    {"name":"src/lib/battle-metrics.ts","sizeBytes":6443,"sha256":"0ec87a705dc16875993208a2f8b735be1a4c176748284453b903667dcc63e9af","gitBlobSha1":"8f0e8c1112c4a811da7e37fc38605a55f9223ba1","url":"https://raw.githubusercontent.com/CandyToyBox/wavewarz-intelligence/c4ce342616b63c8dbfd621655ccfaa7b8363cc1c/src/lib/battle-metrics.ts"}
+  ]
+}

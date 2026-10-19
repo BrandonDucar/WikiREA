@@ -1,6 +1,6 @@
 # Reusable Mechanics
 
-These fourteen behavior patterns are source-backed **specification candidates**. They
+These fifteen behavior patterns are source-backed **specification candidates**. They
 are not copied upstream modules, tested DreamNet integrations or execution grants.
 Each machine-readable record in [mechanics.json](../mechanics.json) names the exact
 catalog entry and retained source path from which it was derived, plus inputs,
@@ -10,6 +10,7 @@ partial private sensitivity-worker implementation, not every acceptance case her
 
 | Mechanic | What To Reuse | Candidate Consumer | Required Check |
 | --- | --- | --- | --- |
+| Observation, outcome and authority | Carry source freshness and round/event scope without inheriting write rights | Music/event observers and paper research | Stale source, missing result, different round/event winners and denied writes |
 | Goal plus safety gate | Objectives and hard constraints evaluated independently | University / mission completion | Missing evidence cannot pass; check threshold boundaries |
 | Bounded playhead | Pause, step and seek over retained history | Trade Invader / Gods Eye | Empty history, end bounds and isolation from live actions |
 | Named state dimensions | Explicit identity, units and axis ordering | Agent-chain compiler / scenario inputs | Reject incompatible dimensions before composition |

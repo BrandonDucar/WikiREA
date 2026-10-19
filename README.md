@@ -75,6 +75,16 @@ automatically install upstream dependencies or execute inspected applications.
 
 ## Contribute
 
+Prepare a compact task for the [ten-role contributor team](wiki/contributors.md):
+
+```sh
+node scripts/contributors.mjs --preflight
+node scripts/contributors.mjs --task music-events
+```
+
+These commands do not start agents, call models or publish. The first music/event
+entry traces [WaveWarZ's observation boundaries](wiki/wavewarz.md).
+
 Bring a precise question, an authorized public target and checkable evidence.
 See [contribution guidance](CONTRIBUTING.md) and the [entry template](ENTRY_TEMPLATE.md).
 Corrections and limitations are as valuable as new entries.

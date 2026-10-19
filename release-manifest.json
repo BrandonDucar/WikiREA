@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "sizeBytes": 688,
-      "sha256": "16d082b054b428e5929edc5efdf42be8855bdd15666596792ff49f22734db81b"
+      "sizeBytes": 798,
+      "sha256": "8a9cebf63886f780197bb8462ef1f602a2b5d02b87e6f703a40408f6b01c8ada"
     },
     {
       "path": ".gitignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "sizeBytes": 1477,
-      "sha256": "d23956190379293661dd12ea4ae8b9b7f3a03241547a4959ef6b6b5c6aab32c5"
+      "sizeBytes": 1674,
+      "sha256": "935566a64fb76afc1a0ad1f72c9de3c3d1a6cfed6594e4852a619591072a10ea"
     },
     {
       "path": "ENTRY_TEMPLATE.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "sizeBytes": 4479,
-      "sha256": "03d1041c9222b76adffbb731e12152a34aeb047233d896d58c7ff8fa5714e995"
+      "sizeBytes": 4816,
+      "sha256": "2f8483e1a5a24adfca0f5c77341d7890d6ddfa6c7fba60f9c2e2db661b449bf1"
     },
     {
       "path": "TARGETS.md",
@@ -63,13 +63,13 @@
     },
     {
       "path": "library.json",
-      "sizeBytes": 10350,
-      "sha256": "5714c262e02b92db55f21a356d9278a2dd53fae3af790f7526ce6486af1e9506"
+      "sizeBytes": 11019,
+      "sha256": "7482daa2bc9f31528123c562a47dda1746f00a8486ffe2d0c0c84983bb7f8000"
     },
     {
       "path": "mechanics.json",
-      "sizeBytes": 13226,
-      "sha256": "8abaf995b674c0342ac5abf51ee816f60382a8f756ba31fd0d13532c0c30d621"
+      "sizeBytes": 14468,
+      "sha256": "af1c47c09dfaeb17d2c10997a2835a498e5e62c541de08679d6e3df3e3c37de5"
     },
     {
       "path": "provenance/bettafish-pipeline.json",
@@ -157,9 +157,24 @@
       "sha256": "8d6e0b4d69b5fac88d9c4f549e6784c2ae228919a6c830f3227f8ddb073bb72d"
     },
     {
+      "path": "provenance/wavewarz-public-api.json",
+      "sizeBytes": 2312,
+      "sha256": "1997a476281bc4c57236e1bd3f26ba491e6f52c5761e3a195ac0af12520a30e3"
+    },
+    {
       "path": "provenance/wikipedia-api-observation.json",
       "sizeBytes": 993,
       "sha256": "e3a0f61928d2cbd43d449c4233301d70ac9970be395429ef7176425e32961760"
+    },
+    {
+      "path": "scripts/contributors.mjs",
+      "sizeBytes": 6520,
+      "sha256": "6125608858c9c85e568431bee3ca2b17a8611a808f1de87407f73a5e0cd1c6d3"
+    },
+    {
+      "path": "scripts/contributors.test.mjs",
+      "sizeBytes": 2847,
+      "sha256": "039028016d674204809bdbab118c1a03a534b3f89506c1427f9bbf6108b46812"
     },
     {
       "path": "scripts/events-probe.test.mjs",
@@ -203,8 +218,8 @@
     },
     {
       "path": "scripts/verify.mjs",
-      "sizeBytes": 12059,
-      "sha256": "3f7d045b708e685a26ef8dcf35a56c11b757a29c5bebfb5e56248ddc1db096d9"
+      "sizeBytes": 12101,
+      "sha256": "e4bce577a95e3fe88ea74270a395c485eb3cbef98c99a1dd77d32052ce41fbbf"
     },
     {
       "path": "scripts/verify.test.mjs",
@@ -215,6 +230,11 @@
       "path": "wiki/bra-ket-vue.md",
       "sizeBytes": 3123,
       "sha256": "83d245ba34c941aada1537bf9bc0690d66e63b108e92a93cb502247e6fb42af9"
+    },
+    {
+      "path": "wiki/contributors.md",
+      "sizeBytes": 3733,
+      "sha256": "ff2e27db1055103dad61defbb6789569005bd1f153002e90b201e8bc98fd33cd"
     },
     {
       "path": "wiki/finance-first-pass.md",
@@ -243,8 +263,8 @@
     },
     {
       "path": "wiki/index.md",
-      "sizeBytes": 6106,
-      "sha256": "8788dd27c888646c7bcb15d7de181fa52da6d22354de7078a9f2b2c3d9f883bf"
+      "sizeBytes": 6509,
+      "sha256": "2d2fc2071a0e16237f13e989fad281c08255418c4e09d632d2326c84933a71e0"
     },
     {
       "path": "wiki/javascript-runtimes.md",
@@ -253,8 +273,8 @@
     },
     {
       "path": "wiki/mechanics.md",
-      "sizeBytes": 5212,
-      "sha256": "3889482b77e7ed1db323adb1f96937e9c0880a90ecbef77a85efe4138954a2fe"
+      "sizeBytes": 5452,
+      "sha256": "d23ba364169bf9479e52a13898e43d869b4d7369756ba96a1d2bbd846b100c82"
     },
     {
       "path": "wiki/mediawiki.md",
@@ -325,6 +345,16 @@
       "path": "wiki/typescript-emit.md",
       "sizeBytes": 3722,
       "sha256": "99b14282ccf55b8cd55470f023c82042f1520bf8d639a637bea5e806cb8ee1a3"
+    },
+    {
+      "path": "wiki/wavewarz-glossary.md",
+      "sizeBytes": 1492,
+      "sha256": "183baa582c15accf2cdd11dcea2d38df93fe13650eacc724126c06c1089986a1"
+    },
+    {
+      "path": "wiki/wavewarz.md",
+      "sizeBytes": 5061,
+      "sha256": "68651fb8ecce26b8ab6e9f165b5afe8bafd2512127588627f37e492a6116cde5"
     }
   ]
 }

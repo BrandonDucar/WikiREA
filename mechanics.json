@@ -2,6 +2,20 @@
   "schemaVersion": "wikirea.public-mechanics.v1",
   "mechanics": [
     {
+      "id": "observation-outcome-authority-separation",
+      "title": "Separate observation freshness, outcome scope and action authority",
+      "sourceRefs": [
+        {"entryId": "wavewarz-public-api", "sourcePath": "src/app/api/public/battles/route.ts"},
+        {"entryId": "wavewarz-public-api", "sourcePath": "src/app/api/public/events/route.ts"},
+        {"entryId": "wavewarz-public-api", "sourcePath": "src/lib/battle-metrics.ts"}
+      ],
+      "inputs": ["Source-bound read", "Retrieval and source timestamps", "Round/event identity", "Separately authorized action request"],
+      "outputs": ["Attributed observation", "Unknown or reported outcome", "Independent action admission decision"],
+      "invariants": ["Response time is not source freshness", "Timer-live is not stream or settlement proof", "Read access does not authorize writes", "Round and event results are distinct"],
+      "acceptanceCases": ["Fresh response wrapping stale state", "Ended round with missing winner", "Different round/event winners", "Future-dated creation time", "Read credential presented for a write"],
+      "stage": "SPECIFIED", "adaptationRuntimeTests": 0, "integrationStatus": "PROPOSED_NOT_WIRED", "authorityGranted": false
+    },
+    {
       "id": "required-input-and-chunk-progress",
       "title": "Required inputs and monotonic chunk progress",
       "sourceRefs": [{"entryId": "mirofish-pipeline", "sourcePath": "backend/app/utils/file_parser.py"}],

@@ -17,5 +17,7 @@ jobs:
       - run: node --test scripts/events-probe.test.mjs
       - run: node --test scripts/runtime-probe.test.mjs
       - run: node --test scripts/portable.test.mjs
+      - run: node --test scripts/contributors.test.mjs
+      - run: node scripts/contributors.mjs --preflight
       - run: node scripts/verify.mjs
       - run: git diff --check

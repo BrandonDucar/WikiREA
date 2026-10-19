@@ -6,6 +6,18 @@
   "sourceBodiesIncluded": false,
   "entries": [
     {
+      "id": "wavewarz-public-api",
+      "title": "WaveWarZ: public observation is not participation authority",
+      "stage": "SOURCE_INSPECTED_SUBSET",
+      "article": "wiki/wavewarz.md",
+      "repository": "https://github.com/CandyToyBox/wavewarz-intelligence",
+      "commit": "c4ce342616b63c8dbfd621655ccfaa7b8363cc1c",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/wavewarz-public-api.json",
+      "targetExecuted": false,
+      "licenseNotes": "No license grant established by this subset review. No upstream source, music, wallets or response bodies bundled. Public API reads were separate from application execution."
+    },
+    {
       "id": "mirofish-pipeline",
       "title": "MiroFish: seed preparation, action traces and simulation boundaries",
       "stage": "SOURCE_INSPECTED_SUBSET",

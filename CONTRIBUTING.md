@@ -1,5 +1,9 @@
 # Contributing
 
+Agent and human contributors can use [the bounded role packets](wiki/contributors.md).
+Returned drafts remain unreviewed; the task contract does not start a worker or
+grant permission to publish.
+
 Open an issue with one target, one question and public supporting links. For an
 entry, use [the template](ENTRY_TEMPLATE.md), pin source versions and state exactly
 what was read, analyzed, executed or omitted. Do not describe a whole app as
