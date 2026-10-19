@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/Google-Cloud-AI/alphaevolve-on-googlecloud",
+  "commit": "674dd5e558e917320c251c085e47fae33e1bbcff",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [],
+  "omissions": [
+    "Selected Python source manually inspected; no REA analyzer run or upstream application execution",
+    "No dependency installation, model inference, benchmark replication or cloud provisioning",
+    "Imported dependencies and full source tree not inspected",
+    "Proposed reuse and acceptance cases are not runtime integrations"
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sizeBytes": 19749,
+      "sha256": "a865e0e04abf32f9843c0895a2df7876a503f74b328e97f8e207131b79031516",
+      "gitBlobSha1": "3183e0a16edd6320c2e6872f75bc10f4599093d8",
+      "url": "https://raw.githubusercontent.com/Google-Cloud-AI/alphaevolve-on-googlecloud/674dd5e558e917320c251c085e47fae33e1bbcff/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "sizeBytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "gitBlobSha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "url": "https://raw.githubusercontent.com/Google-Cloud-AI/alphaevolve-on-googlecloud/674dd5e558e917320c251c085e47fae33e1bbcff/LICENSE"
+    },
+    {
+      "name": "src/alpha_evolve/controller.py",
+      "sizeBytes": 5771,
+      "sha256": "c404697e7ff7f321f5adc663d4de55fd1e52fac3501a24d6f55a9070eb341a91",
+      "gitBlobSha1": "d5bbef4fdf377d97106555aed89d807bf567d8a5",
+      "url": "https://raw.githubusercontent.com/Google-Cloud-AI/alphaevolve-on-googlecloud/674dd5e558e917320c251c085e47fae33e1bbcff/src/alpha_evolve/controller.py"
+    },
+    {
+      "name": "src/alpha_evolve/workers.py",
+      "sizeBytes": 7371,
+      "sha256": "a7466a077004f38fd91612b33a0dcbd5613f10733d80c455676d5e127e7e76e6",
+      "gitBlobSha1": "7111d1497f8d945d1e8e1216ff6026a6ab72451f",
+      "url": "https://raw.githubusercontent.com/Google-Cloud-AI/alphaevolve-on-googlecloud/674dd5e558e917320c251c085e47fae33e1bbcff/src/alpha_evolve/workers.py"
+    },
+    {
+      "name": "src/alpha_evolve/client.py",
+      "sizeBytes": 11846,
+      "sha256": "beefd9ac6a0c791f6ea025169e1d7bbbe36c1e59db50512fb5d1e3149b56ada3",
+      "gitBlobSha1": "57117193d9cf5afa383eb66ff9a2a7f136a74535",
+      "url": "https://raw.githubusercontent.com/Google-Cloud-AI/alphaevolve-on-googlecloud/674dd5e558e917320c251c085e47fae33e1bbcff/src/alpha_evolve/client.py"
+    },
+    {
+      "name": "src/alpha_evolve/models.py",
+      "sizeBytes": 14112,
+      "sha256": "7470593aeb8f157b71eadb475051700228d69d7cd4620e86dd920adea0090b23",
+      "gitBlobSha1": "ad09e9c8a3a3f86746b8b284a5f62a509ae99447",
+      "url": "https://raw.githubusercontent.com/Google-Cloud-AI/alphaevolve-on-googlecloud/674dd5e558e917320c251c085e47fae33e1bbcff/src/alpha_evolve/models.py"
+    }
+  ]
+}

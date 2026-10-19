@@ -9,6 +9,9 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 
 | Topic | What You Can Learn | Evidence Stage |
 | --- | --- | --- |
+| [DSPy](dspy-optimization.md) | Metric-bound prompt/program candidates, demos and validation partitions | Four Python implementation files manually inspected; no optimizer run |
+| [Darwin Godel Machine](darwin-godel-machine.md) | Parent/child archive, patch checks and harness boundaries | Three Python implementation files manually inspected; no evolution run |
+| [AlphaEvolve Cloud client](alphaevolve-client.md) | Acquisition, evaluation, submission and cancellation | Four official client Python files manually inspected; managed engine not inspected |
 | [WaveWarZ](wavewarz.md) | Source time, API time, rounds, events and observation authority | Five pinned files manually inspected; separate bounded public HTTP readback |
 | [Wikipedia / MediaWiki](mediawiki.md) | Titles, revisions, edits, categories and evidence-bound pages | Selected JS static analysis, selected PHP reading and one bounded public API observation |
 | [TradingView](finance-first-pass.md#tradingview) | Chart updates, corrections, crosshair and time ranges | Selected public-library TS static analysis |
@@ -43,12 +46,14 @@ The retained source collections cover subsets, never entire apps by implication.
 - [Operational and creative-state glossary](operations-glossary.md): 12 terms covering clocks, history, providers and snapshots.
 - [Language and runtime glossary](runtime-glossary.md): 20 terms separating types, jobs, cancellation, receipts and authority.
 - [Fish pipeline glossary](fish-pipeline-glossary.md): preparation, manual/model actions, receipts, import lineage and stale liveness.
-- [Fifteen reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
+- [Self-improvement glossary](self-improvement-glossary.md): metrics, holdouts, archives, promotion and handoff states.
+- [Eighteen reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
 - [Big and unexpected targets](../TARGETS.md): a twenty-repository discovery shortlist, separate from completed investigations.
 
 ## For Builders And Agents
 
 - [Contributor team](contributors.md): ten bounded role packets, deterministic preflight and review gates; no running-agent claim.
+- [Improvement-loop comparison](self-improvement-comparison.md): public-source differences, proposed DreamNet reuse and product experiments.
 - [WaveWarZ terms](wavewarz-glossary.md): observation, identity, time and participation boundaries.
 
 - [Catalog](../library.json): exact commits, coverage, source manifests and analyzer receipts.

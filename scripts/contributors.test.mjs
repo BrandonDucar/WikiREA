@@ -22,6 +22,19 @@ test('one compact task preserves its exact plan binding', () => {
   assert.throws(() => taskForRole(p, 'invented-worker'), /ROLE/);
   assert(Buffer.byteLength(JSON.stringify(task)) < 6000);
 });
+
+test('existing roles receive new pinned targets without starting more workers', () => {
+  const p = plan();
+  for (const [role, entryId] of [['application-tracer', 'alphaevolve-cloud-client'],
+    ['adversarial-reviewer', 'darwin-godel-machine'], ['glossary-and-mechanics-editor', 'dspy-optimization']]) {
+    const task = taskForRole(p, role);
+    const source = task.sources.find(s => s.entryId === entryId);
+    assert(source && /^[a-f0-9]{40}$/.test(source.commit));
+    assert.equal(task.targetExecutionAllowed, false);
+    assert.equal(task.publicationAllowed, false);
+  }
+  assert.equal(p.runningAgents, 0);
+});
 test('plan identity changes when catalog source binding changes', () => {
   const c = structuredClone(catalog);
   c.entries[0].commit = 'a'.repeat(40);

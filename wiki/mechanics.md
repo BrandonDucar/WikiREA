@@ -1,6 +1,6 @@
 # Reusable Mechanics
 
-These fifteen behavior patterns are source-backed **specification candidates**. They
+These eighteen behavior patterns are source-backed **specification candidates**. They
 are not copied upstream modules, tested DreamNet integrations or execution grants.
 Each machine-readable record in [mechanics.json](../mechanics.json) names the exact
 catalog entry and retained source path from which it was derived, plus inputs,
@@ -25,6 +25,27 @@ partial private sensitivity-worker implementation, not every acceptance case her
 | Budgeted host pump | Advance bounded jobs and acknowledge only retained results | Worker / scenario runner | Rejections, finite budgets, late effects and restart boundaries |
 | Required inputs and chunk progress | Reject failed seed extraction and non-advancing iteration | MiroDream preparation / compiler ingestion | Required-file failure, invalid overlap and sentence-boundary progress |
 | Simulation clock and liveness | Keep round duration, record time and current worker identity distinct | Fish / Trade Invader / Gods Eye | Alternate round sizes, stale alive files and restarted sessions |
+| Metric-bound candidate selection | Retain baseline, metric, partitions and full/minibatch distinctions | Compiler / skill revisions | Partition leakage, missing metric and final holdout regression |
+| Lineage archive with separate promotion | Retain descendants without certifying every one as better | Fish branches / compiler proposals | Inferior archived candidate, changed baseline and unsupported test report |
+| Evaluation handoff with reconciliation | Separate queue handling, evaluation, submission and remote acknowledgment | Swarm / acceptance receipts | Duplicate submission, stale lock, timeout and late result |
+
+## Metric-Bound Candidate Selection
+
+Derived from [DSPy](dspy-optimization.md). Bind the baseline and candidate to a
+metric version, dataset partition and budget. A validation score used for search
+is not an untouched final test. Improvement does not grant execution authority.
+
+## Lineage Archive With Separate Promotion
+
+Derived from [DGM](darwin-godel-machine.md). Search history may retain a weaker
+candidate; admission to operational use requires an independent comparison and
+evidence review. Archive size is not an improvement count.
+
+## Evaluation Handoff With Reconciliation
+
+Derived from the [AlphaEvolve client](alphaevolve-client.md). Distinguish acquired,
+queued, evaluated, submitted, acknowledged and reconciled states. A local queue
+acknowledgment or cancellation request is not remote completion or rollback.
 
 ## How It Plugs Into DreamNet
 

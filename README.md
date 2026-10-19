@@ -17,12 +17,16 @@ software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
 | Games and quantum visualization | [Quantum Game 2](wiki/quantum-game-2.md), [Quantum Tensors](wiki/quantum-tensors.md), [BraKetVue](wiki/bra-ket-vue.md), [Quantum Game Classic](wiki/quantum-game-classic.md) |
 | Languages and runtimes | [JavaScript / Node.js](wiki/javascript-runtimes.md), [TypeScript emit](wiki/typescript-emit.md), [QuickJS host loop](wiki/quickjs-host.md), [Deno and Bun boundaries](wiki/runtime-portability.md) |
 | Agent pipelines | [MiroFish and BettaFish](wiki/fish-pipeline.md): exact-source preparation, trace retention and remaining simulation gates |
+| Self-improvement systems | [DSPy](wiki/dspy-optimization.md), [Darwin Godel Machine](wiki/darwin-godel-machine.md), [AlphaEvolve Cloud client](wiki/alphaevolve-client.md): candidate search, lineage and evaluation handoffs |
 
 Glossaries: [investigation](wiki/glossary.md), [finance](wiki/finance-glossary.md),
 [quantum/simulation](wiki/quantum-glossary.md), [operational state](wiki/operations-glossary.md),
 [language/runtime](wiki/runtime-glossary.md).
 [Fish pipeline terms](wiki/fish-pipeline-glossary.md) distinguish personas,
 simulators, components, action traces and liveness bindings.
+[Self-improvement terms](wiki/self-improvement-glossary.md) and the
+[comparison](wiki/self-improvement-comparison.md) separate optimization from proof
+of improvement and map proposed reuse into existing consumers.
 See [what to investigate next](TARGETS.md).
 For application ideas, see [how runtime findings can feed DreamNet](wiki/runtime-integration.md).
 The [runtime execution follow-up](wiki/runtime-execution.md) records actual Deno,
@@ -55,6 +59,7 @@ node --test scripts/verify.test.mjs
 node --test scripts/events-probe.test.mjs
 node --test scripts/runtime-probe.test.mjs
 node --test scripts/portable.test.mjs
+node --test scripts/contributors.test.mjs
 ```
 
 Preview an investigation's source-retrieval plan without network access:

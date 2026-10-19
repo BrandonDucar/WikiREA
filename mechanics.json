@@ -2,6 +2,42 @@
   "schemaVersion": "wikirea.public-mechanics.v1",
   "mechanics": [
     {
+      "id": "metric-bound-candidate-selection",
+      "title": "Metric-bound candidate selection",
+      "sourceRefs": [
+        {"entryId": "dspy-optimization", "sourcePath": "dspy/teleprompt/mipro_optimizer_v2.py"},
+        {"entryId": "dspy-optimization", "sourcePath": "dspy/teleprompt/gepa/gepa.py"}
+      ],
+      "inputs": ["Versioned baseline and candidate", "Metric identity", "Train/validation/final holdout partitions", "Finite search budget"],
+      "outputs": ["Partition-bound scores", "Independent promotion proposal"],
+      "invariants": ["Search validation is not final holdout", "Candidate cannot rewrite its own acceptance criteria", "A better score grants no authority"],
+      "acceptanceCases": ["Overlapping partitions", "Missing baseline", "Metric error", "Minibatch win followed by full-set regression", "Final holdout failure"],
+      "stage": "SPECIFIED", "adaptationRuntimeTests": 0, "integrationStatus": "PROPOSED_NOT_WIRED", "authorityGranted": false
+    },
+    {
+      "id": "lineage-archive-with-separate-promotion",
+      "title": "Lineage archive with separate promotion",
+      "sourceRefs": [{"entryId": "darwin-godel-machine", "sourcePath": "DGM_outer.py"}],
+      "inputs": ["Parent/child identities", "Retained attempts", "Fixed baseline and evaluator", "Independent admission rules"],
+      "outputs": ["Exploration archive", "Separately reviewed promotion decision"],
+      "invariants": ["Archive membership is not improvement", "Failed branches remain attributable", "Self-report is not independent test evidence"],
+      "acceptanceCases": ["Inferior archived child", "Changed baseline", "Missing patch", "Claimed test without execution binding", "Interrupted evaluation"],
+      "stage": "SPECIFIED", "adaptationRuntimeTests": 0, "integrationStatus": "PROPOSED_NOT_WIRED", "authorityGranted": false
+    },
+    {
+      "id": "evaluation-handoff-with-reconciliation",
+      "title": "Evaluation handoff with reconciliation",
+      "sourceRefs": [
+        {"entryId": "alphaevolve-cloud-client", "sourcePath": "src/alpha_evolve/workers.py"},
+        {"entryId": "alphaevolve-cloud-client", "sourcePath": "src/alpha_evolve/controller.py"}
+      ],
+      "inputs": ["Candidate identity and acquisition binding", "Evaluator result", "Submission response", "Durable readback"],
+      "outputs": ["Separate local and remote lifecycle states", "Uncertain-outcome reconciliation"],
+      "invariants": ["Queue acknowledgment is not remote acceptance", "Cancellation is not rollback", "Unknown submission outcome is not safe to blindly repeat"],
+      "acceptanceCases": ["Stale lock", "Evaluator exception", "Duplicate submission", "Lost response after remote commit", "Empty queue with active work", "Late result after cancellation"],
+      "stage": "SPECIFIED", "adaptationRuntimeTests": 0, "integrationStatus": "PROPOSED_NOT_WIRED", "authorityGranted": false
+    },
+    {
       "id": "observation-outcome-authority-separation",
       "title": "Separate observation freshness, outcome scope and action authority",
       "sourceRefs": [

@@ -1,10 +1,31 @@
 {
   "schemaVersion": "wikirea.public-library.v1",
   "name": "WikiREA",
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "rawEvidenceIncluded": false,
   "sourceBodiesIncluded": false,
   "entries": [
+    {
+      "id": "dspy-optimization", "title": "DSPy: prompt/program optimization and evaluator boundaries",
+      "stage": "SOURCE_INSPECTED_SUBSET", "article": "wiki/dspy-optimization.md",
+      "repository": "https://github.com/stanfordnlp/dspy", "commit": "2872410cef53b91d04a00e6ca017636f82ef7f6c",
+      "sourceScope": "EXPLICIT_SUBSET", "provenance": "provenance/dspy-optimization.json", "targetExecuted": false,
+      "licenseNotes": "MIT license read. Original findings only; no upstream source bundled or model optimization run."
+    },
+    {
+      "id": "darwin-godel-machine", "title": "Darwin Godel Machine: evolving agent code without confusing selection with safety",
+      "stage": "SOURCE_INSPECTED_SUBSET", "article": "wiki/darwin-godel-machine.md",
+      "repository": "https://github.com/jennyzzt/dgm", "commit": "a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2",
+      "sourceScope": "EXPLICIT_SUBSET", "provenance": "provenance/darwin-godel-machine.json", "targetExecuted": false,
+      "licenseNotes": "Apache-2.0 license read; separate dependencies, datasets and benchmark terms not cleared by this study. No upstream source bundled."
+    },
+    {
+      "id": "alphaevolve-cloud-client", "title": "AlphaEvolve: public client and evaluator boundary, not managed-service internals",
+      "stage": "SOURCE_INSPECTED_SUBSET", "article": "wiki/alphaevolve-client.md",
+      "repository": "https://github.com/Google-Cloud-AI/alphaevolve-on-googlecloud", "commit": "674dd5e558e917320c251c085e47fae33e1bbcff",
+      "sourceScope": "EXPLICIT_SUBSET", "provenance": "provenance/alphaevolve-cloud-client.json", "targetExecuted": false,
+      "licenseNotes": "Apache-2.0 client license read. Managed service, cloud access and model entitlements are separate; no upstream source bundled."
+    },
     {
       "id": "wavewarz-public-api",
       "title": "WaveWarZ: public observation is not participation authority",

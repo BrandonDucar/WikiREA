@@ -63,3 +63,36 @@ test('MiroFish Python component execution is source-bound, not a full simulator 
     { privateDataIncluded: true }, { executedSourceFiles: ['missing.py'] }, { modelCalls: 1 }])
     assert.throws(() => validateFishExecution({ ...report, ...patch }, source));
 });
+
+test('improvement-system studies bind manual Python subsets without inventing execution or analyzer coverage', async () => {
+  const catalog = JSON.parse(await fs.readFile(path.join(root, 'library.json'), 'utf8'));
+  let files = 0, python = 0;
+  for (const id of ['dspy-optimization', 'darwin-godel-machine', 'alphaevolve-cloud-client']) {
+    const entry = catalog.entries.find(e => e.id === id);
+    assert.equal(entry.stage, 'SOURCE_INSPECTED_SUBSET');
+    assert.equal(entry.targetExecuted, false);
+    const source = JSON.parse(await fs.readFile(path.join(root, entry.provenance), 'utf8'));
+    validateSource(source);
+    assert.equal(source.commit, entry.commit);
+    assert.deepEqual(source.analyzedFiles, []);
+    assert.equal(source.analysisSummary, undefined);
+    assert(source.omissions.some(s => s.includes('no REA analyzer')));
+    files += source.files.length;
+    python += source.files.filter(f => f.name.endsWith('.py')).length;
+  }
+  assert.equal(files, 17); assert.equal(python, 11);
+  const alpha = catalog.entries.find(e => e.id === 'alphaevolve-cloud-client');
+  assert.equal(alpha.repository, 'https://github.com/Google-Cloud-AI/alphaevolve-on-googlecloud');
+});
+
+test('new improvement mechanics remain proposals, not runtime qualification or authority', async () => {
+  const { mechanics } = JSON.parse(await fs.readFile(path.join(root, 'mechanics.json'), 'utf8'));
+  for (const id of ['metric-bound-candidate-selection', 'lineage-archive-with-separate-promotion', 'evaluation-handoff-with-reconciliation']) {
+    const mechanic = mechanics.find(m => m.id === id);
+    assert.equal(mechanic.stage, 'SPECIFIED');
+    assert.equal(mechanic.adaptationRuntimeTests, 0);
+    assert.equal(mechanic.integrationStatus, 'PROPOSED_NOT_WIRED');
+    assert.equal(mechanic.authorityGranted, false);
+    assert(mechanic.acceptanceCases.length >= 5);
+  }
+});

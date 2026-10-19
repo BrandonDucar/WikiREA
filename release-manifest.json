@@ -18,8 +18,8 @@
     },
     {
       "path": "ATTRIBUTION.md",
-      "sizeBytes": 1453,
-      "sha256": "3dbdf7242c7e5b7c9f1a93994fef938156d429bb4aba77e2d81ee0e1e4e06589"
+      "sizeBytes": 1850,
+      "sha256": "53df62732d9ab29620b7ba220a0098d3ecf73199e1c49ac2f887892e349c1cf0"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "sizeBytes": 4816,
-      "sha256": "2f8483e1a5a24adfca0f5c77341d7890d6ddfa6c7fba60f9c2e2db661b449bf1"
+      "sizeBytes": 5298,
+      "sha256": "0fe69f96f3ff2f8b136f5d39b8ecc55e0a95bc414bae0c53d1f31b0a78da3db8"
     },
     {
       "path": "TARGETS.md",
@@ -63,13 +63,18 @@
     },
     {
       "path": "library.json",
-      "sizeBytes": 11019,
-      "sha256": "7482daa2bc9f31528123c562a47dda1746f00a8486ffe2d0c0c84983bb7f8000"
+      "sizeBytes": 12821,
+      "sha256": "9df0fe3483e37762cc5e7b4bd77ed6875d47a250bac79e8d9d1a9f229eb1bcb5"
     },
     {
       "path": "mechanics.json",
-      "sizeBytes": 14468,
-      "sha256": "af1c47c09dfaeb17d2c10997a2835a498e5e62c541de08679d6e3df3e3c37de5"
+      "sizeBytes": 17379,
+      "sha256": "a0888b9d4038945b16dae04df7053a407ebdaa38ad77cdab6991fcf9d9a4520a"
+    },
+    {
+      "path": "provenance/alphaevolve-cloud-client.json",
+      "sizeBytes": 2967,
+      "sha256": "98383be9f676c7d6c5623d197305bd672c4ecf9a5ef406a2506789a39f5e8df3"
     },
     {
       "path": "provenance/bettafish-pipeline.json",
@@ -80,6 +85,16 @@
       "path": "provenance/bra-ket-vue.json",
       "sizeBytes": 4957,
       "sha256": "bff86c6de2d2683284b7d03f746d7a1c5493b642ab0c390e2ffa5a5c547e61e6"
+    },
+    {
+      "path": "provenance/darwin-godel-machine.json",
+      "sizeBytes": 2323,
+      "sha256": "5c989def5ba6c366d4868933a69bb9cabc850a42b92c82c6833897220e878d7e"
+    },
+    {
+      "path": "provenance/dspy-optimization.json",
+      "sizeBytes": 2803,
+      "sha256": "bdd7554d93887937894b164c09260665e45d7002539aacf05b140ba4387d8331"
     },
     {
       "path": "provenance/mediawiki-foundation.json",
@@ -168,13 +183,13 @@
     },
     {
       "path": "scripts/contributors.mjs",
-      "sizeBytes": 6520,
-      "sha256": "6125608858c9c85e568431bee3ca2b17a8611a808f1de87407f73a5e0cd1c6d3"
+      "sizeBytes": 6593,
+      "sha256": "0e0caafc46bbc02aa1540b8d9726e8c237b96565905a13cae70db30e425c7550"
     },
     {
       "path": "scripts/contributors.test.mjs",
-      "sizeBytes": 2847,
-      "sha256": "039028016d674204809bdbab118c1a03a534b3f89506c1427f9bbf6108b46812"
+      "sizeBytes": 3467,
+      "sha256": "358dec9a93eed980a93dc53d11229acec385bb139f25e6e59a73590b89f5e807"
     },
     {
       "path": "scripts/events-probe.test.mjs",
@@ -223,8 +238,13 @@
     },
     {
       "path": "scripts/verify.test.mjs",
-      "sizeBytes": 3911,
-      "sha256": "fb59ac9002c0ddcc4701c327827ce008dac723d06186d290049666ce9e27db4e"
+      "sizeBytes": 5782,
+      "sha256": "388f2f057cadfb53127a845ada7e801834ce74a0f950b9160ebf7e868f9f89de"
+    },
+    {
+      "path": "wiki/alphaevolve-client.md",
+      "sizeBytes": 4566,
+      "sha256": "100bd176955b66594a19dc9a077c6d4e8b379a66abd3ceb830b0391deec262a8"
     },
     {
       "path": "wiki/bra-ket-vue.md",
@@ -235,6 +255,16 @@
       "path": "wiki/contributors.md",
       "sizeBytes": 3733,
       "sha256": "ff2e27db1055103dad61defbb6789569005bd1f153002e90b201e8bc98fd33cd"
+    },
+    {
+      "path": "wiki/darwin-godel-machine.md",
+      "sizeBytes": 4181,
+      "sha256": "2f13d8663f1d7919a2382ab16582d37e34506889242d3d652d37785a1cf4267d"
+    },
+    {
+      "path": "wiki/dspy-optimization.md",
+      "sizeBytes": 4608,
+      "sha256": "4594b59b8cb4bf680c7e538f1c002fdab686d1611b8511263048845de3e7a664"
     },
     {
       "path": "wiki/finance-first-pass.md",
@@ -263,8 +293,8 @@
     },
     {
       "path": "wiki/index.md",
-      "sizeBytes": 6509,
-      "sha256": "2d2fc2071a0e16237f13e989fad281c08255418c4e09d632d2326c84933a71e0"
+      "sizeBytes": 7329,
+      "sha256": "de28b849c05b0e0d8f9e26ff0a537fb9908abb6bf3c4cd45ce9273e02db59b11"
     },
     {
       "path": "wiki/javascript-runtimes.md",
@@ -273,8 +303,8 @@
     },
     {
       "path": "wiki/mechanics.md",
-      "sizeBytes": 5452,
-      "sha256": "d23ba364169bf9479e52a13898e43d869b4d7369756ba96a1d2bbd846b100c82"
+      "sizeBytes": 6907,
+      "sha256": "a91d020df7d1881eae916c925bc739ba91035e4dd2a6b472666f87dfef70881c"
     },
     {
       "path": "wiki/mediawiki.md",
@@ -340,6 +370,16 @@
       "path": "wiki/runtime-portability.md",
       "sizeBytes": 3956,
       "sha256": "20812a62289ae3d7dbae1b2a615127e9dbb1217ca1dca7128d9d71b4c141827a"
+    },
+    {
+      "path": "wiki/self-improvement-comparison.md",
+      "sizeBytes": 3850,
+      "sha256": "1d09a3209c19bc52d26e531452e7c405d65fb90d073c52fced82ca3dd70bd70a"
+    },
+    {
+      "path": "wiki/self-improvement-glossary.md",
+      "sizeBytes": 2359,
+      "sha256": "c744b21197b24d7e7586a62a6d6589fae5446a510935baf260c3e6a54885da32"
     },
     {
       "path": "wiki/typescript-emit.md",

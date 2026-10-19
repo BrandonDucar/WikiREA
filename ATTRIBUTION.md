@@ -22,3 +22,9 @@ MiroFish and BettaFish are credited to their upstream contributors at the pinned
 revisions in the source manifests. Their AGPL-3.0 and GPL-2.0 license texts are
 upstream terms, not replaced by this wiki's documentation or original-probe license.
 No upstream code is bundled. See [pipeline scope and limits](wiki/fish-pipeline.md).
+
+DSPy is credited to its upstream contributors under MIT. Darwin Godel Machine
+and Google's AlphaEvolve Cloud client are credited to their upstream contributors
+under Apache-2.0 at the pinned revisions in their manifests. AlphaEvolve's managed
+service is not bundled or claimed to be open source. The independent summaries
+do not relicense model services, benchmark data or imported dependencies.

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/stanfordnlp/dspy",
+  "commit": "2872410cef53b91d04a00e6ca017636f82ef7f6c",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [],
+  "omissions": [
+    "Selected Python source manually inspected; no REA analyzer run or upstream application execution",
+    "No dependency installation, model inference, benchmark replication or cloud provisioning",
+    "Imported dependencies and full source tree not inspected",
+    "Proposed reuse and acceptance cases are not runtime integrations"
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sizeBytes": 4788,
+      "sha256": "9b2fa5d078b4e4aafe6f8a91d5677c735427e149a235708d98a18c28db8efdea",
+      "gitBlobSha1": "fe73d8cc8973045e34397b852c6f40670380c363",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/dspy/2872410cef53b91d04a00e6ca017636f82ef7f6c/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "sizeBytes": 1085,
+      "sha256": "fc84421fcf968a696680dacf66ad53db769f699f557690127c5ccb3f6358cfdb",
+      "gitBlobSha1": "be3f5c0e3fc7e6b0e7c9dddd9db313ab15bfa62b",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/dspy/2872410cef53b91d04a00e6ca017636f82ef7f6c/LICENSE"
+    },
+    {
+      "name": "dspy/teleprompt/bootstrap.py",
+      "sizeBytes": 12147,
+      "sha256": "583bcc2495355e253552548bbc80fb10b9b6bb73495fe2452ae2f6f289aafba3",
+      "gitBlobSha1": "58f45b41202f548f3249c96c1c3ee00f9f5517c9",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/dspy/2872410cef53b91d04a00e6ca017636f82ef7f6c/dspy/teleprompt/bootstrap.py"
+    },
+    {
+      "name": "dspy/teleprompt/mipro_optimizer_v2.py",
+      "sizeBytes": 34889,
+      "sha256": "6bf7632836d3a54ab0da3f38a8f1963813472312e9c0e3f2ff19b4377af407f3",
+      "gitBlobSha1": "0d7c6f6883a6f9c1b8c95cecadc3e0e118637c4d",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/dspy/2872410cef53b91d04a00e6ca017636f82ef7f6c/dspy/teleprompt/mipro_optimizer_v2.py"
+    },
+    {
+      "name": "dspy/teleprompt/gepa/gepa.py",
+      "sizeBytes": 37993,
+      "sha256": "52af685c894ea7070816abc2769fef2568f5f61a430b83d7b6be850142c68867",
+      "gitBlobSha1": "c202c0c9d42af7f346acedc2f0bf580441e36514",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/dspy/2872410cef53b91d04a00e6ca017636f82ef7f6c/dspy/teleprompt/gepa/gepa.py"
+    },
+    {
+      "name": "dspy/evaluate/evaluate.py",
+      "sizeBytes": 15767,
+      "sha256": "2c6fcbef742c8e1023cd25c1ac342b1dc58dbeba33ff4cb5f029a69aab0a5fcb",
+      "gitBlobSha1": "86452de8278a57da783593e4f24f8503440513a9",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/dspy/2872410cef53b91d04a00e6ca017636f82ef7f6c/dspy/evaluate/evaluate.py"
+    }
+  ]
+}

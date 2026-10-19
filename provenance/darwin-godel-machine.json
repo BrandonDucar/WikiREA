@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/jennyzzt/dgm",
+  "commit": "a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [],
+  "omissions": [
+    "Selected Python source manually inspected; no REA analyzer run or upstream application execution",
+    "No dependency installation, model inference, benchmark replication or cloud provisioning",
+    "Imported dependencies and full source tree not inspected",
+    "Proposed reuse and acceptance cases are not runtime integrations"
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sizeBytes": 4232,
+      "sha256": "9760f30330e519946592ae88178f579dd717c3e55d3d461322e5facfa09c6bd4",
+      "gitBlobSha1": "e4ed9fa7747d265536961a98d3361000b58e396d",
+      "url": "https://raw.githubusercontent.com/jennyzzt/dgm/a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "sizeBytes": 11361,
+      "sha256": "84b7504ce8dda1f37f592cdf67ad21371864583720d79ea289b0b0c75bfcdb17",
+      "gitBlobSha1": "ba43cb811f1fdc963d9601012bb51f69c2598ca0",
+      "url": "https://raw.githubusercontent.com/jennyzzt/dgm/a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2/LICENSE"
+    },
+    {
+      "name": "DGM_outer.py",
+      "sizeBytes": 15699,
+      "sha256": "239bc76f0e1b78210b8f7b3757b1082f6ca07db3537d6af50a45bf97709795ed",
+      "gitBlobSha1": "2c87f4bdc303d0ab3c4ad2333b03ecf0a74392be",
+      "url": "https://raw.githubusercontent.com/jennyzzt/dgm/a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2/DGM_outer.py"
+    },
+    {
+      "name": "self_improve_step.py",
+      "sizeBytes": 19726,
+      "sha256": "6f2ec364b11e7f6d35391ea66896fa2394cbca3bc59d68cf7352c2a77aa8cca7",
+      "gitBlobSha1": "c8e41b5050f169959882dec1afca2ff94d69303e",
+      "url": "https://raw.githubusercontent.com/jennyzzt/dgm/a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2/self_improve_step.py"
+    },
+    {
+      "name": "coding_agent.py",
+      "sizeBytes": 7611,
+      "sha256": "0fe9f4806fee18a481c9298a6d1ab6d754bb81666031598d86a9da2b632a5829",
+      "gitBlobSha1": "c32dfa371159b91be5573a46472e2f1a1724282f",
+      "url": "https://raw.githubusercontent.com/jennyzzt/dgm/a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2/coding_agent.py"
+    }
+  ]
+}

@@ -6,15 +6,15 @@ import { root, digest, checkText, safeRelative, verify } from './verify.mjs';
 
 const roles = [
   ['source-curator', ['mediawiki-foundation'], 'Which source bindings and coverage limits need refreshing?'],
-  ['application-tracer', ['photocraft-history', 'nasa-openmct'], 'Trace one state transition without claiming full application coverage.'],
+  ['application-tracer', ['photocraft-history', 'nasa-openmct', 'alphaevolve-cloud-client'], 'Trace one state transition without claiming full application coverage.'],
   ['runtime-researcher', ['typescript-emit', 'quickjs-host'], 'Separate language behavior, host behavior and unexecuted test proposals.'],
   ['game-mechanic-researcher', ['quantum-game-2', 'quantum-game-classic'], 'Identify one reusable goal, replay or failure-feedback mechanic.'],
   ['simulation-researcher', ['quantum-tensors', 'mirofish-pipeline'], 'Where do simulated time, measured time and retained evidence diverge?'],
   ['hardware-interoperability-scout', [], 'Select one public, inert device-format target from TARGETS.md; pin it before inspection.'],
   ['market-data-researcher', ['tradingview-lightweight-charts', 'polygon-massive-client'], 'How are corrections, units, gaps and execution authority separated?'],
   ['music-events', ['wavewarz-public-api'], 'Separate observation time, source freshness, battle rounds and event results.'],
-  ['adversarial-reviewer', ['bettafish-pipeline', 'nodejs-events'], 'Find one claim whose evidence or completion condition is insufficient.'],
-  ['glossary-and-mechanics-editor', ['bra-ket-vue', 'mediawiki-foundation'], 'Connect one precise term to a source-bound mechanic and proposed acceptance case.'],
+  ['adversarial-reviewer', ['bettafish-pipeline', 'nodejs-events', 'darwin-godel-machine'], 'Find one claim whose evidence or completion condition is insufficient.'],
+  ['glossary-and-mechanics-editor', ['bra-ket-vue', 'mediawiki-foundation', 'dspy-optimization'], 'Connect one precise term to a source-bound mechanic and proposed acceptance case.'],
 ];
 
 export function buildContributorPlan(catalog) {
