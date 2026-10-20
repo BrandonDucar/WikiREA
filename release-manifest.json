@@ -48,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "sizeBytes": 5298,
-      "sha256": "0fe69f96f3ff2f8b136f5d39b8ecc55e0a95bc414bae0c53d1f31b0a78da3db8"
+      "sizeBytes": 5461,
+      "sha256": "dfccad99f2964da3cdc9cd31b127edcf494f352d4ef90c210e8b0f1bdab2c6bf"
     },
     {
       "path": "TARGETS.md",
@@ -63,8 +63,8 @@
     },
     {
       "path": "library.json",
-      "sizeBytes": 12821,
-      "sha256": "9df0fe3483e37762cc5e7b4bd77ed6875d47a250bac79e8d9d1a9f229eb1bcb5"
+      "sizeBytes": 14563,
+      "sha256": "8745f14073dfff4981ca677fc485b48927637dfe0eda39244bcee79e377ce904"
     },
     {
       "path": "mechanics.json",
@@ -120,6 +120,11 @@
       "path": "provenance/nodejs-events.json",
       "sizeBytes": 1802,
       "sha256": "28cde5b5f0d0b512dd1c2f01cfb84913df0cb56894cc34d2a44b981132ade03a"
+    },
+    {
+      "path": "provenance/openbot-workspace.json",
+      "sizeBytes": 3237,
+      "sha256": "ece9554c8d9a1e99c2569eb9284e92cae28ef3ab654a6afb4b7f02a664746b23"
     },
     {
       "path": "provenance/photocraft-history.json",
@@ -183,8 +188,8 @@
     },
     {
       "path": "scripts/contributors.mjs",
-      "sizeBytes": 6593,
-      "sha256": "0e0caafc46bbc02aa1540b8d9726e8c237b96565905a13cae70db30e425c7550"
+      "sizeBytes": 6614,
+      "sha256": "ef3ba89a0104ab3b5d193910d4deb6ee7a079a7d843b0995d31f9b24f2292d02"
     },
     {
       "path": "scripts/contributors.test.mjs",
@@ -242,6 +247,11 @@
       "sha256": "388f2f057cadfb53127a845ada7e801834ce74a0f950b9160ebf7e868f9f89de"
     },
     {
+      "path": "wiki/agent-workspaces.md",
+      "sizeBytes": 6652,
+      "sha256": "c4c29c9a03f1a7c9c6234ca6bb71f3b99ebd513910ff448920666d75a8cb8cb5"
+    },
+    {
       "path": "wiki/alphaevolve-client.md",
       "sizeBytes": 4566,
       "sha256": "100bd176955b66594a19dc9a077c6d4e8b379a66abd3ceb830b0391deec262a8"
@@ -293,8 +303,8 @@
     },
     {
       "path": "wiki/index.md",
-      "sizeBytes": 7329,
-      "sha256": "de28b849c05b0e0d8f9e26ff0a537fb9908abb6bf3c4cd45ce9273e02db59b11"
+      "sizeBytes": 7576,
+      "sha256": "f7004f13513b5189c27a92efb199bf3cd38481f3be08baa01072bc4cfa3ced0f"
     },
     {
       "path": "wiki/javascript-runtimes.md",

@@ -6,7 +6,7 @@ import { root, digest, checkText, safeRelative, verify } from './verify.mjs';
 
 const roles = [
   ['source-curator', ['mediawiki-foundation'], 'Which source bindings and coverage limits need refreshing?'],
-  ['application-tracer', ['photocraft-history', 'nasa-openmct', 'alphaevolve-cloud-client'], 'Trace one state transition without claiming full application coverage.'],
+  ['application-tracer', ['photocraft-history', 'nasa-openmct', 'alphaevolve-cloud-client', 'openbot-workspace'], 'Trace one state transition without claiming full application coverage.'],
   ['runtime-researcher', ['typescript-emit', 'quickjs-host'], 'Separate language behavior, host behavior and unexecuted test proposals.'],
   ['game-mechanic-researcher', ['quantum-game-2', 'quantum-game-classic'], 'Identify one reusable goal, replay or failure-feedback mechanic.'],
   ['simulation-researcher', ['quantum-tensors', 'mirofish-pipeline'], 'Where do simulated time, measured time and retained evidence diverge?'],

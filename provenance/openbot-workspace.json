@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/nightly-labs/openbot",
+  "commit": "9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [],
+  "omissions": [
+    "Seven selected repository files only; imported helpers and full queue store not traced",
+    "Four TS files inspected with Software MRI text heuristics; no REA AST analyzer or upstream tests executed",
+    "Public website acquisition failed; hosted service and model internals not examined",
+    "No target source bodies, personal contacts or private integration code included"
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sizeBytes": 54228,
+      "sha256": "0078753d4066c3e6067642a0ea5f797f98f999e49c22d0e4814ab0aa27105e48",
+      "gitBlobSha1": "74f9082b9b30816b083a3434776f7e8b3b8878f3",
+      "url": "https://raw.githubusercontent.com/nightly-labs/openbot/9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "sizeBytes": 4732,
+      "sha256": "ffe034ecf735f296ca53cbd856c944849f0c80c7e1490ce162038a99ad89c728",
+      "gitBlobSha1": "424bbe3cadbd960f5ddad1b87f21279c9be575e2",
+      "url": "https://raw.githubusercontent.com/nightly-labs/openbot/9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab/LICENSE"
+    },
+    {
+      "name": "docs/ARCHITECTURE.md",
+      "sizeBytes": 4391,
+      "sha256": "32ba2896bd3e8d77b6f5626cf4452ff45a04725222e627af42a471189db3fbd3",
+      "gitBlobSha1": "a7ea6da22e1ad37af617d5ea15e8fe2729e059d8",
+      "url": "https://raw.githubusercontent.com/nightly-labs/openbot/9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab/docs/ARCHITECTURE.md"
+    },
+    {
+      "name": "src/main/ingress-queue-key.ts",
+      "sizeBytes": 3003,
+      "sha256": "6e965649df73a705758f787724aec5c39e02a0b1e53492e2a3c562504648365f",
+      "gitBlobSha1": "4a9869c0a850ab25ab3514f60cf5648ed3bc4d00",
+      "url": "https://raw.githubusercontent.com/nightly-labs/openbot/9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab/src/main/ingress-queue-key.ts"
+    },
+    {
+      "name": "src/main/routine-hold-file.ts",
+      "sizeBytes": 1907,
+      "sha256": "0dbcfbcc616a1be8a99524cab773ec631871a081d172200c1e987deacabcf36b",
+      "gitBlobSha1": "a490c115f613fd3129d83225a34cdd825eed2cd2",
+      "url": "https://raw.githubusercontent.com/nightly-labs/openbot/9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab/src/main/routine-hold-file.ts"
+    },
+    {
+      "name": "src/main/routine-wake.ts",
+      "sizeBytes": 1746,
+      "sha256": "83972da1dcf8f155611fa12fa6edc36b237f6e4ae52484659f791d072900503c",
+      "gitBlobSha1": "e2aab8ead7263e26ec5280a3aaed1f61bfcc548f",
+      "url": "https://raw.githubusercontent.com/nightly-labs/openbot/9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab/src/main/routine-wake.ts"
+    },
+    {
+      "name": "src/main/team-api/route-agent-queue.ts",
+      "sizeBytes": 6963,
+      "sha256": "23844aa8ff863e18fa54ede0a2191387a0de91d8036046c7f33f1b6165152b52",
+      "gitBlobSha1": "ab5d99e13ed35f0ebdc4c185a1f64a5b8852bbca",
+      "url": "https://raw.githubusercontent.com/nightly-labs/openbot/9aaa1873d3cd222200d7b26ae9b3619a1f5a0fab/src/main/team-api/route-agent-queue.ts"
+    }
+  ]
+}

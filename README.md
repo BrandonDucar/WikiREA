@@ -17,6 +17,7 @@ software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
 | Games and quantum visualization | [Quantum Game 2](wiki/quantum-game-2.md), [Quantum Tensors](wiki/quantum-tensors.md), [BraKetVue](wiki/bra-ket-vue.md), [Quantum Game Classic](wiki/quantum-game-classic.md) |
 | Languages and runtimes | [JavaScript / Node.js](wiki/javascript-runtimes.md), [TypeScript emit](wiki/typescript-emit.md), [QuickJS host loop](wiki/quickjs-host.md), [Deno and Bun boundaries](wiki/runtime-portability.md) |
 | Agent pipelines | [MiroFish and BettaFish](wiki/fish-pipeline.md): exact-source preparation, trace retention and remaining simulation gates |
+| Agent workspaces | [OpenBot, Grok Bot, Hark and Instinct](wiki/agent-workspaces.md): upstream recovery/queue source and separately labeled hosted-product docs |
 | Self-improvement systems | [DSPy](wiki/dspy-optimization.md), [Darwin Godel Machine](wiki/darwin-godel-machine.md), [AlphaEvolve Cloud client](wiki/alphaevolve-client.md): candidate search, lineage and evaluation handoffs |
 
 Glossaries: [investigation](wiki/glossary.md), [finance](wiki/finance-glossary.md),

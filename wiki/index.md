@@ -9,6 +9,7 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 
 | Topic | What You Can Learn | Evidence Stage |
 | --- | --- | --- |
+| [OpenBot and hosted agent workspaces](agent-workspaces.md) | Wake/restart/queue mechanics; Grok Bot, Hark and Instinct documentation boundaries | Seven pinned OpenBot files; four TS files structurally inspected, no upstream app/tests executed |
 | [DSPy](dspy-optimization.md) | Metric-bound prompt/program candidates, demos and validation partitions | Four Python implementation files manually inspected; no optimizer run |
 | [Darwin Godel Machine](darwin-godel-machine.md) | Parent/child archive, patch checks and harness boundaries | Three Python implementation files manually inspected; no evolution run |
 | [AlphaEvolve Cloud client](alphaevolve-client.md) | Acquisition, evaluation, submission and cancellation | Four official client Python files manually inspected; managed engine not inspected |
