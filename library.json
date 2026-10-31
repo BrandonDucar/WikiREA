@@ -6,6 +6,18 @@
   "sourceBodiesIncluded": false,
   "entries": [
     {
+      "id": "slop-contribution-network",
+      "title": "SLOP: accepted contributions, revisioned policy and payment evidence",
+      "stage": "SOURCE_INSPECTED_SUBSET",
+      "article": "wiki/slop-contribution-network.md",
+      "repository": "https://github.com/SlopDotCash/slopdotcash",
+      "commit": "a7e6b0fab2f767e14dbbd77021d98351e9470ba5",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/slop-contribution-network.json",
+      "targetExecuted": false,
+      "licenseNotes": "MIT root license read; 14 public files manually inspected, 194780 bytes verified against Git blob identity and SHA256. No upstream tests, model, uploader, financial action or production workflow executed. Original explanation and metadata only."
+    },
+    {
       "id": "herdr-core-runtime",
       "title": "Herdr core: terminal ownership, handoff and recovery contracts",
       "stage": "SOURCE_INSPECTED_SUBSET",

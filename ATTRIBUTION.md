@@ -34,3 +34,10 @@ immutable revisions in their source manifests. The selected licenses are
 Apache-2.0. This wiki bundles no Herdr implementation, binaries or branding assets.
 The original explanations and proposed host adaptations imply no affiliation,
 upstream endorsement or runtime/security certification.
+# SLOP Source Study
+
+The SLOP investigation references SlopDotCash/slopdotcash at
+`a7e6b0fab2f767e14dbbd77021d98351e9470ba5`, copyright 2026 Slop Cash and
+contributors, under its MIT root license. Only original explanation and source
+identity metadata are published here; no target source tree is redistributed.
+See [the investigation](wiki/slop-contribution-network.md) for coverage and limits.

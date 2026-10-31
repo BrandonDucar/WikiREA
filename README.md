@@ -12,6 +12,7 @@ software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
 
 | Collection | Investigations |
 | --- | --- |
+| Contribution networks | [SLOP](wiki/slop-contribution-network.md): accepted work, revision-bound rules, uncertain dispatch and finalized payment evidence |
 | Major software | [Wikipedia / MediaWiki](wiki/mediawiki.md), [NASA Open MCT](wiki/nasa-openmct.md), [PhotoCraft history](wiki/photocraft-history.md) |
 | Finance | [TradingView, Polygon.io / Massive, Polygon blockchain and Robinhood](wiki/finance-first-pass.md) |
 | Games and quantum visualization | [Quantum Game 2](wiki/quantum-game-2.md), [Quantum Tensors](wiki/quantum-tensors.md), [BraKetVue](wiki/bra-ket-vue.md), [Quantum Game Classic](wiki/quantum-game-classic.md) |

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/SlopDotCash/slopdotcash",
+  "commit": "a7e6b0fab2f767e14dbbd77021d98351e9470ba5",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [],
+  "omissions": [
+    "Fourteen selected public files manually inspected; not a full reconstruction.",
+    "No AST analyzer, upstream tests, model calls, private trace uploads, contract execution or live workflows ran.",
+    "Source identity checks do not establish security, deployed parity, maintainer acceptance or payment."
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sizeBytes": 18257,
+      "sha256": "4ab75addfa749725f0d3e9aca985e0c180cc075a5d683b9b8e354a2da2050854",
+      "gitBlobSha1": "4718856765f899828a1f42c3557e54c9ab3b847f",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "sizeBytes": 1083,
+      "sha256": "3c50e19c2a6022364f5cef932e4e5cdbddc91087e52ae8d8614b48a04fee40a5",
+      "gitBlobSha1": "2b7622d1607cdae9c722b4da35267e3a5470daf4",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/LICENSE"
+    },
+    {
+      "name": "wrangler.toml",
+      "sizeBytes": 2468,
+      "sha256": "094fc7c7dda7ced906ba0a7bcb228e3712917d6d3da054cb9c306a2735f2612d",
+      "gitBlobSha1": "7cdf3877d1967bb68acccd27d3611ce25c65e098",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/wrangler.toml"
+    },
+    {
+      "name": "backend/projects/contracts.ts",
+      "sizeBytes": 3381,
+      "sha256": "5cbb2f0acfb38797e3eb5922d6fbe1012f95f385e88a7c5fb36e428d9168de17",
+      "gitBlobSha1": "fa9f353e68c50a6ca7a3d56316a86653a45d5891",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/backend/projects/contracts.ts"
+    },
+    {
+      "name": "backend/projects/repository-access.ts",
+      "sizeBytes": 2509,
+      "sha256": "5f0595bdb6157ba1f83aeeb0d3b16569a68fae9e3f233a04df79112e3bd72b95",
+      "gitBlobSha1": "1724fdedb39629da019cd1692aab9e57de194708",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/backend/projects/repository-access.ts"
+    },
+    {
+      "name": "backend/payments/dispatch.ts",
+      "sizeBytes": 5371,
+      "sha256": "07a91ec813cb7655b9059bc25b578c6e96b6c2eb554d873387f369a6c5af7530",
+      "gitBlobSha1": "7e71dcf60f354ded98c5a7567f3d379a47dea9ba",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/backend/payments/dispatch.ts"
+    },
+    {
+      "name": "backend/payments/chain-awards.ts",
+      "sizeBytes": 1804,
+      "sha256": "7c40dca97ccfdae847afd77cb9bba5646c4b1051f3b94c00c28c9ff8aea924de",
+      "gitBlobSha1": "35fae4fc58eb232e8a467d6af378b571bad83841",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/backend/payments/chain-awards.ts"
+    },
+    {
+      "name": "backend/payments/monthly-publication.ts",
+      "sizeBytes": 6745,
+      "sha256": "e51a8307bfe3af5ca8d66d73df836fd65af6443e01f173ae8cf709a5e1661888",
+      "gitBlobSha1": "912f22d6ad25b41369181f5b24490ac9ca1ce039",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/backend/payments/monthly-publication.ts"
+    },
+    {
+      "name": "backend/payments/ledger.ts",
+      "sizeBytes": 10343,
+      "sha256": "339c1162075b8876e7601d1eef135974666fb32182b0671185480a4026b26df2",
+      "gitBlobSha1": "2b5d1678b5c22d7578dc0b1fec0150e61848c13b",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/backend/payments/ledger.ts"
+    },
+    {
+      "name": "skills/project-contributor-template/SKILL.md",
+      "sizeBytes": 8806,
+      "sha256": "b78e8e974b464f4707131845a4d466722ee2b3cfb0672917083345486b64e2ea",
+      "gitBlobSha1": "097b5090cbd189d2b1adcfb6f96cb094585da54c",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/skills/project-contributor-template/SKILL.md"
+    },
+    {
+      "name": "skills/project-contributor-template/scripts/terms-preflight.mjs",
+      "sizeBytes": 10613,
+      "sha256": "3e112ab4204a3e5d374045207cc6d4691417ea99516bf8f89d349beb3e3bd818",
+      "gitBlobSha1": "6b434c9af12f132c20ec0158d7144e193bf6943e",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/skills/project-contributor-template/scripts/terms-preflight.mjs"
+    },
+    {
+      "name": "skills/project-contributor-template/scripts/skill-authority.mjs",
+      "sizeBytes": 23465,
+      "sha256": "d5362ed950685ec670121157881e778348665b0a88f8ed89b7616b999e3d920f",
+      "gitBlobSha1": "554428df6a80b7146cfdb6b703bf2af8611f904f",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/skills/project-contributor-template/scripts/skill-authority.mjs"
+    },
+    {
+      "name": "skills/project-contributor-template/scripts/run-receipt.mjs",
+      "sizeBytes": 96697,
+      "sha256": "9639d8070cb39360c5fdc755480a18f1c5aef1d702b81a98d7ca6f295b14d0b7",
+      "gitBlobSha1": "b6dc223ff8b253ef6b3e317a517d9183bb0f5b23",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/skills/project-contributor-template/scripts/run-receipt.mjs"
+    },
+    {
+      "name": "protocol/review-budget-v1.md",
+      "sizeBytes": 3238,
+      "sha256": "2ccb068da2e6325d41e0750068774a97c32564fe64c3db91d1fb2e3144b43388",
+      "gitBlobSha1": "66537fa45aa1909335f85660531883dab2effecc",
+      "url": "https://raw.githubusercontent.com/SlopDotCash/slopdotcash/a7e6b0fab2f767e14dbbd77021d98351e9470ba5/protocol/review-budget-v1.md"
+    }
+  ]
+}
