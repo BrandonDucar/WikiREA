@@ -18,6 +18,7 @@ software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
 | Languages and runtimes | [JavaScript / Node.js](wiki/javascript-runtimes.md), [TypeScript emit](wiki/typescript-emit.md), [QuickJS host loop](wiki/quickjs-host.md), [Deno and Bun boundaries](wiki/runtime-portability.md) |
 | Agent pipelines | [MiroFish and BettaFish](wiki/fish-pipeline.md): exact-source preparation, trace retention and remaining simulation gates |
 | Agent workspaces | [OpenBot, Grok Bot, Hark and Instinct](wiki/agent-workspaces.md): upstream recovery/queue source and separately labeled hosted-product docs |
+| Agent runtime appendages | [Herdr core and desktop mods](wiki/herdr-appendage.md): process ownership, input gates, turn-aware waits and proposed host grafts |
 | Self-improvement systems | [DSPy](wiki/dspy-optimization.md), [Darwin Godel Machine](wiki/darwin-godel-machine.md), [AlphaEvolve Cloud client](wiki/alphaevolve-client.md): candidate search, lineage and evaluation handoffs |
 
 Glossaries: [investigation](wiki/glossary.md), [finance](wiki/finance-glossary.md),

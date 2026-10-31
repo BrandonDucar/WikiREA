@@ -468,6 +468,271 @@
       "adaptationRuntimeTests": 0,
       "integrationStatus": "PROPOSED_NOT_WIRED",
       "authorityGranted": false
+    },
+    {
+      "id": "herdr-viewer-independent-ownership",
+      "title": "Viewer-independent terminal ownership",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-core-runtime",
+          "sourcePath": "crates/herdr-core/src/holder.rs"
+        }
+      ],
+      "inputs": [
+        "Terminal instance and process identity",
+        "Viewer attach/detach events",
+        "Bounded retained output"
+      ],
+      "outputs": [
+        "Live process observation independent of viewer",
+        "Separate exit record"
+      ],
+      "invariants": [
+        "A restored view is not task completion",
+        "A reboot does not preserve the original process"
+      ],
+      "acceptanceCases": [
+        "Viewer disconnect",
+        "Core handover",
+        "Holder identity changes",
+        "Normal process exit"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "herdr-serialized-input-gate",
+      "title": "Serialized terminal input with a human and blocked-state gate",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-core-runtime",
+          "sourcePath": "crates/herdr-core/src/input.rs"
+        }
+      ],
+      "inputs": [
+        "Per-terminal input queue",
+        "Current reported state",
+        "Recent human input"
+      ],
+      "outputs": [
+        "Serialized input batch or explicit rejection"
+      ],
+      "invariants": [
+        "Blocked approval prompts cannot be answered through a host force flag",
+        "Quiet time is coordination, not permission",
+        "Prepare against current state after waiting"
+      ],
+      "acceptanceCases": [
+        "Two simultaneous sends",
+        "Human types during a batch",
+        "Permission prompt is blocked",
+        "Force requested without owner approval"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "herdr-turn-bound-wait",
+      "title": "Turn-aware wait and seen-report bookkeeping",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-core-runtime",
+          "sourcePath": "crates/herdr-core/src/api/waiting.rs"
+        }
+      ],
+      "inputs": [
+        "Caller and terminal identity",
+        "Turn started by the last send",
+        "Bounded wait deadline"
+      ],
+      "outputs": [
+        "Turn-bound observation",
+        "Unseen child report references"
+      ],
+      "invariants": [
+        "A timeout does not authorize resubmission",
+        "A newer send cannot be cleared by an older wait",
+        "Reported done is not verified acceptance"
+      ],
+      "acceptanceCases": [
+        "Timeout followed by wait",
+        "New send during an old wait",
+        "Duplicate child news",
+        "Blocked parent"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "herdr-versioned-atomic-document",
+      "title": "Version-checked atomic document with rollback on persistence failure",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-core-runtime",
+          "sourcePath": "crates/herdr-core/src/api/doc.rs"
+        }
+      ],
+      "inputs": [
+        "Document name and current version",
+        "Proposed bounded JSON value",
+        "Persistence result"
+      ],
+      "outputs": [
+        "Incremented version or explicit conflict/failure"
+      ],
+      "invariants": [
+        "Stale writers cannot silently overwrite",
+        "Failed persistence restores prior memory",
+        "Mutable state version is not immutable history"
+      ],
+      "acceptanceCases": [
+        "Two writers use one version",
+        "Disk write fails",
+        "Deleted value is recreated using stale version",
+        "Oversized JSON"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "herdr-missed-event-snapshot",
+      "title": "Reconcile missed events from a fresh snapshot",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-core-runtime",
+          "sourcePath": "crates/herdr-core/src/events.rs"
+        }
+      ],
+      "inputs": [
+        "Subscription filter",
+        "Process-scoped sequence",
+        "Fresh terminal snapshot and document reads"
+      ],
+      "outputs": [
+        "Reconciled local projection with explicit gaps"
+      ],
+      "invariants": [
+        "Old process sequence is not a global cursor",
+        "Snapshot refresh is not exactly-once business delivery",
+        "Refetch documents separately"
+      ],
+      "acceptanceCases": [
+        "Slow subscriber",
+        "Restart resets sequence",
+        "Reconnect to a remote machine",
+        "Late event from an old process"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "herdr-no-old-task-replay",
+      "title": "Recover a terminal without replaying its old task command",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-core-runtime",
+          "sourcePath": "crates/herdr-core/src/kept.rs"
+        }
+      ],
+      "inputs": [
+        "Kept record and holder state",
+        "Configured shell",
+        "Last valid folder"
+      ],
+      "outputs": [
+        "Fresh shell with cleared prior program state"
+      ],
+      "invariants": [
+        "Claim before spawn",
+        "Unknown prior side effects stay unresolved",
+        "Recovery must not repeat the original task"
+      ],
+      "acceptanceCases": [
+        "Holder responds late",
+        "Missing previous folder",
+        "Repeated shell spawn failure",
+        "Old task may already have committed an effect"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "herdr-stale-view-context",
+      "title": "Reject stale asynchronous repository-view results",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-app-mods",
+          "sourcePath": "defaults/mods/changes/main.js"
+        }
+      ],
+      "inputs": [
+        "Repository and machine context",
+        "Asynchronous read result",
+        "Current view identity"
+      ],
+      "outputs": [
+        "Matching current view or discarded stale result"
+      ],
+      "invariants": [
+        "A response is bound to its originating view",
+        "Observation refresh avoids self-triggering index changes"
+      ],
+      "acceptanceCases": [
+        "Switch repository during read",
+        "Switch machine during read",
+        "Slow old response arrives last",
+        "Refresh retriggers a file watcher"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
+    },
+    {
+      "id": "herdr-personal-ui-lineage",
+      "title": "Personal UI copies with explicit reload state",
+      "sourceRefs": [
+        {
+          "entryId": "herdr-app-mods",
+          "sourcePath": "defaults/herdr.d.ts"
+        }
+      ],
+      "inputs": [
+        "Shipped source version",
+        "Personal clone identity",
+        "Reload result"
+      ],
+      "outputs": [
+        "Version-linked personal copy",
+        "Explicit load error or adoption observation"
+      ],
+      "invariants": [
+        "Editable executable UI is not an authority broker",
+        "An old visible screen does not prove the new version loaded",
+        "Personal changes are distinct from shipped updates"
+      ],
+      "acceptanceCases": [
+        "Shipped update after cloning",
+        "Broken personal mod",
+        "Reload error with old screen visible",
+        "Unapproved executable capability in a layout"
+      ],
+      "stage": "SPECIFIED",
+      "adaptationRuntimeTests": 0,
+      "integrationStatus": "PROPOSED_NOT_WIRED",
+      "authorityGranted": false
     }
   ]
 }

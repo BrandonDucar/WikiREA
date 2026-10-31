@@ -1,6 +1,6 @@
 # Reusable Mechanics
 
-These eighteen behavior patterns are source-backed **specification candidates**. They
+These twenty-six behavior patterns are source-backed **specification candidates**. They
 are not copied upstream modules, tested DreamNet integrations or execution grants.
 Each machine-readable record in [mechanics.json](../mechanics.json) names the exact
 catalog entry and retained source path from which it was derived, plus inputs,
@@ -47,7 +47,17 @@ Derived from the [AlphaEvolve client](alphaevolve-client.md). Distinguish acquir
 queued, evaluated, submitted, acknowledged and reconciled states. A local queue
 acknowledgment or cancellation request is not remote completion or rollback.
 
-## How It Plugs Into DreamNet
+## Herdr Appendage Mechanics
+
+The [Herdr dissection](herdr-appendage.md) adds eight proposed adaptations:
+viewer-independent process ownership; serialized input with human/blocked gates;
+turn-aware waits and report counters; version-checked atomic state; missed-event
+snapshot reconciliation; recovery without old-task replay; stale asynchronous
+view rejection; and lineage-preserving personal UI copies with reload errors.
+Each has exact source references and adversarial acceptance cases in the catalog.
+None is a runtime-qualified host integration or an authority grant.
+
+## Existing Host Integration
 
 The proposed path is retained source -> investigation -> behavior specification ->
 bounded fixture tests -> existing KnowledgeCompiler/Keeper review -> consumer

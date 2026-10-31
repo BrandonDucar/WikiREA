@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/herdrdev/herdr-app",
+  "commit": "3130e416ce3d1d39c83f64413728ea070a845424",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [
+    "defaults/mods/agents/main.js",
+    "defaults/mods/worktree/main.js",
+    "defaults/mods/changes/main.js",
+    "defaults/mods/workspace-status/main.js",
+    "defaults/mods/terminals-pane/main.js",
+    "defaults/mods/terminals-bar/main.js"
+  ],
+  "omissions": [
+    "Selected Rust implementation sections manually inspected; no Rust parser, Rust build or upstream tests executed.",
+    "No application workflows or third-party mods executed in this source study; prior installation/version checks do not qualify runtime behavior.",
+    "REA analysis, when present, applies only to explicitly listed JavaScript mod files, never to the Rust runtime.",
+    "Dependencies, native terminal/rendering internals and complete security behavior remain outside this subset.",
+    "Hybridization mechanics are specifications, not admitted or deployed DreamNet capabilities."
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sizeBytes": 7345,
+      "sha256": "8cd7f717e58790efdadad38f4ec554deb2eaba7904210e7731fd5caa6d526af7",
+      "gitBlobSha1": "6af61fd8931db4ff07d0dd05e2b176359f332977",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "sizeBytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "gitBlobSha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/LICENSE"
+    },
+    {
+      "name": "Cargo.toml",
+      "sizeBytes": 4056,
+      "sha256": "612ceff5fcc878c4fd2bfec5c976d3ba52ad1a5abdb3b5a3add57f0186192c9e",
+      "gitBlobSha1": "6d9a85f855c39804accb593458a3bf6c8b0f5215",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/Cargo.toml"
+    },
+    {
+      "name": "docs/security.md",
+      "sizeBytes": 3836,
+      "sha256": "a5153f672c5429d49feea1021dbbf2262448fa8dafda50eb90c1baf61194c373",
+      "gitBlobSha1": "31d4649114b75fa1a6a9128515bfb68e6a183445",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/docs/security.md"
+    },
+    {
+      "name": "defaults/herdr.d.ts",
+      "sizeBytes": 21088,
+      "sha256": "b8b65e93a42f65026fe1947108410bdf1362acf8f8926f7312ce5ce67c92b201",
+      "gitBlobSha1": "c9db3736db76f4bf63605130a39308df5db8d9ce",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/herdr.d.ts"
+    },
+    {
+      "name": "defaults/programs.json",
+      "sizeBytes": 14247,
+      "sha256": "50d5665e7afc87939bace4858db6024a5e91b30f57422e74ef82f69274309cb7",
+      "gitBlobSha1": "5ac7dfb343aef83f2603a47bb623b2c9681e730a",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/programs.json"
+    },
+    {
+      "name": "src/window.rs",
+      "sizeBytes": 234387,
+      "sha256": "874a2e739ee4fb1ba7ccb8e4e187a2e38fc75476eb1da11700b167165160b272",
+      "gitBlobSha1": "3c1f602b4237fee8f7d30e4538189711c45679b1",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/src/window.rs"
+    },
+    {
+      "name": "src/mods.rs",
+      "sizeBytes": 62783,
+      "sha256": "106ff15c97fef3e8a814de3c5a29cc71cafb9e18f25b0c2a70a2e8aecbccb02e",
+      "gitBlobSha1": "3a171ddca3a93ab264b2a8181de56f3df35d53f4",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/src/mods.rs"
+    },
+    {
+      "name": "src/mod_files.rs",
+      "sizeBytes": 4716,
+      "sha256": "0a48fd1b29e6d83835d5f5b929db3666faa9dbbe39396e2aa85a05620b5332f0",
+      "gitBlobSha1": "4e5e1bfad6a23fc5a914d209fea7f51f1e191bd9",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/src/mod_files.rs"
+    },
+    {
+      "name": "src/files.rs",
+      "sizeBytes": 9564,
+      "sha256": "2aedab56fd805c7d0cb3f91de4a58341303e6f34467f1da2732103b013f3b9fe",
+      "gitBlobSha1": "a50e0ced73483508acf2c6e3dd7e324071e30a4b",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/src/files.rs"
+    },
+    {
+      "name": "defaults/mods/agents/main.js",
+      "sizeBytes": 19286,
+      "sha256": "e4bafc03c6a4b77a8bd5330c36b1ec2c9e734d179f90c231aa859f143d21bda6",
+      "gitBlobSha1": "c0c6930bee8f449a3cfcd0df60040d83fa6e69d1",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/mods/agents/main.js"
+    },
+    {
+      "name": "defaults/mods/worktree/main.js",
+      "sizeBytes": 17109,
+      "sha256": "c26204fa2d06994c656232ff1954590f67e9708f617fd5ee7814243ce879ce7b",
+      "gitBlobSha1": "95a3a077684afbcb42dfb7fd259f2f671f6b938f",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/mods/worktree/main.js"
+    },
+    {
+      "name": "defaults/mods/changes/main.js",
+      "sizeBytes": 13128,
+      "sha256": "2bd69311fd3dbfc001f8bb9fbfd7bffe203e7455df0bf1a06516405b82bbc0fa",
+      "gitBlobSha1": "7c16c683e18764ade8ebde4780916376028494c8",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/mods/changes/main.js"
+    },
+    {
+      "name": "defaults/mods/workspace-status/main.js",
+      "sizeBytes": 1248,
+      "sha256": "657c1c200b3c6087a77a0c97ae7dee8c4ab0469a8d0483b64684005e5ff9ce41",
+      "gitBlobSha1": "d6747d7cf464c4f72c89c092eaec99cb76f13e56",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/mods/workspace-status/main.js"
+    },
+    {
+      "name": "defaults/mods/terminals-pane/main.js",
+      "sizeBytes": 2116,
+      "sha256": "53f3911ea6660e53e18c5f1d48976b894bf3e15b932c5855cc5ab9f147d79e17",
+      "gitBlobSha1": "b60ca27f3c526907ca94be6c16e6b73dc7ad3d92",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/mods/terminals-pane/main.js"
+    },
+    {
+      "name": "defaults/mods/terminals-bar/main.js",
+      "sizeBytes": 5722,
+      "sha256": "ab9cd5c4a5a49cda9fc60b7a96b6c6c938ea89854b436c434a6f489e14a82d02",
+      "gitBlobSha1": "265db8b68b28c7f7118d8cffabbcbed97615b3d4",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-app/3130e416ce3d1d39c83f64413728ea070a845424/defaults/mods/terminals-bar/main.js"
+    }
+  ],
+  "analysisSummary": {
+    "tool": "REA",
+    "version": "6.4.0",
+    "upstreamCommit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+    "status": "REVIEW_READY",
+    "parsedFiles": 6,
+    "parseFailures": 0,
+    "textBytesRead": 58609,
+    "visitedAstNodes": 12390,
+    "findings": 110,
+    "independentlyReproduced": false,
+    "disclosure": "Maintainer-reported inert JavaScript subset analysis, not Rust analysis, target execution, vulnerability count or runtime qualification."
+  }
+}

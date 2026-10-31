@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "wikirea.public-source.v1",
+  "repository": "https://github.com/herdrdev/herdr-core",
+  "commit": "4a3591aa835c197f57a5d1b8e8951a75e2a79faa",
+  "sourceScope": "EXPLICIT_SUBSET",
+  "targetExecuted": false,
+  "rawEvidenceIncluded": false,
+  "analyzedFiles": [],
+  "omissions": [
+    "Selected Rust implementation sections manually inspected; no Rust parser, Rust build or upstream tests executed.",
+    "No application workflows or third-party mods executed in this source study; prior installation/version checks do not qualify runtime behavior.",
+    "REA analysis, when present, applies only to explicitly listed JavaScript mod files, never to the Rust runtime.",
+    "Dependencies, native terminal/rendering internals and complete security behavior remain outside this subset.",
+    "Hybridization mechanics are specifications, not admitted or deployed DreamNet capabilities."
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sizeBytes": 5382,
+      "sha256": "b7b3a0c8028b462dffe4239d569ebe3456fba77a14d83c6b5c8062b1d1b24a52",
+      "gitBlobSha1": "4c046722d4741203cb5bb0b64a6029fcf0dce769",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "sizeBytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "gitBlobSha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/LICENSE"
+    },
+    {
+      "name": "Cargo.toml",
+      "sizeBytes": 392,
+      "sha256": "9fce8553dd96dec32ed4b31f0c4f528aef06d98e439e7708e180c9fb4ef4bb4c",
+      "gitBlobSha1": "75c7a4260dbe4f2eba95203f370b4ed2010595c7",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/Cargo.toml"
+    },
+    {
+      "name": "crates/herdr-core/Cargo.toml",
+      "sizeBytes": 1293,
+      "sha256": "5d74c74bc02631af7284b0d3a4a4b97239750037249ec58cc5d13b5b379d4c2d",
+      "gitBlobSha1": "76c7ee8840ef2a6235a1ef2bcf085fdef4a6dd32",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/Cargo.toml"
+    },
+    {
+      "name": "docs/security.md",
+      "sizeBytes": 5315,
+      "sha256": "7c301e5cce3908d2300990759922334932977361e4d60b5f29426db9c3202462",
+      "gitBlobSha1": "adc11c35a5c2e076869e9dd2b3a8409efd73253c",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/docs/security.md"
+    },
+    {
+      "name": "schema/README.md",
+      "sizeBytes": 10050,
+      "sha256": "2becd4b43ff8a2791c3e352df14322c644481b36234e2a218d5b73da0a6d10c2",
+      "gitBlobSha1": "701f6f8709f57880cd1db0cd00328a60860b1d11",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/schema/README.md"
+    },
+    {
+      "name": "schema/hc.openrpc.json",
+      "sizeBytes": 106137,
+      "sha256": "d883b80c848d989d129908ffb0e91267940cb437949276e07a0864aebb5da51d",
+      "gitBlobSha1": "d463472397a71ae559ef220512d5fd8c0221776a",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/schema/hc.openrpc.json"
+    },
+    {
+      "name": "crates/herdr-core/src/api/doc.rs",
+      "sizeBytes": 1683,
+      "sha256": "5a7066a246402aa3b89c93763587ee5c86eaa513383723552575ff66beb86049",
+      "gitBlobSha1": "a0af28477cf63c59582abeb7b71adcd8bfe4ac95",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/src/api/doc.rs"
+    },
+    {
+      "name": "crates/herdr-core/tests/docs.rs",
+      "sizeBytes": 6840,
+      "sha256": "198cf66f3112b7d2493caa08c8f1d679698857cbc87b39a7b880f1072da4eef0",
+      "gitBlobSha1": "8b8a7329ea0826efaca3d939443f876b4d37d634",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/tests/docs.rs"
+    },
+    {
+      "name": "crates/herdr-core/src/notes.rs",
+      "sizeBytes": 14832,
+      "sha256": "badacd1abc83b435d03c328c2c29bc3e19910a3a3153310cc32dcf50bfa034bc",
+      "gitBlobSha1": "bc25eed17ddd29472ac574359845d292ef73fec3",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/src/notes.rs"
+    },
+    {
+      "name": "crates/herdr-core/src/input.rs",
+      "sizeBytes": 13047,
+      "sha256": "df029aed635f935688f16286e9fec531bdc055d833e26c1ae7a158295bd014af",
+      "gitBlobSha1": "de1dbe39416ee184323a7efb489974b92aa423a8",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/src/input.rs"
+    },
+    {
+      "name": "crates/herdr-core/src/kept.rs",
+      "sizeBytes": 5864,
+      "sha256": "8573fe9a885ddd5eef82e8e8f5061c1e2353686de260d0f05b843bd814c035c3",
+      "gitBlobSha1": "10848f129d01c3b3dfe456c07044dbb82470a6f3",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/src/kept.rs"
+    },
+    {
+      "name": "crates/herdr-core/src/events.rs",
+      "sizeBytes": 8515,
+      "sha256": "d006e8e535ca81bcf4b743f226ffbf541b14d9600412d5e2930756be722bacc2",
+      "gitBlobSha1": "d45f2de4be5dc84753673276976be60ba8f401e5",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/src/events.rs"
+    },
+    {
+      "name": "crates/herdr-core/src/holder.rs",
+      "sizeBytes": 15789,
+      "sha256": "64a14cd005cd3ddf2c78311d2645485affc227d809b048212ad8963ac696ada7",
+      "gitBlobSha1": "2084c6fa2d24f3c42dd78774e62ffcdbaebb9def",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/src/holder.rs"
+    },
+    {
+      "name": "crates/herdr-core/src/api/waiting.rs",
+      "sizeBytes": 11949,
+      "sha256": "e0ab3791c79ea4383753a7e8b64840e02b3c5c095dbd7b551df2b61d177971ca",
+      "gitBlobSha1": "9634d9837f1932785aac8201ef81798c5b8227d5",
+      "url": "https://raw.githubusercontent.com/herdrdev/herdr-core/4a3591aa835c197f57a5d1b8e8951a75e2a79faa/crates/herdr-core/src/api/waiting.rs"
+    }
+  ]
+}

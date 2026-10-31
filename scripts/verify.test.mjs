@@ -96,3 +96,48 @@ test('new improvement mechanics remain proposals, not runtime qualification or a
     assert(mechanic.acceptanceCases.length >= 5);
   }
 });
+
+test('Herdr native runtime and JS mod evidence remain separately pinned', async () => {
+  const core = JSON.parse(await fs.readFile(path.join(root, 'provenance/herdr-core.json'), 'utf8'));
+  const app = JSON.parse(await fs.readFile(path.join(root, 'provenance/herdr-app.json'), 'utf8'));
+  validateSource(core); validateSource(app);
+  assert.equal(core.commit, '4a3591aa835c197f57a5d1b8e8951a75e2a79faa');
+  assert.equal(app.commit, '3130e416ce3d1d39c83f64413728ea070a845424');
+  assert.equal(core.files.length, 15); assert.equal(app.files.length, 16);
+  assert.deepEqual(core.analyzedFiles, []);
+  assert.equal(core.analysisSummary, undefined);
+  assert.equal(app.analyzedFiles.length, 6);
+  assert(app.analyzedFiles.every(name => name.endsWith('.js')));
+  assert.equal(app.analysisSummary.parsedFiles, 6);
+  assert.equal(app.analysisSummary.parseFailures, 0);
+  assert.equal(app.analysisSummary.independentlyReproduced, false);
+});
+
+test('Herdr Rust source cannot be mislabeled as JavaScript parser coverage', async () => {
+  const source = JSON.parse(await fs.readFile(path.join(root, 'provenance/herdr-core.json'), 'utf8'));
+  source.analyzedFiles.push('crates/herdr-core/src/holder.rs');
+  assert.throws(() => validateSource(source));
+});
+
+test('Herdr mechanics are eight bounded proposals without runtime or authority promotion', async () => {
+  const { mechanics } = JSON.parse(await fs.readFile(path.join(root, 'mechanics.json'), 'utf8'));
+  const herdr = mechanics.filter(m => m.id.startsWith('herdr-'));
+  assert.equal(herdr.length, 8);
+  assert.equal(new Set(herdr.map(m => m.id)).size, 8);
+  for (const m of herdr) {
+    assert.equal(m.stage, 'SPECIFIED');
+    assert.equal(m.adaptationRuntimeTests, 0);
+    assert.equal(m.integrationStatus, 'PROPOSED_NOT_WIRED');
+    assert.equal(m.authorityGranted, false);
+    assert(m.acceptanceCases.length >= 4);
+  }
+});
+
+test('Herdr appendage report preserves blocked-prompt and false-completion boundaries', async () => {
+  const article = await fs.readFile(path.join(root, 'wiki/herdr-appendage.md'), 'utf8');
+  assert(article.includes('not an authority layer'));
+  assert(article.includes('reject force-through'));
+  assert(article.includes('not evidence acceptance'));
+  assert(article.includes('NOT_RUN for host adaptations'));
+  assert(article.includes('not 110 vulnerabilities'));
+});

@@ -10,6 +10,7 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 | Topic | What You Can Learn | Evidence Stage |
 | --- | --- | --- |
 | [OpenBot and hosted agent workspaces](agent-workspaces.md) | Wake/restart/queue mechanics; Grok Bot, Hark and Instinct documentation boundaries | Seven pinned OpenBot files; four TS files structurally inspected, no upstream app/tests executed |
+| [Herdr runtime appendage](herdr-appendage.md) | Detached ownership, input serialization, turn-bound reports, conflict-safe state and reconnect behavior | 31 pinned files; six JS mods parsed, selected Rust sections manually inspected; no host graft executed |
 | [DSPy](dspy-optimization.md) | Metric-bound prompt/program candidates, demos and validation partitions | Four Python implementation files manually inspected; no optimizer run |
 | [Darwin Godel Machine](darwin-godel-machine.md) | Parent/child archive, patch checks and harness boundaries | Three Python implementation files manually inspected; no evolution run |
 | [AlphaEvolve Cloud client](alphaevolve-client.md) | Acquisition, evaluation, submission and cancellation | Four official client Python files manually inspected; managed engine not inspected |
@@ -32,7 +33,7 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 | [Bun](runtime-portability.md#bun-compatibility-is-a-test-obligation) | Node API compatibility as a workload test obligation | Documentation-only source coverage; separate pinned-runtime probes passed |
 | [MiroFish / BettaFish](fish-pipeline.md) | Seed progress, action traces, clocks and stale liveness | Selected Python manually inspected; two MiroFish modules exercised, not a full simulation |
 
-Eleven REA-backed catalog entries cover **57 selected JS/TS files** with zero parse
+Twelve REA-backed catalog entries cover **63 selected JS/TS files** with zero parse
 failures. This includes one supplementary QuickJS builtin-test source, not its C
 host implementation. Bor, Robinhood, PhotoCraft, Deno and Bun carry different
 evidence stages, not five more completed REA runs. Upstream test suites did not run;
@@ -48,7 +49,7 @@ The retained source collections cover subsets, never entire apps by implication.
 - [Language and runtime glossary](runtime-glossary.md): 20 terms separating types, jobs, cancellation, receipts and authority.
 - [Fish pipeline glossary](fish-pipeline-glossary.md): preparation, manual/model actions, receipts, import lineage and stale liveness.
 - [Self-improvement glossary](self-improvement-glossary.md): metrics, holdouts, archives, promotion and handoff states.
-- [Eighteen reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
+- [Twenty-six reusable mechanics](mechanics.md): source-backed behavior specifications with proposed tests and DreamNet consumers.
 - [Big and unexpected targets](../TARGETS.md): a twenty-repository discovery shortlist, separate from completed investigations.
 
 ## For Builders And Agents

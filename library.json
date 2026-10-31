@@ -1,10 +1,34 @@
 {
   "schemaVersion": "wikirea.public-library.v1",
   "name": "WikiREA",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-31",
   "rawEvidenceIncluded": false,
   "sourceBodiesIncluded": false,
   "entries": [
+    {
+      "id": "herdr-core-runtime",
+      "title": "Herdr core: terminal ownership, handoff and recovery contracts",
+      "stage": "SOURCE_INSPECTED_SUBSET",
+      "article": "wiki/herdr-appendage.md",
+      "repository": "https://github.com/herdrdev/herdr-core",
+      "commit": "4a3591aa835c197f57a5d1b8e8951a75e2a79faa",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/herdr-core.json",
+      "targetExecuted": false,
+      "licenseNotes": "Apache-2.0 selected license read; 15 pinned files, selected Rust sections manually inspected. No Rust parser, upstream tests, host graft or runtime workflow executed."
+    },
+    {
+      "id": "herdr-app-mods",
+      "title": "Herdr desktop: editable appendage surfaces and stale-view guards",
+      "stage": "STATIC_ANALYZED_SUBSET",
+      "article": "wiki/herdr-appendage.md",
+      "repository": "https://github.com/herdrdev/herdr-app",
+      "commit": "3130e416ce3d1d39c83f64413728ea070a845424",
+      "sourceScope": "EXPLICIT_SUBSET",
+      "provenance": "provenance/herdr-app.json",
+      "targetExecuted": false,
+      "licenseNotes": "Apache-2.0 selected license read; 16 pinned files, six JS mods parsed, selected Rust host sections manually read. No renderer, mod or host graft executed; no target source bundled."
+    },
     {
       "id": "openbot-workspace", "title": "OpenBot: wake, restart holds and bounded queue projections",
       "stage": "SOURCE_INSPECTED_SUBSET", "article": "wiki/agent-workspaces.md",

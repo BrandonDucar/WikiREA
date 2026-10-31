@@ -18,8 +18,8 @@
     },
     {
       "path": "ATTRIBUTION.md",
-      "sizeBytes": 1850,
-      "sha256": "53df62732d9ab29620b7ba220a0098d3ecf73199e1c49ac2f887892e349c1cf0"
+      "sizeBytes": 2218,
+      "sha256": "02beefc668f4ebe202c7962216fc530b79dec5cea5331d715b9c7dd728b726fa"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "sizeBytes": 5461,
-      "sha256": "dfccad99f2964da3cdc9cd31b127edcf494f352d4ef90c210e8b0f1bdab2c6bf"
+      "sizeBytes": 5622,
+      "sha256": "7592cea4f1da99bdf0b05385f261c10d84a8a537974a0e5a199a5b573c66296a"
     },
     {
       "path": "TARGETS.md",
@@ -63,13 +63,13 @@
     },
     {
       "path": "library.json",
-      "sizeBytes": 14563,
-      "sha256": "8745f14073dfff4981ca677fc485b48927637dfe0eda39244bcee79e377ce904"
+      "sizeBytes": 15868,
+      "sha256": "e6b533144bccd07c2b5fff3eddf52ea59d06a2febb67cd41ec9b587fcf57e82a"
     },
     {
       "path": "mechanics.json",
-      "sizeBytes": 17379,
-      "sha256": "a0888b9d4038945b16dae04df7053a407ebdaa38ad77cdab6991fcf9d9a4520a"
+      "sizeBytes": 25554,
+      "sha256": "abf1cc85f7cf3c8b83190b6170c5fc58a0eab2a759d0adde3bf59cdbab42eaac"
     },
     {
       "path": "provenance/alphaevolve-cloud-client.json",
@@ -95,6 +95,16 @@
       "path": "provenance/dspy-optimization.json",
       "sizeBytes": 2803,
       "sha256": "bdd7554d93887937894b164c09260665e45d7002539aacf05b140ba4387d8331"
+    },
+    {
+      "path": "provenance/herdr-app.json",
+      "sizeBytes": 7366,
+      "sha256": "7dd3472ddfedf9d5ad6192a033b327d3b3c020a13b4d2514f3e960de4d3ba9e4"
+    },
+    {
+      "path": "provenance/herdr-core.json",
+      "sizeBytes": 6386,
+      "sha256": "fed63eb301d5a76c8ad366eb2dec837f3eb7004c42aa499a0c540c4739a7064a"
     },
     {
       "path": "provenance/mediawiki-foundation.json",
@@ -243,8 +253,8 @@
     },
     {
       "path": "scripts/verify.test.mjs",
-      "sizeBytes": 5782,
-      "sha256": "388f2f057cadfb53127a845ada7e801834ce74a0f950b9160ebf7e868f9f89de"
+      "sizeBytes": 8128,
+      "sha256": "9d907d68ad38cac29ee4e4e1f90c730b879b400f0da3ee6622caa668946bad5b"
     },
     {
       "path": "wiki/agent-workspaces.md",
@@ -302,9 +312,14 @@
       "sha256": "a0fad3815af42bcf0a26762daf20344cf2e7b7d00589c39260e95a0ee1abfa92"
     },
     {
+      "path": "wiki/herdr-appendage.md",
+      "sizeBytes": 11647,
+      "sha256": "13c821e568cbbd605e4a341a6bb88ab0f90ab68ddff2e9395cf719d9b9e853d1"
+    },
+    {
       "path": "wiki/index.md",
-      "sizeBytes": 7576,
-      "sha256": "f7004f13513b5189c27a92efb199bf3cd38481f3be08baa01072bc4cfa3ced0f"
+      "sizeBytes": 7839,
+      "sha256": "09ce7583e7172884a292420043045e9e5664ed29450a23c1211b8e9e1d3159e8"
     },
     {
       "path": "wiki/javascript-runtimes.md",
@@ -313,8 +328,8 @@
     },
     {
       "path": "wiki/mechanics.md",
-      "sizeBytes": 6907,
-      "sha256": "a91d020df7d1881eae916c925bc739ba91035e4dd2a6b472666f87dfef70881c"
+      "sizeBytes": 7483,
+      "sha256": "6b2b1dda51aab981c74cf4925a573bf8e9fd3041e53ac6e64a9ce812caf0f542"
     },
     {
       "path": "wiki/mediawiki.md",

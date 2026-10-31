@@ -28,3 +28,9 @@ and Google's AlphaEvolve Cloud client are credited to their upstream contributor
 under Apache-2.0 at the pinned revisions in their manifests. AlphaEvolve's managed
 service is not bundled or claimed to be open source. The independent summaries
 do not relicense model services, benchmark data or imported dependencies.
+
+Herdr core and desktop app are credited to the herdrdev contributors at the
+immutable revisions in their source manifests. The selected licenses are
+Apache-2.0. This wiki bundles no Herdr implementation, binaries or branding assets.
+The original explanations and proposed host adaptations imply no affiliation,
+upstream endorsement or runtime/security certification.
