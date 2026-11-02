@@ -41,3 +41,12 @@ The SLOP investigation references SlopDotCash/slopdotcash at
 contributors, under its MIT root license. Only original explanation and source
 identity metadata are published here; no target source tree is redistributed.
 See [the investigation](wiki/slop-contribution-network.md) for coverage and limits.
+
+# Netflix Documentation Study
+
+The [Netflix personalization and streaming study](wiki/netflix-streaming-personalization.md)
+credits Netflix's official help documents, Netflix Technology Blog authors and
+Open Connect documentation. Shaka Player's official buffering documentation is a
+separate player reference, not Netflix source. Original paraphrase and public
+links only; no target code, history exports, media or branding assets bundled.
+No affiliation, endorsement, playback license or reproduced performance claimed.

@@ -9,6 +9,7 @@ could be reused. This is the public GitHub edition, not a hosted wiki service.
 
 | Topic | What You Can Learn | Evidence Stage |
 | --- | --- | --- |
+| [Netflix personalization and streaming](netflix-streaming-personalization.md) | Preference intake, meaningful viewing signals, history import, delivery versus ranking, and proposed Decent T.V. acceptance checks | Six official documents reviewed; no private source, target execution, playback benchmark or implemented adaptation |
 | [SLOP contribution network](slop-contribution-network.md) | Versioned task rules, acceptance, uncertain dispatch, finalized evidence and private-trace boundaries | 14 pinned public files manually inspected; no upstream execution or financial verification |
 | [OpenBot and hosted agent workspaces](agent-workspaces.md) | Wake/restart/queue mechanics; Grok Bot, Hark and Instinct documentation boundaries | Seven pinned OpenBot files; four TS files structurally inspected, no upstream app/tests executed |
 | [Herdr runtime appendage](herdr-appendage.md) | Detached ownership, input serialization, turn-bound reports, conflict-safe state and reconnect behavior | 31 pinned files; six JS mods parsed, selected Rust sections manually inspected; no host graft executed |

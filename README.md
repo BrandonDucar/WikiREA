@@ -12,6 +12,7 @@ software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
 
 | Collection | Investigations |
 | --- | --- |
+| Television and personalization | [Netflix](wiki/netflix-streaming-personalization.md): preference intake, viewing signals, history imports, delivery scaling and proposed Decent T.V. adaptations; official documentation only |
 | Contribution networks | [SLOP](wiki/slop-contribution-network.md): accepted work, revision-bound rules, uncertain dispatch and finalized payment evidence |
 | Major software | [Wikipedia / MediaWiki](wiki/mediawiki.md), [NASA Open MCT](wiki/nasa-openmct.md), [PhotoCraft history](wiki/photocraft-history.md) |
 | Finance | [TradingView, Polygon.io / Massive, Polygon blockchain and Robinhood](wiki/finance-first-pass.md) |
