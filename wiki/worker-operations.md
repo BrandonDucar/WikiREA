@@ -23,11 +23,14 @@ Scheduled workflows in inactive public repositories can be disabled by GitHub.
    proof level `P0`, with source pins, a compiler source digest, an artifact digest
    and an explicit no-target-execution test record. Exact readback is checked
    before the next stage. Compiling does not grant publication approval.
-5. Ask a different configured free model to consume that exact compiled draft and check it against the same
+5. Stop the research job at the compiler. Its unverified draft becomes readable in
+   the separate notebook, with a P0 label. Senior review is a different workflow
+   with its own queue. It asks a larger configured model to consume that exact
+   compiled draft and check it against the same
    excerpt. The reviewer can reject unsupported claims. This is a separate model
    check through a shared provider, not independent human verification.
-6. Retain the entry and both generation receipts. Only `COMPLETED` entries appear
-   as automated research notes. `REVIEW_HELD` remains available for inspection in
+6. Retain the entry and both generation receipts. Only accepted entries appear as reviewed research notes in the main library.
+   Compiled drafts remain clearly separated in the draft notebook. `REVIEW_HELD` remains available for inspection in
    the repository. Failures, rate limits and uncertain interruptions remain in
    the worker ledger. The website shows each role's latest actual outcome.
 7. Enqueue source-linked follow-up topics and publish an updated static edition.
@@ -56,7 +59,7 @@ a provider-reported zero. Rate limits and account restrictions stop work.
 
 If an earlier review failed in transport or parsing, a newly qualified review
 route can consume the retained compiled packet without repeating its research.
-There are at most ten such senior reviews per UTC day, one attempt per packet
+The independent senior workflow has at most ten reviews per UTC day, one attempt per packet
 and route binding, with a separate committed reservation and receipt. Actual
 factual rejections are not automatically reviewed again. The original failed
 attempt remains in the ledger even if a later senior review accepts publication.
@@ -98,13 +101,16 @@ node scripts/build-site.mjs
 ```
 
 Audit [the job ledger](../research/state.json), matching entry, source pins and
-both inference receipts. A configured schedule is not proof of future execution.
+both inference receipts. Research and review workflows share one concurrency group to serialize ledger
+writes. Every material outcome is first retained on a run-specific receipt branch
+before the main push; a concurrent main change can hold publication without
+losing the completed research. A configured schedule is not proof of future execution.
 Check Actions runs and public `data.json` for the exact deployed edition.
 The site consumes no provider credentials and issues no inference requests.
 
 ## Pause, Repair And Roll Back
 
-Disable **WikiREA research workers** in the repository's Actions tab to stop
+Disable **WikiREA research workers** and **WikiREA senior reviews** in the repository's Actions tab to stop
 future research dispatches. Cancel an active run only when necessary; its durable
 reservation may become `INTERRUPTED_UNKNOWN` and is never blindly replayed.
 Do not remove failed jobs or reset counters to manufacture quota headroom.

@@ -101,7 +101,7 @@ test('two-call source-grounded job binds exact revision, reviewer and evidence w
     const body = JSON.parse(init.body);
     return reply({ id: `call-${requests.length}`, model: body.model, choices: [{ finish_reason: 'stop', message: { content: JSON.stringify(body.model === config.writerModel ? article : { accepted: true, reasons: ['Mechanisms match the supplied source; unknowns are explicit.'] }) } }], usage: { cost: 0, prompt_tokens: 100, completion_tokens: 100 } });
   };
-  const { entry, discovered } = await researchJob({ id: 'fixture', topic: 'Toaster', role: roles[5] }, config, 'fixture-key', { nimKey: 'fixture-nim-key-123', fetchImpl, onAttempt: async stage => attempts.push(stage) });
+  const { entry, discovered } = await researchJob({ id: 'fixture', topic: 'Toaster', role: roles[5] }, { ...config, pipelineMode: 'RESEARCH_AND_REVIEW' }, 'fixture-key', { nimKey: 'fixture-nim-key-123', fetchImpl, onAttempt: async stage => attempts.push(stage) });
   assert.deepEqual(attempts, ['writer', 'reviewer']); assert.equal(requests.filter(u => u.includes('/chat/completions')).length, 2);
   assert.equal(entry.sources[0].revision, '12345'); assert.equal(entry.sources[0].url, 'https://en.wikipedia.org/w/index.php?oldid=12345');
   assert.equal(entry.sourceTextRepublished, false); assert(!JSON.stringify(entry).includes(original));
@@ -157,5 +157,27 @@ test('senior review resumes a compiled packet on a changed route, preserves fail
     assert.equal(after.reviewJobs[0].status, 'COMPLETED'); assert(after.jobs[0].publication);
     assert.equal((await validateArchive(dir)).completed, 1);
     assert.equal(reserveSeniorReviews(after, config, 10, Date.now(), 'later').reserved.length, 0);
+  } finally { await fs.rm(dir, { recursive: true, force: true }); }
+});
+
+test('compiler-first production worker durably retains one research generation without depending on senior review', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'wikirea-compiler-first-'));
+  let calls = 0;
+  try {
+    await save(dir, 'research/config.json', config);
+    await save(dir, 'research/state.json', reserveJobs(blank(), config, roles, 1, Date.now(), 'compiler-run').state);
+    const text = 'Documented resistive heating and a timed spring-loaded carriage. '.repeat(20);
+    const fetchImpl = async (url, init) => {
+      if (url.endsWith('/models')) return reply({ data: [{ id: config.writerModel }, { id: config.reviewerModel }] });
+      if (url.includes('/page/summary/')) return reply({ revision: '12345', type: 'standard' });
+      if (url.includes('/w/api.php')) return reply({ query: { pages: { '1': { title: 'Wikipedia', revisions: [{ revid: 12345, timestamp: '2026-11-10T00:00:00Z', slots: { main: { '*': text } } }] } } } });
+      calls++; assert.equal(JSON.parse(init.body).model, config.writerModel);
+      return reply({ id: 'nim-compiler-fixture', choices: [{ finish_reason: 'stop', message: { content: JSON.stringify(article) } }], usage: { prompt_tokens: 100, completion_tokens: 100 } });
+    };
+    const state = await runPending(dir, { nimKey: 'fixture-nim-key-123', fetchImpl, runId: 'compiler-run' });
+    assert.equal(calls, 1); assert.equal(state.jobs[0].status, 'COMPILED'); assert.equal(state.jobs[0].callsAttempted, 1);
+    assert.equal(state.jobs[0].entry, undefined); const p = JSON.parse(await fs.readFile(path.join(dir, state.jobs[0].packet), 'utf8'));
+    assert.equal(validateResearchPacket(p).publicationApproved, false); assert.equal((await validateArchive(dir)).completed, 0);
+    assert.equal(reserveSeniorReviews(state, config, 1, Date.now(), 'review-run').reserved.length, 1);
   } finally { await fs.rm(dir, { recursive: true, force: true }); }
 });

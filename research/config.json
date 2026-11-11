@@ -9,6 +9,7 @@
   "writerModel": "nvidia/nemotron-3.5-lightning-30b-a3b",
   "writerReasoning": false,
   "researchPurpose": "RESEARCH_AND_TESTING",
+  "pipelineMode": "COMPILER_FIRST",
   "nimOutputFormat": "json_object",
   "reviewerProvider": "nvidia-nim-research",
   "reviewerModel": "nvidia/nemotron-3-ultra-550b-a55b",

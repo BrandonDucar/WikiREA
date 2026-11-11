@@ -19,6 +19,8 @@ test('expired reservations are shown as interrupted, never fabricated live worke
   assert.equal(workerStatus([]).label, 'Awaiting first run');
   assert.equal(workerStatus([{ status: 'RESERVED', expiresAt: new Date(now - 1).toISOString() }], now).label, 'Interrupted / lease expired');
   assert.equal(workerStatus([{ status: 'COMPLETED' }], now).kind, 'complete');
+  assert.equal(workerStatus([{ status: 'COMPILED', packet: 'retained' }], now).kind, 'compiled');
+  assert.equal(workerStatus([{ status: 'FAILED', lastStage: 'reviewer', packet: 'retained' }], now).label, 'Draft compiled · review pending');
 });
 test('public renderer uses text nodes and safe links rather than executing source markup', async () => {
   const source = await fs.readFile(new URL('../web/app.js', import.meta.url), 'utf8');

@@ -38,7 +38,6 @@ jobs:
           BATCH: ${{ inputs.batch || '1' }}
         run: |
           node scripts/research.mjs --reserve "$BATCH"
-          node scripts/research.mjs --reserve-reviews "$BATCH"
           node scripts/verify.mjs --refresh-manifest
           git config user.name 'WikiREA research'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -51,11 +50,6 @@ jobs:
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
         run: node scripts/research.mjs --work
-      - name: Review retained packets after a qualified route change
-        if: always() && steps.reserve.outcome == 'success'
-        env:
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
-        run: node scripts/research.mjs --review-packets
       - name: Retain actual outcomes and rebuild publication
         if: always()
         env:
@@ -67,6 +61,7 @@ jobs:
           git add research release-manifest.json
           if ! git diff --cached --quiet; then
             git commit -m 'research: retain source-bound findings and worker outcomes'
+            git push origin "HEAD:refs/heads/research-receipts/${GITHUB_RUN_ID}"
             git push origin HEAD:main
             gh workflow run pages.yml --ref main
           fi

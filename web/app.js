@@ -19,6 +19,7 @@ export function safeUrl(value) {
 export function workerStatus(jobs, now = Date.now()) {
   const j = jobs.at(-1);
   if (!j) return { label: 'Awaiting first run', kind: '', job: null };
+  if (j.status === 'COMPILED' || (j.packet && j.status === 'FAILED' && j.lastStage === 'reviewer' && !j.publication)) return { label: 'Draft compiled · review pending', kind: 'compiled', job: j };
   if (j.publication) return { label: 'Published after senior review', kind: 'complete', job: j };
   if (j.status === 'RESERVED') return { label: Date.parse(j.expiresAt) > now ? 'Research reserved' : 'Interrupted / lease expired', kind: '', job: j };
   if (j.status === 'COMPLETED') return { label: 'Research completed', kind: 'complete', job: j };
@@ -72,38 +73,38 @@ if (typeof document !== 'undefined') {
     if (!item.automated) markdown(content, item.markdown);
     else {
       content.append(el('p', 'AUTOMATED RESEARCH NOTE Â· SEPARATE MODEL CHECK', 'eyebrow'), el('h1', item.title),
-        el('p', 'Based on a pinned public encyclopedia revision. This explains documented mechanisms; it is not a physical teardown, proprietary source inspection, or human-verified engineering specification.', 'notice'), el('p', item.summary));
+        el('p', item.unreviewed ? 'This source-bound draft passed compiler checks. Factual review has not passed. Treat its explanations as unverified research, with the source and unknowns alongside it.' : 'Based on a pinned public encyclopedia revision. This explains documented mechanisms; it is not a physical teardown, proprietary source inspection, or human-verified engineering specification.', 'notice'), el('p', item.summary));
       for (const m of item.mechanisms) content.append(el('h2', m.title), el('p', m.explanation));
       content.append(el('h2', 'What we still donâ€™t know'));
       const ul = el('ul'); item.unknowns.forEach(x => ul.append(el('li', x))); content.append(ul);
       content.append(el('h2', 'Follow the source'));
       item.sources.forEach(s => { const p = el('p'); p.append(link(`${s.title} Â· revision ${s.revision} â†—`, s.url)); content.append(p, el('p', `Inspected ${s.inspectedCharacters.toLocaleString()} of ${s.totalCharacters.toLocaleString()} source characters. ${s.license}`)); });
-      content.append(el('p', `Research role: ${item.role}. Published ${new Date(item.createdAt).toLocaleString()}. Source integrity: ${item.sources[0].sha256}. Separate model check, not independent human review.`));
+      content.append(el('p', `Research role: ${item.role}. Published ${new Date(item.createdAt).toLocaleString()}. Source integrity: ${item.sources[0].sha256}. ${item.unreviewed ? 'Unreviewed draft. No successful factual review is claimed.' : 'Separate model check, not independent human review.'}`));
       if (item.compilerRef) content.append(link(`Compiled research packet â†— Â· ${item.compilerRef.artifactDigest.slice(0, 12)}`, `https://github.com/BrandonDucar/WikiREA/blob/${data.sourceCommit || 'main'}/${item.compilerRef.packet}`));
     }
     if (!dialog.open) dialog.showModal(); content.scrollTop = 0;
   }
   function render() {
     const workers = view === 'workers'; $('worker-panel').hidden = !workers; $('cards').hidden = workers; $('library-controls').hidden = workers;
-    $('section-title').textContent = workers ? 'A team with a paper trail.' : view === 'research' ? 'Fresh questions. New findings.' : 'Follow your curiosity.';
+    $('section-title').textContent = workers ? 'A team with a paper trail.' : view === 'drafts' ? 'The working notebook.' : view === 'research' ? 'Fresh questions. New findings.' : 'Follow your curiosity.';
     $('section-eyebrow').textContent = workers ? 'TEN ROLES / REAL RUN RECEIPTS' : 'THE EVER-GROWING INDEX';
     $('result-label').textContent = '';
     if (workers) return renderWorkers();
-    const entries = filterEntries(data.entries, query, selected, view);
+    const entries = filterEntries(view === 'drafts' ? data.drafts || [] : data.entries, query, selected, view);
     $('result-label').textContent = `${entries.length} ${entries.length === 1 ? 'investigation' : 'investigations'} Â· Sources and limitations included`;
     $('cards').replaceChildren();
     if (!entries.length) $('cards').append(el('p', 'No investigations match yet. Try a broader question.', 'empty'));
     for (const item of entries) {
       const card = el('button', undefined, 'card'); card.type = 'button';
-      const meta = el('div', undefined, 'card-meta'); meta.append(el('span', category(item)), el('span', item.automated ? 'RESEARCH NOTE' : 'SOURCE STUDY'));
-      const bottom = el('div', undefined, 'card-bottom'); bottom.append(el('span', item.automated ? 'Model reviewed' : 'Sources & methods', item.automated ? 'tag auto' : 'tag'), el('span', 'Explore â†—'));
+      const meta = el('div', undefined, 'card-meta'); meta.append(el('span', category(item)), el('span', item.unreviewed ? 'UNREVIEWED DRAFT' : item.automated ? 'RESEARCH NOTE' : 'SOURCE STUDY'));
+      const bottom = el('div', undefined, 'card-bottom'); bottom.append(el('span', item.unreviewed ? 'P0 · Not reviewed' : item.automated ? 'Model reviewed' : 'Sources & methods', item.automated ? 'tag auto' : 'tag'), el('span', 'Explore â†—'));
       card.append(meta, el('div', item.automated ? 'â—Ž' : 'âŒ˜', 'card-symbol'), el('h3', item.title), el('p', (item.summary || '').slice(0, 145) + ((item.summary || '').length > 145 ? 'â€¦' : '')), bottom);
       card.addEventListener('click', () => showArticle(item)); $('cards').append(card);
     }
   }
   function renderWorkers() {
     const panel = $('worker-panel'); panel.replaceChildren();
-    panel.append(el('p', 'Ten persistent research roles take turns on a recurring schedule. Free-only inference, at most 20 jobs per UTC day, and a separate model check before an automated note appears. A role is not ten simultaneous model processes. Status below comes from retained jobs, not simulated activity.', 'notice'));
+    panel.append(el('p', 'Ten persistent research roles take turns on a recurring schedule. Free-only inference, at most 20 research jobs per UTC day, and compiler-first storage. Drafts are readable in the notebook. A separate senior review queue qualifies research notes. A role is not ten simultaneous model processes. Status below comes from retained jobs, not simulated activity.', 'notice'));
     if (data.state.providerHold) {
       const h = data.state.providerHold;
       panel.append(el('p', h.until ? `Last provider pause: ${h.reason}. Backoff ends ${new Date(h.until).toLocaleString()}; the next scheduled run must qualify the route again.` : `Provider configuration requires review: ${h.reason}. Research remains paused for that binding.`, 'notice'));

@@ -13,8 +13,13 @@
     },
     {
       "path": ".github/workflows/research.yml",
-      "sizeBytes": 2636,
-      "sha256": "bd14256270873df99936c3fac640f7ba1cfb61f87f39a83e9015babc43d58e84"
+      "sizeBytes": 2401,
+      "sha256": "893e8f7d51fdd1e3f61b1fb053b2023129b9687d80fd059c59fa55e2bd7fd1e8"
+    },
+    {
+      "path": ".github/workflows/senior-review.yml",
+      "sizeBytes": 2375,
+      "sha256": "fe2ee6dd496556424ce9ffed28bff6a9c39e40bb7f53a3f378217aa24e031715"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -213,8 +218,8 @@
     },
     {
       "path": "research/config.json",
-      "sizeBytes": 1241,
-      "sha256": "7bcda1b8b5869cfb005d9e60f20e125429b97566f43ccd5df98226c9878a4796"
+      "sizeBytes": 1277,
+      "sha256": "a37bf233a1bb1402599f542ca550648382f8d39d1351d85254d876fc1073bb43"
     },
     {
       "path": "research/entries/research-000004-a6f704aa74.json",
@@ -323,8 +328,8 @@
     },
     {
       "path": "scripts/build-site.mjs",
-      "sizeBytes": 2281,
-      "sha256": "19436e78775c804aa68d21ed8f63b0d6ce37708be917a7045c323cb7d9f71da6"
+      "sizeBytes": 2820,
+      "sha256": "6d2905632655d62e9c7d45fbf130393c6ad9962edf2c428995b6fc56d0907875"
     },
     {
       "path": "scripts/contributors.mjs",
@@ -368,13 +373,13 @@
     },
     {
       "path": "scripts/research.mjs",
-      "sizeBytes": 42189,
-      "sha256": "fa31d5a7680370a719299140f87e5b727256f9bf55329577cb68624cf4e4a45e"
+      "sizeBytes": 42729,
+      "sha256": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
     },
     {
       "path": "scripts/research.test.mjs",
-      "sizeBytes": 15274,
-      "sha256": "960742a8657ed53ea15e004bcd960d840057acb246a893576deb1115bd540107"
+      "sizeBytes": 17242,
+      "sha256": "7dd18f15cf32ce66eff86a4165c938e84d24761bb5cbe41c2b6c25baddaaff75"
     },
     {
       "path": "scripts/run-portable.mjs",
@@ -388,13 +393,13 @@
     },
     {
       "path": "scripts/site.test.mjs",
-      "sizeBytes": 1777,
-      "sha256": "a510fff0a27160358ee30f86e8cb6dbd493b43cbe0ee90247f6288c94acd0f52"
+      "sizeBytes": 2019,
+      "sha256": "b24d5a610488385b97855904febfe5efa6067870d1d464b50c9ff13cc0c0feea"
     },
     {
       "path": "scripts/verify.mjs",
-      "sizeBytes": 12499,
-      "sha256": "2cc023c3f14e936fce01edaca01cc677e993b5618263468540ea0737b46eff12"
+      "sizeBytes": 12513,
+      "sha256": "4edc26b3dc886a4a8d145a77f09d7d19203fff4cb68361a71335a65286afac28"
     },
     {
       "path": "scripts/verify.test.mjs",
@@ -403,18 +408,18 @@
     },
     {
       "path": "web/app.js",
-      "sizeBytes": 11564,
-      "sha256": "ae8a786f01d589d15f9e549abb1600c64148b1eef129dd4216f9d069633daee7"
+      "sizeBytes": 12275,
+      "sha256": "6ef0987f4ad6e3f7eb0af4e2435fc556dc7761d6c33ddd5cc114acc1bd903dcc"
     },
     {
       "path": "web/index.html",
-      "sizeBytes": 5148,
-      "sha256": "9130e8169df8e119a352d545ae724c76d82fdbda495787f78494937672379bd8"
+      "sizeBytes": 5260,
+      "sha256": "b8167a148f96cd245cc763df45201ec36bbd0fd727e10e68c7cc0ab2c378197f"
     },
     {
       "path": "web/styles.css",
-      "sizeBytes": 9021,
-      "sha256": "e02d74278bc1e096b4a10eb4568ef894a3d3eaa34e5ccdf70a33f4fefd7f6c13"
+      "sizeBytes": 9254,
+      "sha256": "55937fd420f1b3aa8c1041a6f3ceadff497f74e4a4baba7abadae31a2198d608"
     },
     {
       "path": "wiki/agent-workspaces.md",
@@ -593,8 +598,8 @@
     },
     {
       "path": "wiki/worker-operations.md",
-      "sizeBytes": 8007,
-      "sha256": "7ddeda7759bf6e2770ce31237f6680fc85122943d7a4833ee6a424f71fda2d05"
+      "sizeBytes": 8582,
+      "sha256": "b5aa44ccf77993340898c780fd5d600ec19c3cdfe7451370fb9aa820eb3f25e4"
     }
   ]
 }

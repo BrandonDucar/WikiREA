@@ -10,7 +10,7 @@ export async function buildSite(base = root, output = path.join(base, '.local/si
   await verify(base); await validateArchive(base);
   const load = async name => JSON.parse(await fs.readFile(path.join(base, name), 'utf8'));
   const catalog = await load('library.json'); const state = await load('research/state.json');
-  const entries = [];
+  const entries = [], drafts = [];
   for (const e of catalog.entries) {
     const markdown = await fs.readFile(path.join(base, e.article), 'utf8');
     const paragraphs = markdown.split(/\n\s*\n/).filter(x => !/^(#|\||-|>)/.test(x.trim()));
@@ -21,15 +21,22 @@ export async function buildSite(base = root, output = path.join(base, '.local/si
     assert.equal(entry, `research/entries/${j.id}.json`);
     entries.unshift({ ...await load(entry), automated: true });
   }
+  for (const j of state.jobs.filter(j => j.packet && j.status !== 'COMPLETED' && !j.publication)) {
+    const p = await load(j.packet);
+    drafts.push({ ...p.findings, id: j.id, title: j.topic, role: j.role, createdAt: j.reservedAt,
+      sources: [p.sourcePin], automated: true, unreviewed: true, stage: p.stage, proofLevel: p.proofLevel,
+      compilerRef: { artifactId: p.artifactId, artifactDigest: p.artifactDigest, packet: j.packet },
+      reviewError: j.error || null });
+  }
   const sourcePins = {};
   for (const name of ['library.json', 'research/state.json', 'research/config.json', 'web/app.js']) sourcePins[name] = sha(await fs.readFile(path.join(base, name)));
-  const data = { builtAt: new Date().toISOString(), sourceCommit: process.env.GITHUB_SHA || null, sourcePins, entries, state,
+  const data = { builtAt: new Date().toISOString(), sourceCommit: process.env.GITHUB_SHA || null, sourcePins, entries, drafts, state,
     roles: buildContributorPlan(catalog).tasks.map(t => t.role), mechanics: (await load('mechanics.json')).mechanics };
   checkText(JSON.stringify(data));
   await fs.mkdir(output, { recursive: true });
   for (const name of ['index.html', 'app.js', 'styles.css']) await fs.copyFile(path.join(base, 'web', name), path.join(output, name));
   await fs.writeFile(path.join(output, 'data.json'), JSON.stringify(data));
   await fs.writeFile(path.join(output, '.nojekyll'), '');
-  return { output, entries: entries.length, roles: data.roles.length };
+  return { output, entries: entries.length, unreviewedDrafts: drafts.length, roles: data.roles.length };
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) console.log(JSON.stringify(await buildSite()));

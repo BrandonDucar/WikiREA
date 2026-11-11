@@ -18,7 +18,7 @@ export function allowed(name) {
     /^research\/(config\.json|state\.json|(?:entries|packets)\/research-\d{6}-[a-f0-9]{10}\.json)$/.test(name) ||
     /^research\/reviews\/research-\d{6}-[a-f0-9]{10}-review-[a-f0-9]{10}\.json$/.test(name) ||
     name === 'assets/wikirea-poster.png' ||
-    /^\.github\/workflows\/(verify|pages|research)\.yml$/.test(name);
+    /^\.github\/workflows\/(verify|pages|research|senior-review)\.yml$/.test(name);
 }
 export function safeRelative(name) {
   assert(typeof name === 'string' && name.length > 0);
