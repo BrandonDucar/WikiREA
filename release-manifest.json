@@ -232,9 +232,64 @@
       "sha256": "e0df3adb0f1c1bc0b70797f3b6bae2c44b52c96ac70355603065835ffb1a3fbc"
     },
     {
+      "path": "research/entries/research-000016-f3bd75d71f.json",
+      "sizeBytes": 4477,
+      "sha256": "b37f7da1012873ea9eb2f543343443beba69d641be2b2d5d7887ba0750938910"
+    },
+    {
+      "path": "research/packets/research-000009-96ee7b2932.json",
+      "sizeBytes": 4231,
+      "sha256": "4cb06772fcf2dd60033262f8d68704c38b05fbbf4f7d6e6050f88a8a971dc735"
+    },
+    {
+      "path": "research/packets/research-000010-cbc69b31c5.json",
+      "sizeBytes": 3528,
+      "sha256": "b8b3a2e8cd67988659ce5930e1c26ab51eb8bf2e199902719671951831f1a1d4"
+    },
+    {
+      "path": "research/packets/research-000011-72d3b7d381.json",
+      "sizeBytes": 4151,
+      "sha256": "975738187beb5143b8a5068e954249b9bdfdd3211f0d9617527cdc1b49900267"
+    },
+    {
+      "path": "research/packets/research-000012-726dfe6234.json",
+      "sizeBytes": 3830,
+      "sha256": "c3d61155c0b6b47ff25f1e3ed0d733342a2c9cfeff033c13bd72d00ed3d49e3b"
+    },
+    {
+      "path": "research/packets/research-000013-d7f15f4d24.json",
+      "sizeBytes": 4041,
+      "sha256": "91d9fd255d3d09edca7ba24dd65b67c0eb919ce439888495f846a5ec5c0f5bda"
+    },
+    {
+      "path": "research/packets/research-000014-ff90558a14.json",
+      "sizeBytes": 3617,
+      "sha256": "af2a99fb0ba907a1a753e0d284752189ece12a487a93b41db3389efdc8ca40b7"
+    },
+    {
+      "path": "research/packets/research-000015-4511a63ad0.json",
+      "sizeBytes": 4094,
+      "sha256": "3afd2b02f69f326a1beb7d7bedff05bc51cfd3430e5d47d2a753706fff9d281f"
+    },
+    {
+      "path": "research/packets/research-000016-f3bd75d71f.json",
+      "sizeBytes": 3827,
+      "sha256": "53c7bc8a21c324dea5b7a14694c4983a4528c15c642cf4e551f9c4e37113957e"
+    },
+    {
+      "path": "research/packets/research-000017-c26028de23.json",
+      "sizeBytes": 4550,
+      "sha256": "f4f95156456b76b94c339c863b298b0c0709cad45fbe7e96301ec15a93d68ec9"
+    },
+    {
+      "path": "research/packets/research-000018-8237aa66c7.json",
+      "sizeBytes": 3849,
+      "sha256": "03693f49f0256b90c059a0a5e5754d01e345f21bf7121aa8f05ea3ea7af4455d"
+    },
+    {
       "path": "research/state.json",
-      "sizeBytes": 16987,
-      "sha256": "7ecde5705865302a8d2bdd649a6756cce0eeeb37929cfa1f021a44fa66caa9b2"
+      "sizeBytes": 34139,
+      "sha256": "a817ce49529c4a4bb30a05a31ec7c5c5ff42f5c733f8bcd35d80b4b41ff69fad"
     },
     {
       "path": "scripts/build-site.mjs",

@@ -1,0 +1,92 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000016-f3bd75d71f",
+  "title": "Heating element",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-11T19:26:51.748Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A heating element converts electric energy into heat through Joule heating, where electric current passes through a resistive material. The device consists of a resistance wire or ribbon, insulators, and electrical leads. Materials with high electrical resistivity generate heat; resistance, geometry, and power density determine performance. Elements are classified as suspended, embedded, or supported based on construction. Tubular sheathed elements use a resistance coil, magnesium oxide insulator, and metal casing. Screen-printed and etched-foil variants exist for specialized applications. Radiative elements function as high-powered infrared lamps.",
+  "mechanisms": [
+    {
+      "title": "Joule heating via resistive current",
+      "explanation": "Electric current passing through a resistive material generates heat. The resistance, defined by Pouillet's law as R = ρℓ/A, depends on material resistivity (ρ), length (ℓ), and cross-sectional area (A). Higher resistivity materials convert more electrical power into thermal energy.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Power density and heat flux",
+      "explanation": "Performance is quantified by power density (Φ = P/A), the ratio of output power to heated surface area. Expressed in watts per square millimeter or inch, lower power density generally extends element life while higher density enables faster heating at increased cost.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact material composition for specific appliance models",
+    "Long-term degradation mechanisms in varied environments",
+    "Integration details for smart controller interoperability",
+    "Manufacturing tolerances beyond stated standards"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Heating element",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384679120",
+      "revision": "1384679120",
+      "observedAt": "2026-11-11T19:26:35.020Z",
+      "sourceTimestamp": "2026-11-09T14:54:03Z",
+      "sha256": "5181b114982243bbc72016909a6f64ec18e7209f75b7379ecf3932b63cc3d489",
+      "excerptSha256": "24f8343999d142231a02b03756e80e3d5fd963082afe97a2deedc649e8192e4b",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 32355,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Joule heating and Pouillet's law match S1",
+      "Power density definition and life tradeoff match S1",
+      "Component descriptions align with S1",
+      "Classification and types match S1",
+      "Unknowns are appropriately acknowledged"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-7860b120-adc1-40f4-8979-bd2eb02c6304",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3862,
+      "outputTokens": 350
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generationId": "gen-1794425201-LxrYq1X811jmQWbn5nos",
+      "costUsdReported": 0,
+      "inputTokens": 4173,
+      "outputTokens": 877
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "a725ff1871c637e703b25b9096e543509ed3ad307197bdc9fe6ddd14ba45918c",
+    "artifactDigest": "69dd723e4925afbd56bf667b9bc1199d82776ee1ebe6ce5e30cec8184dcaec33",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f",
+    "packet": "research/packets/research-000016-f3bd75d71f.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000018-8237aa66c7",
+  "topic": "MIDI",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "MIDI is a technical standard enabling electronic musical instruments, computers, and audio devices to communicate performance data. A single MIDI cable carries up to sixteen channels of data, where each interaction with a controller converts into a MIDI event specifying pitch, timing, and velocity. These events can trigger sound modules or be recorded into sequencers. Before MIDI, instruments used proprietary interfaces like CV/gate; MIDI allowed cross-manufacturer compatibility. The standard was developed in 1983 by industry representatives and is maintained by the MIDI Manufacturers Association.",
+    "mechanisms": [
+      {
+        "title": "Event-based communication protocol",
+        "explanation": "Each key press, knob turn, or slider movement is converted into a MIDI event. These events encapsulate musical instructions such as a note's pitch, timing, and velocity. The protocol transmits these discrete messages rather than audio signals, allowing for flexible routing and editing.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Multi-channel data transmission",
+        "explanation": "A single physical MIDI cable can carry up to sixteen independent channels of MIDI data. Each channel can be routed to a separate device, enabling a single controller to play multiple instruments simultaneously or manage complex setups without additional cabling.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact physical layer implementation details beyond serial transmission at 31,250 baud",
+      "Proprietary extensions or variations used by specific manufacturers",
+      "Long-term stability and compatibility of the 16-channel limit across all MIDI 2.0 implementations",
+      "Detailed internal processing of MIDI events within specific sound modules or sequencers"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "MIDI",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384954679",
+    "revision": "1384954679",
+    "observedAt": "2026-11-11T19:26:59.326Z",
+    "sourceTimestamp": "2026-11-11T00:53:40Z",
+    "sha256": "897b9adbf947d66f990e013d0fd4b6c9d1c51214be48dcd0f4d45aebe6c444e7",
+    "excerptSha256": "89576f2a7536397ada88b5c534a0be407190f310004c5bffbce722588fa45810",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 133877,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-3642638b-195c-4c5c-ac25-c2df070e8dd8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4690,
+    "outputTokens": 375
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "534dc7244a2024a4fd32887abb94d17ffb955583bdd385104cc9514e19535c71",
+  "artifactDigest": "44c67b619b6d7cec2bfccc308d9d1dcee017df9409938857bdcc75185161ca14"
+}

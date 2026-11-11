@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000009-96ee7b2932",
+  "topic": "Fault tolerance",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Fault tolerance is the ability of a system to contain fault propagation and maintain failure-free operation despite component failures, such as hardware errors or data bus interruptions. It differs from resilience, which acknowledges performance impact. Historically, systems used internal diagnosis and N-model redundancy, but modern designs favor M out of N majority voting and self-repairing architectures. Single-point tolerance with hot-swappable backups remains the most common approach, ensuring continued operation while alerting operators to replace failed components. The goal is to mask errors so end-users remain unaware of issues, particularly in high-availability or mission-critical contexts.",
+    "mechanisms": [
+      {
+        "title": "Majority Voting (M out of N)",
+        "explanation": "Multiple redundant backups operate constantly and cross-check each other's results. If a majority of components report one value and a minority reports another, the minority component is identified as faulty and taken out of service. This method allows the system to continue functioning correctly despite component failures.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Single-Point Tolerance with Hot-Swappable Backups",
+        "explanation": "A system implemented with one backup component that can be replaced while the system remains operational (hot swapping). The mean time between failures must be long enough for operators to repair the broken device before the backup also fails. This represents the vast majority of fault-tolerant systems used in practice.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The specific internal diagnosis methods used in modern self-repairing systems beyond N-model redundancy",
+      "How fault propagation is contained in non-computing structures like buildings or infrastructure under fatigue, corrosion, or impact",
+      "The exact thresholds for mean time between failure versus mean time to repair that define viable single-point tolerance",
+      "Whether historical N-model redundancy has been fully superseded by M out of N voting in current practice or if both coexist"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Fault tolerance",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384403930",
+    "revision": "1384403930",
+    "observedAt": "2026-11-11T19:23:22.058Z",
+    "sourceTimestamp": "2026-11-08T02:21:00Z",
+    "sha256": "3f0ed3c22a6d476dbd466e2a04456cfea692bdb3b23511c0ae1d80c4aa44fe6a",
+    "excerptSha256": "8264475a131e7fae396ef130e5228101349affdba3a77b2df4e6fe9f74ae8216",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 37889,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-858bdc1a-e89f-4d3f-a0b5-e543689619c9",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3886,
+    "outputTokens": 427
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "27d1a26756a27b893860edeb51241682c86c16270f2182fe59869b59878c56fc",
+  "artifactDigest": "10ef62eff89d5abc3a771b9dff33d19d77e9c332755e9134d7fa29bfe23ebb32"
+}

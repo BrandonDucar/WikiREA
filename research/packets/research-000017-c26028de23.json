@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000017-c26028de23",
+  "topic": "Market data",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Market data encompasses price and related information reported by trading venues for financial instruments such as equities, fixed-income products, derivatives, and currencies. It includes real-time elements like bid/ask prices, trade sizes, and volume, alongside static reference data such as ISIN codes and issuer details. Financial data vendors specialize in collecting, cleaning, and distributing this data, which traders use for real-time decisions and historical analysis to project pricing trends and calculate portfolio risk. Delivery relies on specialized technologies like ticker plants to handle high-throughput streams, where low latency—delivery under 1 millisecond—is critical for high-frequency trading. The data structure typically aggregates quote data (bid, ask, sizes) and trade data (last sale, volume) from separate feeds. Industry bodies such as the SEC, CFTC, and FINRA regulate aspects of data management and transparency, while vendors provide the infrastructure for distribution across exchanges and trading systems.",
+    "mechanisms": [
+      {
+        "title": "Data Collection and Distribution Infrastructure",
+        "explanation": "Specialized technologies, including ticker plants, collect and distribute massive high-throughput data streams from exchanges to traders and computerized trading systems. These systems are designed for low latency, with delivery under 1 millisecond being critical for capturing opportunities before markets change, particularly in high-frequency trading scenarios.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Vendor-Mediated Data Processing and Normalization",
+        "explanation": "Financial data vendors specialize in collecting, cleaning, collating, and distributing market data. They reformat and organize raw feeds, attempting to correct obvious outliers from real-time collection errors before delivering price and reference data to consumers such as financial institutions and industry utilities.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact proprietary algorithms used by individual data vendors for outlier correction",
+      "Specific hardware configurations employed by ticker plants beyond general Solaris/Linux deployment",
+      "Detailed technical specifications of proprietary protocols for data compression and throughput optimization",
+      "Complete technical architecture of how enterprise data management systems integrate multiple vendor feeds in practice"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Market data",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379308788",
+    "revision": "1379308788",
+    "observedAt": "2026-11-11T19:26:51.918Z",
+    "sourceTimestamp": "2026-10-09T03:55:55Z",
+    "sha256": "938dc3ea576ecd3493c1abfc5c265ababdbd1efbd07a2f6782ea8589e40fcc7e",
+    "excerptSha256": "2464dc59a08ae27ef2581f36fc214ec30eb1403ed11486212c3e46c62234e0f4",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 16265,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-d38f5bc7-3ecf-4fe6-be8f-561cf323d5f9",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3526,
+    "outputTokens": 451
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fbcdd543d027506bc2ebc0f20e48d88c5281f7f5a32e9ebca967a39ecd51a840",
+  "artifactDigest": "5818d2f96a5886c013ba0384c293b55da3c9d3ab496e533defb9cd8aee9ff005"
+}

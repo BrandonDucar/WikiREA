@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000013-d7f15f4d24",
+  "topic": "Interpreter (computing)",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An interpreter is software that executes source code directly without prior compilation to machine code. It may translate code to an intermediate format like bytecode, which a just-in-time compiler can later convert to native code. Interpreters enable platform-independent code distribution and support interactive development, though they incur runtime overhead for identifier mapping and instruction dispatch. Historically, interpreters emerged to ease programming under hardware constraints and enable interactive time-sharing systems. They are used for commands, scripts, virtualization, emulation, and sandboxing. Development speed often outweighs execution speed for prototyping, and interpreted and compiled routines may interoperate within the same runtime.",
+    "mechanisms": [
+      {
+        "title": "Direct source execution",
+        "explanation": "The interpreter reads and executes source code line-by-line or statement-by-statement, performing operations such as variable lookup and arithmetic without first translating the entire program into machine code.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Intermediate format translation and JIT compilation",
+        "explanation": "The interpreter may parse source code into an intermediate format such as bytecode. A just-in-time compiler can then translate this bytecode to native machine code at runtime, reducing interpretive overhead while preserving platform independence.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How identifier-to-storage mapping is performed at runtime without compile-time optimization",
+      "Exact design choices for tokenization and jump-table implementation in specific interpreter architectures",
+      "Mechanisms enabling interoperability between interpreted and compiled routines within a single language runtime",
+      "Details of virtual machine emulation and sandbox enforcement beyond general security control claims"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Interpreter (computing)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1369367199",
+    "revision": "1369367199",
+    "observedAt": "2026-11-11T19:25:50.113Z",
+    "sourceTimestamp": "2026-08-14T15:00:43Z",
+    "sha256": "94494f20118c7d366cabcd9d0d31870a99d21d4de14023a76d1cde2999dccb39",
+    "excerptSha256": "7afe207e55ff70ca5727859d19e77c909c9ff8bd391e46c9128c626128bae3ab",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20314,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-df2b7692-883d-437a-a2cc-50d85c70f4a4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3528,
+    "outputTokens": 361
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "db133f38f7d4c5a4551dc166548851e0a4eb65c2dfb87b9bccc62a90952863cc",
+  "artifactDigest": "d2ffb46e3bc24e0729042e73be106fa503a636f56b3f3789feb5ec29cc30e80f"
+}

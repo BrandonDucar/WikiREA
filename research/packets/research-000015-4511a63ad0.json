@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000015-4511a63ad0",
+  "topic": "Digital twin",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A digital twin is a computational model of a physical system that continuously synchronizes with real-time data from its counterpart to emulate behavior, predict failures, and support optimization. Originating from NASA's 2010 spacecraft simulation efforts, the concept distinguishes itself from ordinary simulation through live data integration. It comprises three components: the physical entity, its digital representation, and the communication channel linking them. While widely applied in manufacturing and infrastructure, the term is sometimes overextended to static models or large language models, which lack the required dynamic fidelity. The model's purpose is to predict failures and opportunities for change, prescribing real-time actions to optimize system performance throughout its lifecycle.",
+    "mechanisms": [
+      {
+        "title": "Real-time data synchronization",
+        "explanation": "The digital twin continuously ingests sensor data and operational inputs from the physical system, updating its internal state to mirror current conditions rather than relying on static pre-deployment models.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Predictive emulation and action prescription",
+        "explanation": "By emulating the physical system's behavior in a virtual environment, the twin can simulate failure scenarios and operational changes, then prescribe real-time actions to optimize performance or mitigate unexpected events.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact architecture of the communication channel (digital thread) between physical and virtual representations",
+      "Whether all claimed industry applications maintain the continuous data synchronization required by the strict definition",
+      "How the three-part structure (physical, digital, channel) is implemented in systems without persistent sensor networks",
+      "The degree to which large language model adaptations qualify as digital twins under the concept's original criteria"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Digital twin",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383966219",
+    "revision": "1383966219",
+    "observedAt": "2026-11-11T19:26:27.812Z",
+    "sourceTimestamp": "2026-11-05T21:46:49Z",
+    "sha256": "e4d6d3f95d9647c64b7c644a928ed1d1eeef180393a804b0a21dc2aa80ca7912",
+    "excerptSha256": "f6619f114c743e9d4d6911e0f37ddf8b690ddf179ab06ffb660cacf39343bfe5",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 40278,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-94f665b4-a31c-4b3b-8470-e627db316b0b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4201,
+    "outputTokens": 371
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fa260ddcc5a22495ff326f2c78f6b00772448ac0e3d4f23ef06c4b2f7ba1eab3",
+  "artifactDigest": "4fa02bc0fc81f9037429753dbb8581daf3252b91854b9fdb06e5e530f14794b5"
+}
