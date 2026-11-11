@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-11T19:27:27.176Z",
-  "sequence": 18,
+  "updatedAt": "2026-11-11T19:40:34.859Z",
+  "sequence": 20,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -700,6 +700,34 @@
       "packetDigest": "44c67b619b6d7cec2bfccc308d9d1dcee017df9409938857bdcc75185161ca14",
       "error": "MODEL_OUTPUT_LIMIT",
       "finishedAt": "2026-11-11T19:27:27.176Z"
+    },
+    {
+      "id": "research-000019-77408583f9",
+      "role": "adversarial-reviewer",
+      "topic": "Model checking",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-11T19:40:34.819Z",
+      "expiresAt": "2026-11-11T19:55:34.819Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
+    },
+    {
+      "id": "research-000020-ef871367d3",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Control theory",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-11T19:40:34.819Z",
+      "expiresAt": "2026-11-11T19:55:34.819Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
@@ -862,6 +890,116 @@
       "title": "Bibcode (identifier)",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000016-f3bd75d71f"
+    }
+  ],
+  "reviewJobs": [
+    {
+      "id": "research-000009-96ee7b2932-review-0935c9ab96",
+      "parentJobId": "research-000009-96ee7b2932",
+      "packetDigest": "10ef62eff89d5abc3a771b9dff33d19d77e9c332755e9134d7fa29bfe23ebb32",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000010-cbc69b31c5-review-0935c9ab96",
+      "parentJobId": "research-000010-cbc69b31c5",
+      "packetDigest": "d569a49c144158c063aba5a06fbd8c70ced922fecd54f27ed62c1602c22a6b67",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000011-72d3b7d381-review-0935c9ab96",
+      "parentJobId": "research-000011-72d3b7d381",
+      "packetDigest": "a713bcd0f2d7f1b5b35d5326707c59304fc56e548ca9c77b084109d4050e05a2",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000012-726dfe6234-review-0935c9ab96",
+      "parentJobId": "research-000012-726dfe6234",
+      "packetDigest": "43e2385043199be60a671dacff4ae493d87bcf163c74ec1c322f8b5d53c123ed",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000013-d7f15f4d24-review-0935c9ab96",
+      "parentJobId": "research-000013-d7f15f4d24",
+      "packetDigest": "d2ffb46e3bc24e0729042e73be106fa503a636f56b3f3789feb5ec29cc30e80f",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000014-ff90558a14-review-0935c9ab96",
+      "parentJobId": "research-000014-ff90558a14",
+      "packetDigest": "699f8d0523cc0e94ade09a8c122cb7d4dca370bbbcc1dea16ca7c393fbe3c8b2",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000015-4511a63ad0-review-0935c9ab96",
+      "parentJobId": "research-000015-4511a63ad0",
+      "packetDigest": "4fa02bc0fc81f9037429753dbb8581daf3252b91854b9fdb06e5e530f14794b5",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000017-c26028de23-review-0935c9ab96",
+      "parentJobId": "research-000017-c26028de23",
+      "packetDigest": "5818d2f96a5886c013ba0384c293b55da3c9d3ab496e533defb9cd8aee9ff005",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
+    },
+    {
+      "id": "research-000018-8237aa66c7-review-0935c9ab96",
+      "parentJobId": "research-000018-8237aa66c7",
+      "packetDigest": "44c67b619b6d7cec2bfccc308d9d1dcee017df9409938857bdcc75185161ca14",
+      "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "day": "2026-11-11",
+      "runId": "43089375616",
+      "reservedAt": "2026-11-11T19:40:34.859Z",
+      "expiresAt": "2026-11-11T19:55:34.859Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
     }
   ]
 }
