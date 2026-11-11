@@ -1,0 +1,33 @@
+{
+  "schema": "dreamnet.wikirea.catalog-transport-receipt.v1",
+  "recordedAt": "2026-11-11T20:56:46.848Z",
+  "compilerId": "knowledge-compiler",
+  "artifactId": "f5eb4f0b7db9c91e3a1ae651dd2e6b4ddc7d157f582de8b31c32e817a05e076b",
+  "artifactVersion": "fa3cd5d4032418ef39e647cbad6b6b9c42992c59db7dcf8ca1a3d71bc966b26b",
+  "artifactDigest": "2f70ab15b16f19c8bf528800749310c2893ceddddc15a7000c97b88688153e61",
+  "sourceDigest": "d1bfc7a8110097d8903be5ff95d966ac2381079183dacb2d2c8041c112530150",
+  "stage": "unreviewed",
+  "readback": {
+    "source": true,
+    "artifact": true,
+    "version": true,
+    "exactUtf8String": true,
+    "sha256": true,
+    "stage": true
+  },
+  "record": {
+    "packetJsonUtf8": "{\n  \"schema\": \"wikirea.research-packet.v1\",\n  \"id\": \"research-000009-96ee7b2932\",\n  \"topic\": \"Fault tolerance\",\n  \"role\": \"adversarial-reviewer\",\n  \"stage\": \"UNREVIEWED_RESEARCH\",\n  \"proofLevel\": \"P0\",\n  \"findings\": {\n    \"summary\": \"Fault tolerance is the ability of a system to contain fault propagation and maintain failure-free operation despite component failures, such as hardware errors or data bus interruptions. It differs from resilience, which acknowledges performance impact. Historically, systems used internal diagnosis and N-model redundancy, but modern designs favor M out of N majority voting and self-repairing architectures. Single-point tolerance with hot-swappable backups remains the most common approach, ensuring continued operation while alerting operators to replace failed components. The goal is to mask errors so end-users remain unaware of issues, particularly in high-availability or mission-critical contexts.\",\n    \"mechanisms\": [\n      {\n        \"title\": \"Majority Voting (M out of N)\",\n        \"explanation\": \"Multiple redundant backups operate constantly and cross-check each other's results. If a majority of components report one value and a minority reports another, the minority component is identified as faulty and taken out of service. This method allows the system to continue functioning correctly despite component failures.\",\n        \"sourceIds\": [\n          \"S1\"\n        ]\n      },\n      {\n        \"title\": \"Single-Point Tolerance with Hot-Swappable Backups\",\n        \"explanation\": \"A system implemented with one backup component that can be replaced while the system remains operational (hot swapping). The mean time between failures must be long enough for operators to repair the broken device before the backup also fails. This represents the vast majority of fault-tolerant systems used in practice.\",\n        \"sourceIds\": [\n          \"S1\"\n        ]\n      }\n    ],\n    \"unknowns\": [\n      \"The specific internal diagnosis methods used in modern self-repairing systems beyond N-model redundancy\",\n      \"How fault propagation is contained in non-computing structures like buildings or infrastructure under fatigue, corrosion, or impact\",\n      \"The exact thresholds for mean time between failure versus mean time to repair that define viable single-point tolerance\",\n      \"Whether historical N-model redundancy has been fully superseded by M out of N voting in current practice or if both coexist\"\n    ]\n  },\n  \"sourcePin\": {\n    \"id\": \"S1\",\n    \"title\": \"Fault tolerance\",\n    \"kind\": \"PINNED_ENCYCLOPEDIA_REVISION\",\n    \"url\": \"https://en.wikipedia.org/w/index.php?oldid=1384403930\",\n    \"revision\": \"1384403930\",\n    \"observedAt\": \"2026-11-11T19:23:22.058Z\",\n    \"sourceTimestamp\": \"2026-11-08T02:21:00Z\",\n    \"sha256\": \"3f0ed3c22a6d476dbd466e2a04456cfea692bdb3b23511c0ae1d80c4aa44fe6a\",\n    \"excerptSha256\": \"8264475a131e7fae396ef130e5228101349affdba3a77b2df4e6fe9f74ae8216\",\n    \"inspectedCharacters\": 14000,\n    \"totalCharacters\": 37889,\n    \"license\": \"CC BY-SA; original synthesis with attribution; no source text republished\",\n    \"limitation\": \"Documented architecture and explanations, not proprietary implementation access or a physical teardown\"\n  },\n  \"writerReceipt\": {\n    \"model\": \"nvidia/nemotron-3.5-lightning-30b-a3b\",\n    \"generationId\": \"chatcmpl-858bdc1a-e89f-4d3f-a0b5-e543689619c9\",\n    \"provider\": \"nvidia-nim-research\",\n    \"purpose\": \"RESEARCH_AND_TESTING\",\n    \"endpoint\": \"https://integrate.api.nvidia.com/v1\",\n    \"costUsdReported\": null,\n    \"costBasis\": \"EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS\",\n    \"productionLicenseClaimed\": false,\n    \"inputTokens\": 3886,\n    \"outputTokens\": 427\n  },\n  \"tests\": {\n    \"targetExecuted\": false,\n    \"runtimeTests\": [],\n    \"scope\": \"Source research only; no target execution or physical teardown\"\n  },\n  \"compiler\": {\n    \"id\": \"wikirea-research-packet\",\n    \"version\": \"1.0.0\",\n    \"sourceDigest\": \"3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f\"\n  },\n  \"consumerAcceptance\": false,\n  \"publicationApproved\": false,\n  \"artifactId\": \"27d1a26756a27b893860edeb51241682c86c16270f2182fe59869b59878c56fc\",\n  \"artifactDigest\": \"10ef62eff89d5abc3a771b9dff33d19d77e9c332755e9134d7fa29bfe23ebb32\"\n}\n",
+    "packetSha256": "4cb06772fcf2dd60033262f8d68704c38b05fbbf4f7d6e6050f88a8a971dc735",
+    "proofLevel": "P0",
+    "publicationApproved": false,
+    "representation": "EXACT_UTF8_SERIALIZATION_NOT_REORDERED_OBJECT",
+    "runtimeActivationAllowed": false,
+    "sourceCommit": "7bbfd5a76df0f5bf835e3f5fa6d1892d3a7eb6cf",
+    "sourcePath": "research/packets/research-000009-96ee7b2932.json",
+    "sourceUrl": "https://github.com/BrandonDucar/WikiREA/blob/7bbfd5a76df0f5bf835e3f5fa6d1892d3a7eb6cf/research/packets/research-000009-96ee7b2932.json",
+    "status": "UNREVIEWED_RESEARCH_TRANSPORT_QUALIFICATION",
+    "subject": "WikiREA catalog-to-product consumer canary: Fault tolerance",
+    "understandingAssessed": false
+  },
+  "hostPromotionsAccepted": false
+}

@@ -217,6 +217,11 @@
       "sha256": "e3a0f61928d2cbd43d449c4233301d70ac9970be395429ef7176425e32961760"
     },
     {
+      "path": "provenance/wikirea-catalog-snapshot.json",
+      "sizeBytes": 5959,
+      "sha256": "5e1b4726fe83b2a6d90a6da88968c6a1f31f9b47775a84adfd397ea1b1911ae5"
+    },
+    {
       "path": "research/config.json",
       "sizeBytes": 1277,
       "sha256": "a37bf233a1bb1402599f542ca550648382f8d39d1351d85254d876fc1073bb43"
@@ -328,8 +333,8 @@
     },
     {
       "path": "scripts/build-site.mjs",
-      "sizeBytes": 3131,
-      "sha256": "fe0e0f377ff4800c8abcb8efd732906ddc1e0a4ce8c09833db6c85ab27cf3a72"
+      "sizeBytes": 8880,
+      "sha256": "e87316d40daab8c4f3db9d40247610e8230e2c51e8fc22bbf3f8272ab359ce12"
     },
     {
       "path": "scripts/contributors.mjs",
@@ -393,8 +398,8 @@
     },
     {
       "path": "scripts/site.test.mjs",
-      "sizeBytes": 2706,
-      "sha256": "06039a7851d18029f7c851d95355328118badcd1250d9ee2b5108c35677315ac"
+      "sizeBytes": 7107,
+      "sha256": "692e68ff6dbe9f01e29a2d34d8bab5ce50b7b5e78f1e589d8671053e38ad07eb"
     },
     {
       "path": "scripts/verify.mjs",
@@ -598,8 +603,8 @@
     },
     {
       "path": "wiki/worker-operations.md",
-      "sizeBytes": 8582,
-      "sha256": "b5aa44ccf77993340898c780fd5d600ec19c3cdfe7451370fb9aa820eb3f25e4"
+      "sizeBytes": 10015,
+      "sha256": "1e8572be5051e903af051f14e773632677f827af8fa8e134e23805044b969352"
     }
   ]
 }

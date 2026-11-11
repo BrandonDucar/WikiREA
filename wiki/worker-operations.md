@@ -141,3 +141,27 @@ The exact Nemotron 3.5 Lightning research route was qualified with a completed
 source-bound generation; the unavailable Mistral route and uncertain DeepSeek
 request were retained separately. Requalify any replacement route before use.
 The public site never receives an inference key or exposes a local model server.
+
+## Catalog-to-build readback
+
+The normal site build consumes one fixed public research packet from a retained
+exact compiler-catalog retrieval snapshot. It checks the snapshot bytes, artifact
+ID and version, compiler binding, original packet bytes and source dates using
+the existing research-packet validator. Missing or changed input stops the build;
+there is no unrelated fallback or arbitrary tenant/path selection.
+
+The snapshot contains an already public research draft, not private memory or
+source text. The build needs no catalog credentials, network request or model
+call. Its output includes `catalog-consumption.json`, binding the selected
+artifact to `data.json` and recording actual inclusion. This is a fixed persisted
+snapshot reader, not a live catalog feed or a new database.
+
+The packet remains P0/unreviewed. Its inclusion in the notebook does not approve
+its claims, promote memory or demonstrate agent understanding. If the separate
+senior-review workflow later accepts the same job, the build retains that review
+as a separate evidence state rather than presenting the catalog snapshot as an
+approval. Original source dates are not refreshed by retrieval or rebuilding.
+
+Rollback: revert the catalog-build adoption commit, including its snapshot and
+release manifest, to restore the prior repository-only build. Research budgets,
+model calls, job reservations and review history are not reset by this change.
