@@ -328,8 +328,8 @@
     },
     {
       "path": "scripts/build-site.mjs",
-      "sizeBytes": 2820,
-      "sha256": "6d2905632655d62e9c7d45fbf130393c6ad9962edf2c428995b6fc56d0907875"
+      "sizeBytes": 3131,
+      "sha256": "fe0e0f377ff4800c8abcb8efd732906ddc1e0a4ce8c09833db6c85ab27cf3a72"
     },
     {
       "path": "scripts/contributors.mjs",
@@ -393,8 +393,8 @@
     },
     {
       "path": "scripts/site.test.mjs",
-      "sizeBytes": 2019,
-      "sha256": "b24d5a610488385b97855904febfe5efa6067870d1d464b50c9ff13cc0c0feea"
+      "sizeBytes": 2706,
+      "sha256": "06039a7851d18029f7c851d95355328118badcd1250d9ee2b5108c35677315ac"
     },
     {
       "path": "scripts/verify.mjs",

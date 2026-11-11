@@ -1,6 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import { buildSite } from './build-site.mjs';
+import { sha } from './research.mjs';
 import { category, filterEntries, safeUrl, workerStatus } from '../web/app.js';
 
 test('search and category filters compose without hiding research provenance', () => {
@@ -26,4 +30,16 @@ test('public renderer uses text nodes and safe links rather than executing sourc
   const source = await fs.readFile(new URL('../web/app.js', import.meta.url), 'utf8');
   assert(!source.includes('innerHTML')); assert(!source.includes('eval('));
   assert(source.includes('textContent')); assert(source.includes('noopener noreferrer'));
+});
+
+test('deployed asset URLs change with exact source bytes to invalidate browser caches', async () => {
+  const output = await fs.mkdtemp(path.join(os.tmpdir(), 'wikirea-site-'));
+  try {
+    await buildSite(undefined, output);
+    const html = await fs.readFile(path.join(output, 'index.html'), 'utf8');
+    for (const name of ['app.js', 'styles.css']) {
+      const digest = sha(await fs.readFile(path.join(output, name)));
+      assert(html.includes(`"${name}?v=${digest}"`));
+    }
+  } finally { await fs.rm(output, { recursive: true }); }
 });

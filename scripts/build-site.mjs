@@ -34,7 +34,13 @@ export async function buildSite(base = root, output = path.join(base, '.local/si
     roles: buildContributorPlan(catalog).tasks.map(t => t.role), mechanics: (await load('mechanics.json')).mechanics };
   checkText(JSON.stringify(data));
   await fs.mkdir(output, { recursive: true });
-  for (const name of ['index.html', 'app.js', 'styles.css']) await fs.copyFile(path.join(base, 'web', name), path.join(output, name));
+  for (const name of ['app.js', 'styles.css']) await fs.copyFile(path.join(base, 'web', name), path.join(output, name));
+  let html = await fs.readFile(path.join(base, 'web/index.html'), 'utf8');
+  for (const name of ['app.js', 'styles.css']) {
+    const digest = sha(await fs.readFile(path.join(base, 'web', name)));
+    html = html.replace(`"${name}"`, `"${name}?v=${digest}"`);
+  }
+  await fs.writeFile(path.join(output, 'index.html'), html);
   await fs.writeFile(path.join(output, 'data.json'), JSON.stringify(data));
   await fs.writeFile(path.join(output, '.nojekyll'), '');
   return { output, entries: entries.length, unreviewedDrafts: drafts.length, roles: data.roles.length };
