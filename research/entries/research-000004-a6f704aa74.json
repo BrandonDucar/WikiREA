@@ -1,0 +1,92 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000004-a6f704aa74",
+  "title": "Game engine",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-11T18:56:36.031Z",
+  "stage": "REVIEW_HELD",
+  "summary": "A game engine is a software framework designed for video game development, bundling libraries and tools to streamline creation across platforms. It provides core functionalities such as rendering, physics, audio, scripting, animation, AI, networking, memory management, and scene graphs. Engines abstract the underlying platform, enabling cross-platform deployment with minimal code changes. Developers reuse engine components to reduce costs and time-to-market. While originally for games, engines are repurposed for simulations, visualizations, and training. Engines may evolve into families or be updated to remain relevant. Some engines focus only on graphics, requiring developers to supply other systems. The term emerged in the mid-1990s with the rise of 3D shooters, though 2D creation systems predate this era.",
+  "mechanisms": [
+    {
+      "title": "Rendering and Graphics Pipeline",
+      "explanation": "The engine provides a real-time 3D renderer or 2D graphics pipeline that communicates with the GPU via a Graphics API. It often employs a scene graph to organize world objects for efficient rendering of virtual environments.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Abstraction and Platform Support",
+      "explanation": "Game engines offer computing platform abstraction, allowing the same game to run on desktops, consoles, and mobile devices with few code changes. This is achieved through a component-based architecture where systems can be replaced or extended.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Core Systems Integration",
+      "explanation": "Engines integrate commonly needed systems such as physics, audio, animation, AI, networking, memory management, threading, and cinematics. These are provided as reusable components to economize game development and porting.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Development Tooling and Middleware",
+      "explanation": "Engines include visual development tools within an integrated environment, functioning as middleware to reduce costs, complexities, and time-to-market. They support data-driven design and rapid application development out of the box.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal architecture and data flow of specific commercial engines",
+    "Details of real-time rendering optimizations beyond documented pipeline stages",
+    "Proprietary scripting language implementations and runtime behavior",
+    "Specific memory management strategies and thread scheduling algorithms"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Game engine",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385069347",
+      "revision": "1385069347",
+      "observedAt": "2026-11-11T18:56:15.678Z",
+      "sourceTimestamp": "2026-11-11T18:39:24Z",
+      "sha256": "dc1e10a1c665b50460b6cb340f00bd07a6e18f478587998630fe793dca4b4661",
+      "excerptSha256": "cad2718f720b0e17c02e2a926837573e3161f173de8a04a100ec2e1b86f73cc6",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 25275,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Mechanism 2 asserts platform abstraction 'is achieved through a component-based architecture,' a causal link S1 does not make; S1 presents platform abstraction and component-based replaceable systems as two separate 'usually'/'often' features.",
+      "Mechanisms 1, 3, and 4 are faithfully supported by S1 (renderer/Graphics API/scene graph; core systems list and reuse/porting; IDE tooling, middleware, data-driven, out-of-the-box).",
+      "Uncertainties are honestly scoped and correctly avoid claims about proprietary internals, runtime behavior, and specific algorithms.",
+      "No copied passages or fabricated execution detected; issue is limited to the unsupported causal framing in Mechanism 2."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "generationId": "gen-1794423382-KF16hPlLc0iKTttjZ83m",
+      "costUsdReported": 0,
+      "inputTokens": 3940,
+      "outputTokens": 523
+    },
+    {
+      "model": "baidu/ernie-5.5-flash-preview:free",
+      "generationId": "gen-1794423393-ZrPgRz7Wvw7vQttw5Wx9",
+      "costUsdReported": 0,
+      "inputTokens": 3896,
+      "outputTokens": 2597
+    }
+  ],
+  "targetExecuted": false,
+  "incrementalCostUsdReported": 0,
+  "sourceTextRepublished": false
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A field guide to how things work. Explore source-bound investigations, reusable mechanisms, and research from WikiREA's ten-worker team.">
+  <meta name="theme-color" content="#f5f3ec">
+  <title>WikiREA — Under the surface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to investigations</a>
+  <header class="topbar"><a class="wordmark" href="#">wiki<span>REA</span><i>✳</i></a><nav aria-label="Main navigation"><button data-view="all" class="nav active">The library</button><button data-view="research" class="nav">New research</button><button data-view="workers" class="nav">The workers</button></nav><a class="source-link" href="https://github.com/BrandonDucar/WikiREA" target="_blank" rel="noopener noreferrer">Open source ↗</a></header>
+  <main id="main">
+    <section class="hero"><div class="hero-copy"><p class="eyebrow"><span class="square"></span> AN OPEN FIELD GUIDE TO HOW THINGS WORK</p><h1>There’s a system<br>under <em>everything.</em></h1><p class="intro">From a toaster’s heating element to a search engine’s ranking signals. Pull things apart, follow the evidence, and find the mechanics worth building with.</p><div class="hero-bottom"><span>Independent curiosity.<br>Traceable knowledge.</span><span class="stamp">OBSERVE<br>UNPACK<br>UNDERSTAND</span></div></div><div class="diagram" aria-hidden="true"><div class="diagram-label">FIG. 01 / ANATOMY OF AN IDEA</div><svg viewBox="0 0 500 360" fill="none"><g stroke="#c9c7bb"><path d="M80 80H420V280H80Z" stroke-dasharray="3 6"/><ellipse cx="250" cy="180" rx="175" ry="70" transform="rotate(-28 250 180)"/><ellipse cx="250" cy="180" rx="175" ry="70" transform="rotate(28 250 180)"/><circle cx="250" cy="180" r="120"/><path d="M250 25V335M35 180H465" stroke-dasharray="2 6"/></g><g stroke="#253a32" stroke-width="1.4"><path d="M250 75 350 135 350 240 250 295 150 240 150 135Z"/><path d="m250 75 0 110m100-50-100 50-100-50m100 50v110m-100-55 100-55 100 55"/></g><circle cx="250" cy="185" r="36" fill="#c9693d"/><path d="M237 184h26m-13-13v26" stroke="#f8f5ec" stroke-width="1.8"/><g fill="#253a32"><circle cx="250" cy="75" r="5"/><circle cx="350" cy="135" r="5"/><circle cx="350" cy="240" r="5"/><circle cx="150" cy="135" r="5"/><circle cx="150" cy="240" r="5"/><circle cx="250" cy="295" r="5"/></g><g fill="#5e655e" font-family="monospace" font-size="10"><text x="261" y="63">SOURCE</text><text x="363" y="133">STRUCTURE</text><text x="363" y="245">MECHANISM</text><text x="261" y="318">REUSE</text><text x="65" y="245">UNKNOWN</text><text x="60" y="132">QUESTION</text></g></svg><p>A map of relationships, not a claim of complete knowledge.</p></div></section>
+    <section class="numbers" aria-label="Library summary"><div><strong id="count-library">—</strong><span>INVESTIGATIONS</span></div><div><strong id="count-mechanics">—</strong><span>REUSABLE MECHANICS</span></div><div><strong id="count-workers">10</strong><span>RESEARCH ROLES</span></div><div><strong id="count-research">—</strong><span>COMPLETED RESEARCH JOBS</span></div></section>
+    <section class="library-section"><div class="section-heading"><div><p class="eyebrow" id="section-eyebrow">THE EVER-GROWING INDEX</p><h2 id="section-title">Follow your curiosity.</h2></div><p id="update-label" class="update-label">Loading the latest edition…</p></div>
+      <div id="library-controls"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search a thing, a system, a mechanism…" aria-label="Search investigations"><kbd>/</kbd></label><div id="filters" class="filters" aria-label="Filter investigations"></div></div>
+      <p id="result-label" class="result-label" aria-live="polite"></p><div id="cards" class="cards"></div><div id="worker-panel" hidden></div><p id="load-error" hidden role="alert">The library could not be loaded. Please refresh, or explore the source repository.</p>
+    </section>
+    <section class="manifesto"><p class="eyebrow">GOOD QUESTIONS BUILD BETTER THINGS.</p><h2>Knowledge should come<br>with a way to <em>check it.</em></h2><p>Every investigation carries its sources and its limits. Automated notes are checked by a second model and labeled separately from maintained studies. An explanation is a starting point, never a substitute for testing.</p><a href="https://github.com/BrandonDucar/WikiREA/blob/main/CONTRIBUTING.md">Bring a question. Keep the evidence. ↗</a></section>
+  </main>
+  <footer><a class="wordmark" href="#">wiki<span>REA</span></a><p>Built alongside DreamNet. Made for the curious.</p><span>Original documentation: CC BY 4.0 · Upstream terms apply</span></footer>
+  <dialog id="article-dialog"><div class="dialog-top"><span class="eyebrow">WIKIREA / INVESTIGATION</span><button id="close-article" aria-label="Close investigation">✕</button></div><article id="article-content"></article></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

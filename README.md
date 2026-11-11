@@ -1,6 +1,10 @@
 # WikiREA
 
-**Understand how software works. Keep the evidence. Reuse the mechanics.**
+**Understand how things work. Keep the evidence. Reuse the mechanics.**
+
+Open the [WikiREA app](https://BrandonDucar.github.io/WikiREA/) to search the
+maintained source studies, read new automated research, and inspect all ten
+workers' retained outcomes. The app is published through GitHub Pages.
 
 WikiREA is a growing, independent library of source-bound investigations into
 software, games and runtimes. Start with [the wiki](wiki/index.md), browse the
@@ -91,8 +95,17 @@ node scripts/contributors.mjs --preflight
 node scripts/contributors.mjs --task music-events
 ```
 
-These commands do not start agents, call models or publish. The first music/event
+These packet commands do not start agents, call models or publish. The first music/event
 entry traces [WaveWarZ's observation boundaries](wiki/wavewarz.md).
+
+The separate [research workflow](.github/workflows/research.yml) runs the ten roles
+on a recurring, serialized schedule. It acquires a pinned public encyclopedia
+revision, requests an original explanation, checks it with a different model,
+and publishes accepted research notes separately from maintained source studies.
+It discovers follow-up topics from source links. This first automatic source
+adapter documents mechanisms; it does not inspect proprietary code or physically
+disassemble products. See [worker operations](wiki/worker-operations.md) for
+budgets, failure handling, deployment, and how to pause the workers.
 
 Bring a precise question, an authorized public target and checkable evidence.
 See [contribution guidance](CONTRIBUTING.md) and the [entry template](ENTRY_TEMPLATE.md).

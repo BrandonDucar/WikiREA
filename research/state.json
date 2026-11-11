@@ -1,0 +1,367 @@
+{
+  "schema": "wikirea.research-state.v1",
+  "updatedAt": "2026-11-11T19:03:07.450Z",
+  "sequence": 8,
+  "jobs": [
+    {
+      "id": "research-000001-07e600e22d",
+      "role": "source-curator",
+      "topic": "Wikipedia",
+      "day": "2026-11-11",
+      "runId": "production-canary-20261111",
+      "status": "FAILED",
+      "reservedAt": "2026-11-11T18:47:59.077Z",
+      "expiresAt": "2026-11-11T19:02:59.077Z",
+      "callsReserved": 2,
+      "callsAttempted": 1,
+      "targetExecuted": false,
+      "costUsdReported": null,
+      "lastStage": "writer",
+      "error": "INCOMPLETE_MODEL_OUTPUT",
+      "finishedAt": "2026-11-11T18:48:57.171Z"
+    },
+    {
+      "id": "research-000002-9635db6054",
+      "role": "application-tracer",
+      "topic": "Google Search",
+      "day": "2026-11-11",
+      "runId": "production-canary-2-20261111",
+      "status": "RATE_LIMITED",
+      "reservedAt": "2026-11-11T18:50:27.785Z",
+      "expiresAt": "2026-11-11T19:05:27.785Z",
+      "callsReserved": 2,
+      "callsAttempted": 2,
+      "targetExecuted": false,
+      "costUsdReported": null,
+      "lastStage": "reviewer",
+      "error": "HTTP_429",
+      "finishedAt": "2026-11-11T18:50:37.800Z"
+    },
+    {
+      "id": "research-000003-a2616377cf",
+      "role": "runtime-researcher",
+      "topic": "JavaScript engine",
+      "day": "2026-11-11",
+      "runId": "production-canary-3-20261111",
+      "status": "FAILED",
+      "reservedAt": "2026-11-11T18:54:30.421Z",
+      "expiresAt": "2026-11-11T19:09:30.421Z",
+      "callsReserved": 2,
+      "callsAttempted": 2,
+      "targetExecuted": false,
+      "costUsdReported": null,
+      "lastStage": "reviewer",
+      "sourcePin": {
+        "id": "S1",
+        "title": "List of JavaScript engines",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379618407",
+        "revision": "1379618407",
+        "observedAt": "2026-11-11T18:54:31.408Z",
+        "sourceTimestamp": "2026-10-11T00:37:21Z",
+        "sha256": "9f4dffb36234c2d20a8968b1a3429cfe6c309eba1b24735d063e5cde683234a9",
+        "excerptSha256": "7dc49fd8f380ced46049b5cdad6f08a8032955654f94dde401676b945198e26a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 48676,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "generationId": "gen-1794423278-1d5vjiuv0cVqlrCZd4u7",
+        "costUsdReported": 0,
+        "inputTokens": 4470,
+        "outputTokens": 505
+      },
+      "error": "HTTP_400",
+      "diagnostic": {
+        "httpStatus": 400,
+        "retryAfter": null
+      },
+      "finishedAt": "2026-11-11T18:54:55.888Z"
+    },
+    {
+      "id": "research-000004-a6f704aa74",
+      "role": "game-mechanic-researcher",
+      "topic": "Game engine",
+      "day": "2026-11-11",
+      "runId": "production-canary-4-20261111",
+      "status": "REVIEW_HELD",
+      "reservedAt": "2026-11-11T18:56:14.497Z",
+      "expiresAt": "2026-11-11T19:11:14.497Z",
+      "callsReserved": 2,
+      "callsAttempted": 2,
+      "targetExecuted": false,
+      "costUsdReported": 0,
+      "lastStage": "reviewer",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Game engine",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385069347",
+        "revision": "1385069347",
+        "observedAt": "2026-11-11T18:56:15.678Z",
+        "sourceTimestamp": "2026-11-11T18:39:24Z",
+        "sha256": "dc1e10a1c665b50460b6cb340f00bd07a6e18f478587998630fe793dca4b4661",
+        "excerptSha256": "cad2718f720b0e17c02e2a926837573e3161f173de8a04a100ec2e1b86f73cc6",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 25275,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "generationId": "gen-1794423382-KF16hPlLc0iKTttjZ83m",
+        "costUsdReported": 0,
+        "inputTokens": 3940,
+        "outputTokens": 523
+      },
+      "entry": "research/entries/research-000004-a6f704aa74.json",
+      "finishedAt": "2026-11-11T18:56:36.036Z"
+    },
+    {
+      "id": "research-000005-ea383a9a57",
+      "role": "simulation-researcher",
+      "topic": "Discrete-event simulation",
+      "day": "2026-11-11",
+      "runId": "production-canary-5-20261111",
+      "status": "REVIEW_HELD",
+      "reservedAt": "2026-11-11T18:58:11.649Z",
+      "expiresAt": "2026-11-11T19:13:11.649Z",
+      "callsReserved": 2,
+      "callsAttempted": 2,
+      "targetExecuted": false,
+      "costUsdReported": 0,
+      "lastStage": "reviewer",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Discrete-event simulation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1362915603",
+        "revision": "1362915603",
+        "observedAt": "2026-11-11T18:58:12.268Z",
+        "sourceTimestamp": "2026-07-07T00:04:28Z",
+        "sha256": "35fa6f6c1d0e94f51ebf9ff3fb2c1020279d20c7fc3c7e01d833e68815b2901e",
+        "excerptSha256": "9c016e8ecf88ed76958ee0b665f474786113dcb335f09c1a2dd05fa720b2c20a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 18433,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "generationId": "gen-1794423499-bFpScdTHUYCTgLaABohD",
+        "costUsdReported": 0,
+        "inputTokens": 3836,
+        "outputTokens": 472
+      },
+      "entry": "research/entries/research-000005-ea383a9a57.json",
+      "finishedAt": "2026-11-11T18:58:44.229Z"
+    },
+    {
+      "id": "research-000006-9891bf979d",
+      "role": "hardware-interoperability-scout",
+      "topic": "Toaster",
+      "day": "2026-11-11",
+      "runId": "production-canary-6-20261111",
+      "status": "RATE_LIMITED",
+      "reservedAt": "2026-11-11T18:59:37.771Z",
+      "expiresAt": "2026-11-11T19:14:37.771Z",
+      "callsReserved": 2,
+      "callsAttempted": 1,
+      "targetExecuted": false,
+      "costUsdReported": null,
+      "lastStage": "writer",
+      "error": "HTTP_429",
+      "diagnostic": {
+        "httpStatus": 429,
+        "retryAfter": null,
+        "message": "Provider returned error"
+      },
+      "finishedAt": "2026-11-11T18:59:39.083Z"
+    },
+    {
+      "id": "research-000007-21686cc551",
+      "role": "market-data-researcher",
+      "topic": "Order book",
+      "day": "2026-11-11",
+      "runId": "production-canary-7-20261111",
+      "status": "FAILED",
+      "reservedAt": "2026-11-11T19:01:02.830Z",
+      "expiresAt": "2026-11-11T19:16:02.830Z",
+      "callsReserved": 2,
+      "callsAttempted": 1,
+      "targetExecuted": false,
+      "costUsdReported": null,
+      "lastStage": "writer",
+      "error": "HTTP_403",
+      "diagnostic": {
+        "httpStatus": 403,
+        "retryAfter": null,
+        "message": "thinkingmachines/inkling-2-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps"
+      },
+      "finishedAt": "2026-11-11T19:01:03.464Z"
+    },
+    {
+      "id": "research-000008-8d45fc6c77",
+      "role": "music-events",
+      "topic": "Digital audio workstation",
+      "day": "2026-11-11",
+      "runId": "production-canary-8-20261111",
+      "status": "REVIEW_HELD",
+      "reservedAt": "2026-11-11T19:02:37.130Z",
+      "expiresAt": "2026-11-11T19:17:37.130Z",
+      "callsReserved": 2,
+      "callsAttempted": 2,
+      "targetExecuted": false,
+      "costUsdReported": 0,
+      "lastStage": "reviewer",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Digital audio workstation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380379635",
+        "revision": "1380379635",
+        "observedAt": "2026-11-11T19:02:37.710Z",
+        "sourceTimestamp": "2026-10-15T11:44:30Z",
+        "sha256": "704771484c8395b87254cf7a39c06a2ef9f41772cb2cf8986bb3d6e77328ae8f",
+        "excerptSha256": "598f7706e050a360f63f8924e0ac347289834e4a6143715a91c7de70eb593fe9",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 23936,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "generationId": "gen-1794423764-MVuBc60RU5nCtzJhKLmy",
+        "costUsdReported": 0,
+        "inputTokens": 3880,
+        "outputTokens": 1999
+      },
+      "entry": "research/entries/research-000008-8d45fc6c77.json",
+      "finishedAt": "2026-11-11T19:03:07.450Z"
+    }
+  ],
+  "discovered": [
+    {
+      "title": ".NET Framework",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "2D computer graphics",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "3D GameStudio",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "3D computer graphics",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "4A Engine",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "AAA (video game industry)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "ASCII (company)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "Abstraction (computer science)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000004-a6f704aa74"
+    },
+    {
+      "title": "ArXiv (identifier)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "Birth–death process",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "Bootstrapping (computing)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "Bootstrapping (statistics)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "Calendar queue",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "Carnegie Mellon School of Computer Science",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "Comparison of nucleic acid simulation software",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "Comparison of software for molecular mechanics modeling",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000005-ea383a9a57"
+    },
+    {
+      "title": "8-track tape",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    },
+    {
+      "title": "ACID Pro",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    },
+    {
+      "title": "AIVA",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    },
+    {
+      "title": "Ableton Live",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    },
+    {
+      "title": "Adobe Audition",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    },
+    {
+      "title": "Advanced Linux Sound Architecture",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    },
+    {
+      "title": "Akai S900",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    },
+    {
+      "title": "Amiga",
+      "role": "music-events",
+      "discoveredFrom": "research-000008-8d45fc6c77"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "wikirea.research-config.v1",
+  "incrementalMonthlyBudgetUsd": 0,
+  "maxJobsPerDay": 20,
+  "maxJobsPerWorkerPerDay": 2,
+  "maxCallsPerJob": 2,
+  "leaseMinutes": 15,
+  "writerProvider": "nvidia-nim-research",
+  "writerModel": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "writerReasoning": false,
+  "researchPurpose": "RESEARCH_AND_TESTING",
+  "reviewerModel": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "reviewerReasoning": true,
+  "seeds": {
+    "source-curator": ["Wikipedia", "Library catalog"],
+    "application-tracer": ["Google Search", "Search engine"],
+    "runtime-researcher": ["JavaScript engine", "Interpreter (computing)"],
+    "game-mechanic-researcher": ["Game engine", "Procedural generation"],
+    "simulation-researcher": ["Discrete-event simulation", "Digital twin"],
+    "hardware-interoperability-scout": ["Toaster", "Heating element"],
+    "market-data-researcher": ["Order book", "Market data"],
+    "music-events": ["Digital audio workstation", "MIDI"],
+    "adversarial-reviewer": ["Fault tolerance", "Model checking"],
+    "glossary-and-mechanics-editor": ["Feedback", "Control theory"]
+  }
+}

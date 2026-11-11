@@ -2,9 +2,11 @@
 
 WikiREA now exposes ten bounded role packets through
 [the contributor tool](../scripts/contributors.mjs). They are ready for humans
-or compatible agent runtimes to consume. **They are not ten running agents.**
-No model service, recurring schedule or automatic publisher is started by this
-repository. The tool uses no model and makes no network requests.
+or compatible agent runtimes to consume. The packet command itself uses no model
+and makes no network requests. A separate [recurring research runtime](worker-operations.md)
+now executes these same ten roles, with durable jobs and separate model review.
+Consult its retained receipts for actual completed work; role configuration
+alone does not establish that a run succeeded.
 
 | Role | Useful Work |
 | --- | --- |

@@ -1,0 +1,76 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000008-8d45fc6c77",
+  "title": "Digital audio workstation",
+  "role": "music-events",
+  "createdAt": "2026-11-11T19:03:07.445Z",
+  "stage": "REVIEW_HELD",
+  "summary": "A digital audio workstation (DAW) is an electronic device or software application used for recording, editing, and producing audio files. Modern DAWs typically provide a central interface for altering and mixing multiple tracks into a final piece. They often employ a multitrack tape recorder metaphor, offering transport controls, track controls, a mixer, and waveform displays. DAWs commonly support non-linear editing with practically unlimited tracks, polyphony, virtual synthesizers, and sample-based instruments. Effects such as reverb can be applied via software routing or audio plug-ins (e.g., VST). A key feature is the ability to undo actions, similar to word processors. Mix automation is frequently implemented using interactive graphs with adjustable points, and automation data may be captured from control surfaces or MIDI controllers. MIDI recording, editing, and synchronization with other tools are increasingly integrated. DAWs range from simple smartphone apps to complex configurations with dedicated hardware.",
+  "mechanisms": [
+    {
+      "title": "Non-linear multitrack editing and plugin-based signal processing",
+      "explanation": "DAWs typically present a multitrack interface where each track holds audio or MIDI data. Users can perform non-linear edits such as cut, copy, paste, and undo without affecting the original recordings. Each track usually offers controls for gain, equalization, and stereo panning. Instead of physically patching external hardware, the software can route signals internally and apply effects via audio plug-ins (for example, VST plugins) that process the sound on a track. This allows complex signal chains to be built and modified entirely within the software environment.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Graphical parameter automation and gesture-driven control",
+      "explanation": "DAWs often provide mix automation through interactive graphs where users create and adjust points along a timeline to specify how parameters like volume or pan change over time. These graphs may use line segments or curves. Additionally, automation data can be derived directly from human gestures recorded via a control surface or MIDI controller, capturing real-time adjustments for later playback. This dual approach allows both precise offline editing and performance-based automation.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Internal real-time audio engine scheduling and buffer management strategies",
+    "Specifics of VST plugin sandboxing and inter-process communication",
+    "MIDI timing synchronization mechanisms across multiple devices",
+    "Details of waveform rendering and zoom algorithms for large sessions"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Digital audio workstation",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380379635",
+      "revision": "1380379635",
+      "observedAt": "2026-11-11T19:02:37.710Z",
+      "sourceTimestamp": "2026-10-15T11:44:30Z",
+      "sha256": "704771484c8395b87254cf7a39c06a2ef9f41772cb2cf8986bb3d6e77328ae8f",
+      "excerptSha256": "598f7706e050a360f63f8924e0ac347289834e4a6143715a91c7de70eb593fe9",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 23936,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Mechanism 1: Unsupported claim of \"practically unlimited number of tracks\" - S1 states \"a wide variety of configurations\" and \"depending on configuration\" without specifying limits or unlimited capacity as a universal feature",
+      "Mechanism 2: Unsupported claim of \"gesture-driven control\" - S1 mentions automation data \"may also be directly derived from human gestures recorded by a control surface\" but does not describe this as a standard mechanism or feature, only as a possibility"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generationId": "gen-1794423764-MVuBc60RU5nCtzJhKLmy",
+      "costUsdReported": 0,
+      "inputTokens": 3880,
+      "outputTokens": 1999
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "generationId": "gen-1794423791-D52TMGimivHcyQ3PVppe",
+      "costUsdReported": 0,
+      "inputTokens": 4247,
+      "outputTokens": 121
+    }
+  ],
+  "targetExecuted": false,
+  "incrementalCostUsdReported": 0,
+  "sourceTextRepublished": false
+}

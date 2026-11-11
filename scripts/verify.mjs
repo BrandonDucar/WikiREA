@@ -13,7 +13,11 @@ export function allowed(name) {
   return rootFiles.has(name) || /^wiki\/[a-z0-9-]+\.md$/.test(name) ||
     /^provenance\/[a-z0-9-]+\.json$/.test(name) ||
     /^scripts\/(verify\.mjs|verify\.test\.mjs|fetch-source\.mjs|contributors\.mjs|contributors\.test\.mjs|events-probe\.test\.mjs|runtime-probe\.test\.mjs|portable-probe\.js|portable\.test\.mjs|run-portable\.mjs|quickjs\.Dockerfile|mirofish-probe\.py)$/.test(name) ||
-    name === 'assets/wikirea-poster.png' || name === '.github/workflows/verify.yml';
+    /^scripts\/(research\.mjs|research\.test\.mjs|build-site\.mjs|site\.test\.mjs)$/.test(name) ||
+    /^web\/(index\.html|app\.js|styles\.css)$/.test(name) ||
+    /^research\/(config\.json|state\.json|(?:entries|packets)\/research-\d{6}-[a-f0-9]{10}\.json)$/.test(name) ||
+    name === 'assets/wikirea-poster.png' ||
+    /^\.github\/workflows\/(verify|pages|research)\.yml$/.test(name);
 }
 export function safeRelative(name) {
   assert(typeof name === 'string' && name.length > 0);

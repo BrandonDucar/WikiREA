@@ -1,0 +1,79 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000005-ea383a9a57",
+  "title": "Discrete-event simulation",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-11T18:58:44.206Z",
+  "stage": "REVIEW_HELD",
+  "summary": "Discrete-event simulation models a system as a sequence of instantaneous events that change system state, advancing a clock to the next event time rather than simulating every moment. It contrasts with continuous simulation by using discrete state changes and differential equations. The core mechanism involves maintaining a pending event list, typically a priority queue sorted chronologically, where each event triggers follow-up events or state updates. Common components include a clock, state variables, random-number generators for stochastic inputs, and statistics collectors. A typical example models a queueing system, such as bank customers and a teller, where arrivals, service starts, and service ends dynamically schedule subsequent events. The simulation must define an ending condition, as it could otherwise run indefinitely due to bootstrapping, where initial event times are not yet representative of the steady-state distribution.",
+  "mechanisms": [
+    {
+      "title": "Event scheduling via priority queue",
+      "explanation": "The simulation maintains a pending event list organized as a priority queue sorted by event time. Regardless of insertion order, events are removed and processed in strict chronological order. This structure ensures that the simulation clock advances to the next event start time, skipping idle intervals, and that each event code executes its state changes and schedules follow-up events.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Bootstrapping for steady-state initialization",
+      "explanation": "Because initial pending events may not reflect the steady-state distribution, the model is bootstrapped by running briefly and discarding early output. Over time, the scheduling of additional events causes the event-time distribution to converge toward steady state. Statistics are then gathered only after this bootstrapping phase or after sufficient runtime overwhelms the initial conditions.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How specific priority queue implementations (e.g., calendar queues, skip lists) affect real-time simulation performance in massively parallel environments",
+    "The exact threshold for discarding bootstrapped events versus total runtime required to achieve steady-state statistics in complex systems",
+    "Whether interval-based event models introduce synchronization challenges not present in instantaneous event frameworks",
+    "The degree to which random-number generator quality influences convergence speed of the bootstrapping process"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Discrete-event simulation",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1362915603",
+      "revision": "1362915603",
+      "observedAt": "2026-11-11T18:58:12.268Z",
+      "sourceTimestamp": "2026-07-07T00:04:28Z",
+      "sha256": "35fa6f6c1d0e94f51ebf9ff3fb2c1020279d20c7fc3c7e01d833e68815b2901e",
+      "excerptSha256": "9c016e8ecf88ed76958ee0b665f474786113dcb335f09c1a2dd05fa720b2c20a",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 18433,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Mechanism 1 is supported by S1.",
+      "Mechanism 2 adds 'running briefly', which S1 does not state.",
+      "S1 says bootstrapping may require running long enough to reach steady state.",
+      "The real-time performance unknown is not grounded in S1.",
+      "Other unknowns are plausible but do not cure the unsupported detail."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "generationId": "gen-1794423499-bFpScdTHUYCTgLaABohD",
+      "costUsdReported": 0,
+      "inputTokens": 3836,
+      "outputTokens": 472
+    },
+    {
+      "model": "baidu/ernie-5.5-flash-preview:free",
+      "generationId": "gen-1794423508-K1Ep9yVojApqnWsZVEJs",
+      "costUsdReported": 0,
+      "inputTokens": 3702,
+      "outputTokens": 5137
+    }
+  ],
+  "targetExecuted": false,
+  "incrementalCostUsdReported": 0,
+  "sourceTextRepublished": false
+}

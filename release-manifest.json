@@ -7,6 +7,16 @@
       "sha256": "23302dd90b8bb74b44d365fafef8df20f809b61cb347023951ecf60a88a29651"
     },
     {
+      "path": ".github/workflows/pages.yml",
+      "sizeBytes": 997,
+      "sha256": "b9f677b49fe552510aed6efcddcab628e7eb69f9507598a46b65e444c873118e"
+    },
+    {
+      "path": ".github/workflows/research.yml",
+      "sizeBytes": 2348,
+      "sha256": "b24397fd2d7a2f9f96391d16088f88dfd08d042bc3a51a0bf0c8ecba5d62f10f"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "sizeBytes": 798,
       "sha256": "8a9cebf63886f780197bb8462ef1f602a2b5d02b87e6f703a40408f6b01c8ada"
@@ -48,8 +58,8 @@
     },
     {
       "path": "README.md",
-      "sizeBytes": 6007,
-      "sha256": "bc5a3e525de5d6b24c03183471a3287be65ca2387f16add50d9ec03d8ae78c99"
+      "sizeBytes": 6863,
+      "sha256": "73b1862f1814103a76b5cc46b29b4768be3b5d6d10a8994a7378a8feb3784186"
     },
     {
       "path": "TARGETS.md",
@@ -202,6 +212,36 @@
       "sha256": "e3a0f61928d2cbd43d449c4233301d70ac9970be395429ef7176425e32961760"
     },
     {
+      "path": "research/config.json",
+      "sizeBytes": 1132,
+      "sha256": "9b41b33298f2b2077d36aab5bc329bb5602a90223ccef733563ceba271a5f541"
+    },
+    {
+      "path": "research/entries/research-000004-a6f704aa74.json",
+      "sizeBytes": 5094,
+      "sha256": "8121f5c45ee948ef36bbebc82263096d1045241b40db5099674772658d530960"
+    },
+    {
+      "path": "research/entries/research-000005-ea383a9a57.json",
+      "sizeBytes": 4728,
+      "sha256": "43dfe55d79288f4e1d0505dbec4b876856489329d4f3fec2bb3b66301dad43d2"
+    },
+    {
+      "path": "research/entries/research-000008-8d45fc6c77.json",
+      "sizeBytes": 5044,
+      "sha256": "e0df3adb0f1c1bc0b70797f3b6bae2c44b52c96ac70355603065835ffb1a3fbc"
+    },
+    {
+      "path": "research/state.json",
+      "sizeBytes": 12780,
+      "sha256": "4c73c25f90520bb1b162df22aa02cf69feadf4ecbabf65b0f76aef0530fc218b"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "sizeBytes": 2218,
+      "sha256": "543da3de4d18d357402bb196ffd4f96047a164ebe25393442310b26d02827da1"
+    },
+    {
       "path": "scripts/contributors.mjs",
       "sizeBytes": 6614,
       "sha256": "ef3ba89a0104ab3b5d193910d4deb6ee7a079a7d843b0995d31f9b24f2292d02"
@@ -242,6 +282,16 @@
       "sha256": "719ff06dd6108c38d02dd8aa7ed2ea53469fba78df87da35913cb3fad341a7d3"
     },
     {
+      "path": "scripts/research.mjs",
+      "sizeBytes": 29612,
+      "sha256": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f"
+    },
+    {
+      "path": "scripts/research.test.mjs",
+      "sizeBytes": 12045,
+      "sha256": "6f615c214db9139081de47bab8e8035bc7e6ca7ec6d9500355bcfaf1f41e12fc"
+    },
+    {
       "path": "scripts/run-portable.mjs",
       "sizeBytes": 1867,
       "sha256": "d7cccdf66cd807e95a704fc9f0d95b5de54d8e4dd5555657586a91aa25700e3a"
@@ -252,14 +302,34 @@
       "sha256": "079922dd959e0a04965d69b559154f5d0938646c870705230998bb41344d50cb"
     },
     {
+      "path": "scripts/site.test.mjs",
+      "sizeBytes": 1777,
+      "sha256": "a510fff0a27160358ee30f86e8cb6dbd493b43cbe0ee90247f6288c94acd0f52"
+    },
+    {
       "path": "scripts/verify.mjs",
-      "sizeBytes": 12101,
-      "sha256": "e4bce577a95e3fe88ea74270a395c485eb3cbef98c99a1dd77d32052ce41fbbf"
+      "sizeBytes": 12404,
+      "sha256": "edcd32d15c4f5a5c22410791221cea9c24582e4fe96bae522da3c5f9e8a88c5c"
     },
     {
       "path": "scripts/verify.test.mjs",
       "sizeBytes": 8128,
       "sha256": "9d907d68ad38cac29ee4e4e1f90c730b879b400f0da3ee6622caa668946bad5b"
+    },
+    {
+      "path": "web/app.js",
+      "sizeBytes": 11381,
+      "sha256": "1d47acad1477779a52f8f61bedf8f3560f2a966c6ae804995301a59d8ce69f62"
+    },
+    {
+      "path": "web/index.html",
+      "sizeBytes": 5148,
+      "sha256": "9130e8169df8e119a352d545ae724c76d82fdbda495787f78494937672379bd8"
+    },
+    {
+      "path": "web/styles.css",
+      "sizeBytes": 9025,
+      "sha256": "fe96a254fb202ad99bf3c9cdef51fe1965fedb7fce7a5331fa0cf55a166f17e3"
     },
     {
       "path": "wiki/agent-workspaces.md",
@@ -278,8 +348,8 @@
     },
     {
       "path": "wiki/contributors.md",
-      "sizeBytes": 3733,
-      "sha256": "ff2e27db1055103dad61defbb6789569005bd1f153002e90b201e8bc98fd33cd"
+      "sizeBytes": 3887,
+      "sha256": "149bbda444e41778aaba0cd900dcf65678aaddf8d6ae305421eafbd35c79c502"
     },
     {
       "path": "wiki/darwin-godel-machine.md",
@@ -435,6 +505,11 @@
       "path": "wiki/wavewarz.md",
       "sizeBytes": 5061,
       "sha256": "68651fb8ecce26b8ab6e9f165b5afe8bafd2512127588627f37e492a6116cde5"
+    },
+    {
+      "path": "wiki/worker-operations.md",
+      "sizeBytes": 7692,
+      "sha256": "886ee43d1b7653926e0d98747583bc9215b953dee02f0ca8b34f99eac4251349"
     }
   ]
 }
