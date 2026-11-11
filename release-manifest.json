@@ -288,8 +288,8 @@
     },
     {
       "path": "scripts/research.test.mjs",
-      "sizeBytes": 12045,
-      "sha256": "6f615c214db9139081de47bab8e8035bc7e6ca7ec6d9500355bcfaf1f41e12fc"
+      "sizeBytes": 11915,
+      "sha256": "b90ce22dd353f9b3300b230354dd67fb426de9977d2f94fc692dd3225ee65656"
     },
     {
       "path": "scripts/run-portable.mjs",
@@ -328,8 +328,8 @@
     },
     {
       "path": "web/styles.css",
-      "sizeBytes": 9025,
-      "sha256": "fe96a254fb202ad99bf3c9cdef51fe1965fedb7fce7a5331fa0cf55a166f17e3"
+      "sizeBytes": 9021,
+      "sha256": "e02d74278bc1e096b4a10eb4568ef894a3d3eaa34e5ccdf70a33f4fefd7f6c13"
     },
     {
       "path": "wiki/agent-workspaces.md",
@@ -508,8 +508,8 @@
     },
     {
       "path": "wiki/worker-operations.md",
-      "sizeBytes": 7692,
-      "sha256": "886ee43d1b7653926e0d98747583bc9215b953dee02f0ca8b34f99eac4251349"
+      "sizeBytes": 7561,
+      "sha256": "8933086ce7ca61f17b3d3881530d216280878127d1aea9815c7dfa5fa1e40986"
     }
   ]
 }
