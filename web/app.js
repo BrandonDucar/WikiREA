@@ -72,14 +72,14 @@ if (typeof document !== 'undefined') {
     const content = $('article-content'); content.replaceChildren();
     if (!item.automated) markdown(content, item.markdown);
     else {
-      content.append(el('p', 'AUTOMATED RESEARCH NOTE · SEPARATE MODEL CHECK', 'eyebrow'), el('h1', item.title),
+      content.append(el('p', item.unreviewed ? 'UNREVIEWED COMPILED DRAFT · P0' : 'AUTOMATED RESEARCH NOTE · SEPARATE MODEL CHECK', 'eyebrow'), el('h1', item.title),
         el('p', item.unreviewed ? 'This source-bound draft passed compiler checks. Factual review has not passed. Treat its explanations as unverified research, with the source and unknowns alongside it.' : 'Based on a pinned public encyclopedia revision. This explains documented mechanisms; it is not a physical teardown, proprietary source inspection, or human-verified engineering specification.', 'notice'), el('p', item.summary));
       for (const m of item.mechanisms) content.append(el('h2', m.title), el('p', m.explanation));
       content.append(el('h2', 'What we still don’t know'));
       const ul = el('ul'); item.unknowns.forEach(x => ul.append(el('li', x))); content.append(ul);
       content.append(el('h2', 'Follow the source'));
       item.sources.forEach(s => { const p = el('p'); p.append(link(`${s.title} · revision ${s.revision} ↗`, s.url)); content.append(p, el('p', `Inspected ${s.inspectedCharacters.toLocaleString()} of ${s.totalCharacters.toLocaleString()} source characters. ${s.license}`)); });
-      content.append(el('p', `Research role: ${item.role}. Published ${new Date(item.createdAt).toLocaleString()}. Source integrity: ${item.sources[0].sha256}. ${item.unreviewed ? 'Unreviewed draft. No successful factual review is claimed.' : 'Separate model check, not independent human review.'}`));
+      content.append(el('p', `Research role: ${item.role}. ${item.unreviewed ? 'Recorded' : 'Published'} ${new Date(item.createdAt).toLocaleString()}. Source integrity: ${item.sources[0].sha256}. ${item.unreviewed ? 'Unreviewed draft. No successful factual review is claimed.' : 'Separate model check, not independent human review.'}`));
       if (item.compilerRef) content.append(link(`Compiled research packet ↗ · ${item.compilerRef.artifactDigest.slice(0, 12)}`, `https://github.com/BrandonDucar/WikiREA/blob/${data.sourceCommit || 'main'}/${item.compilerRef.packet}`));
     }
     if (!dialog.open) dialog.showModal(); content.scrollTop = 0;

@@ -408,8 +408,8 @@
     },
     {
       "path": "web/app.js",
-      "sizeBytes": 12224,
-      "sha256": "568b5c034be016ee08fbb5c670219c994076be7dec0562aacbfe5bf6ddb2bfd1"
+      "sizeBytes": 12314,
+      "sha256": "7fe63b31fa36547912b3ac3ec57eb59e2cb04ecd373f33c01b7b535a488af1bd"
     },
     {
       "path": "web/index.html",
