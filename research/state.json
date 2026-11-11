@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-11T19:48:31.906Z",
+  "updatedAt": "2026-11-11T19:50:23.468Z",
   "sequence": 20,
   "jobs": [
     {
@@ -1104,8 +1104,10 @@
       "runId": "43090605523",
       "reservedAt": "2026-11-11T19:48:31.906Z",
       "expiresAt": "2026-11-11T20:03:31.906Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "SENIOR_REVIEW_FAILED",
+      "finishedAt": "2026-11-11T19:50:23.468Z"
     }
   ]
 }
