@@ -33,10 +33,12 @@ jobs:
           node scripts/verify.mjs
           node scripts/research.mjs --verify
       - name: Persist reservations before inference
+        id: reserve
         env:
           BATCH: ${{ inputs.batch || '1' }}
         run: |
           node scripts/research.mjs --reserve "$BATCH"
+          node scripts/research.mjs --reserve-reviews "$BATCH"
           node scripts/verify.mjs --refresh-manifest
           git config user.name 'WikiREA research'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -47,9 +49,13 @@ jobs:
           fi
       - name: Research and separate model check
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
         run: node scripts/research.mjs --work
+      - name: Review retained packets after a qualified route change
+        if: always() && steps.reserve.outcome == 'success'
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+        run: node scripts/research.mjs --review-packets
       - name: Retain actual outcomes and rebuild publication
         if: always()
         env:

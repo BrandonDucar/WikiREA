@@ -9,8 +9,10 @@
   "writerModel": "nvidia/nemotron-3.5-lightning-30b-a3b",
   "writerReasoning": false,
   "researchPurpose": "RESEARCH_AND_TESTING",
-  "reviewerModel": "nvidia/nemotron-3-ultra-550b-a55b:free",
-  "reviewerReasoning": true,
+  "reviewerProvider": "nvidia-nim-research",
+  "reviewerModel": "nvidia/nemotron-3-ultra-550b-a55b",
+  "reviewerReasoning": false,
+  "maxSeniorReviewsPerDay": 10,
   "seeds": {
     "source-curator": ["Wikipedia", "Library catalog"],
     "application-tracer": ["Google Search", "Search engine"],

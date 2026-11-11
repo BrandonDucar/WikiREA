@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/research.yml",
-      "sizeBytes": 2348,
-      "sha256": "b24397fd2d7a2f9f96391d16088f88dfd08d042bc3a51a0bf0c8ecba5d62f10f"
+      "sizeBytes": 2620,
+      "sha256": "607536ce631633d8bd960cd4a8f285f7fe7ba848ff30b50f2e424f5761056240"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -213,8 +213,8 @@
     },
     {
       "path": "research/config.json",
-      "sizeBytes": 1132,
-      "sha256": "9b41b33298f2b2077d36aab5bc329bb5602a90223ccef733563ceba271a5f541"
+      "sizeBytes": 1205,
+      "sha256": "9178a46192b3daa9b7e1cff515136e74ef8c93365808e0655101085f18c35f23"
     },
     {
       "path": "research/entries/research-000004-a6f704aa74.json",
@@ -293,8 +293,8 @@
     },
     {
       "path": "scripts/build-site.mjs",
-      "sizeBytes": 2218,
-      "sha256": "543da3de4d18d357402bb196ffd4f96047a164ebe25393442310b26d02827da1"
+      "sizeBytes": 2281,
+      "sha256": "19436e78775c804aa68d21ed8f63b0d6ce37708be917a7045c323cb7d9f71da6"
     },
     {
       "path": "scripts/contributors.mjs",
@@ -338,13 +338,13 @@
     },
     {
       "path": "scripts/research.mjs",
-      "sizeBytes": 29612,
-      "sha256": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f"
+      "sizeBytes": 41523,
+      "sha256": "3e776ee35fd790b3d97660f8942935e741fb207cbe26eb96b542e211b2a6866f"
     },
     {
       "path": "scripts/research.test.mjs",
-      "sizeBytes": 11915,
-      "sha256": "b90ce22dd353f9b3300b230354dd67fb426de9977d2f94fc692dd3225ee65656"
+      "sizeBytes": 15206,
+      "sha256": "b65a3911ccd00d161e45a717f2abd79fff9fa5d0ce258fa7200b574f78100a09"
     },
     {
       "path": "scripts/run-portable.mjs",
@@ -363,8 +363,8 @@
     },
     {
       "path": "scripts/verify.mjs",
-      "sizeBytes": 12404,
-      "sha256": "edcd32d15c4f5a5c22410791221cea9c24582e4fe96bae522da3c5f9e8a88c5c"
+      "sizeBytes": 12499,
+      "sha256": "2cc023c3f14e936fce01edaca01cc677e993b5618263468540ea0737b46eff12"
     },
     {
       "path": "scripts/verify.test.mjs",
@@ -373,8 +373,8 @@
     },
     {
       "path": "web/app.js",
-      "sizeBytes": 11381,
-      "sha256": "1d47acad1477779a52f8f61bedf8f3560f2a966c6ae804995301a59d8ce69f62"
+      "sizeBytes": 11564,
+      "sha256": "ae8a786f01d589d15f9e549abb1600c64148b1eef129dd4216f9d069633daee7"
     },
     {
       "path": "web/index.html",
@@ -563,8 +563,8 @@
     },
     {
       "path": "wiki/worker-operations.md",
-      "sizeBytes": 7561,
-      "sha256": "8933086ce7ca61f17b3d3881530d216280878127d1aea9815c7dfa5fa1e40986"
+      "sizeBytes": 7768,
+      "sha256": "9da1985f13c28ec463f8dc05afc9c16fd1197be8f92256e085ba505764d65c7c"
     }
   ]
 }

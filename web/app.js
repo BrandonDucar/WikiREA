@@ -19,6 +19,7 @@ export function safeUrl(value) {
 export function workerStatus(jobs, now = Date.now()) {
   const j = jobs.at(-1);
   if (!j) return { label: 'Awaiting first run', kind: '', job: null };
+  if (j.publication) return { label: 'Published after senior review', kind: 'complete', job: j };
   if (j.status === 'RESERVED') return { label: Date.parse(j.expiresAt) > now ? 'Research reserved' : 'Interrupted / lease expired', kind: '', job: j };
   if (j.status === 'COMPLETED') return { label: 'Research completed', kind: 'complete', job: j };
   return { label: j.status.replaceAll('_', ' ').toLowerCase(), kind: 'error', job: j };
@@ -70,15 +71,15 @@ if (typeof document !== 'undefined') {
     const content = $('article-content'); content.replaceChildren();
     if (!item.automated) markdown(content, item.markdown);
     else {
-      content.append(el('p', 'AUTOMATED RESEARCH NOTE · SEPARATE MODEL CHECK', 'eyebrow'), el('h1', item.title),
+      content.append(el('p', 'AUTOMATED RESEARCH NOTE Â· SEPARATE MODEL CHECK', 'eyebrow'), el('h1', item.title),
         el('p', 'Based on a pinned public encyclopedia revision. This explains documented mechanisms; it is not a physical teardown, proprietary source inspection, or human-verified engineering specification.', 'notice'), el('p', item.summary));
       for (const m of item.mechanisms) content.append(el('h2', m.title), el('p', m.explanation));
-      content.append(el('h2', 'What we still don’t know'));
+      content.append(el('h2', 'What we still donâ€™t know'));
       const ul = el('ul'); item.unknowns.forEach(x => ul.append(el('li', x))); content.append(ul);
       content.append(el('h2', 'Follow the source'));
-      item.sources.forEach(s => { const p = el('p'); p.append(link(`${s.title} · revision ${s.revision} ↗`, s.url)); content.append(p, el('p', `Inspected ${s.inspectedCharacters.toLocaleString()} of ${s.totalCharacters.toLocaleString()} source characters. ${s.license}`)); });
+      item.sources.forEach(s => { const p = el('p'); p.append(link(`${s.title} Â· revision ${s.revision} â†—`, s.url)); content.append(p, el('p', `Inspected ${s.inspectedCharacters.toLocaleString()} of ${s.totalCharacters.toLocaleString()} source characters. ${s.license}`)); });
       content.append(el('p', `Research role: ${item.role}. Published ${new Date(item.createdAt).toLocaleString()}. Source integrity: ${item.sources[0].sha256}. Separate model check, not independent human review.`));
-      if (item.compilerRef) content.append(link(`Compiled research packet ↗ · ${item.compilerRef.artifactDigest.slice(0, 12)}`, `https://github.com/BrandonDucar/WikiREA/blob/${data.sourceCommit || 'main'}/${item.compilerRef.packet}`));
+      if (item.compilerRef) content.append(link(`Compiled research packet â†— Â· ${item.compilerRef.artifactDigest.slice(0, 12)}`, `https://github.com/BrandonDucar/WikiREA/blob/${data.sourceCommit || 'main'}/${item.compilerRef.packet}`));
     }
     if (!dialog.open) dialog.showModal(); content.scrollTop = 0;
   }
@@ -89,14 +90,14 @@ if (typeof document !== 'undefined') {
     $('result-label').textContent = '';
     if (workers) return renderWorkers();
     const entries = filterEntries(data.entries, query, selected, view);
-    $('result-label').textContent = `${entries.length} ${entries.length === 1 ? 'investigation' : 'investigations'} · Sources and limitations included`;
+    $('result-label').textContent = `${entries.length} ${entries.length === 1 ? 'investigation' : 'investigations'} Â· Sources and limitations included`;
     $('cards').replaceChildren();
     if (!entries.length) $('cards').append(el('p', 'No investigations match yet. Try a broader question.', 'empty'));
     for (const item of entries) {
       const card = el('button', undefined, 'card'); card.type = 'button';
       const meta = el('div', undefined, 'card-meta'); meta.append(el('span', category(item)), el('span', item.automated ? 'RESEARCH NOTE' : 'SOURCE STUDY'));
-      const bottom = el('div', undefined, 'card-bottom'); bottom.append(el('span', item.automated ? 'Model reviewed' : 'Sources & methods', item.automated ? 'tag auto' : 'tag'), el('span', 'Explore ↗'));
-      card.append(meta, el('div', item.automated ? '◎' : '⌘', 'card-symbol'), el('h3', item.title), el('p', (item.summary || '').slice(0, 145) + ((item.summary || '').length > 145 ? '…' : '')), bottom);
+      const bottom = el('div', undefined, 'card-bottom'); bottom.append(el('span', item.automated ? 'Model reviewed' : 'Sources & methods', item.automated ? 'tag auto' : 'tag'), el('span', 'Explore â†—'));
+      card.append(meta, el('div', item.automated ? 'â—Ž' : 'âŒ˜', 'card-symbol'), el('h3', item.title), el('p', (item.summary || '').slice(0, 145) + ((item.summary || '').length > 145 ? 'â€¦' : '')), bottom);
       card.addEventListener('click', () => showArticle(item)); $('cards').append(card);
     }
   }
@@ -110,8 +111,8 @@ if (typeof document !== 'undefined') {
     const grid = el('div', undefined, 'worker-grid');
     for (const role of data.roles) {
       const jobs = data.state.jobs.filter(j => j.role === role); const status = workerStatus(jobs); const w = el('section', undefined, 'worker');
-      w.append(el('h3', role.replaceAll('-', ' ').replace(/\b\w/g, x => x.toUpperCase())), el('span', status.label, `worker-status ${status.kind}`), el('p', `${jobs.filter(j => j.status === 'COMPLETED').length} completed · ${jobs.filter(j => j.packet).length} compiled drafts · ${jobs.filter(j => j.status === 'REVIEW_HELD').length} held for review · ${jobs.filter(j => ['FAILED', 'RATE_LIMITED', 'INTERRUPTED_UNKNOWN'].includes(j.status)).length} failed or interrupted`));
-      if (status.job) { w.append(el('p', `Latest topic: ${status.job.topic}`), el('p', `Recorded ${new Date(status.job.finishedAt || status.job.reservedAt).toLocaleString()} · ${status.job.callsAttempted}/2 calls attempted`, 'worker-detail')); if (status.job.error) w.append(el('p', status.job.error, 'worker-detail')); }
+      w.append(el('h3', role.replaceAll('-', ' ').replace(/\b\w/g, x => x.toUpperCase())), el('span', status.label, `worker-status ${status.kind}`), el('p', `${jobs.filter(j => j.status === 'COMPLETED' || j.publication).length} completed Â· ${jobs.filter(j => j.packet).length} compiled drafts Â· ${jobs.filter(j => j.status === 'REVIEW_HELD').length} held for review Â· ${jobs.filter(j => ['FAILED', 'RATE_LIMITED', 'INTERRUPTED_UNKNOWN'].includes(j.status)).length} failed or interrupted`));
+      if (status.job) { w.append(el('p', `Latest topic: ${status.job.topic}`), el('p', `Recorded ${new Date(status.job.finishedAt || status.job.reservedAt).toLocaleString()} Â· ${status.job.callsAttempted}/2 calls attempted`, 'worker-detail')); if (status.job.error) w.append(el('p', status.job.error, 'worker-detail')); }
       grid.append(w);
     }
     panel.append(grid);
@@ -122,8 +123,8 @@ if (typeof document !== 'undefined') {
   dialog.addEventListener('click', e => { if (e.target === dialog) { const r = dialog.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close(); } });
   document.addEventListener('keydown', e => { if (e.key === '/' && !dialog.open && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); $('search').focus(); } });
   fetch('data.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw Error('DATA_UNAVAILABLE'); return r.json(); }).then(value => {
-    data = value; $('count-library').textContent = data.entries.length; $('count-mechanics').textContent = data.mechanics.length; $('count-research').textContent = data.state.jobs.filter(j => j.status === 'COMPLETED').length;
-    $('update-label').textContent = `Edition built ${new Date(data.builtAt).toLocaleString()}${data.state.updatedAt ? ` · Research recorded ${new Date(data.state.updatedAt).toLocaleString()}` : ' · First worker runs pending'}`;
+    data = value; $('count-library').textContent = data.entries.length; $('count-mechanics').textContent = data.mechanics.length; $('count-research').textContent = data.state.jobs.filter(j => j.status === 'COMPLETED' || j.publication).length;
+    $('update-label').textContent = `Edition built ${new Date(data.builtAt).toLocaleString()}${data.state.updatedAt ? ` Â· Research recorded ${new Date(data.state.updatedAt).toLocaleString()}` : ' Â· First worker runs pending'}`;
     for (const name of ['Everything', 'Software & web', 'AI & systems', 'Hardware', 'Games & simulation', 'Markets', 'Sound & events']) {
       const b = el('button', name, `filter${name === selected ? ' active' : ''}`); b.addEventListener('click', () => { selected = name; document.querySelectorAll('.filter').forEach(x => x.classList.toggle('active', x === b)); render(); }); $('filters').append(b);
     }

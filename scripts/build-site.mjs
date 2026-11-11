@@ -16,9 +16,10 @@ export async function buildSite(base = root, output = path.join(base, '.local/si
     const paragraphs = markdown.split(/\n\s*\n/).filter(x => !/^(#|\||-|>)/.test(x.trim()));
     entries.push({ ...e, markdown, summary: paragraphs.find(x => x.trim().length > 70)?.replaceAll('\n', ' ') || e.title, automated: false });
   }
-  for (const j of state.jobs.filter(j => j.status === 'COMPLETED')) {
-    assert.equal(j.entry, `research/entries/${j.id}.json`);
-    entries.unshift({ ...await load(j.entry), automated: true });
+  for (const j of state.jobs.filter(j => j.status === 'COMPLETED' || j.publication)) {
+    const entry = j.entry || j.publication.entry;
+    assert.equal(entry, `research/entries/${j.id}.json`);
+    entries.unshift({ ...await load(entry), automated: true });
   }
   const sourcePins = {};
   for (const name of ['library.json', 'research/state.json', 'research/config.json', 'web/app.js']) sourcePins[name] = sha(await fs.readFile(path.join(base, name)));

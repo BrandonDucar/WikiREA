@@ -40,23 +40,25 @@ target execution, independent verification or permission to use a design.
 
 [Configuration](../research/config.json) enforces a zero-dollar ceiling, at most
 20 jobs per UTC day, two jobs per role per day, and two model calls per job.
-Reservations count against the cap even when interrupted. Each pass checks the
-OpenRouter review key's free-tier status, remaining allowance and the exact
-review model's current zero pricing. Reviews use only an explicit `:free`
-variant, zero maximum prompt/completion prices, and no provider fallback.
-A completed review must report a numeric zero cost.
+Reservations count against the cap even when interrupted. Both research and
+senior model review use the owner's existing NVIDIA Developer Program research
+allowance at the exact hosted endpoint and qualified model IDs. Nemotron 3.5
+Lightning writes the research; Nemotron 3 Ultra reviews the compiled packet.
+Neither stage buys capacity or has a paid fallback. The site is a published
+research library; visitors do not invoke a NIM API or submit inference jobs.
+Developer access is not claimed as an Enterprise production license.
 
-The research stage uses the existing NVIDIA Developer Program research allowance
-at the exact hosted endpoint and qualified model. It makes no purchases and has
-no paid fallback. NVIDIA does not report monetary cost in its response; that
-field remains unknown, with free research access recorded as its cost basis.
-It is never fabricated as a provider-reported zero. This is background source
-research and testing, not a licensed enterprise NIM deployment or a live
-inference service for site visitors. Shared-account limits can lower throughput.
+NVIDIA does not report monetary cost in its response; that field remains unknown,
+with free research access recorded as its cost basis. It is never fabricated as
+a provider-reported zero. Rate limits and account restrictions stop work.
 
-The research writer has reasoning disabled; the larger review model uses bounded
-reasoning. The two models share a vendor, so review is not independent human
-verification. Configuration failures and rejected drafts remain in the ledger.
+If an earlier review failed in transport or parsing, a newly qualified review
+route can consume the retained compiled packet without repeating its research.
+There are at most ten such senior reviews per UTC day, one attempt per packet
+and route binding, with a separate committed reservation and receipt. Actual
+factual rejections are not automatically reviewed again. The original failed
+attempt remains in the ledger even if a later senior review accepts publication.
+The two models share a vendor, so review is not independent human verification.
 
 Existing public-repository standard GitHub Actions and GitHub Pages capacity
 host the service. No premium runner, private-repository minutes, new domain or
@@ -74,19 +76,21 @@ node scripts/verify.mjs
 node scripts/build-site.mjs
 ```
 
-Existing research and review keys are installed only as the repository Actions
-secrets `NVIDIA_API_KEY` and `OPENROUTER_API_KEY`. It is never included in the public app or source.
+The existing research key is installed only as the repository Actions secret
+`NVIDIA_API_KEY`. It is never included in the public app or source.
 The Pages repository build type is `workflow`. The publication workflow verifies
 the release and builds the app before deploying its artifact. Research commits
 use the repository token; an explicit Pages dispatch publishes their outcomes.
 
-For a local finite run, set `OPENROUTER_API_KEY` and `NVIDIA_API_KEY` securely and use the same unique
+For a local finite run, set `NVIDIA_API_KEY` securely and use the same unique
 `GITHUB_RUN_ID` for reservation and work. Do not run concurrent local writers
 against the same checkout. The GitHub workflow is the supported production writer.
 
 ```sh
 node scripts/research.mjs --reserve 1
+node scripts/research.mjs --reserve-reviews 1
 node scripts/research.mjs --work
+node scripts/research.mjs --review-packets
 node scripts/verify.mjs --refresh-manifest
 node scripts/build-site.mjs
 ```
