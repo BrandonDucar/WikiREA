@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/research.yml",
-      "sizeBytes": 2620,
-      "sha256": "607536ce631633d8bd960cd4a8f285f7fe7ba848ff30b50f2e424f5761056240"
+      "sizeBytes": 2636,
+      "sha256": "bd14256270873df99936c3fac640f7ba1cfb61f87f39a83e9015babc43d58e84"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -213,8 +213,8 @@
     },
     {
       "path": "research/config.json",
-      "sizeBytes": 1205,
-      "sha256": "9178a46192b3daa9b7e1cff515136e74ef8c93365808e0655101085f18c35f23"
+      "sizeBytes": 1241,
+      "sha256": "7bcda1b8b5869cfb005d9e60f20e125429b97566f43ccd5df98226c9878a4796"
     },
     {
       "path": "research/entries/research-000004-a6f704aa74.json",
@@ -368,13 +368,13 @@
     },
     {
       "path": "scripts/research.mjs",
-      "sizeBytes": 41523,
-      "sha256": "3e776ee35fd790b3d97660f8942935e741fb207cbe26eb96b542e211b2a6866f"
+      "sizeBytes": 42189,
+      "sha256": "fa31d5a7680370a719299140f87e5b727256f9bf55329577cb68624cf4e4a45e"
     },
     {
       "path": "scripts/research.test.mjs",
-      "sizeBytes": 15206,
-      "sha256": "b65a3911ccd00d161e45a717f2abd79fff9fa5d0ce258fa7200b574f78100a09"
+      "sizeBytes": 15274,
+      "sha256": "960742a8657ed53ea15e004bcd960d840057acb246a893576deb1115bd540107"
     },
     {
       "path": "scripts/run-portable.mjs",
@@ -593,8 +593,8 @@
     },
     {
       "path": "wiki/worker-operations.md",
-      "sizeBytes": 7768,
-      "sha256": "9da1985f13c28ec463f8dc05afc9c16fd1197be8f92256e085ba505764d65c7c"
+      "sizeBytes": 8007,
+      "sha256": "7ddeda7759bf6e2770ce31237f6680fc85122943d7a4833ee6a424f71fda2d05"
     }
   ]
 }

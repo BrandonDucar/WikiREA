@@ -3,8 +3,9 @@
 The [app](https://BrandonDucar.github.io/WikiREA/) is a static, searchable wiki.
 The [research workflow](../.github/workflows/research.yml) executes ten persistent
 roles on GitHub's standard hosted runner. They take turns; these are not ten
-simultaneously resident models. The schedule runs at minutes 7 and 37 each hour,
-with one job per tick. Manual dispatch supports batches of 1, 2 or 10 roles.
+simultaneously resident models. Twenty scheduled slots per UTC day spread work around the clock, with one
+new research job per slot and four two-hour gaps. This spreads the daily budget
+instead of spending it in an early burst. Manual dispatch supports batches of 1, 2 or 10 roles.
 GitHub schedules can be delayed and are not a real-time or availability guarantee.
 Scheduled workflows in inactive public repositories can be disabled by GitHub.
 
@@ -44,7 +45,8 @@ Reservations count against the cap even when interrupted. Both research and
 senior model review use the owner's existing NVIDIA Developer Program research
 allowance at the exact hosted endpoint and qualified model IDs. Nemotron 3.5
 Lightning writes the research; Nemotron 3 Ultra reviews the compiled packet.
-Neither stage buys capacity or has a paid fallback. The site is a published
+Both request JSON mode and validate the resulting shape; JSON syntax alone is
+not evidence of factual correctness. Neither stage buys capacity or has a paid fallback. The site is a published
 research library; visitors do not invoke a NIM API or submit inference jobs.
 Developer access is not claimed as an Enterprise production license.
 

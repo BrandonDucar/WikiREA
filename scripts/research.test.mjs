@@ -125,7 +125,7 @@ test('NIM research preserves missing monetary reporting and rejects unqualified 
     return reply({ id: 'nim-fixture', choices: [{ finish_reason: 'stop', message: { content: '{}' } }], usage: { prompt_tokens: 10, completion_tokens: 10 } });
   });
   assert.equal(requestUrl, 'https://integrate.api.nvidia.com/v1/chat/completions'); assert.equal(request.tools, undefined);
-  assert.equal(request.max_tokens, 4096); assert.equal(result.receipt.costUsdReported, null);
+  assert.equal(request.max_tokens, 4096); assert.deepEqual(request.response_format, { type: 'json_object' }); assert.equal(result.receipt.costUsdReported, null);
   assert.equal(result.receipt.productionLicenseClaimed, false); assert.equal(result.receipt.purpose, 'RESEARCH_AND_TESTING');
   await assert.rejects(nimResearchInference('unqualified/model', [], 'fixture-nim-key-123'));
   await assert.rejects(nimResearchInference(config.writerModel, [], 'fixture-nim-key-123', async () => reply({ choices: [{ finish_reason: 'stop', message: { content: '{}' } }], usage: { cost: 1 } })), /NONZERO_NIM_COST/);

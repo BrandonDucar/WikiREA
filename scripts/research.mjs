@@ -8,7 +8,7 @@ import { checkText } from './verify.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const sha = v => createHash('sha256').update(v).digest('hex');
-export const binding = c => sha(JSON.stringify([c.writerProvider, c.writerModel, c.reviewerProvider, c.reviewerModel, c.writerReasoning, c.reviewerReasoning]));
+export const binding = c => sha(JSON.stringify([c.writerProvider, c.writerModel, c.reviewerProvider, c.reviewerModel, c.writerReasoning, c.reviewerReasoning, c.nimOutputFormat]));
 const date = now => new Date(now).toISOString();
 export const day = now => date(now).slice(0, 10);
 const load = async (base, name) => JSON.parse(await fs.readFile(path.join(base, name), 'utf8'));
@@ -39,6 +39,7 @@ export function validateConfig(c) {
     assert.equal(c.reviewerModel, 'nvidia/nemotron-3-ultra-550b-a55b'); assert.equal(c.reviewerReasoning, false);
   } else assert(/^[a-z0-9./_-]+:free$/.test(c.reviewerModel), 'FREE_MODEL_REQUIRED');
   assert.equal(c.maxSeniorReviewsPerDay, 10);
+  assert.equal(c.nimOutputFormat, 'json_object');
   assert.notEqual(c.writerModel, c.reviewerModel, 'SEPARATE_REVIEW_MODEL_REQUIRED');
   assert.equal(typeof c.reviewerReasoning, 'boolean');
   assert.equal(typeof c.writerReasoning, 'boolean');
@@ -220,10 +221,19 @@ export async function nimResearchInference(model, messages, key, fetchImpl = fet
   const result = await boundedJson('https://integrate.api.nvidia.com/v1/chat/completions', { fetchImpl,
     headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
     body: { model, messages, temperature: 0.2, max_tokens: 4096, stream: false,
-      chat_template_kwargs: { enable_thinking: false } }, timeoutMs: 110000 });
+      response_format: { type: 'json_object' }, chat_template_kwargs: { enable_thinking: false } }, timeoutMs: 110000 });
   assert.equal(result.choices?.[0]?.finish_reason, 'stop', 'INCOMPLETE_NIM_RESEARCH_OUTPUT');
   assert(result.usage?.cost === undefined || result.usage.cost === 0, 'NONZERO_NIM_COST_REJECTED');
-  return { value: parseModelJson(result.choices[0].message.content), receipt: { model,
+  let value;
+  try { value = parseModelJson(result.choices[0].message.content); }
+  catch (e) {
+    e.diagnostic = { model, generationId: result.id || null, finishReason: result.choices?.[0]?.finish_reason,
+      contentType: typeof result.choices?.[0]?.message?.content,
+      outputBytes: typeof result.choices?.[0]?.message?.content === 'string' ? Buffer.byteLength(result.choices[0].message.content) : null,
+      inputTokens: result.usage?.prompt_tokens ?? null, outputTokens: result.usage?.completion_tokens ?? null };
+    if (e instanceof SyntaxError) e.message = 'MODEL_JSON_INVALID'; throw e;
+  }
+  return { value, receipt: { model,
     generationId: result.id, provider: 'nvidia-nim-research', purpose: 'RESEARCH_AND_TESTING',
     endpoint: 'https://integrate.api.nvidia.com/v1', costUsdReported: result.usage?.cost ?? null,
     costBasis: 'EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS', productionLicenseClaimed: false,
