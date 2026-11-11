@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-11T19:40:34.859Z",
+  "updatedAt": "2026-11-11T19:43:35.899Z",
   "sequence": 20,
   "jobs": [
     {
@@ -515,7 +515,11 @@
       "packet": "research/packets/research-000014-ff90558a14.json",
       "packetDigest": "699f8d0523cc0e94ade09a8c122cb7d4dca370bbbcc1dea16ca7c393fbe3c8b2",
       "error": "MODEL_OUTPUT_LIMIT",
-      "finishedAt": "2026-11-11T19:26:27.652Z"
+      "finishedAt": "2026-11-11T19:26:27.652Z",
+      "publication": {
+        "entry": "research/entries/research-000014-ff90558a14.json",
+        "reviewId": "research-000014-ff90558a14-review-0935c9ab96"
+      }
     },
     {
       "id": "research-000015-4511a63ad0",
@@ -653,7 +657,11 @@
       "packet": "research/packets/research-000017-c26028de23.json",
       "packetDigest": "5818d2f96a5886c013ba0384c293b55da3c9d3ab496e533defb9cd8aee9ff005",
       "error": "MODEL_OUTPUT_LIMIT",
-      "finishedAt": "2026-11-11T19:26:59.173Z"
+      "finishedAt": "2026-11-11T19:26:59.173Z",
+      "publication": {
+        "entry": "research/entries/research-000017-c26028de23.json",
+        "reviewId": "research-000017-c26028de23-review-0935c9ab96"
+      }
     },
     {
       "id": "research-000018-8237aa66c7",
@@ -707,13 +715,46 @@
       "topic": "Model checking",
       "day": "2026-11-11",
       "runId": "43089375616",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-11T19:40:34.819Z",
       "expiresAt": "2026-11-11T19:55:34.819Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 2,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "reviewer",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Model checking",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381130704",
+        "revision": "1381130704",
+        "observedAt": "2026-11-11T19:40:37.039Z",
+        "sourceTimestamp": "2026-10-20T05:19:00Z",
+        "sha256": "5a4892407f9f1cdec9a92c8b9b67eb255930dd582203eaff2518906c5a51b241",
+        "excerptSha256": "eb366c36659a77852627b8cd860abf845ce4b783081f9d99feaefec8e1e79968",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 25736,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1fa720c0-2b2b-450d-8b07-2b5c7b15ee5b",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4343,
+        "outputTokens": 344
+      },
+      "packet": "research/packets/research-000019-77408583f9.json",
+      "packetDigest": "c57638065f0d66156c437e8fe7d5d613d35d0835c63c6caefc6ce4950163ab39",
+      "reviewBinding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "error": "RESEARCH_FAILED",
+      "finishedAt": "2026-11-11T19:40:47.574Z"
     },
     {
       "id": "research-000020-ef871367d3",
@@ -721,13 +762,46 @@
       "topic": "Control theory",
       "day": "2026-11-11",
       "runId": "43089375616",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-11T19:40:34.819Z",
       "expiresAt": "2026-11-11T19:55:34.819Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 2,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "reviewer",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Control theory",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1373944568",
+        "revision": "1373944568",
+        "observedAt": "2026-11-11T19:40:47.880Z",
+        "sourceTimestamp": "2026-09-08T22:12:35Z",
+        "sha256": "5856a528e91c9a493dd0135bda4dc3a643a191c0a699f2a758c6ecbe9a161b52",
+        "excerptSha256": "8fdea60382a11465371ace77814ed9d0adc740258dab314e8b45f47f5af2d3f4",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 45773,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-67337b91-5fb7-4cda-822e-96063a00fe1a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3640,
+        "outputTokens": 361
+      },
+      "packet": "research/packets/research-000020-ef871367d3.json",
+      "packetDigest": "8ffd1135f9d1a01a2001b85899211f95daccfc80b30064b9d4ba3aaf5da666a8",
+      "reviewBinding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+      "error": "RESEARCH_FAILED",
+      "finishedAt": "2026-11-11T19:41:06.492Z"
     }
   ],
   "discovered": [
@@ -902,8 +976,10 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "SENIOR_REVIEW_FAILED",
+      "finishedAt": "2026-11-11T19:41:09.364Z"
     },
     {
       "id": "research-000010-cbc69b31c5-review-0935c9ab96",
@@ -914,8 +990,10 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "SENIOR_REVIEW_FAILED",
+      "finishedAt": "2026-11-11T19:41:12.670Z"
     },
     {
       "id": "research-000011-72d3b7d381-review-0935c9ab96",
@@ -926,8 +1004,10 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "SENIOR_REVIEW_FAILED",
+      "finishedAt": "2026-11-11T19:41:15.892Z"
     },
     {
       "id": "research-000012-726dfe6234-review-0935c9ab96",
@@ -938,8 +1018,10 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "MODEL_TEXT_REQUIRED",
+      "finishedAt": "2026-11-11T19:41:22.196Z"
     },
     {
       "id": "research-000013-d7f15f4d24-review-0935c9ab96",
@@ -950,8 +1032,10 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "SENIOR_REVIEW_FAILED",
+      "finishedAt": "2026-11-11T19:41:25.759Z"
     },
     {
       "id": "research-000014-ff90558a14-review-0935c9ab96",
@@ -962,8 +1046,11 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "COMPLETED",
+      "callsAttempted": 1,
+      "artifact": "research/reviews/research-000014-ff90558a14-review-0935c9ab96.json",
+      "entry": "research/entries/research-000014-ff90558a14.json",
+      "finishedAt": "2026-11-11T19:41:30.782Z"
     },
     {
       "id": "research-000015-4511a63ad0-review-0935c9ab96",
@@ -974,8 +1061,10 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "SENIOR_REVIEW_FAILED",
+      "finishedAt": "2026-11-11T19:41:49.770Z"
     },
     {
       "id": "research-000017-c26028de23-review-0935c9ab96",
@@ -986,8 +1075,11 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "COMPLETED",
+      "callsAttempted": 1,
+      "artifact": "research/reviews/research-000017-c26028de23-review-0935c9ab96.json",
+      "entry": "research/entries/research-000017-c26028de23.json",
+      "finishedAt": "2026-11-11T19:41:54.950Z"
     },
     {
       "id": "research-000018-8237aa66c7-review-0935c9ab96",
@@ -998,8 +1090,10 @@
       "runId": "43089375616",
       "reservedAt": "2026-11-11T19:40:34.859Z",
       "expiresAt": "2026-11-11T19:55:34.859Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "SENIOR_REVIEW_FAILED",
+      "finishedAt": "2026-11-11T19:43:35.899Z"
     }
   ]
 }

@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000014-ff90558a14",
+  "title": "Procedural generation",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-11T19:41:30.782Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Procedural generation is an algorithmic method of creating game content such as levels, textures, and worlds using human-designed rules combined with computer randomness. It enables large, varied game spaces from small codebases by employing deterministic parameters and random seeds. The technique supports replayability but can produce generic output without sufficient human guidance to ensure perceived uniqueness.",
+  "mechanisms": [
+    {
+      "title": "Deterministic parameter-driven generation",
+      "explanation": "Content is computed algorithmically from predefined human-authored parameters, allowing consistent recreation of specific worlds or assets when the same seed or parameters are used.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Random seed and pseudorandom number generation",
+      "explanation": "Short seed values initialize pseudorandom number generators to produce large, exchangeable game worlds that appear handcrafted while remaining deterministic and reproducible.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How human designers balance randomness with meaningful design choices to avoid perceived generic output",
+    "The specific algorithmic pipelines used in modern commercial engines for real-time content streaming",
+    "Whether procedural systems can autonomously achieve perceived uniqueness without explicit human-defined rules",
+    "The long-term player perception effects of infinite procedural output versus curated handcrafted content"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Procedural generation",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382072266",
+      "revision": "1382072266",
+      "observedAt": "2026-11-11T19:26:15.352Z",
+      "sourceTimestamp": "2026-10-26T12:16:53Z",
+      "sha256": "4b8cbf989ed596eb0e8cc7810908d11a817a6730e2d7ed468da82207e527a5c1",
+      "excerptSha256": "3a0c691ac3d50318cc76648754cf70188e0c1105c98198d56483a067cea655e1",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 32262,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and overview of procedural generation",
+      "Mechanisms correctly capture deterministic parameter-driven generation and random seed/PRNG concepts from source",
+      "Unknowns identify genuine gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers like 'typically' and 'depending on implementation' from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-f1c49a67-fbe7-457b-9d32-cee685ec1b42",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3821,
+      "outputTokens": 288
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-8be6e99c-c71e-4ba6-94ee-d3ba63291d4d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4059,
+      "outputTokens": 80
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "a6be4648f170768b888441decd5fe9d2d9a7e7df5926dd7e74843bcc26abdf7e",
+    "artifactDigest": "699f8d0523cc0e94ade09a8c122cb7d4dca370bbbcc1dea16ca7c393fbe3c8b2",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f",
+    "packet": "research/packets/research-000014-ff90558a14.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

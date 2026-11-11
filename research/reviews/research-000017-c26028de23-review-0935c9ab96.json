@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000017-c26028de23-review-0935c9ab96",
+  "parentJobId": "research-000017-c26028de23",
+  "binding": "0935c9ab96653edb9b9b52be5644a3c1321c298023bb5e88a873ea97e1dafa61",
+  "packetDigest": "5818d2f96a5886c013ba0384c293b55da3c9d3ab496e533defb9cd8aee9ff005",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Market data",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379308788",
+    "revision": "1379308788",
+    "observedAt": "2026-11-11T19:26:51.918Z",
+    "sourceTimestamp": "2026-10-09T03:55:55Z",
+    "sha256": "938dc3ea576ecd3493c1abfc5c265ababdbd1efbd07a2f6782ea8589e40fcc7e",
+    "excerptSha256": "2464dc59a08ae27ef2581f36fc214ec30eb1403ed11486212c3e46c62234e0f4",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 16265,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on market data definition, components, and use cases",
+      "Mechanisms correctly describe data collection/distribution infrastructure and vendor-mediated processing as supported by source",
+      "Unknowns appropriately identify proprietary details not disclosed in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'generally' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-adf5546c-1e69-43be-8e43-043663e47cb0",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3960,
+    "outputTokens": 87
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

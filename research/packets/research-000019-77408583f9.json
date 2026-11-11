@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000019-77408583f9",
+  "topic": "Model checking",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Model checking algorithmically verifies whether a finite-state system model satisfies a formal specification expressed in temporal logic. The system is represented as a directed graph of states and transitions, with atomic propositions labeling nodes. The specification is evaluated against all reachable states. For hardware, this reduces to graph search; for software, undecidability limits full algorithmic coverage. Symbolic methods use binary decision diagrams to traverse state spaces efficiently, while bounded model checking reduces the problem to Boolean satisfiability with iterative depth increases.",
+    "mechanisms": [
+      {
+        "title": "Explicit State Graph Search",
+        "explanation": "The system model is constructed as a finite-state machine with states and transitions. The specification is checked against all reachable states through systematic graph traversal. This approach works directly when the model is finite, as in hardware designs, reducing verification to graph search.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Symbolic State Traversal via BDDs",
+        "explanation": "Instead of enumerating states individually, symbolic algorithms represent sets of states and transition relations as logical formulas using binary decision diagrams. This allows efficient traversal of large state spaces without explicit graph construction, popularized by McMillan and Coudert/Madre with open-source manipulation libraries.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Full algorithmic applicability to general software systems",
+      "Exact bounds on verification completeness for undecidable cases",
+      "Implementation-specific optimizations in commercial tools",
+      "Precise handling of liveness versus safety property interactions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Model checking",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381130704",
+    "revision": "1381130704",
+    "observedAt": "2026-11-11T19:40:37.039Z",
+    "sourceTimestamp": "2026-10-20T05:19:00Z",
+    "sha256": "5a4892407f9f1cdec9a92c8b9b67eb255930dd582203eaff2518906c5a51b241",
+    "excerptSha256": "eb366c36659a77852627b8cd860abf845ce4b783081f9d99feaefec8e1e79968",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 25736,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-1fa720c0-2b2b-450d-8b07-2b5c7b15ee5b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4343,
+    "outputTokens": 344
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "3e776ee35fd790b3d97660f8942935e741fb207cbe26eb96b542e211b2a6866f"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "7c4940222d52a46395c974af06a4c053f974960006e53ec2dd7c86ea90d9a531",
+  "artifactDigest": "c57638065f0d66156c437e8fe7d5d613d35d0835c63c6caefc6ce4950163ab39"
+}
