@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T07:25:53.011Z",
-  "sequence": 27,
+  "updatedAt": "2026-11-12T08:19:37.433Z",
+  "sequence": 28,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1133,6 +1133,20 @@
       "packet": "research/packets/research-000027-b59cd37049.json",
       "packetDigest": "2e1500d84fdc2369dc06a509c5fe0afba8055f4cb0e979163c3c9db0b9552f73",
       "finishedAt": "2026-11-12T07:16:46.595Z"
+    },
+    {
+      "id": "research-000028-66915e6d6c",
+      "role": "music-events",
+      "topic": "ACID Pro",
+      "day": "2026-11-12",
+      "runId": "43181988440",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-12T08:19:37.433Z",
+      "expiresAt": "2026-11-12T08:34:37.433Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
