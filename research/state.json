@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T02:19:53.905Z",
-  "sequence": 23,
+  "updatedAt": "2026-11-12T03:17:52.449Z",
+  "sequence": 24,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -941,6 +941,20 @@
       "packet": "research/packets/research-000023-14e109cc66.json",
       "packetDigest": "13ddb56b6ac6f0ca382488a78941156386d9fb175f7e7fe3e0aa83259ddb4671",
       "finishedAt": "2026-11-12T02:19:53.905Z"
+    },
+    {
+      "id": "research-000024-ee7dc4a4fd",
+      "role": "music-events",
+      "topic": "8-track tape",
+      "day": "2026-11-12",
+      "runId": "43147234585",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-12T03:17:52.449Z",
+      "expiresAt": "2026-11-12T03:32:52.449Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
