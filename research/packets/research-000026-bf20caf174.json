@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000026-bf20caf174",
+  "topic": "Birth–death process",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A birth–death process is a continuous-time Markov process modeling population size changes through only two transition types: births that increment the count and deaths that decrement it. Introduced by William Feller, it uses positive birth rates {λ_i} and death rates {μ_i} to define transitions between integer states. The process evolves according to small-time probabilities where a birth occurs with probability λ_iΔt+o(Δt), a death with μ_iΔt+o(Δt), and no change with 1−(λ_i+μ_i)Δt+o(Δt). Its behavior—recurrence, transience, or ergodicity—is determined by the ratios of these rates, and when ergodic, a stationary distribution π_k exists, calculated from the product of rate ratios. The model underlies applications in demography, queueing theory, epidemiology, and phylodynamics, where it tracks infection spread or population evolution over time.",
+    "mechanisms": [
+      {
+        "title": "State transition dynamics",
+        "explanation": "At each state i, the process moves to i+1 (birth) with rate λ_i or to i−1 (death) with rate μ_i. Over a small interval Δt, the probability of a birth is λ_iΔt+o(Δt), of a death is μ_iΔt+o(Δt), and of no change is 1−(λ_i+μ_i)Δt+o(Δt). Transitions involving multiple births or deaths are negligible (higher-order o(Δt)). This defines the infinitesimal generator of the continuous-time Markov chain.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Recurrence and ergodicity criteria",
+        "explanation": "The process is recurrent if the infinite sum of product ratios ∏(μ_n/λ_n) diverges; it is ergodic if that sum diverges while the sum of product ratios ∏(λ_{n−1}/μ_n) converges; it is null-recurrent if both sums diverge. These conditions, established by Karlin and McGregor, classify long-term behavior without guaranteeing a stationary distribution in the null-recurrent case.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact functional forms of λ_i and μ_i for specific real-world populations",
+      "Whether time-inhomogeneous rate schedules preserve the Markov property",
+      "How finite-server constraints modify the infinite-population assumptions",
+      "Identifiability of birth and death rates from sparse epidemiological data"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Birth–death process",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1358862650",
+    "revision": "1358862650",
+    "observedAt": "2026-11-12T06:24:29.004Z",
+    "sourceTimestamp": "2026-06-11T13:04:34Z",
+    "sha256": "5e676351429f7ae979d7c2a5e72dcfceaccab445a87d337fe6ace00766b4e698",
+    "excerptSha256": "2df763a22d1054626deabbbdb01ed572826ee917a8ec8702ee4e44ad850a5a25",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20272,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-b12b7bfb-4c84-4f17-9934-583e51819e7e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4807,
+    "outputTokens": 557
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ab0715a812473dbc87094bb2e3921c8104400ee195bad6425b03c737cb0b4ceb",
+  "artifactDigest": "8603ea6aded2f5be2cdc448e0ba48cda1416f4ba747844a2c97afee1d693f3c8"
+}

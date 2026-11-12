@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T06:24:27.110Z",
+  "updatedAt": "2026-11-12T06:24:35.861Z",
   "sequence": 26,
   "jobs": [
     {
@@ -1046,13 +1046,44 @@
       "topic": "Birth–death process",
       "day": "2026-11-12",
       "runId": "43167905828",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-12T06:24:27.110Z",
       "expiresAt": "2026-11-12T06:39:27.110Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Birth–death process",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1358862650",
+        "revision": "1358862650",
+        "observedAt": "2026-11-12T06:24:29.004Z",
+        "sourceTimestamp": "2026-06-11T13:04:34Z",
+        "sha256": "5e676351429f7ae979d7c2a5e72dcfceaccab445a87d337fe6ace00766b4e698",
+        "excerptSha256": "2df763a22d1054626deabbbdb01ed572826ee917a8ec8702ee4e44ad850a5a25",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 20272,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b12b7bfb-4c84-4f17-9934-583e51819e7e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4807,
+        "outputTokens": 557
+      },
+      "packet": "research/packets/research-000026-bf20caf174.json",
+      "packetDigest": "8603ea6aded2f5be2cdc448e0ba48cda1416f4ba747844a2c97afee1d693f3c8",
+      "finishedAt": "2026-11-12T06:24:35.861Z"
     }
   ],
   "discovered": [
@@ -1085,11 +1116,6 @@
       "title": "Abstraction (computer science)",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000004-a6f704aa74"
-    },
-    {
-      "title": "Birth–death process",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000005-ea383a9a57"
     },
     {
       "title": "Bootstrapping (computing)",
@@ -1380,6 +1406,46 @@
       "title": "3D projection",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000025-6fb0247cd6"
+    },
+    {
+      "title": "Abstract Wiener space",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
+    },
+    {
+      "title": "Actuarial mathematics",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
+    },
+    {
+      "title": "Additive process",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
+    },
+    {
+      "title": "Airy process",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
+    },
+    {
+      "title": "Asset pricing model",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
+    },
+    {
+      "title": "Autoregressive conditional heteroskedasticity",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
+    },
+    {
+      "title": "Autoregressive integrated moving average",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
+    },
+    {
+      "title": "Autoregressive model",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000026-bf20caf174"
     }
   ],
   "reviewJobs": [
