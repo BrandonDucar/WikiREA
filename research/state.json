@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T03:27:07.266Z",
-  "sequence": 24,
+  "updatedAt": "2026-11-12T04:16:50.364Z",
+  "sequence": 25,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -990,6 +990,20 @@
       "packet": "research/packets/research-000024-ee7dc4a4fd.json",
       "packetDigest": "aabd60e845cb65c664d71599794c5756877f26163068db6bdeae253f40936a0d",
       "finishedAt": "2026-11-12T03:18:00.912Z"
+    },
+    {
+      "id": "research-000025-6fb0247cd6",
+      "role": "game-mechanic-researcher",
+      "topic": "2D computer graphics",
+      "day": "2026-11-12",
+      "runId": "43153736769",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-12T04:16:50.364Z",
+      "expiresAt": "2026-11-12T04:31:50.364Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
