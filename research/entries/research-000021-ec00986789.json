@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000021-ec00986789",
+  "title": ".NET Framework",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-12T19:25:26.937Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The .NET Framework is a proprietary Microsoft software platform that runs primarily on Windows, implementing the Common Language Infrastructure (CLI) standard. It comprises a large class library (FCL) and a runtime environment (CLR) that executes managed code, providing services like memory management, security, and exception handling. While initially closed, Microsoft has issued patent promises and relicensed related runtimes under permissive licenses, though core Framework components remain proprietary.",
+  "mechanisms": [
+    {
+      "title": "Common Language Runtime (CLR)",
+      "explanation": "The CLR is an application virtual machine that executes managed code, providing foundational services such as memory management, security, and exception handling. It acts as the execution environment for programs written for the Framework.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Framework Class Library (FCL)",
+      "explanation": "The FCL is a large class library that provides functionality for user interfaces, data access, database connectivity, cryptography, web development, numeric algorithms, and network communications. Programmers combine source code with the FCL to build applications.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Proprietary status of non-standard libraries",
+    "Patent scope and restrictions for third-party implementations",
+    "Long-term support plans beyond security updates",
+    "Internal implementation details of the CLR"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": ".NET Framework",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385032400",
+      "revision": "1385032400",
+      "observedAt": "2026-11-12T00:36:17.923Z",
+      "sourceTimestamp": "2026-11-11T14:27:34Z",
+      "sha256": "0965ed76118d571de153b1de8a1651de5a7a14acc97ccedbbbfc7678a3b74841",
+      "excerptSha256": "5b88d959504b2d1f5393863cc7d75814352036e97f5c1f2a8d0d1d0aaa116ccc",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 51777,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source description of .NET Framework as proprietary Microsoft platform implementing CLI with FCL and CLR components",
+      "Mechanisms correctly identify CLR as application virtual machine providing memory management, security, exception handling per source",
+      "FCL mechanism accurately describes class library scope covering UI, data access, cryptography, web development, networking per source",
+      "Unknowns properly flagged include proprietary status of non-standard libraries, patent scope for third-party implementations, long-term support plans, CLR internal details - all consistent with source gaps",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-c66549a0-fe88-442c-962f-c2f529bd8987",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4156,
+      "outputTokens": 308
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-3066dcd2-1c29-4c27-913d-286ef5380fd3",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4413,
+      "outputTokens": 134
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "83b7f1a86e39d6c3a341c991c92d9580738d78db7b1c2b7382b910823526c572",
+    "artifactDigest": "7b94ca88676d77de249c9b30418ac42d477935e8938bbcede1d85e12f024c1d4",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000021-ec00986789.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

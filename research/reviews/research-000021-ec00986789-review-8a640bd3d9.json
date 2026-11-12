@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000021-ec00986789-review-8a640bd3d9",
+  "parentJobId": "research-000021-ec00986789",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "7b94ca88676d77de249c9b30418ac42d477935e8938bbcede1d85e12f024c1d4",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET Framework",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385032400",
+    "revision": "1385032400",
+    "observedAt": "2026-11-12T00:36:17.923Z",
+    "sourceTimestamp": "2026-11-11T14:27:34Z",
+    "sha256": "0965ed76118d571de153b1de8a1651de5a7a14acc97ccedbbbfc7678a3b74841",
+    "excerptSha256": "5b88d959504b2d1f5393863cc7d75814352036e97f5c1f2a8d0d1d0aaa116ccc",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 51777,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source description of .NET Framework as proprietary Microsoft platform implementing CLI with FCL and CLR components",
+      "Mechanisms correctly identify CLR as application virtual machine providing memory management, security, exception handling per source",
+      "FCL mechanism accurately describes class library scope covering UI, data access, cryptography, web development, networking per source",
+      "Unknowns properly flagged include proprietary status of non-standard libraries, patent scope for third-party implementations, long-term support plans, CLR internal details - all consistent with source gaps",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-3066dcd2-1c29-4c27-913d-286ef5380fd3",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4413,
+    "outputTokens": 134
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
