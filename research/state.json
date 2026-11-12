@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T08:19:37.433Z",
+  "updatedAt": "2026-11-12T08:19:43.207Z",
   "sequence": 28,
   "jobs": [
     {
@@ -1140,13 +1140,44 @@
       "topic": "ACID Pro",
       "day": "2026-11-12",
       "runId": "43181988440",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-12T08:19:37.433Z",
       "expiresAt": "2026-11-12T08:34:37.433Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Acid Pro",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383139364",
+        "revision": "1383139364",
+        "observedAt": "2026-11-12T08:19:39.579Z",
+        "sourceTimestamp": "2026-11-01T04:57:49Z",
+        "sha256": "8206b923dd186d1534e2c2f346922117a905d3d6cfaeb54a848c94804bb5537f",
+        "excerptSha256": "8206b923dd186d1534e2c2f346922117a905d3d6cfaeb54a848c94804bb5537f",
+        "inspectedCharacters": 8779,
+        "totalCharacters": 8779,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c01cf51b-9560-49cd-a53b-40854d9ebace",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3021,
+        "outputTokens": 391
+      },
+      "packet": "research/packets/research-000028-66915e6d6c.json",
+      "packetDigest": "271291c3ca76c74f9124ad0a990436edda7e6acad389f0f7def75751b6459474",
+      "finishedAt": "2026-11-12T08:19:43.207Z"
     }
   ],
   "discovered": [
@@ -1209,11 +1240,6 @@
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000005-ea383a9a57"
-    },
-    {
-      "title": "ACID Pro",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
     },
     {
       "title": "AIVA",
@@ -1544,6 +1570,36 @@
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
+    },
+    {
+      "title": "5.1 surround sound",
+      "role": "music-events",
+      "discoveredFrom": "research-000028-66915e6d6c"
+    },
+    {
+      "title": "Acoustica (software)",
+      "role": "music-events",
+      "discoveredFrom": "research-000028-66915e6d6c"
+    },
+    {
+      "title": "Adobe Soundbooth",
+      "role": "music-events",
+      "discoveredFrom": "research-000028-66915e6d6c"
+    },
+    {
+      "title": "Anvil Studio",
+      "role": "music-events",
+      "discoveredFrom": "research-000028-66915e6d6c"
+    },
+    {
+      "title": "Ardour (software)",
+      "role": "music-events",
+      "discoveredFrom": "research-000028-66915e6d6c"
+    },
+    {
+      "title": "Audacity (audio editor)",
+      "role": "music-events",
+      "discoveredFrom": "research-000028-66915e6d6c"
     }
   ],
   "reviewJobs": [
