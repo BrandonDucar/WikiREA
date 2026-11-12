@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T05:25:18.414Z",
-  "sequence": 25,
+  "updatedAt": "2026-11-12T06:24:27.110Z",
+  "sequence": 26,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1039,6 +1039,20 @@
       "packet": "research/packets/research-000025-6fb0247cd6.json",
       "packetDigest": "084e8a971ade02302b965ef9b263c47ec16ba65a8e8703349a81391baa35ec58",
       "finishedAt": "2026-11-12T04:16:56.604Z"
+    },
+    {
+      "id": "research-000026-bf20caf174",
+      "role": "simulation-researcher",
+      "topic": "Birth–death process",
+      "day": "2026-11-12",
+      "runId": "43167905828",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-12T06:24:27.110Z",
+      "expiresAt": "2026-11-12T06:39:27.110Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
