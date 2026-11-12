@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000020-ef871367d3",
+  "title": "Control theory",
+  "role": "glossary-and-mechanics-editor",
+  "createdAt": "2026-11-12T17:24:13.142Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Control theory is a branch of engineering and applied mathematics that develops models or algorithms to drive dynamical systems to desired states while minimizing delay, overshoot, and steady-state error. It relies on controllers that compare a process variable to a set point, generating error-based feedback to maintain stability. Extensive use of block diagrams and transfer functions characterizes the field, which dates to 19th-century analyses of governors by James Clerk Maxwell and subsequent contributions by Routh, Sturm, and Hurwitz. The theory underpins automation in manufacturing, aircraft, communications, and robotics, and extends to fields like economics and AI where feedback models regulate system behavior.",
+  "mechanisms": [
+    {
+      "title": "Feedback Error Correction",
+      "explanation": "A controller monitors the process variable and compares it to the reference set point. The resulting error signal is used as feedback to generate a control action that drives the process variable toward the set point, minimizing steady-state error and maintaining stability.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Block Diagram and Transfer Function Modeling",
+      "explanation": "Control systems are represented using block diagrams where the transfer function mathematically models the relationship between input and output based on the system's differential equations. This diagrammatic approach simplifies the analysis of system dynamics and design of corrective algorithms.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact implementation details of nonlinear control techniques beyond linear approximations",
+    "Specific numerical methods used in modern computer simulation of complex systems",
+    "Full reverse engineering of internal model mechanisms in AI or economic regulation contexts",
+    "Complete historical development path of PID control theory beyond documented contributions"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Control theory",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1373944568",
+      "revision": "1373944568",
+      "observedAt": "2026-11-11T19:40:47.880Z",
+      "sourceTimestamp": "2026-09-08T22:12:35Z",
+      "sha256": "5856a528e91c9a493dd0135bda4dc3a643a191c0a699f2a758c6ecbe9a161b52",
+      "excerptSha256": "8fdea60382a11465371ace77814ed9d0adc740258dab314e8b45f47f5af2d3f4",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 45773,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on control theory scope, feedback mechanisms, and historical development",
+      "Mechanisms correctly describe feedback error correction and block diagram/transfer function modeling as presented in source",
+      "Unknowns appropriately identify gaps in source coverage of nonlinear techniques, simulation methods, AI/economic applications, and PID history",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often' and 'may' preserved where source uses them"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-67337b91-5fb7-4cda-822e-96063a00fe1a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3640,
+      "outputTokens": 361
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-9f547176-7db6-4b89-af9f-20512ef006de",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3951,
+      "outputTokens": 103
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "8304984c2b471d12600269c32df908b5388083fab6bb54c55b7f234a1790b792",
+    "artifactDigest": "8ffd1135f9d1a01a2001b85899211f95daccfc80b30064b9d4ba3aaf5da666a8",
+    "sourceDigest": "3e776ee35fd790b3d97660f8942935e741fb207cbe26eb96b542e211b2a6866f",
+    "packet": "research/packets/research-000020-ef871367d3.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

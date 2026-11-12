@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000020-ef871367d3-review-8a640bd3d9",
+  "parentJobId": "research-000020-ef871367d3",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "8ffd1135f9d1a01a2001b85899211f95daccfc80b30064b9d4ba3aaf5da666a8",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Control theory",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373944568",
+    "revision": "1373944568",
+    "observedAt": "2026-11-11T19:40:47.880Z",
+    "sourceTimestamp": "2026-09-08T22:12:35Z",
+    "sha256": "5856a528e91c9a493dd0135bda4dc3a643a191c0a699f2a758c6ecbe9a161b52",
+    "excerptSha256": "8fdea60382a11465371ace77814ed9d0adc740258dab314e8b45f47f5af2d3f4",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 45773,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on control theory scope, feedback mechanisms, and historical development",
+      "Mechanisms correctly describe feedback error correction and block diagram/transfer function modeling as presented in source",
+      "Unknowns appropriately identify gaps in source coverage of nonlinear techniques, simulation methods, AI/economic applications, and PID history",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often' and 'may' preserved where source uses them"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-9f547176-7db6-4b89-af9f-20512ef006de",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3951,
+    "outputTokens": 103
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
