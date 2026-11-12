@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T03:17:52.449Z",
+  "updatedAt": "2026-11-12T03:18:00.912Z",
   "sequence": 24,
   "jobs": [
     {
@@ -948,13 +948,44 @@
       "topic": "8-track tape",
       "day": "2026-11-12",
       "runId": "43147234585",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-12T03:17:52.449Z",
       "expiresAt": "2026-11-12T03:32:52.449Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "8-track cartridge",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1375025233",
+        "revision": "1375025233",
+        "observedAt": "2026-11-12T03:17:54.380Z",
+        "sourceTimestamp": "2026-09-15T12:50:50Z",
+        "sha256": "9ca1af56fc0acadfa65e2cf1ef37bb81354e608e2dd1c916f0c771cc28339b4b",
+        "excerptSha256": "98801d554302f899b1b2abdd89383d86b21c47c25d10c24f7763428fc4b95b05",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 24824,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-680d34a5-4b85-42d3-a85d-e5434bcca663",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4020,
+        "outputTokens": 402
+      },
+      "packet": "research/packets/research-000024-ee7dc4a4fd.json",
+      "packetDigest": "aabd60e845cb65c664d71599794c5756877f26163068db6bdeae253f40936a0d",
+      "finishedAt": "2026-11-12T03:18:00.912Z"
     }
   ],
   "discovered": [
@@ -1027,11 +1058,6 @@
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000005-ea383a9a57"
-    },
-    {
-      "title": "8-track tape",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
     },
     {
       "title": "ACID Pro",
@@ -1222,6 +1248,41 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "2-XL",
+      "role": "music-events",
+      "discoveredFrom": "research-000024-ee7dc4a4fd"
+    },
+    {
+      "title": "45 rpm adapter",
+      "role": "music-events",
+      "discoveredFrom": "research-000024-ee7dc4a4fd"
+    },
+    {
+      "title": "8-Track Heaven",
+      "role": "music-events",
+      "discoveredFrom": "research-000024-ee7dc4a4fd"
+    },
+    {
+      "title": "ADAT",
+      "role": "music-events",
+      "discoveredFrom": "research-000024-ee7dc4a4fd"
+    },
+    {
+      "title": "AMC Matador",
+      "role": "music-events",
+      "discoveredFrom": "research-000024-ee7dc4a4fd"
+    },
+    {
+      "title": "A Holly Dolly Christmas",
+      "role": "music-events",
+      "discoveredFrom": "research-000024-ee7dc4a4fd"
+    },
+    {
+      "title": "Album era",
+      "role": "music-events",
+      "discoveredFrom": "research-000024-ee7dc4a4fd"
     }
   ],
   "reviewJobs": [
