@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T01:25:09.860Z",
-  "sequence": 22,
+  "updatedAt": "2026-11-12T02:19:47.987Z",
+  "sequence": 23,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -896,6 +896,20 @@
       "packet": "research/packets/research-000022-5ba2f1d513.json",
       "packetDigest": "9976711aa1a64accc285a7b18cff9de2ace958cc8284a24d19e911363c266ca8",
       "finishedAt": "2026-11-12T01:16:03.030Z"
+    },
+    {
+      "id": "research-000023-14e109cc66",
+      "role": "hardware-interoperability-scout",
+      "topic": "3D printing",
+      "day": "2026-11-12",
+      "runId": "43140617283",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-12T02:19:47.987Z",
+      "expiresAt": "2026-11-12T02:34:47.987Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
