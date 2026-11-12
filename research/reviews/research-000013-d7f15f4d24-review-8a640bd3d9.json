@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000013-d7f15f4d24-review-8a640bd3d9",
+  "parentJobId": "research-000013-d7f15f4d24",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "d2ffb46e3bc24e0729042e73be106fa503a636f56b3f3789feb5ec29cc30e80f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Interpreter (computing)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1369367199",
+    "revision": "1369367199",
+    "observedAt": "2026-11-11T19:25:50.113Z",
+    "sourceTimestamp": "2026-08-14T15:00:43Z",
+    "sha256": "94494f20118c7d366cabcd9d0d31870a99d21d4de14023a76d1cde2999dccb39",
+    "excerptSha256": "7afe207e55ff70ca5727859d19e77c909c9ff8bd391e46c9128c626128bae3ab",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20314,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of interpreter, bytecode, and JIT compilation",
+      "Mechanisms correctly describe direct execution and intermediate translation with JIT as described in source",
+      "Unknowns appropriately identify gaps not covered in source (identifier mapping details, tokenization specifics, interoperability mechanisms, VM/sandbox details)",
+      "No invented execution details or unsupported mechanisms introduced",
+      "Qualifiers like 'may' and 'often' preserved from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1b5418ca-37a0-4d68-93d0-2a65793a1f9c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3949,
+    "outputTokens": 103
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
