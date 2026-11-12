@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000018-8237aa66c7-review-8a640bd3d9",
+  "parentJobId": "research-000018-8237aa66c7",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "44c67b619b6d7cec2bfccc308d9d1dcee017df9409938857bdcc75185161ca14",
+  "sourcePin": {
+    "id": "S1",
+    "title": "MIDI",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384954679",
+    "revision": "1384954679",
+    "observedAt": "2026-11-11T19:26:59.326Z",
+    "sourceTimestamp": "2026-11-11T00:53:40Z",
+    "sha256": "897b9adbf947d66f990e013d0fd4b6c9d1c51214be48dcd0f4d45aebe6c444e7",
+    "excerptSha256": "89576f2a7536397ada88b5c534a0be407190f310004c5bffbce722588fa45810",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 133877,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on MIDI definition, 16-channel capacity, event-based protocol, and historical development",
+      "Mechanisms correctly describe event-based communication and multi-channel transmission with proper source attribution",
+      "Unknowns appropriately identify gaps in source regarding physical layer details, proprietary extensions, MIDI 2.0 compatibility, and internal processing specifics",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'up to sixteen channels' and 'can be routed' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1065018a-05f3-45c0-aaf5-eb0884869246",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5017,
+    "outputTokens": 114
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
