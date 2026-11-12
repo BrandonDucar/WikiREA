@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000025-6fb0247cd6",
+  "topic": "2D computer graphics",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "2D computer graphics generate digital images from two-dimensional models using geometric transformations and rendering techniques. Originating in the 1950s with vector graphics, the field shifted to raster-based devices. Core operations include translating, rotating, and scaling objects via homogeneous coordinates and matrix algebra. Images are constructed by painting geometric shapes, text, and digital assets onto a raster canvas, often organized in layers to support compositing and independent editing. Rendering combines these elements using specified colors, gradients, and blending modes to produce the final display.",
+    "mechanisms": [
+      {
+        "title": "Geometric Transformations",
+        "explanation": "Objects are manipulated using homogeneous coordinate matrices for translation, rotation, and scaling. Translation shifts every point by a constant vector; rotation uses a matrix with cosine and sine of the angle; scaling adjusts size. Matrix multiplication combines these operations, and because vector addition is commutative, the corresponding matrix multiplication is also commutative.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Layered Rendering and Painting",
+        "explanation": "Images are built by rendering or pasting layers in depth order onto a canvas. Each layer may contain geometric shapes, text, or raster images. Transparent or translucent layers modify underlying pixels without full replacement. Complex models are composed of simpler objects, and layers allow independent editing, spatial anti-aliasing, and selective suppression of information.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific graphics hardware implements pixel-level blending modes beyond basic transparency",
+      "The exact algorithmic steps for rendering text as geometric primitives within a raster canvas",
+      "Whether all rendering pipelines use the same commutative matrix multiplication property for transformation composition",
+      "The detailed mechanism by which bitwise color operations like exclusive or are applied during volatile painting operations"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "2D computer graphics",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379218301",
+    "revision": "1379218301",
+    "observedAt": "2026-11-12T04:16:52.410Z",
+    "sourceTimestamp": "2026-10-08T17:10:42Z",
+    "sha256": "a62e188fb7aae6c5f6b30e3076bba1e80284a17033f2029b6674f6c41152d467",
+    "excerptSha256": "e96b7519578b1f768c699c9759d9043c092d0c64958e57428b49400888f6da03",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 21033,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2c74601b-7834-41e8-8104-81d5a51e11e1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3642,
+    "outputTokens": 396
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "0101e370f4368a28e5fa1bea666798c16822deabdb136e8fd5d6b05457d4863d",
+  "artifactDigest": "084e8a971ade02302b965ef9b263c47ec16ba65a8e8703349a81391baa35ec58"
+}

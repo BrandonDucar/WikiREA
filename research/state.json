@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T04:16:50.364Z",
+  "updatedAt": "2026-11-12T04:16:56.604Z",
   "sequence": 25,
   "jobs": [
     {
@@ -997,21 +997,47 @@
       "topic": "2D computer graphics",
       "day": "2026-11-12",
       "runId": "43153736769",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-12T04:16:50.364Z",
       "expiresAt": "2026-11-12T04:31:50.364Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "2D computer graphics",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379218301",
+        "revision": "1379218301",
+        "observedAt": "2026-11-12T04:16:52.410Z",
+        "sourceTimestamp": "2026-10-08T17:10:42Z",
+        "sha256": "a62e188fb7aae6c5f6b30e3076bba1e80284a17033f2029b6674f6c41152d467",
+        "excerptSha256": "e96b7519578b1f768c699c9759d9043c092d0c64958e57428b49400888f6da03",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 21033,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2c74601b-7834-41e8-8104-81d5a51e11e1",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3642,
+        "outputTokens": 396
+      },
+      "packet": "research/packets/research-000025-6fb0247cd6.json",
+      "packetDigest": "084e8a971ade02302b965ef9b263c47ec16ba65a8e8703349a81391baa35ec58",
+      "finishedAt": "2026-11-12T04:16:56.604Z"
     }
   ],
   "discovered": [
-    {
-      "title": "2D computer graphics",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "3D GameStudio",
       "role": "game-mechanic-researcher",
@@ -1301,6 +1327,41 @@
       "title": "Album era",
       "role": "music-events",
       "discoveredFrom": "research-000024-ee7dc4a4fd"
+    },
+    {
+      "title": "16-bit computing",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000025-6fb0247cd6"
+    },
+    {
+      "title": "2.5D",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000025-6fb0247cd6"
+    },
+    {
+      "title": "2D geometric model",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000025-6fb0247cd6"
+    },
+    {
+      "title": "2D geometric primitive",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000025-6fb0247cd6"
+    },
+    {
+      "title": "2D rotation",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000025-6fb0247cd6"
+    },
+    {
+      "title": "2D to 3D conversion",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000025-6fb0247cd6"
+    },
+    {
+      "title": "3D projection",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000025-6fb0247cd6"
     }
   ],
   "reviewJobs": [
