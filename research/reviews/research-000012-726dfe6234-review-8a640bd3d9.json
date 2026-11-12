@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000012-726dfe6234-review-8a640bd3d9",
+  "parentJobId": "research-000012-726dfe6234",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "43e2385043199be60a671dacff4ae493d87bcf163c74ec1c322f8b5d53c123ed",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Search engine",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383872781",
+    "revision": "1383872781",
+    "observedAt": "2026-11-11T19:25:43.345Z",
+    "sourceTimestamp": "2026-11-05T07:42:27Z",
+    "sha256": "6c3677c128f3c4e596d3cda4c4d338067be47903212b0ba1e144c727d157b453",
+    "excerptSha256": "ebcf79d1192aaf0e9a13d97dc96d3738b1eca9c4f18a951cbb847966e336b268",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 70112,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of search engine as application software returning hyperlinks via browser/mobile app",
+      "Mechanisms correctly capture indexing system driven by automated web crawlers and distributed computing across global data centers",
+      "Market share concentration (89-90% as of May 2025) and SEO focus on dominant provider are properly attributed to StatCounter source",
+      "Unknowns appropriately identify algorithmic details, deep web handling, crawler policies, and infrastructure specifics not covered in source",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-cb6a97e1-a142-46a3-8f80-24204e8716b0",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5516,
+    "outputTokens": 127
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

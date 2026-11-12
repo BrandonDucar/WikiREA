@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000012-726dfe6234",
+  "title": "Search engine",
+  "role": "application-tracer",
+  "createdAt": "2026-11-12T05:25:18.414Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A search engine is an application software that returns hyperlinks to web pages in response to user queries submitted via browser or mobile app. Its engine operates as part of a distributed computing system across global data centers, relying on a continuously updated indexing system driven by automated web crawlers. These crawlers mine files and databases on web servers, though some content remains in the deep web and inaccessible to crawlers. Market share is highly concentrated, with one provider holding approximately 89–90% of worldwide search share as of May 2025, while competitors trail far behind. Because of this dominance, website visibility improvements, known as search engine marketing and optimization, have historically focused heavily on that provider.",
+  "mechanisms": [
+    {
+      "title": "Indexing system",
+      "explanation": "The engine's speed and accuracy depend on a complex system of indexing that is continuously updated by automated web crawlers. Crawlers mine files and databases on web servers to build the index, but some content is deep web and not accessible to crawlers.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Distributed computing engine",
+      "explanation": "For a search provider, its engine is part of a distributed computing system that can encompass many data centers throughout the world. This infrastructure supports the processing of queries against the index.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact algorithms used for ranking and relevance scoring",
+    "Internal mechanisms for handling deep web content exclusion",
+    "Details of crawler scheduling and freshness policies",
+    "Specific data center distribution and load-balancing strategies"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Search engine",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383872781",
+      "revision": "1383872781",
+      "observedAt": "2026-11-11T19:25:43.345Z",
+      "sourceTimestamp": "2026-11-05T07:42:27Z",
+      "sha256": "6c3677c128f3c4e596d3cda4c4d338067be47903212b0ba1e144c727d157b453",
+      "excerptSha256": "ebcf79d1192aaf0e9a13d97dc96d3738b1eca9c4f18a951cbb847966e336b268",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 70112,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of search engine as application software returning hyperlinks via browser/mobile app",
+      "Mechanisms correctly capture indexing system driven by automated web crawlers and distributed computing across global data centers",
+      "Market share concentration (89-90% as of May 2025) and SEO focus on dominant provider are properly attributed to StatCounter source",
+      "Unknowns appropriately identify algorithmic details, deep web handling, crawler policies, and infrastructure specifics not covered in source",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-7a19df45-a92c-4f8a-bc4f-e4499edcf6fe",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4896,
+      "outputTokens": 356
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-cb6a97e1-a142-46a3-8f80-24204e8716b0",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5516,
+      "outputTokens": 127
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "a46b306fc1e43d7b35585a3c8b6cd1b7c980d8abc9a9371c9769df4d757009cb",
+    "artifactDigest": "43e2385043199be60a671dacff4ae493d87bcf163c74ec1c322f8b5d53c123ed",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f",
+    "packet": "research/packets/research-000012-726dfe6234.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
