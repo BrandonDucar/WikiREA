@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000010-cbc69b31c5",
+  "title": "Feedback",
+  "role": "glossary-and-mechanics-editor",
+  "createdAt": "2026-11-12T01:25:09.859Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Feedback is a process where a system's outputs are routed back as inputs to influence future status, forming a causal loop. It enables self-regulation by comparing actual performance against a reference level and adjusting accordingly. The mechanism can either amplify or dampen system behavior depending on the phase and path of the returned signal.",
+  "mechanisms": [
+    {
+      "title": "Negative feedback stabilization",
+      "explanation": "Returns a signal out of phase by 180° to reduce system error, minimizing deviations from a target state such as speed or temperature. This mechanism narrows the gap between actual and reference values, promoting stability.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Positive feedback amplification",
+      "explanation": "Returns a signal in phase with the input, reinforcing the original output and potentially amplifying disturbances, oscillations, or system gain until a limit or saturation point is reached.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact physical or neural wiring required to represent feedback in complex biological systems",
+    "Whether all feedback loops require an explicit wire or nerve pathway to qualify as feedback",
+    "The precise conditions under which positive feedback transitions into instability or runaway amplification",
+    "How practical experimenters distinguish intentional feedback from incidental circular causality"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Feedback",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1377270575",
+      "revision": "1377270575",
+      "observedAt": "2026-11-11T19:23:31.020Z",
+      "sourceTimestamp": "2026-09-28T16:47:37Z",
+      "sha256": "f32bfca3d44ce533244b1cc656205d1efaa5a15bec619b46f95e58155f1a2781",
+      "excerptSha256": "e679fb63e3411921b0bcefde023af8e557b109939a352df33316536283b48737",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 52532,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects the source definition of feedback as outputs routed back as inputs forming a causal loop",
+      "Mechanisms correctly distinguish negative feedback (180° out of phase, reduces error) and positive feedback (in phase, amplifies) as described in the source",
+      "Source IDs reference the single provided source S1 which contains all cited content",
+      "Unknowns appropriately capture genuine ambiguities from the source including the Ashby debate about wire/nerve requirements and the definitional confusion noted by Mindell",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-25981271-0403-4222-a47e-de625a5db721",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3987,
+      "outputTokens": 284
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-2e0c8a18-d2e6-4af0-b6a0-328309d3c095",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4261,
+      "outputTokens": 129
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "56d74cbb2dfb07187a56cfc5c5ef622c068491d26ec1a85c6d3bd592c969fe35",
+    "artifactDigest": "d569a49c144158c063aba5a06fbd8c70ced922fecd54f27ed62c1602c22a6b67",
+    "sourceDigest": "3e5c1a9e9f1089972c38854b65ea06acf83c37b859d6b45abf27daafa96d051f",
+    "packet": "research/packets/research-000010-cbc69b31c5.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

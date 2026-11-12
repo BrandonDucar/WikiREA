@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000010-cbc69b31c5-review-8a640bd3d9",
+  "parentJobId": "research-000010-cbc69b31c5",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "d569a49c144158c063aba5a06fbd8c70ced922fecd54f27ed62c1602c22a6b67",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Feedback",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1377270575",
+    "revision": "1377270575",
+    "observedAt": "2026-11-11T19:23:31.020Z",
+    "sourceTimestamp": "2026-09-28T16:47:37Z",
+    "sha256": "f32bfca3d44ce533244b1cc656205d1efaa5a15bec619b46f95e58155f1a2781",
+    "excerptSha256": "e679fb63e3411921b0bcefde023af8e557b109939a352df33316536283b48737",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 52532,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects the source definition of feedback as outputs routed back as inputs forming a causal loop",
+      "Mechanisms correctly distinguish negative feedback (180° out of phase, reduces error) and positive feedback (in phase, amplifies) as described in the source",
+      "Source IDs reference the single provided source S1 which contains all cited content",
+      "Unknowns appropriately capture genuine ambiguities from the source including the Ashby debate about wire/nerve requirements and the definitional confusion noted by Mindell",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-2e0c8a18-d2e6-4af0-b6a0-328309d3c095",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4261,
+    "outputTokens": 129
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
