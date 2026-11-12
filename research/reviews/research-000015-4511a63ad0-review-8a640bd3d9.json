@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000015-4511a63ad0-review-8a640bd3d9",
+  "parentJobId": "research-000015-4511a63ad0",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "4fa02bc0fc81f9037429753dbb8581daf3252b91854b9fdb06e5e530f14794b5",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Digital twin",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383966219",
+    "revision": "1383966219",
+    "observedAt": "2026-11-11T19:26:27.812Z",
+    "sourceTimestamp": "2026-11-05T21:46:49Z",
+    "sha256": "e4d6d3f95d9647c64b7c644a928ed1d1eeef180393a804b0a21dc2aa80ca7912",
+    "excerptSha256": "f6619f114c743e9d4d6911e0f37ddf8b690ddf179ab06ffb660cacf39343bfe5",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 40278,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Mechanism 'Real-time data synchronization' claims continuous ingestion but source only states 'continuously uses real data' without specifying real-time or sensor data ingestion architecture",
+      "Mechanism 'Predictive emulation and action prescription' attributes prescriptive capability to the twin but source only describes it as replicating to 'predict failures and opportunities' and 'prescribe real time actions' as a quoted definition, not verified mechanism",
+      "Summary states 'Originating from NASA's 2010 spacecraft simulation efforts' but source says concept originated earlier and 'first practical definition' came from NASA in 2010",
+      "Summary claims 'comprises three components' as fact but source marks this with '{{fact|date=October 2025}}' indicating citation needed",
+      "Unknowns include 'Exact architecture of the communication channel' but source explicitly names it 'digital thread' and describes it as information flows and sensor flows"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1a4de712-1162-43b0-93bb-3f53b620753c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4508,
+    "outputTokens": 202
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
