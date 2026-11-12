@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T00:36:23.199Z",
-  "sequence": 21,
+  "updatedAt": "2026-11-12T01:15:53.654Z",
+  "sequence": 22,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -847,6 +847,20 @@
       "packet": "research/packets/research-000021-ec00986789.json",
       "packetDigest": "7b94ca88676d77de249c9b30418ac42d477935e8938bbcede1d85e12f024c1d4",
       "finishedAt": "2026-11-12T00:36:23.199Z"
+    },
+    {
+      "id": "research-000022-5ba2f1d513",
+      "role": "simulation-researcher",
+      "topic": "ArXiv (identifier)",
+      "day": "2026-11-12",
+      "runId": "43133284774",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-12T01:15:53.654Z",
+      "expiresAt": "2026-11-12T01:30:53.654Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
