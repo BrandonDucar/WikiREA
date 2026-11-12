@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000019-77408583f9",
+  "title": "Model checking",
+  "role": "adversarial-reviewer",
+  "createdAt": "2026-11-12T15:25:35.958Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Model checking algorithmically verifies whether a finite-state system model satisfies a formal specification expressed in temporal logic. The system is represented as a directed graph of states and transitions, with atomic propositions labeling nodes. The specification is evaluated against all reachable states. For hardware, this reduces to graph search; for software, undecidability limits full algorithmic coverage. Symbolic methods use binary decision diagrams to traverse state spaces efficiently, while bounded model checking reduces the problem to Boolean satisfiability with iterative depth increases.",
+  "mechanisms": [
+    {
+      "title": "Explicit State Graph Search",
+      "explanation": "The system model is constructed as a finite-state machine with states and transitions. The specification is checked against all reachable states through systematic graph traversal. This approach works directly when the model is finite, as in hardware designs, reducing verification to graph search.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Symbolic State Traversal via BDDs",
+      "explanation": "Instead of enumerating states individually, symbolic algorithms represent sets of states and transition relations as logical formulas using binary decision diagrams. This allows efficient traversal of large state spaces without explicit graph construction, popularized by McMillan and Coudert/Madre with open-source manipulation libraries.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Full algorithmic applicability to general software systems",
+    "Exact bounds on verification completeness for undecidable cases",
+    "Implementation-specific optimizations in commercial tools",
+    "Precise handling of liveness versus safety property interactions"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Model checking",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381130704",
+      "revision": "1381130704",
+      "observedAt": "2026-11-11T19:40:37.039Z",
+      "sourceTimestamp": "2026-10-20T05:19:00Z",
+      "sha256": "5a4892407f9f1cdec9a92c8b9b67eb255930dd582203eaff2518906c5a51b241",
+      "excerptSha256": "eb366c36659a77852627b8cd860abf845ce4b783081f9d99feaefec8e1e79968",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 25736,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on model checking definition, finite-state models, temporal logic specifications, and hardware/software applicability",
+      "Mechanisms correctly capture explicit state graph search and symbolic BDD traversal as described in source",
+      "Unknowns appropriately identify undecidability limits for software and state explosion problem mentioned in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically', 'often', 'may' preserved from source language"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-1fa720c0-2b2b-450d-8b07-2b5c7b15ee5b",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4343,
+      "outputTokens": 344
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-1bd7f5ec-5acd-4d27-a119-3c6d7b056817",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4666,
+      "outputTokens": 106
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "7c4940222d52a46395c974af06a4c053f974960006e53ec2dd7c86ea90d9a531",
+    "artifactDigest": "c57638065f0d66156c437e8fe7d5d613d35d0835c63c6caefc6ce4950163ab39",
+    "sourceDigest": "3e776ee35fd790b3d97660f8942935e741fb207cbe26eb96b542e211b2a6866f",
+    "packet": "research/packets/research-000019-77408583f9.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

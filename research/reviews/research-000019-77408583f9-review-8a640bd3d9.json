@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000019-77408583f9-review-8a640bd3d9",
+  "parentJobId": "research-000019-77408583f9",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "c57638065f0d66156c437e8fe7d5d613d35d0835c63c6caefc6ce4950163ab39",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Model checking",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381130704",
+    "revision": "1381130704",
+    "observedAt": "2026-11-11T19:40:37.039Z",
+    "sourceTimestamp": "2026-10-20T05:19:00Z",
+    "sha256": "5a4892407f9f1cdec9a92c8b9b67eb255930dd582203eaff2518906c5a51b241",
+    "excerptSha256": "eb366c36659a77852627b8cd860abf845ce4b783081f9d99feaefec8e1e79968",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 25736,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on model checking definition, finite-state models, temporal logic specifications, and hardware/software applicability",
+      "Mechanisms correctly capture explicit state graph search and symbolic BDD traversal as described in source",
+      "Unknowns appropriately identify undecidability limits for software and state explosion problem mentioned in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically', 'often', 'may' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1bd7f5ec-5acd-4d27-a119-3c6d7b056817",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4666,
+    "outputTokens": 106
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
