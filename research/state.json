@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T00:36:15.756Z",
+  "updatedAt": "2026-11-12T00:36:23.199Z",
   "sequence": 21,
   "jobs": [
     {
@@ -809,21 +809,47 @@
       "topic": ".NET Framework",
       "day": "2026-11-12",
       "runId": "43128467756",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-12T00:36:15.756Z",
       "expiresAt": "2026-11-12T00:51:15.756Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": ".NET Framework",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385032400",
+        "revision": "1385032400",
+        "observedAt": "2026-11-12T00:36:17.923Z",
+        "sourceTimestamp": "2026-11-11T14:27:34Z",
+        "sha256": "0965ed76118d571de153b1de8a1651de5a7a14acc97ccedbbbfc7678a3b74841",
+        "excerptSha256": "5b88d959504b2d1f5393863cc7d75814352036e97f5c1f2a8d0d1d0aaa116ccc",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 51777,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c66549a0-fe88-442c-962f-c2f529bd8987",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4156,
+        "outputTokens": 308
+      },
+      "packet": "research/packets/research-000021-ec00986789.json",
+      "packetDigest": "7b94ca88676d77de249c9b30418ac42d477935e8938bbcede1d85e12f024c1d4",
+      "finishedAt": "2026-11-12T00:36:23.199Z"
     }
   ],
   "discovered": [
-    {
-      "title": ".NET Framework",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "2D computer graphics",
       "role": "game-mechanic-researcher",
@@ -978,6 +1004,46 @@
       "title": "Bibcode (identifier)",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000016-f3bd75d71f"
+    },
+    {
+      "title": ".NET",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
+    },
+    {
+      "title": ".NET Compact Framework",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
+    },
+    {
+      "title": ".NET Compiler Platform",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
+    },
+    {
+      "title": ".NET Core",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
+    },
+    {
+      "title": ".NET Foundation",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
+    },
+    {
+      "title": ".NET Framework version history",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
+    },
+    {
+      "title": ".NET Gadgeteer",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
+    },
+    {
+      "title": ".NET MAUI",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000021-ec00986789"
     }
   ],
   "reviewJobs": [
