@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T02:19:47.987Z",
+  "updatedAt": "2026-11-12T02:19:53.905Z",
   "sequence": 23,
   "jobs": [
     {
@@ -903,13 +903,44 @@
       "topic": "3D printing",
       "day": "2026-11-12",
       "runId": "43140617283",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-12T02:19:47.987Z",
       "expiresAt": "2026-11-12T02:34:47.987Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D printing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383296191",
+        "revision": "1383296191",
+        "observedAt": "2026-11-12T02:19:50.459Z",
+        "sourceTimestamp": "2026-11-02T00:11:21Z",
+        "sha256": "eda47ce4f37035a5035cd9499ca8666d19e645749812de2d1049851f843ec3fd",
+        "excerptSha256": "114faabe9313b2e1f97f4f005a6508887db57b3b2778c7988d7cbf1b38d9744a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 185754,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4225c196-6e91-4153-964b-78c41dda8e53",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4165,
+        "outputTokens": 286
+      },
+      "packet": "research/packets/research-000023-14e109cc66.json",
+      "packetDigest": "13ddb56b6ac6f0ca382488a78941156386d9fb175f7e7fe3e0aa83259ddb4671",
+      "finishedAt": "2026-11-12T02:19:53.905Z"
     }
   ],
   "discovered": [
@@ -1022,11 +1053,6 @@
       "title": "Amiga",
       "role": "music-events",
       "discoveredFrom": "research-000008-8d45fc6c77"
-    },
-    {
-      "title": "3D printing",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000016-f3bd75d71f"
     },
     {
       "title": "ASTM International",
@@ -1142,6 +1168,46 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
+    },
+    {
+      "title": ".dwg",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "3D-printed firearm",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "3DBenchy",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "3D Manufacturing Format",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "3D Slash",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "3D Systems",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "3D bioprinting",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
+    },
+    {
+      "title": "3D concrete printing",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000023-14e109cc66"
     }
   ],
   "reviewJobs": [

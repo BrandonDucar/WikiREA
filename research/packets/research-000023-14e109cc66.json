@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000023-14e109cc66",
+  "topic": "3D printing",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3D printing, also called additive manufacturing, constructs three-dimensional objects from digital models by depositing material layer by layer under computer control. While originally limited to prototyping, modern processes can produce complex geometries with internal structures, reduced waste, and varied materials including thermoplastics and powders. The technology has evolved from experimental methods in the 1980s to a viable industrial-production technology as of 2019.",
+    "mechanisms": [
+      {
+        "title": "Layer-by-layer material deposition",
+        "explanation": "Material is deposited, joined, or solidified under computer control, typically adding material together in the form of plastics, liquids, or powder grains fused layer by layer to build the object.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Computer numerical control of deposition",
+        "explanation": "The printing process is governed by computer numerical control, guiding the precise placement of material based on a CAD or digital 3D model to shape the object.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact material compatibility across all process variants",
+      "Long-term precision and repeatability limits for industrial production",
+      "Detailed proprietary control algorithms of specific machine manufacturers",
+      "Full material property ranges achievable under different process conditions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D printing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383296191",
+    "revision": "1383296191",
+    "observedAt": "2026-11-12T02:19:50.459Z",
+    "sourceTimestamp": "2026-11-02T00:11:21Z",
+    "sha256": "eda47ce4f37035a5035cd9499ca8666d19e645749812de2d1049851f843ec3fd",
+    "excerptSha256": "114faabe9313b2e1f97f4f005a6508887db57b3b2778c7988d7cbf1b38d9744a",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 185754,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4225c196-6e91-4153-964b-78c41dda8e53",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4165,
+    "outputTokens": 286
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b48112997c5e9fda51c4dd50fe3bdb3408650892322692346dfba40bfdb2c2a3",
+  "artifactDigest": "13ddb56b6ac6f0ca382488a78941156386d9fb175f7e7fe3e0aa83259ddb4671"
+}
