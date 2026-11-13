@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T07:25:40.864Z",
-  "sequence": 35,
+  "updatedAt": "2026-11-13T08:19:00.707Z",
+  "sequence": 36,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1525,6 +1525,20 @@
       "packet": "research/packets/research-000035-f2e7ee10e7.json",
       "packetDigest": "5adfd55e5265573f971f5a51d83914fe210a651fb39d7474834b0c2850b1d4b4",
       "finishedAt": "2026-11-13T07:15:54.283Z"
+    },
+    {
+      "id": "research-000036-e4eff9f5fb",
+      "role": "music-events",
+      "topic": "Ableton Live",
+      "day": "2026-11-13",
+      "runId": "43392250401",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-13T08:19:00.707Z",
+      "expiresAt": "2026-11-13T08:34:00.707Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
