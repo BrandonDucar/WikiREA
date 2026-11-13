@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T02:17:59.023Z",
+  "updatedAt": "2026-11-13T02:18:04.900Z",
   "sequence": 31,
   "jobs": [
     {
@@ -1295,13 +1295,44 @@
       "topic": "Alloy",
       "day": "2026-11-13",
       "runId": "43351145051",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-13T02:17:59.023Z",
       "expiresAt": "2026-11-13T02:32:59.023Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Alloy",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1371597757",
+        "revision": "1371597757",
+        "observedAt": "2026-11-13T02:18:01.052Z",
+        "sourceTimestamp": "2026-08-27T08:32:48Z",
+        "sha256": "98fc0b3109d82158856f8a002a149f8a71d88f50cce76436789942c3c46f9f9b",
+        "excerptSha256": "acbe73e1dcc772e7a90b6d0c9cf7c0afe7dd555298a57ec0b88772a41dc4c542",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 57302,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-31a27360-2347-48df-ab61-3fb95f06895f",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4299,
+        "outputTokens": 373
+      },
+      "packet": "research/packets/research-000031-03dd95243d.json",
+      "packetDigest": "1b043d289fed392e114965373caec399a1f6e777b92f277b83f2afb98f3c2d35",
+      "finishedAt": "2026-11-13T02:18:04.900Z"
     }
   ],
   "discovered": [
@@ -1384,11 +1415,6 @@
       "title": "Amiga",
       "role": "music-events",
       "discoveredFrom": "research-000008-8d45fc6c77"
-    },
-    {
-      "title": "Alloy",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000016-f3bd75d71f"
     },
     {
       "title": "Alternating current",
@@ -1784,6 +1810,46 @@
       "title": "Black start",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "Acid dissociation constant",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Adolf Martens",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Age of Enlightenment",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Aircraft",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Aircraft skin",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Airframe",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Alfred Wilm",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Allotropes of iron",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000031-03dd95243d"
     }
   ],
   "reviewJobs": [
