@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000027-b59cd37049",
+  "title": "ASTM International",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-13T09:26:06.042Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "ASTM International is a voluntary consensus standards organization founded in 1902, originally to address railroad rail breaks. It develops and publishes technical standards for materials and products, operating through member-driven committees. With over 30,000 members from 140+ countries, it runs global initiatives like the Additive Manufacturing Center of Excellence and a NIST-funded Standardization Center of Excellence. While its standards are voluntary, they are frequently referenced by governments and corporations, such as ASTM F963 for toy safety mandated by U.S. law.",
+  "mechanisms": [
+    {
+      "title": "Committee-driven consensus development",
+      "explanation": "Standards are developed within technical committees composed of voluntary member participation. New committees form upon member request, and producer representation is capped at under 50% per committee to comply with antitrust laws, ensuring balanced voting.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Global initiative integration",
+      "explanation": "ASTM operates initiatives such as the Additive Manufacturing Center of Excellence and the NIST-funded Standardization Center of Excellence. These programs bridge research, certification, workforce development, and regulatory alignment, focusing on emerging technologies like additive manufacturing across targeted industries.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Enforcement mechanisms for voluntary standards outside referenced contracts or regulations",
+    "Internal decision-making processes for forming new global initiatives",
+    "Detailed technical procedures for consensus voting within large committees",
+    "Specific criteria for member classification beyond the stated user/producer/consumer/general interest categories"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ASTM International",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1369826502",
+      "revision": "1369826502",
+      "observedAt": "2026-11-12T07:16:42.574Z",
+      "sourceTimestamp": "2026-08-17T12:03:20Z",
+      "sha256": "7841d4cb353db4be8508530c02860d9d8963682f720ff3dfd6b0f3e0144f1b14",
+      "excerptSha256": "7841d4cb353db4be8508530c02860d9d8963682f720ff3dfd6b0f3e0144f1b14",
+      "inspectedCharacters": 12240,
+      "totalCharacters": 12240,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on founding, scope, membership, and initiatives",
+      "Mechanisms correctly describe committee-driven consensus and global initiative integration with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'voluntary consensus' and 'frequently referenced' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-a5753d82-957f-487c-84e3-29ea758e1b3a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3172,
+      "outputTokens": 352
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-43a3ad63-04f0-42cf-9460-fbf84ce89da5",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3538,
+      "outputTokens": 89
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "2b3deac82e4a5bd9bd0a9e6800ba123836b01fe08cf559869460f41e5a1f62b1",
+    "artifactDigest": "2e1500d84fdc2369dc06a509c5fe0afba8055f4cb0e979163c3c9db0b9552f73",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000027-b59cd37049.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
