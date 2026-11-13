@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T01:24:53.254Z",
-  "sequence": 30,
+  "updatedAt": "2026-11-13T02:17:59.023Z",
+  "sequence": 31,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1288,6 +1288,20 @@
       "packet": "research/packets/research-000030-5a4bfec956.json",
       "packetDigest": "54069d5052c455fc368c7c463243b78ce7a95e02c563999f2a758d19d36ba016",
       "finishedAt": "2026-11-13T01:15:17.778Z"
+    },
+    {
+      "id": "research-000031-03dd95243d",
+      "role": "hardware-interoperability-scout",
+      "topic": "Alloy",
+      "day": "2026-11-13",
+      "runId": "43351145051",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-13T02:17:59.023Z",
+      "expiresAt": "2026-11-13T02:32:59.023Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
