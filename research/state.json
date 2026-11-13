@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T00:36:03.358Z",
+  "updatedAt": "2026-11-13T00:36:12.088Z",
   "sequence": 29,
   "jobs": [
     {
@@ -1201,21 +1201,47 @@
       "topic": "3D GameStudio",
       "day": "2026-11-13",
       "runId": "43338325422",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-13T00:36:03.358Z",
       "expiresAt": "2026-11-13T00:51:03.358Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D GameStudio",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1375233965",
+        "revision": "1375233965",
+        "observedAt": "2026-11-13T00:36:05.537Z",
+        "sourceTimestamp": "2026-09-16T16:04:46Z",
+        "sha256": "484b5a4a37724e32d0962fecac1114cd5bf5060ec5e0708a460b173a00a79b2f",
+        "excerptSha256": "23088f141cdbe80ebe8be5ace3d45cbdb0f89de44d8b661a613190eb2dc9b2ad",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 17850,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-d7897531-99af-48a8-8b31-7f4472571a7b",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3765,
+        "outputTokens": 489
+      },
+      "packet": "research/packets/research-000029-4aa4540b02.json",
+      "packetDigest": "38f6cb7ec71329300140e383e31c3929bb6e7b7215e47f9ccc54a621b4868f7e",
+      "finishedAt": "2026-11-13T00:36:12.088Z"
     }
   ],
   "discovered": [
-    {
-      "title": "3D GameStudio",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "3D computer graphics",
       "role": "game-mechanic-researcher",
@@ -1630,6 +1656,36 @@
       "title": "Audacity (audio editor)",
       "role": "music-events",
       "discoveredFrom": "research-000028-66915e6d6c"
+    },
+    {
+      "title": "3D Hunting: Grizzly",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000029-4aa4540b02"
+    },
+    {
+      "title": "3D Hunting: Trophy Game",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000029-4aa4540b02"
+    },
+    {
+      "title": "3D Hunting: Trophy Whitetail",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000029-4aa4540b02"
+    },
+    {
+      "title": "3ds Max",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000029-4aa4540b02"
+    },
+    {
+      "title": "Adobe Photoshop",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000029-4aa4540b02"
+    },
+    {
+      "title": "Adventure Game Interpreter",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000029-4aa4540b02"
     }
   ],
   "reviewJobs": [
