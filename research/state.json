@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-12T21:24:33.162Z",
-  "sequence": 28,
+  "updatedAt": "2026-11-13T00:36:03.358Z",
+  "sequence": 29,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1194,6 +1194,20 @@
       "packet": "research/packets/research-000028-66915e6d6c.json",
       "packetDigest": "271291c3ca76c74f9124ad0a990436edda7e6acad389f0f7def75751b6459474",
       "finishedAt": "2026-11-12T08:19:43.207Z"
+    },
+    {
+      "id": "research-000029-4aa4540b02",
+      "role": "game-mechanic-researcher",
+      "topic": "3D GameStudio",
+      "day": "2026-11-13",
+      "runId": "43338325422",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-13T00:36:03.358Z",
+      "expiresAt": "2026-11-13T00:51:03.358Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
