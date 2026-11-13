@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T01:15:07.977Z",
+  "updatedAt": "2026-11-13T01:15:17.778Z",
   "sequence": 30,
   "jobs": [
     {
@@ -1246,13 +1246,44 @@
       "topic": "Bootstrapping (computing)",
       "day": "2026-11-13",
       "runId": "43343468847",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-13T01:15:07.977Z",
       "expiresAt": "2026-11-13T01:30:07.977Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Bootstrapping",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384317249",
+        "revision": "1384317249",
+        "observedAt": "2026-11-13T01:15:13.542Z",
+        "sourceTimestamp": "2026-11-07T18:18:14Z",
+        "sha256": "0bd709e4301caad301ecefe46f4894873a41f75504a6d3350b9a05a4fe57f0a5",
+        "excerptSha256": "978c295df11df6f44f86fe4f2f2675e5def90e43e1cfa704bc9574e20e30ac6a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 30385,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-6133c834-841e-44ef-bec5-bbb73a806db2",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4084,
+        "outputTokens": 310
+      },
+      "packet": "research/packets/research-000030-5a4bfec956.json",
+      "packetDigest": "54069d5052c455fc368c7c463243b78ce7a95e02c563999f2a758d19d36ba016",
+      "finishedAt": "2026-11-13T01:15:17.778Z"
     }
   ],
   "discovered": [
@@ -1280,11 +1311,6 @@
       "title": "Abstraction (computer science)",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000004-a6f704aa74"
-    },
-    {
-      "title": "Bootstrapping (computing)",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000005-ea383a9a57"
     },
     {
       "title": "Bootstrapping (statistics)",
@@ -1700,6 +1726,46 @@
       "title": "Adventure Game Interpreter",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000029-4aa4540b02"
+    },
+    {
+      "title": "Artificial intelligence",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "Assembly language",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "Authentication",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "BIOS",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "Baron Munchausen",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "Bibcode (identifier)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "Bible",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
+    },
+    {
+      "title": "Black start",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000030-5a4bfec956"
     }
   ],
   "reviewJobs": [
