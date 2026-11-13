@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T03:17:23.630Z",
+  "updatedAt": "2026-11-13T03:17:28.814Z",
   "sequence": 32,
   "jobs": [
     {
@@ -1340,13 +1340,44 @@
       "topic": "AIVA",
       "day": "2026-11-13",
       "runId": "43357941797",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-13T03:17:23.630Z",
       "expiresAt": "2026-11-13T03:32:23.630Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AIVA",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380363571",
+        "revision": "1380363571",
+        "observedAt": "2026-11-13T03:17:25.289Z",
+        "sourceTimestamp": "2026-10-15T08:04:01Z",
+        "sha256": "cad44a27d3f84bfc5b31fe9e0fb88e6be42d105f470f186338a58eb4811acef5",
+        "excerptSha256": "cad44a27d3f84bfc5b31fe9e0fb88e6be42d105f470f186338a58eb4811acef5",
+        "inspectedCharacters": 8651,
+        "totalCharacters": 8651,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-292549bb-2694-4872-9182-19323750c97a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3462,
+        "outputTokens": 286
+      },
+      "packet": "research/packets/research-000032-ed1306e349.json",
+      "packetDigest": "c7f65da422ecf681d87b1666b3169d5bf3575e29e695e789b8f941ee84bf6391",
+      "finishedAt": "2026-11-13T03:17:28.814Z"
     }
   ],
   "discovered": [
@@ -1399,11 +1430,6 @@
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000005-ea383a9a57"
-    },
-    {
-      "title": "AIVA",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
     },
     {
       "title": "Ableton Live",
@@ -1864,6 +1890,46 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
+    },
+    {
+      "title": "Algorithmic composition",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "Applications of artificial intelligence",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "Bach",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "Beethoven",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "Classical music",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "Computer music",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "Deep learning",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "Mozart",
+      "role": "music-events",
+      "discoveredFrom": "research-000032-ed1306e349"
     }
   ],
   "reviewJobs": [
