@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000029-4aa4540b02",
+  "title": "3D GameStudio",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-13T15:25:16.782Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "3D GameStudio is a pan-3D computer game development system enabling royalty-free creation of games and virtual reality applications. It includes a model/terrain editor, level editor, script editor/debugger, and a library of textures, models, and artwork. The system provides three usage levels (beginner, advanced, professional) for hobbyists, artists, and programmers, and is marketed for advergames, simulations, and virtual exhibitions. Most published titles are created by teams of 2-3 developers. The software has evolved through versions A3 to A8, adding terrain, physics, shaders, and networking capabilities. It is marketed at various skill levels and supports external development languages.",
+  "mechanisms": [
+    {
+      "title": "World Editor (WED)",
+      "explanation": "The main editor allowing users to position objects, assign script-defined actions to entities, apply textures to level geometry, and build levels using Binary Space Partitioning (BSP) technique. The interface features a central 3D view with auxiliary top, side, and back views for coordinate-based editing. Textures must be power-of-2 dimensions for optimal rendering. The editor operates on a snap-to-grid system with limitations in creating complex geometry like streets without gaps.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Lite-C Programming Language",
+      "explanation": "Introduced in version A7 (2007), Lite-C is a C-like language offering full C/C++ variable support, structs, and external class access. It provides DirectX and Windows API access and enables customization of most engine features. Unlike the older C-Script, Lite-C compiles code rather than interpreting it at runtime. A free standalone version exists separate from the Gamestudio suite.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Precise relationship between WED's snap-to-grid feature and complex geometry creation limitations",
+    "Whether the BSP renderer's availability is strictly limited to the Pro edition across all A8.x versions",
+    "Details of how the Intense X plug-in's AI pathfinding integrates with the core engine's networking functions",
+    "Specific technical mechanisms enabling the template system's 'clicking together' of games without programming"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "3D GameStudio",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375233965",
+      "revision": "1375233965",
+      "observedAt": "2026-11-13T00:36:05.537Z",
+      "sourceTimestamp": "2026-09-16T16:04:46Z",
+      "sha256": "484b5a4a37724e32d0962fecac1114cd5bf5060ec5e0708a460b173a00a79b2f",
+      "excerptSha256": "23088f141cdbe80ebe8be5ace3d45cbdb0f89de44d8b661a613190eb2dc9b2ad",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 17850,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including royalty-free publishing, editor components, usage levels, marketing targets, team sizes, version history, and external language support",
+      "Mechanism descriptions for WED and Lite-C are factually supported by source text with correct technical details",
+      "Unknowns section properly identifies genuine gaps in source information without inventing claims",
+      "No unsupported mechanisms or invented execution details present in draft",
+      "All qualifiers (\"may\", \"allows\", \"supports\") appropriately preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-d7897531-99af-48a8-8b31-7f4472571a7b",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3765,
+      "outputTokens": 489
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-44e08264-2b3e-40d9-b478-02fa94951050",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4268,
+      "outputTokens": 115
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "97e6ec7f9aa65df5065c3e01fc30334079e0c929b3fb52a265e355ef56611d6d",
+    "artifactDigest": "38f6cb7ec71329300140e383e31c3929bb6e7b7215e47f9ccc54a621b4868f7e",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000029-4aa4540b02.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

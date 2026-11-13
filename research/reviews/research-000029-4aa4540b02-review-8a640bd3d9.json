@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000029-4aa4540b02-review-8a640bd3d9",
+  "parentJobId": "research-000029-4aa4540b02",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "38f6cb7ec71329300140e383e31c3929bb6e7b7215e47f9ccc54a621b4868f7e",
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D GameStudio",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1375233965",
+    "revision": "1375233965",
+    "observedAt": "2026-11-13T00:36:05.537Z",
+    "sourceTimestamp": "2026-09-16T16:04:46Z",
+    "sha256": "484b5a4a37724e32d0962fecac1114cd5bf5060ec5e0708a460b173a00a79b2f",
+    "excerptSha256": "23088f141cdbe80ebe8be5ace3d45cbdb0f89de44d8b661a613190eb2dc9b2ad",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17850,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including royalty-free publishing, editor components, usage levels, marketing targets, team sizes, version history, and external language support",
+      "Mechanism descriptions for WED and Lite-C are factually supported by source text with correct technical details",
+      "Unknowns section properly identifies genuine gaps in source information without inventing claims",
+      "No unsupported mechanisms or invented execution details present in draft",
+      "All qualifiers (\"may\", \"allows\", \"supports\") appropriately preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-44e08264-2b3e-40d9-b478-02fa94951050",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4268,
+    "outputTokens": 115
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
