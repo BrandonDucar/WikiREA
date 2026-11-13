@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000032-ed1306e349",
+  "title": "AIVA",
+  "role": "music-events",
+  "createdAt": "2026-11-13T21:24:48.250Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "AIVA is an electronic composer trained on a large corpus of classical works by Bach, Beethoven, and Mozart. It detects musical regularities to generate original pieces. Since 2019, its Music Engine product creates short compositions across multiple styles. AIVA was the first virtual composer recognized by SACEM and has released studio albums performed by orchestras.",
+  "mechanisms": [
+    {
+      "title": "Pattern detection in training data",
+      "explanation": "AIVA analyzes a large collection of existing classical music to identify regularities and structural patterns, which it uses as a basis for original composition.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Deep and reinforcement learning architectures",
+      "explanation": "The algorithm underlying AIVA is based on deep learning and reinforcement learning architectures, enabling it to compose music autonomously after training.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The specific deep learning architecture details beyond the general categories of deep learning and reinforcement learning",
+    "How the pattern detection translates into concrete musical decisions during composition",
+    "The exact nature of the commercial Music Engine generation process for short compositions",
+    "Whether and how AIVA's composition process adapts to non-classical styles in its Music Engine product"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "AIVA",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380363571",
+      "revision": "1380363571",
+      "observedAt": "2026-11-13T03:17:25.289Z",
+      "sourceTimestamp": "2026-10-15T08:04:01Z",
+      "sha256": "cad44a27d3f84bfc5b31fe9e0fb88e6be42d105f470f186338a58eb4811acef5",
+      "excerptSha256": "cad44a27d3f84bfc5b31fe9e0fb88e6be42d105f470f186338a58eb4811acef5",
+      "inspectedCharacters": 8651,
+      "totalCharacters": 8651,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about training data, SACEM recognition, and Music Engine product",
+      "Mechanisms correctly cite deep learning and reinforcement learning from source with appropriate qualifiers",
+      "Unknowns properly identify gaps in architecture details and style adaptation not covered in source",
+      "No invented execution claims or unsupported mechanisms present",
+      "Source citations align with referenced material in the packet"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-292549bb-2694-4872-9182-19323750c97a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3462,
+      "outputTokens": 286
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-482ef8f9-684a-4928-af39-dfed2c6d3b8d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3710,
+      "outputTokens": 87
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "9d52736bcbad782a22394e9a771be3d264d4b8363cf93f7c3b07662a2fd24158",
+    "artifactDigest": "c7f65da422ecf681d87b1666b3169d5bf3575e29e695e789b8f941ee84bf6391",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000032-ed1306e349.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

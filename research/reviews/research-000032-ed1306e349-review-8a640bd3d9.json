@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000032-ed1306e349-review-8a640bd3d9",
+  "parentJobId": "research-000032-ed1306e349",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "c7f65da422ecf681d87b1666b3169d5bf3575e29e695e789b8f941ee84bf6391",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AIVA",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380363571",
+    "revision": "1380363571",
+    "observedAt": "2026-11-13T03:17:25.289Z",
+    "sourceTimestamp": "2026-10-15T08:04:01Z",
+    "sha256": "cad44a27d3f84bfc5b31fe9e0fb88e6be42d105f470f186338a58eb4811acef5",
+    "excerptSha256": "cad44a27d3f84bfc5b31fe9e0fb88e6be42d105f470f186338a58eb4811acef5",
+    "inspectedCharacters": 8651,
+    "totalCharacters": 8651,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about training data, SACEM recognition, and Music Engine product",
+      "Mechanisms correctly cite deep learning and reinforcement learning from source with appropriate qualifiers",
+      "Unknowns properly identify gaps in architecture details and style adaptation not covered in source",
+      "No invented execution claims or unsupported mechanisms present",
+      "Source citations align with referenced material in the packet"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-482ef8f9-684a-4928-af39-dfed2c6d3b8d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3710,
+    "outputTokens": 87
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
