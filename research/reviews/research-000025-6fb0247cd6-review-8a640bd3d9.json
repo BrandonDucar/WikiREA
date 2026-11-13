@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000025-6fb0247cd6-review-8a640bd3d9",
+  "parentJobId": "research-000025-6fb0247cd6",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "084e8a971ade02302b965ef9b263c47ec16ba65a8e8703349a81391baa35ec58",
+  "sourcePin": {
+    "id": "S1",
+    "title": "2D computer graphics",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379218301",
+    "revision": "1379218301",
+    "observedAt": "2026-11-12T04:16:52.410Z",
+    "sourceTimestamp": "2026-10-08T17:10:42Z",
+    "sha256": "a62e188fb7aae6c5f6b30e3076bba1e80284a17033f2029b6674f6c41152d467",
+    "excerptSha256": "e96b7519578b1f768c699c9759d9043c092d0c64958e57428b49400888f6da03",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 21033,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 2D graphics generation, history, and core techniques",
+      "Mechanism descriptions for geometric transformations and layered rendering are supported by source text with proper qualifiers",
+      "Unknowns correctly identify specific implementation details not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Source qualifiers like 'usually', 'may', 'often' preserved in draft mechanisms"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-0a2591a0-9f32-4c7a-ba3a-9e89c6b2ebbc",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4110,
+    "outputTokens": 94
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
