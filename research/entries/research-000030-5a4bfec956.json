@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000030-5a4bfec956",
+  "title": "Bootstrapping (computing)",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-13T17:24:41.958Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Bootstrapping in computing describes self-starting processes that proceed without external input. It encompasses creating self-compiling compilers, initializing computer software through a staged chain from hardware procedures to operating systems, and developing complex programming environments from basic tools. In simulation research, bootstrapping initializes models using pseudorandom data to establish event sequences that converge toward steady-state distributions over time.",
+  "mechanisms": [
+    {
+      "title": "Compiler self-hosting",
+      "explanation": "A compiler is first built in an existing language, then rewritten in the new language and compiled by itself, enabling the language to 'pull itself up by its bootstraps' to full functionality.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Simulation initialization via pseudorandom data",
+      "explanation": "Discrete-event simulation models are bootstrapped by using a pseudorandom number generator to schedule an initial set of events; over time, the event distribution approaches steady state, overwhelming the initial bootstrapping behavior.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal implementation details of specific compiler bootstrapping pipelines",
+    "Physical hardware-level bootstrap button mechanisms and hardwired control sequences",
+    "Complete reverse-engineered bootstrapping algorithms for proprietary software installers",
+    "Precise mapping between initial pseudorandom seeds and final steady-state event distributions in all simulation contexts"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Bootstrapping",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384317249",
+      "revision": "1384317249",
+      "observedAt": "2026-11-13T01:15:13.542Z",
+      "sourceTimestamp": "2026-11-07T18:18:14Z",
+      "sha256": "0bd709e4301caad301ecefe46f4894873a41f75504a6d3350b9a05a4fe57f0a5",
+      "excerptSha256": "978c295df11df6f44f86fe4f2f2675e5def90e43e1cfa704bc9574e20e30ac6a",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 30385,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of bootstrapping as self-starting process without external input",
+      "Compiler self-hosting mechanism correctly describes source's account of compilers rewritten in new language and compiled by themselves",
+      "Simulation initialization mechanism matches source description of pseudorandom number generator scheduling initial events converging to steady state",
+      "Unknowns appropriately identify gaps not covered in source (specific pipeline details, hardware mechanisms, proprietary algorithms, precise seed mappings)",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-6133c834-841e-44ef-bec5-bbb73a806db2",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4084,
+      "outputTokens": 310
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-ba648dd1-7ac6-4281-91ff-4d2f70bdaa4c",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4355,
+      "outputTokens": 113
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "4877caa67fc67be1ab7048afaff04334a48f011279d7248497f7d287e392e3cc",
+    "artifactDigest": "54069d5052c455fc368c7c463243b78ce7a95e02c563999f2a758d19d36ba016",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000030-5a4bfec956.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
