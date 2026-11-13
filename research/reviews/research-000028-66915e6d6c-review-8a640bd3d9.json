@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000028-66915e6d6c-review-8a640bd3d9",
+  "parentJobId": "research-000028-66915e6d6c",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "271291c3ca76c74f9124ad0a990436edda7e6acad389f0f7def75751b6459474",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Acid Pro",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383139364",
+    "revision": "1383139364",
+    "observedAt": "2026-11-12T08:19:39.579Z",
+    "sourceTimestamp": "2026-11-01T04:57:49Z",
+    "sha256": "8206b923dd186d1534e2c2f346922117a905d3d6cfaeb54a848c94804bb5537f",
+    "excerptSha256": "8206b923dd186d1534e2c2f346922117a905d3d6cfaeb54a848c94804bb5537f",
+    "inspectedCharacters": 8779,
+    "totalCharacters": 8779,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Acid Pro's evolution, loop technology, format support, and ownership history",
+      "Mechanisms correctly describe Acid Loop tempo/key-aware stretching and plugin/format integration with proper source attribution",
+      "Unknowns appropriately identify gaps in algorithmic details, metadata editability, Boris FX roadmap, and ownership transition reasons",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers and distinguishes factual claims from unknowns"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-8bc27047-6210-42fc-8aae-44288957a403",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3385,
+    "outputTokens": 106
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

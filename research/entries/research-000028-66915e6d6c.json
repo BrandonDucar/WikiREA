@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000028-66915e6d6c",
+  "title": "ACID Pro",
+  "role": "music-events",
+  "createdAt": "2026-11-13T13:25:02.496Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Acid Pro is a proprietary Windows-only digital audio workstation that evolved from a loop-based music sequencer into a full-featured DAW. Its core innovation is the Acid Loop technology: audio clips pre-tagged with tempo and key information that allow automatic time-stretching and pitch-shifting without sonic degradation. The software supports MIDI, VST, VST3, DirectX audio effects, and 5.1 surround sound. Ownership has shifted among Sonic Foundry, Sony Creative Software, Magix, and most recently Boris FX. While Acid Pro includes multitrack recording and plugin support, its defining mechanism remains the tempo- and key-aware loop manipulation inherited from its 1998 origins.",
+  "mechanisms": [
+    {
+      "title": "Acid Loop tempo and key-aware stretching",
+      "explanation": "Audio clips tagged with tempo and key data are automatically time-stretched and pitch-shifted to match the project's tempo and key, enabling seamless loop-based composition with minimal manual adjustment.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Plugin and format integration",
+      "explanation": "The DAW supports MIDI, ASIO, VST, VST3, DirectX Audio, and 5.1 surround sound, allowing integration of software instruments, effects, and multichannel mixing within the project environment.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact algorithmic details of the time-stretching and pitch-shifting process",
+    "Whether the loop-detection metadata is user-editable or auto-generated",
+    "Full extent of Boris FX's current development roadmap for Acid Pro",
+    "Precise reasons for the historical ownership transitions between Sonic Foundry, Sony, Magix, and Boris FX"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Acid Pro",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383139364",
+      "revision": "1383139364",
+      "observedAt": "2026-11-12T08:19:39.579Z",
+      "sourceTimestamp": "2026-11-01T04:57:49Z",
+      "sha256": "8206b923dd186d1534e2c2f346922117a905d3d6cfaeb54a848c94804bb5537f",
+      "excerptSha256": "8206b923dd186d1534e2c2f346922117a905d3d6cfaeb54a848c94804bb5537f",
+      "inspectedCharacters": 8779,
+      "totalCharacters": 8779,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Acid Pro's evolution, loop technology, format support, and ownership history",
+      "Mechanisms correctly describe Acid Loop tempo/key-aware stretching and plugin/format integration with proper source attribution",
+      "Unknowns appropriately identify gaps in algorithmic details, metadata editability, Boris FX roadmap, and ownership transition reasons",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers and distinguishes factual claims from unknowns"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-c01cf51b-9560-49cd-a53b-40854d9ebace",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3021,
+      "outputTokens": 391
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-8bc27047-6210-42fc-8aae-44288957a403",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3385,
+      "outputTokens": 106
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "5cf55e2acfeea847e54183c15f8446cb798e13b02101b463c8ef5239db6716d4",
+    "artifactDigest": "271291c3ca76c74f9124ad0a990436edda7e6acad389f0f7def75751b6459474",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000028-66915e6d6c.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
