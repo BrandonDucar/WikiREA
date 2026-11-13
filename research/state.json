@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T06:23:31.684Z",
+  "updatedAt": "2026-11-13T06:23:38.042Z",
   "sequence": 34,
   "jobs": [
     {
@@ -1438,13 +1438,44 @@
       "topic": "Bootstrapping (statistics)",
       "day": "2026-11-13",
       "runId": "43378355153",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-13T06:23:31.684Z",
       "expiresAt": "2026-11-13T06:38:31.684Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Bootstrapping (statistics)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384865944",
+        "revision": "1384865944",
+        "observedAt": "2026-11-13T06:23:33.796Z",
+        "sourceTimestamp": "2026-11-10T13:48:35Z",
+        "sha256": "c9e76011e2ecd200a28c225c57ca2ca525d674f66ad824eae726cda28c33a117",
+        "excerptSha256": "44d0c04b15d43330f751882ce944d08f738784718c5d5800b47ced05985bf57b",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 71022,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4c13b9c0-1c31-4608-9f3b-c3cbb0718b7d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4244,
+        "outputTokens": 305
+      },
+      "packet": "research/packets/research-000034-548d2aa514.json",
+      "packetDigest": "31624dcd93d33f85b7c4c0776a93fb40bc7be3edadfffc152e8954bfb39947af",
+      "finishedAt": "2026-11-13T06:23:38.042Z"
     }
   ],
   "discovered": [
@@ -1467,11 +1498,6 @@
       "title": "Abstraction (computer science)",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000004-a6f704aa74"
-    },
-    {
-      "title": "Bootstrapping (statistics)",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000005-ea383a9a57"
     },
     {
       "title": "Calendar queue",
@@ -2027,6 +2053,46 @@
       "title": "3D Movie Maker",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000033-a2037c0afa"
+    },
+    {
+      "title": "A. Colin Cameron",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
+    },
+    {
+      "title": "Aad van der Vaart",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
+    },
+    {
+      "title": "Absolute value",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
+    },
+    {
+      "title": "Accelerated failure time model",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
+    },
+    {
+      "title": "Accuracy and precision",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
+    },
+    {
+      "title": "Actuarial science",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
+    },
+    {
+      "title": "Adaptive clinical trial",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
+    },
+    {
+      "title": "Adèr, H. J.",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000034-548d2aa514"
     }
   ],
   "reviewJobs": [
