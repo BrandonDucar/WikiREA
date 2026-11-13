@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T05:25:13.223Z",
-  "sequence": 33,
+  "updatedAt": "2026-11-13T06:23:31.684Z",
+  "sequence": 34,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1431,6 +1431,20 @@
       "packet": "research/packets/research-000033-a2037c0afa.json",
       "packetDigest": "793f0a73311bad1c34f706682b17f28d9f5c7d62a6fce8537adcf3b9168f6567",
       "finishedAt": "2026-11-13T04:16:59.605Z"
+    },
+    {
+      "id": "research-000034-548d2aa514",
+      "role": "simulation-researcher",
+      "topic": "Bootstrapping (statistics)",
+      "day": "2026-11-13",
+      "runId": "43378355153",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-13T06:23:31.684Z",
+      "expiresAt": "2026-11-13T06:38:31.684Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
