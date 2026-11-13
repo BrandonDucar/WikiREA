@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T04:16:54.742Z",
+  "updatedAt": "2026-11-13T04:16:59.605Z",
   "sequence": 33,
   "jobs": [
     {
@@ -1389,21 +1389,47 @@
       "topic": "3D computer graphics",
       "day": "2026-11-13",
       "runId": "43364469172",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-13T04:16:54.742Z",
       "expiresAt": "2026-11-13T04:31:54.742Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D computer graphics",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383142832",
+        "revision": "1383142832",
+        "observedAt": "2026-11-13T04:16:56.562Z",
+        "sourceTimestamp": "2026-11-01T05:29:17Z",
+        "sha256": "73b075c4eff4c8a35107d62269b5052ed4280a6f7c39373e26c356794e48100a",
+        "excerptSha256": "78ede8003fcdaa7529e955593fac379306cc18cf9075114e0335286f9ece70e1",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 50193,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b611b42d-79fa-4d30-9f70-3656c07e6a71",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4187,
+        "outputTokens": 312
+      },
+      "packet": "research/packets/research-000033-a2037c0afa.json",
+      "packetDigest": "793f0a73311bad1c34f706682b17f28d9f5c7d62a6fce8537adcf3b9168f6567",
+      "finishedAt": "2026-11-13T04:16:59.605Z"
     }
   ],
   "discovered": [
-    {
-      "title": "3D computer graphics",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "4A Engine",
       "role": "game-mechanic-researcher",
@@ -1948,6 +1974,41 @@
       "title": "Mozart",
       "role": "music-events",
       "discoveredFrom": "research-000032-ed1306e349"
+    },
+    {
+      "title": "2D image",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000033-a2037c0afa"
+    },
+    {
+      "title": "3-D computer graphics software",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000033-a2037c0afa"
+    },
+    {
+      "title": "3-D scanning",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000033-a2037c0afa"
+    },
+    {
+      "title": "3D-Coat",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000033-a2037c0afa"
+    },
+    {
+      "title": "3D Gaussian splatting",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000033-a2037c0afa"
+    },
+    {
+      "title": "3D Manufacturing Format",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000033-a2037c0afa"
+    },
+    {
+      "title": "3D Movie Maker",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000033-a2037c0afa"
     }
   ],
   "reviewJobs": [
