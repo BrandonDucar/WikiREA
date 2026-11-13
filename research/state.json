@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T08:19:00.707Z",
+  "updatedAt": "2026-11-13T08:19:05.165Z",
   "sequence": 36,
   "jobs": [
     {
@@ -1532,13 +1532,44 @@
       "topic": "Ableton Live",
       "day": "2026-11-13",
       "runId": "43392250401",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-13T08:19:00.707Z",
       "expiresAt": "2026-11-13T08:34:00.707Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Ableton Live",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383854456",
+        "revision": "1383854456",
+        "observedAt": "2026-11-13T08:19:02.566Z",
+        "sourceTimestamp": "2026-11-05T04:35:46Z",
+        "sha256": "65d397e44ba23872cf2d6ed0531d452a641350a57f1fac2ec6b7bfad4d164b2e",
+        "excerptSha256": "48832cfa4dc7ba3b2fdc387edd3aab7e0c66b44fb2529bcb967f15c179ab3680",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 30986,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-56f6470d-7d12-4e90-9777-67897dc974e6",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4653,
+        "outputTokens": 385
+      },
+      "packet": "research/packets/research-000036-e4eff9f5fb.json",
+      "packetDigest": "0444ff416d0e8e694f0c3d1efc48415265396393a051857f396e6dee998837c4",
+      "finishedAt": "2026-11-13T08:19:05.165Z"
     }
   ],
   "discovered": [
@@ -1581,11 +1612,6 @@
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000005-ea383a9a57"
-    },
-    {
-      "title": "Ableton Live",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
     },
     {
       "title": "Adobe Audition",
@@ -2191,6 +2217,31 @@
       "title": "Albert Einstein",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000035-f2e7ee10e7"
+    },
+    {
+      "title": "Ableton",
+      "role": "music-events",
+      "discoveredFrom": "research-000036-e4eff9f5fb"
+    },
+    {
+      "title": "Akai",
+      "role": "music-events",
+      "discoveredFrom": "research-000036-e4eff9f5fb"
+    },
+    {
+      "title": "Amplifier",
+      "role": "music-events",
+      "discoveredFrom": "research-000036-e4eff9f5fb"
+    },
+    {
+      "title": "Analog recording",
+      "role": "music-events",
+      "discoveredFrom": "research-000036-e4eff9f5fb"
+    },
+    {
+      "title": "Analog synthesizer",
+      "role": "music-events",
+      "discoveredFrom": "research-000036-e4eff9f5fb"
     }
   ],
   "reviewJobs": [

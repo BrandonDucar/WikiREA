@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000036-e4eff9f5fb",
+  "topic": "Ableton Live",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Ableton Live is a digital audio workstation for macOS and Windows designed as a live performance instrument and production tool. It uses two interface views: Session View for launching clips and scenes in real time, and Arrangement View for linear timeline editing and MIDI sequencing. The software handles audio via Warping for time-stretching and pitch-preserving tempo adjustment, and supports MIDI to trigger built-in and third-party instruments. Three main editions exist—Intro, Standard, and Suite—with Suite including Max for Live. Lite is a limited version bundled with hardware. The software originated in the mid-1990s from Berlin-based developers who prototyped features in Max, and it expanded from live-looping to full DAW functionality with VST support in 2004.",
+    "mechanisms": [
+      {
+        "title": "Dual-View Architecture",
+        "explanation": "Live's interface splits into Session View, a grid for triggering clips and scenes in any order suitable for performance, and Arrangement View, a horizontal timeline for linear recording, editing, and MIDI sequencing. Clips launched in Session View can be recorded into Arrangement View for further manipulation.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Warping Time-Stretching",
+        "explanation": "Live's Warping algorithm allows audio to be tempo-adjusted without pitch shift. This gives DJs and producers greater control over beatmatching and smoothly blending tracks of different tempos.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal audio engine architecture",
+      "Proprietary details of the Warping algorithm",
+      "How Max for Live patches integrate at the runtime level",
+      "Full list of undocumented features across edition differences"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Ableton Live",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383854456",
+    "revision": "1383854456",
+    "observedAt": "2026-11-13T08:19:02.566Z",
+    "sourceTimestamp": "2026-11-05T04:35:46Z",
+    "sha256": "65d397e44ba23872cf2d6ed0531d452a641350a57f1fac2ec6b7bfad4d164b2e",
+    "excerptSha256": "48832cfa4dc7ba3b2fdc387edd3aab7e0c66b44fb2529bcb967f15c179ab3680",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 30986,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-56f6470d-7d12-4e90-9777-67897dc974e6",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4653,
+    "outputTokens": 385
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f81db700db7a25cc35f2cee97b5bd39945ba8f3dae4e85f9ab933c09132d592a",
+  "artifactDigest": "0444ff416d0e8e694f0c3d1efc48415265396393a051857f396e6dee998837c4"
+}
