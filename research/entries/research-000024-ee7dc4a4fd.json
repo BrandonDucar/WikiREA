@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000024-ee7dc4a4fd",
+  "title": "8-track tape",
+  "role": "music-events",
+  "createdAt": "2026-11-13T03:27:45.814Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The 8-track tape (Stereo 8) was a magnetic-tape format popular from the mid-1960s to early 1980s, primarily in cars. It used an endless loop allowing continuous play without flipping or reinserting the tape. The cartridge contained eight parallel tracks wound on a single spool; the player head read two tracks at a time for stereo sound, mechanically switching to another pair after each program, producing a characteristic click. Four-channel quadraphonic versions added a notch to activate a second head. Commercially, it was dominant in the US and Canada, especially in automobiles, before being surpassed by the compact cassette. Artists like Cheap Trick and Dolly Parton have issued novelty releases on the format.",
+  "mechanisms": [
+    {
+      "title": "Endless loop and continuous play",
+      "explanation": "The tape forms an endless loop wound on a single spool inside the cartridge. This allows the tape to play continuously; after about 80 minutes it restarts at the beginning. No rewind is possible due to the loop design.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Track switching for stereo and quadraphonic sound",
+      "explanation": "The player head reads two of the eight parallel tracks at a time for stereo sound. After completing a program, the head mechanically switches to another pair of tracks, creating a characteristic clicking noise. Quadraphonic versions use a notch to activate a second head reading the remaining tracks simultaneously.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact mechanical design of the head-switching mechanism",
+    "Details of tensioning and capstan traction implementation",
+    "Full technical specifications of quadraphonic track assignment",
+    "Long-term degradation effects specific to 8-track tape format"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "8-track cartridge",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375025233",
+      "revision": "1375025233",
+      "observedAt": "2026-11-12T03:17:54.380Z",
+      "sourceTimestamp": "2026-09-15T12:50:50Z",
+      "sha256": "9ca1af56fc0acadfa65e2cf1ef37bb81354e608e2dd1c916f0c771cc28339b4b",
+      "excerptSha256": "98801d554302f899b1b2abdd89383d86b21c47c25d10c24f7763428fc4b95b05",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 24824,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on popularity timeline, geography, and novelty releases",
+      "Mechanism descriptions correctly capture endless-loop design, track switching, and quadraphonic notch activation per source",
+      "Qualifiers like 'about 80 minutes' and 'characteristic clicking noise' preserved from source",
+      "Unknowns list appropriately identifies technical details not fully specified in source",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-680d34a5-4b85-42d3-a85d-e5434bcca663",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4020,
+      "outputTokens": 402
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-5ceed7db-8f6c-40cb-9ee3-bce70d9f5553",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4395,
+      "outputTokens": 100
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "64df49fffb4cdc7edc65c231ff1456e7b0198ebeba8adf0caa352cf2de55d917",
+    "artifactDigest": "aabd60e845cb65c664d71599794c5756877f26163068db6bdeae253f40936a0d",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000024-ee7dc4a4fd.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
