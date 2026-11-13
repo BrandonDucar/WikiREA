@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T02:18:04.900Z",
-  "sequence": 31,
+  "updatedAt": "2026-11-13T03:17:23.630Z",
+  "sequence": 32,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1333,6 +1333,20 @@
       "packet": "research/packets/research-000031-03dd95243d.json",
       "packetDigest": "1b043d289fed392e114965373caec399a1f6e777b92f277b83f2afb98f3c2d35",
       "finishedAt": "2026-11-13T02:18:04.900Z"
+    },
+    {
+      "id": "research-000032-ed1306e349",
+      "role": "music-events",
+      "topic": "AIVA",
+      "day": "2026-11-13",
+      "runId": "43357941797",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-13T03:17:23.630Z",
+      "expiresAt": "2026-11-13T03:32:23.630Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
