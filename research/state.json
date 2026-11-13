@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T00:36:12.088Z",
-  "sequence": 29,
+  "updatedAt": "2026-11-13T01:15:07.977Z",
+  "sequence": 30,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1239,6 +1239,20 @@
       "packet": "research/packets/research-000029-4aa4540b02.json",
       "packetDigest": "38f6cb7ec71329300140e383e31c3929bb6e7b7215e47f9ccc54a621b4868f7e",
       "finishedAt": "2026-11-13T00:36:12.088Z"
+    },
+    {
+      "id": "research-000030-5a4bfec956",
+      "role": "simulation-researcher",
+      "topic": "Bootstrapping (computing)",
+      "day": "2026-11-13",
+      "runId": "43343468847",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-13T01:15:07.977Z",
+      "expiresAt": "2026-11-13T01:30:07.977Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
