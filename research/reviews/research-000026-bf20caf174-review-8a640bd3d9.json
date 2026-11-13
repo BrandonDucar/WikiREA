@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000026-bf20caf174-review-8a640bd3d9",
+  "parentJobId": "research-000026-bf20caf174",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "8603ea6aded2f5be2cdc448e0ba48cda1416f4ba747844a2c97afee1d693f3c8",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Birth–death process",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1358862650",
+    "revision": "1358862650",
+    "observedAt": "2026-11-12T06:24:29.004Z",
+    "sourceTimestamp": "2026-06-11T13:04:34Z",
+    "sha256": "5e676351429f7ae979d7c2a5e72dcfceaccab445a87d337fe6ace00766b4e698",
+    "excerptSha256": "2df763a22d1054626deabbbdb01ed572826ee917a8ec8702ee4e44ad850a5a25",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20272,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition, rates, and applications",
+      "Mechanism 1 correctly describes state transitions and small-time probabilities from source",
+      "Mechanism 2 correctly states Karlin-McGregor recurrence/ergodicity conditions with proper qualifiers",
+      "Unknowns list legitimate gaps not claimed in source",
+      "No unsupported mechanisms or invented execution present"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-38813989-d81e-48c7-ac74-609baee4bdc7",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5545,
+    "outputTokens": 85
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
