@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000037-dee088a1a1-review-8a640bd3d9",
+  "parentJobId": "research-000037-dee088a1a1",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "c397961a1e849105d70f455b278611e26aae9edf384281da1ee4fd3b8b4bcc93",
+  "sourcePin": {
+    "id": "S1",
+    "title": "4A Games",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381138658",
+    "revision": "1381138658",
+    "observedAt": "2026-11-14T00:34:03.437Z",
+    "sourceTimestamp": "2026-10-20T06:40:48Z",
+    "sha256": "ff84064496b902a8138168a34f576cbd4d6285e2ce8fde9f8749e057adde9715",
+    "excerptSha256": "19b28b8a1470d79efca96877e3210edf45f697a0b2c20f9c370e6f0c01d2d051",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 18167,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on founding, Metro series, THQ bankruptcy/Koch Media acquisition, Malta relocation, Embracer acquisition, and Reburn split",
+      "Mechanisms correctly describe franchise continuity via Koch Media purchase and geographic restructuring with studio separation",
+      "Unknowns appropriately identify technical engine details, internal decision processes, relocation logistics, and VR implementation specifics not covered in source",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All claims traceable to cited source material with proper qualifiers"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-a3165285-5d4e-4209-a815-c16a58d00772",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5497,
+    "outputTokens": 115
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
