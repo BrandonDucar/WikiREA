@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000033-a2037c0afa-review-8a640bd3d9",
+  "parentJobId": "research-000033-a2037c0afa",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "793f0a73311bad1c34f706682b17f28d9f5c7d62a6fce8537adcf3b9168f6567",
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D computer graphics",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383142832",
+    "revision": "1383142832",
+    "observedAt": "2026-11-13T04:16:56.562Z",
+    "sourceTimestamp": "2026-11-01T05:29:17Z",
+    "sha256": "73b075c4eff4c8a35107d62269b5052ed4280a6f7c39373e26c356794e48100a",
+    "excerptSha256": "78ede8003fcdaa7529e955593fac379306cc18cf9075114e0335286f9ece70e1",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 50193,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and workflow phases",
+      "Mechanisms correctly describe polygonal mesh construction and light transport rendering from source",
+      "Unknowns appropriately identify gaps not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'approximate' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-643fb63d-ae33-40c6-896b-d21e230d60fa",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4470,
+    "outputTokens": 78
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

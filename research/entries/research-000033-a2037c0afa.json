@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000033-a2037c0afa",
+  "title": "3D computer graphics",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-14T01:24:45.579Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "3D computer graphics use a three-dimensional geometric data representation to generate two-dimensional images through modeling, animation, and rendering. Models are constructed from polygonal meshes of vertices, and scenes are lit and animated before being rasterized. The workflow separates formation of shape, placement and motion, and final image generation via light transport simulation. Rendering techniques range from polygon shading to path tracing, with hardware acceleration enabling real-time display.",
+  "mechanisms": [
+    {
+      "title": "Polygonal Mesh Construction",
+      "explanation": "3D models are formed from vertices that define polygons, typically triangles. The integrity and suitability for animation depend on polygon structure. Meshes can originate from artist tools, 3D scanning, procedural generation, or physical simulation.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Rendering Light Transport",
+      "explanation": "The rendering phase calculates how light travels from sources to the viewer, simulating transport and scattering across surfaces. Techniques include vertex illumination interpolation, ray tracing, distributed ray tracing, and path tracing, which approximate global effects such as reflection, refraction, and depth of field.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact physical simulation pipelines for model generation",
+    "Internal implementation details of specific rendering engines",
+    "Precise algorithmic steps for real-time rasterization pipelines",
+    "Complete reverse-engineered source code for graphics hardware"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "3D computer graphics",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383142832",
+      "revision": "1383142832",
+      "observedAt": "2026-11-13T04:16:56.562Z",
+      "sourceTimestamp": "2026-11-01T05:29:17Z",
+      "sha256": "73b075c4eff4c8a35107d62269b5052ed4280a6f7c39373e26c356794e48100a",
+      "excerptSha256": "78ede8003fcdaa7529e955593fac379306cc18cf9075114e0335286f9ece70e1",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 50193,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and workflow phases",
+      "Mechanisms correctly describe polygonal mesh construction and light transport rendering from source",
+      "Unknowns appropriately identify gaps not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'approximate' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-b611b42d-79fa-4d30-9f70-3656c07e6a71",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4187,
+      "outputTokens": 312
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-643fb63d-ae33-40c6-896b-d21e230d60fa",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4470,
+      "outputTokens": 78
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "4c9f97269beaea73882a2c981e28efcbb60b2b6759705c07104dc478c1abf542",
+    "artifactDigest": "793f0a73311bad1c34f706682b17f28d9f5c7d62a6fce8537adcf3b9168f6567",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000033-a2037c0afa.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
