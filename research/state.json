@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T01:15:54.045Z",
+  "updatedAt": "2026-11-14T01:16:03.308Z",
   "sequence": 38,
   "jobs": [
     {
@@ -1646,13 +1646,16 @@
       "topic": "Calendar queue",
       "day": "2026-11-14",
       "runId": "43539501385",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-14T01:15:54.045Z",
       "expiresAt": "2026-11-14T01:30:54.045Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "writer",
+      "error": "RESEARCH_FAILED",
+      "finishedAt": "2026-11-14T01:16:03.308Z"
     }
   ],
   "discovered": [
