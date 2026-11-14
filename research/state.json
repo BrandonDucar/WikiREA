@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T01:24:45.579Z",
-  "sequence": 38,
+  "updatedAt": "2026-11-14T02:18:46.344Z",
+  "sequence": 39,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1660,6 +1660,20 @@
       "lastStage": "writer",
       "error": "RESEARCH_FAILED",
       "finishedAt": "2026-11-14T01:16:03.308Z"
+    },
+    {
+      "id": "research-000039-b3bf8fba69",
+      "role": "hardware-interoperability-scout",
+      "topic": "Aluminium oxide",
+      "day": "2026-11-14",
+      "runId": "43545578768",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-14T02:18:46.344Z",
+      "expiresAt": "2026-11-14T02:33:46.344Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
