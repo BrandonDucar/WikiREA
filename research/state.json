@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T08:16:42.367Z",
+  "updatedAt": "2026-11-14T08:16:50.973Z",
   "sequence": 44,
   "jobs": [
     {
@@ -1876,13 +1876,44 @@
       "topic": "Advanced Linux Sound Architecture",
       "day": "2026-11-14",
       "runId": "43575027920",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-14T08:16:42.367Z",
       "expiresAt": "2026-11-14T08:31:42.367Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Advanced Linux Sound Architecture",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1373257051",
+        "revision": "1373257051",
+        "observedAt": "2026-11-14T08:16:44.572Z",
+        "sourceTimestamp": "2026-09-04T22:19:49Z",
+        "sha256": "c84ba559b8a5e5b0c23e5c513f8c308d456216fb069446268ebae307ae5ab214",
+        "excerptSha256": "82d6443d31632034fee024377dee25f8ec9b438750a75cf6f85e83f9ca371496",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 17274,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-de8afea5-3e6d-4de3-ae19-609e90eb1a3b",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4376,
+        "outputTokens": 462
+      },
+      "packet": "research/packets/research-000044-b7ded53b4d.json",
+      "packetDigest": "3a9092fc0d51d4e4fed55456c3d34c2ead31e1961cd9cb4e529af7c5825a8897",
+      "finishedAt": "2026-11-14T08:16:50.973Z"
     }
   ],
   "discovered": [
@@ -1905,11 +1936,6 @@
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000005-ea383a9a57"
-    },
-    {
-      "title": "Advanced Linux Sound Architecture",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
     },
     {
       "title": "Akai S900",
@@ -2720,6 +2746,46 @@
       "title": "Belden Incorporated",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "0 A.D. (video game)",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "AMD Software",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "Alan Cox (computer programmer)",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "Alsamixer",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "Andrew Morton (computer programmer)",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "Andries Brouwer",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "Android (operating system)",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "AppArmor",
+      "role": "music-events",
+      "discoveredFrom": "research-000044-b7ded53b4d"
     }
   ],
   "reviewJobs": [

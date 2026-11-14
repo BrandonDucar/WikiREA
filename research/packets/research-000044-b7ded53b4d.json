@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000044-b7ded53b4d",
+  "topic": "Advanced Linux Sound Architecture",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ALSA is a Linux kernel software framework and API for sound card device drivers, designed to automatically configure hardware and manage multiple audio devices. It provides a user-space library that abstracts hardware capabilities through software plugins, enabling standardized application access to features like volume control and sample rate conversion. ALSA superseded the older Open Sound System and supports hardware MIDI synthesis, full-duplex operation, and multiprocessor-friendly drivers. It organizes sound cards numbered 0-7 with interfaces for PCM, control, timer, raw MIDI, and sequencer, represented as device files in /dev/snd. The architecture includes kernel drivers and a shared user-space library (alsa-lib) that presents standardized abstractions across diverse hardware.",
+    "mechanisms": [
+      {
+        "title": "Kernel device drivers and core framework",
+        "explanation": "ALSA operates as part of the Linux kernel, including core framework and device drivers for physical sound cards. These drivers handle hardware-specific control and data transfer for up to eight sound cards, each addressable by ID, and expose interfaces such as PCM, control, timer, raw MIDI, and sequencer via device files in /dev/snd.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "User-space alsa-lib with software plugins",
+        "explanation": "A user-space shared library provides API abstractions for applications and implements plugins that transform or adapt audio streams. Plugins such as \"softvol\" provide software emulations of hardware controls (e.g., volume) when underlying hardware lacks them, and \"dmix\" enables software mixing and sample rate conversion. This layer presents a standardized interface across disparate hardware, allowing applications to remain agnostic of specific device capabilities.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact hardware-dependent implementation details of individual sound card drivers",
+      "Whether all supported interfaces (timer, sequencer, rawmidi) are universally implemented across all ALSA-supported devices",
+      "The specific algorithmic behavior of plugin chains when multiple transformations are applied simultaneously",
+      "How virtual sound cards created entirely in software negotiate exclusive access with physical hardware"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Advanced Linux Sound Architecture",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373257051",
+    "revision": "1373257051",
+    "observedAt": "2026-11-14T08:16:44.572Z",
+    "sourceTimestamp": "2026-09-04T22:19:49Z",
+    "sha256": "c84ba559b8a5e5b0c23e5c513f8c308d456216fb069446268ebae307ae5ab214",
+    "excerptSha256": "82d6443d31632034fee024377dee25f8ec9b438750a75cf6f85e83f9ca371496",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17274,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-de8afea5-3e6d-4de3-ae19-609e90eb1a3b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4376,
+    "outputTokens": 462
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "2db015391ec0bdb3ffad22e566bf249e7041de418cb36494ff9191796e541552",
+  "artifactDigest": "3a9092fc0d51d4e4fed55456c3d34c2ead31e1961cd9cb4e529af7c5825a8897"
+}
