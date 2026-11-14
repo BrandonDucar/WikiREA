@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000034-548d2aa514",
+  "title": "Bootstrapping (statistics)",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-14T03:25:45.217Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Bootstrapping is a statistical procedure that estimates the distribution of an estimator by resampling original data with replacement. It generates many simulated samples from the observed dataset, calculates a statistic for each, and uses the resulting histogram to approximate sampling variability, standard errors, and confidence intervals without relying on parametric assumptions. Its accuracy improves with larger numbers of resamples, though 50 to 100 samples often suffice for standard error estimation.",
+  "mechanisms": [
+    {
+      "title": "Resampling with replacement",
+      "explanation": "The original observed data set is repeatedly sampled, each time drawing units independently with replacement to form a 'bootstrap sample' of the same size. This creates many slightly different samples, reflecting the uncertainty of the original draw.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Statistic calculation on resamples",
+      "explanation": "For each bootstrap sample, the chosen estimator (e.g., mean, correlation) is computed. The collection of these bootstrap estimates forms an empirical distribution that approximates the sampling distribution of the statistic.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Finite-sample performance guarantees beyond asymptotic consistency",
+    "Optimal number of resamples for specific statistics and sample sizes",
+    "Behavior under dependent or non-i.i.d. data structures",
+    "Automation limitations in traditional statistical software packages"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Bootstrapping (statistics)",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384865944",
+      "revision": "1384865944",
+      "observedAt": "2026-11-13T06:23:33.796Z",
+      "sourceTimestamp": "2026-11-10T13:48:35Z",
+      "sha256": "c9e76011e2ecd200a28c225c57ca2ca525d674f66ad824eae726cda28c33a117",
+      "excerptSha256": "44d0c04b15d43330f751882ce944d08f738784718c5d5800b47ced05985bf57b",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 71022,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and purpose of bootstrapping",
+      "Mechanisms correctly describe resampling with replacement and statistic calculation on resamples",
+      "Unknowns properly identify limitations mentioned in source (finite-sample guarantees, dependent data, software automation)",
+      "Source citations support all factual claims in draft",
+      "No unsupported mechanisms or invented execution details present"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-4c13b9c0-1c31-4608-9f3b-c3cbb0718b7d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4244,
+      "outputTokens": 305
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-cd1c2449-2597-4e30-bfef-b9c9bbfaf611",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4504,
+      "outputTokens": 82
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "c0c1345cbead520a4b0785fa64ccda1aac4ac0fdf1ed9dcb94a4bb0fc7e75565",
+    "artifactDigest": "31624dcd93d33f85b7c4c0776a93fb40bc7be3edadfffc152e8954bfb39947af",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000034-548d2aa514.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000034-548d2aa514-review-8a640bd3d9",
+  "parentJobId": "research-000034-548d2aa514",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "31624dcd93d33f85b7c4c0776a93fb40bc7be3edadfffc152e8954bfb39947af",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Bootstrapping (statistics)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384865944",
+    "revision": "1384865944",
+    "observedAt": "2026-11-13T06:23:33.796Z",
+    "sourceTimestamp": "2026-11-10T13:48:35Z",
+    "sha256": "c9e76011e2ecd200a28c225c57ca2ca525d674f66ad824eae726cda28c33a117",
+    "excerptSha256": "44d0c04b15d43330f751882ce944d08f738784718c5d5800b47ced05985bf57b",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 71022,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and purpose of bootstrapping",
+      "Mechanisms correctly describe resampling with replacement and statistic calculation on resamples",
+      "Unknowns properly identify limitations mentioned in source (finite-sample guarantees, dependent data, software automation)",
+      "Source citations support all factual claims in draft",
+      "No unsupported mechanisms or invented execution details present"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-cd1c2449-2597-4e30-bfef-b9c9bbfaf611",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4504,
+    "outputTokens": 82
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
