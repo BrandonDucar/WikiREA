@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000041-c1ea4d135e",
+  "topic": "AAA (video game industry)",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AAA designates video games produced by mid-sized or major publishers with high development and marketing budgets. Originating in the 1990s, the term references credit bond ratings. Development costs escalated with cinematic cutscenes, voice acting, and high-fidelity graphics. By the late 2010s, budgets grew further, encouraging reliance on established franchises and live service models with microtransactions. Smaller studios and indie games increasingly approached AAA production values, blurring categorical lines. High financial risk sees publishers prioritize sequels and intellectual property, while development staffing and costs have grown substantially across console generations.",
+    "mechanisms": [
+      {
+        "title": "Budget-Driven Franchise Concentration",
+        "explanation": "Escalating production costs encourage publishers to invest primarily in established franchises, reducing experimental projects within the AAA space and prioritizing sequels and reboots to minimize financial risk.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Live Service and Microtransaction Integration",
+        "explanation": "AAA games heavily rely on microtransactions and operate as live service games, a shift that emerged in the late 2010s and early 2020s as a revenue strategy alongside traditional sales models.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal development pipeline structures of individual publishers",
+      "Precise financial breakdowns of live service monetization models",
+      "Detailed staffing distribution across global studio networks for eighth-generation titles",
+      "Specific technical implementations of narrative techniques that eliminate cutscenes"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "AAA (video game industry)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384313091",
+    "revision": "1384313091",
+    "observedAt": "2026-11-14T04:16:20.525Z",
+    "sourceTimestamp": "2026-11-07T17:55:32Z",
+    "sha256": "c4b248792bf91118cebefddf0ac3a7a53fd5f530731699dc796ba18c251c6407",
+    "excerptSha256": "4446f84b5c5dfc192668a4395be2a604005c265c56a823903d520c17651d1bf9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 29854,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-86328339-1c48-405f-a34f-27b3d12563ee",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4481,
+    "outputTokens": 355
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fc0e8480bb08ddf86890e8e23472fd7ce612aa7596d71d92f8011d7ca5f3b7a0",
+  "artifactDigest": "630944f7bc8017f1940caec6a49e14c865d9f9d746a1d42d66b7c01869e290bc"
+}

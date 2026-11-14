@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T04:16:18.887Z",
+  "updatedAt": "2026-11-14T04:16:23.022Z",
   "sequence": 41,
   "jobs": [
     {
@@ -1733,21 +1733,47 @@
       "topic": "AAA (video game industry)",
       "day": "2026-11-14",
       "runId": "43555787428",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-14T04:16:18.887Z",
       "expiresAt": "2026-11-14T04:31:18.887Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AAA (video game industry)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384313091",
+        "revision": "1384313091",
+        "observedAt": "2026-11-14T04:16:20.525Z",
+        "sourceTimestamp": "2026-11-07T17:55:32Z",
+        "sha256": "c4b248792bf91118cebefddf0ac3a7a53fd5f530731699dc796ba18c251c6407",
+        "excerptSha256": "4446f84b5c5dfc192668a4395be2a604005c265c56a823903d520c17651d1bf9",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 29854,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-86328339-1c48-405f-a34f-27b3d12563ee",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4481,
+        "outputTokens": 355
+      },
+      "packet": "research/packets/research-000041-c1ea4d135e.json",
+      "packetDigest": "630944f7bc8017f1940caec6a49e14c865d9f9d746a1d42d66b7c01869e290bc",
+      "finishedAt": "2026-11-14T04:16:23.022Z"
     }
   ],
   "discovered": [
-    {
-      "title": "AAA (video game industry)",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "ASCII (company)",
       "role": "game-mechanic-researcher",
@@ -1772,11 +1798,6 @@
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000005-ea383a9a57"
-    },
-    {
-      "title": "Adobe Audition",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
     },
     {
       "title": "Advanced Linux Sound Architecture",
@@ -2477,6 +2498,46 @@
       "title": "Alchemy",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000039-b3bf8fba69"
+    },
+    {
+      "title": "1UP.com",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
+    },
+    {
+      "title": "3D graphics",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
+    },
+    {
+      "title": "4X",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
+    },
+    {
+      "title": "Action-adventure game",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
+    },
+    {
+      "title": "Action game",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
+    },
+    {
+      "title": "Action role-playing game",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
+    },
+    {
+      "title": "Activision",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
+    },
+    {
+      "title": "Adventure game",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000041-c1ea4d135e"
     }
   ],
   "reviewJobs": [
