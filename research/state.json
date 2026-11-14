@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T05:24:53.836Z",
-  "sequence": 41,
+  "updatedAt": "2026-11-14T06:21:56.215Z",
+  "sequence": 42,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1775,6 +1775,20 @@
       "packet": "research/packets/research-000041-c1ea4d135e.json",
       "packetDigest": "630944f7bc8017f1940caec6a49e14c865d9f9d746a1d42d66b7c01869e290bc",
       "finishedAt": "2026-11-14T04:16:23.022Z"
+    },
+    {
+      "id": "research-000042-8e197eee6c",
+      "role": "simulation-researcher",
+      "topic": "Carnegie Mellon School of Computer Science",
+      "day": "2026-11-14",
+      "runId": "43565968933",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-14T06:21:56.215Z",
+      "expiresAt": "2026-11-14T06:36:56.215Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
