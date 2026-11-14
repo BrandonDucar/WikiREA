@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T00:34:09.555Z",
-  "sequence": 37,
+  "updatedAt": "2026-11-14T01:15:54.045Z",
+  "sequence": 38,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1639,6 +1639,20 @@
       "packet": "research/packets/research-000037-dee088a1a1.json",
       "packetDigest": "c397961a1e849105d70f455b278611e26aae9edf384281da1ee4fd3b8b4bcc93",
       "finishedAt": "2026-11-14T00:34:09.555Z"
+    },
+    {
+      "id": "research-000038-5a0073dbbe",
+      "role": "simulation-researcher",
+      "topic": "Calendar queue",
+      "day": "2026-11-14",
+      "runId": "43539501385",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-14T01:15:54.045Z",
+      "expiresAt": "2026-11-14T01:30:54.045Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
