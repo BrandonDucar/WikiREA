@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T07:24:49.656Z",
-  "sequence": 43,
+  "updatedAt": "2026-11-14T08:16:42.367Z",
+  "sequence": 44,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1869,6 +1869,20 @@
       "packet": "research/packets/research-000043-81b5d14c30.json",
       "packetDigest": "8d2e6efc60f8524e4d69591da12609350546fd155a293fd33a1a0b42353c64e9",
       "finishedAt": "2026-11-14T07:14:27.891Z"
+    },
+    {
+      "id": "research-000044-b7ded53b4d",
+      "role": "music-events",
+      "topic": "Advanced Linux Sound Architecture",
+      "day": "2026-11-14",
+      "runId": "43575027920",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-14T08:16:42.367Z",
+      "expiresAt": "2026-11-14T08:31:42.367Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
