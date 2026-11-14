@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000039-b3bf8fba69",
+  "topic": "Aluminium oxide",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Aluminium oxide (Al2O3) is a chemically stable compound refined from bauxite, most commonly occurring as the crystalline mineral corundum. Its hardness makes it useful as an abrasive and cutting tool component, while its electrical insulation combined with relatively high thermal conductivity suits electronic applications. A natural passivation layer on metallic aluminium prevents further oxidation. The material exists in multiple crystalline phases, with corundum being the thermodynamically stable form. Amphoteric in nature, it reacts with both acids and bases. Its high melting point supports refractory uses.",
+    "mechanisms": [
+      {
+        "title": "Passivation Layer Formation",
+        "explanation": "A thin (~5 nm) aluminium oxide layer forms instantly on exposed metallic aluminium surfaces, creating a protective barrier that prevents further atmospheric oxidation and underpins corrosion resistance in alloys and anodised finishes.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Crystal Structure and Hardness",
+        "explanation": "In its corundum phase, oxygen ions form a hexagonal close-packed lattice with aluminium ions occupying two-thirds of octahedral sites, resulting in a dense atomic arrangement that endows the material with high hardness suitable for abrasives and cutting tools.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mechanisms of amorphous versus crystalline oxide formation during anodising and plasma electrolytic oxidation processes",
+      "Detailed atomic-scale pathways for phase transitions among metastable alumina polymorphs (γ, η, λ, θ, etc.)",
+      "Precise role of partial covalent bonding in strengthening ionic bonds within the corundum structure",
+      "Long-term stability and behaviour of aluminium oxide in fibrous form within environmental release contexts"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Aluminium oxide",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381254685",
+    "revision": "1381254685",
+    "observedAt": "2026-11-14T02:18:48.268Z",
+    "sourceTimestamp": "2026-10-21T01:41:03Z",
+    "sha256": "80e8356a11df474f87faaea7b56082d2568a4816fb447148063b934b0f706db4",
+    "excerptSha256": "807ac27d73bc3c98f588cc716d6ca67e8b3700817f3f48cf2752ff0f3e453a61",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39532,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-fc2260d4-31dd-4e93-a755-2d3f664d85ef",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4994,
+    "outputTokens": 374
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e8acd59216aceea5b1b3a553a26a097527c900c65acabb2bad1d57371d9ef738",
+  "artifactDigest": "b1c471f44337ab893234e6fc30880dc0e29c96203ff9fafff90bf95af0eb6ccc"
+}
