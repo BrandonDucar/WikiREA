@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T03:25:45.217Z",
-  "sequence": 40,
+  "updatedAt": "2026-11-14T04:16:18.887Z",
+  "sequence": 41,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1726,6 +1726,20 @@
       "lastStage": "writer",
       "error": "RESEARCH_FAILED",
       "finishedAt": "2026-11-14T03:17:40.342Z"
+    },
+    {
+      "id": "research-000041-c1ea4d135e",
+      "role": "game-mechanic-researcher",
+      "topic": "AAA (video game industry)",
+      "day": "2026-11-14",
+      "runId": "43555787428",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-14T04:16:18.887Z",
+      "expiresAt": "2026-11-14T04:31:18.887Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
