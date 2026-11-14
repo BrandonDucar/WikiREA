@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000041-c1ea4d135e-review-8a640bd3d9",
+  "parentJobId": "research-000041-c1ea4d135e",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "630944f7bc8017f1940caec6a49e14c865d9f9d746a1d42d66b7c01869e290bc",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AAA (video game industry)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384313091",
+    "revision": "1384313091",
+    "observedAt": "2026-11-14T04:16:20.525Z",
+    "sourceTimestamp": "2026-11-07T17:55:32Z",
+    "sha256": "c4b248792bf91118cebefddf0ac3a7a53fd5f530731699dc796ba18c251c6407",
+    "excerptSha256": "4446f84b5c5dfc192668a4395be2a604005c265c56a823903d520c17651d1bf9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 29854,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition, origin, and budget escalation",
+      "Mechanisms correctly capture franchise concentration and live-service shift with proper qualifiers",
+      "Unknowns appropriately identify gaps not covered in source",
+      "No unsupported mechanisms or invented execution details",
+      "Preserves may/often qualifiers and distinguishes unknowns from factual claims"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-2d2d1e86-5eae-40bb-923a-ae09b29c7b41",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4759,
+    "outputTokens": 79
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
