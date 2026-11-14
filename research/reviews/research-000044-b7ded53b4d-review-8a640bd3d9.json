@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000044-b7ded53b4d-review-8a640bd3d9",
+  "parentJobId": "research-000044-b7ded53b4d",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "3a9092fc0d51d4e4fed55456c3d34c2ead31e1961cd9cb4e529af7c5825a8897",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Advanced Linux Sound Architecture",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373257051",
+    "revision": "1373257051",
+    "observedAt": "2026-11-14T08:16:44.572Z",
+    "sourceTimestamp": "2026-09-04T22:19:49Z",
+    "sha256": "c84ba559b8a5e5b0c23e5c513f8c308d456216fb069446268ebae307ae5ab214",
+    "excerptSha256": "82d6443d31632034fee024377dee25f8ec9b438750a75cf6f85e83f9ca371496",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17274,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on ALSA's role, architecture, and features",
+      "Mechanisms correctly describe kernel drivers/core framework and user-space alsa-lib with plugins",
+      "Source IDs properly reference the single provided source document",
+      "Unknowns appropriately identify gaps not covered in source material",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-643cbcf0-b1b8-44b9-8207-326f497e9dfd",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4834,
+    "outputTokens": 84
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
