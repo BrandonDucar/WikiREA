@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000036-e4eff9f5fb",
+  "title": "Ableton Live",
+  "role": "music-events",
+  "createdAt": "2026-11-14T07:24:49.656Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Ableton Live is a digital audio workstation for macOS and Windows designed as a live performance instrument and production tool. It uses two interface views: Session View for launching clips and scenes in real time, and Arrangement View for linear timeline editing and MIDI sequencing. The software handles audio via Warping for time-stretching and pitch-preserving tempo adjustment, and supports MIDI to trigger built-in and third-party instruments. Three main editions exist—Intro, Standard, and Suite—with Suite including Max for Live. Lite is a limited version bundled with hardware. The software originated in the mid-1990s from Berlin-based developers who prototyped features in Max, and it expanded from live-looping to full DAW functionality with VST support in 2004.",
+  "mechanisms": [
+    {
+      "title": "Dual-View Architecture",
+      "explanation": "Live's interface splits into Session View, a grid for triggering clips and scenes in any order suitable for performance, and Arrangement View, a horizontal timeline for linear recording, editing, and MIDI sequencing. Clips launched in Session View can be recorded into Arrangement View for further manipulation.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Warping Time-Stretching",
+      "explanation": "Live's Warping algorithm allows audio to be tempo-adjusted without pitch shift. This gives DJs and producers greater control over beatmatching and smoothly blending tracks of different tempos.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal audio engine architecture",
+    "Proprietary details of the Warping algorithm",
+    "How Max for Live patches integrate at the runtime level",
+    "Full list of undocumented features across edition differences"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Ableton Live",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383854456",
+      "revision": "1383854456",
+      "observedAt": "2026-11-13T08:19:02.566Z",
+      "sourceTimestamp": "2026-11-05T04:35:46Z",
+      "sha256": "65d397e44ba23872cf2d6ed0531d452a641350a57f1fac2ec6b7bfad4d164b2e",
+      "excerptSha256": "48832cfa4dc7ba3b2fdc387edd3aab7e0c66b44fb2529bcb967f15c179ab3680",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 30986,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on editions, history, and core design",
+      "Mechanisms correctly describe dual-view architecture and Warping with proper source attribution",
+      "Unknowns appropriately identify proprietary/internal details not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'designed as' and 'allows' preserve appropriate uncertainty"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-56f6470d-7d12-4e90-9777-67897dc974e6",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4653,
+      "outputTokens": 385
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-b92eb807-bdc2-46d5-9588-4e7a85f2e4d1",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5018,
+      "outputTokens": 84
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "f81db700db7a25cc35f2cee97b5bd39945ba8f3dae4e85f9ab933c09132d592a",
+    "artifactDigest": "0444ff416d0e8e694f0c3d1efc48415265396393a051857f396e6dee998837c4",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000036-e4eff9f5fb.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
