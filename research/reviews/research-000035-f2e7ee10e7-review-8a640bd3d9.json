@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000035-f2e7ee10e7-review-8a640bd3d9",
+  "parentJobId": "research-000035-f2e7ee10e7",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "5adfd55e5265573f971f5a51d83914fe210a651fb39d7474834b0c2850b1d4b4",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Alternating current",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385055492",
+    "revision": "1385055492",
+    "observedAt": "2026-11-13T07:15:52.085Z",
+    "sourceTimestamp": "2026-11-11T17:15:29Z",
+    "sha256": "be7df2f14e6eeac7fc850bca62e4cc74f617af2444c4ea8eae46e28a2dd97ac7",
+    "excerptSha256": "a8e3397745a2193538792a4fcc961d5e2139fa65b6237aa7328e4db4b089202c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 49205,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on AC definition, transformer use, voltage ranges, waveforms, three-phase generation, bonding, and frequency ranges.",
+      "Mechanism 1 correctly describes voltage transformation for transmission efficiency with I²R loss reduction, supported by source formulas and explanation.",
+      "Mechanism 2 correctly describes three-phase generation via 120° offset coils, matching source details on stator coils and phase relationships.",
+      "Unknowns list valid gaps not fully addressed in source (harmonic distortion impact, bonding reliability, frequency tolerances, skin effect in multi-stranded conductors).",
+      "No unsupported mechanisms, copied passages, or invented execution detected."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-f344446a-20d9-4134-88cd-0f5209f3d6b8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3657,
+    "outputTokens": 142
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

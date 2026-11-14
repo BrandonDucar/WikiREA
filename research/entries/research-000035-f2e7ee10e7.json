@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000035-f2e7ee10e7",
+  "title": "Alternating current",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-14T05:24:53.835Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Alternating current (AC) periodically reverses direction and varies in magnitude, forming the basis of most electric power delivery. Its voltage can be stepped up or down using transformers, enabling efficient long-distance transmission at high voltage and safe domestic use at 100–240 V. Standard waveforms are sinusoidal, though other shapes serve specialized applications. Three-phase generation uses offset coils to produce balanced currents, and distribution systems employ bonding and neutral conductors for safety. Frequencies typically range 50–60 Hz, with higher frequencies used in specialized contexts.",
+  "mechanisms": [
+    {
+      "title": "Voltage transformation for transmission efficiency",
+      "explanation": "AC voltage can be increased or decreased with a transformer, allowing power to be transmitted at high voltage to reduce I²R losses in wires, then stepped down for safe consumer use.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Three-phase generation via offset coils",
+      "explanation": "Three separate coils physically offset by 120° in a generator stator produce equal-magnitude currents 120° out of phase, enabling balanced power distribution and reduced neutral current under linear loads.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact impact of harmonic distortion on neutral conductor sizing in real-world distribution",
+    "Long-term reliability of bonding systems under fault conditions",
+    "Precise frequency tolerance ranges across different mains power systems",
+    "Detailed mechanisms of skin effect in multi-stranded versus solid conductors"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Alternating current",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385055492",
+      "revision": "1385055492",
+      "observedAt": "2026-11-13T07:15:52.085Z",
+      "sourceTimestamp": "2026-11-11T17:15:29Z",
+      "sha256": "be7df2f14e6eeac7fc850bca62e4cc74f617af2444c4ea8eae46e28a2dd97ac7",
+      "excerptSha256": "a8e3397745a2193538792a4fcc961d5e2139fa65b6237aa7328e4db4b089202c",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 49205,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on AC definition, transformer use, voltage ranges, waveforms, three-phase generation, bonding, and frequency ranges.",
+      "Mechanism 1 correctly describes voltage transformation for transmission efficiency with I²R loss reduction, supported by source formulas and explanation.",
+      "Mechanism 2 correctly describes three-phase generation via 120° offset coils, matching source details on stator coils and phase relationships.",
+      "Unknowns list valid gaps not fully addressed in source (harmonic distortion impact, bonding reliability, frequency tolerances, skin effect in multi-stranded conductors).",
+      "No unsupported mechanisms, copied passages, or invented execution detected."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-cdb15cbc-a69b-4f78-927a-575589bf3c87",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3362,
+      "outputTokens": 336
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-f344446a-20d9-4134-88cd-0f5209f3d6b8",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3657,
+      "outputTokens": 142
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "c7f2415e0de1ae7dbe629478c3cba3ba38251e0eb664b14558631d09d406878d",
+    "artifactDigest": "5adfd55e5265573f971f5a51d83914fe210a651fb39d7474834b0c2850b1d4b4",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000035-f2e7ee10e7.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
