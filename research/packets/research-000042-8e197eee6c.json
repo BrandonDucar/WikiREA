@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000042-8e197eee6c",
+  "topic": "Carnegie Mellon School of Computer Science",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Carnegie Mellon's School of Computer Science (SCS), established in 1988 at Carnegie Mellon University in Pittsburgh, evolved from one of the nation's first Computer Science Departments (founded 1965). Renamed the Kenneth C. Griffin School of Computer Science in September 2026 following a $3 billion gift, SCS comprises seven departments including Computer Science, Machine Learning, Robotics, and Human-Computer Interaction. The school occupies the Gates and Hillman Centers, a LEED Gold-certified complex featuring research labs, classrooms, and the Planetary Robotics Center. SCS is known for strong traditions such as the Mobot Races and SCS Day, and notable cultural contributions including the invention of the smiley emoticon by Scott Fahlman. The school maintains a distinguished faculty with thirteen Turing Award winners among its alumni and staff.",
+    "mechanisms": [
+      {
+        "title": "Departmental Evolution and School Status",
+        "explanation": "The School originated as the Computer Science Department in 1965, one of the nation's first, and became a standalone school in 1988 among the country's first such schools. It grew academically and financially before achieving school status, with the Department serving as the original unit within the new school structure.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Physical Infrastructure and Research Facilities",
+        "explanation": "The School operates from the Gates and Hillman Centers, a 217,000 sq ft complex opened in 2009 featuring research labs, conference rooms, and the Planetary Robotics Center. The complex includes 310 offices, 11 conference rooms, 32 labs, and 12 classrooms, connecting to the Purnell Center via the Randy Pausch Memorial Footbridge.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Mechanisms underlying the school's specific curriculum development decisions after 1988",
+      "Detailed internal organizational structure of the seven constituent departments",
+      "Specific pathways for faculty tenure and promotion within the school",
+      "Precise funding allocation mechanisms for the seven departments following the 2026 renaming"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Kenneth C. Griffin School of Computer Science",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380464923",
+    "revision": "1380464923",
+    "observedAt": "2026-11-14T06:21:57.982Z",
+    "sourceTimestamp": "2026-10-15T21:29:29Z",
+    "sha256": "6464b38c33bd297e64cf0c96674cab43419dc524145d034a3f0d401313bac910",
+    "excerptSha256": "c63b3c5ee89ca741866dba3673c9d52d7eaef91723a1e85f71a67bda9da56bcd",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 23379,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4097ac78-a161-47ab-8ba5-7b399d221258",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4077,
+    "outputTokens": 489
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "6a7a9ede2d145492b6caa8006be7f0e7e7ca56a53867e9275b23f0f0af9f072d",
+  "artifactDigest": "b16e3d32a946175b61d470030aee64e55adafca0e71017a7af9f20dec3e2d263"
+}
