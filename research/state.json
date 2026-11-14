@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-13T21:24:48.250Z",
-  "sequence": 36,
+  "updatedAt": "2026-11-14T00:34:01.698Z",
+  "sequence": 37,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1594,6 +1594,20 @@
       "packet": "research/packets/research-000036-e4eff9f5fb.json",
       "packetDigest": "0444ff416d0e8e694f0c3d1efc48415265396393a051857f396e6dee998837c4",
       "finishedAt": "2026-11-13T08:19:05.165Z"
+    },
+    {
+      "id": "research-000037-dee088a1a1",
+      "role": "game-mechanic-researcher",
+      "topic": "4A Engine",
+      "day": "2026-11-14",
+      "runId": "43535038111",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-14T00:34:01.698Z",
+      "expiresAt": "2026-11-14T00:49:01.698Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
