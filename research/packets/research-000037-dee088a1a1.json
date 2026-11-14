@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000037-dee088a1a1",
+  "topic": "4A Engine",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "4A Games Limited is a Ukrainian-Maltese video game developer founded in 2006 by former GSC Game World staff. The studio is best known for the Metro series, beginning with Metro 2033 in 2010. After publisher THQ's 2013 bankruptcy, Koch Media acquired the Metro franchise, enabling completion of Metro: Last Light. The company relocated headquarters to Sliema, Malta in 2014 to facilitate EU operations, retaining a Kyiv sub-studio. In 2020, Embracer Group acquired 4A Games via Saber Interactive. A Kyiv studio split-off was rebranded as Reburn in 2025. The studio has expanded into VR with Arktika.1 and announced Metro 2039 in 2026.",
+    "mechanisms": [
+      {
+        "title": "Franchise acquisition and continuity",
+        "explanation": "When THQ declared bankruptcy in January 2013, Koch Media purchased the Metro 2033 franchise rights for $5.8 million. This acquisition allowed 4A Games to finish developing Metro: Last Light, which was subsequently published by Deep Silver. The transaction ensured series continuity despite the publisher's collapse.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Geographic restructuring and studio separation",
+        "explanation": "In 2014, amid the Russo-Ukrainian war, 4A Games relocated its headquarters from Kyiv to Sliema, Malta to enable EU operations while retaining a Kyiv office as a sub-studio. Following the 2022 Russian invasion, Saber Interactive offered relocation for Kyiv staff. In February 2025, the Kyiv sub-studio was rebranded as Reburn, while 4A Games Limited continued operations with a newly opened second Kyiv studio after Metro Exodus DLC releases.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact technical architecture of the Metro game engine",
+      "Internal decision-making processes behind studio splits and rebranding",
+      "Details of employee relocation logistics post-2022 invasion",
+      "Specific technical implementation of VR integration in Arktika.1"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "4A Games",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381138658",
+    "revision": "1381138658",
+    "observedAt": "2026-11-14T00:34:03.437Z",
+    "sourceTimestamp": "2026-10-20T06:40:48Z",
+    "sha256": "ff84064496b902a8138168a34f576cbd4d6285e2ce8fde9f8749e057adde9715",
+    "excerptSha256": "19b28b8a1470d79efca96877e3210edf45f697a0b2c20f9c370e6f0c01d2d051",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 18167,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-20d68e0b-8774-4082-8165-7f0451dd2798",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5069,
+    "outputTokens": 490
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3a8ae330694c6e5a2d85156625fc8ea3447a57d6bd6ccdc02b26560be92da608",
+  "artifactDigest": "c397961a1e849105d70f455b278611e26aae9edf384281da1ee4fd3b8b4bcc93"
+}

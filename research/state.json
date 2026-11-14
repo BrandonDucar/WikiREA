@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T00:34:01.698Z",
+  "updatedAt": "2026-11-14T00:34:09.555Z",
   "sequence": 37,
   "jobs": [
     {
@@ -1601,21 +1601,47 @@
       "topic": "4A Engine",
       "day": "2026-11-14",
       "runId": "43535038111",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-14T00:34:01.698Z",
       "expiresAt": "2026-11-14T00:49:01.698Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "4A Games",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381138658",
+        "revision": "1381138658",
+        "observedAt": "2026-11-14T00:34:03.437Z",
+        "sourceTimestamp": "2026-10-20T06:40:48Z",
+        "sha256": "ff84064496b902a8138168a34f576cbd4d6285e2ce8fde9f8749e057adde9715",
+        "excerptSha256": "19b28b8a1470d79efca96877e3210edf45f697a0b2c20f9c370e6f0c01d2d051",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 18167,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-20d68e0b-8774-4082-8165-7f0451dd2798",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 5069,
+        "outputTokens": 490
+      },
+      "packet": "research/packets/research-000037-dee088a1a1.json",
+      "packetDigest": "c397961a1e849105d70f455b278611e26aae9edf384281da1ee4fd3b8b4bcc93",
+      "finishedAt": "2026-11-14T00:34:09.555Z"
     }
   ],
   "discovered": [
-    {
-      "title": "4A Engine",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "AAA (video game industry)",
       "role": "game-mechanic-researcher",
@@ -2280,6 +2306,46 @@
       "title": "Analog synthesizer",
       "role": "music-events",
       "discoveredFrom": "research-000036-e4eff9f5fb"
+    },
+    {
+      "title": "3D Realms",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
+    },
+    {
+      "title": "Amazon Luna",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
+    },
+    {
+      "title": "Anime Limited",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
+    },
+    {
+      "title": "Arc Games",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
+    },
+    {
+      "title": "Arktika.1",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
+    },
+    {
+      "title": "Asmodee",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
+    },
+    {
+      "title": "Aspyr",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
+    },
+    {
+      "title": "Beamdog",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000037-dee088a1a1"
     }
   ],
   "reviewJobs": [
