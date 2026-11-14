@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T06:22:06.479Z",
-  "sequence": 42,
+  "updatedAt": "2026-11-14T07:14:16.229Z",
+  "sequence": 43,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1820,6 +1820,20 @@
       "packet": "research/packets/research-000042-8e197eee6c.json",
       "packetDigest": "b16e3d32a946175b61d470030aee64e55adafca0e71017a7af9f20dec3e2d263",
       "finishedAt": "2026-11-14T06:22:06.479Z"
+    },
+    {
+      "id": "research-000043-81b5d14c30",
+      "role": "hardware-interoperability-scout",
+      "topic": "American wire gauge",
+      "day": "2026-11-14",
+      "runId": "43570129814",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-14T07:14:16.229Z",
+      "expiresAt": "2026-11-14T07:29:16.229Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
