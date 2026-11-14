@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T07:14:16.229Z",
+  "updatedAt": "2026-11-14T07:14:27.891Z",
   "sequence": 43,
   "jobs": [
     {
@@ -1827,13 +1827,44 @@
       "topic": "American wire gauge",
       "day": "2026-11-14",
       "runId": "43570129814",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-14T07:14:16.229Z",
       "expiresAt": "2026-11-14T07:29:16.229Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "American wire gauge",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381348147",
+        "revision": "1381348147",
+        "observedAt": "2026-11-14T07:14:22.076Z",
+        "sourceTimestamp": "2026-10-21T20:19:38Z",
+        "sha256": "9ae4be8b20050ad01cd7b309042f4929b1096b3dee256e55562b4b706eb7f199",
+        "excerptSha256": "a69ffaa282acb88085be34639b6f6db7237b52f598079ef99d163f39246bb900",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 24904,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-cc506b13-43a0-4137-a7be-c1e6882188ef",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4965,
+        "outputTokens": 416
+      },
+      "packet": "research/packets/research-000043-81b5d14c30.json",
+      "packetDigest": "8d2e6efc60f8524e4d69591da12609350546fd155a293fd33a1a0b42353c64e9",
+      "finishedAt": "2026-11-14T07:14:27.891Z"
     }
   ],
   "discovered": [
@@ -1871,11 +1902,6 @@
       "title": "Amiga",
       "role": "music-events",
       "discoveredFrom": "research-000008-8d45fc6c77"
-    },
-    {
-      "title": "American wire gauge",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000016-f3bd75d71f"
     },
     {
       "title": "Barium titanate",
@@ -2636,6 +2662,46 @@
       "title": "Alice (software)",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000042-8e197eee6c"
+    },
+    {
+      "title": "AWG (disambiguation)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "Acre",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "Acre-foot",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "Ampacity",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "Area",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "Avoirdupois",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "Barrel (unit)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
+    },
+    {
+      "title": "Belden Incorporated",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000043-81b5d14c30"
     }
   ],
   "reviewJobs": [
