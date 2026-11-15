@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000053-0d543f9d61-review-8a640bd3d9",
+  "parentJobId": "research-000053-0d543f9d61",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "f25585edc227f39940e7d1437f53e6709b73f27c4a591e1cc6ae23d8ddac128e",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Data lineage",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1378671492",
+    "revision": "1378671492",
+    "observedAt": "2026-11-15T21:13:07.104Z",
+    "sourceTimestamp": "2026-10-05T16:12:50Z",
+    "sha256": "50e62e165aab58131c65ece59b8810fa083bd42bc7d76150301a660e7877e0ad",
+    "excerptSha256": "11a519f439820d84ac2b3d7121285329a79c0af4e506491d5554970f59099dd2",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 44392,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft claims 'Data provenance maintains a historical record of data origins and transformations' as a standalone definition, but source states 'Data provenance provides a historical record...' and distinguishes it from lineage: 'Lineage is a simple type of why provenance' (DeSoumyarupa ref).",
+      "Draft mechanism 'Lineage tracking through transformation logs' cites S1 but source does not mention 'transformation logs' — it describes lineage as tracking origins, transformations, movements across systems.",
+      "Draft mechanism 'Visualization and masking for analysis' cites S1 but source describes masking as a feature of visualization tools, not a mechanism of provenance itself.",
+      "Draft unknown 'Exact methods for gathering and exposing metadata to lineage interfaces' is not in source — source says methods 'can vary' and categorizes by metadata collection approach, but does not list exact methods.",
+      "Draft unknown 'Specific implementation details of provenance in distributed platforms like MapReduce or Dryad' is not in source — source mentions these systems as context for big data debugging challenges, not provenance implementation."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-0363edcf-d35a-4d24-a4d8-c67627b7c958",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3773,
+    "outputTokens": 222
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
