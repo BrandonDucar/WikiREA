@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-14T21:24:25.903Z",
-  "sequence": 44,
+  "updatedAt": "2026-11-15T00:38:10.603Z",
+  "sequence": 45,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1934,6 +1934,20 @@
         "entry": "research/entries/research-000044-b7ded53b4d.json",
         "reviewId": "research-000044-b7ded53b4d-review-8a640bd3d9"
       }
+    },
+    {
+      "id": "research-000045-2c63cde39a",
+      "role": "game-mechanic-researcher",
+      "topic": "ASCII (company)",
+      "day": "2026-11-15",
+      "runId": "43659147777",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T00:38:10.603Z",
+      "expiresAt": "2026-11-15T00:53:10.603Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
