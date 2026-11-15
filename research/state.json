@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T00:38:10.603Z",
+  "updatedAt": "2026-11-15T00:38:15.023Z",
   "sequence": 45,
   "jobs": [
     {
@@ -1941,21 +1941,47 @@
       "topic": "ASCII (company)",
       "day": "2026-11-15",
       "runId": "43659147777",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T00:38:10.603Z",
       "expiresAt": "2026-11-15T00:53:10.603Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ASCII Corporation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383203262",
+        "revision": "1383203262",
+        "observedAt": "2026-11-15T00:38:12.367Z",
+        "sourceTimestamp": "2026-11-01T14:27:03Z",
+        "sha256": "b5a5de1deda845b24c48913597d33c9e202cbda4d871dd76677c3c36897a778b",
+        "excerptSha256": "7364b034129b99043eef331193fce537597c6f1a4bcd56020e5701a33043ceef",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 16970,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-82f26042-e1b8-4992-b34b-f19e87135c09",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4908,
+        "outputTokens": 284
+      },
+      "packet": "research/packets/research-000045-2c63cde39a.json",
+      "packetDigest": "0b3a6f29ebef2bb5f2419352cec3f2f2aebb65d546a4fc5d3c6e87b7f07c3da0",
+      "finishedAt": "2026-11-15T00:38:15.023Z"
     }
   ],
   "discovered": [
-    {
-      "title": "ASCII (company)",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "Abstraction (computer science)",
       "role": "game-mechanic-researcher",
@@ -2820,6 +2846,46 @@
       "title": "AppArmor",
       "role": "music-events",
       "discoveredFrom": "research-000044-b7ded53b4d"
+    },
+    {
+      "title": "2024 cyberattack on Kadokawa and Niconico",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "ASCII",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "ASCII (magazine)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "ASCII Media Works",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "Acquire (company)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "Agetec",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "Akiba's Trip",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "Amplitude Studios",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000045-2c63cde39a"
     }
   ],
   "reviewJobs": [

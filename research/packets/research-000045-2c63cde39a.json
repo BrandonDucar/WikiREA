@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000045-2c63cde39a",
+  "topic": "ASCII (company)",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ASCII Corporation was a Japanese publishing company founded in 1977 that became a major force in video game and PC software. It originated as Microsoft's Japanese sales office, created the MSX computer standard, and published the Derby Stallion and RPG Maker series. After merging with MediaWorks in 2008, it became ASCII Media Works, with its entity fully dissolved by 2010.",
+    "mechanisms": [
+      {
+        "title": "MSX computer standard",
+        "explanation": "ASCII co-developed with Microsoft a standardized 8-bit home computer architecture announced in 1983, which defined hardware compatibility across multiple manufacturers.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Video game publishing and series creation",
+        "explanation": "The company published and created several video game series including Derby Stallion, RPG Maker, and AI Shogi titles, often developing software for consoles like Family Computer and Mega Drive.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact financial details of Microsoft partnership dissolution",
+      "Specific technical specifications of MSX hardware variants",
+      "Internal decision-making process behind 2008 merger with MediaWorks",
+      "Detailed reasons for company dissolution and asset distribution"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASCII Corporation",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383203262",
+    "revision": "1383203262",
+    "observedAt": "2026-11-15T00:38:12.367Z",
+    "sourceTimestamp": "2026-11-01T14:27:03Z",
+    "sha256": "b5a5de1deda845b24c48913597d33c9e202cbda4d871dd76677c3c36897a778b",
+    "excerptSha256": "7364b034129b99043eef331193fce537597c6f1a4bcd56020e5701a33043ceef",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 16970,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-82f26042-e1b8-4992-b34b-f19e87135c09",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4908,
+    "outputTokens": 284
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "89cb1be1d980741ea9249583cf3e96ba654965f2a05a32ef8336f3d6f8c64be8",
+  "artifactDigest": "0b3a6f29ebef2bb5f2419352cec3f2f2aebb65d546a4fc5d3c6e87b7f07c3da0"
+}
