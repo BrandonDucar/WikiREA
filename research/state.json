@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T07:24:37.025Z",
-  "sequence": 51,
+  "updatedAt": "2026-11-15T08:18:17.057Z",
+  "sequence": 52,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2261,6 +2261,20 @@
       "packet": "research/packets/research-000051-14b168413b.json",
       "packetDigest": "757643444f4cb10a190b45a451da19a8d25fa4bba2f7ffd8f08ae7e96ad11762",
       "finishedAt": "2026-11-15T07:14:27.865Z"
+    },
+    {
+      "id": "research-000052-0783a62649",
+      "role": "music-events",
+      "topic": "Amiga",
+      "day": "2026-11-15",
+      "runId": "43693853941",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T08:18:17.057Z",
+      "expiresAt": "2026-11-15T08:33:17.057Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
