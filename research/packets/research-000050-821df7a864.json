@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000050-821df7a864",
+  "topic": "Comparison of software for molecular mechanics modeling",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Software for molecular mechanics modeling is cataloged by functional capabilities such as energy minimization, molecular dynamics, Monte Carlo sampling, replica exchange, and quantum mechanics integration. The comparison reveals that packages vary widely in supported methods, licensing models, and interface availability, with many offering GPU acceleration or implicit solvent models. Users select tools based on the specific simulation techniques required for their research domain, balancing performance, cost, and methodological flexibility.",
+    "mechanisms": [
+      {
+        "title": "Simulation engine selection",
+        "explanation": "Packages are distinguished by the primary simulation engines they support, including molecular dynamics, Monte Carlo, and replica exchange methods. Some tools integrate quantum mechanics or empirical valence bond calculations, while others focus on classical force fields. The presence or absence of these engines in a given package determines its suitability for specific research tasks.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Licensing and accessibility model",
+        "explanation": "Software availability ranges from fully open-source packages under permissive licenses to commercial products requiring purchase, with many offering free academic use or gratis trials. This licensing spectrum affects who can access the tools and under what conditions, influencing adoption in different research environments.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact feature compatibility matrices across all software versions",
+      "Performance benchmarks for specific hardware configurations",
+      "Detailed implementation of force field parameter sets",
+      "Integration pathways between proprietary and open-source engines"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Comparison of software for molecular mechanics modeling",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373930373",
+    "revision": "1373930373",
+    "observedAt": "2026-11-15T06:22:13.218Z",
+    "sourceTimestamp": "2026-09-08T20:27:43Z",
+    "sha256": "c5f69509194505cbb4ab2b2650618f4dba9abc809cc910d2919a8801ffcb0180",
+    "excerptSha256": "e02c94f870b2968cf26829ff7e578842a3beb213e89b627b7f350c311b36c2c4",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 19606,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-bddc39e9-e403-41ef-acb9-46ad83700ac3",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4765,
+    "outputTokens": 320
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "15d863982c596b028a3e0ce5ca317bfc23fce70959930d10072f6091912735c1",
+  "artifactDigest": "e42d321a71ae1230a45a8f1881f6d04a152b507fafb2e24589b381f48167ce41"
+}

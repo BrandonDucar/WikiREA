@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T06:22:11.368Z",
+  "updatedAt": "2026-11-15T06:22:15.176Z",
   "sequence": 50,
   "jobs": [
     {
@@ -2178,21 +2178,47 @@
       "topic": "Comparison of software for molecular mechanics modeling",
       "day": "2026-11-15",
       "runId": "43685111108",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T06:22:11.368Z",
       "expiresAt": "2026-11-15T06:37:11.368Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Comparison of software for molecular mechanics modeling",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1373930373",
+        "revision": "1373930373",
+        "observedAt": "2026-11-15T06:22:13.218Z",
+        "sourceTimestamp": "2026-09-08T20:27:43Z",
+        "sha256": "c5f69509194505cbb4ab2b2650618f4dba9abc809cc910d2919a8801ffcb0180",
+        "excerptSha256": "e02c94f870b2968cf26829ff7e578842a3beb213e89b627b7f350c311b36c2c4",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 19606,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-bddc39e9-e403-41ef-acb9-46ad83700ac3",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4765,
+        "outputTokens": 320
+      },
+      "packet": "research/packets/research-000050-821df7a864.json",
+      "packetDigest": "e42d321a71ae1230a45a8f1881f6d04a152b507fafb2e24589b381f48167ce41",
+      "finishedAt": "2026-11-15T06:22:15.176Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Comparison of software for molecular mechanics modeling",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000005-ea383a9a57"
-    },
     {
       "title": "Amiga",
       "role": "music-events",
@@ -3227,6 +3253,31 @@
       "title": "Algorithm",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "64-bit",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000050-821df7a864"
+    },
+    {
+      "title": "Ab initio quantum chemistry methods",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000050-821df7a864"
+    },
+    {
+      "title": "Amsterdam Density Functional",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000050-821df7a864"
+    },
+    {
+      "title": "Atomistix ToolKit",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000050-821df7a864"
+    },
+    {
+      "title": "Avogadro (software)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000050-821df7a864"
     }
   ],
   "reviewJobs": [
