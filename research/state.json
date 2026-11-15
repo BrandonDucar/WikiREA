@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T21:24:45.375Z",
-  "sequence": 53,
+  "updatedAt": "2026-11-15T22:13:36.264Z",
+  "sequence": 54,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2363,6 +2363,20 @@
       "packet": "research/packets/research-000053-0d543f9d61.json",
       "packetDigest": "f25585edc227f39940e7d1437f53e6709b73f27c4a591e1cc6ae23d8ddac128e",
       "finishedAt": "2026-11-15T21:13:08.730Z"
+    },
+    {
+      "id": "research-000054-be07f6d7e2",
+      "role": "application-tracer",
+      "topic": "LibreOffice",
+      "day": "2026-11-15",
+      "runId": "43768082995",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T22:13:36.264Z",
+      "expiresAt": "2026-11-15T22:28:36.264Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
