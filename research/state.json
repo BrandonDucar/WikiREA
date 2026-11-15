@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T01:15:23.726Z",
+  "updatedAt": "2026-11-15T01:15:31.232Z",
   "sequence": 46,
   "jobs": [
     {
@@ -1986,13 +1986,44 @@
       "topic": "Comparison of nucleic acid simulation software",
       "day": "2026-11-15",
       "runId": "43662207940",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T01:15:23.726Z",
       "expiresAt": "2026-11-15T01:30:23.726Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Comparison of nucleic acid simulation software",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1375981541",
+        "revision": "1375981541",
+        "observedAt": "2026-11-15T01:15:28.757Z",
+        "sourceTimestamp": "2026-09-21T07:05:45Z",
+        "sha256": "faf4d2a50b7db0857fcbba448c2896a7f7b85d1a7b1298a9defafcd46747fbf2",
+        "excerptSha256": "faf4d2a50b7db0857fcbba448c2896a7f7b85d1a7b1298a9defafcd46747fbf2",
+        "inspectedCharacters": 11529,
+        "totalCharacters": 11529,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4f4d0901-ff54-4c4f-8f08-c34c91eeda87",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4432,
+        "outputTokens": 365
+      },
+      "packet": "research/packets/research-000046-1f8c528ae6.json",
+      "packetDigest": "8921480965b908be6947089d8719ca3397604113df7fe89a68fb8df3e919e097",
+      "finishedAt": "2026-11-15T01:15:31.232Z"
     }
   ],
   "discovered": [
@@ -2000,11 +2031,6 @@
       "title": "Abstraction (computer science)",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000004-a6f704aa74"
-    },
-    {
-      "title": "Comparison of nucleic acid simulation software",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000005-ea383a9a57"
     },
     {
       "title": "Comparison of software for molecular mechanics modeling",
@@ -2900,6 +2926,41 @@
       "title": "Amplitude Studios",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000045-2c63cde39a"
+    },
+    {
+      "title": "AMBER",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000046-1f8c528ae6"
+    },
+    {
+      "title": "Abalone (molecular mechanics)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000046-1f8c528ae6"
+    },
+    {
+      "title": "Ascalaph Designer",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000046-1f8c528ae6"
+    },
+    {
+      "title": "CHARMM",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000046-1f8c528ae6"
+    },
+    {
+      "title": "CP2K",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000046-1f8c528ae6"
+    },
+    {
+      "title": "Cartesian coordinates",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000046-1f8c528ae6"
+    },
+    {
+      "title": "CiteSeerX (identifier)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000046-1f8c528ae6"
     }
   ],
   "reviewJobs": [

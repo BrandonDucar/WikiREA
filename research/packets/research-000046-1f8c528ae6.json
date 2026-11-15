@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000046-1f8c528ae6",
+  "topic": "Comparison of nucleic acid simulation software",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Nucleic acid simulation software encompasses tools for molecular dynamics, Monte Carlo sampling, and coarse-grained modeling of DNA and RNA. These programs vary in their treatment of explicit or implicit solvent, force fields, and hardware acceleration. Many support model building and 3D visualization, while specialized tools address ligand interactions, replica exchange, and refinement of nucleic acid structures. Licensing ranges from free and open-source to proprietary, with capabilities spanning from coarse-grained biophysics to all-atom dynamics.",
+    "mechanisms": [
+      {
+        "title": "Molecular dynamics and force fields",
+        "explanation": "Software such as AMBER, CHARMM, NAMD, and CP2K perform all-atom molecular dynamics simulations of nucleic acids using physics-based force fields. These models compute forces and integrate equations of motion to simulate the time evolution of DNA and RNA structures, often supporting explicit water models and GPU acceleration for performance.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Coarse-grained modeling and RNA folding",
+        "explanation": "Tools like oxDNA, SimRNA, and MDynaMix employ coarse-grained representations to simulate nucleic acid thermodynamics and folding. These methods reduce atomic detail to capture sequence-dependent behavior, enable large-scale conformational changes, and facilitate RNA 3D structure prediction and docking.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact parameterization differences between force fields for diverse nucleic acid types",
+      "Whether implicit solvent models accurately capture specific water-mediated nucleic acid interactions",
+      "The degree to which GPU acceleration affects numerical stability in long-timescale nucleic acid simulations",
+      "How replica exchange mechanisms are configured for nucleic acid-specific energy landscapes"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Comparison of nucleic acid simulation software",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1375981541",
+    "revision": "1375981541",
+    "observedAt": "2026-11-15T01:15:28.757Z",
+    "sourceTimestamp": "2026-09-21T07:05:45Z",
+    "sha256": "faf4d2a50b7db0857fcbba448c2896a7f7b85d1a7b1298a9defafcd46747fbf2",
+    "excerptSha256": "faf4d2a50b7db0857fcbba448c2896a7f7b85d1a7b1298a9defafcd46747fbf2",
+    "inspectedCharacters": 11529,
+    "totalCharacters": 11529,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4f4d0901-ff54-4c4f-8f08-c34c91eeda87",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4432,
+    "outputTokens": 365
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "6433b6e3e8e050630480e478ac613abc177dd5cc5a9221d96244321a63a2cd80",
+  "artifactDigest": "8921480965b908be6947089d8719ca3397604113df7fe89a68fb8df3e919e097"
+}
