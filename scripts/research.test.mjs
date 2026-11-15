@@ -181,3 +181,41 @@ test('compiler-first production worker durably retains one research generation w
     assert.equal(reserveSeniorReviews(state, config, 1, Date.now(), 'review-run').reserved.length, 1);
   } finally { await fs.rm(dir, { recursive: true, force: true }); }
 });
+
+// Model the incident without binding tests to the ever-growing live archive.
+// Both original seeds failed, so no links were discovered; failures must not replay.
+function exhaustedOriginalSeeds() {
+  const legacy = { ...config, seeds: Object.fromEntries(roles.map(role => [role, config.seeds[role].slice(0, 2)])) };
+  const first = reserveJobs(blank(), legacy, roles, 10, now, 'fixture-original-1');
+  const second = reserveJobs(first.state, legacy, roles, 10, now + 16 * 60000, 'fixture-original-2');
+  for (const job of second.state.jobs) {
+    job.status = 'FAILED'; job.error = 'FIXTURE_WRITER_FAILED'; job.finishedAt = new Date(now + 17 * 60000).toISOString();
+  }
+  return { state: second.state, legacy, nextDay: now + 24 * 60 * 60000 };
+}
+
+test('expanded seeds restore all ten roles after original topic exhaustion without replay or archive mutation', () => {
+  const { state, legacy, nextDay } = exhaustedOriginalSeeds();
+  const before = structuredClone(state);
+  assert.equal(reserveJobs(state, legacy, roles, 10, nextDay).reserved.length, 0);
+  const fixed = reserveJobs(state, config, roles, 10, nextDay);
+  assert.equal(fixed.reserved.length, 10);
+  assert.equal(new Set(fixed.reserved.map(j => j.role)).size, 10);
+  const used = new Set(state.jobs.map(j => j.topic.toLowerCase()));
+  assert(fixed.reserved.every(j => !used.has(j.topic.toLowerCase())));
+  assert.deepEqual(state, before);
+  assert.deepEqual(fixed.state.jobs.slice(0, before.jobs.length), before.jobs);
+});
+
+test('expanded backlog preserves daily caps, leases and provider holds', () => {
+  const { state, nextDay } = exhaustedOriginalSeeds();
+  const first = reserveJobs(state, config, roles, 10, nextDay);
+  assert.equal(reserveJobs(first.state, config, roles, 10, nextDay + 1).reserved.length, 0);
+  const second = reserveJobs(first.state, config, roles, 10, nextDay + 16 * 60000);
+  assert.equal(second.reserved.length, 10);
+  assert.equal(reserveJobs(second.state, config, roles, 10, nextDay + 32 * 60000).reserved.length, 0);
+  for (const role of roles) assert.equal(second.state.jobs.filter(j => j.day === new Date(nextDay).toISOString().slice(0, 10) && j.role === role).length, 2);
+  const held = structuredClone(state);
+  held.providerHold = { binding: sha(JSON.stringify([config.writerProvider, config.writerModel, config.reviewerProvider, config.reviewerModel, config.writerReasoning, config.reviewerReasoning, config.nimOutputFormat])) };
+  assert.equal(reserveJobs(held, config, roles, 10, nextDay).reserved.length, 0);
+});
