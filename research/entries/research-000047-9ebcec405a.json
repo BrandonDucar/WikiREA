@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000047-9ebcec405a",
+  "title": "Barium titanate",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-15T05:25:08.696Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Barium titanate (BaTiO3) is a ferroelectric ceramic whose crystal structure undergoes temperature-driven phase transitions between cubic, tetragonal, orthorhombic, and rhombohedral forms. Its remarkable dielectric response stems from off-center displacements of Ti4+ ions within TiO6 octahedra, which cooperate to produce spontaneous polarization. These properties enable use in high-K capacitors, transducers, and nonlinear optics, though the material's behavior is strongly affected by particle morphology, dopants, and grain structure.",
+  "mechanisms": [
+    {
+      "title": "Ferroelectric off-center displacement",
+      "explanation": "The Ti4+ ion moves off-center within the TiO6 octahedron, creating a permanent electric dipole. Cooperative alignment of these dipoles across the lattice yields spontaneous polarization and high dielectric permittivity.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Phase-transition-driven polarization",
+      "explanation": "Temperature-dependent symmetry changes (cubic to tetragonal to orthorhombic to rhombohedral) control the direction and magnitude of Ti4+ displacements. Only non-cubic phases exhibit ferroelectricity, and the transitions alter crystal shape and volume.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact atomic-scale mechanism driving cooperative Ti4+ distortions across grain boundaries",
+    "How abnormal grain growth specifically enhances permittivity beyond simple density effects",
+    "Long-term stability of ferroelectric domains under electrical biasing and thermal cycling",
+    "Precise role of dopants such as Sr in modifying the phase transition temperatures"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Barium titanate",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383452495",
+      "revision": "1383452495",
+      "observedAt": "2026-11-15T02:19:58.865Z",
+      "sourceTimestamp": "2026-11-02T19:36:46Z",
+      "sha256": "ba069f5021fbde5fd5ab63e02c46aea3701d936f940f3c460860c95dcf008bb8",
+      "excerptSha256": "431cb0643a6da9ca3163d5a5cf2a9d850aaace8619ca19e7968f6d67154c8845",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 20860,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on structure, phase transitions, and ferroelectric mechanism",
+      "Mechanisms correctly describe off-center Ti4+ displacement and phase-transition-driven polarization with proper source attribution",
+      "Unknowns identify genuine gaps not resolved in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'range between' and 'reported to be' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-ac9af459-9ef5-4246-a023-88240872d010",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4872,
+      "outputTokens": 357
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-ab4e83e4-407c-4f7e-a1cb-4c2870a20bb8",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5179,
+      "outputTokens": 93
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "46c7a3a78e0cf84832433b5b0f827e5dbd5515ea10d6d1bb83bec34749ea3a9a",
+    "artifactDigest": "a822a515e86724a2a3bb0c79e42b426a54432fe07d14dce174645cd03b9bc629",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000047-9ebcec405a.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
