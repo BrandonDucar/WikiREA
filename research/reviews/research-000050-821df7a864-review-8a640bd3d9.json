@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000050-821df7a864-review-8a640bd3d9",
+  "parentJobId": "research-000050-821df7a864",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "e42d321a71ae1230a45a8f1881f6d04a152b507fafb2e24589b381f48167ce41",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Comparison of software for molecular mechanics modeling",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373930373",
+    "revision": "1373930373",
+    "observedAt": "2026-11-15T06:22:13.218Z",
+    "sourceTimestamp": "2026-09-08T20:27:43Z",
+    "sha256": "c5f69509194505cbb4ab2b2650618f4dba9abc809cc910d2919a8801ffcb0180",
+    "excerptSha256": "e02c94f870b2968cf26829ff7e578842a3beb213e89b627b7f350c311b36c2c4",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 19606,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Mechanism 'Simulation engine selection' claims 'Some tools integrate quantum mechanics or empirical valence bond calculations' but source only shows QM column with yes/no/some values, not integration details",
+      "Mechanism 'Licensing and accessibility model' states 'many offering free academic use or gratis trials' but source shows only specific packages with trial/gratis mentions (e.g., Desmond 'gratis', Discovery Studio 'trial available'), not 'many'",
+      "Draft summary claims 'packages vary widely in supported methods' but source is a single static table without version or variation data",
+      "Unknown 'Exact feature compatibility matrices across all software versions' is not an unknown - the source is a single table snapshot, not a versioned matrix",
+      "Mechanism explanations cite 'S1' but no source IDs exist in the provided data"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-f2aca8b0-89f7-4ba6-93dd-cc15a0cf76c6",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5438,
+    "outputTokens": 182
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
