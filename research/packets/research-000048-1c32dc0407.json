@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000048-1c32dc0407",
+  "topic": "Akai S900",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The Akai S900 is a 12-bit digital sampler released in 1986 for professional recording studios. It offers a variable sample rate from 7.5 kHz to 40 kHz and 8-voice polyphony. The S900 was succeeded by the S1000 two years later. Version 1.2 firmware added floppy-based OS upgrades, and the final known version was 4.0. An expanded model, the S950, followed in 1988, adding timestretching and a maximum sample rate of 48 kHz. The S900 series uniquely allows samples to loop alternating forwards and backwards. Notable users span hip-hop, electronic, and pop producers.",
+    "mechanisms": [
+      {
+        "title": "Sample rate conversion",
+        "explanation": "The S900 uses a variable sample rate ranging from 7.5 kHz to 40 kHz, determined by the 12-bit resolution and internal clock. Lower rates reduce bandwidth and aliasing, shaping the characteristic lo-fi texture associated with the unit.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Sample looping direction control",
+        "explanation": "The S900 series permits a sample to loop alternating forwards and backwards, a feature not available on the S1000 series. This allows rhythmic or tonal reversal effects within a single sample playback.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal sample rate generation method",
+      "Details of the firmware upgrade mechanism beyond floppy loading",
+      "Precise technical implementation of forward/backward loop switching",
+      "Full list of differences between version 1.2 and final version 4.0 firmware"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Akai S900",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381285733",
+    "revision": "1381285733",
+    "observedAt": "2026-11-15T03:17:55.079Z",
+    "sourceTimestamp": "2026-10-21T09:13:51Z",
+    "sha256": "6696e4b61e1c63f22a539a81bd3ce0baea9c496ee2cc4c0ca3c9fe9c20f879d9",
+    "excerptSha256": "6696e4b61e1c63f22a539a81bd3ce0baea9c496ee2cc4c0ca3c9fe9c20f879d9",
+    "inspectedCharacters": 7430,
+    "totalCharacters": 7430,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-a49f1bdc-8e96-4c80-a994-a0cf7b4c69ce",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2753,
+    "outputTokens": 396
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3d85bc9f5a5693a9b6725277ff0dfcc97515cfc3e0d1ff8cb91af30f0f1f26d9",
+  "artifactDigest": "16d3d76aba8adef00fee8bf64e2280987b9b92e28ccd183a4bde6d05ec80c598"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T03:17:53.467Z",
+  "updatedAt": "2026-11-15T03:17:57.321Z",
   "sequence": 48,
   "jobs": [
     {
@@ -2080,13 +2080,44 @@
       "topic": "Akai S900",
       "day": "2026-11-15",
       "runId": "43671711254",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T03:17:53.467Z",
       "expiresAt": "2026-11-15T03:32:53.467Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Akai S900",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381285733",
+        "revision": "1381285733",
+        "observedAt": "2026-11-15T03:17:55.079Z",
+        "sourceTimestamp": "2026-10-21T09:13:51Z",
+        "sha256": "6696e4b61e1c63f22a539a81bd3ce0baea9c496ee2cc4c0ca3c9fe9c20f879d9",
+        "excerptSha256": "6696e4b61e1c63f22a539a81bd3ce0baea9c496ee2cc4c0ca3c9fe9c20f879d9",
+        "inspectedCharacters": 7430,
+        "totalCharacters": 7430,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-a49f1bdc-8e96-4c80-a994-a0cf7b4c69ce",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2753,
+        "outputTokens": 396
+      },
+      "packet": "research/packets/research-000048-1c32dc0407.json",
+      "packetDigest": "16d3d76aba8adef00fee8bf64e2280987b9b92e28ccd183a4bde6d05ec80c598",
+      "finishedAt": "2026-11-15T03:17:57.321Z"
     }
   ],
   "discovered": [
@@ -2099,11 +2130,6 @@
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000005-ea383a9a57"
-    },
-    {
-      "title": "Akai S900",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
     },
     {
       "title": "Amiga",
@@ -3059,6 +3085,46 @@
       "title": "Barium",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "Akai Professional",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Akai S1000",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Beatmasters",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Black Box (band)",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Computer data storage",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Digital synthesizer",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Enya",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Fatboy Slim",
+      "role": "music-events",
+      "discoveredFrom": "research-000048-1c32dc0407"
     }
   ],
   "reviewJobs": [
