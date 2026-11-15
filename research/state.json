@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T00:38:15.023Z",
-  "sequence": 45,
+  "updatedAt": "2026-11-15T01:15:23.726Z",
+  "sequence": 46,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -1979,6 +1979,20 @@
       "packet": "research/packets/research-000045-2c63cde39a.json",
       "packetDigest": "0b3a6f29ebef2bb5f2419352cec3f2f2aebb65d546a4fc5d3c6e87b7f07c3da0",
       "finishedAt": "2026-11-15T00:38:15.023Z"
+    },
+    {
+      "id": "research-000046-1f8c528ae6",
+      "role": "simulation-researcher",
+      "topic": "Comparison of nucleic acid simulation software",
+      "day": "2026-11-15",
+      "runId": "43662207940",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T01:15:23.726Z",
+      "expiresAt": "2026-11-15T01:30:23.726Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
