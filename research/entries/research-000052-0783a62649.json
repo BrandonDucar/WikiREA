@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000052-0783a62649",
+  "title": "Amiga",
+  "role": "music-events",
+  "createdAt": "2026-11-15T17:24:20.319Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Amiga is a family of personal computers produced by Commodore from 1985 until 1994, notable for custom hardware that accelerated graphics and sound. It established a niche in audio and multimedia, becoming a popular platform for music creation and video production. The system's custom chips enabled sprite graphics, blitting, and four channels of sample-based audio, supporting a desktop GUI and pre-emptive multitasking via AmigaOS. While initially slow to sell, the Amiga 500 became the bestselling model, finding success in gaming and creative software before market share declined against IBM PC compatibles and fourth-generation consoles, leading to Commodore's bankruptcy.",
+  "mechanisms": [
+    {
+      "title": "Custom audio hardware",
+      "explanation": "The Amiga featured four channels of sample-based audio custom hardware, which distinguished it from contemporaries and supported its emergence as a platform for music creation and trackers.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Custom graphics and blitter",
+      "explanation": "Custom hardware including sprites and a blitter accelerated graphics performance, enabling the system's success in video games and multimedia authoring tools.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Full details of the operating system's internal scheduling mechanism",
+    "Precise reasons for early production and marketing failures",
+    "Complete technical specifications of the Enhanced Chip Set variants",
+    "Details of third-party software porting processes to other platforms"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Amiga",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385411539",
+      "revision": "1385411539",
+      "observedAt": "2026-11-15T08:18:19.431Z",
+      "sourceTimestamp": "2026-11-13T04:45:19Z",
+      "sha256": "1c4964cd4a9e6693142b1cb04e65564e34c329638236612235bfac2c99d05dd4",
+      "excerptSha256": "197bf02dbc3b20868c9e0b771f74176290a276cb5dc55fed71bd603470c8f2aa",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 114617,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Amiga family, custom hardware, AmigaOS, market trajectory, and Commodore bankruptcy",
+      "Mechanisms correctly identify custom audio (four channels sample-based) and graphics (sprites, blitter) hardware as distinguishing features per source",
+      "Unknowns appropriately list internal OS scheduling details, early production/marketing failure reasons, Enhanced Chip Set specs, and third-party porting processes as not fully detailed in source",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "Source IDs referenced in mechanisms align with provided source text"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-baf48174-0266-4758-bd96-ca94469508c9",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4380,
+      "outputTokens": 332
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-b1da8739-a70e-400e-a876-a558dd58f18a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4693,
+      "outputTokens": 128
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "ddcd84ca0b1c2835ab3ac202089c24b900e1554ff07564ce542d7e71df17d506",
+    "artifactDigest": "6128a1412c9969ee90d95b5c28a94962cdff671092b468a165f030347abf8877",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000052-0783a62649.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
