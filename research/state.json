@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T22:13:36.264Z",
+  "updatedAt": "2026-11-15T22:13:42.648Z",
   "sequence": 54,
   "jobs": [
     {
@@ -2370,13 +2370,44 @@
       "topic": "LibreOffice",
       "day": "2026-11-15",
       "runId": "43768082995",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T22:13:36.264Z",
       "expiresAt": "2026-11-15T22:28:36.264Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "LibreOffice",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385675142",
+        "revision": "1385675142",
+        "observedAt": "2026-11-15T22:13:40.662Z",
+        "sourceTimestamp": "2026-11-14T17:17:58Z",
+        "sha256": "03252c6523ee5a81d0696538201e360270125164325f4fd8fb73b47f400089c7",
+        "excerptSha256": "1395729690c20b40f6c74c9f3024837224949ee7bd3c2d29526278b4153cbf3c",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 147994,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ce417a1d-41d7-4738-8f95-55c524a56fed",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4659,
+        "outputTokens": 418
+      },
+      "packet": "research/packets/research-000054-be07f6d7e2.json",
+      "packetDigest": "2aa7d286253f3caebd491af233c9104c1660187576132c199b71fe4871b31c47",
+      "finishedAt": "2026-11-15T22:13:42.648Z"
     }
   ],
   "discovered": [
@@ -3544,6 +3575,46 @@
       "title": "Big Data",
       "role": "source-curator",
       "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "0 A.D. (video game)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "3D Topicscape",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "AArch32",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "AArch64",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "AES encryption",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "ARM64",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "ARM architecture family",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "AbiWord",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000054-be07f6d7e2"
     }
   ],
   "reviewJobs": [

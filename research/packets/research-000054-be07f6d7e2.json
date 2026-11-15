@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000054-be07f6d7e2",
+  "topic": "LibreOffice",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "LibreOffice is a free and open-source productivity suite developed by The Document Foundation, originating as a 2010 fork of OpenOffice.org. It includes Writer, Calc, Impress, Draw, Base, and Math, supporting OpenDocument and Microsoft Office formats across Windows, macOS, and Linux. Development is largely driven by commercial ecosystem partners like Collabora, who use it as upstream for web-based and mobile ports, resulting in higher activity than its predecessor Apache OpenOffice. The suite is available in 120 languages and serves individual users and enterprises through partner-supported channels.",
+    "mechanisms": [
+      {
+        "title": "Modular application suite architecture",
+        "explanation": "LibreOffice delivers distinct productivity tools—Writer, Calc, Impress, Draw, Base, and Math—as separate modules within a single installable package, each handling word processing, spreadsheets, presentations, vector graphics, databases, and formula editing respectively. The suite supports OpenDocument format natively and maintains compatibility with major office formats, including Microsoft Office files.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Commercial ecosystem development model",
+        "explanation": "The Document Foundation coordinates the project, but the majority of commits originate from developers employed by commercial partners such as Collabora, Red Hat, and CIB/allotropia. These partners advance the codebase in the course of supporting enterprise customers and provide technical support, enabling a significantly higher level of development activity compared to the volunteer-driven Apache OpenOffice.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal module communication pathways and inter-application data flow mechanisms",
+      "Details of the just-in-time compilation or bytecode execution for the Python and Java components",
+      "Specifics of the build system's daily release pipeline and platform-specific packaging steps",
+      "Underlying architecture of the upstream code reuse pattern in Collabora's web and mobile ports"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "LibreOffice",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385675142",
+    "revision": "1385675142",
+    "observedAt": "2026-11-15T22:13:40.662Z",
+    "sourceTimestamp": "2026-11-14T17:17:58Z",
+    "sha256": "03252c6523ee5a81d0696538201e360270125164325f4fd8fb73b47f400089c7",
+    "excerptSha256": "1395729690c20b40f6c74c9f3024837224949ee7bd3c2d29526278b4153cbf3c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 147994,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-ce417a1d-41d7-4738-8f95-55c524a56fed",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4659,
+    "outputTokens": 418
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "2e9b3ec7c7f2ca47fef19c11a8026376d0eb3a47ee0f52278f7f5d788ad7e0c6",
+  "artifactDigest": "2aa7d286253f3caebd491af233c9104c1660187576132c199b71fe4871b31c47"
+}
