@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T08:18:17.057Z",
+  "updatedAt": "2026-11-15T08:18:20.818Z",
   "sequence": 52,
   "jobs": [
     {
@@ -2268,21 +2268,47 @@
       "topic": "Amiga",
       "day": "2026-11-15",
       "runId": "43693853941",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T08:18:17.057Z",
       "expiresAt": "2026-11-15T08:33:17.057Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Amiga",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385411539",
+        "revision": "1385411539",
+        "observedAt": "2026-11-15T08:18:19.431Z",
+        "sourceTimestamp": "2026-11-13T04:45:19Z",
+        "sha256": "1c4964cd4a9e6693142b1cb04e65564e34c329638236612235bfac2c99d05dd4",
+        "excerptSha256": "197bf02dbc3b20868c9e0b771f74176290a276cb5dc55fed71bd603470c8f2aa",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 114617,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-baf48174-0266-4758-bd96-ca94469508c9",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4380,
+        "outputTokens": 332
+      },
+      "packet": "research/packets/research-000052-0783a62649.json",
+      "packetDigest": "6128a1412c9969ee90d95b5c28a94962cdff671092b468a165f030347abf8877",
+      "finishedAt": "2026-11-15T08:18:20.818Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Amiga",
-      "role": "music-events",
-      "discoveredFrom": "research-000008-8d45fc6c77"
-    },
     {
       "title": ".NET",
       "role": "game-mechanic-researcher",
@@ -3367,6 +3393,46 @@
       "title": "Monthly Notices of the Royal Astronomical Society",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "\"Weird Al\" Yankovic",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": ".info (magazine)",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": "16-bit",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": "24-bit",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": "24-bit color",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": "32-bit",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": "3D computer graphics software",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": "6502",
+      "role": "music-events",
+      "discoveredFrom": "research-000052-0783a62649"
     }
   ],
   "reviewJobs": [
