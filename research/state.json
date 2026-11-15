@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T02:20:02.679Z",
-  "sequence": 47,
+  "updatedAt": "2026-11-15T03:17:53.467Z",
+  "sequence": 48,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2073,6 +2073,20 @@
       "packet": "research/packets/research-000047-9ebcec405a.json",
       "packetDigest": "a822a515e86724a2a3bb0c79e42b426a54432fe07d14dce174645cd03b9bc629",
       "finishedAt": "2026-11-15T02:20:02.679Z"
+    },
+    {
+      "id": "research-000048-1c32dc0407",
+      "role": "music-events",
+      "topic": "Akai S900",
+      "day": "2026-11-15",
+      "runId": "43671711254",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T03:17:53.467Z",
+      "expiresAt": "2026-11-15T03:32:53.467Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
