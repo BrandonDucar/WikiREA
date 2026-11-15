@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000045-2c63cde39a-review-8a640bd3d9",
+  "parentJobId": "research-000045-2c63cde39a",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "0b3a6f29ebef2bb5f2419352cec3f2f2aebb65d546a4fc5d3c6e87b7f07c3da0",
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASCII Corporation",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383203262",
+    "revision": "1383203262",
+    "observedAt": "2026-11-15T00:38:12.367Z",
+    "sourceTimestamp": "2026-11-01T14:27:03Z",
+    "sha256": "b5a5de1deda845b24c48913597d33c9e202cbda4d871dd76677c3c36897a778b",
+    "excerptSha256": "7364b034129b99043eef331193fce537597c6f1a4bcd56020e5701a33043ceef",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 16970,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects founding, Microsoft partnership, MSX, key game series, and merger timeline per source text",
+      "Mechanisms correctly describe MSX as co-developed standard and video game publishing activities with specific series named",
+      "Unknowns appropriately identify gaps not covered in source (financial details of Microsoft dissolution, MSX technical specs, internal merger decision-making, dissolution asset distribution)",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often' and 'several' preserved appropriately"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-8d19838c-baae-4c74-b972-48febb0b08fc",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5147,
+    "outputTokens": 114
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
