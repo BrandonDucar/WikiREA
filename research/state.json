@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T05:25:08.697Z",
-  "sequence": 49,
+  "updatedAt": "2026-11-15T06:22:11.368Z",
+  "sequence": 50,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2171,6 +2171,20 @@
       "packet": "research/packets/research-000049-10bfbc3df7.json",
       "packetDigest": "63317f312f887f461b858dfb05a10b063bd7344538c1c0c1d0a9c28235da735e",
       "finishedAt": "2026-11-15T04:16:40.942Z"
+    },
+    {
+      "id": "research-000050-821df7a864",
+      "role": "simulation-researcher",
+      "topic": "Comparison of software for molecular mechanics modeling",
+      "day": "2026-11-15",
+      "runId": "43685111108",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T06:22:11.368Z",
+      "expiresAt": "2026-11-15T06:37:11.368Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
