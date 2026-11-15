@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T02:19:57.097Z",
+  "updatedAt": "2026-11-15T02:20:02.679Z",
   "sequence": 47,
   "jobs": [
     {
@@ -2035,13 +2035,44 @@
       "topic": "Barium titanate",
       "day": "2026-11-15",
       "runId": "43667264688",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T02:19:57.097Z",
       "expiresAt": "2026-11-15T02:34:57.097Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Barium titanate",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383452495",
+        "revision": "1383452495",
+        "observedAt": "2026-11-15T02:19:58.865Z",
+        "sourceTimestamp": "2026-11-02T19:36:46Z",
+        "sha256": "ba069f5021fbde5fd5ab63e02c46aea3701d936f940f3c460860c95dcf008bb8",
+        "excerptSha256": "431cb0643a6da9ca3163d5a5cf2a9d850aaace8619ca19e7968f6d67154c8845",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 20860,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ac9af459-9ef5-4246-a023-88240872d010",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4872,
+        "outputTokens": 357
+      },
+      "packet": "research/packets/research-000047-9ebcec405a.json",
+      "packetDigest": "a822a515e86724a2a3bb0c79e42b426a54432fe07d14dce174645cd03b9bc629",
+      "finishedAt": "2026-11-15T02:20:02.679Z"
     }
   ],
   "discovered": [
@@ -2064,11 +2095,6 @@
       "title": "Amiga",
       "role": "music-events",
       "discoveredFrom": "research-000008-8d45fc6c77"
-    },
-    {
-      "title": "Barium titanate",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000016-f3bd75d71f"
     },
     {
       "title": "Bibcode (identifier)",
@@ -2979,6 +3005,46 @@
       "title": "CiteSeerX (identifier)",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000046-1f8c528ae6"
+    },
+    {
+      "title": "Abnormal grain growth",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "Alkali earth metal",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "Aqueous solution",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "Arthur R. von Hippel",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "BaZnGa",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "Band gap",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "Bandgap",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
+    },
+    {
+      "title": "Barium",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000047-9ebcec405a"
     }
   ],
   "reviewJobs": [
