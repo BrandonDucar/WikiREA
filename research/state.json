@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T17:24:20.320Z",
-  "sequence": 52,
+  "updatedAt": "2026-11-15T21:13:05.171Z",
+  "sequence": 53,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2318,6 +2318,20 @@
         "entry": "research/entries/research-000052-0783a62649.json",
         "reviewId": "research-000052-0783a62649-review-8a640bd3d9"
       }
+    },
+    {
+      "id": "research-000053-0d543f9d61",
+      "role": "source-curator",
+      "topic": "Data provenance",
+      "day": "2026-11-15",
+      "runId": "43762435116",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T21:13:05.171Z",
+      "expiresAt": "2026-11-15T21:28:05.171Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
