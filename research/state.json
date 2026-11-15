@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T07:14:23.875Z",
+  "updatedAt": "2026-11-15T07:14:27.865Z",
   "sequence": 51,
   "jobs": [
     {
@@ -2223,13 +2223,44 @@
       "topic": "Bibcode (identifier)",
       "day": "2026-11-15",
       "runId": "43689042646",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T07:14:23.875Z",
       "expiresAt": "2026-11-15T07:29:23.875Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Bibcode",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1370653199",
+        "revision": "1370653199",
+        "observedAt": "2026-11-15T07:14:25.854Z",
+        "sourceTimestamp": "2026-08-22T08:54:38Z",
+        "sha256": "8d7aacac7e50f434802d1463e965bea8c04b843429f2650ebace2cc653a4f93e",
+        "excerptSha256": "8d7aacac7e50f434802d1463e965bea8c04b843429f2650ebace2cc653a4f93e",
+        "inspectedCharacters": 7368,
+        "totalCharacters": 7368,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-53f13924-e79f-45f6-bc36-1d7f6c554686",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2851,
+        "outputTokens": 321
+      },
+      "packet": "research/packets/research-000051-14b168413b.json",
+      "packetDigest": "757643444f4cb10a190b45a451da19a8d25fa4bba2f7ffd8f08ae7e96ad11762",
+      "finishedAt": "2026-11-15T07:14:27.865Z"
     }
   ],
   "discovered": [
@@ -2237,11 +2268,6 @@
       "title": "Amiga",
       "role": "music-events",
       "discoveredFrom": "research-000008-8d45fc6c77"
-    },
-    {
-      "title": "Bibcode (identifier)",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000016-f3bd75d71f"
     },
     {
       "title": ".NET",
@@ -2595,11 +2621,6 @@
     },
     {
       "title": "Baron Munchausen",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000030-5a4bfec956"
-    },
-    {
-      "title": "Bibcode (identifier)",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000030-5a4bfec956"
     },
@@ -3292,6 +3313,46 @@
       "title": "Avogadro (software)",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000050-821df7a864"
+    },
+    {
+      "title": "Agronomy Journal",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "Astrophysics Data System",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "Digital object identifier",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "Doi (identifier)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "ISBN (identifier)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "ISSN (identifier)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "Kluwer Academic Publishers",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
+    },
+    {
+      "title": "Monthly Notices of the Royal Astronomical Society",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000051-14b168413b"
     }
   ],
   "reviewJobs": [

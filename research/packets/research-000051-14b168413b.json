@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000051-14b168413b",
+  "topic": "Bibcode (identifier)",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The bibcode is a fixed-length 19-character identifier used by astronomical data systems to uniquely reference literature. It encodes the publication year, venue, volume, section, page range, and first author's surname initial. Periods pad shorter fields, and modern usage increasingly allows non-numeric page data, rendering the code's semantic structure unreliable over time.",
+    "mechanisms": [
+      {
+        "title": "Structural encoding of bibliographic fields",
+        "explanation": "The 19-character string positions year, venue code, volume, section marker, page numbers, and author surname initial. Periods serve as padding for unused or short fields, with right-padding for publication code and left-padding for volume/page fields.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Adaptation for modern identifier formats",
+        "explanation": "Physical Review article IDs since the late 1990s are mapped by converting the issue number's first two digits to a lowercase letter placed in the section column, while the remaining four digits occupy the page field. The code no longer guarantees numeric page values due to electronic identifier shifts.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Long-term persistence of the 19-character fixed format",
+      "Exact mapping rules for non-numeric page field characters",
+      "Future deprecation timeline and replacement standards",
+      "Consistency of volume field handling across all publishers"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Bibcode",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1370653199",
+    "revision": "1370653199",
+    "observedAt": "2026-11-15T07:14:25.854Z",
+    "sourceTimestamp": "2026-08-22T08:54:38Z",
+    "sha256": "8d7aacac7e50f434802d1463e965bea8c04b843429f2650ebace2cc653a4f93e",
+    "excerptSha256": "8d7aacac7e50f434802d1463e965bea8c04b843429f2650ebace2cc653a4f93e",
+    "inspectedCharacters": 7368,
+    "totalCharacters": 7368,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-53f13924-e79f-45f6-bc36-1d7f6c554686",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2851,
+    "outputTokens": 321
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "bbd6c1f599dca7c2b00c1fdfb95e4e3cd2f788d7c54bd76450b9100bfa6ae043",
+  "artifactDigest": "757643444f4cb10a190b45a451da19a8d25fa4bba2f7ffd8f08ae7e96ad11762"
+}
