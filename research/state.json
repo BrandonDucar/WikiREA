@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T03:27:30.720Z",
-  "sequence": 48,
+  "updatedAt": "2026-11-15T04:16:37.547Z",
+  "sequence": 49,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2122,6 +2122,20 @@
       "packet": "research/packets/research-000048-1c32dc0407.json",
       "packetDigest": "16d3d76aba8adef00fee8bf64e2280987b9b92e28ccd183a4bde6d05ec80c598",
       "finishedAt": "2026-11-15T03:17:57.321Z"
+    },
+    {
+      "id": "research-000049-10bfbc3df7",
+      "role": "game-mechanic-researcher",
+      "topic": "Abstraction (computer science)",
+      "day": "2026-11-15",
+      "runId": "43676032304",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T04:16:37.547Z",
+      "expiresAt": "2026-11-15T04:31:37.547Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
