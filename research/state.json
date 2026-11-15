@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T06:22:15.176Z",
-  "sequence": 50,
+  "updatedAt": "2026-11-15T07:14:23.875Z",
+  "sequence": 51,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2216,6 +2216,20 @@
       "packet": "research/packets/research-000050-821df7a864.json",
       "packetDigest": "e42d321a71ae1230a45a8f1881f6d04a152b507fafb2e24589b381f48167ce41",
       "finishedAt": "2026-11-15T06:22:15.176Z"
+    },
+    {
+      "id": "research-000051-14b168413b",
+      "role": "hardware-interoperability-scout",
+      "topic": "Bibcode (identifier)",
+      "day": "2026-11-15",
+      "runId": "43689042646",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T07:14:23.875Z",
+      "expiresAt": "2026-11-15T07:29:23.875Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
