@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T01:25:14.858Z",
-  "sequence": 46,
+  "updatedAt": "2026-11-15T02:19:57.097Z",
+  "sequence": 47,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2028,6 +2028,20 @@
       "packet": "research/packets/research-000046-1f8c528ae6.json",
       "packetDigest": "8921480965b908be6947089d8719ca3397604113df7fe89a68fb8df3e919e097",
       "finishedAt": "2026-11-15T01:15:31.232Z"
+    },
+    {
+      "id": "research-000047-9ebcec405a",
+      "role": "hardware-interoperability-scout",
+      "topic": "Barium titanate",
+      "day": "2026-11-15",
+      "runId": "43667264688",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-15T02:19:57.097Z",
+      "expiresAt": "2026-11-15T02:34:57.097Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
