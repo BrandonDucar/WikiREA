@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T21:13:05.171Z",
+  "updatedAt": "2026-11-15T21:13:08.730Z",
   "sequence": 53,
   "jobs": [
     {
@@ -2325,13 +2325,44 @@
       "topic": "Data provenance",
       "day": "2026-11-15",
       "runId": "43762435116",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T21:13:05.171Z",
       "expiresAt": "2026-11-15T21:28:05.171Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Data lineage",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1378671492",
+        "revision": "1378671492",
+        "observedAt": "2026-11-15T21:13:07.104Z",
+        "sourceTimestamp": "2026-10-05T16:12:50Z",
+        "sha256": "50e62e165aab58131c65ece59b8810fa083bd42bc7d76150301a660e7877e0ad",
+        "excerptSha256": "11a519f439820d84ac2b3d7121285329a79c0af4e506491d5554970f59099dd2",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 44392,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-8dd6e496-51cf-4c05-b277-f840baed6ede",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3528,
+        "outputTokens": 295
+      },
+      "packet": "research/packets/research-000053-0d543f9d61.json",
+      "packetDigest": "f25585edc227f39940e7d1437f53e6709b73f27c4a591e1cc6ae23d8ddac128e",
+      "finishedAt": "2026-11-15T21:13:08.730Z"
     }
   ],
   "discovered": [
@@ -3459,6 +3490,46 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
+    },
+    {
+      "title": "Alteryx",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "Analytics",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "Apache Hadoop",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "Archetypes",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "Audio file format",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "Audit trail",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "Beth Plale",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
+    },
+    {
+      "title": "Big Data",
+      "role": "source-curator",
+      "discoveredFrom": "research-000053-0d543f9d61"
     }
   ],
   "reviewJobs": [

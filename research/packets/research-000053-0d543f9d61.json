@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000053-0d543f9d61",
+  "topic": "Data provenance",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Data provenance maintains a historical record of data origins and transformations, enabling users to trace lineage through systems over time. It supports debugging, error detection, auditing, and compliance by documenting inputs, processes, and movements across platforms. While often visualized to simplify complex flows, its core function is tracking how data is generated, transformed, and used, particularly in big data environments where scale and unstructured formats present significant manageability challenges.",
+    "mechanisms": [
+      {
+        "title": "Lineage tracking through transformation logs",
+        "explanation": "Records data's origins, changes, and movements across systems, allowing users to trace issues back to root causes in analytics workflows.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Visualization and masking for analysis",
+        "explanation": "Represents data flow visually using dots and lines to show transformations, with masking features that simplify views by hiding peripheral data points for both technical and business users.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact methods for gathering and exposing metadata to lineage interfaces",
+      "How data lineage is categorized across software packages, programming languages, and big data systems",
+      "Specific implementation details of provenance in distributed platforms like MapReduce or Dryad",
+      "The full scope of metadata normalization required to unify representations across disparate systems"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Data lineage",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1378671492",
+    "revision": "1378671492",
+    "observedAt": "2026-11-15T21:13:07.104Z",
+    "sourceTimestamp": "2026-10-05T16:12:50Z",
+    "sha256": "50e62e165aab58131c65ece59b8810fa083bd42bc7d76150301a660e7877e0ad",
+    "excerptSha256": "11a519f439820d84ac2b3d7121285329a79c0af4e506491d5554970f59099dd2",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 44392,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8dd6e496-51cf-4c05-b277-f840baed6ede",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3528,
+    "outputTokens": 295
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "8b1f33ac3e7a010428061684f9f72ca23b5c5e2ec660827dd33433796672ae6b",
+  "artifactDigest": "f25585edc227f39940e7d1437f53e6709b73f27c4a591e1cc6ae23d8ddac128e"
+}
