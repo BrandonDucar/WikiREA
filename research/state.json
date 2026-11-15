@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-15T04:16:37.547Z",
+  "updatedAt": "2026-11-15T04:16:40.942Z",
   "sequence": 49,
   "jobs": [
     {
@@ -2129,21 +2129,47 @@
       "topic": "Abstraction (computer science)",
       "day": "2026-11-15",
       "runId": "43676032304",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-15T04:16:37.547Z",
       "expiresAt": "2026-11-15T04:31:37.547Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Abstraction (computer science)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384070426",
+        "revision": "1384070426",
+        "observedAt": "2026-11-15T04:16:38.934Z",
+        "sourceTimestamp": "2026-11-06T11:37:26Z",
+        "sha256": "3544a1b2e81c3eed31aee3a85ed7e147257c731af33e565469998eacd391475d",
+        "excerptSha256": "ed620d6e70096251b71303199f2ed39647f45618a2b371d0ef53e8db8ab6ca00",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 31300,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-78e01459-0b12-45bf-96f1-c4e88f511c9c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3557,
+        "outputTokens": 299
+      },
+      "packet": "research/packets/research-000049-10bfbc3df7.json",
+      "packetDigest": "63317f312f887f461b858dfb05a10b063bd7344538c1c0c1d0a9c28235da735e",
+      "finishedAt": "2026-11-15T04:16:40.942Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Abstraction (computer science)",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000004-a6f704aa74"
-    },
     {
       "title": "Comparison of software for molecular mechanics modeling",
       "role": "simulation-researcher",
@@ -3143,6 +3169,46 @@
       "title": "Fatboy Slim",
       "role": "music-events",
       "discoveredFrom": "research-000048-1c32dc0407"
+    },
+    {
+      "title": "Abstract data type",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "Abstract interpretation",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "Abstraction inversion",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "Abstraction layer",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "Abstraction principle (computer programming)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "Adjudication",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "Agile software development",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
+    },
+    {
+      "title": "Algorithm",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000049-10bfbc3df7"
     }
   ],
   "reviewJobs": [

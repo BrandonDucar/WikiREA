@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000049-10bfbc3df7",
+  "topic": "Abstraction (computer science)",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Abstraction in computer science provides access to functionality while concealing implementation details that would otherwise complicate usage. It allows programmers to focus on contextually relevant information by filtering out irrelevant specifics. The concept applies across language levels, from low-level machine operations to high-level design patterns, enabling manageable system creation through layered separation of concerns.",
+    "mechanisms": [
+      {
+        "title": "Interface-Implementation Separation",
+        "explanation": "Abstract data types enforce a clear separation between visible properties and hidden concrete implementation. Client code interacts through a defined interface while the underlying representation—such as hash tables, binary trees, or lists—can change without affecting usage, preserving abstract behavior regardless of implementation details.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Control Abstraction Layering",
+        "explanation": "Programming languages provide higher-level control structures that obscure low-level hardware operations. Arithmetic expressions are evaluated through compiler or interpreter decomposition into binary operations, allowing programmers to write intuitive statements without manually managing register manipulations, binary conversions, or memory assignment steps for each calculation.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Complete concealment capability of built-on abstractions",
+      "Exact compiler decomposition pathways for complex expressions",
+      "Long-term interface stability across implementation changes",
+      "Interaction dynamics between multiple concurrent abstraction layers"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Abstraction (computer science)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384070426",
+    "revision": "1384070426",
+    "observedAt": "2026-11-15T04:16:38.934Z",
+    "sourceTimestamp": "2026-11-06T11:37:26Z",
+    "sha256": "3544a1b2e81c3eed31aee3a85ed7e147257c731af33e565469998eacd391475d",
+    "excerptSha256": "ed620d6e70096251b71303199f2ed39647f45618a2b371d0ef53e8db8ab6ca00",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 31300,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-78e01459-0b12-45bf-96f1-c4e88f511c9c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3557,
+    "outputTokens": 299
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3a9641229b5f6cf37777192860f1d2c0b6e9fcec9fa29759e3fc06f817ebee6a",
+  "artifactDigest": "63317f312f887f461b858dfb05a10b063bd7344538c1c0c1d0a9c28235da735e"
+}
