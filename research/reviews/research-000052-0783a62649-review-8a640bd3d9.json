@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000052-0783a62649-review-8a640bd3d9",
+  "parentJobId": "research-000052-0783a62649",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "6128a1412c9969ee90d95b5c28a94962cdff671092b468a165f030347abf8877",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Amiga",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385411539",
+    "revision": "1385411539",
+    "observedAt": "2026-11-15T08:18:19.431Z",
+    "sourceTimestamp": "2026-11-13T04:45:19Z",
+    "sha256": "1c4964cd4a9e6693142b1cb04e65564e34c329638236612235bfac2c99d05dd4",
+    "excerptSha256": "197bf02dbc3b20868c9e0b771f74176290a276cb5dc55fed71bd603470c8f2aa",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 114617,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Amiga family, custom hardware, AmigaOS, market trajectory, and Commodore bankruptcy",
+      "Mechanisms correctly identify custom audio (four channels sample-based) and graphics (sprites, blitter) hardware as distinguishing features per source",
+      "Unknowns appropriately list internal OS scheduling details, early production/marketing failure reasons, Enhanced Chip Set specs, and third-party porting processes as not fully detailed in source",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "Source IDs referenced in mechanisms align with provided source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-b1da8739-a70e-400e-a876-a558dd58f18a",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4693,
+    "outputTokens": 128
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

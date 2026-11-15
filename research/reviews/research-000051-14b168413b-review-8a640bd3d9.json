@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000051-14b168413b-review-8a640bd3d9",
+  "parentJobId": "research-000051-14b168413b",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "757643444f4cb10a190b45a451da19a8d25fa4bba2f7ffd8f08ae7e96ad11762",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Bibcode",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1370653199",
+    "revision": "1370653199",
+    "observedAt": "2026-11-15T07:14:25.854Z",
+    "sourceTimestamp": "2026-08-22T08:54:38Z",
+    "sha256": "8d7aacac7e50f434802d1463e965bea8c04b843429f2650ebace2cc653a4f93e",
+    "excerptSha256": "8d7aacac7e50f434802d1463e965bea8c04b843429f2650ebace2cc653a4f93e",
+    "inspectedCharacters": 7368,
+    "totalCharacters": 7368,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on bibcode structure and evolution",
+      "Mechanisms correctly describe fixed-field encoding and Physical Review ID mapping per source",
+      "Unknowns appropriately identify unresolved aspects like deprecation timeline and non-numeric field handling",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'increasingly' and 'likely' preserved from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-58d80e07-024a-4857-ad25-536473b0d7d8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3121,
+    "outputTokens": 89
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
