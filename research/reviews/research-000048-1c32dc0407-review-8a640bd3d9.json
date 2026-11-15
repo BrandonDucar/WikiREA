@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000048-1c32dc0407-review-8a640bd3d9",
+  "parentJobId": "research-000048-1c32dc0407",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "16d3d76aba8adef00fee8bf64e2280987b9b92e28ccd183a4bde6d05ec80c598",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Akai S900",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381285733",
+    "revision": "1381285733",
+    "observedAt": "2026-11-15T03:17:55.079Z",
+    "sourceTimestamp": "2026-10-21T09:13:51Z",
+    "sha256": "6696e4b61e1c63f22a539a81bd3ce0baea9c496ee2cc4c0ca3c9fe9c20f879d9",
+    "excerptSha256": "6696e4b61e1c63f22a539a81bd3ce0baea9c496ee2cc4c0ca3c9fe9c20f879d9",
+    "inspectedCharacters": 7430,
+    "totalCharacters": 7430,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Mechanism 'Sample rate conversion' explanation contains unsupported claims: 'determined by the 12-bit resolution and internal clock' and 'Lower rates reduce bandwidth and aliasing, shaping the characteristic lo-fi texture' are not in source text",
+      "Mechanism 'Sample looping direction control' explanation adds 'rhythmic or tonal reversal effects within a single sample playback' which is not supported by source",
+      "Source IDs reference 'S1' but no source mapping provided in packet",
+      "Draft summary states '8-voice polyphony' but source infobox says '8 voices' - acceptable, but 'professional recording studios' phrasing not directly in source",
+      "Unknowns list includes items not explicitly identified as unknown in source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-b2441bc7-f2e7-48ad-b1d0-56e5aa537ec8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3107,
+    "outputTokens": 164
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
