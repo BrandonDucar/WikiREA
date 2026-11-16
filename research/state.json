@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T07:24:54.389Z",
+  "updatedAt": "2026-11-16T07:25:00.189Z",
   "sequence": 61,
   "jobs": [
     {
@@ -2697,13 +2697,44 @@
       "topic": "Time series database",
       "day": "2026-11-16",
       "runId": "43823671943",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T07:24:54.389Z",
       "expiresAt": "2026-11-16T07:39:54.389Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Time series database",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382815811",
+        "revision": "1382815811",
+        "observedAt": "2026-11-16T07:24:57.007Z",
+        "sourceTimestamp": "2026-10-30T13:06:24Z",
+        "sha256": "ae3ed76250db23d5ef1100d06f75eb948bea6725e427b50d9be5bfbe78d4e260",
+        "excerptSha256": "63f3a1ab3e8d34d07bfc66d68387742e881d20a546ead15b24c84b8ca371bcb0",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 17829,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-7d72943f-4499-4e83-ad4d-3200f824eaf0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4583,
+        "outputTokens": 317
+      },
+      "packet": "research/packets/research-000061-0942144a15.json",
+      "packetDigest": "e4b18c72936253bfd47aa51f588dfc28683e3930c367943349c290c37919f6cd",
+      "finishedAt": "2026-11-16T07:25:00.189Z"
     }
   ],
   "discovered": [
@@ -4151,6 +4182,46 @@
       "title": "Bandwidth (computing)",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000060-2c92eab7e0"
+    },
+    {
+      "title": "Affero General Public License",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
+    },
+    {
+      "title": "Anomaly detection",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
+    },
+    {
+      "title": "Apache IoTDB",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
+    },
+    {
+      "title": "Apache Kudu",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
+    },
+    {
+      "title": "Apache License 2.0",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
+    },
+    {
+      "title": "Apache Pinot",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
+    },
+    {
+      "title": "C++",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
+    },
+    {
+      "title": "C (programming language)",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000061-0942144a15"
     }
   ],
   "reviewJobs": [
