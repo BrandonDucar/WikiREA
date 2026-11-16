@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000062-4539c21763-review-8a640bd3d9",
+  "parentJobId": "research-000062-4539c21763",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "1c008080aa2f0771fbf2abeaf7e99256b5a9d37754f29fc7813af86d9f9eb0aa",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Open Sound Control",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1359732491",
+    "revision": "1359732491",
+    "observedAt": "2026-11-16T08:33:56.690Z",
+    "sourceTimestamp": "2026-06-16T22:04:46Z",
+    "sha256": "f0e311fbe2448ae2214dc6adc9dd159c503881af30b3129f49f40c986cbcf4e4",
+    "excerptSha256": "f0e311fbe2448ae2214dc6adc9dd159c503881af30b3129f49f40c986cbcf4e4",
+    "inspectedCharacters": 10038,
+    "totalCharacters": 10038,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on OSC purpose, transport, structure, advantages, and disadvantages",
+      "Mechanisms correctly describe address patterns with type tags and bundles with timestamps per source",
+      "Unknowns properly capture lack of standardized messages, namespaces, discovery, and implementation-defined methods from source",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims trace to provided source material with appropriate qualifiers"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-a543dcd4-a3e3-43a5-9cfa-eb3dde57a21b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3166,
+    "outputTokens": 94
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
