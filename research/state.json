@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T16:17:06.517Z",
+  "updatedAt": "2026-11-16T16:17:11.642Z",
   "sequence": 69,
   "jobs": [
     {
@@ -3073,13 +3073,44 @@
       "topic": "Monte Carlo method",
       "day": "2026-11-16",
       "runId": "43905755943",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T16:17:06.517Z",
       "expiresAt": "2026-11-16T16:32:06.517Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Monte Carlo method",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383468536",
+        "revision": "1383468536",
+        "observedAt": "2026-11-16T16:17:08.877Z",
+        "sourceTimestamp": "2026-11-02T21:15:36Z",
+        "sha256": "13f9807742a186a0de235da30bafea16123b4b0430c1d10f6e80b24df3dfe774",
+        "excerptSha256": "be321edfbdb1b3f4c2c1368720e4a601eeaa9e492e9e8d79f57e366b5ec6782a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 96533,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-a7e06975-8f27-45b4-887c-1f2caa64c2ba",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4127,
+        "outputTokens": 308
+      },
+      "packet": "research/packets/research-000069-7f61374784.json",
+      "packetDigest": "dac54100d2c94dcf2855ab18dbbbf59da5eedece8cd06a179a8f2c7f335e47be",
+      "finishedAt": "2026-11-16T16:17:11.642Z"
     }
   ],
   "discovered": [
@@ -4842,6 +4873,26 @@
       "title": "AoS and SoA",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "Aerodynamics",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000069-7f61374784"
+    },
+    {
+      "title": "Akaike information criterion",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000069-7f61374784"
+    },
+    {
+      "title": "Alan Turing",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000069-7f61374784"
+    },
+    {
+      "title": "Albert Tarantola",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000069-7f61374784"
     }
   ],
   "reviewJobs": [
