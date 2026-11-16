@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000057-1df2912289-review-8a640bd3d9",
+  "parentJobId": "research-000057-1df2912289",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "14aa89f8fc6e40318b4631fb9f17407c0cedfe11a4d19fad4b95f36c53a6569c",
+  "sourcePin": {
+    "id": "S1",
+    "title": "WebAssembly",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1374012305",
+    "revision": "1374012305",
+    "observedAt": "2026-11-16T02:21:56.837Z",
+    "sourceTimestamp": "2026-09-09T07:48:02Z",
+    "sha256": "797ef66d03ff0adb66d5eff97f415ca3860c3cc42d931237498227907a5e9994",
+    "excerptSha256": "b2c0d53a0d31665d8ca35fefe5228f3dfac10813678d3452920a49c37b0f3087",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 79851,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about WebAssembly as portable binary/text format and open standard",
+      "Mechanisms correctly capture binary/text format mapping and structured stack machine semantics from source",
+      "Unknowns appropriately identify gaps not covered in source (runtime implementation details, multithreading coordination, GC mechanisms beyond 3.0, reference type internals)",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'designed as' and 'initially focused on' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-00456f55-66c6-4372-8196-e649f60f41e2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4814,
+    "outputTokens": 111
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
