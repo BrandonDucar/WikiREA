@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T14:33:05.193Z",
-  "sequence": 67,
+  "updatedAt": "2026-11-16T15:23:51.785Z",
+  "sequence": 68,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3017,6 +3017,20 @@
       "packet": "research/packets/research-000067-a5933051f2.json",
       "packetDigest": "1c23771fdb1e5d2d03ae48875b6dd21a7b9b45eb3e90290b828365893b71da88",
       "finishedAt": "2026-11-16T14:33:05.193Z"
+    },
+    {
+      "id": "research-000068-e1044edf96",
+      "role": "game-mechanic-researcher",
+      "topic": "Entity component system",
+      "day": "2026-11-16",
+      "runId": "43895817326",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T15:23:51.785Z",
+      "expiresAt": "2026-11-16T15:38:51.785Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
