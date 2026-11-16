@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T20:14:55.290Z",
-  "sequence": 72,
+  "updatedAt": "2026-11-16T21:14:13.591Z",
+  "sequence": 73,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3254,6 +3254,20 @@
       "packet": "research/packets/research-000072-2f715e698c.json",
       "packetDigest": "e24e8b35d94ea0ddb5d97322cbded71d2b13a17d7a8b3910a2d0343bdd633489",
       "finishedAt": "2026-11-16T20:14:55.290Z"
+    },
+    {
+      "id": "research-000073-067e4b69de",
+      "role": "adversarial-reviewer",
+      "topic": "Fuzzing",
+      "day": "2026-11-16",
+      "runId": "43957967531",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T21:14:13.591Z",
+      "expiresAt": "2026-11-16T21:29:13.591Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
