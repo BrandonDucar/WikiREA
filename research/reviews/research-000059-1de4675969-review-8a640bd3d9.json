@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000059-1de4675969-review-8a640bd3d9",
+  "parentJobId": "research-000059-1de4675969",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "316409f974807dcf7b7c30a530adf6ca8128164ad68f123806248ec4b44df748",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Agent-based model",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384575998",
+    "revision": "1384575998",
+    "observedAt": "2026-11-16T04:18:13.074Z",
+    "sourceTimestamp": "2026-11-08T23:27:39Z",
+    "sha256": "c5e98e07067cae130f4060a4a0043fbb9216149076e18f7caf6da46ff4218ed9",
+    "excerptSha256": "e8050f75b5c48d63859590a81e5556f3de5488841eb5bfac8d7e093cc53fd733",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 92900,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of ABM as computational model simulating autonomous agents with emergent system behavior",
+      "Mechanisms correctly capture emergence from local interactions and boundedly rational rule-based decision making with learning/adaptation as described in source",
+      "Unknowns appropriately identify gaps in source regarding precise heuristic-to-outcome mapping, environment-agent topology details, algorithmic learning specifics, and cross-domain scaling characterization",
+      "No unsupported mechanisms or invented execution details introduced beyond source content",
+      "Qualifiers like 'typically' and 'may' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-26eee027-283d-44a3-9255-83d93b6a8737",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4522,
+    "outputTokens": 120
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

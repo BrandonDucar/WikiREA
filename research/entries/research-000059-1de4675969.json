@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000059-1de4675969",
+  "title": "Agent-based model",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-16T13:46:14.576Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Agent-based modeling (ABM) is a computational simulation approach that represents a system as numerous autonomous agents interacting within a shared environment. Each agent follows simple decision-making rules or heuristics, and system-level patterns emerge from their simultaneous interactions. ABMs are used across biology, ecology, and social science to explore how micro-level behaviors generate macro-level outcomes. The approach originated in the late 1940s with theoretical machines, expanded through 1970s segregation and colony models, and saw major growth in the 1990s with large-scale simulations like Sugarscape. ABMs are typically implemented as computer simulations using custom software or toolkits to test how changes in individual behavior affect overall system dynamics.",
+  "mechanisms": [
+    {
+      "title": "Emergent pattern formation",
+      "explanation": "System-level properties arise from the simultaneous interactions of many simple agents following local rules, without centralized control. Higher-level patterns such as aggregation, segregation, or cultural diffusion emerge from these bottom-up interactions.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Rule-based agent decision making",
+      "explanation": "Individual agents are characterized as boundedly rational, acting according to perceived self-interest using heuristics or simple decision rules. Agents may also exhibit learning, adaptation, and reproduction within the simulation environment.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Precise mapping between specific agent heuristics and observed macro-scale outcomes",
+    "Details of environment-agent interaction topology beyond basic interaction networks",
+    "Algorithmic implementation specifics of learning and adaptation processes within agents",
+    "Complete characterization of how simple rules scale to produce complex system behaviors in all domains"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Agent-based model",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384575998",
+      "revision": "1384575998",
+      "observedAt": "2026-11-16T04:18:13.074Z",
+      "sourceTimestamp": "2026-11-08T23:27:39Z",
+      "sha256": "c5e98e07067cae130f4060a4a0043fbb9216149076e18f7caf6da46ff4218ed9",
+      "excerptSha256": "e8050f75b5c48d63859590a81e5556f3de5488841eb5bfac8d7e093cc53fd733",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 92900,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of ABM as computational model simulating autonomous agents with emergent system behavior",
+      "Mechanisms correctly capture emergence from local interactions and boundedly rational rule-based decision making with learning/adaptation as described in source",
+      "Unknowns appropriately identify gaps in source regarding precise heuristic-to-outcome mapping, environment-agent topology details, algorithmic learning specifics, and cross-domain scaling characterization",
+      "No unsupported mechanisms or invented execution details introduced beyond source content",
+      "Qualifiers like 'typically' and 'may' preserved from source language"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-2a23cd01-9fd6-4486-94da-deb9f69b18b6",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4193,
+      "outputTokens": 372
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-26eee027-283d-44a3-9255-83d93b6a8737",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4522,
+      "outputTokens": 120
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "4a06d02035295437dab5d86ea09b3a1472aa7a35e7ede3555088e84766413d0e",
+    "artifactDigest": "316409f974807dcf7b7c30a530adf6ca8128164ad68f123806248ec4b44df748",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000059-1de4675969.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
