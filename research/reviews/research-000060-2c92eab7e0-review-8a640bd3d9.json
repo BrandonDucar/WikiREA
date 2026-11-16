@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000060-2c92eab7e0-review-8a640bd3d9",
+  "parentJobId": "research-000060-2c92eab7e0",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "a74200279bc9bf4dc0d63e14999a6629e7c2aa0c711072df8d4007fc66bb5c09",
+  "sourcePin": {
+    "id": "S1",
+    "title": "MQTT",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381247084",
+    "revision": "1381247084",
+    "observedAt": "2026-11-16T06:37:19.843Z",
+    "sourceTimestamp": "2026-10-21T00:07:46Z",
+    "sha256": "7c4824948d30dbccec74b3fb3fc9b16f941e6ff37038c1fedf9d489ad19be74b",
+    "excerptSha256": "4b6949d5a26f86acb960367a916f2b510d435fd8bc8be3a1403ca9427a7d1a88",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 24204,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on protocol purpose, architecture, ports, security model, and MQTT-SN extension",
+      "Mechanism descriptions correctly capture broker-mediated routing, QoS levels, retained messages, and last-will functionality as described in source",
+      "Unknowns identify genuine gaps not addressed in source (persistent session crash recovery, native auth beyond TLS/credentials, minimum broker footprint, multi-broker data exchange details)",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' for TCP/IP and 'can be provided by using TLS' preserved appropriately"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-ecee08a4-577f-4b87-92ce-ed43c8d246b5",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4404,
+    "outputTokens": 132
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
