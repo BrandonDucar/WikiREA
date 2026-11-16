@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T12:28:10.109Z",
-  "sequence": 65,
+  "updatedAt": "2026-11-16T13:34:52.302Z",
+  "sequence": 66,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2923,6 +2923,20 @@
       "packet": "research/packets/research-000065-e0e23685a6.json",
       "packetDigest": "d487727fcbc28a0521e6b07fee0cc23ab5d297729bc79173b7cbc1e764ad3722",
       "finishedAt": "2026-11-16T12:28:10.109Z"
+    },
+    {
+      "id": "research-000066-02c0e9d820",
+      "role": "application-tracer",
+      "topic": "Firefox",
+      "day": "2026-11-16",
+      "runId": "43877107787",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T13:34:52.302Z",
+      "expiresAt": "2026-11-16T13:49:52.302Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
