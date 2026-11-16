@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T22:13:57.614Z",
+  "updatedAt": "2026-11-16T22:14:01.122Z",
   "sequence": 74,
   "jobs": [
     {
@@ -3310,13 +3310,44 @@
       "topic": "Backpressure routing",
       "day": "2026-11-16",
       "runId": "43968001368",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T22:13:57.614Z",
       "expiresAt": "2026-11-16T22:28:57.614Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Backpressure routing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1333463650",
+        "revision": "1333463650",
+        "observedAt": "2026-11-16T22:13:59.377Z",
+        "sourceTimestamp": "2026-01-17T23:11:51Z",
+        "sha256": "33ecdc8552b0dd7e2fb4770123f61da862b42d5ef3b15a076bf583f4d8d017e0",
+        "excerptSha256": "1d5f198a8adf33bd519526c11281c859ecdb4e680d747313059615be11ebc306",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 44289,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-22391ec0-e2fe-45aa-9997-5b3cd57cbe06",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3846,
+        "outputTokens": 377
+      },
+      "packet": "research/packets/research-000074-403d103bb4.json",
+      "packetDigest": "3cde46261993d4a4c995f0fc841030d3a11851ba0aced2ff76f669755b0ecca1",
+      "finishedAt": "2026-11-16T22:14:01.122Z"
     }
   ],
   "discovered": [
@@ -5254,6 +5285,41 @@
       "title": "Advanced persistent threat",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000073-067e4b69de"
+    },
+    {
+      "title": "Ad hoc On-Demand Distance Vector Routing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000074-403d103bb4"
+    },
+    {
+      "title": "Back pressure",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000074-403d103bb4"
+    },
+    {
+      "title": "Diversity backpressure routing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000074-403d103bb4"
+    },
+    {
+      "title": "Drift plus penalty",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000074-403d103bb4"
+    },
+    {
+      "title": "ExOR (wireless network protocol)",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000074-403d103bb4"
+    },
+    {
+      "title": "FIFO (computing and electronics)",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000074-403d103bb4"
+    },
+    {
+      "title": "Geographic routing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000074-403d103bb4"
     }
   ],
   "reviewJobs": [

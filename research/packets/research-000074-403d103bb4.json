@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000074-403d103bb4",
+  "topic": "Backpressure routing",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Backpressure routing is a max-weight algorithm that directs traffic through queueing networks to maximize throughput. It operates in slotted time, computing a differential backlog for each directed link by subtracting the neighbor's queue from the node's own queue for every commodity. The commodity with the highest positive differential is selected for transmission, breaking ties arbitrarily. Transmission rates are chosen from a set determined by the current network topology state. The algorithm aims to minimize the sum of squares of queue backlogs across slots, achieving maximum network throughput without requiring knowledge of arrival rates or channel probabilities, though it may introduce large delays and faces implementation challenges under interference.",
+    "mechanisms": [
+      {
+        "title": "Differential Backlog Computation",
+        "explanation": "Each node calculates the difference between its own queue backlog and a neighbor's queue backlog for every commodity present in the network. The commodity yielding the largest positive difference is designated as the optimal commodity for transmission over that directed link. Ties are broken arbitrarily.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Topology-Dependent Rate Selection",
+        "explanation": "The controller observes the current network topology state and selects a transmission rate matrix from the available options supported under that state. These rates define the maximum data transfer capacity for each link during the slot and must be chosen within the constraints of the observed topology.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact tie-breaking procedure when multiple commodities yield identical differential backlog values",
+      "Handling of probabilistic channel errors and transmission failures in the basic algorithm",
+      "Feasibility of exact implementation in networks with significant interference",
+      "Long-term delay behavior and trade-offs between throughput optimality and packet latency"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Backpressure routing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1333463650",
+    "revision": "1333463650",
+    "observedAt": "2026-11-16T22:13:59.377Z",
+    "sourceTimestamp": "2026-01-17T23:11:51Z",
+    "sha256": "33ecdc8552b0dd7e2fb4770123f61da862b42d5ef3b15a076bf583f4d8d017e0",
+    "excerptSha256": "1d5f198a8adf33bd519526c11281c859ecdb4e680d747313059615be11ebc306",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 44289,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-22391ec0-e2fe-45aa-9997-5b3cd57cbe06",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3846,
+    "outputTokens": 377
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "67c78e93db691eac94000207aab429eb4e483af6b7bb432ff5a0dd6cf0c07b74",
+  "artifactDigest": "3cde46261993d4a4c995f0fc841030d3a11851ba0aced2ff76f669755b0ecca1"
+}
