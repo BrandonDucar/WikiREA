@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T03:33:05.485Z",
-  "sequence": 58,
+  "updatedAt": "2026-11-16T04:18:06.682Z",
+  "sequence": 59,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2596,6 +2596,20 @@
       "packet": "research/packets/research-000058-eb6a376636.json",
       "packetDigest": "fad49f9579734933e96b6c21dfd4ae99c0ba842ad87820297e36c20620b6e335",
       "finishedAt": "2026-11-16T03:19:23.305Z"
+    },
+    {
+      "id": "research-000059-1de4675969",
+      "role": "simulation-researcher",
+      "topic": "Agent-based model",
+      "day": "2026-11-16",
+      "runId": "43803256822",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T04:18:06.682Z",
+      "expiresAt": "2026-11-16T04:33:06.682Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
