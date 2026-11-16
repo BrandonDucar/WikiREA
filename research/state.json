@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T12:28:01.155Z",
+  "updatedAt": "2026-11-16T12:28:10.109Z",
   "sequence": 65,
   "jobs": [
     {
@@ -2885,13 +2885,44 @@
       "topic": "Reproducible builds",
       "day": "2026-11-16",
       "runId": "43866811419",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T12:28:01.155Z",
       "expiresAt": "2026-11-16T12:43:01.155Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Reproducible builds",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384050978",
+        "revision": "1384050978",
+        "observedAt": "2026-11-16T12:28:06.996Z",
+        "sourceTimestamp": "2026-11-06T08:34:08Z",
+        "sha256": "ad73bb88513bb65050122bdd3ed574ec4ef5b4be5700cede698cb1dfa0acfee7",
+        "excerptSha256": "ad73bb88513bb65050122bdd3ed574ec4ef5b4be5700cede698cb1dfa0acfee7",
+        "inspectedCharacters": 11970,
+        "totalCharacters": 11970,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c275afa0-b5a3-4426-8958-4f99b28102ed",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3758,
+        "outputTokens": 368
+      },
+      "packet": "research/packets/research-000065-e0e23685a6.json",
+      "packetDigest": "d487727fcbc28a0521e6b07fee0cc23ab5d297729bc79173b7cbc1e764ad3722",
+      "finishedAt": "2026-11-16T12:28:10.109Z"
     }
   ],
   "discovered": [
@@ -4499,6 +4530,46 @@
       "title": "Finite-state machine",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000064-c6c5b9eab5"
+    },
+    {
+      "title": "Address space layout randomization",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "Arch Linux",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "Bazel (software)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "Binary code",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "Bitcoin",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "Bootstrappable builds",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "Build system",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "Chain of trust",
+      "role": "source-curator",
+      "discoveredFrom": "research-000065-e0e23685a6"
     }
   ],
   "reviewJobs": [
