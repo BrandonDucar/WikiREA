@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000063-1d20ea4b59-review-8a640bd3d9",
+  "parentJobId": "research-000063-1d20ea4b59",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "54d2a6aadc154da6494745661a9e914e35ca18252807f4808c26f0a0a1cd31cf",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Property testing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384655305",
+    "revision": "1384655305",
+    "observedAt": "2026-11-16T09:23:03.850Z",
+    "sourceTimestamp": "2026-11-09T10:43:48Z",
+    "sha256": "49777b7b894fad5f833f0323f0878329fa776319af892becf4c86876f839c40f",
+    "excerptSha256": "6fd8d44994d398707c91c1eb7f28a19b04e070ccb32bde38fcdee27a924ef224",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20039,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of property testing, query complexity, and representation dependence",
+      "Mechanisms correctly capture local oracle queries and epsilon dependence with tower-function bounds",
+      "Unknowns properly identify unresolved questions about sublinear complexity, inherent bounds, exact complexities, and representation effects",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often', 'typically', 'partly linked' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-afb76070-6839-420b-bb1b-4e42632bf61a",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4449,
+    "outputTokens": 97
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
