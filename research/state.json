@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T13:46:14.577Z",
-  "sequence": 66,
+  "updatedAt": "2026-11-16T14:32:59.344Z",
+  "sequence": 67,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2972,6 +2972,20 @@
       "packet": "research/packets/research-000066-02c0e9d820.json",
       "packetDigest": "ff6a67e72f89a5f0daa9e9ae97f4122a7c5916d1ab36583124697709dab1dee2",
       "finishedAt": "2026-11-16T13:34:57.506Z"
+    },
+    {
+      "id": "research-000067-a5933051f2",
+      "role": "runtime-researcher",
+      "topic": "Virtual machine",
+      "day": "2026-11-16",
+      "runId": "43886869668",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T14:32:59.344Z",
+      "expiresAt": "2026-11-16T14:47:59.344Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
