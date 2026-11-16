@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000054-be07f6d7e2-review-8a640bd3d9",
+  "parentJobId": "research-000054-be07f6d7e2",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "2aa7d286253f3caebd491af233c9104c1660187576132c199b71fe4871b31c47",
+  "sourcePin": {
+    "id": "S1",
+    "title": "LibreOffice",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385675142",
+    "revision": "1385675142",
+    "observedAt": "2026-11-15T22:13:40.662Z",
+    "sourceTimestamp": "2026-11-14T17:17:58Z",
+    "sha256": "03252c6523ee5a81d0696538201e360270125164325f4fd8fb73b47f400089c7",
+    "excerptSha256": "1395729690c20b40f6c74c9f3024837224949ee7bd3c2d29526278b4153cbf3c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 147994,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on origin, components, formats, platforms, and development model",
+      "Mechanisms correctly describe modular suite architecture and commercial ecosystem model with proper source attribution",
+      "Unknowns appropriately identify technical details not covered in the source text",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "Qualifiers like 'largely driven' and 'majority of commits' preserve source nuance"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1dfdf466-0aaa-4f6c-92bf-9d2b6f50b3c8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5066,
+    "outputTokens": 98
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
