@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T04:18:06.682Z",
+  "updatedAt": "2026-11-16T04:18:15.817Z",
   "sequence": 59,
   "jobs": [
     {
@@ -2603,13 +2603,44 @@
       "topic": "Agent-based model",
       "day": "2026-11-16",
       "runId": "43803256822",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T04:18:06.682Z",
       "expiresAt": "2026-11-16T04:33:06.682Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Agent-based model",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384575998",
+        "revision": "1384575998",
+        "observedAt": "2026-11-16T04:18:13.074Z",
+        "sourceTimestamp": "2026-11-08T23:27:39Z",
+        "sha256": "c5e98e07067cae130f4060a4a0043fbb9216149076e18f7caf6da46ff4218ed9",
+        "excerptSha256": "e8050f75b5c48d63859590a81e5556f3de5488841eb5bfac8d7e093cc53fd733",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 92900,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2a23cd01-9fd6-4486-94da-deb9f69b18b6",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4193,
+        "outputTokens": 372
+      },
+      "packet": "research/packets/research-000059-1de4675969.json",
+      "packetDigest": "316409f974807dcf7b7c30a530adf6ca8128164ad68f123806248ec4b44df748",
+      "finishedAt": "2026-11-16T04:18:15.817Z"
     }
   ],
   "discovered": [
@@ -3977,6 +4008,46 @@
       "title": "64-bit computing",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000058-eb6a376636"
+    },
+    {
+      "title": "2008 financial crisis",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
+    },
+    {
+      "title": "Active matter",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
+    },
+    {
+      "title": "Actor model",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
+    },
+    {
+      "title": "Agent-based computational economics",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
+    },
+    {
+      "title": "Agent-based model in biology",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
+    },
+    {
+      "title": "Agent-based social simulation",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
+    },
+    {
+      "title": "Agent-oriented programming",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
+    },
+    {
+      "title": "Algorithm",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000059-1de4675969"
     }
   ],
   "reviewJobs": [
