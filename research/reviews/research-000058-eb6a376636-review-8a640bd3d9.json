@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000058-eb6a376636-review-8a640bd3d9",
+  "parentJobId": "research-000058-eb6a376636",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "fad49f9579734933e96b6c21dfd4ae99c0ba842ad87820297e36c20620b6e335",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Godot (game engine)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384829639",
+    "revision": "1384829639",
+    "observedAt": "2026-11-16T03:19:20.178Z",
+    "sourceTimestamp": "2026-11-10T06:19:42Z",
+    "sha256": "36ba647d97fcee0798fb7dd6316df70e32b1b92c30fe257f29bb1c0091e0d0de",
+    "excerptSha256": "e99ca36cc403e219223f3ba57d8c9635e45dc8f125b18f910117d6bdfe17790f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 65445,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on origin, license, architecture, scripting, and platform support",
+      "Mechanisms correctly describe node-scene hierarchy and file-based resource storage with proper source attribution",
+      "Unknowns appropriately identify implementation details not covered in the source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'intended to facilitate' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-9b451813-6e60-438d-8409-b342d06ef45e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4654,
+    "outputTokens": 90
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
