@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T13:34:52.302Z",
+  "updatedAt": "2026-11-16T13:34:57.506Z",
   "sequence": 66,
   "jobs": [
     {
@@ -2930,13 +2930,44 @@
       "topic": "Firefox",
       "day": "2026-11-16",
       "runId": "43877107787",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T13:34:52.302Z",
       "expiresAt": "2026-11-16T13:49:52.302Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Firefox",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385886514",
+        "revision": "1385886514",
+        "observedAt": "2026-11-16T13:34:55.437Z",
+        "sourceTimestamp": "2026-11-15T20:19:21Z",
+        "sha256": "633120b7ba00b2fba9a58ec243b7550b22cb2dc475b8d18898de7dac5228aad9",
+        "excerptSha256": "5c6b61ececaa178ed0759d3f292373b8ebdea220186611e682d4b26cd3be88a6",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 209903,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1e318cb8-29e1-499e-8e3d-ed8919270f9f",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4783,
+        "outputTokens": 272
+      },
+      "packet": "research/packets/research-000066-02c0e9d820.json",
+      "packetDigest": "ff6a67e72f89a5f0daa9e9ae97f4122a7c5916d1ab36583124697709dab1dee2",
+      "finishedAt": "2026-11-16T13:34:57.506Z"
     }
   ],
   "discovered": [
@@ -4584,6 +4615,46 @@
       "title": "Chain of trust",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
+    },
+    {
+      "title": "360 Secure Browser",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "3DMLW",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "A/B testing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "AI assistant",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "ALIWEB",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "ALynx",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "AMSD Ariadna",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "AMosaic",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000066-02c0e9d820"
     }
   ],
   "reviewJobs": [
