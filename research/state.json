@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T08:33:59.232Z",
-  "sequence": 62,
+  "updatedAt": "2026-11-16T09:23:01.613Z",
+  "sequence": 63,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2784,6 +2784,20 @@
       "packet": "research/packets/research-000062-4539c21763.json",
       "packetDigest": "1c008080aa2f0771fbf2abeaf7e99256b5a9d37754f29fc7813af86d9f9eb0aa",
       "finishedAt": "2026-11-16T08:33:59.232Z"
+    },
+    {
+      "id": "research-000063-1d20ea4b59",
+      "role": "adversarial-reviewer",
+      "topic": "Property testing",
+      "day": "2026-11-16",
+      "runId": "43839221049",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T09:23:01.613Z",
+      "expiresAt": "2026-11-16T09:38:01.613Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
