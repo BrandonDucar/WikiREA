@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T21:25:08.140Z",
-  "sequence": 73,
+  "updatedAt": "2026-11-16T22:13:57.614Z",
+  "sequence": 74,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3303,6 +3303,20 @@
       "packet": "research/packets/research-000073-067e4b69de.json",
       "packetDigest": "24e050875f5ac0322321acc6608ab8278ae74cd29f037f827a575c1bdc9dcde5",
       "finishedAt": "2026-11-16T21:14:19.000Z"
+    },
+    {
+      "id": "research-000074-403d103bb4",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Backpressure routing",
+      "day": "2026-11-16",
+      "runId": "43968001368",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T22:13:57.614Z",
+      "expiresAt": "2026-11-16T22:28:57.614Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
