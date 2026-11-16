@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T06:37:21.815Z",
-  "sequence": 60,
+  "updatedAt": "2026-11-16T07:24:54.389Z",
+  "sequence": 61,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2690,6 +2690,20 @@
       "packet": "research/packets/research-000060-2c92eab7e0.json",
       "packetDigest": "a74200279bc9bf4dc0d63e14999a6629e7c2aa0c711072df8d4007fc66bb5c09",
       "finishedAt": "2026-11-16T06:37:21.815Z"
+    },
+    {
+      "id": "research-000061-0942144a15",
+      "role": "market-data-researcher",
+      "topic": "Time series database",
+      "day": "2026-11-16",
+      "runId": "43823671943",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T07:24:54.389Z",
+      "expiresAt": "2026-11-16T07:39:54.389Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
