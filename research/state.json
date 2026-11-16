@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T15:23:51.785Z",
+  "updatedAt": "2026-11-16T15:23:56.104Z",
   "sequence": 68,
   "jobs": [
     {
@@ -3024,13 +3024,44 @@
       "topic": "Entity component system",
       "day": "2026-11-16",
       "runId": "43895817326",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T15:23:51.785Z",
       "expiresAt": "2026-11-16T15:38:51.785Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Entity component system",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383317723",
+        "revision": "1383317723",
+        "observedAt": "2026-11-16T15:23:53.814Z",
+        "sourceTimestamp": "2026-11-02T02:19:46Z",
+        "sha256": "ee295d86c916d4ae65a5416bafadc7d54df8f7bc2aef7ccb5a62d279432de59b",
+        "excerptSha256": "b92ab04211cf7ed2296ad10c5cad6fa65a9cefa279ffb707f6e601c2eefa391b",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 19107,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9f949d3b-56af-4ce3-bbd5-c1f3c50885cc",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4100,
+        "outputTokens": 355
+      },
+      "packet": "research/packets/research-000068-e1044edf96.json",
+      "packetDigest": "49b5b16dc3b07b4f5f50e044fb8a9777c67903844923dfbc98f84c53383dc1f4",
+      "finishedAt": "2026-11-16T15:23:56.104Z"
     }
   ],
   "discovered": [
@@ -4753,6 +4784,46 @@
       "title": "Adele Goldberg (computer scientist)",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000067-a5933051f2"
+    },
+    {
+      "title": "API",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "Abstract factory pattern",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "Action–domain–responder",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "Active object",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "Active record pattern",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "Adapter pattern",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "Anti-pattern",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
+    },
+    {
+      "title": "AoS and SoA",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000068-e1044edf96"
     }
   ],
   "reviewJobs": [
