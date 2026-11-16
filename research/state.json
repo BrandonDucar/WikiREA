@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T18:18:37.807Z",
+  "updatedAt": "2026-11-16T18:18:42.751Z",
   "sequence": 70,
   "jobs": [
     {
@@ -3122,13 +3122,44 @@
       "topic": "Universal Serial Bus",
       "day": "2026-11-16",
       "runId": "43927449178",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T18:18:37.807Z",
       "expiresAt": "2026-11-16T18:33:37.807Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "USB",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384517476",
+        "revision": "1384517476",
+        "observedAt": "2026-11-16T18:18:40.050Z",
+        "sourceTimestamp": "2026-11-08T17:02:35Z",
+        "sha256": "6c7791482f28d8bd1e1b36880b9f8ba76fd6d9d0475216f7b0cd0ca1a9827ddc",
+        "excerptSha256": "f30a7b07e371df3d8c8d023b66101633febe3b016602aa9d3de74e2559dfd486",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 144684,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-31153af8-3ac1-441d-85c7-43f892d98d4a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4449,
+        "outputTokens": 409
+      },
+      "packet": "research/packets/research-000070-adbb730263.json",
+      "packetDigest": "79771417e6a99951a7b56fc7a631b7a6c23f30c42d007839beec027e0f81f7f2",
+      "finishedAt": "2026-11-16T18:18:42.751Z"
     }
   ],
   "discovered": [
@@ -4911,6 +4942,46 @@
       "title": "Albert Tarantola",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000069-7f61374784"
+    },
+    {
+      "title": "1-Wire",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "128b/132b",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "19-inch rack",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "8b/10b",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "8b/10b encoding",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "ACCESS.bus",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "AC adapter",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "ADAT Lightpipe",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000070-adbb730263"
     }
   ],
   "reviewJobs": [
