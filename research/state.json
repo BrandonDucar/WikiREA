@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T17:27:41.127Z",
-  "sequence": 69,
+  "updatedAt": "2026-11-16T18:18:37.807Z",
+  "sequence": 70,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3115,6 +3115,20 @@
       "packet": "research/packets/research-000069-7f61374784.json",
       "packetDigest": "dac54100d2c94dcf2855ab18dbbbf59da5eedece8cd06a179a8f2c7f335e47be",
       "finishedAt": "2026-11-16T16:17:11.642Z"
+    },
+    {
+      "id": "research-000070-adbb730263",
+      "role": "hardware-interoperability-scout",
+      "topic": "Universal Serial Bus",
+      "day": "2026-11-16",
+      "runId": "43927449178",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T18:18:37.807Z",
+      "expiresAt": "2026-11-16T18:33:37.807Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
