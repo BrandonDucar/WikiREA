@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T00:42:15.455Z",
-  "sequence": 55,
+  "updatedAt": "2026-11-16T01:18:44.682Z",
+  "sequence": 56,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2453,6 +2453,20 @@
       "packet": "research/packets/research-000055-d84aa316b7.json",
       "packetDigest": "102466ea011f16e2de69700d14d3246bdc11e5f3e933fdcb49ba61c7af3ded40",
       "finishedAt": "2026-11-16T00:42:15.455Z"
+    },
+    {
+      "id": "research-000056-4de8f52dba",
+      "role": "application-tracer",
+      "topic": "Blender (software)",
+      "day": "2026-11-16",
+      "runId": "43785513066",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T01:18:44.682Z",
+      "expiresAt": "2026-11-16T01:33:44.682Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
