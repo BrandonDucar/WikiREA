@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T02:21:59.441Z",
-  "sequence": 57,
+  "updatedAt": "2026-11-16T03:19:18.333Z",
+  "sequence": 58,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2547,6 +2547,20 @@
       "packet": "research/packets/research-000057-1df2912289.json",
       "packetDigest": "14aa89f8fc6e40318b4631fb9f17407c0cedfe11a4d19fad4b95f36c53a6569c",
       "finishedAt": "2026-11-16T02:21:59.441Z"
+    },
+    {
+      "id": "research-000058-eb6a376636",
+      "role": "game-mechanic-researcher",
+      "topic": "Godot (game engine)",
+      "day": "2026-11-16",
+      "runId": "43797452235",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T03:19:18.333Z",
+      "expiresAt": "2026-11-16T03:34:18.333Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
