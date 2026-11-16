@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T05:28:07.437Z",
-  "sequence": 59,
+  "updatedAt": "2026-11-16T06:37:18.070Z",
+  "sequence": 60,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2645,6 +2645,20 @@
       "packet": "research/packets/research-000059-1de4675969.json",
       "packetDigest": "316409f974807dcf7b7c30a530adf6ca8128164ad68f123806248ec4b44df748",
       "finishedAt": "2026-11-16T04:18:15.817Z"
+    },
+    {
+      "id": "research-000060-2c92eab7e0",
+      "role": "hardware-interoperability-scout",
+      "topic": "MQTT",
+      "day": "2026-11-16",
+      "runId": "43817995116",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T06:37:18.070Z",
+      "expiresAt": "2026-11-16T06:52:18.070Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
