@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T14:32:59.344Z",
+  "updatedAt": "2026-11-16T14:33:05.193Z",
   "sequence": 67,
   "jobs": [
     {
@@ -2979,13 +2979,44 @@
       "topic": "Virtual machine",
       "day": "2026-11-16",
       "runId": "43886869668",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T14:32:59.344Z",
       "expiresAt": "2026-11-16T14:47:59.344Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Virtual machine",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385621533",
+        "revision": "1385621533",
+        "observedAt": "2026-11-16T14:33:02.711Z",
+        "sourceTimestamp": "2026-11-14T07:58:49Z",
+        "sha256": "e1d1c02680b01be4bf367a7d3e0eddc8dba1990ad306d5edacb25121288e21b9",
+        "excerptSha256": "d83db2d897a6bef09fe70214fe54b3ba7537886c8a03c0e31007c45bd1d5bc2e",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 35063,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ec9c6ca6-7e2d-4e92-8b1f-92a8b7b278d9",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3403,
+        "outputTokens": 410
+      },
+      "packet": "research/packets/research-000067-a5933051f2.json",
+      "packetDigest": "1c23771fdb1e5d2d03ae48875b6dd21a7b9b45eb3e90290b828365893b71da88",
+      "finishedAt": "2026-11-16T14:33:05.193Z"
     }
   ],
   "discovered": [
@@ -4673,6 +4704,41 @@
       "title": "AMosaic",
       "role": "application-tracer",
       "discoveredFrom": "research-000066-02c0e9d820"
+    },
+    {
+      "title": "86Box",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000067-a5933051f2"
+    },
+    {
+      "title": "ACM Comput. Surv.",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000067-a5933051f2"
+    },
+    {
+      "title": "ACM Computing Classification System",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000067-a5933051f2"
+    },
+    {
+      "title": "Abstraction layer",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000067-a5933051f2"
+    },
+    {
+      "title": "Adaptive optimization",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000067-a5933051f2"
+    },
+    {
+      "title": "Addison-Wesley",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000067-a5933051f2"
+    },
+    {
+      "title": "Adele Goldberg (computer scientist)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000067-a5933051f2"
     }
   ],
   "reviewJobs": [

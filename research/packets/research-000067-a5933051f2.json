@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000067-a5933051f2",
+  "topic": "Virtual machine",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A virtual machine is software that emulates a complete computer system, allowing execution of operating systems or programs in isolated environments. System virtual machines provide substitutes for real hardware, enabling multiple isolated guest operating systems on one physical machine via a hypervisor that manages hardware sharing, often using hardware-assisted virtualization. Process virtual machines run as applications within a host operating system to support a single process, providing platform-independent execution environments; these are implemented via interpreters and can achieve performance comparable to compiled languages through just-in-time compilation. Emulators such as QEMU may also imitate different system architectures, permitting software designed for other CPUs to run. Memory optimization techniques like kernel same-page merging can share identical memory pages among co-located virtual machines.",
+    "mechanisms": [
+      {
+        "title": "System virtual machines",
+        "explanation": "Provide a substitute for a real machine, enabling execution of entire operating systems. A hypervisor uses native execution to share and manage hardware, allowing multiple isolated environments on the same physical machine. Modern hypervisors use hardware-assisted virtualization, with CPU features providing assistance to the hypervisor.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Process virtual machines",
+        "explanation": "Run as a normal application inside a host OS and support a single process. They provide a platform-independent programming environment that abstracts away underlying hardware or operating system details. Implemented using an interpreter, performance comparable to compiled languages can be achieved through just-in-time compilation.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How hypervisors manage hardware isolation without hardware assistance on specific CPU models",
+      "Exact conditions under which kernel same-page merging shares memory pages across virtual machines",
+      "Whether all process virtual machines use just-in-time compilation or interpreter-only execution",
+      "How emulators like QEMU handle translation of instruction sets for completely different CPU architectures"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Virtual machine",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385621533",
+    "revision": "1385621533",
+    "observedAt": "2026-11-16T14:33:02.711Z",
+    "sourceTimestamp": "2026-11-14T07:58:49Z",
+    "sha256": "e1d1c02680b01be4bf367a7d3e0eddc8dba1990ad306d5edacb25121288e21b9",
+    "excerptSha256": "d83db2d897a6bef09fe70214fe54b3ba7537886c8a03c0e31007c45bd1d5bc2e",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 35063,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-ec9c6ca6-7e2d-4e92-8b1f-92a8b7b278d9",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3403,
+    "outputTokens": 410
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "122ac0da2d7589f1c6b62a9c96f039102ae665a3aab76f482182f3df8cc8efc0",
+  "artifactDigest": "1c23771fdb1e5d2d03ae48875b6dd21a7b9b45eb3e90290b828365893b71da88"
+}
