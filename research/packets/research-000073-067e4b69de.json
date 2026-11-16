@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000073-067e4b69de",
+  "topic": "Fuzzing",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Fuzzing is an automated software testing technique that feeds invalid, unexpected, or random inputs to a program to provoke crashes, assertion failures, or memory leaks. It targets programs that process structured inputs like file formats or protocols, generating semi-valid inputs that bypass initial parsers but expose hidden corner cases. The method traces back to 1950s punched-card testing and was formalized in 1988 by Prof. Barton Miller's graduate class, which crashed 25-33% of tested UNIX utilities. Modern variants include mutation-based fuzzers that modify seed corpora and generation-based fuzzers that synthesize inputs from models. The technique became prominent in security after high-profile discoveries such as Shellshock and Heartbleed, and is now offered as cloud services like Google's ClusterFuzz and Microsoft's Project Springfield.",
+    "mechanisms": [
+      {
+        "title": "Mutation-based fuzzing",
+        "explanation": "A mutation-based fuzzer modifies an existing corpus of seed inputs to generate semi-valid variants. For example, when fuzzing an image library, valid PNG files serve as seeds that are mutated to produce variants likely to trigger deeper program behaviors and corner cases.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Generation-based fuzzing",
+        "explanation": "A generation-based fuzzer creates inputs from scratch using a provided input model, without relying on a pre-existing seed corpus. Some fuzzers combine both approaches to generate and mutate inputs.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How fuzzers internally prioritize seed mutations for maximum coverage",
+      "The precise conditions under which a fuzzer transitions from generating semi-valid to fully invalid inputs",
+      "Whether structural awareness (white/grey/black-box classification) directly correlates with bug discovery rate",
+      "The internal decision logic behind automated seed selection and test suite reduction strategies"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Fuzzing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382152087",
+    "revision": "1382152087",
+    "observedAt": "2026-11-16T21:14:16.326Z",
+    "sourceTimestamp": "2026-10-26T23:06:35Z",
+    "sha256": "f2d0863abd53dcf5b2d372f86890193bc958c6aa9d4d78d1dcc8b6a97aa0016d",
+    "excerptSha256": "f8b682d547fe5c4ef5576db4e8238c72959b7d9b32150cf74a04b6a3595ae568",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 55523,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-fb93ab16-74c6-4073-95be-eee09f010506",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4031,
+    "outputTokens": 422
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "66dcd0655c81ce9a11195d1272b8f1416b9ac168d47426dff0516317a17ad379",
+  "artifactDigest": "24e050875f5ac0322321acc6608ab8278ae74cd29f037f827a575c1bdc9dcde5"
+}
