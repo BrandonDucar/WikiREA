@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T15:34:27.041Z",
-  "sequence": 68,
+  "updatedAt": "2026-11-16T16:17:06.517Z",
+  "sequence": 69,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3066,6 +3066,20 @@
       "packet": "research/packets/research-000068-e1044edf96.json",
       "packetDigest": "49b5b16dc3b07b4f5f50e044fb8a9777c67903844923dfbc98f84c53383dc1f4",
       "finishedAt": "2026-11-16T15:23:56.104Z"
+    },
+    {
+      "id": "research-000069-7f61374784",
+      "role": "simulation-researcher",
+      "topic": "Monte Carlo method",
+      "day": "2026-11-16",
+      "runId": "43905755943",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T16:17:06.517Z",
+      "expiresAt": "2026-11-16T16:32:06.517Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
