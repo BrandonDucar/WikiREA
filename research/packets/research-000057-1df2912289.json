@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000057-1df2912289",
+  "topic": "WebAssembly",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "WebAssembly (Wasm) is a portable binary and text format for executable programs, designed as an open standard to enable high-performance applications on web pages and beyond. It functions as a structured stack machine with control flow expressed through constructs like blocks, ifs, and loops. While initially focused on low-level languages like C and C++, subsequent versions added features such as multithreading, SIMD, and garbage collection to support high-level language runtimes. The format maps to a common structure from multiple concrete representations, primarily binary and text formats.",
+    "mechanisms": [
+      {
+        "title": "Binary and Text Format Mapping",
+        "explanation": "WebAssembly defines a binary code format and a corresponding text format that both map to a common internal structure. This dual representation allows for efficient parsing and human-readable development, with the binary format serving as the executable unit processed by runtimes.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Structured Stack Machine Semantics",
+        "explanation": "WebAssembly operates as a structured stack machine where most computations use a value stack, but control flow is expressed in structured constructs such as blocks, if statements, and loops. Implementations need only behave as if a value stack and control structures exist, rather than maintaining them literally.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact runtime implementation of stack vs. register-based execution",
+      "Details of how multithreading is coordinated across browser processes",
+      "Mechanisms for garbage collection beyond the WebAssembly 3.0 proposal",
+      "Internal representation of reference types and opaque pointers in memory"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "WebAssembly",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1374012305",
+    "revision": "1374012305",
+    "observedAt": "2026-11-16T02:21:56.837Z",
+    "sourceTimestamp": "2026-09-09T07:48:02Z",
+    "sha256": "797ef66d03ff0adb66d5eff97f415ca3860c3cc42d931237498227907a5e9994",
+    "excerptSha256": "b2c0d53a0d31665d8ca35fefe5228f3dfac10813678d3452920a49c37b0f3087",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 79851,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4039c798-88ae-41d3-84df-2505a0a7cc3d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4477,
+    "outputTokens": 356
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "a2210e7ff5c038a159245d168ecb96aabf90e4fd578abb8d317ed33f40c79910",
+  "artifactDigest": "14aa89f8fc6e40318b4631fb9f17407c0cedfe11a4d19fad4b95f36c53a6569c"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T02:21:55.124Z",
+  "updatedAt": "2026-11-16T02:21:59.441Z",
   "sequence": 57,
   "jobs": [
     {
@@ -2509,13 +2509,44 @@
       "topic": "WebAssembly",
       "day": "2026-11-16",
       "runId": "43791702137",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T02:21:55.124Z",
       "expiresAt": "2026-11-16T02:36:55.124Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "WebAssembly",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1374012305",
+        "revision": "1374012305",
+        "observedAt": "2026-11-16T02:21:56.837Z",
+        "sourceTimestamp": "2026-09-09T07:48:02Z",
+        "sha256": "797ef66d03ff0adb66d5eff97f415ca3860c3cc42d931237498227907a5e9994",
+        "excerptSha256": "b2c0d53a0d31665d8ca35fefe5228f3dfac10813678d3452920a49c37b0f3087",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 79851,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4039c798-88ae-41d3-84df-2505a0a7cc3d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4477,
+        "outputTokens": 356
+      },
+      "packet": "research/packets/research-000057-1df2912289.json",
+      "packetDigest": "14aa89f8fc6e40318b4631fb9f17407c0cedfe11a4d19fad4b95f36c53a6569c",
+      "finishedAt": "2026-11-16T02:21:59.441Z"
     }
   ],
   "discovered": [
@@ -3803,6 +3834,46 @@
       "title": "3D paint tool",
       "role": "application-tracer",
       "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": ".NET",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
+    },
+    {
+      "title": "128-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
+    },
+    {
+      "title": "360 Secure Browser",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
+    },
+    {
+      "title": "64-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
+    },
+    {
+      "title": "ACM Queue",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
+    },
+    {
+      "title": "AOL Explorer",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
+    },
+    {
+      "title": "ARM architecture family",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
+    },
+    {
+      "title": "AT&T Pogo",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000057-1df2912289"
     }
   ],
   "reviewJobs": [
