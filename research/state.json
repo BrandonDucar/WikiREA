@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T01:27:30.213Z",
-  "sequence": 56,
+  "updatedAt": "2026-11-16T02:21:55.124Z",
+  "sequence": 57,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2502,6 +2502,20 @@
       "packet": "research/packets/research-000056-4de8f52dba.json",
       "packetDigest": "87e8838f69322ca01862ce9faa0f671b2f7c5129a72862819f237111f8c2b91c",
       "finishedAt": "2026-11-16T01:18:48.494Z"
+    },
+    {
+      "id": "research-000057-1df2912289",
+      "role": "runtime-researcher",
+      "topic": "WebAssembly",
+      "day": "2026-11-16",
+      "runId": "43791702137",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T02:21:55.124Z",
+      "expiresAt": "2026-11-16T02:36:55.124Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
