@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000056-4de8f52dba-review-8a640bd3d9",
+  "parentJobId": "research-000056-4de8f52dba",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "87e8838f69322ca01862ce9faa0f671b2f7c5129a72862819f237111f8c2b91c",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Blender (software)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385239916",
+    "revision": "1385239916",
+    "observedAt": "2026-11-16T01:18:46.577Z",
+    "sourceTimestamp": "2026-11-12T13:07:22Z",
+    "sha256": "dde8c910d9b36bb3b7a13220f55a41f49e7ff57b269905d4d7cc05fa44033bdb",
+    "excerptSha256": "d49a3f46ecd21359b0363ae6da0d3b27c2211fe6d5dea0f936b80aaab6b12fff",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 121597,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on origin, open-source transition, and game engine removal",
+      "Mechanisms correctly describe community-driven development and integrated pipeline features with proper source attribution",
+      "Unknowns appropriately identify technical details not covered in the source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'largely developed by its community' and 'over 50 full-time and freelancers' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-394ea022-b94d-4a55-b14a-da46d93b411c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5426,
+    "outputTokens": 101
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

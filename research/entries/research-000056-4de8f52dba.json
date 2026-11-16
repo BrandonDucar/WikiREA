@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000056-4de8f52dba",
+  "title": "Blender (software)",
+  "role": "application-tracer",
+  "createdAt": "2026-11-16T05:28:07.437Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Blender is a free and open-source 3D creation suite used for modeling, animation, rendering, and video editing. It originated as an internal tool at the Dutch studio NeoGeo in 1994, was released as shareware in 1998, and became open-source in 2002 after a community-funded campaign. The project transitioned to the Blender Foundation and community development, removing its integrated game engine in version 2.80 to focus on other workflows.",
+  "mechanisms": [
+    {
+      "title": "Community-driven open-source development",
+      "explanation": "After Blender became open-source in 2002, development continued through the Blender Foundation and community contributors, including over 50 full-time and freelance developers at the Blender Institute.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Integrated creative pipeline features",
+      "explanation": "Blender provides a unified application for 3D modeling, animation, rendering, compositing, motion tracking, and video editing, replacing the need for separate tools in a typical production pipeline.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal architecture of the application-tracer component",
+    "Whether tracing functionality is implemented as a standalone module or integrated into the renderer",
+    "Details of the tracing pipeline's interaction with the viewport and render engines",
+    "Specific algorithms or data structures used for ray or path tracing within Blender"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Blender (software)",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385239916",
+      "revision": "1385239916",
+      "observedAt": "2026-11-16T01:18:46.577Z",
+      "sourceTimestamp": "2026-11-12T13:07:22Z",
+      "sha256": "dde8c910d9b36bb3b7a13220f55a41f49e7ff57b269905d4d7cc05fa44033bdb",
+      "excerptSha256": "d49a3f46ecd21359b0363ae6da0d3b27c2211fe6d5dea0f936b80aaab6b12fff",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 121597,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on origin, open-source transition, and game engine removal",
+      "Mechanisms correctly describe community-driven development and integrated pipeline features with proper source attribution",
+      "Unknowns appropriately identify technical details not covered in the source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'largely developed by its community' and 'over 50 full-time and freelancers' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-cb921b73-2369-49ef-bc88-d8ece485b1d5",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5147,
+      "outputTokens": 331
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-394ea022-b94d-4a55-b14a-da46d93b411c",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5426,
+      "outputTokens": 101
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "cf07df1028c28707cf42c2688eaa4e82b28fd56190d1e97af6d150190e1a74ee",
+    "artifactDigest": "87e8838f69322ca01862ce9faa0f671b2f7c5129a72862819f237111f8c2b91c",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000056-4de8f52dba.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
