@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T07:38:49.209Z",
-  "sequence": 61,
+  "updatedAt": "2026-11-16T08:33:53.918Z",
+  "sequence": 62,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2739,6 +2739,20 @@
       "packet": "research/packets/research-000061-0942144a15.json",
       "packetDigest": "e4b18c72936253bfd47aa51f588dfc28683e3930c367943349c290c37919f6cd",
       "finishedAt": "2026-11-16T07:25:00.189Z"
+    },
+    {
+      "id": "research-000062-4539c21763",
+      "role": "music-events",
+      "topic": "Open Sound Control",
+      "day": "2026-11-16",
+      "runId": "43832231806",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T08:33:53.918Z",
+      "expiresAt": "2026-11-16T08:48:53.918Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
