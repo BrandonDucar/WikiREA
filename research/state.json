@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T00:42:12.123Z",
+  "updatedAt": "2026-11-16T00:42:15.455Z",
   "sequence": 55,
   "jobs": [
     {
@@ -2415,13 +2415,44 @@
       "topic": "Software repository",
       "day": "2026-11-16",
       "runId": "43781910742",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T00:42:12.123Z",
       "expiresAt": "2026-11-16T00:57:12.123Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Software repository",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379368475",
+        "revision": "1379368475",
+        "observedAt": "2026-11-16T00:42:13.818Z",
+        "sourceTimestamp": "2026-10-09T15:16:54Z",
+        "sha256": "73d26c96b163e05891cb7b1d735b0dde662bf5bd86f3a6c574ed24dfe6f6c3ca",
+        "excerptSha256": "33a439b4d54b0c165df550df24d15d9c47b9a42dbd5be81a2cee96f4809f5a96",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 20637,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-852fb51b-363f-4da9-8044-9d2aca26c865",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4538,
+        "outputTokens": 328
+      },
+      "packet": "research/packets/research-000055-d84aa316b7.json",
+      "packetDigest": "102466ea011f16e2de69700d14d3246bdc11e5f3e933fdcb49ba61c7af3ded40",
+      "finishedAt": "2026-11-16T00:42:15.455Z"
     }
   ],
   "discovered": [
@@ -3629,6 +3660,46 @@
       "title": "AbiWord",
       "role": "application-tracer",
       "discoveredFrom": "research-000054-be07f6d7e2"
+    },
+    {
+      "title": "ACM Computing Classification System",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": "APT (software)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": "Algorithm",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": "Algorithm design",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": "Algorithmic efficiency",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": "Analysis of algorithms",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": "Antivirus software",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": "Apache Groovy",
+      "role": "source-curator",
+      "discoveredFrom": "research-000055-d84aa316b7"
     }
   ],
   "reviewJobs": [
