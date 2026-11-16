@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000063-1d20ea4b59",
+  "topic": "Property testing",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Property testing designs super-fast algorithms that make a tiny number of local queries to decide if a huge object satisfies a property or is far from satisfying it. The main efficiency metric is query complexity, which is often sublinear in instance size. Query complexity depends heavily on how the object is represented; dense graphs given as adjacency matrices admit constant query complexity, while sparse graphs given as adjacency lists require queries proportional to the square root of the instance size. The required number of queries grows as the proximity parameter epsilon becomes smaller, often dramatically, with some properties needing tower-function bounds. Many positive results rely on the Szemerédi regularity lemma, which also has tower-type bounds. A property testing algorithm has one-sided error if it always accepts valid instances and rejects invalid ones with high probability. Oblivious testers make a constant number of queries dependent only on epsilon, not input size. A graph property testable by an oblivious one-sided error tester must be semi-hereditary, meaning it is preserved under vertex/edge deletion and approximable by a hereditary property.",
+    "mechanisms": [
+      {
+        "title": "Local sampling via oracle queries",
+        "explanation": "A property testing algorithm decides acceptability of a large object by making a small number of 'local' queries to an oracle, such as checking whether a pair of vertices has an edge. The number of queries is the algorithm's query complexity, which is typically much smaller than the total instance size. For dense graphs represented as adjacency matrices, constant query complexity suffices; for sparse graphs represented as adjacency lists, query complexity grows with the square root of the number of vertices.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Dependence on proximity parameter epsilon",
+        "explanation": "The query complexity of property testing algorithms grows as the proximity parameter epsilon becomes smaller, because detecting a change of fewer than epsilon symbols requires at least O(1/epsilon) queries. Some properties have query complexity that depends only on epsilon and not on the graph size, but the dependence can be enormous; for example, testing triangle-freeness historically required a tower function of poly(1/epsilon) queries, improved only in 2010 to a tower function of log(1/epsilon). This growth is partly linked to the Szemerédi regularity lemma, which also has tower-type bounds.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific graph properties achieve sublinear query complexity independent of instance size beyond the epsilon dependence",
+      "Whether the tower-type query complexity bounds are inherent or can be improved for all non-trivial properties",
+      "The exact query complexity for testing hereditary graph properties using the graph removal lemma approach",
+      "How representation choices (adjacency matrix vs list) fundamentally alter the query complexity landscape for the same graph property"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Property testing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384655305",
+    "revision": "1384655305",
+    "observedAt": "2026-11-16T09:23:03.850Z",
+    "sourceTimestamp": "2026-11-09T10:43:48Z",
+    "sha256": "49777b7b894fad5f833f0323f0878329fa776319af892becf4c86876f839c40f",
+    "excerptSha256": "6fd8d44994d398707c91c1eb7f28a19b04e070ccb32bde38fcdee27a924ef224",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20039,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-481ed002-8317-425c-91d6-d4379e87f74d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3854,
+    "outputTokens": 606
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "cf28e1ced4cea8f21a9a061cb0614047ff0e515ee194047b924b6bfaaf863740",
+  "artifactDigest": "54d2a6aadc154da6494745661a9e914e35ca18252807f4808c26f0a0a1cd31cf"
+}
