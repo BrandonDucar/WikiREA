@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000060-2c92eab7e0",
+  "topic": "MQTT",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "MQTT is a lightweight, publish-subscribe network protocol designed for resource-constrained devices over limited bandwidth, typically running on TCP/IP. It organizes data around a central broker that routes messages to clients subscribed to specific topics. The protocol supports retained messages, last-will messages, and quality-of-service levels to manage delivery guarantees. Security is not built-in; TLS is typically used to encrypt connections. The default unencrypted port is 1883, and the encrypted port is 8883. MQTT-SN extends the protocol for sensor networks using non-TCP transports.",
+    "mechanisms": [
+      {
+        "title": "Broker-mediated publish-subscribe routing",
+        "explanation": "Clients connect to a central broker. Publishers send messages to topics without knowledge of subscribers. The broker routes messages to all clients whose subscriptions match the topic pattern. This decouples producers from consumers, enabling one-to-many and many-to-one communication across diverse devices.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Quality-of-service and retained message handling",
+        "explanation": "MQTT defines three QoS levels (0, 1, 2) governing delivery guarantees. A retained message flag allows the broker to store the last message for a topic; new subscribers receive this stored value immediately. If a client disconnects unexpectedly, the broker can send a last-will message to notify other clients.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How broker implementations manage persistent session state across crashes or restarts",
+      "Whether native authentication mechanisms exist beyond TLS certificate and username/password pairing",
+      "The specific resource constraints that determine minimum viable MQTT broker footprint",
+      "How multiple broker servers exchange data in large-scale deployments without shared configuration"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "MQTT",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381247084",
+    "revision": "1381247084",
+    "observedAt": "2026-11-16T06:37:19.843Z",
+    "sourceTimestamp": "2026-10-21T00:07:46Z",
+    "sha256": "7c4824948d30dbccec74b3fb3fc9b16f941e6ff37038c1fedf9d489ad19be74b",
+    "excerptSha256": "4b6949d5a26f86acb960367a916f2b510d435fd8bc8be3a1403ca9427a7d1a88",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 24204,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-a581a2ac-2e95-48af-be38-180c1eb9b8b2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4030,
+    "outputTokens": 390
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "8d1d3e95f7204f842d6d115a2ffa56e085b8d2ba839166d8fb38d64d3f36358b",
+  "artifactDigest": "a74200279bc9bf4dc0d63e14999a6629e7c2aa0c711072df8d4007fc66bb5c09"
+}
