@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T01:18:44.682Z",
+  "updatedAt": "2026-11-16T01:18:48.494Z",
   "sequence": 56,
   "jobs": [
     {
@@ -2460,13 +2460,44 @@
       "topic": "Blender (software)",
       "day": "2026-11-16",
       "runId": "43785513066",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T01:18:44.682Z",
       "expiresAt": "2026-11-16T01:33:44.682Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Blender (software)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385239916",
+        "revision": "1385239916",
+        "observedAt": "2026-11-16T01:18:46.577Z",
+        "sourceTimestamp": "2026-11-12T13:07:22Z",
+        "sha256": "dde8c910d9b36bb3b7a13220f55a41f49e7ff57b269905d4d7cc05fa44033bdb",
+        "excerptSha256": "d49a3f46ecd21359b0363ae6da0d3b27c2211fe6d5dea0f936b80aaab6b12fff",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 121597,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-cb921b73-2369-49ef-bc88-d8ece485b1d5",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 5147,
+        "outputTokens": 331
+      },
+      "packet": "research/packets/research-000056-4de8f52dba.json",
+      "packetDigest": "87e8838f69322ca01862ce9faa0f671b2f7c5129a72862819f237111f8c2b91c",
+      "finishedAt": "2026-11-16T01:18:48.494Z"
     }
   ],
   "discovered": [
@@ -3714,6 +3745,46 @@
       "title": "Apache Groovy",
       "role": "source-curator",
       "discoveredFrom": "research-000055-d84aa316b7"
+    },
+    {
+      "title": ".3ds",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": "2D animation",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": "3D-Coat",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": "3D Movie Maker",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": "3D computer graphics software",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": "3D modeling",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": "3D models",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
+    },
+    {
+      "title": "3D paint tool",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000056-4de8f52dba"
     }
   ],
   "reviewJobs": [
