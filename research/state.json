@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T19:13:34.117Z",
+  "updatedAt": "2026-11-16T19:13:43.997Z",
   "sequence": 71,
   "jobs": [
     {
@@ -3167,13 +3167,44 @@
       "topic": "OHLC chart",
       "day": "2026-11-16",
       "runId": "43937071840",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T19:13:34.117Z",
       "expiresAt": "2026-11-16T19:28:34.117Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Open-high-low-close chart",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1377695956",
+        "revision": "1377695956",
+        "observedAt": "2026-11-16T19:13:36.982Z",
+        "sourceTimestamp": "2026-09-30T17:01:06Z",
+        "sha256": "2303fb623ad0a3af99c840f84113b213a40f118f791f06409625d0e389744277",
+        "excerptSha256": "2303fb623ad0a3af99c840f84113b213a40f118f791f06409625d0e389744277",
+        "inspectedCharacters": 3221,
+        "totalCharacters": 3221,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ac7faab4-5af6-46fa-ad08-f52590c6954c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1057,
+        "outputTokens": 397
+      },
+      "packet": "research/packets/research-000071-c3f1701a85.json",
+      "packetDigest": "84e746c72eef0db8d585daee42b67cb50a9bdc57401acf76ea259ac678871de5",
+      "finishedAt": "2026-11-16T19:13:43.997Z"
     }
   ],
   "discovered": [
@@ -4996,6 +5027,46 @@
       "title": "ADAT Lightpipe",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000070-adbb730263"
+    },
+    {
+      "title": "Accumulation/distribution index",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "Advance–decline line",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "Average directional movement index",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "Average true range",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "Bear market",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "Bollinger Bands",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "Bollinger bands",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "Breadth of market",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000071-c3f1701a85"
     }
   ],
   "reviewJobs": [

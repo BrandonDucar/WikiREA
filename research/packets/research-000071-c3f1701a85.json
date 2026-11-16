@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000071-c3f1701a85",
+  "topic": "OHLC chart",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "OHLC charts display price movements over time using vertical lines with tick marks indicating opening and closing prices. Each vertical line represents the price range for a specific time unit, with tick marks on the left showing the opening price and on the right showing the closing price. Bars are color-coded to indicate price direction. While OHLC and Japanese candlestick charts present identical data, traders often prefer candlesticks for dynamic analysis due to their visual body representation. OHLC bars offer advantages for static historical analysis by clearly distinguishing open/close levels without reliance on color and avoiding confusion when comparing closing prices across adjacent periods. These charts are frequently combined with other chart types like moving averages and Bollinger Bands in technical analysis.",
+    "mechanisms": [
+      {
+        "title": "Vertical price range representation",
+        "explanation": "Each vertical line on an OHLC chart shows the price range (highest and lowest prices) over one unit of time, such as one day or one hour, with the top and bottom of the line representing the period's extreme prices.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Tick mark price level indication",
+        "explanation": "Tick marks project from each side of the vertical line, with the left tick mark indicating the opening price and the right tick mark indicating the closing price for that time period, allowing clear identification of price levels at bar start and end.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How color or fill patterns are algorithmically assigned to indicate price direction",
+      "The specific computational method for combining OHLC data with other chart types like moving averages",
+      "The exact technical process by which tick mark positions are calculated from open and close prices",
+      "Whether the visual distinction between bullish and bearish bars follows a universal or platform-specific convention"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Open-high-low-close chart",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1377695956",
+    "revision": "1377695956",
+    "observedAt": "2026-11-16T19:13:36.982Z",
+    "sourceTimestamp": "2026-09-30T17:01:06Z",
+    "sha256": "2303fb623ad0a3af99c840f84113b213a40f118f791f06409625d0e389744277",
+    "excerptSha256": "2303fb623ad0a3af99c840f84113b213a40f118f791f06409625d0e389744277",
+    "inspectedCharacters": 3221,
+    "totalCharacters": 3221,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-ac7faab4-5af6-46fa-ad08-f52590c6954c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1057,
+    "outputTokens": 397
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "55f1ba7b38f60eb3a9e28ddcb4da00cc90a1ca2da9d399a6a0588bfa25ac4164",
+  "artifactDigest": "84e746c72eef0db8d585daee42b67cb50a9bdc57401acf76ea259ac678871de5"
+}
