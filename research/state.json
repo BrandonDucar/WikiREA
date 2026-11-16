@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T09:37:19.650Z",
-  "sequence": 63,
+  "updatedAt": "2026-11-16T10:18:52.265Z",
+  "sequence": 64,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2833,6 +2833,20 @@
       "packet": "research/packets/research-000063-1d20ea4b59.json",
       "packetDigest": "54d2a6aadc154da6494745661a9e914e35ca18252807f4808c26f0a0a1cd31cf",
       "finishedAt": "2026-11-16T09:23:07.392Z"
+    },
+    {
+      "id": "research-000064-c6c5b9eab5",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "State machine replication",
+      "day": "2026-11-16",
+      "runId": "43847676173",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T10:18:52.265Z",
+      "expiresAt": "2026-11-16T10:33:52.265Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
