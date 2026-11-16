@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T10:18:58.548Z",
-  "sequence": 64,
+  "updatedAt": "2026-11-16T12:28:01.155Z",
+  "sequence": 65,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -2878,6 +2878,20 @@
       "packet": "research/packets/research-000064-c6c5b9eab5.json",
       "packetDigest": "498c1aa73a08bf1e2e4f974b519921fed2493e46070c34851bae80dd300a7961",
       "finishedAt": "2026-11-16T10:18:58.548Z"
+    },
+    {
+      "id": "research-000065-e0e23685a6",
+      "role": "source-curator",
+      "topic": "Reproducible builds",
+      "day": "2026-11-16",
+      "runId": "43866811419",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T12:28:01.155Z",
+      "expiresAt": "2026-11-16T12:43:01.155Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
