@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000055-d84aa316b7-review-8a640bd3d9",
+  "parentJobId": "research-000055-d84aa316b7",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "102466ea011f16e2de69700d14d3246bdc11e5f3e933fdcb49ba61c7af3ded40",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Software repository",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379368475",
+    "revision": "1379368475",
+    "observedAt": "2026-11-16T00:42:13.818Z",
+    "sourceTimestamp": "2026-10-09T15:16:54Z",
+    "sha256": "73d26c96b163e05891cb7b1d735b0dde662bf5bd86f3a6c574ed24dfe6f6c3ca",
+    "excerptSha256": "33a439b4d54b0c165df550df24d15d9c47b9a42dbd5be81a2cee96f4809f5a96",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20637,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of software repository as storage location for packages with metadata",
+      "Mechanisms correctly capture storage/metadata organization and package manager integration from source",
+      "Unknowns appropriately identify specific algorithms, mirroring processes, security details, and development workflows not detailed in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'often' preserved from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-d764ff70-65a8-45bd-ab81-b030958816e9",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4957,
+    "outputTokens": 96
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
