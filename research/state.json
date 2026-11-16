@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T19:25:11.246Z",
-  "sequence": 71,
+  "updatedAt": "2026-11-16T20:14:50.665Z",
+  "sequence": 72,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3209,6 +3209,20 @@
       "packet": "research/packets/research-000071-c3f1701a85.json",
       "packetDigest": "84e746c72eef0db8d585daee42b67cb50a9bdc57401acf76ea259ac678871de5",
       "finishedAt": "2026-11-16T19:13:43.997Z"
+    },
+    {
+      "id": "research-000072-2f715e698c",
+      "role": "music-events",
+      "topic": "Audio plugin",
+      "day": "2026-11-16",
+      "runId": "43947752736",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-16T20:14:50.665Z",
+      "expiresAt": "2026-11-16T20:29:50.665Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
