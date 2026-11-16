@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T20:14:50.665Z",
+  "updatedAt": "2026-11-16T20:14:55.290Z",
   "sequence": 72,
   "jobs": [
     {
@@ -3216,13 +3216,44 @@
       "topic": "Audio plugin",
       "day": "2026-11-16",
       "runId": "43947752736",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-16T20:14:50.665Z",
       "expiresAt": "2026-11-16T20:29:50.665Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Audio plug-in",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1362208268",
+        "revision": "1362208268",
+        "observedAt": "2026-11-16T20:14:52.752Z",
+        "sourceTimestamp": "2026-07-02T14:33:08Z",
+        "sha256": "3ef6807d1399130bcd2ee56daddbba58ea34ea53ca80458e97672966a899f01b",
+        "excerptSha256": "3ef6807d1399130bcd2ee56daddbba58ea34ea53ca80458e97672966a899f01b",
+        "inspectedCharacters": 7423,
+        "totalCharacters": 7423,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9957d02d-8962-4ddc-9bbc-635ca96022ec",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2360,
+        "outputTokens": 322
+      },
+      "packet": "research/packets/research-000072-2f715e698c.json",
+      "packetDigest": "e24e8b35d94ea0ddb5d97322cbded71d2b13a17d7a8b3910a2d0343bdd633489",
+      "finishedAt": "2026-11-16T20:14:55.290Z"
     }
   ],
   "discovered": [
@@ -5085,6 +5116,41 @@
       "title": "Breadth of market",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000071-c3f1701a85"
+    },
+    {
+      "title": "API",
+      "role": "music-events",
+      "discoveredFrom": "research-000072-2f715e698c"
+    },
+    {
+      "title": "Apple Inc.",
+      "role": "music-events",
+      "discoveredFrom": "research-000072-2f715e698c"
+    },
+    {
+      "title": "Audio Random Access",
+      "role": "music-events",
+      "discoveredFrom": "research-000072-2f715e698c"
+    },
+    {
+      "title": "Audio Units",
+      "role": "music-events",
+      "discoveredFrom": "research-000072-2f715e698c"
+    },
+    {
+      "title": "Audio sample",
+      "role": "music-events",
+      "discoveredFrom": "research-000072-2f715e698c"
+    },
+    {
+      "title": "Avid Technology",
+      "role": "music-events",
+      "discoveredFrom": "research-000072-2f715e698c"
+    },
+    {
+      "title": "BSD licenses",
+      "role": "music-events",
+      "discoveredFrom": "research-000072-2f715e698c"
     }
   ],
   "reviewJobs": [

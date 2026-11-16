@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000072-2f715e698c",
+  "topic": "Audio plugin",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Audio plug-ins are software modules that extend digital audio workstations by adding or enhancing audio functions. They typically provide their own graphical user interface for controlling audio parameters. Plug-ins fall into three main categories: those that transform existing audio samples, those that generate new audio via synthesis, and those that analyze audio samples. Communication between a host application and plug-ins occurs through a defined application programming interface, which specifies required functions and data structures. Major architecture formats include Virtual Studio Technology, Audio Units, LV2, and CLAP, supporting transformation, synthesis, or analysis across various platforms and host applications.",
+    "mechanisms": [
+      {
+        "title": "Parameter Control via GUI",
+        "explanation": "Plug-ins typically provide their own graphical user interface containing widgets that allow users to control and visualize the plug-in's audio parameters.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "API-Driven Host Communication",
+        "explanation": "The plug-in host dynamically loads audio plug-ins using a defined application programming interface that declares required functions and data structures, enabling the host to invoke plug-in functionality.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal signal processing algorithms used by specific plug-in formats",
+      "Detailed implementation of synthesis or transformation methods within individual plug-in architectures",
+      "Specific data structures and variable meanings beyond the declared API specification",
+      "Complete reverse-engineered internal workings of proprietary plug-in formats"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Audio plug-in",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1362208268",
+    "revision": "1362208268",
+    "observedAt": "2026-11-16T20:14:52.752Z",
+    "sourceTimestamp": "2026-07-02T14:33:08Z",
+    "sha256": "3ef6807d1399130bcd2ee56daddbba58ea34ea53ca80458e97672966a899f01b",
+    "excerptSha256": "3ef6807d1399130bcd2ee56daddbba58ea34ea53ca80458e97672966a899f01b",
+    "inspectedCharacters": 7423,
+    "totalCharacters": 7423,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-9957d02d-8962-4ddc-9bbc-635ca96022ec",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2360,
+    "outputTokens": 322
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3937bef06035eef2b4b0c152c5609f31c2c40afc49c28a340e46138db48fd4a6",
+  "artifactDigest": "e24e8b35d94ea0ddb5d97322cbded71d2b13a17d7a8b3910a2d0343bdd633489"
+}
