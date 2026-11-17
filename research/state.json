@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T07:16:56.235Z",
+  "updatedAt": "2026-11-17T07:17:01.665Z",
   "sequence": 81,
   "jobs": [
     {
@@ -3637,13 +3637,44 @@
       "topic": "Data validation",
       "day": "2026-11-17",
       "runId": "44037467940",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T07:16:56.235Z",
       "expiresAt": "2026-11-17T07:31:56.235Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Data validation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1377774898",
+        "revision": "1377774898",
+        "observedAt": "2026-11-17T07:16:58.577Z",
+        "sourceTimestamp": "2026-10-01T02:09:40Z",
+        "sha256": "2acb668f8481381e154872b6baced4e504ef000797077c1d14fede11f2e12f72",
+        "excerptSha256": "2acb668f8481381e154872b6baced4e504ef000797077c1d14fede11f2e12f72",
+        "inspectedCharacters": 12112,
+        "totalCharacters": 12112,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-93fd300a-7c8e-463f-8d5d-da6f974fe40b",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2852,
+        "outputTokens": 422
+      },
+      "packet": "research/packets/research-000081-ee73a932d9.json",
+      "packetDigest": "6a019e3d14b312a1e5ec32e49fc756b6419434908d51a8acf7e841ca8e036dd9",
+      "finishedAt": "2026-11-17T07:17:01.665Z"
     }
   ],
   "discovered": [
@@ -5826,6 +5857,46 @@
       "title": "ASIC",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000080-0033b77269"
+    },
+    {
+      "title": "Alation",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "Application program",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "Big data",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "Business intelligence",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "Business rules",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "Check digit",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "Chief data officer",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "Code (metadata)",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000081-ee73a932d9"
     }
   ],
   "reviewJobs": [

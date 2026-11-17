@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000081-ee73a932d9",
+  "topic": "Data validation",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Data validation is the process of confirming that input data is correct and useful through automated rules and constraints. It differs from formal algorithm verification and focuses on fitness, consistency, and security rather than absolute accuracy. Validation rules check for correctness, meaningfulness, and security, and may be implemented via data dictionaries or application logic. The guarantees provided do not necessarily include accuracy, as errors like misspellings can be accepted. Various validation types exist, including data type, range, code, structured, and consistency checks, each serving specific purposes such as format enforcement or referential integrity. Post-validation actions include enforcement, advisory, and verification steps, with logging recommended even when no issues are found. Failures in validation can lead to data corruption or security vulnerabilities.",
+    "mechanisms": [
+      {
+        "title": "Type and Range Checks",
+        "explanation": "These mechanisms verify that input conforms to expected primitive data types, such as integers or strings, and validates values against minimum/maximum ranges or regular expression patterns. For example, an integer field may only accept characters 0-9, and a password may be required to meet minimum length and character category requirements.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Code, Cross-reference, and Consistency Checks",
+        "explanation": "These mechanisms ensure data adheres to external rules or organizational standards by cross-referencing with look-up tables or directories (e.g., LDAP). Consistency validation ensures logical relationships between fields, such as prohibiting a delivery date from preceding its shipment date. Referential integrity links values across database tables via foreign and primary keys.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Implementation specifics of declarative versus imperative validation rules in particular software",
+      "Exact thresholds and formulas for check digit calculations beyond general description",
+      "Details on automatic data transformation enforcement and its potential for information loss",
+      "Specific mechanisms for cross-system data transformation and comparison protocols"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Data validation",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1377774898",
+    "revision": "1377774898",
+    "observedAt": "2026-11-17T07:16:58.577Z",
+    "sourceTimestamp": "2026-10-01T02:09:40Z",
+    "sha256": "2acb668f8481381e154872b6baced4e504ef000797077c1d14fede11f2e12f72",
+    "excerptSha256": "2acb668f8481381e154872b6baced4e504ef000797077c1d14fede11f2e12f72",
+    "inspectedCharacters": 12112,
+    "totalCharacters": 12112,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-93fd300a-7c8e-463f-8d5d-da6f974fe40b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2852,
+    "outputTokens": 422
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "2b2e87d0ed01e5e56cdd6cc7f9c49050a5ba776209254ecd854c839a09c1d826",
+  "artifactDigest": "6a019e3d14b312a1e5ec32e49fc756b6419434908d51a8acf7e841ca8e036dd9"
+}
