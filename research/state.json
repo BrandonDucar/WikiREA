@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T17:24:59.687Z",
-  "sequence": 89,
+  "updatedAt": "2026-11-17T18:18:28.946Z",
+  "sequence": 90,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4051,6 +4051,20 @@
       "packet": "research/packets/research-000089-1770120f58.json",
       "packetDigest": "41a1b011ae01ef132111b1380d20b75d965d94955efea300fd72d99e91dc9d51",
       "finishedAt": "2026-11-17T16:17:52.149Z"
+    },
+    {
+      "id": "research-000090-2e103f58c7",
+      "role": "hardware-interoperability-scout",
+      "topic": "Modbus",
+      "day": "2026-11-17",
+      "runId": "44146395486",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T18:18:28.946Z",
+      "expiresAt": "2026-11-17T18:33:28.946Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
