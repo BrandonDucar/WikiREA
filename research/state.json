@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T02:20:44.177Z",
-  "sequence": 77,
+  "updatedAt": "2026-11-17T03:17:48.790Z",
+  "sequence": 78,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3487,6 +3487,20 @@
       "packet": "research/packets/research-000077-cd12fec18e.json",
       "packetDigest": "60b81cd0ffc0d6a451cd7c6ff59f1d4557f1a7b2d061bc3260702d2fef4f028c",
       "finishedAt": "2026-11-17T02:20:44.177Z"
+    },
+    {
+      "id": "research-000078-38b0e718c3",
+      "role": "game-mechanic-researcher",
+      "topic": "Finite-state machine",
+      "day": "2026-11-17",
+      "runId": "44009176226",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T03:17:48.790Z",
+      "expiresAt": "2026-11-17T03:32:48.790Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
