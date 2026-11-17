@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T07:26:16.384Z",
-  "sequence": 81,
+  "updatedAt": "2026-11-17T08:19:25.501Z",
+  "sequence": 82,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3679,6 +3679,20 @@
       "packet": "research/packets/research-000081-ee73a932d9.json",
       "packetDigest": "6a019e3d14b312a1e5ec32e49fc756b6419434908d51a8acf7e841ca8e036dd9",
       "finishedAt": "2026-11-17T07:17:01.665Z"
+    },
+    {
+      "id": "research-000082-3295e49fa9",
+      "role": "music-events",
+      "topic": "JACK Audio Connection Kit",
+      "day": "2026-11-17",
+      "runId": "44045724760",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T08:19:25.501Z",
+      "expiresAt": "2026-11-17T08:34:25.501Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
