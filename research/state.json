@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T10:16:07.306Z",
+  "updatedAt": "2026-11-17T10:16:13.490Z",
   "sequence": 84,
   "jobs": [
     {
@@ -3780,13 +3780,44 @@
       "topic": "Publish–subscribe pattern",
       "day": "2026-11-17",
       "runId": "44063215693",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T10:16:07.306Z",
       "expiresAt": "2026-11-17T10:31:07.306Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Publish–subscribe pattern",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1360730651",
+        "revision": "1360730651",
+        "observedAt": "2026-11-17T10:16:09.322Z",
+        "sourceTimestamp": "2026-06-23T06:51:59Z",
+        "sha256": "37ebc8e9c9dead8752c70749c22d4e5c8a3dffbde5d5ae4eef01c5a01794c248",
+        "excerptSha256": "42d91822894053593b052da7ece0cb7f058ad1be1559d8d470b8ce9f5b02a086",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 14003,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-35a8eb41-8116-4d24-94f6-5194d8f61d23",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3365,
+        "outputTokens": 292
+      },
+      "packet": "research/packets/research-000084-e3f4a4ce2e.json",
+      "packetDigest": "1a372e77584f3aef6ea1398ae1aeab4726bd88ab55be8f625dc7481cdbad352f",
+      "finishedAt": "2026-11-17T10:16:13.490Z"
     }
   ],
   "discovered": [
@@ -6089,6 +6120,46 @@
       "title": "Average",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000083-ece4b38be5"
+    },
+    {
+      "title": "Abstract factory pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
+    },
+    {
+      "title": "Action–domain–responder",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
+    },
+    {
+      "title": "Active object",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
+    },
+    {
+      "title": "Active record pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
+    },
+    {
+      "title": "Adapter pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
+    },
+    {
+      "title": "Anti-pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
+    },
+    {
+      "title": "Apache Kafka",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
+    },
+    {
+      "title": "Architectural pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000084-e3f4a4ce2e"
     }
   ],
   "reviewJobs": [

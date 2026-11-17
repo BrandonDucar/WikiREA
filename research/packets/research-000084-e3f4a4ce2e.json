@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000084-e3f4a4ce2e",
+  "topic": "Publish–subscribe pattern",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Publish-subscribe is a messaging pattern where senders (publishers) categorize messages into topics without knowing who receives them, and recipients (subscribers) express interest in specific topics to receive matching messages. This decouples producers and consumers, supporting asynchronous many-to-many communication. The model contrasts with point-to-point and queue-based messaging, offering high scalability and dynamic topologies through broker-mediated routing or brokerless direct exchange. While it enables loose coupling and efficient distribution, it can introduce semantic coupling and delivery challenges at scale.",
+    "mechanisms": [
+      {
+        "title": "Topic-based filtering",
+        "explanation": "Messages are published to named topics or channels. Subscribers register interest in specific topics and receive all messages published to them, without needing publisher identity.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Content-based filtering",
+        "explanation": "Subscribers define constraints based on message attributes or content. Messages are delivered only if they match the subscriber's defined criteria, allowing selective delivery beyond topic boundaries.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Broker-mediated routing logic implementation details",
+      "Dynamic subscription management at runtime scale",
+      "Security mechanisms for broker-mediated message routing",
+      "Long-term system brittleness from semantic coupling effects"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Publish–subscribe pattern",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1360730651",
+    "revision": "1360730651",
+    "observedAt": "2026-11-17T10:16:09.322Z",
+    "sourceTimestamp": "2026-06-23T06:51:59Z",
+    "sha256": "37ebc8e9c9dead8752c70749c22d4e5c8a3dffbde5d5ae4eef01c5a01794c248",
+    "excerptSha256": "42d91822894053593b052da7ece0cb7f058ad1be1559d8d470b8ce9f5b02a086",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 14003,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-35a8eb41-8116-4d24-94f6-5194d8f61d23",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3365,
+    "outputTokens": 292
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "45e5c5d3a645fded8d17ad74fde573da7f250363eaf7650069a59794d0100b36",
+  "artifactDigest": "1a372e77584f3aef6ea1398ae1aeab4726bd88ab55be8f625dc7481cdbad352f"
+}
