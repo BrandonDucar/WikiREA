@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T16:17:46.334Z",
+  "updatedAt": "2026-11-17T16:17:52.149Z",
   "sequence": 89,
   "jobs": [
     {
@@ -4013,13 +4013,44 @@
       "topic": "Cellular automaton",
       "day": "2026-11-17",
       "runId": "44124090255",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T16:17:46.334Z",
       "expiresAt": "2026-11-17T16:32:46.334Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Cellular automaton",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386201381",
+        "revision": "1386201381",
+        "observedAt": "2026-11-17T16:17:48.723Z",
+        "sourceTimestamp": "2026-11-17T06:29:45Z",
+        "sha256": "e9bf92338b9f88ff2d01c18131cf36a2bb265af3f6003abc924edad213332874",
+        "excerptSha256": "392ff63305a36d207d7dc10c83bd196ee4624e6b3b6d45715f3ccceac9137cc9",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 71356,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-53c1de60-f970-47d4-adcd-ea4bd308d4d4",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4104,
+        "outputTokens": 414
+      },
+      "packet": "research/packets/research-000089-1770120f58.json",
+      "packetDigest": "41a1b011ae01ef132111b1380d20b75d965d94955efea300fd72d99e91dc9d51",
+      "finishedAt": "2026-11-17T16:17:52.149Z"
     }
   ],
   "discovered": [
@@ -6497,6 +6528,41 @@
       "title": "Best-first search",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000088-cae6952997"
+    },
+    {
+      "title": "A. K. Dewdney",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000089-1770120f58"
+    },
+    {
+      "title": "A New Kind of Science",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000089-1770120f58"
+    },
+    {
+      "title": "Alvy Ray Smith",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000089-1770120f58"
+    },
+    {
+      "title": "Anatol Zhabotinsky",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000089-1770120f58"
+    },
+    {
+      "title": "Andrew Adamatzky",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000089-1770120f58"
+    },
+    {
+      "title": "Artificial life",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000089-1770120f58"
+    },
+    {
+      "title": "Arturo Rosenblueth",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000089-1770120f58"
     }
   ],
   "reviewJobs": [
