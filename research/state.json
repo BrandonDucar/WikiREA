@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T22:14:27.765Z",
+  "updatedAt": "2026-11-17T22:14:32.537Z",
   "sequence": 94,
   "jobs": [
     {
@@ -4242,13 +4242,44 @@
       "topic": "Control loop",
       "day": "2026-11-17",
       "runId": "44188039598",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T22:14:27.765Z",
       "expiresAt": "2026-11-17T22:29:27.765Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Control loop",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1373320705",
+        "revision": "1373320705",
+        "observedAt": "2026-11-17T22:14:29.578Z",
+        "sourceTimestamp": "2026-09-05T08:05:18Z",
+        "sha256": "8e6866974fbb1e7b1bd4aa0881bfd59eef876d59c85e42595b8c2a0e78a834dd",
+        "excerptSha256": "8e6866974fbb1e7b1bd4aa0881bfd59eef876d59c85e42595b8c2a0e78a834dd",
+        "inspectedCharacters": 10892,
+        "totalCharacters": 10892,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c9e68124-56d7-4e83-b15c-2e8cd413f94d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2839,
+        "outputTokens": 416
+      },
+      "packet": "research/packets/research-000094-4e2bfd8f89.json",
+      "packetDigest": "a866c0fc83541aebba564c14e1b19f751cc21591db78a130a317f64397ba32b9",
+      "finishedAt": "2026-11-17T22:14:32.537Z"
     }
   ],
   "discovered": [
@@ -6891,6 +6922,46 @@
       "title": "BiiN",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "ANSI",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
+    },
+    {
+      "title": "Block diagram",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
+    },
+    {
+      "title": "British Standards Institution",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
+    },
+    {
+      "title": "Closed-loop control",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
+    },
+    {
+      "title": "Closed-loop controller",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
+    },
+    {
+      "title": "Control system",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
+    },
+    {
+      "title": "Cruise control",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
+    },
+    {
+      "title": "Distributed control system",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000094-4e2bfd8f89"
     }
   ],
   "reviewJobs": [

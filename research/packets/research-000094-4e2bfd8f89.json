@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000094-4e2bfd8f89",
+  "topic": "Control loop",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A control loop is the fundamental building block of control systems, consisting of a sensor, a controller function, and a final control element that automatically adjusts a measured process variable to match a desired set-point. Two primary types exist: open-loop, where control action is independent of the process output, and closed-loop, where control action depends on feedback comparing the output to the set-point. A closed-loop system uses a feedback loop to reduce deviation between the actual and desired values, enabling dynamic adjustment to disturbances such as changes in road slope or process conditions.",
+    "mechanisms": [
+      {
+        "title": "Open-Loop Control",
+        "explanation": "In open-loop control, the controller's action is independent of the process output. An example is a boiler controlled only by a timer; heat is applied for a constant duration regardless of the building's temperature. Without feedback of the actual temperature, the system cannot compensate for changes, resulting in uncontrolled variation of the process variable.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Closed-Loop (Feedback) Control",
+        "explanation": "In closed-loop control, the controller's action depends on the process output. A sensor monitors the output (e.g., car speed or building temperature), compares it to the reference set-point, and generates an error signal. This error determines the control output (e.g., throttle position) to minimize the deviation. This feedback loop allows the system to dynamically counteract disturbances, such as uphill slope changes, to maintain the desired output.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The specific internal algorithm or transfer function used by the controller beyond the described feedback comparison",
+      "The exact physical implementation details of the final control element's actuation mechanism",
+      "How multiple interacting control loops are coordinated within a single industrial process",
+      "The long-term stability and convergence properties of the feedback system under varying load conditions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Control loop",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373320705",
+    "revision": "1373320705",
+    "observedAt": "2026-11-17T22:14:29.578Z",
+    "sourceTimestamp": "2026-09-05T08:05:18Z",
+    "sha256": "8e6866974fbb1e7b1bd4aa0881bfd59eef876d59c85e42595b8c2a0e78a834dd",
+    "excerptSha256": "8e6866974fbb1e7b1bd4aa0881bfd59eef876d59c85e42595b8c2a0e78a834dd",
+    "inspectedCharacters": 10892,
+    "totalCharacters": 10892,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c9e68124-56d7-4e83-b15c-2e8cd413f94d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2839,
+    "outputTokens": 416
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "4a9131050cb992d4f7efc5ed32f4d546894947a913ee7e0c9c69641f53a9c232",
+  "artifactDigest": "a866c0fc83541aebba564c14e1b19f751cc21591db78a130a317f64397ba32b9"
+}
