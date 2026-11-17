@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T14:16:22.800Z",
-  "sequence": 87,
+  "updatedAt": "2026-11-17T15:15:44.095Z",
+  "sequence": 88,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3957,6 +3957,20 @@
       "packet": "research/packets/research-000087-564644db83.json",
       "packetDigest": "46c58c19113ec29dad4ae76b49d6d8e09b75925b2a90bdeab7ceebd47087f6a3",
       "finishedAt": "2026-11-17T14:16:22.800Z"
+    },
+    {
+      "id": "research-000088-cae6952997",
+      "role": "game-mechanic-researcher",
+      "topic": "Pathfinding",
+      "day": "2026-11-17",
+      "runId": "44112253186",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T15:15:44.095Z",
+      "expiresAt": "2026-11-17T15:30:44.095Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
