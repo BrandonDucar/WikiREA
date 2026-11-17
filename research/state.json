@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T20:15:39.302Z",
-  "sequence": 92,
+  "updatedAt": "2026-11-17T21:14:10.131Z",
+  "sequence": 93,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4190,6 +4190,20 @@
       "packet": "research/packets/research-000092-ae38ab61a5.json",
       "packetDigest": "9c45d6cae9054094866e68a9dd7bd031328a60f0d05d9fc88b7c1744d2d0355a",
       "finishedAt": "2026-11-17T20:15:39.302Z"
+    },
+    {
+      "id": "research-000093-3fcc2d58de",
+      "role": "adversarial-reviewer",
+      "topic": "Capability-based security",
+      "day": "2026-11-17",
+      "runId": "44177630699",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T21:14:10.131Z",
+      "expiresAt": "2026-11-17T21:29:10.131Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
