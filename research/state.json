@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T10:16:13.490Z",
-  "sequence": 84,
+  "updatedAt": "2026-11-17T12:21:05.621Z",
+  "sequence": 85,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3818,6 +3818,20 @@
       "packet": "research/packets/research-000084-e3f4a4ce2e.json",
       "packetDigest": "1a372e77584f3aef6ea1398ae1aeab4726bd88ab55be8f625dc7481cdbad352f",
       "finishedAt": "2026-11-17T10:16:13.490Z"
+    },
+    {
+      "id": "research-000085-91860ed1ac",
+      "role": "source-curator",
+      "topic": "Alteryx",
+      "day": "2026-11-17",
+      "runId": "44082294825",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T12:21:05.621Z",
+      "expiresAt": "2026-11-17T12:36:05.621Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
