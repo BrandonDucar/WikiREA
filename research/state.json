@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T06:24:56.779Z",
-  "sequence": 80,
+  "updatedAt": "2026-11-17T07:16:56.235Z",
+  "sequence": 81,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3630,6 +3630,20 @@
       "packet": "research/packets/research-000080-0033b77269.json",
       "packetDigest": "3d6fec71885af571b216cdfb7d7b7efbaff5b0e9642120ce9f358e471eb59103",
       "finishedAt": "2026-11-17T06:24:56.779Z"
+    },
+    {
+      "id": "research-000081-ee73a932d9",
+      "role": "market-data-researcher",
+      "topic": "Data validation",
+      "day": "2026-11-17",
+      "runId": "44037467940",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T07:16:56.235Z",
+      "expiresAt": "2026-11-17T07:31:56.235Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
