@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T19:25:00.011Z",
-  "sequence": 91,
+  "updatedAt": "2026-11-17T20:15:34.717Z",
+  "sequence": 92,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4145,6 +4145,20 @@
       "packet": "research/packets/research-000091-1fa1cc3535.json",
       "packetDigest": "1a25805209217c5b81a746685a2a55a596c0a18e9e76d39f3bbeffd8c7b1ebb3",
       "finishedAt": "2026-11-17T19:13:45.481Z"
+    },
+    {
+      "id": "research-000092-ae38ab61a5",
+      "role": "music-events",
+      "topic": "Music sequencer",
+      "day": "2026-11-17",
+      "runId": "44167372944",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T20:15:34.717Z",
+      "expiresAt": "2026-11-17T20:30:34.717Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
