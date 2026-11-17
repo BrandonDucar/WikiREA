@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T21:14:10.131Z",
+  "updatedAt": "2026-11-17T21:14:15.246Z",
   "sequence": 93,
   "jobs": [
     {
@@ -4197,13 +4197,44 @@
       "topic": "Capability-based security",
       "day": "2026-11-17",
       "runId": "44177630699",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T21:14:10.131Z",
       "expiresAt": "2026-11-17T21:29:10.131Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Capability-based security",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1378449379",
+        "revision": "1378449379",
+        "observedAt": "2026-11-17T21:14:12.173Z",
+        "sourceTimestamp": "2026-10-04T15:22:34Z",
+        "sha256": "d503b138b1b9df8fce1acfb6d4eff8bb1e8fd992abf39888f0a4b85a18661953",
+        "excerptSha256": "ed55674564babc48a0c167670d4c4fa591894b9f213a92699871132fe357d6ee",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 14891,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-94df0be9-6290-41fa-b69f-5e3f11c26b42",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3797,
+        "outputTokens": 398
+      },
+      "packet": "research/packets/research-000093-3fcc2d58de.json",
+      "packetDigest": "98acc0a1affac02dc95ee7378440c7c5c8fc11deaf636dc979a5ef6b42ab3c91",
+      "finishedAt": "2026-11-17T21:14:15.246Z"
     }
   ],
   "discovered": [
@@ -6806,6 +6837,46 @@
       "title": "Analog electronics",
       "role": "music-events",
       "discoveredFrom": "research-000092-ae38ab61a5"
+    },
+    {
+      "title": "ACM Computing Surveys",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "AS/400",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "Access-control list",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "Access control",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "Access token",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "Ambient authority",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "Amoeba (operating system)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
+    },
+    {
+      "title": "BiiN",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000093-3fcc2d58de"
     }
   ],
   "reviewJobs": [

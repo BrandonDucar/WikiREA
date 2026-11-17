@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000093-3fcc2d58de",
+  "topic": "Capability-based security",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Capability-based security replaces forgeable references like file paths with unforgeable tokens that bind an object reference to specific access rights. In this model, a program must possess a valid capability to interact with an object, and the operating system enforces rights based on the capability's contents rather than ambient authority or access control lists. Capabilities can be shared between processes under OS supervision, preventing the confused deputy problem. While most general-purpose OSes offer superficial resemblance, full support for capability exchange among untrusting entities is rare. Notable systems include Capsicum, Fuchsia, Genode, and Tahoe-LAFS.",
+    "mechanisms": [
+      {
+        "title": "Capability as unforgeable token",
+        "explanation": "A capability is a communicable, unforgeable token of authority that references an object and its associated access rights. Possession of the capability grants the holder the specified rights, eliminating the need for runtime access-control list checks based on ambient authority.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "OS-enforced capability sharing",
+        "explanation": "The operating system maintains capability integrity by storing them in protected kernel memory (e.g., file descriptor tables) and controlling operations such as passing, converting, or deleting them. This prevents forgery and ensures that only legitimate capabilities are used for object access.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How general-purpose operating systems partially resemble capabilities without full support for capability exchange among mutually untrusting entities",
+      "The extent to which hardware support (e.g., capability-based addressing) is required for secure implementation",
+      "Whether orthogonally persistent operating systems are necessary to maintain capability integrity across volatile and nonvolatile storage",
+      "The practical limitations of transferring POSIX capabilities between processes compared to true capability systems"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Capability-based security",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1378449379",
+    "revision": "1378449379",
+    "observedAt": "2026-11-17T21:14:12.173Z",
+    "sourceTimestamp": "2026-10-04T15:22:34Z",
+    "sha256": "d503b138b1b9df8fce1acfb6d4eff8bb1e8fd992abf39888f0a4b85a18661953",
+    "excerptSha256": "ed55674564babc48a0c167670d4c4fa591894b9f213a92699871132fe357d6ee",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 14891,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-94df0be9-6290-41fa-b69f-5e3f11c26b42",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3797,
+    "outputTokens": 398
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "672a7527a64d640942aba5c5b3eda5542c4099960fa3951fbc87866751072a66",
+  "artifactDigest": "98acc0a1affac02dc95ee7378440c7c5c8fc11deaf636dc979a5ef6b42ab3c91"
+}
