@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T18:18:35.031Z",
-  "sequence": 90,
+  "updatedAt": "2026-11-17T19:13:40.535Z",
+  "sequence": 91,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4096,6 +4096,20 @@
       "packet": "research/packets/research-000090-2e103f58c7.json",
       "packetDigest": "8c86283a079a7a0f1500376cb6797f1d0e555cc0d2616f50b75ac99ab2d2fe58",
       "finishedAt": "2026-11-17T18:18:35.031Z"
+    },
+    {
+      "id": "research-000091-1fa1cc3535",
+      "role": "market-data-researcher",
+      "topic": "Stream processing",
+      "day": "2026-11-17",
+      "runId": "44156275628",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T19:13:40.535Z",
+      "expiresAt": "2026-11-17T19:28:40.535Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
