@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000079-2fd46267fc",
+  "topic": "OpenModelica",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "OpenModelica is a free, open-source environment built on the Modelica language for modeling, simulating, and optimizing complex dynamic systems. It is actively developed by the Open Source Modelica Consortium and runs on Linux, Windows, and OS X. The system comprises several tools: the OpenModelica Compiler (OMC) translates Modelica to C code and includes an interpreter; the OpenModelica Connection Editor (OMEdit) provides a graphical interface for model creation and simulation; the OpenModelica Shell (OMShell) offers a command-line interface for interactive evaluation and plotting; and the OpenModelica Notebook (OMNotebook) enables literate programming with integrated Modelica models. Additional interfaces exist for Python (OMPython) and MATLAB (OMMatlab), which communicate with the compiler via CORBA or ZeroMQ. The OpenModelica Development Tooling (MDT) integrates the compiler into the Eclipse IDE.",
+    "mechanisms": [
+      {
+        "title": "OpenModelica Compiler (OMC)",
+        "explanation": "The OMC translates Modelica models into C code using a symbol table of class, function, and variable definitions. It includes an interpreter for interactive use and constant expression evaluation, and generates simulation executables linked with selected numerical ODE or DAE solvers. The compiler itself is written in MetaModelica and is bootstrapped.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "OpenModelica Connection Editor (OMEdit)",
+        "explanation": "OMEdit is a graphical user interface that allows users to create, edit, and simulate Modelica models in both textual and graphical modes. It communicates with the OpenModelica Compiler (OMC) through an interactive API to request model information and generate connection diagrams based on Modelica annotations. The implementation is built using C++ and the Qt library.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact runtime behavior of the bootstrapped MetaModelica compiler",
+      "Internal architecture of the CORBA and ZeroMQ communication layers between interfaces and OMC",
+      "Details of the numerical solver selection and linking process within OMC",
+      "Specific implementation mechanisms of the OMNotebook WYSIWYG literate programming features"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "OpenModelica",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1376308273",
+    "revision": "1376308273",
+    "observedAt": "2026-11-17T04:17:48.528Z",
+    "sourceTimestamp": "2026-09-23T10:21:39Z",
+    "sha256": "204f0af6db48bf4236cf5a305bfecf7dd9a1dca0abbae387358114b5f96c92ae",
+    "excerptSha256": "204f0af6db48bf4236cf5a305bfecf7dd9a1dca0abbae387358114b5f96c92ae",
+    "inspectedCharacters": 6876,
+    "totalCharacters": 6876,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-e14976f6-7bc4-4831-8aa8-8bbd4bcc10ea",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1985,
+    "outputTokens": 481
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "03968ffd02bb16236b303f52b93fc29a3baa83aa471257620bea0f37d4024391",
+  "artifactDigest": "4dc5fbc34f31a09717bc29476190ae230bf9238b63eb0b877ad14f3fc3480729"
+}
