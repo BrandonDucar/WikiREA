@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T03:17:48.790Z",
+  "updatedAt": "2026-11-17T03:17:57.967Z",
   "sequence": 78,
   "jobs": [
     {
@@ -3494,13 +3494,44 @@
       "topic": "Finite-state machine",
       "day": "2026-11-17",
       "runId": "44009176226",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T03:17:48.790Z",
       "expiresAt": "2026-11-17T03:32:48.790Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Finite-state machine",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382244464",
+        "revision": "1382244464",
+        "observedAt": "2026-11-17T03:17:50.585Z",
+        "sourceTimestamp": "2026-10-27T14:47:02Z",
+        "sha256": "fb96d53dde169f98dcf8d3d5dbd97374d8a22c571443e6b1422843e8b6e38134",
+        "excerptSha256": "da573ca30b9708e754e999c091c75da1a40e23f6db39b2e44b803102c1b704da",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 45275,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-abbf8df0-e5d1-4ef7-a3c9-032283a22858",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3888,
+        "outputTokens": 429
+      },
+      "packet": "research/packets/research-000078-38b0e718c3.json",
+      "packetDigest": "9c117bd4ee9760332b8463d4e6e05352bffb2106bf852f6c77bb692bb3255bc0",
+      "finishedAt": "2026-11-17T03:17:57.967Z"
     }
   ],
   "discovered": [
@@ -5105,11 +5136,6 @@
       "discoveredFrom": "research-000064-c6c5b9eab5"
     },
     {
-      "title": "Finite-state machine",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
-    },
-    {
       "title": "Address space layout randomization",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
@@ -5583,6 +5609,46 @@
       "title": "Android (operating system)",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000077-cd12fec18e"
+    },
+    {
+      "title": "Abstract machine",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
+    },
+    {
+      "title": "Abstract state machine",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
+    },
+    {
+      "title": "Addison-Wesley",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
+    },
+    {
+      "title": "Alfred V. Aho",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
+    },
+    {
+      "title": "Algebraic path problem",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
+    },
+    {
+      "title": "Alphabet (computer science)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
+    },
+    {
+      "title": "Alternating finite automaton",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
+    },
+    {
+      "title": "Aperiodic finite state automaton",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000078-38b0e718c3"
     }
   ],
   "reviewJobs": [
