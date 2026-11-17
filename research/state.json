@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T12:21:11.303Z",
-  "sequence": 85,
+  "updatedAt": "2026-11-17T13:16:10.293Z",
+  "sequence": 86,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3863,6 +3863,20 @@
       "packet": "research/packets/research-000085-91860ed1ac.json",
       "packetDigest": "70b00e04a0fffcadaf3693d0e1de7b6bdc5746b9e53a44ff6b330b850b528448",
       "finishedAt": "2026-11-17T12:21:11.303Z"
+    },
+    {
+      "id": "research-000086-074bf12801",
+      "role": "application-tracer",
+      "topic": "0 A.D. (video game)",
+      "day": "2026-11-17",
+      "runId": "44091011071",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T13:16:10.293Z",
+      "expiresAt": "2026-11-17T13:31:10.293Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
