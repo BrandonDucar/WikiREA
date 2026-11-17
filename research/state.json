@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T05:25:10.448Z",
-  "sequence": 79,
+  "updatedAt": "2026-11-17T06:24:50.012Z",
+  "sequence": 80,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3585,6 +3585,20 @@
       "packet": "research/packets/research-000079-2fd46267fc.json",
       "packetDigest": "4dc5fbc34f31a09717bc29476190ae230bf9238b63eb0b877ad14f3fc3480729",
       "finishedAt": "2026-11-17T04:17:51.056Z"
+    },
+    {
+      "id": "research-000080-0033b77269",
+      "role": "hardware-interoperability-scout",
+      "topic": "Inter-Integrated Circuit",
+      "day": "2026-11-17",
+      "runId": "44031003237",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T06:24:50.012Z",
+      "expiresAt": "2026-11-17T06:39:50.012Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
