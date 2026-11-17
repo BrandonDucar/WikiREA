@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000067-a5933051f2-review-8a640bd3d9",
+  "parentJobId": "research-000067-a5933051f2",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "1c23771fdb1e5d2d03ae48875b6dd21a7b9b45eb3e90290b828365893b71da88",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Virtual machine",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385621533",
+    "revision": "1385621533",
+    "observedAt": "2026-11-16T14:33:02.711Z",
+    "sourceTimestamp": "2026-11-14T07:58:49Z",
+    "sha256": "e1d1c02680b01be4bf367a7d3e0eddc8dba1990ad306d5edacb25121288e21b9",
+    "excerptSha256": "d83db2d897a6bef09fe70214fe54b3ba7537886c8a03c0e31007c45bd1d5bc2e",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 35063,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of system and process virtual machines, hypervisor role, hardware-assisted virtualization, and emulation capabilities",
+      "Mechanisms correctly capture system VMs providing full OS execution via hypervisor with hardware assistance, and process VMs as platform-independent runtime environments using interpreters/JIT",
+      "Unknowns appropriately identify specific technical details not covered in source: hypervisor isolation without hardware assist, KSM exact conditions, JIT universality across process VMs, QEMU instruction translation specifics",
+      "No unsupported mechanisms or invented execution details present in draft",
+      "All claims trace to source content with proper qualifiers like 'often' for hardware-assisted virtualization"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-bb1553a7-88bd-42ce-b7ac-d351b17a5e36",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3815,
+    "outputTokens": 148
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
