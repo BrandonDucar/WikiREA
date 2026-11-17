@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T14:16:09.228Z",
+  "updatedAt": "2026-11-17T14:16:22.800Z",
   "sequence": 87,
   "jobs": [
     {
@@ -3919,13 +3919,44 @@
       "topic": "Event loop",
       "day": "2026-11-17",
       "runId": "44101222050",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T14:16:09.228Z",
       "expiresAt": "2026-11-17T14:31:09.228Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Event loop",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379787051",
+        "revision": "1379787051",
+        "observedAt": "2026-11-17T14:16:11.114Z",
+        "sourceTimestamp": "2026-10-11T23:14:39Z",
+        "sha256": "191c254a05b50b179becaff2e437f6a7449235e4fae80ccb3eaeecce2c37db6f",
+        "excerptSha256": "6c63d819d65add3d9e5fa5b7c085084e66a5590051cd732222637551c6879e0f",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 14056,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-bf2b5c9c-0e18-4b6a-b9ae-049c9fe543d0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3545,
+        "outputTokens": 343
+      },
+      "packet": "research/packets/research-000087-564644db83.json",
+      "packetDigest": "46c58c19113ec29dad4ae76b49d6d8e09b75925b2a90bdeab7ceebd47087f6a3",
+      "finishedAt": "2026-11-17T14:16:22.800Z"
     }
   ],
   "discovered": [
@@ -6328,6 +6359,46 @@
       "title": "Crowdfunding",
       "role": "application-tracer",
       "discoveredFrom": "research-000086-074bf12801"
+    },
+    {
+      "title": "Algorithm",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "Application software",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "Asynchronous I/O",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "Berkeley sockets",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "Blocking (computing)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "CPU bound",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "Cocoa (API)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "Command-line interface",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000087-564644db83"
     }
   ],
   "reviewJobs": [
