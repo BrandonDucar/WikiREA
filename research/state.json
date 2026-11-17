@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T00:36:10.017Z",
+  "updatedAt": "2026-11-17T00:36:13.288Z",
   "sequence": 75,
   "jobs": [
     {
@@ -3355,13 +3355,44 @@
       "topic": "OpenStreetMap",
       "day": "2026-11-17",
       "runId": "43988915479",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T00:36:10.017Z",
       "expiresAt": "2026-11-17T00:51:10.017Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "OpenStreetMap",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383785674",
+        "revision": "1383785674",
+        "observedAt": "2026-11-17T00:36:11.505Z",
+        "sourceTimestamp": "2026-11-04T21:24:01Z",
+        "sha256": "a4780d1112756b32ba572418a3218807860ae9a33a8dbccc0cb1e01347b6da61",
+        "excerptSha256": "6b540cab342e128a344cc63c42dc803053ce32ee56310263c948002513179162",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 114020,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-a98392e6-9d37-4567-bb55-84ecb21fc7e2",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4226,
+        "outputTokens": 360
+      },
+      "packet": "research/packets/research-000075-35dfb2a4a7.json",
+      "packetDigest": "86fb59a8dd45823dc16517e61889e0b105e87065839ed63691878ddb5fcfe025",
+      "finishedAt": "2026-11-17T00:36:13.288Z"
     }
   ],
   "discovered": [
@@ -5334,6 +5365,46 @@
       "title": "Geographic routing",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000074-403d103bb4"
+    },
+    {
+      "title": "2010 Haiti earthquake",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "2016 Ecuador earthquake",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "2016 Kumamoto earthquakes",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "AOL",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "Accenture",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "Active Asteroids (citizen science project)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "ActivityPub",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "Address geocoding",
+      "role": "source-curator",
+      "discoveredFrom": "research-000075-35dfb2a4a7"
     }
   ],
   "reviewJobs": [
