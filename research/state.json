@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T06:24:50.012Z",
+  "updatedAt": "2026-11-17T06:24:56.779Z",
   "sequence": 80,
   "jobs": [
     {
@@ -3592,13 +3592,44 @@
       "topic": "Inter-Integrated Circuit",
       "day": "2026-11-17",
       "runId": "44031003237",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T06:24:50.012Z",
       "expiresAt": "2026-11-17T06:39:50.012Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "I2C",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384185777",
+        "revision": "1384185777",
+        "observedAt": "2026-11-17T06:24:52.249Z",
+        "sourceTimestamp": "2026-11-07T01:28:05Z",
+        "sha256": "f265c7b8da4d87327ea73659875f5ebb173edee2817196d4e521a4218fec4914",
+        "excerptSha256": "9c79b442cd12f4f50d22fab7a068f7ba4e5771f73dc7083a7d1e3137267c2216",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 75633,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-83c5561d-a977-4a3e-bd04-dd264b1ab431",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4047,
+        "outputTokens": 586
+      },
+      "packet": "research/packets/research-000080-0033b77269.json",
+      "packetDigest": "3d6fec71885af571b216cdfb7d7b7efbaff5b0e9642120ce9f358e471eb59103",
+      "finishedAt": "2026-11-17T06:24:56.779Z"
     }
   ],
   "discovered": [
@@ -5756,6 +5787,31 @@
       "title": "Dymola",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000079-2fd46267fc"
+    },
+    {
+      "title": "6P6C",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000080-0033b77269"
+    },
+    {
+      "title": "8P8C",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000080-0033b77269"
+    },
+    {
+      "title": "AES3",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000080-0033b77269"
+    },
+    {
+      "title": "APIs",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000080-0033b77269"
+    },
+    {
+      "title": "ASIC",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000080-0033b77269"
     }
   ],
   "reviewJobs": [
