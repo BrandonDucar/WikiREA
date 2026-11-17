@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T15:15:44.095Z",
+  "updatedAt": "2026-11-17T15:15:51.877Z",
   "sequence": 88,
   "jobs": [
     {
@@ -3964,13 +3964,44 @@
       "topic": "Pathfinding",
       "day": "2026-11-17",
       "runId": "44112253186",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T15:15:44.095Z",
       "expiresAt": "2026-11-17T15:30:44.095Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Pathfinding",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381469103",
+        "revision": "1381469103",
+        "observedAt": "2026-11-17T15:15:46.066Z",
+        "sourceTimestamp": "2026-10-22T18:44:53Z",
+        "sha256": "a56cc598b2054a03c177518b685e2068bdfad04b551eb229b9bc736f2eba10fd",
+        "excerptSha256": "3666e4009e1d5a9ab8e09769bf4f0c47d1999d6736eaf33d242eeedb5c04c160",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 16047,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b04e7eaa-f59b-4861-a2e9-8561d287f03c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3775,
+        "outputTokens": 445
+      },
+      "packet": "research/packets/research-000088-cae6952997.json",
+      "packetDigest": "4b8cbc66f3aa805bb961f3b49ced4c56c314d60b9a451791ec1df591a3f15392",
+      "finishedAt": "2026-11-17T15:15:51.877Z"
     }
   ],
   "discovered": [
@@ -6413,6 +6444,41 @@
       "title": "Command-line interface",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000087-564644db83"
+    },
+    {
+      "title": "A* search algorithm",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000088-cae6952997"
+    },
+    {
+      "title": "Alpha–beta pruning",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000088-cae6952997"
+    },
+    {
+      "title": "Any-angle path planning",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000088-cae6952997"
+    },
+    {
+      "title": "B*",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000088-cae6952997"
+    },
+    {
+      "title": "Beam search",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000088-cae6952997"
+    },
+    {
+      "title": "Bellman–Ford algorithm",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000088-cae6952997"
+    },
+    {
+      "title": "Best-first search",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000088-cae6952997"
     }
   ],
   "reviewJobs": [
