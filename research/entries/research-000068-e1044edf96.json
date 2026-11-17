@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000068-e1044edf96",
+  "title": "Entity component system",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-17T09:26:51.712Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Entity component system (ECS) is a software architectural pattern used primarily in video game development that represents game objects through composition rather than inheritance. Entities are identified by unique IDs, components hold data for specific aspects, and systems process entities matching required component sets. ECS combines established ideas from programming language theory, enabling runtime behavior changes by modifying components. The pattern is often combined with data-oriented design techniques that store component data contiguously in memory to improve cache efficiency and parallel processing. While originating in game development, ECS has been applied to robotics simulators and formalized in recent academic research.",
+  "mechanisms": [
+    {
+      "title": "Composition over inheritance",
+      "explanation": "ECS avoids deep class hierarchies by defining entities through the components attached to them. Systems operate globally on entities possessing the required components, allowing flexible runtime behavior changes by adding, removing, or modifying components.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Data-oriented storage and query processing",
+      "explanation": "ECS frameworks commonly store component data contiguously in physical memory (structures of arrays) to enable efficient memory access when systems iterate over many entities. Systems query for entities matching specified component requirements rather than directly owning data, operating over subsets selected by component-based filters.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Precise runtime overhead of component addition/removal operations",
+    "Details of archetype-based organization in specific ECS frameworks",
+    "Formal verification guarantees for concurrent system execution",
+    "Complete mapping of ECS patterns to non-game domains like robotics"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Entity component system",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383317723",
+      "revision": "1383317723",
+      "observedAt": "2026-11-16T15:23:53.814Z",
+      "sourceTimestamp": "2026-11-02T02:19:46Z",
+      "sha256": "ee295d86c916d4ae65a5416bafadc7d54df8f7bc2aef7ccb5a62d279432de59b",
+      "excerptSha256": "b92ab04211cf7ed2296ad10c5cad6fa65a9cefa279ffb707f6e601c2eefa391b",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 19107,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on ECS definition, core concepts (entities, components, systems), and characteristics",
+      "Mechanisms correctly capture composition over inheritance and data-oriented storage/query processing as described in source",
+      "Unknowns appropriately identify gaps not covered in source (runtime overhead specifics, archetype details, formal verification, non-game domain mapping)",
+      "No unsupported mechanisms or invented execution details present",
+      "Source qualifiers like 'often', 'commonly', 'typically' preserved in draft"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-9f949d3b-56af-4ce3-bbd5-c1f3c50885cc",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4100,
+      "outputTokens": 355
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-18b6ba3f-0ecd-4a64-b5f5-19df752e0ef6",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4421,
+      "outputTokens": 111
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "5a71a38cbb4e3c9f07a79dbd6989eaae739df6ecb70068bd6f419bd0a01f9076",
+    "artifactDigest": "49b5b16dc3b07b4f5f50e044fb8a9777c67903844923dfbc98f84c53383dc1f4",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000068-e1044edf96.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

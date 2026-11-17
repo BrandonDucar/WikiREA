@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000068-e1044edf96-review-8a640bd3d9",
+  "parentJobId": "research-000068-e1044edf96",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "49b5b16dc3b07b4f5f50e044fb8a9777c67903844923dfbc98f84c53383dc1f4",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Entity component system",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383317723",
+    "revision": "1383317723",
+    "observedAt": "2026-11-16T15:23:53.814Z",
+    "sourceTimestamp": "2026-11-02T02:19:46Z",
+    "sha256": "ee295d86c916d4ae65a5416bafadc7d54df8f7bc2aef7ccb5a62d279432de59b",
+    "excerptSha256": "b92ab04211cf7ed2296ad10c5cad6fa65a9cefa279ffb707f6e601c2eefa391b",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 19107,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on ECS definition, core concepts (entities, components, systems), and characteristics",
+      "Mechanisms correctly capture composition over inheritance and data-oriented storage/query processing as described in source",
+      "Unknowns appropriately identify gaps not covered in source (runtime overhead specifics, archetype details, formal verification, non-game domain mapping)",
+      "No unsupported mechanisms or invented execution details present",
+      "Source qualifiers like 'often', 'commonly', 'typically' preserved in draft"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-18b6ba3f-0ecd-4a64-b5f5-19df752e0ef6",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4421,
+    "outputTokens": 111
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
