@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T01:16:34.931Z",
+  "updatedAt": "2026-11-17T01:16:38.446Z",
   "sequence": 76,
   "jobs": [
     {
@@ -3400,13 +3400,44 @@
       "topic": "GIMP",
       "day": "2026-11-17",
       "runId": "43994308989",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T01:16:34.931Z",
       "expiresAt": "2026-11-17T01:31:34.931Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "GIMP",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385976184",
+        "revision": "1385976184",
+        "observedAt": "2026-11-17T01:16:36.826Z",
+        "sourceTimestamp": "2026-11-16T05:48:05Z",
+        "sha256": "dde8245270eb890c352774106de444b236121359c6c51ca10684bef6a6635f25",
+        "excerptSha256": "8272cff8e49512550e68681eaef805fb2e74570ead9249fb24d220649b473b37",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 56037,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-913882fa-7c49-47f1-8cdc-a2b73ba5e59d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4640,
+        "outputTokens": 314
+      },
+      "packet": "research/packets/research-000076-83a6537129.json",
+      "packetDigest": "c550487752f19f7c80ef3c70d5053bc3cd2250e3be16266d08b63b123672ae82",
+      "finishedAt": "2026-11-17T01:16:38.446Z"
     }
   ],
   "discovered": [
@@ -5419,6 +5450,41 @@
       "title": "Address geocoding",
       "role": "source-curator",
       "discoveredFrom": "research-000075-35dfb2a4a7"
+    },
+    {
+      "title": "ACDSee",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000076-83a6537129"
+    },
+    {
+      "title": "AMD",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000076-83a6537129"
+    },
+    {
+      "title": "Ability Office",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000076-83a6537129"
+    },
+    {
+      "title": "Academic Free License",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000076-83a6537129"
+    },
+    {
+      "title": "Accessibility Toolkit",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000076-83a6537129"
+    },
+    {
+      "title": "Acorn (software)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000076-83a6537129"
+    },
+    {
+      "title": "Adobe Photoshop",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000076-83a6537129"
     }
   ],
   "reviewJobs": [
