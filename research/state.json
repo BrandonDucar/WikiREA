@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T02:20:40.224Z",
+  "updatedAt": "2026-11-17T02:20:44.177Z",
   "sequence": 77,
   "jobs": [
     {
@@ -3449,13 +3449,44 @@
       "topic": "V8 (JavaScript engine)",
       "day": "2026-11-17",
       "runId": "44002259130",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T02:20:40.224Z",
       "expiresAt": "2026-11-17T02:35:40.224Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "V8 (JavaScript engine)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379042678",
+        "revision": "1379042678",
+        "observedAt": "2026-11-17T02:20:42.085Z",
+        "sourceTimestamp": "2026-10-07T15:38:27Z",
+        "sha256": "5b8a56b372bbfc36555d4e81f4951291772d9cfa3490099dcee1c8a7a79ef899",
+        "excerptSha256": "5b8a56b372bbfc36555d4e81f4951291772d9cfa3490099dcee1c8a7a79ef899",
+        "inspectedCharacters": 12978,
+        "totalCharacters": 12978,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-258b10bd-f81e-47c5-9936-f3aa24470d0e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4139,
+        "outputTokens": 377
+      },
+      "packet": "research/packets/research-000077-cd12fec18e.json",
+      "packetDigest": "60b81cd0ffc0d6a451cd7c6ff59f1d4557f1a7b2d061bc3260702d2fef4f028c",
+      "finishedAt": "2026-11-17T02:20:44.177Z"
     }
   ],
   "discovered": [
@@ -5503,6 +5534,41 @@
       "title": "Adobe Photoshop",
       "role": "application-tracer",
       "discoveredFrom": "research-000076-83a6537129"
+    },
+    {
+      "title": "32-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000077-cd12fec18e"
+    },
+    {
+      "title": "AArch64",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000077-cd12fec18e"
+    },
+    {
+      "title": "ARM architecture",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000077-cd12fec18e"
+    },
+    {
+      "title": "Abstract syntax tree",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000077-cd12fec18e"
+    },
+    {
+      "title": "Accelerated Mobile Pages",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000077-cd12fec18e"
+    },
+    {
+      "title": "ActionScript",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000077-cd12fec18e"
+    },
+    {
+      "title": "Android (operating system)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000077-cd12fec18e"
     }
   ],
   "reviewJobs": [
