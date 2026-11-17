@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T03:27:30.051Z",
-  "sequence": 78,
+  "updatedAt": "2026-11-17T04:17:46.466Z",
+  "sequence": 79,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3536,6 +3536,20 @@
       "packet": "research/packets/research-000078-38b0e718c3.json",
       "packetDigest": "9c117bd4ee9760332b8463d4e6e05352bffb2106bf852f6c77bb692bb3255bc0",
       "finishedAt": "2026-11-17T03:17:57.967Z"
+    },
+    {
+      "id": "research-000079-2fd46267fc",
+      "role": "simulation-researcher",
+      "topic": "OpenModelica",
+      "day": "2026-11-17",
+      "runId": "44016169571",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T04:17:46.466Z",
+      "expiresAt": "2026-11-17T04:32:46.466Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
