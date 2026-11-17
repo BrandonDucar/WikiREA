@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000072-2f715e698c-review-8a640bd3d9",
+  "parentJobId": "research-000072-2f715e698c",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "e24e8b35d94ea0ddb5d97322cbded71d2b13a17d7a8b3910a2d0343bdd633489",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Audio plug-in",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1362208268",
+    "revision": "1362208268",
+    "observedAt": "2026-11-16T20:14:52.752Z",
+    "sourceTimestamp": "2026-07-02T14:33:08Z",
+    "sha256": "3ef6807d1399130bcd2ee56daddbba58ea34ea53ca80458e97672966a899f01b",
+    "excerptSha256": "3ef6807d1399130bcd2ee56daddbba58ea34ea53ca80458e97672966a899f01b",
+    "inspectedCharacters": 7423,
+    "totalCharacters": 7423,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on plug-in definition, categories, and host communication",
+      "Mechanisms correctly describe GUI parameter control and API-driven host communication with proper source attribution",
+      "Unknowns appropriately identify limitations in source regarding internal algorithms and proprietary format details",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'usually' preserved from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-bcf5d964-20bb-40bf-9a0b-c166caf9b005",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2780,
+    "outputTokens": 90
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
