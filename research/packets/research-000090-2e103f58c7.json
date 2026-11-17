@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000090-2e103f58c7",
+  "topic": "Modbus",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Modbus is an openly published, royalty-free industrial fieldbus protocol originally designed for PLCs. It uses serial lines, Ethernet, or the Internet protocol suite as transport layers to connect multiple devices on shared cables or networks. The protocol structures communication into client-server transactions using Protocol Data Units (PDUs) and Application Data Units (ADUs). Data is organized into four primary tables—discrete inputs, coils, input registers, and holding registers—each holding 65536 addressable items. Function codes specify operations like reading coils or registers, with responses including data or exception codes. The protocol supports big-endian byte ordering and defines exception handling for error conditions.",
+    "mechanisms": [
+      {
+        "title": "Client-Server Transaction Structure",
+        "explanation": "A Modbus transaction begins when a client initiates a request PDU containing a function code and data. The server parses the function code and address, performs the requested action, and returns a response PDU with function code and data, or an exception code if errors occur. The server echoes the client's function code in successful responses.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Data Model Tables and Addressing",
+        "explanation": "Modbus organizes data into four primary tables: discrete inputs (read-only 1-bit values), coils (read-write 1-bit values), input registers (read-only 16-bit words), and holding registers (read-write 16-bit words). Each table supports 65536 addressable items. Function codes map to specific table operations, such as reading coils (function 01) or holding registers (function 03). Addresses are big-endian, with the most significant byte transmitted first.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Proprietary modem and gateway designs for network integration",
+      "Wireless communication implementations beyond documented scope",
+      "Exact error handling behavior for all function code variants",
+      "Long-term interoperability guarantees across device manufacturers"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Modbus",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1352474681",
+    "revision": "1352474681",
+    "observedAt": "2026-11-17T18:18:31.198Z",
+    "sourceTimestamp": "2026-05-04T11:57:02Z",
+    "sha256": "1323781717db3b5232cf72433896e183f33629e659a4c2df883fa1a859d19201",
+    "excerptSha256": "29641f44505787070267d4893ab008c341cf50e11f3499703d930d8ff23a61e8",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39502,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-5faaf4db-6d22-4798-8b14-78e4f0dbdbe8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4315,
+    "outputTokens": 442
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1fee4b04408b452e25e9568ea16faca0b84195dd599b77f950b9cbf593b2a910",
+  "artifactDigest": "8c86283a079a7a0f1500376cb6797f1d0e555cc0d2616f50b75ac99ab2d2fe58"
+}

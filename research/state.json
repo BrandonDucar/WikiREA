@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T18:18:28.946Z",
+  "updatedAt": "2026-11-17T18:18:35.031Z",
   "sequence": 90,
   "jobs": [
     {
@@ -4058,13 +4058,44 @@
       "topic": "Modbus",
       "day": "2026-11-17",
       "runId": "44146395486",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T18:18:28.946Z",
       "expiresAt": "2026-11-17T18:33:28.946Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Modbus",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1352474681",
+        "revision": "1352474681",
+        "observedAt": "2026-11-17T18:18:31.198Z",
+        "sourceTimestamp": "2026-05-04T11:57:02Z",
+        "sha256": "1323781717db3b5232cf72433896e183f33629e659a4c2df883fa1a859d19201",
+        "excerptSha256": "29641f44505787070267d4893ab008c341cf50e11f3499703d930d8ff23a61e8",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 39502,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5faaf4db-6d22-4798-8b14-78e4f0dbdbe8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4315,
+        "outputTokens": 442
+      },
+      "packet": "research/packets/research-000090-2e103f58c7.json",
+      "packetDigest": "8c86283a079a7a0f1500376cb6797f1d0e555cc0d2616f50b75ac99ab2d2fe58",
+      "finishedAt": "2026-11-17T18:18:35.031Z"
     }
   ],
   "discovered": [
@@ -6577,6 +6608,26 @@
       "title": "Arturo Rosenblueth",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000089-1770120f58"
+    },
+    {
+      "title": "ARINC 429",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000090-2e103f58c7"
+    },
+    {
+      "title": "AS-Interface",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000090-2e103f58c7"
+    },
+    {
+      "title": "ASCII",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000090-2e103f58c7"
+    },
+    {
+      "title": "Accelerated Graphics Port",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000090-2e103f58c7"
     }
   ],
   "reviewJobs": [
