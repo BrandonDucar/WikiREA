@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-16T22:14:01.122Z",
-  "sequence": 74,
+  "updatedAt": "2026-11-17T00:36:10.017Z",
+  "sequence": 75,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3348,6 +3348,20 @@
       "packet": "research/packets/research-000074-403d103bb4.json",
       "packetDigest": "3cde46261993d4a4c995f0fc841030d3a11851ba0aced2ff76f669755b0ecca1",
       "finishedAt": "2026-11-16T22:14:01.122Z"
+    },
+    {
+      "id": "research-000075-35dfb2a4a7",
+      "role": "source-curator",
+      "topic": "OpenStreetMap",
+      "day": "2026-11-17",
+      "runId": "43988915479",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T00:36:10.017Z",
+      "expiresAt": "2026-11-17T00:51:10.017Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
