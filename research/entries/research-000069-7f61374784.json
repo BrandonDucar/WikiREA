@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000069-7f61374784",
+  "title": "Monte Carlo method",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-17T13:25:25.241Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Monte Carlo methods use repeated random sampling to obtain numerical results for deterministic problems. Originating from Stanislaw Ulam's work at Los Alamos, the approach defines an input domain, generates random samples from a probability distribution, runs deterministic computations on each sample, and aggregates the results. The technique is widely applied across science and engineering to solve problems with significant uncertainty, though its accuracy depends on the quality of random number generators and the number of samples used.",
+  "mechanisms": [
+    {
+      "title": "Random Sampling",
+      "explanation": "The algorithm generates random inputs from a specified probability distribution over the defined domain. These samples represent possible scenarios for the problem being solved.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Result Aggregation",
+      "explanation": "After running deterministic computations on each random sample, the results are aggregated (typically by averaging or counting) to produce the final numerical estimate. The accuracy improves with the number of samples due to the law of large numbers.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The specific quality and statistical properties of random number generators used in implementation",
+    "The exact computational cost required to achieve a desired level of accuracy for a given problem",
+    "How the curse of dimensionality specifically affects convergence rates in high-dimensional spaces",
+    "The verification and validation procedures needed to confirm result reliability in specific applications"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Monte Carlo method",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383468536",
+      "revision": "1383468536",
+      "observedAt": "2026-11-16T16:17:08.877Z",
+      "sourceTimestamp": "2026-11-02T21:15:36Z",
+      "sha256": "13f9807742a186a0de235da30bafea16123b4b0430c1d10f6e80b24df3dfe774",
+      "excerptSha256": "be321edfbdb1b3f4c2c1368720e4a601eeaa9e492e9e8d79f57e366b5ec6782a",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 96533,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source description of Monte Carlo methods using random sampling for deterministic problems",
+      "Mechanisms correctly capture the two core steps: random sampling from probability distribution and result aggregation via law of large numbers",
+      "Unknowns appropriately identify implementation details not specified in source (RNG quality, computational cost, curse of dimensionality effects, validation procedures)",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves appropriate qualifiers like 'typically' and 'widely applied' without overstating certainty"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-a7e06975-8f27-45b4-887c-1f2caa64c2ba",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4127,
+      "outputTokens": 308
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-1217bc92-63af-41be-8b5d-d79fa327be48",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4411,
+      "outputTokens": 114
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "28655423ae10f62fbb68f3a904fca0ad3b3b0279c9c78de6b860411cb0c2e676",
+    "artifactDigest": "dac54100d2c94dcf2855ab18dbbbf59da5eedece8cd06a179a8f2c7f335e47be",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000069-7f61374784.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

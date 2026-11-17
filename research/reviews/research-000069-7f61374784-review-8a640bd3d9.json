@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000069-7f61374784-review-8a640bd3d9",
+  "parentJobId": "research-000069-7f61374784",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "dac54100d2c94dcf2855ab18dbbbf59da5eedece8cd06a179a8f2c7f335e47be",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Monte Carlo method",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383468536",
+    "revision": "1383468536",
+    "observedAt": "2026-11-16T16:17:08.877Z",
+    "sourceTimestamp": "2026-11-02T21:15:36Z",
+    "sha256": "13f9807742a186a0de235da30bafea16123b4b0430c1d10f6e80b24df3dfe774",
+    "excerptSha256": "be321edfbdb1b3f4c2c1368720e4a601eeaa9e492e9e8d79f57e366b5ec6782a",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 96533,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source description of Monte Carlo methods using random sampling for deterministic problems",
+      "Mechanisms correctly capture the two core steps: random sampling from probability distribution and result aggregation via law of large numbers",
+      "Unknowns appropriately identify implementation details not specified in source (RNG quality, computational cost, curse of dimensionality effects, validation procedures)",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves appropriate qualifiers like 'typically' and 'widely applied' without overstating certainty"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1217bc92-63af-41be-8b5d-d79fa327be48",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4411,
+    "outputTokens": 114
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
