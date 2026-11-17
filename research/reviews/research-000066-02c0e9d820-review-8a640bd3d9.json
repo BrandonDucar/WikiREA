@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000066-02c0e9d820-review-8a640bd3d9",
+  "parentJobId": "research-000066-02c0e9d820",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "ff6a67e72f89a5f0daa9e9ae97f4122a7c5916d1ab36583124697709dab1dee2",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Firefox",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385886514",
+    "revision": "1385886514",
+    "observedAt": "2026-11-16T13:34:55.437Z",
+    "sourceTimestamp": "2026-11-15T20:19:21Z",
+    "sha256": "633120b7ba00b2fba9a58ec243b7550b22cb2dc475b8d18898de7dac5228aad9",
+    "excerptSha256": "5c6b61ececaa178ed0759d3f292373b8ebdea220186611e682d4b26cd3be88a6",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 209903,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Firefox's development, engines, features, and platform availability",
+      "Mechanisms correctly identify Gecko rendering engine and Quantum parallelism with proper source attribution",
+      "Unknowns appropriately distinguish implementation details not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers and accurately represents source claims"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-3c797fd4-3f6a-4111-b74d-6004578803c1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5008,
+    "outputTokens": 84
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

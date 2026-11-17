@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000066-02c0e9d820",
+  "title": "Firefox",
+  "role": "application-tracer",
+  "createdAt": "2026-11-17T05:25:10.447Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Firefox is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. It uses the Gecko rendering engine to display web pages and incorporates Quantum technology to promote parallelism and a more intuitive user interface. The browser features tabbed browsing, full-screen mode, spell checking, incremental search, smart bookmarks, drag-and-drop downloading, a download manager, user profile management, and private browsing. It is available across Windows, macOS, Linux, Android, and iOS platforms.",
+  "mechanisms": [
+    {
+      "title": "Rendering Engine",
+      "explanation": "Firefox uses the Gecko rendering engine to display web pages, which implements current and anticipated web standards.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Quantum Parallelism",
+      "explanation": "Firefox incorporates Quantum technology to promote parallelism and a more intuitive user interface.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact implementation details of Gecko's internal processing pipeline",
+    "Specific mechanisms of Quantum's parallel computing integration",
+    "Internal architecture of SpiderMonkey JavaScript engine",
+    "Platform-specific adaptations for unofficial ports on Unix systems"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Firefox",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385886514",
+      "revision": "1385886514",
+      "observedAt": "2026-11-16T13:34:55.437Z",
+      "sourceTimestamp": "2026-11-15T20:19:21Z",
+      "sha256": "633120b7ba00b2fba9a58ec243b7550b22cb2dc475b8d18898de7dac5228aad9",
+      "excerptSha256": "5c6b61ececaa178ed0759d3f292373b8ebdea220186611e682d4b26cd3be88a6",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 209903,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Firefox's development, engines, features, and platform availability",
+      "Mechanisms correctly identify Gecko rendering engine and Quantum parallelism with proper source attribution",
+      "Unknowns appropriately distinguish implementation details not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers and accurately represents source claims"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-1e318cb8-29e1-499e-8e3d-ed8919270f9f",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4783,
+      "outputTokens": 272
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-3c797fd4-3f6a-4111-b74d-6004578803c1",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5008,
+      "outputTokens": 84
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "4ed2a4eff97650ed5838d1f81bd50cffa96cf1693bf053a2e0ce16374722f6de",
+    "artifactDigest": "ff6a67e72f89a5f0daa9e9ae97f4122a7c5916d1ab36583124697709dab1dee2",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000066-02c0e9d820.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
