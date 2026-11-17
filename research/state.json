@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T15:25:15.836Z",
-  "sequence": 88,
+  "updatedAt": "2026-11-17T16:17:46.334Z",
+  "sequence": 89,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4006,6 +4006,20 @@
       "packet": "research/packets/research-000088-cae6952997.json",
       "packetDigest": "4b8cbc66f3aa805bb961f3b49ced4c56c314d60b9a451791ec1df591a3f15392",
       "finishedAt": "2026-11-17T15:15:51.877Z"
+    },
+    {
+      "id": "research-000089-1770120f58",
+      "role": "simulation-researcher",
+      "topic": "Cellular automaton",
+      "day": "2026-11-17",
+      "runId": "44124090255",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T16:17:46.334Z",
+      "expiresAt": "2026-11-17T16:32:46.334Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
