@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T08:19:25.501Z",
+  "updatedAt": "2026-11-17T08:19:29.963Z",
   "sequence": 82,
   "jobs": [
     {
@@ -3686,13 +3686,44 @@
       "topic": "JACK Audio Connection Kit",
       "day": "2026-11-17",
       "runId": "44045724760",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-17T08:19:25.501Z",
       "expiresAt": "2026-11-17T08:34:25.501Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "JACK Audio Connection Kit",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1361802181",
+        "revision": "1361802181",
+        "observedAt": "2026-11-17T08:19:27.965Z",
+        "sourceTimestamp": "2026-06-30T04:49:48Z",
+        "sha256": "8422b6a471467f4b0aa9b382a1f2b4e58e119f7358b8f048cc18f46507299415",
+        "excerptSha256": "8422b6a471467f4b0aa9b382a1f2b4e58e119f7358b8f048cc18f46507299415",
+        "inspectedCharacters": 8600,
+        "totalCharacters": 8600,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-62ad49c2-8ea4-4a5e-aef3-f2dbfc664400",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2841,
+        "outputTokens": 343
+      },
+      "packet": "research/packets/research-000082-3295e49fa9.json",
+      "packetDigest": "41c453ecf9d6910eed0c80014c1b80f936f786427c4cd527848cc3145c0d31ee",
+      "finishedAt": "2026-11-17T08:19:29.963Z"
     }
   ],
   "discovered": [
@@ -5915,6 +5946,46 @@
       "title": "Code (metadata)",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000081-ee73a932d9"
+    },
+    {
+      "title": "ALSA (Linux)",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
+    },
+    {
+      "title": "Application programming interface",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
+    },
+    {
+      "title": "Audio Stream Input/Output",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
+    },
+    {
+      "title": "BSD",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
+    },
+    {
+      "title": "Backward compatibility",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
+    },
+    {
+      "title": "C++",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
+    },
+    {
+      "title": "C (programming language)",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
+    },
+    {
+      "title": "Comparison of free software for audio",
+      "role": "music-events",
+      "discoveredFrom": "research-000082-3295e49fa9"
     }
   ],
   "reviewJobs": [

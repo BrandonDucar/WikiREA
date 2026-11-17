@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000082-3295e49fa9",
+  "topic": "JACK Audio Connection Kit",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "JACK Audio Connection Kit is a professional sound server API and daemon pair providing real-time, low-latency connections for audio and MIDI data between applications on Unix-like systems. It serves as the de facto standard for professional audio software on Linux since 2002. Two implementations exist: jack1 in plain C and jack2 in C++ with multi-processor scalability and cross-platform support. JACK can use various hardware back-ends and provides a backwards-compatible API layer for PipeWire. Its low-latency performance drove real-time kernel optimizations in the Linux 2.6 series.",
+    "mechanisms": [
+      {
+        "title": "Real-time audio and MIDI routing",
+        "explanation": "JACK functions as an API and daemon pair that establishes real-time, low-latency connections for audio and MIDI data between applications, operating as a professional sound server.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Scheduling and kernel optimization",
+        "explanation": "JACK's low-latency scheduling requirements were a driving force behind real-time optimization efforts for the Linux kernel 2.6 series, including the -rt branch and PREEMPT_RT patch to improve audio performance.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal architecture of jack2 daemon",
+      "Detailed mechanism of multi-processor scalability implementation",
+      "Specifics of hardware backend integration with ALSA/PortAudio/CoreAudio",
+      "Complete list of operating system specific implementation details"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "JACK Audio Connection Kit",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1361802181",
+    "revision": "1361802181",
+    "observedAt": "2026-11-17T08:19:27.965Z",
+    "sourceTimestamp": "2026-06-30T04:49:48Z",
+    "sha256": "8422b6a471467f4b0aa9b382a1f2b4e58e119f7358b8f048cc18f46507299415",
+    "excerptSha256": "8422b6a471467f4b0aa9b382a1f2b4e58e119f7358b8f048cc18f46507299415",
+    "inspectedCharacters": 8600,
+    "totalCharacters": 8600,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-62ad49c2-8ea4-4a5e-aef3-f2dbfc664400",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2841,
+    "outputTokens": 343
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "6a52c36fd61a12b520fdc0c67b3e387a2379b5620d9b8c10336c825fbcfacf58",
+  "artifactDigest": "41c453ecf9d6910eed0c80014c1b80f936f786427c4cd527848cc3145c0d31ee"
+}
