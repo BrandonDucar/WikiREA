@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T00:36:13.288Z",
-  "sequence": 75,
+  "updatedAt": "2026-11-17T01:16:34.931Z",
+  "sequence": 76,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3393,6 +3393,20 @@
       "packet": "research/packets/research-000075-35dfb2a4a7.json",
       "packetDigest": "86fb59a8dd45823dc16517e61889e0b105e87065839ed63691878ddb5fcfe025",
       "finishedAt": "2026-11-17T00:36:13.288Z"
+    },
+    {
+      "id": "research-000076-83a6537129",
+      "role": "application-tracer",
+      "topic": "GIMP",
+      "day": "2026-11-17",
+      "runId": "43994308989",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T01:16:34.931Z",
+      "expiresAt": "2026-11-17T01:31:34.931Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
