@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T21:24:59.605Z",
+  "updatedAt": "2026-11-17T21:25:02.003Z",
   "sequence": 93,
   "jobs": [
     {
@@ -7899,15 +7899,22 @@
       "runId": "44179555717",
       "reservedAt": "2026-11-17T21:24:59.605Z",
       "expiresAt": "2026-11-17T21:39:59.605Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "FAILED",
+      "callsAttempted": 1,
+      "error": "HTTP_503",
+      "diagnostic": {
+        "httpStatus": 503,
+        "retryAfter": null,
+        "message": ""
+      },
+      "finishedAt": "2026-11-17T21:25:02.003Z"
     }
   ],
   "providerHold": {
     "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
     "reason": "HTTP_503",
-    "until": "2026-11-17T17:54:59.687Z",
-    "observedAt": "2026-11-17T17:24:59.687Z",
+    "until": "2026-11-17T21:55:02.003Z",
+    "observedAt": "2026-11-17T21:25:02.003Z",
     "requiresConfigurationReview": false
   }
 }
