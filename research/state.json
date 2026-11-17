@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T08:19:29.963Z",
-  "sequence": 82,
+  "updatedAt": "2026-11-17T09:16:50.515Z",
+  "sequence": 83,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3724,6 +3724,20 @@
       "packet": "research/packets/research-000082-3295e49fa9.json",
       "packetDigest": "41c453ecf9d6910eed0c80014c1b80f936f786427c4cd527848cc3145c0d31ee",
       "finishedAt": "2026-11-17T08:19:29.963Z"
+    },
+    {
+      "id": "research-000083-ece4b38be5",
+      "role": "adversarial-reviewer",
+      "topic": "Idempotence",
+      "day": "2026-11-17",
+      "runId": "44054099057",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T09:16:50.515Z",
+      "expiresAt": "2026-11-17T09:31:50.515Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
