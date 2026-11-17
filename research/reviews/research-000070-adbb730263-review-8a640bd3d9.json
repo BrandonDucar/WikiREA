@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000070-adbb730263-review-8a640bd3d9",
+  "parentJobId": "research-000070-adbb730263",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "79771417e6a99951a7b56fc7a631b7a6c23f30c42d007839beec027e0f81f7f2",
+  "sourcePin": {
+    "id": "S1",
+    "title": "USB",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384517476",
+    "revision": "1384517476",
+    "observedAt": "2026-11-16T18:18:40.050Z",
+    "sourceTimestamp": "2026-11-08T17:02:35Z",
+    "sha256": "6c7791482f28d8bd1e1b36880b9f8ba76fd6d9d0475216f7b0cd0ca1a9827ddc",
+    "excerptSha256": "f30a7b07e371df3d8c8d023b66101633febe3b016602aa9d3de74e2559dfd486",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 144684,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on USB as industry standard for data/power transmission",
+      "Mechanisms correctly capture physical interface/protocol specification and backward compatibility with speed negotiation from source",
+      "Unknowns appropriately identify implementation details not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'often' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1b006494-7088-496c-9198-36b830dadb2b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4827,
+    "outputTokens": 88
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

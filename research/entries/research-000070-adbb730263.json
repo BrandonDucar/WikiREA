@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000070-adbb730263",
+  "title": "Universal Serial Bus",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-17T15:25:15.835Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Universal Serial Bus (USB) is an industry standard for digital data transmission and power delivery between electronics, originally designed to replace legacy computer ports. It defines physical interfaces and communication protocols between hosts and peripheral devices via hubs. Over time, USB evolved through multiple specification generations, each adding higher signaling rates and new capabilities while maintaining backward compatibility with earlier versions. The latest standard, USB4, uses the USB-C connector and supports tunneling of multiple protocols including PCIe and DisplayPort, with dynamic speed sharing across a single physical interface. USB also provides power delivery, with recent versions supporting up to 240 watts via the USB Power Delivery specification.",
+  "mechanisms": [
+    {
+      "title": "Physical Interface and Protocol Specification",
+      "explanation": "USB specifies the architecture of physical interfaces and communication protocols for data and power transfer between hosts, hubs, and peripheral devices. The standard defines connector types (Type-A, Type-B, Type-C) and the associated signaling rates and pin configurations required for operation.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Backward Compatibility and Speed Negotiation",
+      "explanation": "Each newer USB specification maintains backward compatibility with previous versions, typically resulting in reduced signaling rates and limited power capabilities when older devices are connected. Newer specifications often support multiple operation modes (e.g., Gen 1×1, Gen 2×1, Gen 2×2) that are selected based on connected hardware capabilities and cable type.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact implementation details of host-controller hardware for each USB generation",
+    "How protocol tunneling is dynamically allocated in USB4 Fabric across multiple connected devices",
+    "Whether all USB-C connector functionalities are mandatory or optional for a given device role",
+    "Full scope of hardware compatibility across the wide range of legacy and modern USB devices"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "USB",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384517476",
+      "revision": "1384517476",
+      "observedAt": "2026-11-16T18:18:40.050Z",
+      "sourceTimestamp": "2026-11-08T17:02:35Z",
+      "sha256": "6c7791482f28d8bd1e1b36880b9f8ba76fd6d9d0475216f7b0cd0ca1a9827ddc",
+      "excerptSha256": "f30a7b07e371df3d8c8d023b66101633febe3b016602aa9d3de74e2559dfd486",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 144684,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on USB as industry standard for data/power transmission",
+      "Mechanisms correctly capture physical interface/protocol specification and backward compatibility with speed negotiation from source",
+      "Unknowns appropriately identify implementation details not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'often' preserved from source language"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-31153af8-3ac1-441d-85c7-43f892d98d4a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4449,
+      "outputTokens": 409
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-1b006494-7088-496c-9198-36b830dadb2b",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4827,
+      "outputTokens": 88
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "3716c6b2b11ea5dc0402812a13af77d0357d46e67c3b8a0d242aef0e77cf9898",
+    "artifactDigest": "79771417e6a99951a7b56fc7a631b7a6c23f30c42d007839beec027e0f81f7f2",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000070-adbb730263.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
