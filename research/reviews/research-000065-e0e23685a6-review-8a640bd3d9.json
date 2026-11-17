@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000065-e0e23685a6-review-8a640bd3d9",
+  "parentJobId": "research-000065-e0e23685a6",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "d487727fcbc28a0521e6b07fee0cc23ab5d297729bc79173b7cbc1e764ad3722",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Reproducible builds",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384050978",
+    "revision": "1384050978",
+    "observedAt": "2026-11-16T12:28:06.996Z",
+    "sourceTimestamp": "2026-11-06T08:34:08Z",
+    "sha256": "ad73bb88513bb65050122bdd3ed574ec4ef5b4be5700cede698cb1dfa0acfee7",
+    "excerptSha256": "ad73bb88513bb65050122bdd3ed574ec4ef5b4be5700cede698cb1dfa0acfee7",
+    "inspectedCharacters": 11970,
+    "totalCharacters": 11970,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and purpose of reproducible builds",
+      "Mechanisms correctly capture input normalization and build system automation with proper source attribution",
+      "Unknowns appropriately identify gaps in source coverage regarding compiler non-determinism, survey details, reproducibility scope, and timestamp elimination specifics",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often' and 'can' preserved appropriately from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-d58fd427-7774-4599-b96a-d5b23bb3cd19",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4088,
+    "outputTokens": 95
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
