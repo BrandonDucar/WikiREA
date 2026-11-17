@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000064-c6c5b9eab5-review-8a640bd3d9",
+  "parentJobId": "research-000064-c6c5b9eab5",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "498c1aa73a08bf1e2e4f974b519921fed2493e46070c34851bae80dd300a7961",
+  "sourcePin": {
+    "id": "S1",
+    "title": "State machine replication",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1375989403",
+    "revision": "1375989403",
+    "observedAt": "2026-11-16T10:18:54.980Z",
+    "sourceTimestamp": "2026-09-21T08:39:25Z",
+    "sha256": "756209f68610a0ae8c4e312f19110a158fdd7056b3bc80a8ba327e82c1aae695",
+    "excerptSha256": "1c0e33902e902e94ea3d6ef089ef651f8b1ce3bbda87d36ea8604e37b51ba699",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 24435,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of deterministic state machines and fault tolerance bounds (2F+1 for crash, 3F+1 for Byzantine with non-cryptographic techniques)",
+      "Mechanisms correctly capture consensus ordering and majority-based output filtering as described in source",
+      "Unknowns appropriately identify gaps explicitly noted in source (steps 1-2 outside scope, checkpoint/state transfer in appendix, causal order limitations with hidden channels)",
+      "No invented mechanisms or unsupported claims detected",
+      "Qualifiers like 'typically' and 'may' preserved from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1efbba48-d32a-40c2-bb38-f8f0bf85a873",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4251,
+    "outputTokens": 124
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
