@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-17T01:25:21.841Z",
-  "sequence": 76,
+  "updatedAt": "2026-11-17T02:20:40.224Z",
+  "sequence": 77,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -3442,6 +3442,20 @@
       "packet": "research/packets/research-000076-83a6537129.json",
       "packetDigest": "c550487752f19f7c80ef3c70d5053bc3cd2250e3be16266d08b63b123672ae82",
       "finishedAt": "2026-11-17T01:16:38.446Z"
+    },
+    {
+      "id": "research-000077-cd12fec18e",
+      "role": "runtime-researcher",
+      "topic": "V8 (JavaScript engine)",
+      "day": "2026-11-17",
+      "runId": "44002259130",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-17T02:20:40.224Z",
+      "expiresAt": "2026-11-17T02:35:40.224Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
