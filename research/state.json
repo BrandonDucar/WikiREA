@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T04:17:26.907Z",
+  "updatedAt": "2026-11-18T04:17:31.345Z",
   "sequence": 99,
   "jobs": [
     {
@@ -4475,13 +4475,44 @@
       "topic": "2024 Cornell University rape allegations",
       "day": "2026-11-18",
       "runId": "44236276763",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T04:17:26.907Z",
       "expiresAt": "2026-11-18T04:32:26.907Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "2024 Cornell University rape allegations",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385826727",
+        "revision": "1385826727",
+        "observedAt": "2026-11-18T04:17:28.772Z",
+        "sourceTimestamp": "2026-11-15T11:08:34Z",
+        "sha256": "742f0bea72b0d6e4b3ef3aafce9b7aefcd1b38a7cd6d5e2d6b76ce79f18bb81f",
+        "excerptSha256": "5d25df10bda06314deedae3ce3fa47e47b3dd1f1b7c4c7b5432116aa1e6e31e4",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 59395,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-dcadc1a9-a846-443e-a6cc-a69a2c10eb77",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4468,
+        "outputTokens": 488
+      },
+      "packet": "research/packets/research-000099-fdfdcad421.json",
+      "packetDigest": "e9eed1516476583754ab0d8875201437bab8ef3cf074a4319f9235847c8668db",
+      "finishedAt": "2026-11-18T04:17:31.345Z"
     }
   ],
   "discovered": [
@@ -4514,11 +4545,6 @@
       "title": ".NET MAUI",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000021-ec00986789"
-    },
-    {
-      "title": "2024 Cornell University rape allegations",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000022-5ba2f1d513"
     },
     {
       "title": "ACM Journal of Computer Documentation",
@@ -7279,6 +7305,21 @@
       "title": "ADO.NET",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000098-303e943099"
+    },
+    {
+      "title": "ABC News (United States)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000099-fdfdcad421"
+    },
+    {
+      "title": "ArXiv",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000099-fdfdcad421"
+    },
+    {
+      "title": "Associated Press",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000099-fdfdcad421"
     }
   ],
   "reviewJobs": [

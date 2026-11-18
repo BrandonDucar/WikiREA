@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000099-fdfdcad421",
+  "topic": "2024 Cornell University rape allegations",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "In October 2024, a Cornell University student alleged she was drugged and gang-raped by seven Chi Phi fraternity members after consuming alcohol, marijuana, and ketamine at a fraternity house. She reported the incident to police and the university. In November 2024, the Tompkins County District Attorney declined to present the case to a grand jury, resulting in no criminal charges. From January to May 2025, Cornell's Title IX investigation resulted in the expulsion of two students and the permanent closure of the Chi Phi chapter. In September 2026, the plaintiff filed a civil lawsuit alleging institutional failure, prompting the New York Attorney General to serve as special prosecutor and the District Attorney to reopen the criminal investigation for grand jury review.",
+    "mechanisms": [
+      {
+        "title": "Substance‑facilitated incapacitation",
+        "explanation": "The plaintiff alleged she consumed alcohol, marijuana, and ketamine—her first time using the drug—before and during the incident. She reported becoming \"incapable of consenting\" and described symptoms including nausea, bruising, and appearing \"completely numb.\" Both police and lawsuit accounts state she was \"in and out of consciousness\" during later encounters.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Social‑network facilitation and group dynamics",
+        "explanation": "The plaintiff attended a sorority social event, then walked to the Chi Phi fraternity house with a male friend. During the night, Snapchat group messages in a \"Chi Phi Actives\" chat referenced \"free pussy\" upstairs and circulated her photo. Multiple men entered the room where she was staying, and she allegedly told some she was \"uncomfortable\" and \"tired\" before two men removed her to another room where she alleged rape occurred.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Whether the alleged perpetrators acted with shared intent or independently",
+      "The full extent of university administrative awareness prior to the Title IX investigation",
+      "Whether the bar staff’s conduct violated any statutes regarding service to a minor",
+      "The specific role, if any, of the house mother who accompanied the plaintiff to the bar"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "2024 Cornell University rape allegations",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385826727",
+    "revision": "1385826727",
+    "observedAt": "2026-11-18T04:17:28.772Z",
+    "sourceTimestamp": "2026-11-15T11:08:34Z",
+    "sha256": "742f0bea72b0d6e4b3ef3aafce9b7aefcd1b38a7cd6d5e2d6b76ce79f18bb81f",
+    "excerptSha256": "5d25df10bda06314deedae3ce3fa47e47b3dd1f1b7c4c7b5432116aa1e6e31e4",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 59395,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-dcadc1a9-a846-443e-a6cc-a69a2c10eb77",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4468,
+    "outputTokens": 488
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e04ad50b8bd66d1e374967761482da2e3005b803a8ad0333de3f2176d1c54d29",
+  "artifactDigest": "e9eed1516476583754ab0d8875201437bab8ef3cf074a4319f9235847c8668db"
+}
