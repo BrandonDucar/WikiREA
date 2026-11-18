@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000080-0033b77269",
+  "title": "Inter-Integrated Circuit",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-18T15:24:37.887Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "I₂C is a synchronous, multi-master/slave, single-ended serial bus invented in 1980 by Philips Semiconductors for short-distance intra-board communication. It uses only two bidirectional pins, SDA and SCL, with pull-up resistors, typically operating at 5V or 3.3V. The reference design uses 7-bit addressing, with rare 10-bit extensions. Bus speeds range from 10 kbit/s standard mode up to 5 Mbit/s ultra-fast mode, though practical speeds are limited by address space and a 400 pF bus capacitance restricting communication to short distances within a PC board. A microcontroller can control a network of devices using just these two pins, fewer than alternatives like SPI. The bus supports four operational modes: controller transmit, controller receive, target transmit, and target receive, using START and STOP conditions as message delimiters. SMBus, defined by Intel and Duracell in 1994, is a stricter I₂C subset promoting interoperability.",
+  "mechanisms": [
+    {
+      "title": "Two-pin bidirectional bus with pull-up resistors",
+      "explanation": "I₂C uses only two pins, SDA (serial data line) and SCL (serial clock line), which are bidirectional and pulled up by external resistors. This minimal pin count allows a microcontroller to control multiple peripheral ICs. Data and clock signals are sent most significant bit first, with open-drain/open-collector drivers requiring the pull-up resistors to generate logic levels.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "7-bit addressing with START/STOP protocol",
+      "explanation": "The bus uses a 7-bit address space (with a rarely used 10-bit extension) to identify target devices. Communication begins with a START condition (high-to-low SDA transition while SCL is high) and ends with a STOP condition (low-to-high SDA transition while SCL is high). After addressing, the master sends a read/write bit; if the target exists, it responds with an ACK bit. Data bytes are sent most significant bit first, and ACK/NACK bits confirm receipt after each byte.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact maximum capacitance specification for ultra-fast mode transfers",
+    "Whether 8-bit or 11-bit addressing variants are standard or vendor-specific",
+    "Formal protocol semantics for data byte meanings in pure I₂C messages",
+    "Long-term compatibility of 7-bit vs 10-bit addressing in mixed-device networks"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "I2C",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384185777",
+      "revision": "1384185777",
+      "observedAt": "2026-11-17T06:24:52.249Z",
+      "sourceTimestamp": "2026-11-07T01:28:05Z",
+      "sha256": "f265c7b8da4d87327ea73659875f5ebb173edee2817196d4e521a4218fec4914",
+      "excerptSha256": "9c79b442cd12f4f50d22fab7a068f7ba4e5771f73dc7083a7d1e3137267c2216",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 75633,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on invention, pin usage, addressing, speeds, and SMBus relationship",
+      "Mechanisms correctly describe two-pin bidirectional bus with pull-up resistors and 7-bit addressing with START/STOP protocol",
+      "Unknowns appropriately identify gaps in source: ultra-fast mode capacitance unspecified, 8/11-bit addressing vendor-specific, pure I2C message semantics undefined, mixed addressing compatibility not addressed",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'rarely used', 'typically', 'practical speeds are limited' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-83c5561d-a977-4a3e-bd04-dd264b1ab431",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4047,
+      "outputTokens": 586
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-9cb782bf-058d-49c4-b365-e10b65e9ffec",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4657,
+      "outputTokens": 134
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "0f4cdea85fe22326aee5e597080f325b8b7fad725b6b385007bbdc401c4d0bf7",
+    "artifactDigest": "3d6fec71885af571b216cdfb7d7b7efbaff5b0e9642120ce9f358e471eb59103",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000080-0033b77269.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

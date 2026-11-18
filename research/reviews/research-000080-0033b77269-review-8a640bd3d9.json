@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000080-0033b77269-review-8a640bd3d9",
+  "parentJobId": "research-000080-0033b77269",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "3d6fec71885af571b216cdfb7d7b7efbaff5b0e9642120ce9f358e471eb59103",
+  "sourcePin": {
+    "id": "S1",
+    "title": "I2C",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384185777",
+    "revision": "1384185777",
+    "observedAt": "2026-11-17T06:24:52.249Z",
+    "sourceTimestamp": "2026-11-07T01:28:05Z",
+    "sha256": "f265c7b8da4d87327ea73659875f5ebb173edee2817196d4e521a4218fec4914",
+    "excerptSha256": "9c79b442cd12f4f50d22fab7a068f7ba4e5771f73dc7083a7d1e3137267c2216",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 75633,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on invention, pin usage, addressing, speeds, and SMBus relationship",
+      "Mechanisms correctly describe two-pin bidirectional bus with pull-up resistors and 7-bit addressing with START/STOP protocol",
+      "Unknowns appropriately identify gaps in source: ultra-fast mode capacitance unspecified, 8/11-bit addressing vendor-specific, pure I2C message semantics undefined, mixed addressing compatibility not addressed",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'rarely used', 'typically', 'practical speeds are limited' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-9cb782bf-058d-49c4-b365-e10b65e9ffec",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4657,
+    "outputTokens": 134
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
