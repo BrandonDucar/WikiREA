@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000076-83a6537129",
+  "title": "GIMP",
+  "role": "application-tracer",
+  "createdAt": "2026-11-18T05:25:51.364Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "GIMP is a free, open-source raster graphics editor used for photo retouching, image editing, and format conversion. It runs on Windows, macOS, and Linux. The application supports plugins and scripting for task automation. Development occurs in a public Git repository managed by a volunteer community, with new features merged into the main branch only after review. GIMP is licensed under GPL-3.0-or-later and available in 84 languages.",
+  "mechanisms": [
+    {
+      "title": "Public Git repository and branch-based development",
+      "explanation": "GIMP's source code is hosted in a public Git repository. New features are developed in separate branches and merged into the main branch only after the development team confirms they will not damage existing functions. This process can delay feature availability by months or years.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Plugin and scripting support",
+      "explanation": "GIMP allows users to extend its functionality and automate tasks through plugins and scripting. The application is programmable using Python and Scheme, among other languages.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The specific internal architecture of the application-tracer component",
+    "How tracing functionality is implemented or exposed within GIMP",
+    "Whether GIMP includes a built-in application-tracer feature",
+    "The technical details of any tracing or profiling tools integrated into the program"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "GIMP",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385976184",
+      "revision": "1385976184",
+      "observedAt": "2026-11-17T01:16:36.826Z",
+      "sourceTimestamp": "2026-11-16T05:48:05Z",
+      "sha256": "dde8245270eb890c352774106de444b236121359c6c51ca10684bef6a6635f25",
+      "excerptSha256": "8272cff8e49512550e68681eaef805fb2e74570ead9249fb24d220649b473b37",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 56037,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on GIMP's purpose, platforms, licensing, and language support",
+      "Mechanism descriptions for Git repository workflow and plugin/scripting support are directly supported by source text",
+      "Unknowns section correctly identifies topics not addressed in the source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Draft preserves appropriate qualifiers and distinguishes known facts from gaps"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-913882fa-7c49-47f1-8cdc-a2b73ba5e59d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4640,
+      "outputTokens": 314
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-2bd51382-f9c0-422d-9d4e-b7d78fcfa5b2",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4924,
+      "outputTokens": 90
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "921fc0f3676b20bcfc3f89c2a66bb4d13106b89439b0956ae8335b3a91f04f83",
+    "artifactDigest": "c550487752f19f7c80ef3c70d5053bc3cd2250e3be16266d08b63b123672ae82",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000076-83a6537129.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
