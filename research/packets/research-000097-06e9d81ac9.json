@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000097-06e9d81ac9",
+  "topic": ".NET",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The .NET platform is a free, open-source, managed code framework for Windows, Linux, and macOS, serving as a cross-platform successor to the .NET Framework. It uses a conventional open-source development model under the .NET Foundation. New versions are released annually, with .NET 11 being the most recent short-term support release and .NET 10 the latest long-term support version. The platform supports multiple languages including C#, C++, and C, and runs on diverse architectures including x86-64, ARM, and IBM Z.",
+    "mechanisms": [
+      {
+        "title": "Managed code execution environment",
+        "explanation": ".NET provides a managed execution environment that handles memory management, type safety, and exception handling for applications. This runtime abstraction layer allows code written in supported languages to run across different operating systems and hardware architectures without direct hardware access.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Cross-platform class library and API surface",
+        "explanation": "The platform offers a unified set of class libraries and APIs that provide consistent functionality across Windows, Linux, and macOS. This abstraction allows developers to write code once and deploy it across multiple operating systems, with the runtime adapting to platform-specific behaviors.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal architecture of the runtime's garbage collection across all supported platforms",
+      "Details of just-in-time compilation specific to each hardware architecture",
+      "Complete list of platform-specific optimizations and their conditions of activation",
+      "Internal mechanisms for cross-platform API adaptation and behavior normalization"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+    "revision": "1384980993",
+    "observedAt": "2026-11-18T02:20:41.478Z",
+    "sourceTimestamp": "2026-11-11T05:21:33Z",
+    "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+    "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39476,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-46c8d85d-e0c4-4826-aa1c-2df31ec8be82",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4843,
+    "outputTokens": 351
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "01b9541b44f6332d9334537c87392694fcc8b662f1354a01ee68d8fb092eb634",
+  "artifactDigest": "b1661397765d7c608c731d5733adf67d664e85cae1da2581b4908b0cfa4eefc7"
+}
