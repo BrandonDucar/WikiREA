@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T08:19:31.288Z",
+  "updatedAt": "2026-11-18T08:19:35.288Z",
   "sequence": 102,
   "jobs": [
     {
@@ -4618,13 +4618,44 @@
       "topic": "2-XL",
       "day": "2026-11-18",
       "runId": "44265981430",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T08:19:31.288Z",
       "expiresAt": "2026-11-18T08:34:31.288Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "2-XL",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383599781",
+        "revision": "1383599781",
+        "observedAt": "2026-11-18T08:19:33.197Z",
+        "sourceTimestamp": "2026-11-03T16:39:27Z",
+        "sha256": "e037429148aae8f240a9fde75f308d6a00bb5fee0ae659a046af3148276ba18f",
+        "excerptSha256": "02b1dbaace2c6711679057129afefa72ad4bb6853b88bf2826d1fc0bb4fbae46",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 24996,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-d341f9ea-fb92-429e-bc13-4c2f1f8b33c0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4496,
+        "outputTokens": 346
+      },
+      "packet": "research/packets/research-000102-4a8db0f48e.json",
+      "packetDigest": "459f013ace4f8d84ad8ae3f21fd3f1c74895d7ae45e1c67f558aa5a1af40c765",
+      "finishedAt": "2026-11-18T08:19:35.288Z"
     }
   ],
   "discovered": [
@@ -4727,11 +4758,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "2-XL",
-      "role": "music-events",
-      "discoveredFrom": "research-000024-ee7dc4a4fd"
     },
     {
       "title": "45 rpm adapter",
@@ -7497,6 +7523,46 @@
       "title": "Bash (Unix shell)",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "2XL (disambiguation)",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "8-track cartridge",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "Are You Afraid of the Dark?",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "Batman",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "CNET",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "CNN",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "Cassette tape",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "Choose Your Own Adventure",
+      "role": "music-events",
+      "discoveredFrom": "research-000102-4a8db0f48e"
     }
   ],
   "reviewJobs": [
