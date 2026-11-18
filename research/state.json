@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T06:24:11.830Z",
+  "updatedAt": "2026-11-18T06:24:16.763Z",
   "sequence": 100,
   "jobs": [
     {
@@ -4524,13 +4524,44 @@
       "topic": ".dwg",
       "day": "2026-11-18",
       "runId": "44251047419",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T06:24:11.830Z",
       "expiresAt": "2026-11-18T06:39:11.830Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": ".dwg",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381071202",
+        "revision": "1381071202",
+        "observedAt": "2026-11-18T06:24:13.685Z",
+        "sourceTimestamp": "2026-10-19T20:44:22Z",
+        "sha256": "174012a1455d85bda048882bbbecb4a398a3445a373b416e879196b17fce8030",
+        "excerptSha256": "0369c49b1d07d953823092680a1a92a4929713ad004b67ca10992d66de0fb1f3",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 33208,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9d37c8d6-dcbc-4053-a811-b398990c6896",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 5090,
+        "outputTokens": 426
+      },
+      "packet": "research/packets/research-000100-879454f0e1.json",
+      "packetDigest": "8722f75541e32795f71db54740dbb106b5f0926841eb96c07b3d277e21cbf019",
+      "finishedAt": "2026-11-18T06:24:16.763Z"
     }
   ],
   "discovered": [
@@ -4598,11 +4629,6 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
-    },
-    {
-      "title": ".dwg",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
     },
     {
       "title": "3D-printed firearm",
@@ -7338,6 +7364,41 @@
       "title": "Associated Press",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000099-fdfdcad421"
+    },
+    {
+      "title": "ABViewer",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000100-879454f0e1"
+    },
+    {
+      "title": "ACIS",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000100-879454f0e1"
+    },
+    {
+      "title": "Aber (software)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000100-879454f0e1"
+    },
+    {
+      "title": "Additive manufacturing file format",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000100-879454f0e1"
+    },
+    {
+      "title": "Alibre Design",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000100-879454f0e1"
+    },
+    {
+      "title": "Altium",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000100-879454f0e1"
+    },
+    {
+      "title": "Altium Designer",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000100-879454f0e1"
     }
   ],
   "reviewJobs": [
