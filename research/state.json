@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T15:14:45.793Z",
+  "updatedAt": "2026-11-18T15:14:53.638Z",
   "sequence": 108,
   "jobs": [
     {
@@ -4867,21 +4867,47 @@
       "topic": ".NET Compiler Platform",
       "day": "2026-11-18",
       "runId": "44333342635",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T15:14:45.793Z",
       "expiresAt": "2026-11-18T15:29:45.793Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Roslyn (compiler)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1375186724",
+        "revision": "1375186724",
+        "observedAt": "2026-11-18T15:14:48.387Z",
+        "sourceTimestamp": "2026-09-16T08:53:22Z",
+        "sha256": "b9e4a137b0adaf149e5e55879d4aa2cccdba96a12acad007189dd11a1d7fb5c6",
+        "excerptSha256": "b9e4a137b0adaf149e5e55879d4aa2cccdba96a12acad007189dd11a1d7fb5c6",
+        "inspectedCharacters": 12876,
+        "totalCharacters": 12876,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-cbab0eeb-f280-425b-a7d8-8eb07eba29ce",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3729,
+        "outputTokens": 317
+      },
+      "packet": "research/packets/research-000108-694efc1972.json",
+      "packetDigest": "6cf286ae06fd0cbb00c26b4621f033398ffc2b7e58ca04c31bf2f0616000bc4d",
+      "finishedAt": "2026-11-18T15:14:53.638Z"
     }
   ],
   "discovered": [
-    {
-      "title": ".NET Compiler Platform",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000021-ec00986789"
-    },
     {
       "title": ".NET Core",
       "role": "game-mechanic-researcher",
@@ -7566,11 +7592,6 @@
       "title": "Compendium (software)",
       "role": "application-tracer",
       "discoveredFrom": "research-000096-72085958da"
-    },
-    {
-      "title": ".NET Compiler Platform",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000097-06e9d81ac9"
     },
     {
       "title": ".NET Foundation",
