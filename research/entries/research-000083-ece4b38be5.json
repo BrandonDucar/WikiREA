@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000083-ece4b38be5",
+  "title": "Idempotence",
+  "role": "adversarial-reviewer",
+  "createdAt": "2026-11-18T21:24:56.357Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Idempotence is the property that an operation can be applied multiple times without changing the result beyond the initial application. In computer science, this means repeated calls leave system state unchanged, making operations safe to retry. The concept originates from abstract algebra, where elements or operations satisfy x·x = x, and extends to functions, morphisms, and practical systems like database lookups or address changes that produce identical outcomes regardless of invocation count.",
+  "mechanisms": [
+    {
+      "title": "Algebraic definition",
+      "explanation": "An element x of a set S with binary operation · is idempotent if x·x = x. The operation · is idempotent if x·x = x for all x in S. This formal condition underlies all mathematical and computational uses of the property.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Computational retry safety",
+      "explanation": "A subroutine or function is idempotent when multiple calls have the same effect as a single call on system state. This allows operations to be retried without unintended side effects, which is essential for fault tolerance in networked systems.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How idempotence interacts with concurrent or parallel execution",
+    "Whether all idempotent mathematical operations guarantee idempotent computational behavior",
+    "The distinction between mathematical idempotence (x·x = x) and practical idempotence (same system state after multiple calls)",
+    "How language-specific features influence idempotence guarantees in real-world systems"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Idempotence",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382059785",
+      "revision": "1382059785",
+      "observedAt": "2026-11-17T09:16:54.009Z",
+      "sourceTimestamp": "2026-10-26T09:38:03Z",
+      "sha256": "2d177168605d7d6f6021bc73124af0ba10fe9b9766c457aa0cccad7b49561e92",
+      "excerptSha256": "f5269a111bf887a9a587c5a873d8ff0de9d311c4e5ff388654d010ad2abe732c",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 23947,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope",
+      "Mechanisms correctly capture algebraic definition and computational retry safety with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source",
+      "No unsupported mechanisms or invented execution details",
+      "Preserves qualifiers and distinguishes mathematical vs computational contexts"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-bdb77819-64df-43c1-a916-7a61e9994d4c",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4659,
+      "outputTokens": 357
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-60885476-3c37-409e-b106-3c1114118e01",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5062,
+      "outputTokens": 70
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "43ad35edbaeeda52dcd0a560994a228325fa4ea1d6b819b4ca41b8e656dd1aaa",
+    "artifactDigest": "b6a0b12c5783d74a1ba5afd0fa5f9bb37743f038a56e185863afeaee02fb725f",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000083-ece4b38be5.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

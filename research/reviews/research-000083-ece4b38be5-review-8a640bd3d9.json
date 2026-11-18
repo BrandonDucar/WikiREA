@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000083-ece4b38be5-review-8a640bd3d9",
+  "parentJobId": "research-000083-ece4b38be5",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "b6a0b12c5783d74a1ba5afd0fa5f9bb37743f038a56e185863afeaee02fb725f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Idempotence",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382059785",
+    "revision": "1382059785",
+    "observedAt": "2026-11-17T09:16:54.009Z",
+    "sourceTimestamp": "2026-10-26T09:38:03Z",
+    "sha256": "2d177168605d7d6f6021bc73124af0ba10fe9b9766c457aa0cccad7b49561e92",
+    "excerptSha256": "f5269a111bf887a9a587c5a873d8ff0de9d311c4e5ff388654d010ad2abe732c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 23947,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope",
+      "Mechanisms correctly capture algebraic definition and computational retry safety with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source",
+      "No unsupported mechanisms or invented execution details",
+      "Preserves qualifiers and distinguishes mathematical vs computational contexts"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-60885476-3c37-409e-b106-3c1114118e01",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5062,
+    "outputTokens": 70
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
