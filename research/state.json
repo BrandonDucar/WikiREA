@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T06:24:16.763Z",
-  "sequence": 100,
+  "updatedAt": "2026-11-18T07:16:45.982Z",
+  "sequence": 101,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4562,6 +4562,20 @@
       "packet": "research/packets/research-000100-879454f0e1.json",
       "packetDigest": "8722f75541e32795f71db54740dbb106b5f0926841eb96c07b3d277e21cbf019",
       "finishedAt": "2026-11-18T06:24:16.763Z"
+    },
+    {
+      "id": "research-000101-1aadab0ced",
+      "role": "market-data-researcher",
+      "topic": "Affero General Public License",
+      "day": "2026-11-18",
+      "runId": "44257614230",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T07:16:45.982Z",
+      "expiresAt": "2026-11-18T07:31:45.982Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
