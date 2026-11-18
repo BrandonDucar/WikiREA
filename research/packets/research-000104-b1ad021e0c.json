@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000104-b1ad021e0c",
+  "topic": "Anita Borg",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Anita Borg (1949–2003) was an American computer scientist who championed women's representation in technology. After earning a PhD in Computer Science from New York University, she built fault-tolerant Unix systems and patented address-trace methods at Digital Equipment Corporation. She founded the Systers email network for women in computing, co-founded the Grace Hopper Celebration, and established the Institute for Women and Technology to increase women's participation in tech and ensure technology benefits all. Her goal was 50% women in computing by 2020. Borg died of brain cancer in 2003; the institute was renamed in her honor.",
+    "mechanisms": [
+      {
+        "title": "Systers founding and purpose",
+        "explanation": "Borg founded Systers in 1987 as the first email network for women in technology, providing a private space for members with highly technical training to seek input and share advice. Discussions were strictly confined to technical issues, and Borg oversaw the list until 2000.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Institute for Women and Technology establishment",
+        "explanation": "In 1997 Borg founded the Institute for Women and Technology (now Anita Borg Institute), an experimental R&D organization housed at Xerox PARC. Its goals were to increase women's representation in technical fields and enable more technology created by women. The institute ran programs to build the pipeline of technical women and ensure women's voices affected technological developments.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact technical details of Borg's patented address-trace method for high-speed memory systems",
+      "Specific internal decision-making processes within the Institute for Women and Technology programs",
+      "Precise technical mechanisms by which Systers influenced corporate product changes such as the Barbie doll controversy",
+      "Detailed technical contributions during her tenure at Xerox PARC beyond the institute's founding"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Anita Borg",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383600366",
+    "revision": "1383600366",
+    "observedAt": "2026-11-18T10:15:53.285Z",
+    "sourceTimestamp": "2026-11-03T16:43:47Z",
+    "sha256": "d640166c7a4bb4ae61adf53f0648f918767cacb247bd6c58628e534f3b6e82ce",
+    "excerptSha256": "ad8d3781ca5035321f8bf29779244e1691efb9cb113a44a1edbcf5a922c8386f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15321,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-a76abb75-665b-4aca-b8ce-f848b53b66a3",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4199,
+    "outputTokens": 443
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "66085842f57faf226f322f4c1646f43ab67f62226158f1d22e51b70d778bd648",
+  "artifactDigest": "7d5c4563d6a7ec61a2349e4a62f4e2cdd7f47dbc72278767011d66574fca37d8"
+}

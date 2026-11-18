@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T10:15:51.363Z",
+  "updatedAt": "2026-11-18T10:15:57.204Z",
   "sequence": 104,
   "jobs": [
     {
@@ -4712,13 +4712,44 @@
       "topic": "Anita Borg",
       "day": "2026-11-18",
       "runId": "44283698640",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T10:15:51.363Z",
       "expiresAt": "2026-11-18T10:30:51.363Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Anita Borg",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383600366",
+        "revision": "1383600366",
+        "observedAt": "2026-11-18T10:15:53.285Z",
+        "sourceTimestamp": "2026-11-03T16:43:47Z",
+        "sha256": "d640166c7a4bb4ae61adf53f0648f918767cacb247bd6c58628e534f3b6e82ce",
+        "excerptSha256": "ad8d3781ca5035321f8bf29779244e1691efb9cb113a44a1edbcf5a922c8386f",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 15321,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-a76abb75-665b-4aca-b8ce-f848b53b66a3",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4199,
+        "outputTokens": 443
+      },
+      "packet": "research/packets/research-000104-b1ad021e0c.json",
+      "packetDigest": "7d5c4563d6a7ec61a2349e4a62f4e2cdd7f47dbc72278767011d66574fca37d8",
+      "finishedAt": "2026-11-18T10:15:57.204Z"
     }
   ],
   "discovered": [
@@ -6223,11 +6254,6 @@
       "discoveredFrom": "research-000063-1d20ea4b59"
     },
     {
-      "title": "Anita Borg",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
-    },
-    {
       "title": "Barbara Liskov",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000064-c6c5b9eab5"
@@ -7656,6 +7682,46 @@
       "title": "Computer science",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "Agile software development",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
+    },
+    {
+      "title": "AnitaB.org",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
+    },
+    {
+      "title": "Anita Borg Institute for Women and Technology",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
+    },
+    {
+      "title": "Aspect-oriented programming",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
+    },
+    {
+      "title": "Association for Computing Machinery",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
+    },
+    {
+      "title": "Association for Women in Computing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
+    },
+    {
+      "title": "Augusta Ada Lovelace Award",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
+    },
+    {
+      "title": "Australia",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000104-b1ad021e0c"
     }
   ],
   "reviewJobs": [
