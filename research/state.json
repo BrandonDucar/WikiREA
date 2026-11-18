@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T01:25:18.088Z",
-  "sequence": 96,
+  "updatedAt": "2026-11-18T02:20:39.535Z",
+  "sequence": 97,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4374,6 +4374,20 @@
       "packet": "research/packets/research-000096-72085958da.json",
       "packetDigest": "ad18a8b82a80a5186a15842a57fcc9249d76dd8917bbcd90b5d9231319b17442",
       "finishedAt": "2026-11-18T01:16:29.092Z"
+    },
+    {
+      "id": "research-000097-06e9d81ac9",
+      "role": "runtime-researcher",
+      "topic": ".NET",
+      "day": "2026-11-18",
+      "runId": "44222528250",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T02:20:39.535Z",
+      "expiresAt": "2026-11-18T02:35:39.535Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
