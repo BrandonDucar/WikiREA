@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T03:18:03.966Z",
+  "updatedAt": "2026-11-18T03:18:10.039Z",
   "sequence": 98,
   "jobs": [
     {
@@ -4426,21 +4426,47 @@
       "topic": ".NET Compact Framework",
       "day": "2026-11-18",
       "runId": "44229421882",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T03:18:03.966Z",
       "expiresAt": "2026-11-18T03:33:03.966Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": ".NET Compact Framework",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1354658535",
+        "revision": "1354658535",
+        "observedAt": "2026-11-18T03:18:06.749Z",
+        "sourceTimestamp": "2026-05-17T17:08:39Z",
+        "sha256": "38a6dc00fb67ef8c84c2f6962e6878beca972cd18118469a0a8451e5a31c26e3",
+        "excerptSha256": "38a6dc00fb67ef8c84c2f6962e6878beca972cd18118469a0a8451e5a31c26e3",
+        "inspectedCharacters": 11905,
+        "totalCharacters": 11905,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2de0d339-0093-4012-8322-01447f77ae5a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4143,
+        "outputTokens": 379
+      },
+      "packet": "research/packets/research-000098-303e943099.json",
+      "packetDigest": "df4cea3e727350d6130fce980ddae729505d7912b69a2eb3f600cf1eeef0caee",
+      "finishedAt": "2026-11-18T03:18:10.039Z"
     }
   ],
   "discovered": [
-    {
-      "title": ".NET Compact Framework",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000021-ec00986789"
-    },
     {
       "title": ".NET Compiler Platform",
       "role": "game-mechanic-researcher",
@@ -7177,11 +7203,6 @@
       "discoveredFrom": "research-000096-72085958da"
     },
     {
-      "title": ".NET Compact Framework",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000097-06e9d81ac9"
-    },
-    {
       "title": ".NET Compiler Platform",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000097-06e9d81ac9"
@@ -7215,6 +7236,31 @@
       "title": ".NET Reflector",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000097-06e9d81ac9"
+    },
+    {
+      "title": ".NET Compact Framework controls",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000098-303e943099"
+    },
+    {
+      "title": ".NET Micro Framework",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000098-303e943099"
+    },
+    {
+      "title": ".NET Reflector",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000098-303e943099"
+    },
+    {
+      "title": ".NET Remoting",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000098-303e943099"
+    },
+    {
+      "title": "ADO.NET",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000098-303e943099"
     }
   ],
   "reviewJobs": [

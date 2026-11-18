@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000098-303e943099",
+  "topic": ".NET Compact Framework",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The .NET Compact Framework is a scaled-down version of the .NET Framework designed for resource-constrained mobile and embedded devices such as PDAs, mobile phones, and factory controllers. It uses a subset of the full .NET class libraries plus mobile-specific controls, running on a JIT compiler optimized for limited hardware. Development occurs primarily in Visual Studio using C# or Visual Basic .NET, producing applications that require the runtime to execute. The UI layer is built on Windows Forms, which inherits a desktop-oriented design, making modern touch-screen interfaces difficult without third-party controls. The 3.5 release added features like LINQ and WCF, while later versions introduced multi-core support. The Xbox 360 variant further restricts the class library and limits thread counts, though it allows processor affinity settings.",
+    "mechanisms": [
+      {
+        "title": "Scaled class libraries",
+        "explanation": "The framework uses a reduced set of the full .NET class libraries along with mobile-specific controls, scaled down to conserve space on constrained devices.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "JIT compilation for mobile devices",
+        "explanation": "Applications run on a specialized, high-performance just-in-time compiler designed for mobile-device execution rather than the full desktop runtime.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact degree of library duplication versus innovation between Compact and full .NET Framework",
+      "Details of touch-screen UI adaptation beyond the noted desktop-oriented limitations of Windows Forms",
+      "Specific mechanisms enabling multi-core scheduling in version 3.9 beyond the general mention of concurrent threads",
+      "Internal runtime constraints beyond the documented thread limit of 256 on Xbox 360"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET Compact Framework",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1354658535",
+    "revision": "1354658535",
+    "observedAt": "2026-11-18T03:18:06.749Z",
+    "sourceTimestamp": "2026-05-17T17:08:39Z",
+    "sha256": "38a6dc00fb67ef8c84c2f6962e6878beca972cd18118469a0a8451e5a31c26e3",
+    "excerptSha256": "38a6dc00fb67ef8c84c2f6962e6878beca972cd18118469a0a8451e5a31c26e3",
+    "inspectedCharacters": 11905,
+    "totalCharacters": 11905,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2de0d339-0093-4012-8322-01447f77ae5a",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4143,
+    "outputTokens": 379
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e3a6b22664ece05efadc2d9be7b021ed2b1bd52b1313c8e2879deddc763e3867",
+  "artifactDigest": "df4cea3e727350d6130fce980ddae729505d7912b69a2eb3f600cf1eeef0caee"
+}
