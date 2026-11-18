@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T21:24:56.358Z",
-  "sequence": 113,
+  "updatedAt": "2026-11-18T22:14:04.560Z",
+  "sequence": 114,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5121,6 +5121,20 @@
       "packet": "research/packets/research-000113-1521ddfec4.json",
       "packetDigest": "bed446a92cc8802c9d5ae7f6d8a41515392ae26c7fd272b562b242f7b6bccedb",
       "finishedAt": "2026-11-18T21:13:59.111Z"
+    },
+    {
+      "id": "research-000114-65951320f6",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Barbara Liskov",
+      "day": "2026-11-18",
+      "runId": "44409537838",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T22:14:04.560Z",
+      "expiresAt": "2026-11-18T22:29:04.560Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
