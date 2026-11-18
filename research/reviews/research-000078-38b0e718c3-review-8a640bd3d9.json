@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000078-38b0e718c3-review-8a640bd3d9",
+  "parentJobId": "research-000078-38b0e718c3",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "9c117bd4ee9760332b8463d4e6e05352bffb2106bf852f6c77bb692bb3255bc0",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Finite-state machine",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382244464",
+    "revision": "1382244464",
+    "observedAt": "2026-11-17T03:17:50.585Z",
+    "sourceTimestamp": "2026-10-27T14:47:02Z",
+    "sha256": "fb96d53dde169f98dcf8d3d5dbd97374d8a22c571443e6b1422843e8b6e38134",
+    "excerptSha256": "da573ca30b9708e754e999c091c75da1a40e23f6db39b2e44b803102c1b704da",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 45275,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of FSM, states, transitions, deterministic vs non-deterministic types, and computational power relative to Turing machines",
+      "Mechanisms correctly capture state transition via inputs and deterministic/non-deterministic classification with equivalence construction",
+      "Unknowns appropriately identify gaps not addressed in source: physical implementation details, real-world non-determinism, exact computational limits, and UML mapping specifics",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims trace to source content with proper qualifiers"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-757829d9-9c58-4c27-b3fa-79391acae59e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4312,
+    "outputTokens": 118
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

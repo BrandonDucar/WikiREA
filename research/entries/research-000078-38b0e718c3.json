@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000078-38b0e718c3",
+  "title": "Finite-state machine",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-18T09:26:19.123Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A finite-state machine (FSM) is a mathematical model of computation that can occupy exactly one state from a finite set at any moment. It changes states via transitions triggered by inputs. Two main types exist: deterministic, where one input yields one next state, and non-deterministic, where one input may lead to multiple possible next states (an equivalent deterministic version can always be constructed). FSMs have less computational power than Turing machines due to limited memory defined solely by their state count. Physical devices like vending machines, elevators, traffic lights, and combination locks exhibit FSM behavior. In a turnstile example, states are Locked and Unlocked; a coin input unlocks, and a push input after passing resets to Locked.",
+  "mechanisms": [
+    {
+      "title": "State transition via inputs",
+      "explanation": "An FSM resides in one of a finite number of states. A transition to a new state occurs when a specific input is received. The same input may produce different transitions depending on the current state, such as a coin unlocking a turnstile only when it is locked.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Deterministic vs. non-deterministic classification",
+      "explanation": "Deterministic finite-state machines produce exactly one next state per input, while non-deterministic ones may have multiple possible next states for a single input. Any non-deterministic FSM can be converted into an equivalent deterministic FSM, preserving the language it accepts.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How physical hardware implements state storage beyond abstract state counting",
+    "Whether real-world FSMs ever exhibit true non-determinism or always resolve to deterministic behavior",
+    "The exact conditions under which an FSM's state memory limit prevents solving a given computational task",
+    "How UML state machines' hierarchical nesting and orthogonal regions map onto the basic FSM model"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Finite-state machine",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382244464",
+      "revision": "1382244464",
+      "observedAt": "2026-11-17T03:17:50.585Z",
+      "sourceTimestamp": "2026-10-27T14:47:02Z",
+      "sha256": "fb96d53dde169f98dcf8d3d5dbd97374d8a22c571443e6b1422843e8b6e38134",
+      "excerptSha256": "da573ca30b9708e754e999c091c75da1a40e23f6db39b2e44b803102c1b704da",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 45275,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of FSM, states, transitions, deterministic vs non-deterministic types, and computational power relative to Turing machines",
+      "Mechanisms correctly capture state transition via inputs and deterministic/non-deterministic classification with equivalence construction",
+      "Unknowns appropriately identify gaps not addressed in source: physical implementation details, real-world non-determinism, exact computational limits, and UML mapping specifics",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims trace to source content with proper qualifiers"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-abbf8df0-e5d1-4ef7-a3c9-032283a22858",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3888,
+      "outputTokens": 429
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-757829d9-9c58-4c27-b3fa-79391acae59e",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4312,
+      "outputTokens": 118
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "139ed05288624057857b435f2c303d5acda36973a99ce4e08cce1843a134d54e",
+    "artifactDigest": "9c117bd4ee9760332b8463d4e6e05352bffb2106bf852f6c77bb692bb3255bc0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000078-38b0e718c3.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
