@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T10:15:51.363Z",
-  "sequence": 104,
+  "updatedAt": "2026-11-18T12:20:41.612Z",
+  "sequence": 105,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4712,9 +4712,25 @@
       "topic": "Anita Borg",
       "day": "2026-11-18",
       "runId": "44283698640",
-      "status": "RESERVED",
+      "status": "INTERRUPTED_UNKNOWN",
       "reservedAt": "2026-11-18T10:15:51.363Z",
       "expiresAt": "2026-11-18T10:30:51.363Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null,
+      "finishedAt": "2026-11-18T12:20:41.612Z",
+      "error": "LEASE_EXPIRED_NO_AUTOMATIC_REPLAY"
+    },
+    {
+      "id": "research-000105-df33de0d43",
+      "role": "source-curator",
+      "topic": "Apache Hadoop",
+      "day": "2026-11-18",
+      "runId": "44302995612",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T12:20:41.612Z",
+      "expiresAt": "2026-11-18T12:35:41.612Z",
       "callsReserved": 2,
       "callsAttempted": 0,
       "targetExecuted": false,
