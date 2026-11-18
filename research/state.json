@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T18:17:03.008Z",
-  "sequence": 110,
+  "updatedAt": "2026-11-18T19:12:09.226Z",
+  "sequence": 111,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4978,6 +4978,20 @@
       "packet": "research/packets/research-000110-a6c8e54557.json",
       "packetDigest": "667647a56cd304a09a963828896bf8d7e0567b999b719a2b2cd6add755430451",
       "finishedAt": "2026-11-18T18:17:03.008Z"
+    },
+    {
+      "id": "research-000111-9f9e754a87",
+      "role": "market-data-researcher",
+      "topic": "Anomaly detection",
+      "day": "2026-11-18",
+      "runId": "44377957795",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T19:12:09.226Z",
+      "expiresAt": "2026-11-18T19:27:09.226Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
