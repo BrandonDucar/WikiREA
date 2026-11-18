@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T16:15:39.956Z",
+  "updatedAt": "2026-11-18T16:15:42.386Z",
   "sequence": 109,
   "jobs": [
     {
@@ -4916,13 +4916,19 @@
       "topic": "ACM Journal of Computer Documentation",
       "day": "2026-11-18",
       "runId": "44345094366",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-18T16:15:39.956Z",
       "expiresAt": "2026-11-18T16:30:39.956Z",
       "callsReserved": 2,
       "callsAttempted": 0,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "error": "HTTP_404",
+      "diagnostic": {
+        "httpStatus": 404,
+        "retryAfter": null
+      },
+      "finishedAt": "2026-11-18T16:15:42.386Z"
     }
   ],
   "discovered": [
