@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T07:26:49.820Z",
-  "sequence": 101,
+  "updatedAt": "2026-11-18T08:19:31.288Z",
+  "sequence": 102,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4611,6 +4611,20 @@
       "packet": "research/packets/research-000101-1aadab0ced.json",
       "packetDigest": "afbb041a637701ff3162aa4866eba1505e75cf29e9eed07c8a31d0de6484667f",
       "finishedAt": "2026-11-18T07:16:51.292Z"
+    },
+    {
+      "id": "research-000102-4a8db0f48e",
+      "role": "music-events",
+      "topic": "2-XL",
+      "day": "2026-11-18",
+      "runId": "44265981430",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T08:19:31.288Z",
+      "expiresAt": "2026-11-18T08:34:31.288Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
