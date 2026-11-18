@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T18:16:57.025Z",
+  "updatedAt": "2026-11-18T18:17:03.008Z",
   "sequence": 110,
   "jobs": [
     {
@@ -4940,13 +4940,44 @@
       "topic": "3D-printed firearm",
       "day": "2026-11-18",
       "runId": "44367941386",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T18:16:57.025Z",
       "expiresAt": "2026-11-18T18:31:57.025Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D-printed firearm",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386428652",
+        "revision": "1386428652",
+        "observedAt": "2026-11-18T18:16:59.795Z",
+        "sourceTimestamp": "2026-11-18T13:51:25Z",
+        "sha256": "be033e5e64dc9a3d51024feceda8b89626c7eeb5b6fb52a7ed54fe49e5dbff41",
+        "excerptSha256": "7d523854b1623933b0f9ca643eb86159d3305199536b4fd1fef0a476ffe11d16",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 53931,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2a64cd5d-6480-48ea-9578-f461fcb68da0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 5086,
+        "outputTokens": 366
+      },
+      "packet": "research/packets/research-000110-a6c8e54557.json",
+      "packetDigest": "667647a56cd304a09a963828896bf8d7e0567b999b719a2b2cd6add755430451",
+      "finishedAt": "2026-11-18T18:17:03.008Z"
     }
   ],
   "discovered": [
@@ -4974,11 +5005,6 @@
       "title": ".NET MAUI",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000021-ec00986789"
-    },
-    {
-      "title": "ACM Journal of Computer Documentation",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000022-5ba2f1d513"
     },
     {
       "title": "Academic journal",
@@ -5009,11 +5035,6 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
-    },
-    {
-      "title": "3D-printed firearm",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
     },
     {
       "title": "3DBenchy",
@@ -7969,6 +7990,46 @@
       "title": "31-bit computing",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": ".410 bore",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
+    },
+    {
+      "title": "20-gauge shotgun",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
+    },
+    {
+      "title": "3D2A",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
+    },
+    {
+      "title": "3D printed firearm",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
+    },
+    {
+      "title": "3D printer",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
+    },
+    {
+      "title": "AK-47",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
+    },
+    {
+      "title": "AR-15 style rifle",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
+    },
+    {
+      "title": "AR-15–style rifle",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000110-a6c8e54557"
     }
   ],
   "reviewJobs": [
