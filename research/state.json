@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T03:27:50.591Z",
-  "sequence": 98,
+  "updatedAt": "2026-11-18T04:17:26.907Z",
+  "sequence": 99,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4468,6 +4468,20 @@
       "packet": "research/packets/research-000098-303e943099.json",
       "packetDigest": "df4cea3e727350d6130fce980ddae729505d7912b69a2eb3f600cf1eeef0caee",
       "finishedAt": "2026-11-18T03:18:10.039Z"
+    },
+    {
+      "id": "research-000099-fdfdcad421",
+      "role": "simulation-researcher",
+      "topic": "2024 Cornell University rape allegations",
+      "day": "2026-11-18",
+      "runId": "44236276763",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T04:17:26.907Z",
+      "expiresAt": "2026-11-18T04:32:26.907Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
