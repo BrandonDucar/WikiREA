@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T20:15:15.542Z",
-  "sequence": 112,
+  "updatedAt": "2026-11-18T21:13:54.557Z",
+  "sequence": 113,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5072,6 +5072,20 @@
       "packet": "research/packets/research-000112-53ff8e8db5.json",
       "packetDigest": "8796ef8e68cff1467c21ef6cb6aef2197548f71e7d37bd715efc7c51c416c9b9",
       "finishedAt": "2026-11-18T20:15:15.542Z"
+    },
+    {
+      "id": "research-000113-1521ddfec4",
+      "role": "adversarial-reviewer",
+      "topic": "Adjacency matrix",
+      "day": "2026-11-18",
+      "runId": "44399272510",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T21:13:54.557Z",
+      "expiresAt": "2026-11-18T21:28:54.557Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
