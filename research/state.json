@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T14:16:32.810Z",
-  "sequence": 107,
+  "updatedAt": "2026-11-18T15:14:45.793Z",
+  "sequence": 108,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4860,6 +4860,20 @@
       "packet": "research/packets/research-000107-a83fc40ab1.json",
       "packetDigest": "9040d4df6d8b19682c0f4381b10cc6a5a748848c981f1ccb31b943730e995fc4",
       "finishedAt": "2026-11-18T14:16:32.810Z"
+    },
+    {
+      "id": "research-000108-694efc1972",
+      "role": "game-mechanic-researcher",
+      "topic": ".NET Compiler Platform",
+      "day": "2026-11-18",
+      "runId": "44333342635",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T15:14:45.793Z",
+      "expiresAt": "2026-11-18T15:29:45.793Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
