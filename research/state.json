@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T00:36:54.549Z",
-  "sequence": 95,
+  "updatedAt": "2026-11-18T01:16:25.294Z",
+  "sequence": 96,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4325,6 +4325,20 @@
       "packet": "research/packets/research-000095-c22e5b3064.json",
       "packetDigest": "b484370b162463ee4e523bcab73ea58b51acd98aad656fe1dfc2d218d4d5dcd8",
       "finishedAt": "2026-11-18T00:36:54.549Z"
+    },
+    {
+      "id": "research-000096-72085958da",
+      "role": "application-tracer",
+      "topic": "3D Topicscape",
+      "day": "2026-11-18",
+      "runId": "44214503674",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T01:16:25.294Z",
+      "expiresAt": "2026-11-18T01:31:25.294Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
