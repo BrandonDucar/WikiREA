@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T12:20:41.612Z",
+  "updatedAt": "2026-11-18T12:20:52.034Z",
   "sequence": 105,
   "jobs": [
     {
@@ -4728,13 +4728,44 @@
       "topic": "Apache Hadoop",
       "day": "2026-11-18",
       "runId": "44302995612",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T12:20:41.612Z",
       "expiresAt": "2026-11-18T12:35:41.612Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Apache Hadoop",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1371349805",
+        "revision": "1371349805",
+        "observedAt": "2026-11-18T12:20:44.015Z",
+        "sourceTimestamp": "2026-08-26T01:20:50Z",
+        "sha256": "c1d7d748b3a9dcf826b58fe0032a27cbfc0de7498913fafc77fb6fa380228114",
+        "excerptSha256": "955a2bda9549ffd9e54936acc88280e1973cd712ec3496198f2840db41fad693",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 49527,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-3f97d91e-ded8-4dd5-851a-ff69edf01f3c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 5276,
+        "outputTokens": 375
+      },
+      "packet": "research/packets/research-000105-df33de0d43.json",
+      "packetDigest": "7a80ce1567e9e0502816216b2cc887a6a6e383064c5e8519d2a7b1e12b5e342d",
+      "finishedAt": "2026-11-18T12:20:52.034Z"
     }
   ],
   "discovered": [
@@ -5834,11 +5865,6 @@
       "discoveredFrom": "research-000052-0783a62649"
     },
     {
-      "title": "Apache Hadoop",
-      "role": "source-curator",
-      "discoveredFrom": "research-000053-0d543f9d61"
-    },
-    {
       "title": "Archetypes",
       "role": "source-curator",
       "discoveredFrom": "research-000053-0d543f9d61"
@@ -6237,11 +6263,6 @@
       "title": "Computational complexity theory",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000063-1d20ea4b59"
-    },
-    {
-      "title": "Anita Borg",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
     },
     {
       "title": "Barbara Liskov",
@@ -7672,6 +7693,46 @@
       "title": "Computer science",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "9P (protocol)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "AXFS",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "Access-control list",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "AdvFS",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "Advanced Disc Filing System",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "Amazon Elastic Compute Cloud",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "Amazon S3",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "Amiga Fast File System",
+      "role": "source-curator",
+      "discoveredFrom": "research-000105-df33de0d43"
     }
   ],
   "reviewJobs": [
