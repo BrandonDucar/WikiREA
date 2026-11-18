@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000114-65951320f6",
+  "topic": "Barbara Liskov",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Barbara Liskov is an American computer scientist recognized for pioneering work in programming languages and distributed computing. Her career includes designing the Venus operating system, the CLU and Argus programming languages, and the Thor object-oriented database. She introduced abstract data types and data abstraction, and formulated the Liskov substitution principle, a foundational concept in object-oriented design. Her contributions have influenced widely used languages such as Java, C++, C#, and Ada. She received the 2008 Turing Award and numerous other honors.",
+    "mechanisms": [
+      {
+        "title": "Abstract data types and data abstraction",
+        "explanation": "Liskov introduced the concept of abstract data types, encapsulating data and operations to separate interface from implementation. This mechanism enables modular reasoning about program components and underpins her later work on subtyping and inheritance.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Liskov substitution principle",
+        "explanation": "Formulated with Jeannette Wing, this principle provides a formal criterion for subtype correctness in object-oriented programming. It ensures behavioral compatibility when a subtype replaces a supertype, forming a foundational rule in software engineering education and practice.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact technical details of the Venus operating system architecture",
+      "Specific implementation mechanisms within CLU beyond abstract data types",
+      "Internal design choices of the Argus distributed programming language",
+      "Precise nature of her current research focus on Byzantine fault tolerance"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Barbara Liskov",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385192200",
+    "revision": "1385192200",
+    "observedAt": "2026-11-18T22:14:07.472Z",
+    "sourceTimestamp": "2026-11-12T08:14:28Z",
+    "sha256": "57ce4b5192482ace8ecc0d2c1a4a9628dbcf3ba4474a966bbb61619c5636bcf7",
+    "excerptSha256": "1f5b2e5a45bf03387540f90fa1fee0384575b44d50e907aa084760ba428291b9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 23746,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-14a6411d-64a7-4c9f-8dff-6b3e3fc50c5c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4391,
+    "outputTokens": 334
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ea63c2a6a211829de0d644fd4a216dbb537200ddaf1993572123934e2dceb680",
+  "artifactDigest": "f84cb164d4cc97d2279177d0320dd1852a958ded39919ee042218364d3050f4f"
+}
