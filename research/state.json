@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T19:24:33.006Z",
-  "sequence": 111,
+  "updatedAt": "2026-11-18T20:15:11.502Z",
+  "sequence": 112,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5027,6 +5027,20 @@
       "packet": "research/packets/research-000111-9f9e754a87.json",
       "packetDigest": "6a0e5223bae25ef875d044946d8c52c24e63117fa16d023373e65cef6daf1b9c",
       "finishedAt": "2026-11-18T19:12:14.352Z"
+    },
+    {
+      "id": "research-000112-53ff8e8db5",
+      "role": "music-events",
+      "topic": "45 rpm adapter",
+      "day": "2026-11-18",
+      "runId": "44389014225",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T20:15:11.502Z",
+      "expiresAt": "2026-11-18T20:30:11.502Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
