@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T12:20:52.034Z",
-  "sequence": 105,
+  "updatedAt": "2026-11-18T13:15:38.966Z",
+  "sequence": 106,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4766,6 +4766,20 @@
       "packet": "research/packets/research-000105-df33de0d43.json",
       "packetDigest": "7a80ce1567e9e0502816216b2cc887a6a6e383064c5e8519d2a7b1e12b5e342d",
       "finishedAt": "2026-11-18T12:20:52.034Z"
+    },
+    {
+      "id": "research-000106-88d3584ddb",
+      "role": "application-tracer",
+      "topic": "AArch32",
+      "day": "2026-11-18",
+      "runId": "44311881461",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T13:15:38.966Z",
+      "expiresAt": "2026-11-18T13:30:38.966Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
