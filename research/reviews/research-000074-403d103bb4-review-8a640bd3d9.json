@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000074-403d103bb4-review-8a640bd3d9",
+  "parentJobId": "research-000074-403d103bb4",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "3cde46261993d4a4c995f0fc841030d3a11851ba0aced2ff76f669755b0ecca1",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Backpressure routing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1333463650",
+    "revision": "1333463650",
+    "observedAt": "2026-11-16T22:13:59.377Z",
+    "sourceTimestamp": "2026-01-17T23:11:51Z",
+    "sha256": "33ecdc8552b0dd7e2fb4770123f61da862b42d5ef3b15a076bf583f4d8d017e0",
+    "excerptSha256": "1d5f198a8adf33bd519526c11281c859ecdb4e680d747313059615be11ebc306",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 44289,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about max-weight algorithm, throughput optimality, slotted-time operation, differential backlog computation, topology-dependent rate selection, and known limitations (delays, interference challenges).",
+      "Mechanisms correctly capture differential backlog computation (commodity selection via max positive difference, arbitrary tie-breaking) and topology-dependent rate selection (observing state, choosing rate matrix from feasible set).",
+      "Unknowns properly identify gaps: exact tie-breaking procedure, handling of probabilistic errors/failures in basic algorithm, feasibility under interference, and delay trade-offs — all consistent with source's mentions of arbitrary tie-breaking, extended formulations for errors, implementation difficulties, and large delays.",
+      "No unsupported mechanisms or invented execution details; all claims trace to source text.",
+      "Qualifiers like 'may introduce large delays' and 'difficult to implement exactly' are preserved from source."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-08d3157b-5889-4389-86ab-fc87fcd96d7d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4275,
+    "outputTokens": 189
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
