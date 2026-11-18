@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000106-88d3584ddb",
+  "topic": "AArch32",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ARM AArch32 is a 32-bit RISC instruction set architecture introduced in 1985, forming the foundation of ARM's embedded and mobile processor designs. It defines a register file of 15 general-purpose 32-bit registers plus a link register, with the program counter separate. The architecture supports two instruction encodings: the fixed 32-bit ARM mode and the mixed 16/32-bit Thumb-2 mode for improved code density. Extensions include Jazelle for Java bytecode handling, various DSP and cryptography extensions, and floating-point units. AArch32 operates in a bi-endian mode with little-endian as default. The architecture has evolved through versions ARMv7-M, ARMv7-R, ARMv7-A, and ARMv8-M/R, maintaining backward compatibility while adding features. It serves as the 32-bit complement to the 64-bit AArch64, sharing the same architectural roots but with distinct encoding and register conventions.",
+    "mechanisms": [
+      {
+        "title": "Register File and PC Separation",
+        "explanation": "AArch32 provides 15 × 32-bit general-purpose registers (R0-R14) plus a dedicated link register (R14) and a separate program counter (R15). This design supports subroutine calls through the link register and position-independent code. The 26-bit program counter in older versions limited address space to 64 MB, later expanded to 32-bit in ARMv3 and beyond.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Dual Encoding Modes",
+        "explanation": "AArch32 supports two instruction encodings: the standard 32-bit ARM mode and the Thumb-2 mode which mixes 16-bit and 32-bit instructions. This dual-mode approach improves code density while maintaining performance, with the processor switching between modes using branch-and-link instructions or state-bit manipulation in the program counter.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact implementation details of Jazelle bytecode handling across different ARMv7-M variants",
+      "Specific mechanisms for Thumb-2 state transitions in microcontroller implementations",
+      "Hardware-accelerated floating-point behavior in optional FPv5 implementations",
+      "Details of SVE and SME extension support in 32-bit AArch32 contexts"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ARM architecture family",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+    "revision": "1386168955",
+    "observedAt": "2026-11-18T13:15:41.471Z",
+    "sourceTimestamp": "2026-11-17T02:13:39Z",
+    "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+    "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 160955,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-dedf582a-ef35-47df-bf1e-ac84eb84bf2c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4754,
+    "outputTokens": 532
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "24e99f957ed05e6f85065c37e4b2494afed027676aae782ccabbb0c28d71f0b1",
+  "artifactDigest": "7efdab1fd1a896b57434e9f3927fd4f78f3956eaf69714a7702d7ff5936b19cc"
+}

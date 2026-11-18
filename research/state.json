@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T13:15:38.966Z",
+  "updatedAt": "2026-11-18T13:15:46.322Z",
   "sequence": 106,
   "jobs": [
     {
@@ -4773,13 +4773,44 @@
       "topic": "AArch32",
       "day": "2026-11-18",
       "runId": "44311881461",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T13:15:38.966Z",
       "expiresAt": "2026-11-18T13:30:38.966Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ARM architecture family",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+        "revision": "1386168955",
+        "observedAt": "2026-11-18T13:15:41.471Z",
+        "sourceTimestamp": "2026-11-17T02:13:39Z",
+        "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+        "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 160955,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-dedf582a-ef35-47df-bf1e-ac84eb84bf2c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4754,
+        "outputTokens": 532
+      },
+      "packet": "research/packets/research-000106-88d3584ddb.json",
+      "packetDigest": "7efdab1fd1a896b57434e9f3927fd4f78f3956eaf69714a7702d7ff5936b19cc",
+      "finishedAt": "2026-11-18T13:15:46.322Z"
     }
   ],
   "discovered": [
@@ -5902,11 +5933,6 @@
       "title": "Big Data",
       "role": "source-curator",
       "discoveredFrom": "research-000053-0d543f9d61"
-    },
-    {
-      "title": "AArch32",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000054-be07f6d7e2"
     },
     {
       "title": "AArch64",
@@ -7747,6 +7773,46 @@
       "title": "Amiga Fast File System",
       "role": "source-curator",
       "discoveredFrom": "research-000105-df33de0d43"
+    },
+    {
+      "title": "1-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "12-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "128-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "16-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "24-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "256-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "26-bit",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "26-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000106-88d3584ddb"
     }
   ],
   "reviewJobs": [
