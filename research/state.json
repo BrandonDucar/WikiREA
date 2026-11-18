@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T17:24:36.296Z",
-  "sequence": 109,
+  "updatedAt": "2026-11-18T18:16:57.025Z",
+  "sequence": 110,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4933,6 +4933,20 @@
         "retryAfter": null
       },
       "finishedAt": "2026-11-18T16:15:42.386Z"
+    },
+    {
+      "id": "research-000110-a6c8e54557",
+      "role": "hardware-interoperability-scout",
+      "topic": "3D-printed firearm",
+      "day": "2026-11-18",
+      "runId": "44367941386",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T18:16:57.025Z",
+      "expiresAt": "2026-11-18T18:31:57.025Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
