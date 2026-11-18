@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T20:15:11.502Z",
+  "updatedAt": "2026-11-18T20:15:15.542Z",
   "sequence": 112,
   "jobs": [
     {
@@ -5034,13 +5034,44 @@
       "topic": "45 rpm adapter",
       "day": "2026-11-18",
       "runId": "44389014225",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T20:15:11.502Z",
       "expiresAt": "2026-11-18T20:30:11.502Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "45 rpm adapter",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1357440704",
+        "revision": "1357440704",
+        "observedAt": "2026-11-18T20:15:13.745Z",
+        "sourceTimestamp": "2026-06-02T17:39:23Z",
+        "sha256": "b033bf2473504cbbdf65608064ca524f7c590ceb3a1bc27e9b8244ee1b89abf1",
+        "excerptSha256": "b033bf2473504cbbdf65608064ca524f7c590ceb3a1bc27e9b8244ee1b89abf1",
+        "inspectedCharacters": 3816,
+        "totalCharacters": 3816,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1cfac4e8-9e01-499a-adf5-8ec83832d64a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1247,
+        "outputTokens": 338
+      },
+      "packet": "research/packets/research-000112-53ff8e8db5.json",
+      "packetDigest": "8796ef8e68cff1467c21ef6cb6aef2197548f71e7d37bd715efc7c51c416c9b9",
+      "finishedAt": "2026-11-18T20:15:15.542Z"
     }
   ],
   "discovered": [
@@ -5128,11 +5159,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "45 rpm adapter",
-      "role": "music-events",
-      "discoveredFrom": "research-000024-ee7dc4a4fd"
     },
     {
       "title": "8-Track Heaven",
@@ -8128,6 +8154,26 @@
       "title": "Application security",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000111-9f9e754a87"
+    },
+    {
+      "title": "Audio recording format",
+      "role": "music-events",
+      "discoveredFrom": "research-000112-53ff8e8db5"
+    },
+    {
+      "title": "Audio tape specifications",
+      "role": "music-events",
+      "discoveredFrom": "research-000112-53ff8e8db5"
+    },
+    {
+      "title": "BD-Audio",
+      "role": "music-events",
+      "discoveredFrom": "research-000112-53ff8e8db5"
+    },
+    {
+      "title": "Bernard Cousino",
+      "role": "music-events",
+      "discoveredFrom": "research-000112-53ff8e8db5"
     }
   ],
   "reviewJobs": [
