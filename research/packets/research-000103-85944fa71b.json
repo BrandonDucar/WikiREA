@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000103-85944fa71b",
+  "topic": "Adjacency list",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An adjacency list is a collection of unordered lists that maps each vertex to its neighbouring vertices in a finite graph. It is one of several common representations used in computer programs to store graph structures. The data structure associates each vertex with a collection of its neighbours, and the total time to list all neighbours of a vertex is proportional to its degree. Implementations vary: some use hash tables mapping vertices to arrays, others use arrays of linked lists indexed by vertex number, and object-oriented versions store explicit edge objects alongside vertex collections. The choice of implementation affects how neighbours are stored and accessed, but the core function remains reporting the set of adjacent vertices.",
+    "mechanisms": [
+      {
+        "title": "Hash table mapping vertices to arrays",
+        "explanation": "A suggested implementation uses a hash table to associate each vertex with an array of adjacent vertices. A vertex may be any hashable object, and no explicit edge objects are stored.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Array of singly linked lists indexed by vertex number",
+        "explanation": "Vertices are represented by index numbers; the array cell for each vertex points to a singly linked list of neighbouring vertices. List nodes may be interpreted as edge objects but store only one endpoint, resulting in two nodes per undirected edge.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How the association between vertices and neighbour collections is implemented in custom or proprietary graph libraries",
+      "Whether edge objects are stored as first-class entities in all adjacency list variants",
+      "The specific time complexity when neighbours are represented as sorted arrays versus unsorted sequential search",
+      "How space efficiency comparisons between adjacency lists and matrices are affected by graph density thresholds beyond the documented 1/64 ratio"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adjacency list",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1366823976",
+    "revision": "1366823976",
+    "observedAt": "2026-11-18T09:16:15.384Z",
+    "sourceTimestamp": "2026-07-30T12:59:42Z",
+    "sha256": "b02e9d11c9420dadcf4279e63bad1012b082da1f93484b8f81df7c5fb79b1946",
+    "excerptSha256": "b02e9d11c9420dadcf4279e63bad1012b082da1f93484b8f81df7c5fb79b1946",
+    "inspectedCharacters": 9585,
+    "totalCharacters": 9585,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f385d3f0-cadb-4f97-b41d-ff72410610d5",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2634,
+    "outputTokens": 387
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1efd14910f04fb2795caf3879eabe36a69b3853b209b1173f56ee5c88ffe1193",
+  "artifactDigest": "318fdf9138c0f995b4cb17081aa90ad7e478b7351f53a28f8806a1054ea6df50"
+}

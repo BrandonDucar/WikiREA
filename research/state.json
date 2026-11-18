@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T09:16:13.517Z",
+  "updatedAt": "2026-11-18T09:16:17.542Z",
   "sequence": 103,
   "jobs": [
     {
@@ -4663,13 +4663,44 @@
       "topic": "Adjacency list",
       "day": "2026-11-18",
       "runId": "44274323153",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T09:16:13.517Z",
       "expiresAt": "2026-11-18T09:31:13.517Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adjacency list",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1366823976",
+        "revision": "1366823976",
+        "observedAt": "2026-11-18T09:16:15.384Z",
+        "sourceTimestamp": "2026-07-30T12:59:42Z",
+        "sha256": "b02e9d11c9420dadcf4279e63bad1012b082da1f93484b8f81df7c5fb79b1946",
+        "excerptSha256": "b02e9d11c9420dadcf4279e63bad1012b082da1f93484b8f81df7c5fb79b1946",
+        "inspectedCharacters": 9585,
+        "totalCharacters": 9585,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f385d3f0-cadb-4f97-b41d-ff72410610d5",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2634,
+        "outputTokens": 387
+      },
+      "packet": "research/packets/research-000103-85944fa71b.json",
+      "packetDigest": "318fdf9138c0f995b4cb17081aa90ad7e478b7351f53a28f8806a1054ea6df50",
+      "finishedAt": "2026-11-18T09:16:17.542Z"
     }
   ],
   "discovered": [
@@ -6139,11 +6170,6 @@
       "discoveredFrom": "research-000062-4539c21763"
     },
     {
-      "title": "Adjacency list",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000063-1d20ea4b59"
-    },
-    {
       "title": "Adjacency matrix",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000063-1d20ea4b59"
@@ -7577,6 +7603,41 @@
       "title": "Choose Your Own Adventure",
       "role": "music-events",
       "discoveredFrom": "research-000102-4a8db0f48e"
+    },
+    {
+      "title": "Array data structure",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "Binary search",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "Boolean data type",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "Boost Graph Library",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "Charles E. Leiserson",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "Clifford Stein",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000103-85944fa71b"
+    },
+    {
+      "title": "Computer science",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000103-85944fa71b"
     }
   ],
   "reviewJobs": [
