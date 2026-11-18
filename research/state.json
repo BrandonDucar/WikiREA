@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T14:16:25.798Z",
+  "updatedAt": "2026-11-18T14:16:32.810Z",
   "sequence": 107,
   "jobs": [
     {
@@ -4822,13 +4822,44 @@
       "topic": "128-bit computing",
       "day": "2026-11-18",
       "runId": "44322424067",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T14:16:25.798Z",
       "expiresAt": "2026-11-18T14:31:25.798Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "128-bit computing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383971630",
+        "revision": "1383971630",
+        "observedAt": "2026-11-18T14:16:27.811Z",
+        "sourceTimestamp": "2026-11-05T22:27:50Z",
+        "sha256": "98e335dc5ab025eaad903e3f402dfd71a75cb1c1c63e748e58417c5d138c10f7",
+        "excerptSha256": "98e335dc5ab025eaad903e3f402dfd71a75cb1c1c63e748e58417c5d138c10f7",
+        "inspectedCharacters": 12124,
+        "totalCharacters": 12124,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-bfc296b3-3702-4d64-b15d-c9140d440524",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4244,
+        "outputTokens": 466
+      },
+      "packet": "research/packets/research-000107-a83fc40ab1.json",
+      "packetDigest": "9040d4df6d8b19682c0f4381b10cc6a5a748848c981f1ccb31b943730e995fc4",
+      "finishedAt": "2026-11-18T14:16:32.810Z"
     }
   ],
   "discovered": [
@@ -6056,11 +6087,6 @@
       "title": "3D paint tool",
       "role": "application-tracer",
       "discoveredFrom": "research-000056-4de8f52dba"
-    },
-    {
-      "title": "128-bit computing",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000057-1df2912289"
     },
     {
       "title": "360 Secure Browser",
@@ -7803,11 +7829,6 @@
       "discoveredFrom": "research-000106-88d3584ddb"
     },
     {
-      "title": "128-bit computing",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000106-88d3584ddb"
-    },
-    {
       "title": "16-bit computing",
       "role": "application-tracer",
       "discoveredFrom": "research-000106-88d3584ddb"
@@ -7831,6 +7852,46 @@
       "title": "26-bit computing",
       "role": "application-tracer",
       "discoveredFrom": "research-000106-88d3584ddb"
+    },
+    {
+      "title": "1-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": "12-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": "16-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": "18-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": "24-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": "256-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": "26-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
+    },
+    {
+      "title": "31-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000107-a83fc40ab1"
     }
   ],
   "reviewJobs": [

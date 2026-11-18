@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000107-a83fc40ab1",
+  "topic": "128-bit computing",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "128-bit computing denotes architectures or designs where the fundamental word size or data path is 128 bits. While no general-purpose CPU operates on 128-bit integers or addresses, many processors use 128-bit vector registers for parallel SIMD operations on smaller data types. Specialized systems, compilers, and software libraries provide 128-bit integer and floating-point support, and the bit width appears in identifiers such as UUIDs, IPv6 addresses, and cryptographic keys. Marketing uses of the term for gaming consoles do not indicate native integer or addressing support.",
+    "mechanisms": [
+      {
+        "title": "SIMD vector operations",
+        "explanation": "Modern CPUs employ 128-bit vector registers within SIMD instruction sets (e.g., SSE, AltiVec) to hold multiple smaller numbers—typically four 32-bit floats—and execute a single instruction across all values in parallel. The processor does not treat individual numbers as 128-bit values; the 128-bit width applies to the register, not the operand.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Software emulation and compiler support",
+        "explanation": "Compilers such as GCC provide 128-bit integer types (__int128) for architectures where the native register size is smaller. These types enable 128-bit arithmetic through software emulation or multiple-precision routines, and the Rust language offers built-in i128 support compiled to LLVM. Availability depends on the compiler and platform.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Why no mainstream general-purpose CPU has implemented native 128-bit integer or address operations despite decades of architectural research",
+      "Whether future ISA extensions (e.g., RISC-V reserved space) will define a complete 128-bit word architecture",
+      "How 128-bit floating-point arithmetic interacts with existing 64-bit and 80-bit formats in practice",
+      "The extent to which operating systems and compilers will adopt 128-bit native types without requiring emulation layers"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "128-bit computing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383971630",
+    "revision": "1383971630",
+    "observedAt": "2026-11-18T14:16:27.811Z",
+    "sourceTimestamp": "2026-11-05T22:27:50Z",
+    "sha256": "98e335dc5ab025eaad903e3f402dfd71a75cb1c1c63e748e58417c5d138c10f7",
+    "excerptSha256": "98e335dc5ab025eaad903e3f402dfd71a75cb1c1c63e748e58417c5d138c10f7",
+    "inspectedCharacters": 12124,
+    "totalCharacters": 12124,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-bfc296b3-3702-4d64-b15d-c9140d440524",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4244,
+    "outputTokens": 466
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "24c0b83e35a6a64ae537ae2a26ac1611799602e45d8294b07aa492b7d4df0575",
+  "artifactDigest": "9040d4df6d8b19682c0f4381b10cc6a5a748848c981f1ccb31b943730e995fc4"
+}
