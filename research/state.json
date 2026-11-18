@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T07:16:45.982Z",
+  "updatedAt": "2026-11-18T07:16:51.292Z",
   "sequence": 101,
   "jobs": [
     {
@@ -4569,13 +4569,44 @@
       "topic": "Affero General Public License",
       "day": "2026-11-18",
       "runId": "44257614230",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T07:16:45.982Z",
       "expiresAt": "2026-11-18T07:31:45.982Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "GNU Affero General Public License",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382017210",
+        "revision": "1382017210",
+        "observedAt": "2026-11-18T07:16:47.970Z",
+        "sourceTimestamp": "2026-10-26T01:54:12Z",
+        "sha256": "5b98d51ae2cec5a51e49a98579b5c490773e52db4ca9ca852b7ebbd6f492dad9",
+        "excerptSha256": "0b9d04e8ae1f22430b260e4451278c5153a2de983b2ba7c51aea93be395caa52",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 17018,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-de5dc6e6-0a36-4591-ab8b-5abd18d66d81",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4286,
+        "outputTokens": 404
+      },
+      "packet": "research/packets/research-000101-1aadab0ced.json",
+      "packetDigest": "afbb041a637701ff3162aa4866eba1505e75cf29e9eed07c8a31d0de6484667f",
+      "finishedAt": "2026-11-18T07:16:51.292Z"
     }
   ],
   "discovered": [
@@ -5973,11 +6004,6 @@
       "title": "Bandwidth (computing)",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000060-2c92eab7e0"
-    },
-    {
-      "title": "Affero General Public License",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000061-0942144a15"
     },
     {
       "title": "Anomaly detection",
@@ -7413,6 +7439,46 @@
       "title": "Altium Designer",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000100-879454f0e1"
+    },
+    {
+      "title": "Academic Free License",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "Alternative terms for free software",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "Apache License",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "Apple Public Source License",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "Armin Ronacher",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "Artistic License",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "BSD licenses",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
+    },
+    {
+      "title": "Bash (Unix shell)",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000101-1aadab0ced"
     }
   ],
   "reviewJobs": [

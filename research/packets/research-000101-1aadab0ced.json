@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000101-1aadab0ced",
+  "topic": "Affero General Public License",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The GNU Affero General Public License (AGPLv3) is a strong copyleft license designed for software typically run over computer networks. It extends the standard GPLv3 by adding a requirement that operators of network-accessible modified versions must offer the corresponding source code to all users who interact with the software. This ensures that network-based use does not evade the copyleft terms. The license is OSI-approved and DFSG-free, permitting linking with GPLv3 code under specific conditions in section 13, but it is incompatible with GPLv2 due to its network provision. It is commonly used by software-as-a-service projects seeking to balance open-source sharing with commercial dual-licensing strategies.",
+    "mechanisms": [
+      {
+        "title": "Network-source provision",
+        "explanation": "Section 2(d) of the AGPL requires that users interacting with the software over a network receive an offer to obtain the complete corresponding source code. This closes the loophole where software served over a web service could keep modifications private.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "GPLv3 compatibility clause",
+        "explanation": "Section 13 of the AGPLv3 and GPLv3 explicitly allow conveying combined works by linking code under one license with code under the other, achieving mutual compatibility despite both being strong copyleft. This does not relicense the components under each other's terms.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact technical implementation of source code offer for diverse network protocols",
+      "Whether the network provision applies to all client-server interactions or only when source code is modified",
+      "Long-term enforcement mechanisms for the network-source requirement",
+      "Interaction between AGPLv3 and other copyleft licenses not based on GPLv3"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "GNU Affero General Public License",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382017210",
+    "revision": "1382017210",
+    "observedAt": "2026-11-18T07:16:47.970Z",
+    "sourceTimestamp": "2026-10-26T01:54:12Z",
+    "sha256": "5b98d51ae2cec5a51e49a98579b5c490773e52db4ca9ca852b7ebbd6f492dad9",
+    "excerptSha256": "0b9d04e8ae1f22430b260e4451278c5153a2de983b2ba7c51aea93be395caa52",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17018,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-de5dc6e6-0a36-4591-ab8b-5abd18d66d81",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4286,
+    "outputTokens": 404
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e7c6c07b0a8d71f541a7809415a1eaef98cd55ae495060eb67909c6db4badf52",
+  "artifactDigest": "afbb041a637701ff3162aa4866eba1505e75cf29e9eed07c8a31d0de6484667f"
+}
