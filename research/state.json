@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T13:25:27.823Z",
-  "sequence": 106,
+  "updatedAt": "2026-11-18T14:16:25.798Z",
+  "sequence": 107,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -4815,6 +4815,20 @@
       "packet": "research/packets/research-000106-88d3584ddb.json",
       "packetDigest": "7efdab1fd1a896b57434e9f3927fd4f78f3956eaf69714a7702d7ff5936b19cc",
       "finishedAt": "2026-11-18T13:15:46.322Z"
+    },
+    {
+      "id": "research-000107-a83fc40ab1",
+      "role": "runtime-researcher",
+      "topic": "128-bit computing",
+      "day": "2026-11-18",
+      "runId": "44322424067",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-18T14:16:25.798Z",
+      "expiresAt": "2026-11-18T14:31:25.798Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
