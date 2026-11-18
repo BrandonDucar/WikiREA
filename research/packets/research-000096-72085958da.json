@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000096-72085958da",
+  "topic": "3D Topicscape",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3D Topicscape is a personal information manager that visualizes hierarchical data as a 3D scene of cones or pyramids, allowing users to navigate via zooming and flying metaphors. It supports importing from mind-mapping and brainstorming tools and can display data in 2D. The software uses an embedded database to store metadata and linked files, with folders that move without breaking relative links. It is positioned for task and project management, though its primary function is information organization.",
+    "mechanisms": [
+      {
+        "title": "3D hierarchical visualization",
+        "explanation": "Nodes are rendered as cones or pyramids in a 3D scene, with arrangement indicating relationships. Users can re-center the view on any node, causing surrounding nodes to adjust into view, providing a zooming user interface for navigating deep hierarchies.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Import and database storage",
+        "explanation": "Topicscapes are created by importing folders or data from other mind-mapping applications. An embedded relational database stores user and operational metadata, and linked files can be held in a folder associated with the Topicscape; folder moves preserve relative file links.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How the 3D navigation metaphors affect user task efficiency",
+      "Whether the claimed suitability for project management is empirically supported",
+      "The specific algorithms used for node positioning and hierarchy rendering",
+      "The long-term stability and feature completeness of the embedded database format"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D Topicscape",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1357907856",
+    "revision": "1357907856",
+    "observedAt": "2026-11-18T01:16:27.076Z",
+    "sourceTimestamp": "2026-06-05T11:33:58Z",
+    "sha256": "1fb317577141ea46fda3cedc55bab12e8295116998899b6543ea37ec60d6de73",
+    "excerptSha256": "1fb317577141ea46fda3cedc55bab12e8295116998899b6543ea37ec60d6de73",
+    "inspectedCharacters": 4539,
+    "totalCharacters": 4539,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8f1bb0e3-c691-4122-bde5-d564d60f0891",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1573,
+    "outputTokens": 339
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "744d911ebeaec9e80f28fdebb8bcab0e860ce4d49f796fdfce0780d1ed6b29d5",
+  "artifactDigest": "ad18a8b82a80a5186a15842a57fcc9249d76dd8917bbcd90b5d9231319b17442"
+}

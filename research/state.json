@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T01:16:25.294Z",
+  "updatedAt": "2026-11-18T01:16:29.092Z",
   "sequence": 96,
   "jobs": [
     {
@@ -4332,13 +4332,44 @@
       "topic": "3D Topicscape",
       "day": "2026-11-18",
       "runId": "44214503674",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T01:16:25.294Z",
       "expiresAt": "2026-11-18T01:31:25.294Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D Topicscape",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1357907856",
+        "revision": "1357907856",
+        "observedAt": "2026-11-18T01:16:27.076Z",
+        "sourceTimestamp": "2026-06-05T11:33:58Z",
+        "sha256": "1fb317577141ea46fda3cedc55bab12e8295116998899b6543ea37ec60d6de73",
+        "excerptSha256": "1fb317577141ea46fda3cedc55bab12e8295116998899b6543ea37ec60d6de73",
+        "inspectedCharacters": 4539,
+        "totalCharacters": 4539,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-8f1bb0e3-c691-4122-bde5-d564d60f0891",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1573,
+        "outputTokens": 339
+      },
+      "packet": "research/packets/research-000096-72085958da.json",
+      "packetDigest": "ad18a8b82a80a5186a15842a57fcc9249d76dd8917bbcd90b5d9231319b17442",
+      "finishedAt": "2026-11-18T01:16:29.092Z"
     }
   ],
   "discovered": [
@@ -5491,11 +5522,6 @@
       "title": "Big Data",
       "role": "source-curator",
       "discoveredFrom": "research-000053-0d543f9d61"
-    },
-    {
-      "title": "3D Topicscape",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000054-be07f6d7e2"
     },
     {
       "title": "AArch32",
@@ -7056,6 +7082,46 @@
       "title": "Behavioral analytics",
       "role": "source-curator",
       "discoveredFrom": "research-000095-c22e5b3064"
+    },
+    {
+      "title": "Araucaria (software)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
+    },
+    {
+      "title": "Argument map",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
+    },
+    {
+      "title": "Argüman",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
+    },
+    {
+      "title": "BBC World Service",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
+    },
+    {
+      "title": "Brainstorming",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
+    },
+    {
+      "title": "CmapTools",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
+    },
+    {
+      "title": "Coggle",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
+    },
+    {
+      "title": "Compendium (software)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000096-72085958da"
     }
   ],
   "reviewJobs": [
