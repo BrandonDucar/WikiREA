@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000082-3295e49fa9-review-8a640bd3d9",
+  "parentJobId": "research-000082-3295e49fa9",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "41c453ecf9d6910eed0c80014c1b80f936f786427c4cd527848cc3145c0d31ee",
+  "sourcePin": {
+    "id": "S1",
+    "title": "JACK Audio Connection Kit",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1361802181",
+    "revision": "1361802181",
+    "observedAt": "2026-11-17T08:19:27.965Z",
+    "sourceTimestamp": "2026-06-30T04:49:48Z",
+    "sha256": "8422b6a471467f4b0aa9b382a1f2b4e58e119f7358b8f048cc18f46507299415",
+    "excerptSha256": "8422b6a471467f4b0aa9b382a1f2b4e58e119f7358b8f048cc18f46507299415",
+    "inspectedCharacters": 8600,
+    "totalCharacters": 8600,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on JACK's role, implementations, back-ends, PipeWire compatibility, and kernel impact",
+      "Mechanisms correctly capture real-time routing and scheduling/kernel optimization with proper source attribution",
+      "Unknowns appropriately identify internal architecture details not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'de facto standard' and 'driving force' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-95b8b1fa-de45-4d2c-8708-a0c5f2f9b2f8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3150,
+    "outputTokens": 99
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
