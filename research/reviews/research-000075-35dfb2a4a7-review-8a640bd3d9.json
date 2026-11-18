@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000075-35dfb2a4a7-review-8a640bd3d9",
+  "parentJobId": "research-000075-35dfb2a4a7",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "86fb59a8dd45823dc16517e61889e0b105e87065839ed63691878ddb5fcfe025",
+  "sourcePin": {
+    "id": "S1",
+    "title": "OpenStreetMap",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383785674",
+    "revision": "1383785674",
+    "observedAt": "2026-11-17T00:36:11.505Z",
+    "sourceTimestamp": "2026-11-04T21:24:01Z",
+    "sha256": "a4780d1112756b32ba572418a3218807860ae9a33a8dbccc0cb1e01347b6da61",
+    "excerptSha256": "6b540cab342e128a344cc63c42dc803053ce32ee56310263c948002513179162",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 114020,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on OSM's origin, licensing, data collection methods, and governance",
+      "Mechanisms correctly describe community-driven data collection and open licensing/data model with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'primarily' and 'may' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-8e77f350-432f-4c89-8b64-fb1641aa2422",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4544,
+    "outputTokens": 91
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
