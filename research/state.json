@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T21:13:54.557Z",
+  "updatedAt": "2026-11-18T21:13:59.111Z",
   "sequence": 113,
   "jobs": [
     {
@@ -5079,13 +5079,44 @@
       "topic": "Adjacency matrix",
       "day": "2026-11-18",
       "runId": "44399272510",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-18T21:13:54.557Z",
       "expiresAt": "2026-11-18T21:28:54.557Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adjacency matrix",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384538875",
+        "revision": "1384538875",
+        "observedAt": "2026-11-18T21:13:56.415Z",
+        "sourceTimestamp": "2026-11-08T19:31:42Z",
+        "sha256": "803ae8007018460a329cb81199e586966984f4f0b45df0761388e23348f58972",
+        "excerptSha256": "3df21188e77209c338ec25c74ab8d8b0f99d533d49c7a43fce223974d01e3024",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 20909,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-31a66b35-54cc-4efc-b636-733f91a33f47",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4605,
+        "outputTokens": 370
+      },
+      "packet": "research/packets/research-000113-1521ddfec4.json",
+      "packetDigest": "bed446a92cc8802c9d5ae7f6d8a41515392ae26c7fd272b562b242f7b6bccedb",
+      "finishedAt": "2026-11-18T21:13:59.111Z"
     }
   ],
   "discovered": [
@@ -6513,11 +6544,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Adjacency matrix",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000063-1d20ea4b59"
     },
     {
       "title": "Algorithm",
@@ -8188,6 +8214,41 @@
       "title": "Bernard Cousino",
       "role": "music-events",
       "discoveredFrom": "research-000112-53ff8e8db5"
+    },
+    {
+      "title": "(0,1)-matrix",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000113-1521ddfec4"
+    },
+    {
+      "title": "Adjugate matrix",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000113-1521ddfec4"
+    },
+    {
+      "title": "Algebraic graph theory",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000113-1521ddfec4"
+    },
+    {
+      "title": "Alternant matrix",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000113-1521ddfec4"
+    },
+    {
+      "title": "Alternating sign matrix",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000113-1521ddfec4"
+    },
+    {
+      "title": "Anti-diagonal matrix",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000113-1521ddfec4"
+    },
+    {
+      "title": "Arrowhead matrix",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000113-1521ddfec4"
     }
   ],
   "reviewJobs": [

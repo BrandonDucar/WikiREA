@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000113-1521ddfec4",
+  "topic": "Adjacency matrix",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An adjacency matrix is a square grid of numbers that records which vertices in a graph connect to which others. A value of 1 indicates a direct connection, while 0 indicates no connection. In undirected graphs, the matrix is symmetric, reflecting bidirectional edges. In directed graphs, the matrix can be asymmetric, with rows and columns representing outgoing and incoming connections respectively. The matrix can be used to count walks of specific lengths between vertices, and its eigenvalues reveal structural properties such as connectivity and bipartiteness. The matrix also differs from incidence and degree matrices, which track vertex-edge relationships and vertex degrees separately.",
+    "mechanisms": [
+      {
+        "title": "Connection Encoding",
+        "explanation": "The matrix stores connection information as binary entries. A 1 at position (i,j) means vertex i connects to vertex j. In undirected graphs, symmetry ensures the connection is recorded from both perspectives, while directed graphs may use rows for outgoing and columns for incoming edges.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Walk Counting via Powers",
+        "explanation": "Raising the matrix to a power n reveals the number of walks of length n between any two vertices. The smallest power that yields a positive entry at (i,j) indicates the shortest path distance between those vertices.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific adjacency matrix conventions handle weighted edges beyond simple 0/1 values",
+      "Whether the matrix representation preserves vertex attributes or only structural relationships",
+      "The exact computational cost of matrix operations for very large sparse graphs",
+      "How loop counting conventions (once vs twice) affect degree calculations in all graph types"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adjacency matrix",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384538875",
+    "revision": "1384538875",
+    "observedAt": "2026-11-18T21:13:56.415Z",
+    "sourceTimestamp": "2026-11-08T19:31:42Z",
+    "sha256": "803ae8007018460a329cb81199e586966984f4f0b45df0761388e23348f58972",
+    "excerptSha256": "3df21188e77209c338ec25c74ab8d8b0f99d533d49c7a43fce223974d01e3024",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20909,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-31a66b35-54cc-4efc-b636-733f91a33f47",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4605,
+    "outputTokens": 370
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "83047b715ef2d34891d66cd993410d09db2942e56e7ab75a69d49b9d7ab97fba",
+  "artifactDigest": "bed446a92cc8802c9d5ae7f6d8a41515392ae26c7fd272b562b242f7b6bccedb"
+}
