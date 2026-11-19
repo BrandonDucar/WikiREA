@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000118-9a613356d7",
+  "topic": ".NET Core",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The .NET platform is a free, open-source, managed software framework originally released as .NET Core in 2016, designed as a cross-platform successor to the Windows-only .NET Framework. It supports Windows, Linux, and macOS, with annual release cycles producing short-term support versions and longer-term support releases. The project is primarily developed by Microsoft employees via the .NET Foundation and is released under the MIT license. It supports multiple programming languages including C#, C++, and C, and runs on various CPU architectures including x86-64, ARM, and IBM Z.",
+    "mechanisms": [
+      {
+        "title": "Managed code execution environment",
+        "explanation": ".NET provides a managed runtime environment that handles memory layout, type safety, and security sandboxing for code written in supported languages. This abstraction layer allows the same compiled intermediate language to run across different operating systems without direct hardware interaction.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Cross-platform abstraction layer",
+        "explanation": "The framework implements a cross-platform compatibility layer that translates platform-specific operations into a common intermediate format. This enables .NET applications to run on Windows, Linux, and macOS by decoupling application code from underlying OS APIs.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mechanism of OS API translation for platform-specific features",
+      "Internal details of the runtime's garbage collection across different OS environments",
+      "Precise scope of library subset carried forward from .NET Framework to .NET Core",
+      "Details of Just-In-Time compilation strategy across different CPU architectures"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+    "revision": "1384980993",
+    "observedAt": "2026-11-19T03:17:38.322Z",
+    "sourceTimestamp": "2026-11-11T05:21:33Z",
+    "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+    "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39476,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-567a99e1-ce05-47ff-9d1d-d2b4242657c4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4847,
+    "outputTokens": 353
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "8bcfa7f5f433f88ff83bd36f3e245180a1ed47c700fafeb1147618343a0788f9",
+  "artifactDigest": "bdf771d99269d2e5979849ca1d6ff5cab8991b821a9b8cd4786ea798ffc0e2eb"
+}

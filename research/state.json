@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T03:17:36.601Z",
+  "updatedAt": "2026-11-19T03:17:40.315Z",
   "sequence": 118,
   "jobs": [
     {
@@ -5312,21 +5312,47 @@
       "topic": ".NET Core",
       "day": "2026-11-19",
       "runId": "44450397908",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T03:17:36.601Z",
       "expiresAt": "2026-11-19T03:32:36.601Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": ".NET",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+        "revision": "1384980993",
+        "observedAt": "2026-11-19T03:17:38.322Z",
+        "sourceTimestamp": "2026-11-11T05:21:33Z",
+        "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+        "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 39476,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-567a99e1-ce05-47ff-9d1d-d2b4242657c4",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4847,
+        "outputTokens": 353
+      },
+      "packet": "research/packets/research-000118-9a613356d7.json",
+      "packetDigest": "bdf771d99269d2e5979849ca1d6ff5cab8991b821a9b8cd4786ea798ffc0e2eb",
+      "finishedAt": "2026-11-19T03:17:40.315Z"
     }
   ],
   "discovered": [
-    {
-      "title": ".NET Core",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000021-ec00986789"
-    },
     {
       "title": ".NET Foundation",
       "role": "game-mechanic-researcher",
@@ -8566,6 +8592,11 @@
       "title": "App Store (iOS)",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000117-1616f03ee3"
+    },
+    {
+      "title": ".net (disambiguation)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000118-9a613356d7"
     }
   ],
   "reviewJobs": [
