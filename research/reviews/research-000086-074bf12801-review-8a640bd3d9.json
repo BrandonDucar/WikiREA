@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000086-074bf12801-review-8a640bd3d9",
+  "parentJobId": "research-000086-074bf12801",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "eb9140bd4a5aef4caf10843c5d2e9f1232973992d8cc955795a38bae2605374f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "0 A.D. (video game)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385630219",
+    "revision": "1385630219",
+    "observedAt": "2026-11-17T13:16:12.154Z",
+    "sourceTimestamp": "2026-11-14T09:43:06Z",
+    "sha256": "d3ba96bdca5ac019b8fecf7800890e59e84b1ef7578daec1605ddea6a0f89e51",
+    "excerptSha256": "5a8df982462e8fa5a1c0302c3eb788457ff26c67194b6cb52f0a4bfa0018325c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15026,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on game scope, engine, platforms, and development history",
+      "Mechanisms correctly describe Pyrogenesis engine and peer-to-peer multiplayer as stated in source",
+      "Unknowns appropriately identify gaps in technical detail about tracer architecture not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'primarily in C++' and 'eliminating the need for a central server' match source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-a082de92-9059-42c6-8595-c16e784e2912",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5328,
+    "outputTokens": 105
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

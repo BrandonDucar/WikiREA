@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000086-074bf12801",
+  "title": "0 A.D. (video game)",
+  "role": "application-tracer",
+  "createdAt": "2026-11-19T05:25:30.410Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "0 A.D. is a free, open-source real-time strategy game set between 500 BC and 1 BC, built on the Pyrogenesis engine and cross-platform. Players manage base-building, economy, army training, and technology research across evolving settlement phases. Multiplayer uses peer-to-peer networking. Development shifted from an Age of Kings mod to a standalone project, with historical accuracy prioritized for unit and building design. Funding is primarily handled by Software in the Public Interest.",
+  "mechanisms": [
+    {
+      "title": "Pyrogenesis engine architecture",
+      "explanation": "The game runs on the in-house Pyrogenesis engine, written primarily in C++ with JavaScript components, handling rendering, simulation, and systems integration for real-time strategy gameplay.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Peer-to-peer multiplayer networking",
+      "explanation": "Multiplayer functionality is implemented using peer-to-peer networking, eliminating the need for a central server and relying on direct player connections.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal tracer architecture and data flow mechanisms",
+    "How application-tracer specifically interfaces with the Pyrogenesis engine",
+    "Whether tracer functionality is integrated, optional, or absent from the released codebase",
+    "Details of any profiling or instrumentation system built into the engine"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "0 A.D. (video game)",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385630219",
+      "revision": "1385630219",
+      "observedAt": "2026-11-17T13:16:12.154Z",
+      "sourceTimestamp": "2026-11-14T09:43:06Z",
+      "sha256": "d3ba96bdca5ac019b8fecf7800890e59e84b1ef7578daec1605ddea6a0f89e51",
+      "excerptSha256": "5a8df982462e8fa5a1c0302c3eb788457ff26c67194b6cb52f0a4bfa0018325c",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 15026,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on game scope, engine, platforms, and development history",
+      "Mechanisms correctly describe Pyrogenesis engine and peer-to-peer multiplayer as stated in source",
+      "Unknowns appropriately identify gaps in technical detail about tracer architecture not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'primarily in C++' and 'eliminating the need for a central server' match source language"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-8d556528-a18a-44de-b2ab-758e08e567bf",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5018,
+      "outputTokens": 306
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-a082de92-9059-42c6-8595-c16e784e2912",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5328,
+      "outputTokens": 105
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "b678a82c8b0c288a073ee006afd0b5f2d922e9dc33ce3e7335335ed3d4816d69",
+    "artifactDigest": "eb9140bd4a5aef4caf10843c5d2e9f1232973992d8cc955795a38bae2605374f",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000086-074bf12801.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
