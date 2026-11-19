@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000087-564644db83-review-8a640bd3d9",
+  "parentJobId": "research-000087-564644db83",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "46c58c19113ec29dad4ae76b49d6d8e09b75925b2a90bdeab7ceebd47087f6a3",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Event loop",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379787051",
+    "revision": "1379787051",
+    "observedAt": "2026-11-17T14:16:11.114Z",
+    "sourceTimestamp": "2026-10-11T23:14:39Z",
+    "sha256": "191c254a05b50b179becaff2e437f6a7449235e4fae80ccb3eaeecce2c37db6f",
+    "excerptSha256": "6c63d819d65add3d9e5fa5b7c085084e66a5590051cd732222637551c6879e0f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 14056,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of event loop as blocking request/dispatch algorithm",
+      "Mechanisms correctly capture blocking cycle and queue-based selection from source text",
+      "Unknowns appropriately identify gaps in provider implementation details and cross-runtime differences",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'often' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-50337a82-cea2-4d45-bfe7-83db31b92d26",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3916,
+    "outputTokens": 85
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

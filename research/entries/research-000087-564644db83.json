@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000087-564644db83",
+  "title": "Event loop",
+  "role": "runtime-researcher",
+  "createdAt": "2026-11-19T07:26:13.321Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "An event loop is a runtime algorithm that continuously requests and dispatches events or messages from a provider, typically blocking until one arrives. It serves as the central dispatcher for single-threaded environments, enabling asynchronous handling of user interactions, I/O, and timers by cycling through queues when the main thread is idle. The loop invokes handlers for each received item, forming the core execution model for many graphical and networked applications.",
+  "mechanisms": [
+    {
+      "title": "Blocking request and dispatch cycle",
+      "explanation": "The loop calls a provider function (e.g., get_next_message or select) that blocks the thread until an event or message is available. Once received, the loop invokes the associated handler, then repeats. This cycle allows the runtime to remain responsive without polling continuously.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Queue-based task selection",
+      "explanation": "In JavaScript and similar runtimes, the event loop maintains separate queues (task queue, microtask queue). When the call stack is empty, the loop selects the next task from these queues, enabling non-blocking I/O, timers, and promise callbacks within a single-threaded model.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact blocking implementation details of the event provider across different operating systems",
+    "Internal queue prioritization logic beyond documented ordering guarantees",
+    "Cross-runtime differences in microtask versus task queue interaction",
+    "Signal handling integration within the core event loop without explicit pselect or self-pipe mechanisms"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Event loop",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379787051",
+      "revision": "1379787051",
+      "observedAt": "2026-11-17T14:16:11.114Z",
+      "sourceTimestamp": "2026-10-11T23:14:39Z",
+      "sha256": "191c254a05b50b179becaff2e437f6a7449235e4fae80ccb3eaeecce2c37db6f",
+      "excerptSha256": "6c63d819d65add3d9e5fa5b7c085084e66a5590051cd732222637551c6879e0f",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 14056,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of event loop as blocking request/dispatch algorithm",
+      "Mechanisms correctly capture blocking cycle and queue-based selection from source text",
+      "Unknowns appropriately identify gaps in provider implementation details and cross-runtime differences",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'often' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-bf2b5c9c-0e18-4b6a-b9ae-049c9fe543d0",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3545,
+      "outputTokens": 343
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-50337a82-cea2-4d45-bfe7-83db31b92d26",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3916,
+      "outputTokens": 85
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "ac11e6773492774123491ec8d0158a457a1d3bf40d485dd045e362de250f8a13",
+    "artifactDigest": "46c58c19113ec29dad4ae76b49d6d8e09b75925b2a90bdeab7ceebd47087f6a3",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000087-564644db83.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
