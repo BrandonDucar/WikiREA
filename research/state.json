@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T02:19:50.572Z",
+  "updatedAt": "2026-11-19T02:19:55.709Z",
   "sequence": 117,
   "jobs": [
     {
@@ -5267,13 +5267,44 @@
       "topic": "360 Secure Browser",
       "day": "2026-11-19",
       "runId": "44443493207",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T02:19:50.572Z",
       "expiresAt": "2026-11-19T02:34:50.572Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "360 Secure Browser",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381651609",
+        "revision": "1381651609",
+        "observedAt": "2026-11-19T02:19:52.229Z",
+        "sourceTimestamp": "2026-10-23T22:14:55Z",
+        "sha256": "e290bca5b498a473dd8f3f3caf4f1508940b0709227fa2114bfe573974d52cb6",
+        "excerptSha256": "e290bca5b498a473dd8f3f3caf4f1508940b0709227fa2114bfe573974d52cb6",
+        "inspectedCharacters": 9328,
+        "totalCharacters": 9328,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-44ce5add-abff-4950-a3c7-bda196340781",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3405,
+        "outputTokens": 420
+      },
+      "packet": "research/packets/research-000117-1616f03ee3.json",
+      "packetDigest": "8beae8e378f210c06a3da665dd41f887b59891e75f6d191f352e5ccfb2c29746",
+      "finishedAt": "2026-11-19T02:19:55.709Z"
     }
   ],
   "discovered": [
@@ -6473,11 +6504,6 @@
       "discoveredFrom": "research-000056-4de8f52dba"
     },
     {
-      "title": "360 Secure Browser",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000057-1df2912289"
-    },
-    {
       "title": "64-bit computing",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000057-1df2912289"
@@ -6786,11 +6812,6 @@
       "title": "Chain of trust",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
-    },
-    {
-      "title": "360 Secure Browser",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000066-02c0e9d820"
     },
     {
       "title": "3DMLW",
@@ -8506,6 +8527,31 @@
       "title": "ARM Cortex-A72",
       "role": "application-tracer",
       "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "360 Safeguard",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000117-1616f03ee3"
+    },
+    {
+      "title": "Abaco (web browser)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000117-1616f03ee3"
+    },
+    {
+      "title": "Amaya (web editor)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000117-1616f03ee3"
+    },
+    {
+      "title": "Amazon Silk",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000117-1616f03ee3"
+    },
+    {
+      "title": "App Store (iOS)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000117-1616f03ee3"
     }
   ],
   "reviewJobs": [
