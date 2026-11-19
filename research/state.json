@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T17:24:48.930Z",
-  "sequence": 129,
+  "updatedAt": "2026-11-19T18:18:35.571Z",
+  "sequence": 130,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5873,6 +5873,20 @@
       "packet": "research/packets/research-000129-25ff439585.json",
       "packetDigest": "d04ff4e570acfba129460e11db93407b2cc0b66fed8d1152a8579c5f36b69b69",
       "finishedAt": "2026-11-19T16:16:32.527Z"
+    },
+    {
+      "id": "research-000130-4ec554c180",
+      "role": "hardware-interoperability-scout",
+      "topic": "3D Manufacturing Format",
+      "day": "2026-11-19",
+      "runId": "44586357425",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T18:18:35.571Z",
+      "expiresAt": "2026-11-19T18:33:35.571Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
