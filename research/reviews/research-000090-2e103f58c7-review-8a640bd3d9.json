@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000090-2e103f58c7-review-8a640bd3d9",
+  "parentJobId": "research-000090-2e103f58c7",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "8c86283a079a7a0f1500376cb6797f1d0e555cc0d2616f50b75ac99ab2d2fe58",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Modbus",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1352474681",
+    "revision": "1352474681",
+    "observedAt": "2026-11-17T18:18:31.198Z",
+    "sourceTimestamp": "2026-05-04T11:57:02Z",
+    "sha256": "1323781717db3b5232cf72433896e183f33629e659a4c2df883fa1a859d19201",
+    "excerptSha256": "29641f44505787070267d4893ab008c341cf50e11f3499703d930d8ff23a61e8",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39502,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects openly published, royalty-free nature and transport layer options from source",
+      "Mechanisms correctly describe client-server transaction structure with PDU/ADU framing and function code echoing",
+      "Data model tables and addressing details match source specifications including 65536 items per table and big-endian ordering",
+      "Unknowns appropriately identify proprietary gateway designs, wireless implementations, and error handling gaps not fully detailed in source",
+      "No unsupported mechanisms, copied passages, or invented execution details detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-130bf59d-e8c7-42a3-b65c-2cc8bce492fb",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4813,
+    "outputTokens": 114
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
