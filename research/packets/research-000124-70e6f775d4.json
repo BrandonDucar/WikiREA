@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000124-70e6f775d4",
+  "topic": "Byzantine fault tolerance",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Byzantine fault tolerance (BFT) describes a system's resilience to faults where a component presents inconsistent symptoms to different observers, preventing agreement. The core challenge is achieving consensus among distributed nodes when some nodes are unreliable or malicious. BFT ensures that operationally correct components can continue providing service as long as faulty nodes are fewer than one-third of the total. The system tolerates arbitrary data generation by faulty nodes, which can confuse failure detection. Solutions rely on protocols that require message exchange rounds and often assume synchronous communication, where the total node count must exceed three times the number of faulty nodes for agreement to be possible.",
+    "mechanisms": [
+      {
+        "title": "Message exchange and quorum agreement",
+        "explanation": "Nodes repeatedly exchange messages to reach consensus. Protocols require that the number of total nodes exceeds three times the number of faulty nodes (n > 3t). Loyal nodes follow a consistent rule for processing messages, including handling missing or null votes via pre-assigned defaults, ensuring that honest nodes can outvote or out-rely on faulty nodes to agree on a common strategy.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Synchronous communication assumption and bounded delay",
+        "explanation": "Fault tolerance is only guaranteed when communication is synchronous, meaning message delivery has a known upper bound. This allows nodes to time out missing messages and apply default strategies (e.g., retreat). Without synchrony, or if faulty nodes exceed one-third of the total, consensus may become impossible, as faulty nodes can forge or selectively withhold messages to split honest nodes.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How asynchronous networks achieve BFT without timing assumptions",
+      "Whether cryptographic digital signatures alone can prevent all Byzantine symptoms",
+      "The exact threshold of faulty nodes in real-world permissioned vs. permissionless deployments",
+      "Physical failure modes that mimic Byzantine behavior without malicious intent"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Byzantine fault",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386025150",
+    "revision": "1386025150",
+    "observedAt": "2026-11-19T10:15:46.576Z",
+    "sourceTimestamp": "2026-11-16T13:01:55Z",
+    "sha256": "650ec5cf8525b5575b7f9c7867c94da4d21681f898ba2e7d838405835a2fe4ef",
+    "excerptSha256": "56661943ba19263a743481a17c56c042a5dc3153407616c9014d8c5626c062b6",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 36504,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4c11d87f-2414-4a1c-849b-0284e2888605",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4015,
+    "outputTokens": 419
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fed90ca9f65102e3807d7c5999fe707d882d95e0b4e726a16b7c129efebc2e39",
+  "artifactDigest": "d3491fc34e033c7a012366c76db03db59e3db12d585c7162ffb8224fa69fdd49"
+}

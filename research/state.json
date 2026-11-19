@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T10:15:44.663Z",
+  "updatedAt": "2026-11-19T10:15:48.995Z",
   "sequence": 124,
   "jobs": [
     {
@@ -5598,13 +5598,44 @@
       "topic": "Byzantine fault tolerance",
       "day": "2026-11-19",
       "runId": "44503981928",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T10:15:44.663Z",
       "expiresAt": "2026-11-19T10:30:44.663Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Byzantine fault",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386025150",
+        "revision": "1386025150",
+        "observedAt": "2026-11-19T10:15:46.576Z",
+        "sourceTimestamp": "2026-11-16T13:01:55Z",
+        "sha256": "650ec5cf8525b5575b7f9c7867c94da4d21681f898ba2e7d838405835a2fe4ef",
+        "excerptSha256": "56661943ba19263a743481a17c56c042a5dc3153407616c9014d8c5626c062b6",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 36504,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4c11d87f-2414-4a1c-849b-0284e2888605",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4015,
+        "outputTokens": 419
+      },
+      "packet": "research/packets/research-000124-70e6f775d4.json",
+      "packetDigest": "d3491fc34e033c7a012366c76db03db59e3db12d585c7162ffb8224fa69fdd49",
+      "finishedAt": "2026-11-19T10:15:48.995Z"
     }
   ],
   "discovered": [
@@ -7002,11 +7033,6 @@
       "title": "Computational complexity theory",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000063-1d20ea4b59"
-    },
-    {
-      "title": "Byzantine fault tolerance",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
     },
     {
       "title": "CiteSeerX (identifier)",
@@ -8997,6 +9023,46 @@
       "title": "Al-Khwarizmi",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "51% attack",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": "AI",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": "AI safety",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": "ARINC",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": "Aircraft Information Management System",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": "Albania",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": "Allegory",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": "Ares I",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000124-70e6f775d4"
     }
   ],
   "reviewJobs": [
