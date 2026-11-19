@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000093-3fcc2d58de-review-8a640bd3d9",
+  "parentJobId": "research-000093-3fcc2d58de",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "98acc0a1affac02dc95ee7378440c7c5c8fc11deaf636dc979a5ef6b42ab3c91",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Capability-based security",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1378449379",
+    "revision": "1378449379",
+    "observedAt": "2026-11-17T21:14:12.173Z",
+    "sourceTimestamp": "2026-10-04T15:22:34Z",
+    "sha256": "d503b138b1b9df8fce1acfb6d4eff8bb1e8fd992abf39888f0a4b85a18661953",
+    "excerptSha256": "ed55674564babc48a0c167670d4c4fa591894b9f213a92699871132fe357d6ee",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 14891,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of capabilities as unforgeable tokens binding object references to access rights",
+      "Mechanisms correctly describe OS-enforced storage in protected kernel memory and controlled operations on capabilities",
+      "Unknowns properly identify gaps about partial OS support, hardware requirements, orthogonal persistence necessity, and POSIX limitations",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'in theory' preserved from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-4b76161a-fbc5-4bc2-bf00-185c49760bd3",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4196,
+    "outputTokens": 102
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
