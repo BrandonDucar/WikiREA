@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000091-1fa1cc3535",
+  "title": "Stream processing",
+  "role": "market-data-researcher",
+  "createdAt": "2026-11-19T17:24:48.930Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Stream processing is a programming paradigm that treats sequences of events in time as the central input and output of computation. It simplifies parallel software and hardware by restricting the kinds of parallel computation possible, applying kernel functions to each element in a stream. The paradigm is especially suited to applications with high compute intensity, data parallelism, and data locality, such as image, video, and digital signal processing. Systems use streaming algorithms, stream management systems for distribution and scheduling, and hardware acceleration via floating-point units, GPUs, and FPGAs. Code examples demonstrate continuous SQL queries joining data streams and complex event detection from event sequences.",
+  "mechanisms": [
+    {
+      "title": "Stream abstraction and kernel functions",
+      "explanation": "The paradigm views data as unbounded, continuous sequences of events. A series of kernel functions is applied to each element in the stream. Kernel functions are typically pipelined, and the programming model exposes data dependencies, allowing compiler tools to automate and optimize on-chip management tasks.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Stream management and hardware acceleration",
+      "explanation": "Software stacks include stream management systems for distribution, scheduling, and query languages. Hardware components provide acceleration through floating-point units, GPUs, and FPGAs. Streaming algorithms trace parallel processing for data streams, and hardware techniques such as scoreboarding initiate DMA when dependencies are resolved.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact hardware implementation details of FPGA-based stream processing compilation",
+    "Complete reverse engineering of proprietary stream processing system internals",
+    "Physical teardown or internal architecture of general-purpose CPU SIMD units",
+    "Validated causal relationships between specific hardware features and performance outcomes"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Stream processing",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371528499",
+      "revision": "1371528499",
+      "observedAt": "2026-11-17T19:13:43.166Z",
+      "sourceTimestamp": "2026-08-27T00:28:15Z",
+      "sha256": "f82f98eea86c8d8c7b4ce3cc1841f886a5645b3cba02e011c5a2ea451a7ab3e5",
+      "excerptSha256": "3d213114593cd2142435542138a04f4615ee0e45f354a167e93b248e6e782a8d",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 51107,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of stream processing as a programming paradigm centered on event sequences",
+      "Mechanisms correctly capture stream abstraction, kernel functions, pipelining, and compiler automation from source",
+      "Hardware acceleration components (FPUs, GPUs, FPGAs) and stream management systems match source description",
+      "Code examples for continuous SQL queries and complex event detection are properly attributed to source",
+      "Unknowns appropriately identify gaps in hardware implementation details and proprietary system internals"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-b6b45fba-a812-4e78-afdb-d59431dc9e08",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3651,
+      "outputTokens": 378
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-a85acf90-bc20-42c3-ac5b-d031fca1bd3d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4021,
+      "outputTokens": 108
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "298ca52e6a40f658ddee512b1d74089e6c4b6a8b4941e77c7594b46f27e4a1e9",
+    "artifactDigest": "1a25805209217c5b81a746685a2a55a596c0a18e9e76d39f3bbeffd8c7b1ebb3",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000091-1fa1cc3535.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
