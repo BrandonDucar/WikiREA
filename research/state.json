@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T13:25:45.324Z",
-  "sequence": 126,
+  "updatedAt": "2026-11-19T14:16:42.528Z",
+  "sequence": 127,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5730,6 +5730,20 @@
       "packet": "research/packets/research-000126-41f80a2813.json",
       "packetDigest": "6355043f92dd322679543bb16c9f85a9aeae43a1c597466b4a0aa2f3f8e4565c",
       "finishedAt": "2026-11-19T13:16:03.935Z"
+    },
+    {
+      "id": "research-000127-e80d0a192d",
+      "role": "runtime-researcher",
+      "topic": "64-bit computing",
+      "day": "2026-11-19",
+      "runId": "44541941306",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T14:16:42.528Z",
+      "expiresAt": "2026-11-19T14:31:42.528Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
