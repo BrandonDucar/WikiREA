@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T14:16:42.528Z",
+  "updatedAt": "2026-11-19T14:16:48.148Z",
   "sequence": 127,
   "jobs": [
     {
@@ -5737,13 +5737,44 @@
       "topic": "64-bit computing",
       "day": "2026-11-19",
       "runId": "44541941306",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T14:16:42.528Z",
       "expiresAt": "2026-11-19T14:31:42.528Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "64-bit computing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384996448",
+        "revision": "1384996448",
+        "observedAt": "2026-11-19T14:16:44.471Z",
+        "sourceTimestamp": "2026-11-11T08:12:45Z",
+        "sha256": "d8c32c2b688a5d4ec8d4d0dd94fa2df14855393fa483ba6ae098723c86dd1f02",
+        "excerptSha256": "b84642dd7a195a4c77e77d447e1d9b920d4c27d492f534f92ef6e5dd03142073",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 61056,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-debd5c6a-f661-441f-9170-e164162d396e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4329,
+        "outputTokens": 485
+      },
+      "packet": "research/packets/research-000127-e80d0a192d.json",
+      "packetDigest": "b98a83d11760c6e6b3c6e43aa8c254f5a8b26cbff649e57951b447e0fd7c6f0d",
+      "finishedAt": "2026-11-19T14:16:48.148Z"
     }
   ],
   "discovered": [
@@ -6903,11 +6934,6 @@
       "discoveredFrom": "research-000056-4de8f52dba"
     },
     {
-      "title": "64-bit computing",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000057-1df2912289"
-    },
-    {
       "title": "ACM Queue",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000057-1df2912289"
@@ -6959,11 +6985,6 @@
     },
     {
       "title": "4Gamer.net",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000058-eb6a376636"
-    },
-    {
-      "title": "64-bit computing",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000058-eb6a376636"
     },
@@ -8873,11 +8894,6 @@
       "discoveredFrom": "research-000116-ad048b955e"
     },
     {
-      "title": "64-bit computing",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000116-ad048b955e"
-    },
-    {
       "title": "AES instruction set",
       "role": "application-tracer",
       "discoveredFrom": "research-000116-ad048b955e"
@@ -9236,6 +9252,11 @@
       "title": "ASIACRYPT",
       "role": "application-tracer",
       "discoveredFrom": "research-000126-41f80a2813"
+    },
+    {
+      "title": "16-bit",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000127-e80d0a192d"
     }
   ],
   "reviewJobs": [
