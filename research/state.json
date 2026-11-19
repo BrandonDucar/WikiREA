@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T07:26:13.321Z",
-  "sequence": 121,
+  "updatedAt": "2026-11-19T08:19:43.937Z",
+  "sequence": 122,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5497,6 +5497,20 @@
       "packet": "research/packets/research-000121-cf18ac6385.json",
       "packetDigest": "e7824b0f81b1c5a8b47cb9207e65720086646de197be5297b1a09bafd392757e",
       "finishedAt": "2026-11-19T07:16:30.992Z"
+    },
+    {
+      "id": "research-000122-860380baf8",
+      "role": "music-events",
+      "topic": "8-Track Heaven",
+      "day": "2026-11-19",
+      "runId": "44486623140",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T08:19:43.937Z",
+      "expiresAt": "2026-11-19T08:34:43.937Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
