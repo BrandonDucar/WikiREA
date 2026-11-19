@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T12:20:52.504Z",
-  "sequence": 125,
+  "updatedAt": "2026-11-19T13:15:58.964Z",
+  "sequence": 126,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5681,6 +5681,20 @@
       "packet": "research/packets/research-000125-227c504532.json",
       "packetDigest": "976882ae153f8fed724a05dd6724877040615a9ec7027399dbe704d4c8dd4334",
       "finishedAt": "2026-11-19T12:20:52.504Z"
+    },
+    {
+      "id": "research-000126-41f80a2813",
+      "role": "application-tracer",
+      "topic": "AES encryption",
+      "day": "2026-11-19",
+      "runId": "44531723173",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T13:15:58.964Z",
+      "expiresAt": "2026-11-19T13:30:58.964Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
