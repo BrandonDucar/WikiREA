@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T00:36:39.832Z",
+  "updatedAt": "2026-11-19T00:36:44.712Z",
   "sequence": 115,
   "jobs": [
     {
@@ -5173,13 +5173,44 @@
       "topic": "Archetypes",
       "day": "2026-11-19",
       "runId": "44430367973",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T00:36:39.832Z",
       "expiresAt": "2026-11-19T00:51:39.832Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Archetype",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1377214678",
+        "revision": "1377214678",
+        "observedAt": "2026-11-19T00:36:41.669Z",
+        "sourceTimestamp": "2026-09-28T09:46:42Z",
+        "sha256": "4412f47b2bca3cf2c58c522dc6c3bad9214fcef9dbcef6e477e24beb99c77004",
+        "excerptSha256": "dc608eddd69f96ba058dcc4e11253018e2c04e03af20f53305a7075771ee9285",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 17636,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-cc1781fe-2f27-4dde-808e-1b4aa816aaa5",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4252,
+        "outputTokens": 342
+      },
+      "packet": "research/packets/research-000115-3a9bfdcc26.json",
+      "packetDigest": "a6de0aa05beb674ac7577f1480de3a8b6c692e80c21002b70d7b15e55e7e86a2",
+      "finishedAt": "2026-11-19T00:36:44.712Z"
     }
   ],
   "discovered": [
@@ -6257,11 +6288,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "Archetypes",
-      "role": "source-curator",
-      "discoveredFrom": "research-000053-0d543f9d61"
     },
     {
       "title": "Audio file format",
@@ -8347,6 +8373,46 @@
       "title": "Amir Pnueli",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000114-65951320f6"
+    },
+    {
+      "title": "Abridged series",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "Absent-minded professor",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "Academic dishonesty",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "Action hero",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "Adaptation (arts)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "Adjective",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "Aesthetic interpretation",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "Afflatus",
+      "role": "source-curator",
+      "discoveredFrom": "research-000115-3a9bfdcc26"
     }
   ],
   "reviewJobs": [
