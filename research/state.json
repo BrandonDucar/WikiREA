@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T01:15:55.635Z",
+  "updatedAt": "2026-11-19T01:16:03.742Z",
   "sequence": 116,
   "jobs": [
     {
@@ -5218,13 +5218,44 @@
       "topic": "AArch64",
       "day": "2026-11-19",
       "runId": "44435527594",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T01:15:55.635Z",
       "expiresAt": "2026-11-19T01:30:55.635Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AArch64",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383931367",
+        "revision": "1383931367",
+        "observedAt": "2026-11-19T01:15:57.477Z",
+        "sourceTimestamp": "2026-11-05T17:43:54Z",
+        "sha256": "a6e5942af98f715bd4053b6332efaccd80de80861812c71dfb8901932d8a2628",
+        "excerptSha256": "0160b47f57482a8b8c7dea897143f7752456a7e14eeeca56521b3cc04c0356b0",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 42891,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c53e5d66-c32c-42c8-ad04-f128e146e26c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4621,
+        "outputTokens": 459
+      },
+      "packet": "research/packets/research-000116-ad048b955e.json",
+      "packetDigest": "6b500372f05da00bfe90ef3190ab7f74812aa1d40109cac8341f50009ef8d959",
+      "finishedAt": "2026-11-19T01:16:03.742Z"
     }
   ],
   "discovered": [
@@ -6324,11 +6355,6 @@
       "discoveredFrom": "research-000053-0d543f9d61"
     },
     {
-      "title": "AArch64",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000054-be07f6d7e2"
-    },
-    {
       "title": "AES encryption",
       "role": "application-tracer",
       "discoveredFrom": "research-000054-be07f6d7e2"
@@ -7145,11 +7171,6 @@
     },
     {
       "title": "32-bit computing",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000077-cd12fec18e"
-    },
-    {
-      "title": "AArch64",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000077-cd12fec18e"
     },
@@ -8427,6 +8448,46 @@
       "title": "Afflatus",
       "role": "source-curator",
       "discoveredFrom": "research-000115-3a9bfdcc26"
+    },
+    {
+      "title": "32-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "3DNow!",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "64-bit computing",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "AES instruction set",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "ARM Cortex-A34",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "ARM Cortex-A53",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "ARM Cortex-A57",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
+    },
+    {
+      "title": "ARM Cortex-A72",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000116-ad048b955e"
     }
   ],
   "reviewJobs": [

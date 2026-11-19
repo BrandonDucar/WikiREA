@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000116-ad048b955e",
+  "topic": "AArch64",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AArch64 is the 64-bit execution state of the ARM architecture, introduced with ARMv8-A in 2011 and carried forward into ARMv9-A. It provides 31 general-purpose 64-bit registers and a distinct A64 instruction set, while maintaining backward compatibility with 32-bit AArch32 state and its A32/T32 instruction sets. The architecture supports advanced SIMD (Neon) with 32 registers, IEEE 754 floating-point, and cryptography extensions. It was designed to enable 64-bit memory addressing and performance improvements alongside existing 32-bit software through dual-state processors.",
+    "mechanisms": [
+      {
+        "title": "Dual execution state support",
+        "explanation": "Processors implement both AArch64 (64-bit) and AArch32 (32-bit) execution states, allowing the same core to run 64-bit and 32-bit code. The execution state is selected at exception level and can be mixed, with 32-bit applications executing under a 64-bit OS or hypervisor.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "A64 instruction set and register file",
+        "explanation": "AArch64 introduces the A64 instruction set with 31 general-purpose 64-bit registers (x0-x30, where x31 is the stack pointer or zero depending on mode) and 32 × 128-bit SIMD/Neon registers. The program counter is not directly addressable, and most instructions accept 32-bit or 64-bit operands with 64-bit addresses.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mapping of application-tracer functionality to AArch64 register usage",
+      "Hardware-specific implementation of trace buffers or trace compression in AArch64 cores",
+      "Interaction between AArch64 exception levels and tracer control registers",
+      "Whether tracer support is mandatory or optional in AArch64 implementations"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "AArch64",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383931367",
+    "revision": "1383931367",
+    "observedAt": "2026-11-19T01:15:57.477Z",
+    "sourceTimestamp": "2026-11-05T17:43:54Z",
+    "sha256": "a6e5942af98f715bd4053b6332efaccd80de80861812c71dfb8901932d8a2628",
+    "excerptSha256": "0160b47f57482a8b8c7dea897143f7752456a7e14eeeca56521b3cc04c0356b0",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 42891,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c53e5d66-c32c-42c8-ad04-f128e146e26c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4621,
+    "outputTokens": 459
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "492c94214370717c22cf186666a2396449349136d84e53741e34b16f66c21aa5",
+  "artifactDigest": "6b500372f05da00bfe90ef3190ab7f74812aa1d40109cac8341f50009ef8d959"
+}
