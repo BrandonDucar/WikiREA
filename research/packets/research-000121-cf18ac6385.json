@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000121-cf18ac6385",
+  "topic": "Apache IoTDB",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Apache IoTDB is an open-source Java time series database designed for IoT and industrial internet of things scenarios. It stores data in the TsFile columnar format built on LSM-Trees, supporting flexible deployment from edge devices to cloud clusters. Key features include high compression, high-throughput ingestion, time-based querying, and integration with machine learning via AINode. It supports edge-cloud synchronization and connectors for Hadoop/Spark processing.",
+    "mechanisms": [
+      {
+        "title": "TsFile Columnar Storage Format",
+        "explanation": "TsFile is a columnar compact file format developed for time series data. Its structure is based on the Log-structured merge-tree (LSM-Tree), which reduces computational resource usage and optimizes performance for storage and retrieval within Apache IoTDB.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Edge-Cloud Cooperation via Synchronization",
+        "explanation": "IoTDB supports edge-cloud cooperation by synchronizing data between IoTDB instances at user-configured intervals using a Sync Tool, allowing data collected close to devices to be synchronized to a central system.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal data structures and compaction algorithms beyond LSM-Tree reference",
+      "Detailed implementation of AINode model registration and invocation pipeline",
+      "Specific performance benchmarks for million-device connectivity claims",
+      "Proprietary or third-party model integration mechanisms for time series large models"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache IoTDB",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1361012121",
+    "revision": "1361012121",
+    "observedAt": "2026-11-19T07:16:29.178Z",
+    "sourceTimestamp": "2026-06-25T02:20:14Z",
+    "sha256": "6688f67e299ac06cf7c2c59b1a744c4ddc29a8db59b7e2a823051dc2d1a3316e",
+    "excerptSha256": "c4fd31a704d4a6369740095f406bcc99c6f68be785d109343ce680ec3c8eff92",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15937,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-a65f3c8f-7d7d-4438-8f8c-8df241a82d59",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4457,
+    "outputTokens": 330
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "95c215835d2d4fe052fce14df1ced061c973eb603a9da7d69850e4354ea07e72",
+  "artifactDigest": "e7824b0f81b1c5a8b47cb9207e65720086646de197be5297b1a09bafd392757e"
+}
