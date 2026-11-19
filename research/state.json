@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T10:15:48.995Z",
-  "sequence": 124,
+  "updatedAt": "2026-11-19T12:20:45.757Z",
+  "sequence": 125,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5636,6 +5636,20 @@
       "packet": "research/packets/research-000124-70e6f775d4.json",
       "packetDigest": "d3491fc34e033c7a012366c76db03db59e3db12d585c7162ffb8224fa69fdd49",
       "finishedAt": "2026-11-19T10:15:48.995Z"
+    },
+    {
+      "id": "research-000125-227c504532",
+      "role": "source-curator",
+      "topic": "Audio file format",
+      "day": "2026-11-19",
+      "runId": "44522994691",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T12:20:45.757Z",
+      "expiresAt": "2026-11-19T12:35:45.757Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
