@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000134-1a10ad904f",
+  "topic": "CiteSeerX (identifier)",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "CiteSeerX is a closed-down public search engine and digital library for scientific papers, primarily in computer and information science, that harvested freely available documents from author websites using automated metadata extraction and focused crawling. It expanded beyond its predecessor by supporting broader scholarly domains and offered its metadata under a Creative Commons license for non-commercial reuse. The system relied on open-source infrastructure, Apache Solr, and machine learning tools to extract titles, authors, abstracts, and citation contexts, though its coverage was limited to publicly accessible papers and it returned fewer citation counts than services with publisher metadata access. In 2026, the service shut down due to lack of funding, with remaining links redirecting to the Internet Archive.",
+    "mechanisms": [
+      {
+        "title": "Focused crawling and automated metadata extraction",
+        "explanation": "CiteSeerX used automated information extraction tools, typically machine learning-based, to pull scholarly metadata such as title, authors, abstract, and citations from publicly available documents, primarily author webpages. It employed focused crawling to harvest these open resources, but could not access publisher metadata, resulting in lower citation counts compared to services like Google Scholar.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Open data sharing via Creative Commons license",
+        "explanation": "CiteSeerX shared its metadata, databases, and software under a Creative Commons BY-NC-SA license, enabling researchers worldwide to reuse the data in experiments and competitions. The system also provided an OAI-PMH endpoint, making its content indexable by academic search engines and institutional repositories.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact architecture decisions leading to the 2005 update halt",
+      "Details of the redirection service deployed in 2023",
+      "Specific algorithms powering the citation ranking and document harvesting",
+      "Internal resource allocation and funding timeline details"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "CiteSeerX",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1374489038",
+    "revision": "1374489038",
+    "observedAt": "2026-11-19T22:14:13.191Z",
+    "sourceTimestamp": "2026-09-12T11:19:55Z",
+    "sha256": "a27cd0bfc678010c9f48c343a948b4bb9243993812a3e4be09aa0737090d9586",
+    "excerptSha256": "db8d7333bbbd55b0ca87b6a647761477446a5467d676930be9d05fa80a33c7a3",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15749,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-b99f9c9d-0f3b-4bff-a4fe-5c04bfd0029d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4174,
+    "outputTokens": 418
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "df9adb06e7f36f4fc5e831c9836664cf5bb94f8da3adb7aa4796eb636abb2773",
+  "artifactDigest": "c52334ce9e157bfae7c000d127401ce7ec992621e9658edb3389eec526271b14"
+}

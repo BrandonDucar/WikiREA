@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T22:14:10.875Z",
+  "updatedAt": "2026-11-19T22:14:16.784Z",
   "sequence": 134,
   "jobs": [
     {
@@ -6068,13 +6068,44 @@
       "topic": "CiteSeerX (identifier)",
       "day": "2026-11-19",
       "runId": "44626607527",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T22:14:10.875Z",
       "expiresAt": "2026-11-19T22:29:10.875Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "CiteSeerX",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1374489038",
+        "revision": "1374489038",
+        "observedAt": "2026-11-19T22:14:13.191Z",
+        "sourceTimestamp": "2026-09-12T11:19:55Z",
+        "sha256": "a27cd0bfc678010c9f48c343a948b4bb9243993812a3e4be09aa0737090d9586",
+        "excerptSha256": "db8d7333bbbd55b0ca87b6a647761477446a5467d676930be9d05fa80a33c7a3",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 15749,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b99f9c9d-0f3b-4bff-a4fe-5c04bfd0029d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4174,
+        "outputTokens": 418
+      },
+      "packet": "research/packets/research-000134-1a10ad904f.json",
+      "packetDigest": "c52334ce9e157bfae7c000d127401ce7ec992621e9658edb3389eec526271b14",
+      "finishedAt": "2026-11-19T22:14:16.784Z"
     }
   ],
   "discovered": [
@@ -6879,11 +6910,6 @@
       "discoveredFrom": "research-000046-1f8c528ae6"
     },
     {
-      "title": "CiteSeerX (identifier)",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000046-1f8c528ae6"
-    },
-    {
       "title": "Abnormal grain growth",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000047-9ebcec405a"
@@ -7417,11 +7443,6 @@
       "title": "Computational complexity theory",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000063-1d20ea4b59"
-    },
-    {
-      "title": "CiteSeerX (identifier)",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
     },
     {
       "title": "Computer science",
@@ -9672,6 +9693,46 @@
       "title": "Belief network",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000133-1eeb25dedb"
+    },
+    {
+      "title": "ACM Portal",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "Academic publishing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "Academic search engines",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "Amazon S3",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "Apache Software Foundation",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "Apache Solr",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "ArXiv",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "Arnetminer",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000134-1a10ad904f"
     }
   ],
   "reviewJobs": [
