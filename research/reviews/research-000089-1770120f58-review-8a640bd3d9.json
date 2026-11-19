@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000089-1770120f58-review-8a640bd3d9",
+  "parentJobId": "research-000089-1770120f58",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "41a1b011ae01ef132111b1380d20b75d965d94955efea300fd72d99e91dc9d51",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Cellular automaton",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386201381",
+    "revision": "1386201381",
+    "observedAt": "2026-11-17T16:17:48.723Z",
+    "sourceTimestamp": "2026-11-17T06:29:45Z",
+    "sha256": "e9bf92338b9f88ff2d01c18131cf36a2bb265af3f6003abc924edad213332874",
+    "excerptSha256": "392ff63305a36d207d7dc10c83bd196ee4624e6b3b6d45715f3ccceac9137cc9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 71356,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of cellular automata as discrete computation models with grid-based cells, simultaneous fixed-rule updates, and neighborhood-dependent state transitions",
+      "Mechanisms correctly capture core update rule and neighborhood interaction concepts with appropriate qualifiers (\"typically\", \"exceptions such as stochastic or asynchronous variants exist\")",
+      "Historical progression from Ulam/von Neumann through Wolfram's classification to Conway's Game of Life and Rule 110 is factually supported by source text",
+      "Unknowns list appropriately identifies gaps not resolved in source (stochastic/asynchronous effects on classification, exact universality conditions, Class 4 emergence mechanisms, von Neumann constructor implementation details)",
+      "No unsupported mechanisms, copied passages, or invented execution details detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1493ff4f-fae5-49d1-8009-64602c897bee",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4456,
+    "outputTokens": 165
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000089-1770120f58",
+  "title": "Cellular automaton",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-19T13:25:45.323Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Cellular automaton is a discrete computation model of a regular grid of cells that evolve through time via a fixed rule applied simultaneously to all cells. Each cell's new state depends on its current state and the states of cells in its defined neighborhood. Originating in the 1940s at Los Alamos with Ulam and von Neumann, the framework expanded through studies of crystal growth, self-replication, and excitable media. Stephen Wolfram later classified one-dimensional rules into four classes, with Class 4 supporting complex, persistent structures thought to be computationally universal. Well-known examples include Conway's Game of Life and Rule 110, which can simulate Turing machines. Simulations typically use finite grids with periodic boundary conditions to avoid edge effects, enabling programmable modular arithmetic implementations.",
+  "mechanisms": [
+    {
+      "title": "Cell state update via fixed rule",
+      "explanation": "Each cell updates its state simultaneously according to a deterministic mathematical function that considers the cell's current state and the states of cells in its neighborhood. The rule is applied uniformly across the grid, though exceptions such as stochastic or asynchronous variants exist.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Neighborhood-defined interaction",
+      "explanation": "A cell's next state is determined by a configured neighborhood of adjacent cells. Common neighborhood types include von Neumann (orthogonal only) and Moore (orthogonal plus diagonals). The size and shape of the neighborhood directly affect the total number of possible automata configurations.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How stochastic or asynchronous update mechanisms alter deterministic class behavior",
+    "Exact conditions under which a given rule achieves computational universality",
+    "Mechanisms governing the emergence of stable local structures in Class 4 automata",
+    "Details of von Neumann's 200,000-cell universal constructor implementation beyond the existence proof"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Cellular automaton",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386201381",
+      "revision": "1386201381",
+      "observedAt": "2026-11-17T16:17:48.723Z",
+      "sourceTimestamp": "2026-11-17T06:29:45Z",
+      "sha256": "e9bf92338b9f88ff2d01c18131cf36a2bb265af3f6003abc924edad213332874",
+      "excerptSha256": "392ff63305a36d207d7dc10c83bd196ee4624e6b3b6d45715f3ccceac9137cc9",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 71356,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of cellular automata as discrete computation models with grid-based cells, simultaneous fixed-rule updates, and neighborhood-dependent state transitions",
+      "Mechanisms correctly capture core update rule and neighborhood interaction concepts with appropriate qualifiers (\"typically\", \"exceptions such as stochastic or asynchronous variants exist\")",
+      "Historical progression from Ulam/von Neumann through Wolfram's classification to Conway's Game of Life and Rule 110 is factually supported by source text",
+      "Unknowns list appropriately identifies gaps not resolved in source (stochastic/asynchronous effects on classification, exact universality conditions, Class 4 emergence mechanisms, von Neumann constructor implementation details)",
+      "No unsupported mechanisms, copied passages, or invented execution details detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-53c1de60-f970-47d4-adcd-ea4bd308d4d4",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4104,
+      "outputTokens": 414
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-1493ff4f-fae5-49d1-8009-64602c897bee",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4456,
+      "outputTokens": 165
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "503303bd1b9f2d572c918db037316edf3e5870b79391a85def256f7697fd9c6d",
+    "artifactDigest": "41a1b011ae01ef132111b1380d20b75d965d94955efea300fd72d99e91dc9d51",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000089-1770120f58.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
