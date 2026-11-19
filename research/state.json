@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T05:25:30.411Z",
-  "sequence": 119,
+  "updatedAt": "2026-11-19T06:25:08.779Z",
+  "sequence": 120,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5403,6 +5403,20 @@
       "packet": "research/packets/research-000119-07746dda00.json",
       "packetDigest": "90a10d372cb88b2d2bcc2c918e58da93346478fb3668404bcabcb25b1882982c",
       "finishedAt": "2026-11-19T04:17:43.409Z"
+    },
+    {
+      "id": "research-000120-692efd4cd9",
+      "role": "hardware-interoperability-scout",
+      "topic": "3DBenchy",
+      "day": "2026-11-19",
+      "runId": "44471997491",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T06:25:08.779Z",
+      "expiresAt": "2026-11-19T06:40:08.779Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
