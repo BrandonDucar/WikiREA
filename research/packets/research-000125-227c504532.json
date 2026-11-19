@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000125-227c504532",
+  "topic": "Audio file format",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An audio file format is a computer file format for storing digital audio data. The bit layout of the audio data is called the audio coding format and can be uncompressed or compressed, often using lossy techniques. Audio data is typically embedded in a container format. Three major groups exist: uncompressed formats (e.g., WAV, AIFF), lossless compressed formats (e.g., FLAC, ALAC) that preserve all original data, and lossy compressed formats (e.g., MP3, AAC) that reduce file size by removing less-perceived audio information using psychoacoustics. Uncompressed formats like WAV and AIFF commonly use LPCM and include small headers declaring sample rate, bit depth, endianness, and channel count. Lossless formats achieve roughly 2:1 compression ratios. Lossy formats trade quality for smaller sizes, with bit rate controlling the trade-off. Container formats may support multiple audio and video types.",
+    "mechanisms": [
+      {
+        "title": "Uncompressed storage with LPCM headers",
+        "explanation": "Uncompressed formats such as WAV and AIFF store audio as raw PCM data with a small header. The header declares the sample rate, bit depth, endianness, and number of channels, allowing low-level APIs and D/A converters to interpret the bitstream correctly. WAV is based on RIFF; AIFF is based on IFF.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Lossy compression via psychoacoustics",
+        "explanation": "Lossy formats such as MP3 and AAC reduce file size by removing audio information less likely to be perceived, exploiting psychoacoustic models. The remaining data is simplified and measured by bit rate; lower bit rates yield smaller files but more significant quality loss.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact processing overhead of lossless encoders relative to compression ratio",
+      "Proprietary container internals for formats beyond WAV and AIFF",
+      "Long-term stability of lossy quality-perception models across diverse audio content",
+      "Mechanisms enabling multi-track support in container formats like Ogg"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Audio file format",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379364583",
+    "revision": "1379364583",
+    "observedAt": "2026-11-19T12:20:48.317Z",
+    "sourceTimestamp": "2026-10-09T14:40:39Z",
+    "sha256": "d20f3eb488fd0a2d2ab1bfbc81c99dfe1e0bc36250d4717ffe2b4f54a0b40796",
+    "excerptSha256": "0c60df86fbb8f0890ed9dfd0948ccd1757fc558598a1612146e96c6e27957934",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 18207,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-46565953-a61a-4475-807e-1959e082e186",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4069,
+    "outputTokens": 478
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "867f65422e28e5fde50b13acbf800fbae6584be8f4f08fed9bb95bcfad3f8670",
+  "artifactDigest": "976882ae153f8fed724a05dd6724877040615a9ec7027399dbe704d4c8dd4334"
+}

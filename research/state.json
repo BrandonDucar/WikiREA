@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T12:20:45.757Z",
+  "updatedAt": "2026-11-19T12:20:52.504Z",
   "sequence": 125,
   "jobs": [
     {
@@ -5643,13 +5643,44 @@
       "topic": "Audio file format",
       "day": "2026-11-19",
       "runId": "44522994691",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T12:20:45.757Z",
       "expiresAt": "2026-11-19T12:35:45.757Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Audio file format",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379364583",
+        "revision": "1379364583",
+        "observedAt": "2026-11-19T12:20:48.317Z",
+        "sourceTimestamp": "2026-10-09T14:40:39Z",
+        "sha256": "d20f3eb488fd0a2d2ab1bfbc81c99dfe1e0bc36250d4717ffe2b4f54a0b40796",
+        "excerptSha256": "0c60df86fbb8f0890ed9dfd0948ccd1757fc558598a1612146e96c6e27957934",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 18207,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-46565953-a61a-4475-807e-1959e082e186",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4069,
+        "outputTokens": 478
+      },
+      "packet": "research/packets/research-000125-227c504532.json",
+      "packetDigest": "976882ae153f8fed724a05dd6724877040615a9ec7027399dbe704d4c8dd4334",
+      "finishedAt": "2026-11-19T12:20:52.504Z"
     }
   ],
   "discovered": [
@@ -6702,11 +6733,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "Audio file format",
-      "role": "source-curator",
-      "discoveredFrom": "research-000053-0d543f9d61"
     },
     {
       "title": "Audit trail",
@@ -9077,6 +9103,46 @@
       "title": "Ares I",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000124-70e6f775d4"
+    },
+    {
+      "title": ".3gp",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": ".aiff",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": ".amr",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": ".ape",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": ".awb",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": ".flac",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": ".m4p",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": ".mp1",
+      "role": "source-curator",
+      "discoveredFrom": "research-000125-227c504532"
     }
   ],
   "reviewJobs": [
