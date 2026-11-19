@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T20:16:07.214Z",
+  "updatedAt": "2026-11-19T20:16:12.622Z",
   "sequence": 132,
   "jobs": [
     {
@@ -5974,13 +5974,44 @@
       "topic": "ADAT",
       "day": "2026-11-19",
       "runId": "44606886161",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T20:16:07.214Z",
       "expiresAt": "2026-11-19T20:31:07.214Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ADAT",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380837114",
+        "revision": "1380837114",
+        "observedAt": "2026-11-19T20:16:09.603Z",
+        "sourceTimestamp": "2026-10-18T06:57:49Z",
+        "sha256": "272c516ab7ec1486873778f9c9842f71d533fe1d91667e6f4068f749d3847f0e",
+        "excerptSha256": "272c516ab7ec1486873778f9c9842f71d533fe1d91667e6f4068f749d3847f0e",
+        "inspectedCharacters": 6269,
+        "totalCharacters": 6269,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-7e888543-05e2-4bf1-bdbc-dc4dc912b8b8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2123,
+        "outputTokens": 345
+      },
+      "packet": "research/packets/research-000132-a819e01d1d.json",
+      "packetDigest": "f4afbdf205a2fe7ea8fa957a275223486f5461ad3f0b42163d9e0214637352b6",
+      "finishedAt": "2026-11-19T20:16:12.622Z"
     }
   ],
   "discovered": [
@@ -6038,11 +6069,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "ADAT",
-      "role": "music-events",
-      "discoveredFrom": "research-000024-ee7dc4a4fd"
     },
     {
       "title": "AMC Matador",
@@ -9513,6 +9539,41 @@
       "title": "Apache Apex",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "44,100 Hz",
+      "role": "music-events",
+      "discoveredFrom": "research-000132-a819e01d1d"
+    },
+    {
+      "title": "48,000 Hz",
+      "role": "music-events",
+      "discoveredFrom": "research-000132-a819e01d1d"
+    },
+    {
+      "title": "ADATS",
+      "role": "music-events",
+      "discoveredFrom": "research-000132-a819e01d1d"
+    },
+    {
+      "title": "ADAT Lightpipe",
+      "role": "music-events",
+      "discoveredFrom": "research-000132-a819e01d1d"
+    },
+    {
+      "title": "Adenosine deaminase",
+      "role": "music-events",
+      "discoveredFrom": "research-000132-a819e01d1d"
+    },
+    {
+      "title": "Alesis",
+      "role": "music-events",
+      "discoveredFrom": "research-000132-a819e01d1d"
+    },
+    {
+      "title": "Alesis ADAT HD24",
+      "role": "music-events",
+      "discoveredFrom": "research-000132-a819e01d1d"
     }
   ],
   "reviewJobs": [
