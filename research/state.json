@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T03:28:12.082Z",
-  "sequence": 118,
+  "updatedAt": "2026-11-19T04:17:36.204Z",
+  "sequence": 119,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5354,6 +5354,20 @@
       "packet": "research/packets/research-000118-9a613356d7.json",
       "packetDigest": "bdf771d99269d2e5979849ca1d6ff5cab8991b821a9b8cd4786ea798ffc0e2eb",
       "finishedAt": "2026-11-19T03:17:40.315Z"
+    },
+    {
+      "id": "research-000119-07746dda00",
+      "role": "simulation-researcher",
+      "topic": "Academic journal",
+      "day": "2026-11-19",
+      "runId": "44457287554",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T04:17:36.204Z",
+      "expiresAt": "2026-11-19T04:32:36.204Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
