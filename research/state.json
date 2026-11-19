@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T08:19:49.734Z",
-  "sequence": 122,
+  "updatedAt": "2026-11-19T09:16:38.459Z",
+  "sequence": 123,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5542,6 +5542,20 @@
       "packet": "research/packets/research-000122-860380baf8.json",
       "packetDigest": "853bda8a7f5be0aa33a89d94953168c14a70b434a4c695f15f93258f39cacef2",
       "finishedAt": "2026-11-19T08:19:49.734Z"
+    },
+    {
+      "id": "research-000123-3077e526fe",
+      "role": "adversarial-reviewer",
+      "topic": "Algorithm",
+      "day": "2026-11-19",
+      "runId": "44494909026",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T09:16:38.459Z",
+      "expiresAt": "2026-11-19T09:31:38.459Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
