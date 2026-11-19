@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000123-3077e526fe",
+  "topic": "Algorithm",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An algorithm is a finite, rigorous sequence of instructions used to solve specific problems or perform calculations. It proceeds through well-defined states from initial input to a final output, terminating after a bounded number of steps. While deterministic algorithms follow fixed paths, randomized variants incorporate random input. The concept originates from 9th-century Persian scholar al-Khwarizmi, whose name was Latinized into the modern term. In practice, algorithms are distinguished from heuristics, which may not guarantee optimal or correct results, such as those used in social media recommender systems.",
+    "mechanisms": [
+      {
+        "title": "Deterministic state progression",
+        "explanation": "Algorithms advance through a finite series of well-defined states, transforming input to output via explicit, repeatable steps. Each transition is determined by the current state and instructions, ensuring predictable execution when no randomness is involved.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Conditional decision routing",
+        "explanation": "Advanced algorithms use conditional statements to divert execution along different paths, enabling automated decision-making and reasoning. This allows the same algorithmic framework to handle varied inputs or problem variants within a single specification.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How human metaphorical descriptors (e.g., memory, search) map to concrete computational structures",
+      "Whether non-deterministic processes lacking discrete steps qualify as algorithms",
+      "Precise conditions under which an algorithm must terminate to be considered a valid program",
+      "Detailed mechanisms of ancient Babylonian and Egyptian procedural mathematics beyond recorded examples"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Algorithm",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385709966",
+    "revision": "1385709966",
+    "observedAt": "2026-11-19T09:16:40.204Z",
+    "sourceTimestamp": "2026-11-14T21:36:46Z",
+    "sha256": "1b16ca3f8d5bec749b8ffb95dce067317cabf28ebdbbc3043f068ae8b48a3d85",
+    "excerptSha256": "e7f6305f3a82d6a4c44886927a055722b4f20ea285c6267579c4d49ca9a95aa2",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 68030,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-933caab7-42d5-42d7-98af-0df97dc8ac73",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4500,
+    "outputTokens": 348
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "2c960103f98a324934c78051dd9d8d1366c4a0a46d1d13253c5a8c45a8bc49ea",
+  "artifactDigest": "7ef28e20ebd8041295976a9225eb50cec0c2479662d419eb9365e15a685244ad"
+}

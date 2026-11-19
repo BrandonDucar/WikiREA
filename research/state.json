@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T09:16:38.459Z",
+  "updatedAt": "2026-11-19T09:16:44.998Z",
   "sequence": 123,
   "jobs": [
     {
@@ -5549,13 +5549,44 @@
       "topic": "Algorithm",
       "day": "2026-11-19",
       "runId": "44494909026",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T09:16:38.459Z",
       "expiresAt": "2026-11-19T09:31:38.459Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Algorithm",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385709966",
+        "revision": "1385709966",
+        "observedAt": "2026-11-19T09:16:40.204Z",
+        "sourceTimestamp": "2026-11-14T21:36:46Z",
+        "sha256": "1b16ca3f8d5bec749b8ffb95dce067317cabf28ebdbbc3043f068ae8b48a3d85",
+        "excerptSha256": "e7f6305f3a82d6a4c44886927a055722b4f20ea285c6267579c4d49ca9a95aa2",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 68030,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-933caab7-42d5-42d7-98af-0df97dc8ac73",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4500,
+        "outputTokens": 348
+      },
+      "packet": "research/packets/research-000123-3077e526fe.json",
+      "packetDigest": "7ef28e20ebd8041295976a9225eb50cec0c2479662d419eb9365e15a685244ad",
+      "finishedAt": "2026-11-19T09:16:44.998Z"
     }
   ],
   "discovered": [
@@ -6505,11 +6536,6 @@
       "discoveredFrom": "research-000049-10bfbc3df7"
     },
     {
-      "title": "Algorithm",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000049-10bfbc3df7"
-    },
-    {
       "title": "64-bit",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000050-821df7a864"
@@ -6661,11 +6687,6 @@
     },
     {
       "title": "APT (software)",
-      "role": "source-curator",
-      "discoveredFrom": "research-000055-d84aa316b7"
-    },
-    {
-      "title": "Algorithm",
       "role": "source-curator",
       "discoveredFrom": "research-000055-d84aa316b7"
     },
@@ -6835,11 +6856,6 @@
       "discoveredFrom": "research-000059-1de4675969"
     },
     {
-      "title": "Algorithm",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000059-1de4675969"
-    },
-    {
       "title": "AWS IoT Core",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000060-2c92eab7e0"
@@ -6943,11 +6959,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Algorithm",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000063-1d20ea4b59"
     },
     {
       "title": "Bipartite graph",
@@ -7803,11 +7814,6 @@
       "title": "Crowdfunding",
       "role": "application-tracer",
       "discoveredFrom": "research-000086-074bf12801"
-    },
-    {
-      "title": "Algorithm",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000087-564644db83"
     },
     {
       "title": "Application software",
@@ -8933,6 +8939,46 @@
       "title": "So Wrong They're Right",
       "role": "music-events",
       "discoveredFrom": "research-000122-860380baf8"
+    },
+    {
+      "title": "A.A. Markov",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "A. M. Turing",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "ALGOL",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "Abstract machine",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "Abstract state machine",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "Ada Lovelace",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "Adelard of Bath",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
+    },
+    {
+      "title": "Al-Khwarizmi",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000123-3077e526fe"
     }
   ],
   "reviewJobs": [
