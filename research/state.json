@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T15:15:13.033Z",
+  "updatedAt": "2026-11-19T15:15:17.178Z",
   "sequence": 128,
   "jobs": [
     {
@@ -5782,21 +5782,47 @@
       "topic": ".NET Foundation",
       "day": "2026-11-19",
       "runId": "44552662620",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T15:15:13.033Z",
       "expiresAt": "2026-11-19T15:30:13.033Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": ".NET Foundation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1368045305",
+        "revision": "1368045305",
+        "observedAt": "2026-11-19T15:15:14.758Z",
+        "sourceTimestamp": "2026-08-06T18:16:44Z",
+        "sha256": "ed0dc51fb48756dc19910ea4c1ab9423f4e1ed02fa49e584ce25333829095fc9",
+        "excerptSha256": "ed0dc51fb48756dc19910ea4c1ab9423f4e1ed02fa49e584ce25333829095fc9",
+        "inspectedCharacters": 5155,
+        "totalCharacters": 5155,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-20da56fd-098e-4696-b78a-7d9f494edc3d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1711,
+        "outputTokens": 339
+      },
+      "packet": "research/packets/research-000128-f538fab4e4.json",
+      "packetDigest": "dd5093e4505f61c54ecb9e5324f4ad98505ea9e32ccef91d7f8e513a3e575a2b",
+      "finishedAt": "2026-11-19T15:15:17.178Z"
     }
   ],
   "discovered": [
-    {
-      "title": ".NET Foundation",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000021-ec00986789"
-    },
     {
       "title": ".NET Framework version history",
       "role": "game-mechanic-researcher",
@@ -8348,11 +8374,6 @@
       "discoveredFrom": "research-000096-72085958da"
     },
     {
-      "title": ".NET Foundation",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000097-06e9d81ac9"
-    },
-    {
       "title": ".NET Framework version history",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000097-06e9d81ac9"
@@ -9271,6 +9292,16 @@
       "title": "16-bit",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000127-e80d0a192d"
+    },
+    {
+      "title": "2024 CrowdStrike-related IT outages",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000128-f538fab4e4"
+    },
+    {
+      "title": "2026 Microsoft outage",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000128-f538fab4e4"
     }
   ],
   "reviewJobs": [
