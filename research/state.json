@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T08:19:43.937Z",
+  "updatedAt": "2026-11-19T08:19:49.734Z",
   "sequence": 122,
   "jobs": [
     {
@@ -5504,13 +5504,44 @@
       "topic": "8-Track Heaven",
       "day": "2026-11-19",
       "runId": "44486623140",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T08:19:43.937Z",
       "expiresAt": "2026-11-19T08:34:43.937Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "8-Track Heaven",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383089561",
+        "revision": "1383089561",
+        "observedAt": "2026-11-19T08:19:45.596Z",
+        "sourceTimestamp": "2026-10-31T23:02:29Z",
+        "sha256": "51325113d866887f6b8046ee76f3e9e7b00f3742ecbf6179b1ab791409deb7c4",
+        "excerptSha256": "51325113d866887f6b8046ee76f3e9e7b00f3742ecbf6179b1ab791409deb7c4",
+        "inspectedCharacters": 11378,
+        "totalCharacters": 11378,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-43c11d8c-83e7-410f-a618-c81db7b1fe60",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3762,
+        "outputTokens": 322
+      },
+      "packet": "research/packets/research-000122-860380baf8.json",
+      "packetDigest": "853bda8a7f5be0aa33a89d94953168c14a70b434a4c695f15f93258f39cacef2",
+      "finishedAt": "2026-11-19T08:19:49.734Z"
     }
   ],
   "discovered": [
@@ -5583,11 +5614,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "8-Track Heaven",
-      "role": "music-events",
-      "discoveredFrom": "research-000024-ee7dc4a4fd"
     },
     {
       "title": "ADAT",
@@ -8858,6 +8884,41 @@
       "title": "Distributed database",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000121-cf18ac6385"
+    },
+    {
+      "title": "Dissolution (law)",
+      "role": "music-events",
+      "discoveredFrom": "research-000122-860380baf8"
+    },
+    {
+      "title": "Entertainment Weekly",
+      "role": "music-events",
+      "discoveredFrom": "research-000122-860380baf8"
+    },
+    {
+      "title": "Generator Sound Art",
+      "role": "music-events",
+      "discoveredFrom": "research-000122-860380baf8"
+    },
+    {
+      "title": "Gumball (band)",
+      "role": "music-events",
+      "discoveredFrom": "research-000122-860380baf8"
+    },
+    {
+      "title": "ISBN (identifier)",
+      "role": "music-events",
+      "discoveredFrom": "research-000122-860380baf8"
+    },
+    {
+      "title": "Organizational founder",
+      "role": "music-events",
+      "discoveredFrom": "research-000122-860380baf8"
+    },
+    {
+      "title": "So Wrong They're Right",
+      "role": "music-events",
+      "discoveredFrom": "research-000122-860380baf8"
     }
   ],
   "reviewJobs": [
