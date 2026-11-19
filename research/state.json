@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T21:24:43.044Z",
-  "sequence": 133,
+  "updatedAt": "2026-11-19T22:14:10.875Z",
+  "sequence": 134,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6061,6 +6061,20 @@
       "packet": "research/packets/research-000133-1eeb25dedb.json",
       "packetDigest": "86838b8f2fd25a1e9234d5939af31311499f4d830c72f5ec693c6a3f8d17be24",
       "finishedAt": "2026-11-19T21:14:02.426Z"
+    },
+    {
+      "id": "research-000134-1a10ad904f",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "CiteSeerX (identifier)",
+      "day": "2026-11-19",
+      "runId": "44626607527",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T22:14:10.875Z",
+      "expiresAt": "2026-11-19T22:29:10.875Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
