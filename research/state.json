@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T18:18:35.571Z",
+  "updatedAt": "2026-11-19T18:18:40.712Z",
   "sequence": 130,
   "jobs": [
     {
@@ -5880,13 +5880,44 @@
       "topic": "3D Manufacturing Format",
       "day": "2026-11-19",
       "runId": "44586357425",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T18:18:35.571Z",
       "expiresAt": "2026-11-19T18:33:35.571Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D Manufacturing Format",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1376768320",
+        "revision": "1376768320",
+        "observedAt": "2026-11-19T18:18:37.485Z",
+        "sourceTimestamp": "2026-09-26T03:16:38Z",
+        "sha256": "64838ee88b0ce2bf066ec1eebb920f95a6b77064770f20779427b12f6b13734a",
+        "excerptSha256": "64838ee88b0ce2bf066ec1eebb920f95a6b77064770f20779427b12f6b13734a",
+        "inspectedCharacters": 7034,
+        "totalCharacters": 7034,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5c2214cf-078e-4e9f-b722-1288730b4ee4",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2543,
+        "outputTokens": 334
+      },
+      "packet": "research/packets/research-000130-4ec554c180.json",
+      "packetDigest": "6b82ba0a147d6fc346d43c35a881da740dce5f09b4cc41b5e9eca89b612aaf7b",
+      "finishedAt": "2026-11-19T18:18:40.712Z"
     }
   ],
   "discovered": [
@@ -5924,11 +5955,6 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
-    },
-    {
-      "title": "3D Manufacturing Format",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
     },
     {
       "title": "3D Slash",
@@ -6282,11 +6308,6 @@
     },
     {
       "title": "3D Gaussian splatting",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000033-a2037c0afa"
-    },
-    {
-      "title": "3D Manufacturing Format",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000033-a2037c0afa"
     },
@@ -9379,6 +9400,21 @@
       "title": "Barnes Hall",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000129-25ff439585"
+    },
+    {
+      "title": "3D printing marketplace",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000130-4ec554c180"
+    },
+    {
+      "title": "Additive Manufacturing File Format",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000130-4ec554c180"
+    },
+    {
+      "title": "Additive manufacturing",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000130-4ec554c180"
     }
   ],
   "reviewJobs": [

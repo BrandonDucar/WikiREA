@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000130-4ec554c180",
+  "topic": "3D Manufacturing Format",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3D Manufacturing Format (3MF) is an open XML-based file format standard for additive manufacturing, maintained by the 3MF Consortium and published under ISO/IEC 25422:2025. It extends ZIP and XML to embed model data along with manufacturing parameters such as material assignments, colors, hotend and bed temperatures, feed rates, and support structures, eliminating the need for separate parameter files when distributing printable designs. The format is designed for simpler implementation than traditional CAD exchange formats and is supported by a broad ecosystem of CAD software developers and hardware manufacturers.",
+    "mechanisms": [
+      {
+        "title": "Containerized XML structure",
+        "explanation": "The format packages model and manufacturing data as an XML-based archive using Open Packaging Conventions (ZIP), allowing structured storage of geometry, materials, colors, and process parameters within a single file.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Embedded manufacturing attributes",
+        "explanation": "Manufacturing features such as hotend and bed temperatures, feed rates, part regions for multi-material printing, and support structures are embedded directly in the file, enabling hardware to interpret process parameters without external configuration.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal schema for multi-material part region assignment",
+      "Details of how host software translates embedded parameters to printer-specific commands",
+      "Complete specification of support structure geometry encoding",
+      "Mechanisms for version backward compatibility across major release changes"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D Manufacturing Format",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1376768320",
+    "revision": "1376768320",
+    "observedAt": "2026-11-19T18:18:37.485Z",
+    "sourceTimestamp": "2026-09-26T03:16:38Z",
+    "sha256": "64838ee88b0ce2bf066ec1eebb920f95a6b77064770f20779427b12f6b13734a",
+    "excerptSha256": "64838ee88b0ce2bf066ec1eebb920f95a6b77064770f20779427b12f6b13734a",
+    "inspectedCharacters": 7034,
+    "totalCharacters": 7034,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-5c2214cf-078e-4e9f-b722-1288730b4ee4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2543,
+    "outputTokens": 334
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "dfc242f51d56d48992b6029012e993ad54f426e77c51c970db7699e09af47c48",
+  "artifactDigest": "6b82ba0a147d6fc346d43c35a881da740dce5f09b4cc41b5e9eca89b612aaf7b"
+}
