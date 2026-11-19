@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000129-25ff439585",
+  "topic": "Administrative Science Quarterly",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Administrative Science Quarterly is a peer-reviewed academic journal established in 1956, published quarterly by SAGE Publications for Cornell University's Johnson Graduate School of Management. It covers organizational studies, organizational theory, and publishes theoretical and empirical papers from both emerging and established scholars, alongside book reviews. The journal is indexed in Scopus and the Social Sciences Citation Index, with a 2022 impact factor of 10.4, ranking 19th in Management and 19th in Business among peer journals.",
+    "mechanisms": [
+      {
+        "title": "Interdisciplinary theoretical and empirical publishing",
+        "explanation": "The journal accepts dissertations and established scholars' work across organizational theory, blending theoretical advancement with empirical research methods.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Ranking and indexing infrastructure",
+        "explanation": "The journal is abstracted and indexed in Scopus and the Social Sciences Citation Index, with impact factor and category rankings published annually in Journal Citation Reports.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal editorial decision processes and reviewer selection criteria",
+      "Specific frequency of acceptance rates or rejection statistics",
+      "Detailed author submission guidelines beyond general scope description",
+      "Precise mechanisms for interdisciplinary cross-pollination between theoretical and empirical streams"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Administrative Science Quarterly",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1355768332",
+    "revision": "1355768332",
+    "observedAt": "2026-11-19T16:16:30.569Z",
+    "sourceTimestamp": "2026-05-23T20:27:11Z",
+    "sha256": "5eee746ed35345b8076a46bf831ee492870bf1a1fb199764ecfcb5416b31d453",
+    "excerptSha256": "5eee746ed35345b8076a46bf831ee492870bf1a1fb199764ecfcb5416b31d453",
+    "inspectedCharacters": 3744,
+    "totalCharacters": 3744,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-b6d7ec75-c97d-4f26-9155-cca4b35631ff",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1305,
+    "outputTokens": 304
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "4bc14a75419d7ea6a10dd2e4112ead697d5635f97103fa966e87150f19e5ec54",
+  "artifactDigest": "d04ff4e570acfba129460e11db93407b2cc0b66fed8d1152a8579c5f36b69b69"
+}
