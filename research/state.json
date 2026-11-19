@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T06:25:08.779Z",
+  "updatedAt": "2026-11-19T06:25:13.821Z",
   "sequence": 120,
   "jobs": [
     {
@@ -5410,13 +5410,44 @@
       "topic": "3DBenchy",
       "day": "2026-11-19",
       "runId": "44471997491",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T06:25:08.779Z",
       "expiresAt": "2026-11-19T06:40:08.779Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3DBenchy",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379682996",
+        "revision": "1379682996",
+        "observedAt": "2026-11-19T06:25:10.940Z",
+        "sourceTimestamp": "2026-10-11T08:47:02Z",
+        "sha256": "87e659c19342b6afdb54c2474da9ac8aa593b4f3f4e90417b63367f8d0425ca6",
+        "excerptSha256": "87e659c19342b6afdb54c2474da9ac8aa593b4f3f4e90417b63367f8d0425ca6",
+        "inspectedCharacters": 10083,
+        "totalCharacters": 10083,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-160b0e94-495a-4429-8326-1875b97700dd",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3102,
+        "outputTokens": 393
+      },
+      "packet": "research/packets/research-000120-692efd4cd9.json",
+      "packetDigest": "23525b3490ce7065e34b4e6de9846ed767588e99c04adb6b6c86cfea6cac61fa",
+      "finishedAt": "2026-11-19T06:25:13.821Z"
     }
   ],
   "discovered": [
@@ -5464,11 +5495,6 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
-    },
-    {
-      "title": "3DBenchy",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
     },
     {
       "title": "3D Manufacturing Format",
@@ -8699,6 +8725,46 @@
       "title": "Academic discipline",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000119-07746dda00"
+    },
+    {
+      "title": "1951 USAF resolution test chart",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
+    },
+    {
+      "title": "3D modeling",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
+    },
+    {
+      "title": "Acid1",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
+    },
+    {
+      "title": "Acid2",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
+    },
+    {
+      "title": "Acid3",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
+    },
+    {
+      "title": "Artificial intelligence",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
+    },
+    {
+      "title": "Big Buck Bunny",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
+    },
+    {
+      "title": "CC-BY-ND",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000120-692efd4cd9"
     }
   ],
   "reviewJobs": [
