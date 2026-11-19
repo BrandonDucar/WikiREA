@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T09:26:38.322Z",
-  "sequence": 123,
+  "updatedAt": "2026-11-19T10:15:44.663Z",
+  "sequence": 124,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5591,6 +5591,20 @@
       "packet": "research/packets/research-000123-3077e526fe.json",
       "packetDigest": "7ef28e20ebd8041295976a9225eb50cec0c2479662d419eb9365e15a685244ad",
       "finishedAt": "2026-11-19T09:16:44.998Z"
+    },
+    {
+      "id": "research-000124-70e6f775d4",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Byzantine fault tolerance",
+      "day": "2026-11-19",
+      "runId": "44503981928",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T10:15:44.663Z",
+      "expiresAt": "2026-11-19T10:30:44.663Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
