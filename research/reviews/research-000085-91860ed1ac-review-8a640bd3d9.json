@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000085-91860ed1ac-review-8a640bd3d9",
+  "parentJobId": "research-000085-91860ed1ac",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "70b00e04a0fffcadaf3693d0e1de7b6bdc5746b9e53a44ff6b330b850b528448",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Alteryx",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380527438",
+    "revision": "1380527438",
+    "observedAt": "2026-11-17T12:21:07.633Z",
+    "sourceTimestamp": "2026-10-16T07:24:21Z",
+    "sha256": "b22340c636df400b52b06f98edfc4d914ebcd426aee3efee5e6f6acfc23a1c4e",
+    "excerptSha256": "b22340c636df400b52b06f98edfc4d914ebcd426aee3efee5e6f6acfc23a1c4e",
+    "inspectedCharacters": 13810,
+    "totalCharacters": 13810,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects founding, HQ, name change, IPO, and privatization details from source",
+      "Mechanisms correctly describe unified data environment and acquisition-driven expansion with proper source attribution",
+      "Unknowns appropriately identify technical details not covered in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'recent expansions' appropriately reflect timeline from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-02abadc8-b4d3-4979-b29a-0d2c8f272a0f",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5114,
+    "outputTokens": 89
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

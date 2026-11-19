@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000085-91860ed1ac",
+  "title": "Alteryx",
+  "role": "source-curator",
+  "createdAt": "2026-11-19T03:28:12.081Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Alteryx, Inc. is an American software company founded in 1997 and headquartered in Irvine, California, that develops data science and analytics products. Originally SRC, LLC, it adopted the Alteryx name in 2010 after releasing its unified spatial and non-spatial data environment in 2006. The company transitioned to public status via NYSE IPO in 2017 and was taken private in a $4.4 billion deal by Clearlake Capital and Insight Partners in late 2023. Its platform combines data preparation, blending, and analytical processing, with recent expansions into AI-enabled data modeling and cloud analytics tools.",
+  "mechanisms": [
+    {
+      "title": "Unified data environment for analytical process building",
+      "explanation": "The Alteryx platform provides a unified spatial and non-spatial data environment that allows users to build analytical processes and applications. This mechanism integrates data preparation, blending, and analytical processing within a single interface, supporting both spatial and standard data types.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Acquisition-driven feature expansion",
+      "explanation": "Alteryx expanded its capabilities through strategic acquisitions, including Trifacta for analytics cloud integration, Feature Labs for automated feature engineering, and Hyper Anna for AI-driven automated insights. These acquisitions added specific functionalities such as cloud data modeling and AI-enabled analytics to the core platform.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact technical architecture of the unified data environment",
+    "Details of internal data processing pipelines beyond documented features",
+    "Specific mechanisms of AI integration from acquired platforms",
+    "Complete technical specifications of the Analytics Cloud Platform"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Alteryx",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380527438",
+      "revision": "1380527438",
+      "observedAt": "2026-11-17T12:21:07.633Z",
+      "sourceTimestamp": "2026-10-16T07:24:21Z",
+      "sha256": "b22340c636df400b52b06f98edfc4d914ebcd426aee3efee5e6f6acfc23a1c4e",
+      "excerptSha256": "b22340c636df400b52b06f98edfc4d914ebcd426aee3efee5e6f6acfc23a1c4e",
+      "inspectedCharacters": 13810,
+      "totalCharacters": 13810,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects founding, HQ, name change, IPO, and privatization details from source",
+      "Mechanisms correctly describe unified data environment and acquisition-driven expansion with proper source attribution",
+      "Unknowns appropriately identify technical details not covered in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'recent expansions' appropriately reflect timeline from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-2ae749f6-269c-4d92-90d4-004b2b1e7662",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4728,
+      "outputTokens": 378
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-02abadc8-b4d3-4979-b29a-0d2c8f272a0f",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5114,
+      "outputTokens": 89
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "9d35fade59d66a180580a1668516191354d5a69bca86b0cb38e88484876bd51e",
+    "artifactDigest": "70b00e04a0fffcadaf3693d0e1de7b6bdc5746b9e53a44ff6b330b850b528448",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000085-91860ed1ac.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
