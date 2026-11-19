@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000092-ae38ab61a5",
+  "title": "Music sequencer",
+  "role": "music-events",
+  "createdAt": "2026-11-19T19:25:09.176Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A music sequencer is a device or application that records, edits, or plays back musical notes and performance data, typically using MIDI, CV/Gate, or Open Sound Control. It handles note and performance information to trigger sounds, often controlling virtual instruments or hardware synthesizers. Sequencers range from analog step-based units using knobs or sliders to digital software sequencers within DAWs that offer piano roll and score editing. They may handle MIDI events, automation data, or audio signals, and are used to control virtual instruments, hardware, or mix parameters. While hardware sequencers exist in workstations and drum machines, software sequencers dominate due to greater feature sets. Music events are captured in real-time or step-recording modes, with timing and duration adjustable per step or in continuous playback.",
+  "mechanisms": [
+    {
+      "title": "Event capture and playback",
+      "explanation": "Sequencers record musical notes and performance data as events, which can be captured in real-time as they occur or entered step-by-step with designated timing and duration. These events are stored and played back according to a set tempo, often with quantization applied to align notes to a grid. The events may include note-on/note-off, velocity, and control change data.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Control data routing",
+      "explanation": "Sequencers route recorded or programmed events to sound-generating devices or software instruments. This is typically done via MIDI, CV/Gate, or Open Sound Control protocols. The sequencer sends event data to trigger notes, adjust parameters, or automate mixer functions in a DAW, allowing the user to control virtual instruments or hardware synthesizers from a single interface.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal timing resolution and latency behavior of specific hardware or software units",
+    "Proprietary implementation details of built-in sequencers in workstation keyboards and drum machines",
+    "How automation data is interoperably mapped between MIDI messages and DAW mixer parameters across different platforms",
+    "The specific mechanisms by which step sequencers assign duration and tie values without real-time timing input"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Music sequencer",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382884096",
+      "revision": "1382884096",
+      "observedAt": "2026-11-17T20:15:36.566Z",
+      "sourceTimestamp": "2026-10-30T20:39:00Z",
+      "sha256": "374f561038337f400bb2b1fe621452e6443d5eab7c0beaef9da73ff544865922",
+      "excerptSha256": "73403914fb4fe711fd234d5c34bee970fcb6f56589ab396b590b8c17394aa80b",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 69383,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope of music sequencers",
+      "Mechanisms correctly describe event capture/playback and control data routing as supported by source",
+      "Unknowns appropriately identify specific technical details not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers and distinguishes known from unknown information"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-2c29467e-2142-494b-9d4c-aff88cef30f1",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4097,
+      "outputTokens": 479
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-44b3e3bd-5afb-455f-aaa3-08361a51d039",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4586,
+      "outputTokens": 81
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "9a5267b1637d0cbe2e1413c59aa655f8f72fdc11b909f4e3d6ede8a284d1950e",
+    "artifactDigest": "9c45d6cae9054094866e68a9dd7bd031328a60f0d05d9fc88b7c1744d2d0355a",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000092-ae38ab61a5.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

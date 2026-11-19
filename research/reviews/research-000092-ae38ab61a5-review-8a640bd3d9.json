@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000092-ae38ab61a5-review-8a640bd3d9",
+  "parentJobId": "research-000092-ae38ab61a5",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "9c45d6cae9054094866e68a9dd7bd031328a60f0d05d9fc88b7c1744d2d0355a",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Music sequencer",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382884096",
+    "revision": "1382884096",
+    "observedAt": "2026-11-17T20:15:36.566Z",
+    "sourceTimestamp": "2026-10-30T20:39:00Z",
+    "sha256": "374f561038337f400bb2b1fe621452e6443d5eab7c0beaef9da73ff544865922",
+    "excerptSha256": "73403914fb4fe711fd234d5c34bee970fcb6f56589ab396b590b8c17394aa80b",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 69383,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope of music sequencers",
+      "Mechanisms correctly describe event capture/playback and control data routing as supported by source",
+      "Unknowns appropriately identify specific technical details not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers and distinguishes known from unknown information"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-44b3e3bd-5afb-455f-aaa3-08361a51d039",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4586,
+    "outputTokens": 81
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
