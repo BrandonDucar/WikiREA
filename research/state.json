@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T15:25:23.171Z",
-  "sequence": 128,
+  "updatedAt": "2026-11-19T16:16:28.010Z",
+  "sequence": 129,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5824,6 +5824,20 @@
       "packet": "research/packets/research-000128-f538fab4e4.json",
       "packetDigest": "dd5093e4505f61c54ecb9e5324f4ad98505ea9e32ccef91d7f8e513a3e575a2b",
       "finishedAt": "2026-11-19T15:15:17.178Z"
+    },
+    {
+      "id": "research-000129-25ff439585",
+      "role": "simulation-researcher",
+      "topic": "Administrative Science Quarterly",
+      "day": "2026-11-19",
+      "runId": "44564183634",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T16:16:28.010Z",
+      "expiresAt": "2026-11-19T16:31:28.010Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
