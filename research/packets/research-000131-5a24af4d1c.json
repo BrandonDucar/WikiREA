@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000131-5a24af4d1c",
+  "topic": "Apache Kudu",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Apache Kudu is a column-oriented data store within the Apache Hadoop ecosystem, designed for OLAP workloads and real-time analytics on fast data. It provides a relational data model with columnar on-disk storage, differentiating it from schemaless systems like HBase. Kudu integrates with Hadoop processing frameworks and supports key-indexed record lookup and mutation, originally developed internally at Cloudera before its open-source release in 2016.",
+    "mechanisms": [
+      {
+        "title": "Columnar On-Disk Storage",
+        "explanation": "Kudu stores data on disk in a column-oriented format, which differs from the row-oriented or Bigtable-style storage used by HBase. This design is optimized for analytical query patterns typical of OLAP workloads.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Relational Data Model with Key-Indexed Operations",
+        "explanation": "Kudu employs a more traditional relational data model compared to the schemaless design of HBase. It supports key-indexed record lookup and mutation, enabling real-time updates alongside analytical processing.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Internal architecture details of the columnar storage engine",
+      "Precise mechanisms for integrating with diverse Hadoop processing frameworks",
+      "Specific design choices regarding the transition from internal Cloudera project to top-level Apache TLP",
+      "Detailed implementation of real-time mutation handling within the columnar format"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache Kudu",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1328432126",
+    "revision": "1328432126",
+    "observedAt": "2026-11-19T19:12:04.499Z",
+    "sourceTimestamp": "2025-12-19T20:58:12Z",
+    "sha256": "368366528759ad7c2c0ecc8b48de35fccb0af51d28ea1507ff28d23326dd078d",
+    "excerptSha256": "368366528759ad7c2c0ecc8b48de35fccb0af51d28ea1507ff28d23326dd078d",
+    "inspectedCharacters": 4254,
+    "totalCharacters": 4254,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f4e91c2c-315f-428f-a9dd-d705d3eb5aae",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1494,
+    "outputTokens": 328
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "76fdb88b2e429e0956d125d6fb7b755fa4d48c61d05aba9919e1324d53f06150",
+  "artifactDigest": "cdde3d1ca6ba6708a5ddf3c5da862412b3390bea956d661c2680fa3bea7a346d"
+}

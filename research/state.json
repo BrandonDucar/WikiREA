@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T19:12:02.589Z",
+  "updatedAt": "2026-11-19T19:12:06.572Z",
   "sequence": 131,
   "jobs": [
     {
@@ -5925,13 +5925,44 @@
       "topic": "Apache Kudu",
       "day": "2026-11-19",
       "runId": "44595817704",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T19:12:02.589Z",
       "expiresAt": "2026-11-19T19:27:02.589Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Apache Kudu",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1328432126",
+        "revision": "1328432126",
+        "observedAt": "2026-11-19T19:12:04.499Z",
+        "sourceTimestamp": "2025-12-19T20:58:12Z",
+        "sha256": "368366528759ad7c2c0ecc8b48de35fccb0af51d28ea1507ff28d23326dd078d",
+        "excerptSha256": "368366528759ad7c2c0ecc8b48de35fccb0af51d28ea1507ff28d23326dd078d",
+        "inspectedCharacters": 4254,
+        "totalCharacters": 4254,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f4e91c2c-315f-428f-a9dd-d705d3eb5aae",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1494,
+        "outputTokens": 328
+      },
+      "packet": "research/packets/research-000131-5a24af4d1c.json",
+      "packetDigest": "cdde3d1ca6ba6708a5ddf3c5da862412b3390bea956d661c2680fa3bea7a346d",
+      "finishedAt": "2026-11-19T19:12:06.572Z"
     }
   ],
   "discovered": [
@@ -7199,11 +7230,6 @@
       "title": "Bandwidth (computing)",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000060-2c92eab7e0"
-    },
-    {
-      "title": "Apache Kudu",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000061-0942144a15"
     },
     {
       "title": "Apache License 2.0",
@@ -9429,6 +9455,46 @@
       "title": "Additive manufacturing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000130-4ec554c180"
+    },
+    {
+      "title": "Apache Accumulo",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "Apache ActiveMQ",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "Apache Airavata",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "Apache Airflow",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "Apache Allura",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "Apache Ambari",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "Apache Ant",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
+    },
+    {
+      "title": "Apache Apex",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000131-5a24af4d1c"
     }
   ],
   "reviewJobs": [
