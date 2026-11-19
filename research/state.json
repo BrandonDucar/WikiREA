@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T13:15:58.964Z",
+  "updatedAt": "2026-11-19T13:16:03.935Z",
   "sequence": 126,
   "jobs": [
     {
@@ -5688,13 +5688,44 @@
       "topic": "AES encryption",
       "day": "2026-11-19",
       "runId": "44531723173",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-19T13:15:58.964Z",
       "expiresAt": "2026-11-19T13:30:58.964Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Advanced Encryption Standard",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386057520",
+        "revision": "1386057520",
+        "observedAt": "2026-11-19T13:16:01.428Z",
+        "sourceTimestamp": "2026-11-16T17:50:49Z",
+        "sha256": "08cc554176a7e3703a3632470187a1d9ef8e522f8198a9386d37cd0c22eafc60",
+        "excerptSha256": "895dafbc742269e396c593e8c0612d74b23321b67bd5ce45cff7ed3590303b73",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 51937,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-83039e73-a000-483b-95c9-efb0eaea0719",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4594,
+        "outputTokens": 435
+      },
+      "packet": "research/packets/research-000126-41f80a2813.json",
+      "packetDigest": "6355043f92dd322679543bb16c9f85a9aeae43a1c597466b4a0aa2f3f8e4565c",
+      "finishedAt": "2026-11-19T13:16:03.935Z"
     }
   ],
   "discovered": [
@@ -6762,11 +6793,6 @@
       "title": "Big Data",
       "role": "source-curator",
       "discoveredFrom": "research-000053-0d543f9d61"
-    },
-    {
-      "title": "AES encryption",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000054-be07f6d7e2"
     },
     {
       "title": "ARM64",
@@ -9157,6 +9183,41 @@
       "title": ".mp1",
       "role": "source-curator",
       "discoveredFrom": "research-000125-227c504532"
+    },
+    {
+      "title": "3-Way",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000126-41f80a2813"
+    },
+    {
+      "title": "3-subset meet-in-the-middle attack",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000126-41f80a2813"
+    },
+    {
+      "title": "AES implementations",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000126-41f80a2813"
+    },
+    {
+      "title": "AES key schedule",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000126-41f80a2813"
+    },
+    {
+      "title": "AMD Ryzen",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000126-41f80a2813"
+    },
+    {
+      "title": "ARIA (cipher)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000126-41f80a2813"
+    },
+    {
+      "title": "ASIACRYPT",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000126-41f80a2813"
     }
   ],
   "reviewJobs": [
