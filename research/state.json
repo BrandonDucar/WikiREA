@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-18T22:14:14.675Z",
-  "sequence": 114,
+  "updatedAt": "2026-11-19T00:36:39.832Z",
+  "sequence": 115,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5166,6 +5166,20 @@
       "packet": "research/packets/research-000114-65951320f6.json",
       "packetDigest": "f84cb164d4cc97d2279177d0320dd1852a958ded39919ee042218364d3050f4f",
       "finishedAt": "2026-11-18T22:14:14.675Z"
+    },
+    {
+      "id": "research-000115-3a9bfdcc26",
+      "role": "source-curator",
+      "topic": "Archetypes",
+      "day": "2026-11-19",
+      "runId": "44430367973",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T00:36:39.832Z",
+      "expiresAt": "2026-11-19T00:51:39.832Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
