@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000088-cae6952997-review-8a640bd3d9",
+  "parentJobId": "research-000088-cae6952997",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "4b8cbc66f3aa805bb961f3b49ced4c56c314d60b9a451791ec1df591a3f15392",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Pathfinding",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381469103",
+    "revision": "1381469103",
+    "observedAt": "2026-11-17T15:15:46.066Z",
+    "sourceTimestamp": "2026-10-22T18:44:53Z",
+    "sha256": "a56cc598b2054a03c177518b685e2068bdfad04b551eb229b9bc736f2eba10fd",
+    "excerptSha256": "3666e4009e1d5a9ab8e09769bf4f0c47d1999d6736eaf33d242eeedb5c04c160",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 16047,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope of pathfinding",
+      "Mechanisms correctly describe Dijkstra's and A* algorithms with proper qualifiers about negative weights and heuristic trade-offs",
+      "Unknowns identify genuine gaps not addressed in source text",
+      "No invented execution details or unsupported mechanisms present",
+      "Source citations properly referenced for algorithmic descriptions"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-9d3fdadb-22ce-44d8-ad60-8559e4aa7c9d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4178,
+    "outputTokens": 82
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

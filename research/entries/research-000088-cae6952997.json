@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000088-cae6952997",
+  "title": "Pathfinding",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-19T09:26:38.321Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Pathfinding is a computer application's search for the shortest route between two points, rooted in graph theory and Dijkstra's algorithm. It addresses two core problems: finding any path between nodes and finding the optimal shortest path. While basic breadth-first and depth-first search exhaust all possibilities in linear time, optimal pathfinding uses algorithms like A* and Dijkstra that eliminate impossible routes via heuristics or dynamic programming, achieving near-linear time complexity. In video games, hierarchical pathfinding partitions maps into clusters to reduce search space, enabling efficient planning on large scales.",
+  "mechanisms": [
+    {
+      "title": "Dijkstra's Algorithm",
+      "explanation": "This algorithm begins with a start node and an open set of candidate nodes. At each step, the node with the lowest distance from the start is examined, marked closed, and its adjacent nodes added to the open set. Because lowest-distance nodes are examined first, the first time the destination is found, the path is guaranteed shortest. It fails with negative edge weights but remains largely suitable for practical pathfinding where such weights are absent.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "A* Search Algorithm",
+      "explanation": "A* is a variant of Dijkstra's that assigns each open node a weight equal to the edge weight plus an approximate minimum distance to the finish, provided by a heuristic. This allows elimination of longer paths once an initial solution is found. When the heuristic is zero, A* behaves like Dijkstra's; as the heuristic value increases, fewer nodes are examined but optimal path guarantees degrade, a trade-off often accepted in video games for speed.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How negative edge weights are handled in practical implementations beyond Dijkstra's known limitations",
+    "The specific heuristic functions used in video game pathfinding and their impact on optimality",
+    "The computational overhead of maintaining abstraction layers in hierarchical pathfinding systems",
+    "Whether multi-agent pathfinding algorithms preserve optimality when avoiding inter-agent collisions"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Pathfinding",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381469103",
+      "revision": "1381469103",
+      "observedAt": "2026-11-17T15:15:46.066Z",
+      "sourceTimestamp": "2026-10-22T18:44:53Z",
+      "sha256": "a56cc598b2054a03c177518b685e2068bdfad04b551eb229b9bc736f2eba10fd",
+      "excerptSha256": "3666e4009e1d5a9ab8e09769bf4f0c47d1999d6736eaf33d242eeedb5c04c160",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 16047,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope of pathfinding",
+      "Mechanisms correctly describe Dijkstra's and A* algorithms with proper qualifiers about negative weights and heuristic trade-offs",
+      "Unknowns identify genuine gaps not addressed in source text",
+      "No invented execution details or unsupported mechanisms present",
+      "Source citations properly referenced for algorithmic descriptions"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-b04e7eaa-f59b-4861-a2e9-8561d287f03c",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3775,
+      "outputTokens": 445
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-9d3fdadb-22ce-44d8-ad60-8559e4aa7c9d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4178,
+      "outputTokens": 82
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "0f7d852901eb32b8d1e7b4021562a6c65ec94e85fa76fddbb99477a6dc32b220",
+    "artifactDigest": "4b8cbc66f3aa805bb961f3b49ced4c56c314d60b9a451791ec1df591a3f15392",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000088-cae6952997.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
