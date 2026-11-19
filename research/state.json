@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T18:18:40.712Z",
-  "sequence": 130,
+  "updatedAt": "2026-11-19T19:12:02.589Z",
+  "sequence": 131,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -5918,6 +5918,20 @@
       "packet": "research/packets/research-000130-4ec554c180.json",
       "packetDigest": "6b82ba0a147d6fc346d43c35a881da740dce5f09b4cc41b5e9eca89b612aaf7b",
       "finishedAt": "2026-11-19T18:18:40.712Z"
+    },
+    {
+      "id": "research-000131-5a24af4d1c",
+      "role": "market-data-researcher",
+      "topic": "Apache Kudu",
+      "day": "2026-11-19",
+      "runId": "44595817704",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-19T19:12:02.589Z",
+      "expiresAt": "2026-11-19T19:27:02.589Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
