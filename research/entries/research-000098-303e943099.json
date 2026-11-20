@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000098-303e943099",
+  "title": ".NET Compact Framework",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-20T09:26:12.364Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The .NET Compact Framework is a scaled-down version of the .NET Framework designed for resource-constrained mobile and embedded devices such as PDAs, mobile phones, and factory controllers. It uses a subset of the full .NET class libraries plus mobile-specific controls, running on a JIT compiler optimized for limited hardware. Development occurs primarily in Visual Studio using C# or Visual Basic .NET, producing applications that require the runtime to execute. The UI layer is built on Windows Forms, which inherits a desktop-oriented design, making modern touch-screen interfaces difficult without third-party controls. The 3.5 release added features like LINQ and WCF, while later versions introduced multi-core support. The Xbox 360 variant further restricts the class library and limits thread counts, though it allows processor affinity settings.",
+  "mechanisms": [
+    {
+      "title": "Scaled class libraries",
+      "explanation": "The framework uses a reduced set of the full .NET class libraries along with mobile-specific controls, scaled down to conserve space on constrained devices.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "JIT compilation for mobile devices",
+      "explanation": "Applications run on a specialized, high-performance just-in-time compiler designed for mobile-device execution rather than the full desktop runtime.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact degree of library duplication versus innovation between Compact and full .NET Framework",
+    "Details of touch-screen UI adaptation beyond the noted desktop-oriented limitations of Windows Forms",
+    "Specific mechanisms enabling multi-core scheduling in version 3.9 beyond the general mention of concurrent threads",
+    "Internal runtime constraints beyond the documented thread limit of 256 on Xbox 360"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": ".NET Compact Framework",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1354658535",
+      "revision": "1354658535",
+      "observedAt": "2026-11-18T03:18:06.749Z",
+      "sourceTimestamp": "2026-05-17T17:08:39Z",
+      "sha256": "38a6dc00fb67ef8c84c2f6962e6878beca972cd18118469a0a8451e5a31c26e3",
+      "excerptSha256": "38a6dc00fb67ef8c84c2f6962e6878beca972cd18118469a0a8451e5a31c26e3",
+      "inspectedCharacters": 11905,
+      "totalCharacters": 11905,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on purpose, libraries, JIT, UI, Xbox 360 variant, and version history highlights",
+      "Mechanisms correctly capture scaled class libraries and mobile JIT compilation with proper source attribution",
+      "Unknowns appropriately identify gaps in source detail about library overlap, touch UI specifics, multi-core internals, and Xbox runtime constraints",
+      "No unsupported mechanisms or invented execution details introduced",
+      "Qualifiers like 'scaled-down', 'subset', 'difficult without third-party controls' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-2de0d339-0093-4012-8322-01447f77ae5a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4143,
+      "outputTokens": 379
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-59d73c46-ec6e-4004-9ef2-be10ad8046a8",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4526,
+      "outputTokens": 120
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "e3a6b22664ece05efadc2d9be7b021ed2b1bd52b1313c8e2879deddc763e3867",
+    "artifactDigest": "df4cea3e727350d6130fce980ddae729505d7912b69a2eb3f600cf1eeef0caee",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000098-303e943099.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
