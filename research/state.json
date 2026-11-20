@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T05:25:51.306Z",
-  "sequence": 139,
+  "updatedAt": "2026-11-20T06:24:30.540Z",
+  "sequence": 140,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6343,6 +6343,20 @@
       "packet": "research/packets/research-000139-141f3d34d3.json",
       "packetDigest": "d6271ee62691692abcaa70816db1ffc78f04ccd240100fa6203251813e5a3396",
       "finishedAt": "2026-11-20T04:18:05.221Z"
+    },
+    {
+      "id": "research-000140-94be52ea27",
+      "role": "hardware-interoperability-scout",
+      "topic": "3D Slash",
+      "day": "2026-11-20",
+      "runId": "44687552457",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T06:24:30.540Z",
+      "expiresAt": "2026-11-20T06:39:30.540Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
