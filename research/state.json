@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T20:15:26.616Z",
+  "updatedAt": "2026-11-20T20:15:31.373Z",
   "sequence": 152,
   "jobs": [
     {
@@ -6910,13 +6910,44 @@
       "topic": "A Holly Dolly Christmas",
       "day": "2026-11-20",
       "runId": "44809675868",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T20:15:26.616Z",
       "expiresAt": "2026-11-20T20:30:26.616Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "A Holly Dolly Christmas",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1373939099",
+        "revision": "1373939099",
+        "observedAt": "2026-11-20T20:15:28.832Z",
+        "sourceTimestamp": "2026-09-08T21:29:42Z",
+        "sha256": "fc2875cedc252802c7f37aa0a577b5e3918c55d4cdf19f7a573fa350be65b733",
+        "excerptSha256": "69a43c7ca9531f772104ac9294c4379b6f1c84051cd444e5e6a0dea265942b2f",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 37337,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-3485845e-c0c8-498f-9191-1b372bcb576c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4312,
+        "outputTokens": 393
+      },
+      "packet": "research/packets/research-000152-70ef2cde33.json",
+      "packetDigest": "26551e5a6a2b6659719e6c8ca8f1d6a853c4620c4f58ac408a1cc873514143da",
+      "finishedAt": "2026-11-20T20:15:31.373Z"
     }
   ],
   "discovered": [
@@ -6944,11 +6975,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "A Holly Dolly Christmas",
-      "role": "music-events",
-      "discoveredFrom": "research-000024-ee7dc4a4fd"
     },
     {
       "title": "Album era",
@@ -10874,6 +10900,41 @@
       "title": "Amazon S3",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000151-d79d72a069"
+    },
+    {
+      "title": "64th Annual Grammy Awards",
+      "role": "music-events",
+      "discoveredFrom": "research-000152-70ef2cde33"
+    },
+    {
+      "title": "9 to 5 (musical)",
+      "role": "music-events",
+      "discoveredFrom": "research-000152-70ef2cde33"
+    },
+    {
+      "title": "9 to 5 (soundtrack)",
+      "role": "music-events",
+      "discoveredFrom": "research-000152-70ef2cde33"
+    },
+    {
+      "title": "9 to 5 and Odd Jobs",
+      "role": "music-events",
+      "discoveredFrom": "research-000152-70ef2cde33"
+    },
+    {
+      "title": "ARIA Charts",
+      "role": "music-events",
+      "discoveredFrom": "research-000152-70ef2cde33"
+    },
+    {
+      "title": "A Holly Jolly Christmas",
+      "role": "music-events",
+      "discoveredFrom": "research-000152-70ef2cde33"
+    },
+    {
+      "title": "A Real Live Dolly",
+      "role": "music-events",
+      "discoveredFrom": "research-000152-70ef2cde33"
     }
   ],
   "reviewJobs": [

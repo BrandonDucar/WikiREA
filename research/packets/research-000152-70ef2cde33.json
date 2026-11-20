@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000152-70ef2cde33",
+  "topic": "A Holly Dolly Christmas",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A Holly Dolly Christmas is Dolly Parton's 2020 studio album, her third full-length Christmas release. Recorded across multiple studios over several years, it features guest appearances from Michael Bublé, Billy Ray Cyrus, Miley Cyrus, Jimmy Fallon, Willie Nelson, and her brother Randy. The album topped the Billboard Top Country Albums and Top Holiday Albums charts, peaking at number 16 on the Billboard 200, and earned a Grammy nomination for Best Traditional Pop Vocal Album. Singles were released throughout 2020 and 2022, including Mary, Did You Know? and I Saw Mommy Kissing Santa Claus.",
+    "mechanisms": [
+      {
+        "title": "Guest collaborations and chart performance",
+        "explanation": "The album's commercial success and critical attention stem from Parton's assembled guest artists and its placement atop Billboard's country and holiday charts. Guest appearances include Michael Bublé, Billy Ray Cyrus, Miley Cyrus, Jimmy Fallon, Willie Nelson, and Randy Parton.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Release timeline and reissue strategy",
+        "explanation": "Originally announced in 2016, the album faced delays due to prior children's and soundtrack releases. It launched in October 2020, with physical formats and deluxe reissues following in 2022, including an Ultimate Deluxe Edition adding eight new tracks.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact production timeline for tracks recorded between 2009 and 2020",
+      "Specific creative decisions behind track sequencing and guest selection",
+      "Detailed recording session notes for individual songs",
+      "Factors contributing to the manufacturing delay affecting the LP release"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "A Holly Dolly Christmas",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373939099",
+    "revision": "1373939099",
+    "observedAt": "2026-11-20T20:15:28.832Z",
+    "sourceTimestamp": "2026-09-08T21:29:42Z",
+    "sha256": "fc2875cedc252802c7f37aa0a577b5e3918c55d4cdf19f7a573fa350be65b733",
+    "excerptSha256": "69a43c7ca9531f772104ac9294c4379b6f1c84051cd444e5e6a0dea265942b2f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 37337,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-3485845e-c0c8-498f-9191-1b372bcb576c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4312,
+    "outputTokens": 393
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "64f41b5ae843436b8fa8ef9af1f8f35ed6f28180c16146a34d1a3e00c7f5d732",
+  "artifactDigest": "26551e5a6a2b6659719e6c8ca8f1d6a853c4620c4f58ac408a1cc873514143da"
+}
