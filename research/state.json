@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T14:15:58.495Z",
-  "sequence": 147,
+  "updatedAt": "2026-11-20T15:15:02.912Z",
+  "sequence": 148,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6711,6 +6711,20 @@
       "packet": "research/packets/research-000147-ed7aca690a.json",
       "packetDigest": "137e4a3cc53616b8a92b66322e89865f319e2e4c542fc4827ea89561be0f291d",
       "finishedAt": "2026-11-20T14:15:58.495Z"
+    },
+    {
+      "id": "research-000148-f146e3cb84",
+      "role": "game-mechanic-researcher",
+      "topic": ".NET Gadgeteer",
+      "day": "2026-11-20",
+      "runId": "44761328509",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T15:15:02.912Z",
+      "expiresAt": "2026-11-20T15:30:02.912Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
