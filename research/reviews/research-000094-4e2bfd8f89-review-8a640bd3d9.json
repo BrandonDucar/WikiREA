@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000094-4e2bfd8f89-review-8a640bd3d9",
+  "parentJobId": "research-000094-4e2bfd8f89",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "a866c0fc83541aebba564c14e1b19f751cc21591db78a130a317f64397ba32b9",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Control loop",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373320705",
+    "revision": "1373320705",
+    "observedAt": "2026-11-17T22:14:29.578Z",
+    "sourceTimestamp": "2026-09-05T08:05:18Z",
+    "sha256": "8e6866974fbb1e7b1bd4aa0881bfd59eef876d59c85e42595b8c2a0e78a834dd",
+    "excerptSha256": "8e6866974fbb1e7b1bd4aa0881bfd59eef876d59c85e42595b8c2a0e78a834dd",
+    "inspectedCharacters": 10892,
+    "totalCharacters": 10892,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of control loop components and open/closed-loop distinction",
+      "Mechanisms correctly describe open-loop independence from process output and closed-loop feedback error correction with source examples",
+      "Unknowns appropriately identify gaps not covered in source (controller algorithms, FCE actuation details, multi-loop coordination, stability analysis)",
+      "No unsupported mechanisms or invented execution details introduced",
+      "Qualifiers like 'fundamental building block' and 'primary types' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-715b0ab3-91b3-47b8-b0e1-8bf476cc496a",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3250,
+    "outputTokens": 107
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
