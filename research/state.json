@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T07:27:36.377Z",
-  "sequence": 141,
+  "updatedAt": "2026-11-20T08:19:35.151Z",
+  "sequence": 142,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6433,6 +6433,20 @@
       "packet": "research/packets/research-000141-8b17e2ebc2.json",
       "packetDigest": "fd541b282e26aa20cf6ea6f0d8be20f47083d291ac4c23d9af0e83e800a0badb",
       "finishedAt": "2026-11-20T07:16:35.191Z"
+    },
+    {
+      "id": "research-000142-676df3b651",
+      "role": "music-events",
+      "topic": "AMC Matador",
+      "day": "2026-11-20",
+      "runId": "44701615312",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T08:19:35.151Z",
+      "expiresAt": "2026-11-20T08:34:35.151Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
