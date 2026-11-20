@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T19:25:12.036Z",
-  "sequence": 151,
+  "updatedAt": "2026-11-20T20:15:26.616Z",
+  "sequence": 152,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6903,6 +6903,20 @@
       "packet": "research/packets/research-000151-d79d72a069.json",
       "packetDigest": "859e18c2f960d003da254aafde49ca3877d0fadc99fbe06c6a08b84eb5f42c96",
       "finishedAt": "2026-11-20T19:13:34.175Z"
+    },
+    {
+      "id": "research-000152-70ef2cde33",
+      "role": "music-events",
+      "topic": "A Holly Dolly Christmas",
+      "day": "2026-11-20",
+      "runId": "44809675868",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T20:15:26.616Z",
+      "expiresAt": "2026-11-20T20:30:26.616Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
