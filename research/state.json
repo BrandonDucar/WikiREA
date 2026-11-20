@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T03:28:17.580Z",
-  "sequence": 138,
+  "updatedAt": "2026-11-20T04:17:59.394Z",
+  "sequence": 139,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6294,6 +6294,20 @@
       "packet": "research/packets/research-000138-9f2e3471d1.json",
       "packetDigest": "a34f3c66229b57b6dbaa17a45949a1e3990590d4bfc4c3317219a7069ea0a7de",
       "finishedAt": "2026-11-20T03:17:46.735Z"
+    },
+    {
+      "id": "research-000139-141f3d34d3",
+      "role": "simulation-researcher",
+      "topic": "Aleph Samach",
+      "day": "2026-11-20",
+      "runId": "44673456089",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T04:17:59.394Z",
+      "expiresAt": "2026-11-20T04:32:59.394Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
