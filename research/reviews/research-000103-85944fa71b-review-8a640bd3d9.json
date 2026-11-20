@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000103-85944fa71b-review-8a640bd3d9",
+  "parentJobId": "research-000103-85944fa71b",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "318fdf9138c0f995b4cb17081aa90ad7e478b7351f53a28f8806a1054ea6df50",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adjacency list",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1366823976",
+    "revision": "1366823976",
+    "observedAt": "2026-11-18T09:16:15.384Z",
+    "sourceTimestamp": "2026-07-30T12:59:42Z",
+    "sha256": "b02e9d11c9420dadcf4279e63bad1012b082da1f93484b8f81df7c5fb79b1946",
+    "excerptSha256": "b02e9d11c9420dadcf4279e63bad1012b082da1f93484b8f81df7c5fb79b1946",
+    "inspectedCharacters": 9585,
+    "totalCharacters": 9585,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and core operations",
+      "Mechanisms correctly describe van Rossum hash table and Cormen array-of-linked-lists implementations with proper source attribution",
+      "Unknowns appropriately identify gaps not covered in source (custom libraries, edge object variants, sorted array complexity details, density thresholds beyond 1/64)",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers and distinguishes known from unknown information"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-f3746a79-443b-42e6-b4bd-0b0ae96c0053",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2985,
+    "outputTokens": 102
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
