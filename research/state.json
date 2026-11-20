@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T01:15:08.213Z",
+  "updatedAt": "2026-11-20T01:15:18.441Z",
   "sequence": 136,
   "jobs": [
     {
@@ -6158,13 +6158,44 @@
       "topic": "ARM64",
       "day": "2026-11-20",
       "runId": "44652195246",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T01:15:08.213Z",
       "expiresAt": "2026-11-20T01:30:08.213Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AArch64",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383931367",
+        "revision": "1383931367",
+        "observedAt": "2026-11-20T01:15:10.475Z",
+        "sourceTimestamp": "2026-11-05T17:43:54Z",
+        "sha256": "a6e5942af98f715bd4053b6332efaccd80de80861812c71dfb8901932d8a2628",
+        "excerptSha256": "0160b47f57482a8b8c7dea897143f7752456a7e14eeeca56521b3cc04c0356b0",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 42891,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5f7c49e2-439a-471c-9b41-7cf132a3c775",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4620,
+        "outputTokens": 576
+      },
+      "packet": "research/packets/research-000136-3ec311958b.json",
+      "packetDigest": "5bc73f568a39e1f2dc09f3d04efb4d8c3c01487dc41d5f1cc26b3f2ceb33034a",
+      "finishedAt": "2026-11-20T01:15:18.441Z"
     }
   ],
   "discovered": [
@@ -7197,11 +7228,6 @@
       "title": "Big Data",
       "role": "source-curator",
       "discoveredFrom": "research-000053-0d543f9d61"
-    },
-    {
-      "title": "ARM64",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000054-be07f6d7e2"
     },
     {
       "title": "ARM architecture family",
@@ -9827,6 +9853,11 @@
       "title": "Closed system",
       "role": "source-curator",
       "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "ARM architecture",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000136-3ec311958b"
     }
   ],
   "reviewJobs": [
