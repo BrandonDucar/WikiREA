@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T21:13:40.394Z",
+  "updatedAt": "2026-11-20T21:13:45.610Z",
   "sequence": 153,
   "jobs": [
     {
@@ -6955,13 +6955,44 @@
       "topic": "Brute-force search",
       "day": "2026-11-20",
       "runId": "44818411420",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T21:13:40.394Z",
       "expiresAt": "2026-11-20T21:28:40.394Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Brute-force search",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1303411415",
+        "revision": "1303411415",
+        "observedAt": "2026-11-20T21:13:42.582Z",
+        "sourceTimestamp": "2025-07-30T21:09:11Z",
+        "sha256": "497623bca555b564ef3fd176f8fe7b370970cd3830bc8c237393df7a258796fd",
+        "excerptSha256": "1b5ceb92335acea992a76606617c1c5ac595a6d9aefd31da7273675f32e6cc20",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 15049,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-bec5e3e8-d222-4ab6-81a0-e089dc4b27ab",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3909,
+        "outputTokens": 408
+      },
+      "packet": "research/packets/research-000153-33d8823661.json",
+      "packetDigest": "f88a106199cbac6b0e56c8aefc7ab881b6fe3f69f62f5046ebecba47ec30ec04",
+      "finishedAt": "2026-11-20T21:13:45.610Z"
     }
   ],
   "discovered": [
@@ -8194,11 +8225,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Brute-force search",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000063-1d20ea4b59"
     },
     {
       "title": "Clique (graph theory)",
@@ -10949,6 +10975,46 @@
       "title": "A Real Live Dolly",
       "role": "music-events",
       "discoveredFrom": "research-000152-70ef2cde33"
+    },
+    {
+      "title": "Algorithmic paradigm",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Array (data structure)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Associative array",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Automated theorem proving",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Backtracking",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Benchmarking",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Big O notation",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Binary digit",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000153-33d8823661"
     }
   ],
   "reviewJobs": [
