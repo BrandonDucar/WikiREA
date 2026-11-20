@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T17:24:22.207Z",
-  "sequence": 149,
+  "updatedAt": "2026-11-20T18:17:59.223Z",
+  "sequence": 150,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6809,6 +6809,20 @@
       "packet": "research/packets/research-000149-85ac6d2c19.json",
       "packetDigest": "3bf5bd9c6187f874dfca1f7395cb57aeb47e367a41bf0f34385d4b12cfd9f79b",
       "finishedAt": "2026-11-20T16:16:07.461Z"
+    },
+    {
+      "id": "research-000150-bcc15d8324",
+      "role": "hardware-interoperability-scout",
+      "topic": "3D Systems",
+      "day": "2026-11-20",
+      "runId": "44791424905",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T18:17:59.223Z",
+      "expiresAt": "2026-11-20T18:32:59.223Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
