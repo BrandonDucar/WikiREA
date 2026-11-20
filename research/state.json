@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T09:26:12.364Z",
-  "sequence": 143,
+  "updatedAt": "2026-11-20T10:15:42.097Z",
+  "sequence": 144,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6527,6 +6527,20 @@
       "packet": "research/packets/research-000143-168b807a91.json",
       "packetDigest": "88767a551c085248c41a550a4c2761d3dccb120e74d35b1a1b687977499f3c85",
       "finishedAt": "2026-11-20T09:16:23.618Z"
+    },
+    {
+      "id": "research-000144-34083b59f3",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Computer science",
+      "day": "2026-11-20",
+      "runId": "44717695505",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T10:15:42.097Z",
+      "expiresAt": "2026-11-20T10:30:42.097Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
