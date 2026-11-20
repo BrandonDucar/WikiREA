@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000101-1aadab0ced-review-8a640bd3d9",
+  "parentJobId": "research-000101-1aadab0ced",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "afbb041a637701ff3162aa4866eba1505e75cf29e9eed07c8a31d0de6484667f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "GNU Affero General Public License",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382017210",
+    "revision": "1382017210",
+    "observedAt": "2026-11-18T07:16:47.970Z",
+    "sourceTimestamp": "2026-10-26T01:54:12Z",
+    "sha256": "5b98d51ae2cec5a51e49a98579b5c490773e52db4ca9ca852b7ebbd6f492dad9",
+    "excerptSha256": "0b9d04e8ae1f22430b260e4451278c5153a2de983b2ba7c51aea93be395caa52",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17018,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on AGPLv3 purpose, network provision, compatibility, and usage patterns",
+      "Mechanisms correctly identify Section 2(d) network-source requirement and Section 13 GPLv3 compatibility clause with proper source attribution",
+      "Unknowns appropriately flag genuine ambiguities not resolved in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically run over networks' and 'specific conditions' preserve source nuance"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-ca556809-0430-43cc-ae9f-f154e62e58d2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4651,
+    "outputTokens": 108
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
