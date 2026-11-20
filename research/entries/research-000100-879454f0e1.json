@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000100-879454f0e1",
+  "title": ".dwg",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-20T15:25:02.960Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "DWG is a proprietary binary file format native to CAD applications like AutoCAD, storing two- and three-dimensional design data and metadata. Originating from Interact CAD in the late 1970s and licensed by Autodesk in 1982, it has evolved through 18 major variants. Autodesk distributes a read/write library, RealDWG, under selective licensing. Open Design Alliance provides a free software alternative, LibreDWG, which can read DWG versions R13 through 2021 and write R2000 files. The format supports associated files such as .bak, .dws, .dwt, and .sv$.",
+  "mechanisms": [
+    {
+      "title": "Proprietary binary structure",
+      "explanation": "DWG stores design data as a proprietary binary format. Autodesk defines the format and licenses the RealDWG library for read/write access in non-competitive applications. Open Design Alliance's LibreDWG offers a free software alternative for reading recent DWG versions and writing older R2000 files.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Associated file ecosystem",
+      "explanation": "The DWG format is part of a file family that includes .bak (backup), .dws (standards), .dwt (template), and .sv$ (temporary save) files. These are structurally DWG files used for drawing backup, standards compliance, template definitions, and automatic saving within CAD workflows.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal binary schema of undocumented DWG variants",
+    "Full details of RealDWG licensing terms and restrictions",
+    "Mechanisms of DWGCHECK checksum and watermark generation",
+    "Complete reverse-engineered specification for interoperability with non-Autodesk CAD platforms"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": ".dwg",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381071202",
+      "revision": "1381071202",
+      "observedAt": "2026-11-18T06:24:13.685Z",
+      "sourceTimestamp": "2026-10-19T20:44:22Z",
+      "sha256": "174012a1455d85bda048882bbbecb4a398a3445a373b416e879196b17fce8030",
+      "excerptSha256": "0369c49b1d07d953823092680a1a92a4929713ad004b67ca10992d66de0fb1f3",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 33208,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on DWG origin, format type, and ecosystem",
+      "Mechanisms correctly describe proprietary binary structure and associated file family per source",
+      "Unknowns properly identify undocumented internals, licensing details, and reverse-engineering gaps",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'selective licensing' and 'free software alternative' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-9d37c8d6-dcbc-4053-a811-b398990c6896",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5090,
+      "outputTokens": 426
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-77633b74-fa3c-46f3-aa25-b3e5b8b7e913",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5475,
+      "outputTokens": 93
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "5cf6c346c4a560c2683a4555006a3438ee4dcabe7602ae17e9421ca80f431057",
+    "artifactDigest": "8722f75541e32795f71db54740dbb106b5f0926841eb96c07b3d277e21cbf019",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000100-879454f0e1.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

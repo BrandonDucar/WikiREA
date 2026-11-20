@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000100-879454f0e1-review-8a640bd3d9",
+  "parentJobId": "research-000100-879454f0e1",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "8722f75541e32795f71db54740dbb106b5f0926841eb96c07b3d277e21cbf019",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".dwg",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381071202",
+    "revision": "1381071202",
+    "observedAt": "2026-11-18T06:24:13.685Z",
+    "sourceTimestamp": "2026-10-19T20:44:22Z",
+    "sha256": "174012a1455d85bda048882bbbecb4a398a3445a373b416e879196b17fce8030",
+    "excerptSha256": "0369c49b1d07d953823092680a1a92a4929713ad004b67ca10992d66de0fb1f3",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 33208,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on DWG origin, format type, and ecosystem",
+      "Mechanisms correctly describe proprietary binary structure and associated file family per source",
+      "Unknowns properly identify undocumented internals, licensing details, and reverse-engineering gaps",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'selective licensing' and 'free software alternative' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-77633b74-fa3c-46f3-aa25-b3e5b8b7e913",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5475,
+    "outputTokens": 93
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
