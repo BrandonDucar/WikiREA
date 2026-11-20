@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T14:15:54.338Z",
+  "updatedAt": "2026-11-20T14:15:58.495Z",
   "sequence": 147,
   "jobs": [
     {
@@ -6673,13 +6673,44 @@
       "topic": "AOL Explorer",
       "day": "2026-11-20",
       "runId": "44751728494",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T14:15:54.338Z",
       "expiresAt": "2026-11-20T14:30:54.338Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AOL Explorer",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1357144098",
+        "revision": "1357144098",
+        "observedAt": "2026-11-20T14:15:56.547Z",
+        "sourceTimestamp": "2026-06-01T00:31:44Z",
+        "sha256": "72b783955850d9a3add29bcdc05e33b37bb439873a44bd92271ec84f69070c92",
+        "excerptSha256": "72b783955850d9a3add29bcdc05e33b37bb439873a44bd92271ec84f69070c92",
+        "inspectedCharacters": 4811,
+        "totalCharacters": 4811,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-fd51bd1d-b406-4164-8789-183781d0c9d7",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1760,
+        "outputTokens": 298
+      },
+      "packet": "research/packets/research-000147-ed7aca690a.json",
+      "packetDigest": "137e4a3cc53616b8a92b66322e89865f319e2e4c542fc4827ea89561be0f291d",
+      "finishedAt": "2026-11-20T14:15:58.495Z"
     }
   ],
   "discovered": [
@@ -7767,11 +7798,6 @@
       "title": "3D paint tool",
       "role": "application-tracer",
       "discoveredFrom": "research-000056-4de8f52dba"
-    },
-    {
-      "title": "AOL Explorer",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000057-1df2912289"
     },
     {
       "title": "AT&T Pogo",
@@ -10557,6 +10583,46 @@
       "title": "32-bit",
       "role": "application-tracer",
       "discoveredFrom": "research-000146-9dfa3ac978"
+    },
+    {
+      "title": "3DMLW",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
+    },
+    {
+      "title": "AIM (software)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
+    },
+    {
+      "title": "ALIWEB",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
+    },
+    {
+      "title": "ALynx",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
+    },
+    {
+      "title": "AMSD Ariadna",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
+    },
+    {
+      "title": "AMosaic",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
+    },
+    {
+      "title": "AOL",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
+    },
+    {
+      "title": "AOL Community Leader Program",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000147-ed7aca690a"
     }
   ],
   "reviewJobs": [

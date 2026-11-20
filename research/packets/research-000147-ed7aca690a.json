@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000147-ed7aca690a",
+  "topic": "AOL Explorer",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AOL Explorer was a free Windows graphical web browser released in July 2005, distributed as a standalone download or bundled with AOL Instant Messenger. It used Microsoft's Trident layout engine and supported tabbed browsing, pop-up blocking, and spyware detection. Version 1.5 (May 2006) added Desktop Widgets, Visual Themes, a Feeds Screensaver, and page preview features. The browser was briefly succeeded by AOL OpenRide in 2006 and then AOL Desktop in 2007.",
+    "mechanisms": [
+      {
+        "title": "Rendering and engine",
+        "explanation": "The browser used Microsoft's Trident layout engine to render web content and supported Internet Explorer-compatible plugins.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Feature set and interface",
+        "explanation": "It offered tabbed browsing, a pop-up blocker, spyware detection, Desktop Widgets, Visual Themes, a Feeds Screensaver, and page preview functionality.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal architecture of the widget system",
+      "Details of the spyware detection mechanism",
+      "Specifics of the visual theme rendering pipeline",
+      "Post-release development decisions leading to discontinuation"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "AOL Explorer",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1357144098",
+    "revision": "1357144098",
+    "observedAt": "2026-11-20T14:15:56.547Z",
+    "sourceTimestamp": "2026-06-01T00:31:44Z",
+    "sha256": "72b783955850d9a3add29bcdc05e33b37bb439873a44bd92271ec84f69070c92",
+    "excerptSha256": "72b783955850d9a3add29bcdc05e33b37bb439873a44bd92271ec84f69070c92",
+    "inspectedCharacters": 4811,
+    "totalCharacters": 4811,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-fd51bd1d-b406-4164-8789-183781d0c9d7",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1760,
+    "outputTokens": 298
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b56506e52d36289cfe9a2c13d3898f66143ea99b8e2bff0f6d805babb975bf96",
+  "artifactDigest": "137e4a3cc53616b8a92b66322e89865f319e2e4c542fc4827ea89561be0f291d"
+}
