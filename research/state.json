@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T10:15:42.097Z",
+  "updatedAt": "2026-11-20T10:15:46.561Z",
   "sequence": 144,
   "jobs": [
     {
@@ -6534,13 +6534,44 @@
       "topic": "Computer science",
       "day": "2026-11-20",
       "runId": "44717695505",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T10:15:42.097Z",
       "expiresAt": "2026-11-20T10:30:42.097Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Computer science",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380596843",
+        "revision": "1380596843",
+        "observedAt": "2026-11-20T10:15:44.004Z",
+        "sourceTimestamp": "2026-10-16T18:39:42Z",
+        "sha256": "8602cb8686833f4dfc30824df5e1de2f96f5b66b7ffe6531b71323bafee55cec",
+        "excerptSha256": "c48bd44f626abf195fbe8131cc0981d79ec2bac591fac4c8fa754b9566bc9fca",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 73179,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-62ef2681-9c4b-49ad-9581-0bf6185c4904",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4555,
+        "outputTokens": 321
+      },
+      "packet": "research/packets/research-000144-34083b59f3.json",
+      "packetDigest": "201a98b551a3404169648a26007f8054ec4308424f3f1685beaec1c4a1f98bf4",
+      "finishedAt": "2026-11-20T10:15:46.561Z"
     }
   ],
   "discovered": [
@@ -7833,11 +7864,6 @@
       "title": "Computational complexity theory",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000063-1d20ea4b59"
-    },
-    {
-      "title": "Computer science",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
     },
     {
       "title": "Consensus (computer science)",
@@ -9215,11 +9241,6 @@
       "discoveredFrom": "research-000103-85944fa71b"
     },
     {
-      "title": "Computer science",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000103-85944fa71b"
-    },
-    {
       "title": "9P (protocol)",
       "role": "source-curator",
       "discoveredFrom": "research-000105-df33de0d43"
@@ -10358,6 +10379,46 @@
       "title": "Algebraic normal form",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "ACM Computing Classification System",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Abacus",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Ada Lovelace",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Aerospace engineering",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Affective computing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Agile software development",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Alan Turing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Algebra",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000144-34083b59f3"
     }
   ],
   "reviewJobs": [
