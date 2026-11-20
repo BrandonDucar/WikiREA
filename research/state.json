@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-19T22:14:16.784Z",
-  "sequence": 134,
+  "updatedAt": "2026-11-20T00:33:46.398Z",
+  "sequence": 135,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6106,6 +6106,20 @@
       "packet": "research/packets/research-000134-1a10ad904f.json",
       "packetDigest": "c52334ce9e157bfae7c000d127401ce7ec992621e9658edb3389eec526271b14",
       "finishedAt": "2026-11-19T22:14:16.784Z"
+    },
+    {
+      "id": "research-000135-b475a168df",
+      "role": "source-curator",
+      "topic": "Audit trail",
+      "day": "2026-11-20",
+      "runId": "44646816453",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T00:33:46.398Z",
+      "expiresAt": "2026-11-20T00:48:46.398Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
