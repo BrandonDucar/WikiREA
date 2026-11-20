@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T09:16:18.421Z",
+  "updatedAt": "2026-11-20T09:16:23.618Z",
   "sequence": 143,
   "jobs": [
     {
@@ -6485,13 +6485,44 @@
       "topic": "Boolean function",
       "day": "2026-11-20",
       "runId": "44709276005",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T09:16:18.421Z",
       "expiresAt": "2026-11-20T09:31:18.421Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Boolean function",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1360621070",
+        "revision": "1360621070",
+        "observedAt": "2026-11-20T09:16:20.472Z",
+        "sourceTimestamp": "2026-06-22T16:48:52Z",
+        "sha256": "048ecd03386bc7d35c534e5202cbb44ed47241290fc82f107458a675c8c98161",
+        "excerptSha256": "84032d4bc79b2f7c4c542f881a4e8c5b849e23ffb9b79f99bb33e8913ebb21ed",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 23122,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-03045136-2058-4fb8-990f-9c37ad2370a0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4183,
+        "outputTokens": 438
+      },
+      "packet": "research/packets/research-000143-168b807a91.json",
+      "packetDigest": "88767a551c085248c41a550a4c2761d3dccb120e74d35b1a1b687977499f3c85",
+      "finishedAt": "2026-11-20T09:16:23.618Z"
     }
   ],
   "discovered": [
@@ -7769,11 +7800,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Boolean function",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000063-1d20ea4b59"
     },
     {
       "title": "Brute-force search",
@@ -10274,6 +10300,46 @@
       "title": "AMC Amitron",
       "role": "music-events",
       "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "AND gate",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "Abstract logic",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "Ackermann set theory",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "Aleph number",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "Algebra of sets",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "Algebraic function",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "Algebraic logic",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
+    },
+    {
+      "title": "Algebraic normal form",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000143-168b807a91"
     }
   ],
   "reviewJobs": [
