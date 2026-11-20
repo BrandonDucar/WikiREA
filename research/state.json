@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T22:13:30.752Z",
+  "updatedAt": "2026-11-20T22:13:35.072Z",
   "sequence": 154,
   "jobs": [
     {
@@ -7004,13 +7004,44 @@
       "topic": "Consensus (computer science)",
       "day": "2026-11-20",
       "runId": "44827139540",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T22:13:30.752Z",
       "expiresAt": "2026-11-20T22:28:30.752Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Consensus (computer science)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386029502",
+        "revision": "1386029502",
+        "observedAt": "2026-11-20T22:13:32.502Z",
+        "sourceTimestamp": "2026-11-16T13:46:28Z",
+        "sha256": "cbfb2dbfe7a58beef5827d00e34b854116f88c3d475d1ef51bd114a44c52f226",
+        "excerptSha256": "475e283350c79f147db83ef408e8c46c3e77f7c9f5888ddceb31fcd35432b57d",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 48308,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-e6880dcc-d7e7-4158-add9-33fdcdbfc6e8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3486,
+        "outputTokens": 392
+      },
+      "packet": "research/packets/research-000154-b2939d3f81.json",
+      "packetDigest": "47e868f86415a20bb9c036ab9acae379a39f3ca316b3154d7a480139e113da2f",
+      "finishedAt": "2026-11-20T22:13:35.072Z"
     }
   ],
   "discovered": [
@@ -8253,11 +8284,6 @@
       "title": "Computational complexity theory",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000063-1d20ea4b59"
-    },
-    {
-      "title": "Consensus (computer science)",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
     },
     {
       "title": "Doi (identifier)",
@@ -11033,6 +11059,46 @@
       "title": "Binary digit",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000153-33d8823661"
+    },
+    {
+      "title": "Algorand",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "Asynchronous system",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "Atomic broadcast",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "Atomic semantics",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "Avalanche (blockchain platform)",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "Barriers to entry",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "Big O notation",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "Bitcoin",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000154-b2939d3f81"
     }
   ],
   "reviewJobs": [
