@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T20:15:31.373Z",
-  "sequence": 152,
+  "updatedAt": "2026-11-20T21:13:40.394Z",
+  "sequence": 153,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6948,6 +6948,20 @@
       "packet": "research/packets/research-000152-70ef2cde33.json",
       "packetDigest": "26551e5a6a2b6659719e6c8ca8f1d6a853c4620c4f58ac408a1cc873514143da",
       "finishedAt": "2026-11-20T20:15:31.373Z"
+    },
+    {
+      "id": "research-000153-33d8823661",
+      "role": "adversarial-reviewer",
+      "topic": "Brute-force search",
+      "day": "2026-11-20",
+      "runId": "44818411420",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T21:13:40.394Z",
+      "expiresAt": "2026-11-20T21:28:40.394Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
