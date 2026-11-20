@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T13:15:35.802Z",
+  "updatedAt": "2026-11-20T13:15:41.656Z",
   "sequence": 146,
   "jobs": [
     {
@@ -6624,13 +6624,44 @@
       "topic": "ARM architecture family",
       "day": "2026-11-20",
       "runId": "44742715143",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T13:15:35.802Z",
       "expiresAt": "2026-11-20T13:30:35.802Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ARM architecture family",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+        "revision": "1386168955",
+        "observedAt": "2026-11-20T13:15:37.711Z",
+        "sourceTimestamp": "2026-11-17T02:13:39Z",
+        "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+        "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 160955,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-59add9cc-5432-46d3-af27-c72716d940de",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4753,
+        "outputTokens": 490
+      },
+      "packet": "research/packets/research-000146-9dfa3ac978.json",
+      "packetDigest": "417d0876ddf2b69a495f252d2924a8f82f8e635074eafbf6b6df86519a059f42",
+      "finishedAt": "2026-11-20T13:15:41.656Z"
     }
   ],
   "discovered": [
@@ -7640,11 +7671,6 @@
       "discoveredFrom": "research-000053-0d543f9d61"
     },
     {
-      "title": "ARM architecture family",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000054-be07f6d7e2"
-    },
-    {
       "title": "AbiWord",
       "role": "application-tracer",
       "discoveredFrom": "research-000054-be07f6d7e2"
@@ -7726,11 +7752,6 @@
     },
     {
       "title": "AOL Explorer",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000057-1df2912289"
-    },
-    {
-      "title": "ARM architecture family",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000057-1df2912289"
     },
@@ -10513,6 +10534,11 @@
       "title": "Google Scholar",
       "role": "source-curator",
       "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "32-bit",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000146-9dfa3ac978"
     }
   ],
   "reviewJobs": [

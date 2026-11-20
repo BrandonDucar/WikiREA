@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000146-9dfa3ac978",
+  "topic": "ARM architecture family",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ARM is a family of RISC instruction set architectures developed by Arm Holdings and licensed for implementation. Known for low cost, low power consumption, and low heat output, ARM processors are widely used in mobile, embedded, and increasingly desktop and server markets. The architecture evolved from 32-bit designs (ARMv7) to 64-bit (ARMv8-A) and further to ARMv9, incorporating extensions like Neon, SVE, and SMT. Multiple sub-architectures exist for different roles, including AArch32, AArch64, and specialized profiles like Cortex-M and Cortex-R. Over 230 billion ARM chips have been produced as of 2024.",
+    "mechanisms": [
+      {
+        "title": "RISC instruction set design",
+        "explanation": "ARM implements a Reduced Instruction Set Computer (RISC) architecture with load-store organization, condition-code branching, and a register file of 31 general-purpose 64-bit registers in AArch64 or 15 general-purpose 32-bit registers in AArch32. Instructions are fixed 32-bit in AArch64, while AArch32 supports mixed 16- and 32-bit Thumb-2 encoding for improved code density.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Extension and profile diversification",
+        "explanation": "Arm Holdings licenses the architecture to partners who implement specialized cores. Recent additions include Scalable Vector Extension (SVE/SVE2), Scalable Matrix Extension (SME/SME2), and Simultaneous Multithreading (SMT) for performance. Domain-specific extensions cover cryptography (AES, SM3, SM4, SHA), virtualization (SMMU), and DSP/Helium for media workloads. Different architectural profiles (A, R, M) target application, real-time, and microcontroller markets respectively.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact pipeline implementation details for specific core models",
+      "Proprietary licensing terms and royalty structures",
+      "Complete binary compatibility across all ARMv9 sub-versions",
+      "Hardware-software interface specifics for SMT and SVE2 deployment"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ARM architecture family",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+    "revision": "1386168955",
+    "observedAt": "2026-11-20T13:15:37.711Z",
+    "sourceTimestamp": "2026-11-17T02:13:39Z",
+    "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+    "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 160955,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-59add9cc-5432-46d3-af27-c72716d940de",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4753,
+    "outputTokens": 490
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "bbca175a91fa9dbdd4dcd44c307ada107b5d758ff59d81dc55b6b521b5feed50",
+  "artifactDigest": "417d0876ddf2b69a495f252d2924a8f82f8e635074eafbf6b6df86519a059f42"
+}
