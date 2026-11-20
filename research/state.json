@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T16:16:01.456Z",
+  "updatedAt": "2026-11-20T16:16:07.461Z",
   "sequence": 149,
   "jobs": [
     {
@@ -6767,13 +6767,44 @@
       "topic": "All Sports Competition (Cornell University)",
       "day": "2026-11-20",
       "runId": "44771596050",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T16:16:01.456Z",
       "expiresAt": "2026-11-20T16:31:01.456Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "All Sports Competition (Cornell University)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380651013",
+        "revision": "1380651013",
+        "observedAt": "2026-11-20T16:16:03.706Z",
+        "sourceTimestamp": "2026-10-17T01:54:05Z",
+        "sha256": "94f0737bee23bfd690640869783e6dc437e9c2413d6e69c148375742dad66fb9",
+        "excerptSha256": "bcb8c92f5d2ed766e9c6b62b49acd042384746d39ad45a3130d85f7d18153314",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 21463,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-3921a9e8-e2b7-4a24-9083-5f21e04fdd79",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3433,
+        "outputTokens": 380
+      },
+      "packet": "research/packets/research-000149-85ac6d2c19.json",
+      "packetDigest": "3bf5bd9c6187f874dfca1f7395cb57aeb47e367a41bf0f34385d4b12cfd9f79b",
+      "finishedAt": "2026-11-20T16:16:07.461Z"
     }
   ],
   "discovered": [
@@ -6781,11 +6812,6 @@
       "title": ".NET MAUI",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000021-ec00986789"
-    },
-    {
-      "title": "All Sports Competition (Cornell University)",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000022-5ba2f1d513"
     },
     {
       "title": "Andrew Dickson White",
@@ -10691,6 +10717,16 @@
       "title": "78K",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000148-f146e3cb84"
+    },
+    {
+      "title": "Alpha Chi Rho",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000149-85ac6d2c19"
+    },
+    {
+      "title": "Barton Hall",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000149-85ac6d2c19"
     }
   ],
   "reviewJobs": [
