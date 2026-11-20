@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T02:19:54.514Z",
-  "sequence": 137,
+  "updatedAt": "2026-11-20T03:17:42.456Z",
+  "sequence": 138,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6245,6 +6245,20 @@
       "packet": "research/packets/research-000137-4b03a99ab9.json",
       "packetDigest": "3f0f0f4ffc13e2717540c287a46a6750828b8792017d226b983e7a2a623013c2",
       "finishedAt": "2026-11-20T02:19:54.514Z"
+    },
+    {
+      "id": "research-000138-9f2e3471d1",
+      "role": "game-mechanic-researcher",
+      "topic": ".NET Framework version history",
+      "day": "2026-11-20",
+      "runId": "44666726342",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T03:17:42.456Z",
+      "expiresAt": "2026-11-20T03:32:42.456Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
