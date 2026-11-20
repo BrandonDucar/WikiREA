@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T04:17:59.394Z",
+  "updatedAt": "2026-11-20T04:18:05.221Z",
   "sequence": 139,
   "jobs": [
     {
@@ -6301,13 +6301,44 @@
       "topic": "Aleph Samach",
       "day": "2026-11-20",
       "runId": "44673456089",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T04:17:59.394Z",
       "expiresAt": "2026-11-20T04:32:59.394Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Aleph Samach",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380650568",
+        "revision": "1380650568",
+        "observedAt": "2026-11-20T04:18:01.488Z",
+        "sourceTimestamp": "2026-10-17T01:51:04Z",
+        "sha256": "6bfc58687b7ae0503a915fca688131bb748ec633cef2b79305aa48a0925d5c75",
+        "excerptSha256": "6bfc58687b7ae0503a915fca688131bb748ec633cef2b79305aa48a0925d5c75",
+        "inspectedCharacters": 11144,
+        "totalCharacters": 11144,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-13f7a41d-6176-4e06-a9a2-2d5a1a0d9df3",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4264,
+        "outputTokens": 459
+      },
+      "packet": "research/packets/research-000139-141f3d34d3.json",
+      "packetDigest": "d6271ee62691692abcaa70816db1ffc78f04ccd240100fa6203251813e5a3396",
+      "finishedAt": "2026-11-20T04:18:05.221Z"
     }
   ],
   "discovered": [
@@ -6320,11 +6351,6 @@
       "title": ".NET MAUI",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000021-ec00986789"
-    },
-    {
-      "title": "Aleph Samach",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000022-5ba2f1d513"
     },
     {
       "title": "All Sports Competition (Cornell University)",
@@ -10015,6 +10041,21 @@
       "title": "ASP.NET",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000138-9f2e3471d1"
+    },
+    {
+      "title": "1952 Summer Olympics",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000139-141f3d34d3"
+    },
+    {
+      "title": "400 metre hurdles",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000139-141f3d34d3"
+    },
+    {
+      "title": "Aleph",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000139-141f3d34d3"
     }
   ],
   "reviewJobs": [
