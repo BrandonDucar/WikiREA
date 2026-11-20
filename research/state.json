@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T06:24:35.030Z",
-  "sequence": 140,
+  "updatedAt": "2026-11-20T07:16:30.363Z",
+  "sequence": 141,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6388,6 +6388,20 @@
       "packet": "research/packets/research-000140-94be52ea27.json",
       "packetDigest": "b3ea79eff0edcda6add58c931c2581d7fac9312a7e83b920793394d7accebf60",
       "finishedAt": "2026-11-20T06:24:35.030Z"
+    },
+    {
+      "id": "research-000141-8b17e2ebc2",
+      "role": "market-data-researcher",
+      "topic": "Apache License 2.0",
+      "day": "2026-11-20",
+      "runId": "44693742579",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T07:16:30.363Z",
+      "expiresAt": "2026-11-20T07:31:30.363Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
