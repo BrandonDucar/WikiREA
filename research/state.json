@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T06:24:30.540Z",
+  "updatedAt": "2026-11-20T06:24:35.030Z",
   "sequence": 140,
   "jobs": [
     {
@@ -6350,13 +6350,44 @@
       "topic": "3D Slash",
       "day": "2026-11-20",
       "runId": "44687552457",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T06:24:30.540Z",
       "expiresAt": "2026-11-20T06:39:30.540Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D Slash",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1375332502",
+        "revision": "1375332502",
+        "observedAt": "2026-11-20T06:24:32.241Z",
+        "sourceTimestamp": "2026-09-17T04:25:52Z",
+        "sha256": "9b7b803a33a578545a85551044a0bafade88cfed40cb8ceb4b40a012bfffcdd2",
+        "excerptSha256": "9b7b803a33a578545a85551044a0bafade88cfed40cb8ceb4b40a012bfffcdd2",
+        "inspectedCharacters": 9831,
+        "totalCharacters": 9831,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c3bda15d-4c4a-4d50-8a31-5a50d572732d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3194,
+        "outputTokens": 438
+      },
+      "packet": "research/packets/research-000140-94be52ea27.json",
+      "packetDigest": "b3ea79eff0edcda6add58c931c2581d7fac9312a7e83b920793394d7accebf60",
+      "finishedAt": "2026-11-20T06:24:35.030Z"
     }
   ],
   "discovered": [
@@ -6384,11 +6415,6 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
-    },
-    {
-      "title": "3D Slash",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
     },
     {
       "title": "3D Systems",
@@ -10074,6 +10100,41 @@
       "title": "Aleph",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000139-141f3d34d3"
+    },
+    {
+      "title": ".STL",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000140-94be52ea27"
+    },
+    {
+      "title": "Android (operating system)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000140-94be52ea27"
+    },
+    {
+      "title": "Arborescence (graph theory)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000140-94be52ea27"
+    },
+    {
+      "title": "Concours Lépine",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000140-94be52ea27"
+    },
+    {
+      "title": "Cuboid",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000140-94be52ea27"
+    },
+    {
+      "title": "EULA",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000140-94be52ea27"
+    },
+    {
+      "title": "Google Drive",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000140-94be52ea27"
     }
   ],
   "reviewJobs": [
