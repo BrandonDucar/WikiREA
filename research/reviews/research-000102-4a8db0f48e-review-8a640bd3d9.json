@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000102-4a8db0f48e-review-8a640bd3d9",
+  "parentJobId": "research-000102-4a8db0f48e",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "459f013ace4f8d84ad8ae3f21fd3f1c74895d7ae45e1c67f558aa5a1af40c765",
+  "sourcePin": {
+    "id": "S1",
+    "title": "2-XL",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383599781",
+    "revision": "1383599781",
+    "observedAt": "2026-11-18T08:19:33.197Z",
+    "sourceTimestamp": "2026-11-03T16:39:27Z",
+    "sha256": "e037429148aae8f240a9fde75f308d6a00bb5fee0ae659a046af3148276ba18f",
+    "excerptSha256": "02b1dbaace2c6711679057129afefa72ad4bb6853b88bf2826d1fc0bb4fbae46",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 24996,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about marketing periods, manufacturers, and 'first smart-toy' status with proper attribution",
+      "Mechanisms correctly describe decision-tree tape navigation and synthesizer-driven personality as presented in source",
+      "Unknowns appropriately identify gaps in technical detail not covered by source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'rudimentary' and 'reportedly innovative' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-30a7bc0f-4604-4d8f-8d91-674711c8cff8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4801,
+    "outputTokens": 99
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
