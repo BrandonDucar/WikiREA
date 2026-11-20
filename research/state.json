@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T12:20:39.245Z",
+  "updatedAt": "2026-11-20T12:20:44.481Z",
   "sequence": 145,
   "jobs": [
     {
@@ -6579,13 +6579,44 @@
       "topic": "Beth Plale",
       "day": "2026-11-20",
       "runId": "44734965784",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T12:20:39.245Z",
       "expiresAt": "2026-11-20T12:35:39.245Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Beth Plale",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1372565014",
+        "revision": "1372565014",
+        "observedAt": "2026-11-20T12:20:42.221Z",
+        "sourceTimestamp": "2026-09-01T07:19:33Z",
+        "sha256": "66b03c8681891fff424fd9f75c4e4864d5e70503286ad7d946c116ec858df920",
+        "excerptSha256": "66b03c8681891fff424fd9f75c4e4864d5e70503286ad7d946c116ec858df920",
+        "inspectedCharacters": 6578,
+        "totalCharacters": 6578,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-3e65f39c-11c8-4755-88eb-833ef6431182",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2481,
+        "outputTokens": 293
+      },
+      "packet": "research/packets/research-000145-c8ac6bc4f7.json",
+      "packetDigest": "5ecd44ec7cfe67f8547314484e9b94accf97e5f2a96fe6dd528855bf6524147b",
+      "finishedAt": "2026-11-20T12:20:44.481Z"
     }
   ],
   "discovered": [
@@ -7588,11 +7619,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "Beth Plale",
-      "role": "source-curator",
-      "discoveredFrom": "research-000053-0d543f9d61"
     },
     {
       "title": "Big Data",
@@ -10433,6 +10459,46 @@
       "title": "Algebra",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000144-34083b59f3"
+    },
+    {
+      "title": "Artificial intelligence",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "Association for Computing Machinery",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "Binghamton University",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "Computer scientist",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "Doctoral advisor",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "Doi (identifier)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "Georgia Tech",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
+    },
+    {
+      "title": "Google Scholar",
+      "role": "source-curator",
+      "discoveredFrom": "research-000145-c8ac6bc4f7"
     }
   ],
   "reviewJobs": [
