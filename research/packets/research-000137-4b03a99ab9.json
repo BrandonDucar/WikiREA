@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000137-4b03a99ab9",
+  "topic": "ACM Queue",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ACM Queue is a bimonthly electronic trade magazine for practicing software engineers, published by the Association for Computing Machinery since 2003. It bridges academic and industrial computer science, featuring research articles, columns, and interviews. Unlike peer-reviewed journals, publication requires invitation and review but is not formally peer-reviewed. Content is editorially curated and available by subscription.",
+    "mechanisms": [
+      {
+        "title": "Editorial selection process",
+        "explanation": "Only articles from specifically invited authors undergo a review process before publication, distinguishing it from open academic journals.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Content format and distribution",
+        "explanation": "The magazine publishes research articles, columns, and interviews in electronic form, with some content cross-published in ACM's Communications magazine Practitioner section.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal review criteria used for invited author submissions",
+      "Whether content undergoes post-publication editorial updates",
+      "Details of subscription management and access controls",
+      "Specific workflow for column and interview feature selection"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ACM Queue",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1357822846",
+    "revision": "1357822846",
+    "observedAt": "2026-11-20T02:19:53.218Z",
+    "sourceTimestamp": "2026-06-04T21:50:48Z",
+    "sha256": "b9846cae1786c1985484a58729700d8d65abf5d4a989ede9a27701f3d0f07440",
+    "excerptSha256": "b9846cae1786c1985484a58729700d8d65abf5d4a989ede9a27701f3d0f07440",
+    "inspectedCharacters": 5240,
+    "totalCharacters": 5240,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-52bd126c-800e-4f5a-a767-fffbc3f8580d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1807,
+    "outputTokens": 255
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "65b68ac21d14cb00274057dcae44a8d7f80e9198cee5728233c0b832ed6cc588",
+  "artifactDigest": "3f0f0f4ffc13e2717540c287a46a6750828b8792017d226b983e7a2a623013c2"
+}
