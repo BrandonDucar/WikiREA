@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T08:19:35.151Z",
+  "updatedAt": "2026-11-20T08:19:39.890Z",
   "sequence": 142,
   "jobs": [
     {
@@ -6440,13 +6440,44 @@
       "topic": "AMC Matador",
       "day": "2026-11-20",
       "runId": "44701615312",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T08:19:35.151Z",
       "expiresAt": "2026-11-20T08:34:35.151Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AMC Matador",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386507976",
+        "revision": "1386507976",
+        "observedAt": "2026-11-20T08:19:37.116Z",
+        "sourceTimestamp": "2026-11-18T22:57:36Z",
+        "sha256": "e552818451f9c834025ad95e028ace78913b4ee4dcdf423f3569b8b3fb0605f1",
+        "excerptSha256": "56d8a7ecbaa72d5d44dc0f521dc0253b5717f943c8d24edf0dd79bce2ede778f",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 156998,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-dc598a5c-ce7c-43f7-a0d0-13390a6cdaa8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4458,
+        "outputTokens": 371
+      },
+      "packet": "research/packets/research-000142-676df3b651.json",
+      "packetDigest": "e875a0a1b479516166da956dfceb4793fc9f6213ae5b7498fe6e32311f140fb4",
+      "finishedAt": "2026-11-20T08:19:39.890Z"
     }
   ],
   "discovered": [
@@ -6489,11 +6520,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "AMC Matador",
-      "role": "music-events",
-      "discoveredFrom": "research-000024-ee7dc4a4fd"
     },
     {
       "title": "A Holly Dolly Christmas",
@@ -10194,6 +10220,46 @@
       "title": "Android (operating system)",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000141-8b17e2ebc2"
+    },
+    {
+      "title": "1973 oil crisis",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "A. E. Barit",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "AMC 20",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "AMC AMX",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "AMC AMX-GT",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "AMC AMX III",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "AMC Ambassador",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
+    },
+    {
+      "title": "AMC Amitron",
+      "role": "music-events",
+      "discoveredFrom": "research-000142-676df3b651"
     }
   ],
   "reviewJobs": [
