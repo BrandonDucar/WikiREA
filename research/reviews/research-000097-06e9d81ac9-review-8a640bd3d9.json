@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000097-06e9d81ac9-review-8a640bd3d9",
+  "parentJobId": "research-000097-06e9d81ac9",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "b1661397765d7c608c731d5733adf67d664e85cae1da2581b4908b0cfa4eefc7",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+    "revision": "1384980993",
+    "observedAt": "2026-11-18T02:20:41.478Z",
+    "sourceTimestamp": "2026-11-11T05:21:33Z",
+    "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+    "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39476,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft claims '.NET 11' released November 2026 and '.NET 10' as latest LTS; source shows latest release .NET 10.0 and preview versions, no mention of .NET 11",
+      "Draft states 'released under an MIT License' as current fact; source shows license MIT with reference but draft presents as settled without qualification",
+      "Mechanisms cite 'sourceIds': ['S1'] but no source mapping provided in packet; cannot verify support",
+      "Draft summary says 'serving as a cross-platform successor to the .NET Framework' — source says 'cross-platform successor' but also notes it was formerly named .NET Core; draft omits former name context",
+      "Unknowns list internal runtime details not addressed in source; acceptable as unknowns but mechanisms lack factual anchoring"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-303cc5bc-3272-45fa-8052-ada2cc20f49e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5159,
+    "outputTokens": 183
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
