@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000099-fdfdcad421-review-8a640bd3d9",
+  "parentJobId": "research-000099-fdfdcad421",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "e9eed1516476583754ab0d8875201437bab8ef3cf074a4319f9235847c8668db",
+  "sourcePin": {
+    "id": "S1",
+    "title": "2024 Cornell University rape allegations",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385826727",
+    "revision": "1385826727",
+    "observedAt": "2026-11-18T04:17:28.772Z",
+    "sourceTimestamp": "2026-11-15T11:08:34Z",
+    "sha256": "742f0bea72b0d6e4b3ef3aafce9b7aefcd1b38a7cd6d5e2d6b76ce79f18bb81f",
+    "excerptSha256": "5d25df10bda06314deedae3ce3fa47e47b3dd1f1b7c4c7b5432116aa1e6e31e4",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 59395,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source timeline and outcomes",
+      "Mechanisms correctly describe alleged substance-facilitated incapacitation and social-network facilitation with proper attribution to plaintiff's allegations",
+      "Unknowns appropriately identify unresolved factual questions without speculation",
+      "No invented execution details or unsupported causal claims",
+      "Qualifiers like 'alleged' and 'reportedly' preserved throughout"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-2f7a3b70-df58-4701-b7fe-9a99d81c0a49",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4899,
+    "outputTokens": 87
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
