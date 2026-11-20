@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000095-c22e5b3064-review-8a640bd3d9",
+  "parentJobId": "research-000095-c22e5b3064",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "b484370b162463ee4e523bcab73ea58b51acd98aad656fe1dfc2d218d4d5dcd8",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Analytics",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385808200",
+    "revision": "1385808200",
+    "observedAt": "2026-11-18T00:36:52.562Z",
+    "sourceTimestamp": "2026-11-15T08:33:49Z",
+    "sha256": "dc2a88d244fb2692344273f1fa55ee7a7391a0e105ed0080cb319b642911a888",
+    "excerptSha256": "163a7e6bd94b9240639432e7ae5947bcfb0823cbd6a06abbeae6e526813fa812",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 33033,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope of analytics",
+      "Mechanisms correctly capture pattern discovery and decision-support roles described in source",
+      "Unknowns appropriately identify proprietary algorithms, analytics vs analysis distinction, and private system internals as not fully detailed in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'may include' and 'often employs' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-7ada7f1b-47c0-435e-8211-bbe4d535cb13",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4315,
+    "outputTokens": 92
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

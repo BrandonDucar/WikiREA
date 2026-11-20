@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000095-c22e5b3064",
+  "title": "Analytics",
+  "role": "source-curator",
+  "createdAt": "2026-11-20T03:28:17.580Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Analytics is the systematic computational analysis of data used to discover, interpret, and communicate meaningful patterns, supporting decision-making across fields such as marketing, finance, and operations. It applies statistics, programming, and operations research to quantify performance and may include descriptive, diagnostic, predictive, prescriptive, and cognitive approaches. Organizations apply analytics to business data to describe past performance, predict future outcomes, and prescribe actions for improvement. Advanced analytics often employs machine learning techniques such as neural networks, decision trees, and clustering to build predictive models. Applications range from marketing optimization and web analytics to people analytics, which uses behavioral data to inform workforce management and human resource decisions.",
+  "mechanisms": [
+    {
+      "title": "Pattern discovery and interpretation",
+      "explanation": "Analytics employs statistical and computational methods to detect meaningful patterns within data, transforming raw information into interpretable insights about past performance or future trends.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Decision-support application",
+      "explanation": "Derived patterns are applied toward effective decision-making, enabling organizations to describe, predict, and improve performance in areas such as marketing, finance, and workforce management.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact algorithms and software implementations used in specific analytics platforms",
+    "Proprietary methods employed by commercial analytics vendors",
+    "The distinction between analytics and data analysis beyond the described subset relationship",
+    "Complete reverse engineering of private analytics system internals"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Analytics",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385808200",
+      "revision": "1385808200",
+      "observedAt": "2026-11-18T00:36:52.562Z",
+      "sourceTimestamp": "2026-11-15T08:33:49Z",
+      "sha256": "dc2a88d244fb2692344273f1fa55ee7a7391a0e105ed0080cb319b642911a888",
+      "excerptSha256": "163a7e6bd94b9240639432e7ae5947bcfb0823cbd6a06abbeae6e526813fa812",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 33033,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope of analytics",
+      "Mechanisms correctly capture pattern discovery and decision-support roles described in source",
+      "Unknowns appropriately identify proprietary algorithms, analytics vs analysis distinction, and private system internals as not fully detailed in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'may include' and 'often employs' preserved from source language"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-0b671329-4447-4577-a09d-219e3ef15a19",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4060,
+      "outputTokens": 323
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-7ada7f1b-47c0-435e-8211-bbe4d535cb13",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4315,
+      "outputTokens": 92
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "afdd1065118abf4a9add4df7deee54c2616957c2dcc7ee4d67dd2b280b875447",
+    "artifactDigest": "b484370b162463ee4e523bcab73ea58b51acd98aad656fe1dfc2d218d4d5dcd8",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000095-c22e5b3064.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
