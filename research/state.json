@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T03:17:42.456Z",
+  "updatedAt": "2026-11-20T03:17:46.735Z",
   "sequence": 138,
   "jobs": [
     {
@@ -6252,21 +6252,47 @@
       "topic": ".NET Framework version history",
       "day": "2026-11-20",
       "runId": "44666726342",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T03:17:42.456Z",
       "expiresAt": "2026-11-20T03:32:42.456Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": ".NET Framework version history",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385426053",
+        "revision": "1385426053",
+        "observedAt": "2026-11-20T03:17:44.180Z",
+        "sourceTimestamp": "2026-11-13T06:20:27Z",
+        "sha256": "9a4b297f18b57c8ccea2bf5ee3c14d8aebe42c8f5c112ee62a91bf76b8d91ac2",
+        "excerptSha256": "c09ececf16caaaac85aafc3677019fce7b8fd596c57ed931ba44182b7a0b91aa",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 87984,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-dea408ba-512a-4f96-85ce-67953c4663a1",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 5232,
+        "outputTokens": 395
+      },
+      "packet": "research/packets/research-000138-9f2e3471d1.json",
+      "packetDigest": "a34f3c66229b57b6dbaa17a45949a1e3990590d4bfc4c3317219a7069ea0a7de",
+      "finishedAt": "2026-11-20T03:17:46.735Z"
     }
   ],
   "discovered": [
-    {
-      "title": ".NET Framework version history",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000021-ec00986789"
-    },
     {
       "title": ".NET Gadgeteer",
       "role": "game-mechanic-researcher",
@@ -8758,11 +8784,6 @@
       "discoveredFrom": "research-000096-72085958da"
     },
     {
-      "title": ".NET Framework version history",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000097-06e9d81ac9"
-    },
-    {
       "title": ".NET Gadgeteer",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000097-06e9d81ac9"
@@ -9956,6 +9977,26 @@
       "title": "ACM Conference on Recommender Systems",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000137-4b03a99ab9"
+    },
+    {
+      "title": "64-bit",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000138-9f2e3471d1"
+    },
+    {
+      "title": "ADO.NET Data Services",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000138-9f2e3471d1"
+    },
+    {
+      "title": "ADO.NET Entity Framework",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000138-9f2e3471d1"
+    },
+    {
+      "title": "ASP.NET",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000138-9f2e3471d1"
     }
   ],
   "reviewJobs": [
