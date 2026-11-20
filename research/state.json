@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T18:18:04.209Z",
-  "sequence": 150,
+  "updatedAt": "2026-11-20T19:13:29.877Z",
+  "sequence": 151,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6854,6 +6854,20 @@
       "packet": "research/packets/research-000150-bcc15d8324.json",
       "packetDigest": "6365346b76f633a3d10e3edf19b839ee08b7d50399cd0fb2d7690bae47f39cbf",
       "finishedAt": "2026-11-20T18:18:04.209Z"
+    },
+    {
+      "id": "research-000151-d79d72a069",
+      "role": "market-data-researcher",
+      "topic": "Apache Pinot",
+      "day": "2026-11-20",
+      "runId": "44800114183",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T19:13:29.877Z",
+      "expiresAt": "2026-11-20T19:28:29.877Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
