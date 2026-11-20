@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000151-d79d72a069",
+  "topic": "Apache Pinot",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Apache Pinot is an open-source, distributed, column-oriented data store designed for low-latency analytical queries over data from streaming and batch sources. It is used for high-concurrency aggregations and real-time analytics. Pinot employs pluggable indexing (Sorted, Bitmap, Inverted, Star-Tree, Range) and supports near real-time ingestion from Kafka, Kinesis, Hadoop, S3, Azure, and GCS via a SQL-like query language. It uses Apache Helix for cluster management and coordination via ZooKeeper. Query processing is handled by brokers that route requests to real-time and offline servers based on segment-to-server routing tables.",
+    "mechanisms": [
+      {
+        "title": "Pluggable Indexing and Query Routing",
+        "explanation": "Pinot uses pluggable indexing technologies—Sorted Index, Bitmap Index, Inverted Index, Star-Tree Index, and Range Index—to accelerate query performance. Brokers receive queries and scatter requests to real-time or offline servers based on a segment-to-server routing table, enabling distributed query processing across the cluster.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Cluster Management via Apache Helix",
+        "explanation": "Pinot leverages Apache Helix as an embedded agent across its servers and brokers to manage cluster state, partitions, and replicas. Helix uses Apache ZooKeeper for coordination and maintaining overall cluster health, ensuring consistent resource management in the distributed system.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal data placement strategy for real-time versus offline segments",
+      "Detailed low-latency query execution pipeline beyond broker routing",
+      "Specific compression algorithm parameters for Run-Length and Fixed-Bit Length encoding",
+      "Internal mechanisms for exactly-once or at-least-once streaming ingestion guarantees"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache Pinot",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381331971",
+    "revision": "1381331971",
+    "observedAt": "2026-11-20T19:13:31.807Z",
+    "sourceTimestamp": "2026-10-21T17:58:10Z",
+    "sha256": "435b2896e24cdb95ac475da2a2ad4e6ab275efa2fd939ff6d6208a092d723483",
+    "excerptSha256": "435b2896e24cdb95ac475da2a2ad4e6ab275efa2fd939ff6d6208a092d723483",
+    "inspectedCharacters": 11419,
+    "totalCharacters": 11419,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-ffc10a62-2627-458a-9702-c73e7a01a410",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3948,
+    "outputTokens": 403
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "4ef111e97c4232ede729e8eb85a837856c5ee26d2e46165c0e5c8e4eedce1d6b",
+  "artifactDigest": "859e18c2f960d003da254aafde49ca3877d0fadc99fbe06c6a08b84eb5f42c96"
+}
