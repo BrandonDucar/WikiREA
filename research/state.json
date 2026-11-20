@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T00:33:46.398Z",
+  "updatedAt": "2026-11-20T00:33:50.882Z",
   "sequence": 135,
   "jobs": [
     {
@@ -6113,13 +6113,44 @@
       "topic": "Audit trail",
       "day": "2026-11-20",
       "runId": "44646816453",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T00:33:46.398Z",
       "expiresAt": "2026-11-20T00:48:46.398Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Audit trail",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1367201092",
+        "revision": "1367201092",
+        "observedAt": "2026-11-20T00:33:48.571Z",
+        "sourceTimestamp": "2026-08-01T17:32:51Z",
+        "sha256": "65f6ffb03b1ccabd3675de8f188cc9426ee119380d545a08cc521f413ec5b720",
+        "excerptSha256": "65f6ffb03b1ccabd3675de8f188cc9426ee119380d545a08cc521f413ec5b720",
+        "inspectedCharacters": 10252,
+        "totalCharacters": 10252,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4f892b43-2197-4903-93ba-93b92dadafed",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2849,
+        "outputTokens": 284
+      },
+      "packet": "research/packets/research-000135-b475a168df.json",
+      "packetDigest": "e29ebc8d8c98ce3bbc769f6ac9154a385355d3b652c4ae8998af41384ebc2c00",
+      "finishedAt": "2026-11-20T00:33:50.882Z"
     }
   ],
   "discovered": [
@@ -7142,11 +7173,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "Audit trail",
-      "role": "source-curator",
-      "discoveredFrom": "research-000053-0d543f9d61"
     },
     {
       "title": "Beth Plale",
@@ -9747,6 +9773,46 @@
       "title": "Arnetminer",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000134-1a10ad904f"
+    },
+    {
+      "title": "Accounting",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "Alliance for Telecommunications Industry Solutions",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "Ballot",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "Baseline (configuration management)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "Business associate",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "Clinical research",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "Clinical trial management system",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
+    },
+    {
+      "title": "Closed system",
+      "role": "source-curator",
+      "discoveredFrom": "research-000135-b475a168df"
     }
   ],
   "reviewJobs": [
