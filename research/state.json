@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T00:33:50.882Z",
-  "sequence": 135,
+  "updatedAt": "2026-11-20T01:15:08.213Z",
+  "sequence": 136,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6151,6 +6151,20 @@
       "packet": "research/packets/research-000135-b475a168df.json",
       "packetDigest": "e29ebc8d8c98ce3bbc769f6ac9154a385355d3b652c4ae8998af41384ebc2c00",
       "finishedAt": "2026-11-20T00:33:50.882Z"
+    },
+    {
+      "id": "research-000136-3ec311958b",
+      "role": "application-tracer",
+      "topic": "ARM64",
+      "day": "2026-11-20",
+      "runId": "44652195246",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T01:15:08.213Z",
+      "expiresAt": "2026-11-20T01:30:08.213Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
