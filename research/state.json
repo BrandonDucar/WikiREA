@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T13:25:18.240Z",
-  "sequence": 146,
+  "updatedAt": "2026-11-20T14:15:54.338Z",
+  "sequence": 147,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6666,6 +6666,20 @@
       "packet": "research/packets/research-000146-9dfa3ac978.json",
       "packetDigest": "417d0876ddf2b69a495f252d2924a8f82f8e635074eafbf6b6df86519a059f42",
       "finishedAt": "2026-11-20T13:15:41.656Z"
+    },
+    {
+      "id": "research-000147-ed7aca690a",
+      "role": "runtime-researcher",
+      "topic": "AOL Explorer",
+      "day": "2026-11-20",
+      "runId": "44751728494",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T14:15:54.338Z",
+      "expiresAt": "2026-11-20T14:30:54.338Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
