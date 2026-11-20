@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T18:17:59.223Z",
+  "updatedAt": "2026-11-20T18:18:04.209Z",
   "sequence": 150,
   "jobs": [
     {
@@ -6816,13 +6816,44 @@
       "topic": "3D Systems",
       "day": "2026-11-20",
       "runId": "44791424905",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-20T18:17:59.223Z",
       "expiresAt": "2026-11-20T18:32:59.223Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D Systems",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382066944",
+        "revision": "1382066944",
+        "observedAt": "2026-11-20T18:18:01.524Z",
+        "sourceTimestamp": "2026-10-26T11:08:10Z",
+        "sha256": "24d3f04d70f3a70569a842e78c3bc04e8f84402107bca6689d4979df7de3a746",
+        "excerptSha256": "b09c11906c1d091c905a203b3716828986c919a3623a82f97a02cd88d93ffb0a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 30782,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-e7e656be-61aa-4fbf-baaa-5cc1f03145ed",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4635,
+        "outputTokens": 386
+      },
+      "packet": "research/packets/research-000150-bcc15d8324.json",
+      "packetDigest": "6365346b76f633a3d10e3edf19b839ee08b7d50399cd0fb2d7690bae47f39cbf",
+      "finishedAt": "2026-11-20T18:18:04.209Z"
     }
   ],
   "discovered": [
@@ -6840,11 +6871,6 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
-    },
-    {
-      "title": "3D Systems",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
     },
     {
       "title": "3D bioprinting",
@@ -10745,6 +10771,41 @@
       "title": "Barton Hall",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000149-85ac6d2c19"
+    },
+    {
+      "title": "3D Printers",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000150-bcc15d8324"
+    },
+    {
+      "title": "3D scanner",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000150-bcc15d8324"
+    },
+    {
+      "title": "Align Technology",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000150-bcc15d8324"
+    },
+    {
+      "title": "Asset",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000150-bcc15d8324"
+    },
+    {
+      "title": "Avi Reichental",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000150-bcc15d8324"
+    },
+    {
+      "title": "Bass guitar",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000150-bcc15d8324"
+    },
+    {
+      "title": "Belgium",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000150-bcc15d8324"
     }
   ],
   "reviewJobs": [
