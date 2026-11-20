@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T15:25:02.961Z",
-  "sequence": 148,
+  "updatedAt": "2026-11-20T16:16:01.456Z",
+  "sequence": 149,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6760,6 +6760,20 @@
       "packet": "research/packets/research-000148-f146e3cb84.json",
       "packetDigest": "63ea6c3a8d01ac6ad2a05c85450ed45738a603abcc3ee3b487d8a46910dea38e",
       "finishedAt": "2026-11-20T15:15:07.652Z"
+    },
+    {
+      "id": "research-000149-85ac6d2c19",
+      "role": "simulation-researcher",
+      "topic": "All Sports Competition (Cornell University)",
+      "day": "2026-11-20",
+      "runId": "44771596050",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T16:16:01.456Z",
+      "expiresAt": "2026-11-20T16:31:01.456Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
