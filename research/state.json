@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T21:25:06.553Z",
-  "sequence": 153,
+  "updatedAt": "2026-11-20T22:13:30.752Z",
+  "sequence": 154,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -6997,6 +6997,20 @@
       "packet": "research/packets/research-000153-33d8823661.json",
       "packetDigest": "f88a106199cbac6b0e56c8aefc7ab881b6fe3f69f62f5046ebecba47ec30ec04",
       "finishedAt": "2026-11-20T21:13:45.610Z"
+    },
+    {
+      "id": "research-000154-b2939d3f81",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Consensus (computer science)",
+      "day": "2026-11-20",
+      "runId": "44827139540",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-20T22:13:30.752Z",
+      "expiresAt": "2026-11-20T22:28:30.752Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
