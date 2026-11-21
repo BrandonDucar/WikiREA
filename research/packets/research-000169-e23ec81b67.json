@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000169-e23ec81b67",
+  "topic": "Andrew Dickson White House",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The Andrew Dickson White House is a High Victorian Gothic academic building on Cornell University's campus, originally constructed in 1871 as a presidential mansion for the university's co-founder. It features elaborate stone carvings reflecting the founder's aesthetic preferences and was designed by architects William Henry Miller and Charles Babcock. After serving various roles—including as a university art museum from 1953 to 1973—the building now houses the Cornell University Society for the Humanities. A study on the southeast side remains available as a private office and retreat for university presidents, while the library space is known as the Guerlac Room.",
+    "mechanisms": [
+      {
+        "title": "Architectural commission and design",
+        "explanation": "The house was commissioned in 1871 by Andrew Dickson White and designed by architects William Henry Miller and Charles Babcock in the High Victorian Gothic style, featuring elaborate stone carvings that reflect White's aesthetic preferences.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Repurposing and preservation",
+        "explanation": "The building was repurposed as the University Art Museum from 1953 to 1973, then transitioned to house the Society for the Humanities after advocacy by Henry Guerlac prevented demolition and secured its National Register of Historic Places listing in 1973.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Original interior layout and furnishing details beyond stated stone carvings",
+      "Specific technical systems or modifications during the 1953-1973 art museum period",
+      "Current access protocols for the southeast side study used by presidents",
+      "Precise chronological relationship between architectural features and White's stated aesthetic intentions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Andrew Dickson White House",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380651998",
+    "revision": "1380651998",
+    "observedAt": "2026-11-21T16:14:29.385Z",
+    "sourceTimestamp": "2026-10-17T02:01:24Z",
+    "sha256": "52cf30164d00138cce1f548cb5f730bf883196b9ccdeb41b0c963854ba625620",
+    "excerptSha256": "52cf30164d00138cce1f548cb5f730bf883196b9ccdeb41b0c963854ba625620",
+    "inspectedCharacters": 4738,
+    "totalCharacters": 4738,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-1132d198-f0bf-416f-a394-172a22e0df62",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1558,
+    "outputTokens": 388
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "19b9e63510e238942ab5d9b85cc1459a72afb3777b8006d47d2bf9d48bf31fa9",
+  "artifactDigest": "d1fff1f03b19d919a27e5d900332177684a64c189e7d767426fac0203a0ca1d2"
+}

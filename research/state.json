@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T16:14:26.999Z",
+  "updatedAt": "2026-11-21T16:14:33.677Z",
   "sequence": 169,
   "jobs": [
     {
@@ -7703,21 +7703,47 @@
       "topic": "Andrew Dickson White House",
       "day": "2026-11-21",
       "runId": "44923458505",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T16:14:26.999Z",
       "expiresAt": "2026-11-21T16:29:26.999Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Andrew Dickson White House",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380651998",
+        "revision": "1380651998",
+        "observedAt": "2026-11-21T16:14:29.385Z",
+        "sourceTimestamp": "2026-10-17T02:01:24Z",
+        "sha256": "52cf30164d00138cce1f548cb5f730bf883196b9ccdeb41b0c963854ba625620",
+        "excerptSha256": "52cf30164d00138cce1f548cb5f730bf883196b9ccdeb41b0c963854ba625620",
+        "inspectedCharacters": 4738,
+        "totalCharacters": 4738,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1132d198-f0bf-416f-a394-172a22e0df62",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1558,
+        "outputTokens": 388
+      },
+      "packet": "research/packets/research-000169-e23ec81b67.json",
+      "packetDigest": "d1fff1f03b19d919a27e5d900332177684a64c189e7d767426fac0203a0ca1d2",
+      "finishedAt": "2026-11-21T16:14:33.677Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Andrew Dickson White House",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000022-5ba2f1d513"
-    },
     {
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
@@ -12112,6 +12138,21 @@
       "title": "24-bit computing",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "Boyce Thompson Institute",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000169-e23ec81b67"
+    },
+    {
+      "title": "Bradfield Hall",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000169-e23ec81b67"
+    },
+    {
+      "title": "Caldwell Hall (Ithaca, New York)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000169-e23ec81b67"
     }
   ],
   "reviewJobs": [
