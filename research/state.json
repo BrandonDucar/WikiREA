@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T12:19:02.509Z",
+  "updatedAt": "2026-11-21T12:19:11.021Z",
   "sequence": 165,
   "jobs": [
     {
@@ -7515,13 +7515,44 @@
       "topic": "ACM Computing Classification System",
       "day": "2026-11-21",
       "runId": "44903274244",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T12:19:02.509Z",
       "expiresAt": "2026-11-21T12:34:02.509Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ACM Computing Classification System",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1361593496",
+        "revision": "1361593496",
+        "observedAt": "2026-11-21T12:19:04.638Z",
+        "sourceTimestamp": "2026-06-28T22:53:58Z",
+        "sha256": "e0e912d2a1106e83d573d02dca7189e6235fa868251d374fccecd6305c113e09",
+        "excerptSha256": "e0e912d2a1106e83d573d02dca7189e6235fa868251d374fccecd6305c113e09",
+        "inspectedCharacters": 4842,
+        "totalCharacters": 4842,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-749de41e-a1f6-422e-b6a2-f4981f9e1619",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1689,
+        "outputTokens": 388
+      },
+      "packet": "research/packets/research-000165-c56f2595ec.json",
+      "packetDigest": "5de43968ac0ded64a086434b7a08bbc41ecea0adb2bd87d3fcbc3f806e5a103d",
+      "finishedAt": "2026-11-21T12:19:11.021Z"
     }
   ],
   "discovered": [
@@ -8481,11 +8512,6 @@
       "discoveredFrom": "research-000052-0783a62649"
     },
     {
-      "title": "ACM Computing Classification System",
-      "role": "source-curator",
-      "discoveredFrom": "research-000055-d84aa316b7"
-    },
-    {
       "title": "APT (software)",
       "role": "source-curator",
       "discoveredFrom": "research-000055-d84aa316b7"
@@ -8797,11 +8823,6 @@
     },
     {
       "title": "ACM Comput. Surv.",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000067-a5933051f2"
-    },
-    {
-      "title": "ACM Computing Classification System",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000067-a5933051f2"
     },
@@ -11186,11 +11207,6 @@
       "discoveredFrom": "research-000143-168b807a91"
     },
     {
-      "title": "ACM Computing Classification System",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000144-34083b59f3"
-    },
-    {
       "title": "Abacus",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000144-34083b59f3"
@@ -11829,6 +11845,21 @@
       "title": "ANSI escape code",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "Application security",
+      "role": "source-curator",
+      "discoveredFrom": "research-000165-c56f2595ec"
+    },
+    {
+      "title": "ArXiv",
+      "role": "source-curator",
+      "discoveredFrom": "research-000165-c56f2595ec"
+    },
+    {
+      "title": "Augmented reality",
+      "role": "source-curator",
+      "discoveredFrom": "research-000165-c56f2595ec"
     }
   ],
   "reviewJobs": [
