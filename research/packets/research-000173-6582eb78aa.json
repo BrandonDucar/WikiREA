@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000173-6582eb78aa",
+  "topic": "Computational complexity theory",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Computational complexity theory classifies problems by the resources needed to solve them, focusing on inherent difficulty rather than specific algorithms. It uses mathematical models like Turing machines to quantify complexity through time and space requirements, distinguishing between problems solvable with restricted resources and those that are inherently difficult. The field addresses fundamental questions about what computers can practically compute, including famous open problems like P versus NP.",
+    "mechanisms": [
+      {
+        "title": "Resource-based problem classification",
+        "explanation": "Problems are classified by the amount of computational resources—such as time and storage—required to solve them, regardless of the algorithm used. This classification uses mathematical models of computation to quantify difficulty and establish practical limits on what computers can solve.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Decision problem formalization",
+        "explanation": "Decision problems are framed as formal languages where instances yielding 'yes' are language members and those yielding 'no' are non-members. The theory determines whether a given input belongs to this language through algorithmic processes, establishing clear acceptance or rejection criteria for problem-solving.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific practical algorithms achieve optimal resource efficiency for particular problem classes",
+      "The precise relationship between different complexity measures across varied computational models",
+      "Whether all naturally occurring problems admit efficient algorithmic solutions under current computational constraints",
+      "The exact boundaries between problems requiring polynomial versus super-polynomial resource growth"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Computational complexity theory",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385057342",
+    "revision": "1385057342",
+    "observedAt": "2026-11-21T21:13:04.350Z",
+    "sourceTimestamp": "2026-11-11T17:26:43Z",
+    "sha256": "b062699dff72bb421561c72bf96e51cdc5e5f330e394dcf7a6ca4ca6ce13f807",
+    "excerptSha256": "171e71f4958e2e7e8eaca934fb8305d6a843ce6b2e21d063aba489792a71c32d",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 51169,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-33f7c944-7ec4-4dc0-8996-14e5ca028448",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3215,
+    "outputTokens": 324
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "5fad143849bcc60358be1f3197c845660d0404caf2ca750a6feb2d48a00adce1",
+  "artifactDigest": "ab1391512a74e7edd94ed434d3a9a519b556ba176ea7dfbb2172bcbc2fb655da"
+}
