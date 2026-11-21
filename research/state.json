@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T15:24:43.829Z",
-  "sequence": 168,
+  "updatedAt": "2026-11-21T16:14:26.999Z",
+  "sequence": 169,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7696,6 +7696,20 @@
       "packet": "research/packets/research-000168-bf14467b91.json",
       "packetDigest": "42773c2d7ddfae50926a46c6ce6b52176d518da38959f4dc1d0d9a390b1c4017",
       "finishedAt": "2026-11-21T15:13:25.628Z"
+    },
+    {
+      "id": "research-000169-e23ec81b67",
+      "role": "simulation-researcher",
+      "topic": "Andrew Dickson White House",
+      "day": "2026-11-21",
+      "runId": "44923458505",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T16:14:26.999Z",
+      "expiresAt": "2026-11-21T16:29:26.999Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
