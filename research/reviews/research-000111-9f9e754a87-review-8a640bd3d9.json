@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000111-9f9e754a87-review-8a640bd3d9",
+  "parentJobId": "research-000111-9f9e754a87",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "6a0e5223bae25ef875d044946d8c52c24e63117fa16d023373e65cef6daf1b9c",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Anomaly detection",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385477978",
+    "revision": "1385477978",
+    "observedAt": "2026-11-18T19:12:11.304Z",
+    "sourceTimestamp": "2026-11-13T13:32:19Z",
+    "sha256": "ce55008720e33e12d818b21ea6236c94395d2c7bc282b906eb4393f2afcee14b",
+    "excerptSha256": "8a28d5565c40103a021dab9b53989fb5ea0fb3657202b00e7c0d3bb717f8748c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 47745,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions, categories, and terminology",
+      "Mechanisms correctly map to supervised/semi-supervised/unsupervised descriptions in source",
+      "Unknowns properly identify unresolved aspects noted in source (normality definition, thresholds, complex structures, evolving streams)",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'generally understood', 'more often than not', 'by far the most commonly used' preserved appropriately"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-5c7dc645-69bb-4180-81cd-23e9627177ed",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4601,
+    "outputTokens": 102
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
