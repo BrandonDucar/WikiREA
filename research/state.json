@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T01:24:51.662Z",
-  "sequence": 156,
+  "updatedAt": "2026-11-21T02:19:16.004Z",
+  "sequence": 157,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7136,6 +7136,20 @@
       "packet": "research/packets/research-000156-1ede42270e.json",
       "packetDigest": "e597d7acaa30316d0a5d699af3ce20a20f253fae2ca786a52be32cd22cb648f1",
       "finishedAt": "2026-11-21T01:15:38.406Z"
+    },
+    {
+      "id": "research-000157-eba06105bd",
+      "role": "runtime-researcher",
+      "topic": "AT&T Pogo",
+      "day": "2026-11-21",
+      "runId": "44855213566",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T02:19:16.004Z",
+      "expiresAt": "2026-11-21T02:34:16.004Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
