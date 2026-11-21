@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T14:13:46.237Z",
-  "sequence": 167,
+  "updatedAt": "2026-11-21T15:13:20.528Z",
+  "sequence": 168,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7647,6 +7647,20 @@
       "packet": "research/packets/research-000167-ba1b2e15e6.json",
       "packetDigest": "6ee997456b4624dcc29d18eba270ca1de7d073e16164be054ee932f442c1568f",
       "finishedAt": "2026-11-21T14:13:46.237Z"
+    },
+    {
+      "id": "research-000168-bf14467b91",
+      "role": "game-mechanic-researcher",
+      "topic": "16-bit computing",
+      "day": "2026-11-21",
+      "runId": "44918001019",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T15:13:20.528Z",
+      "expiresAt": "2026-11-21T15:28:20.528Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
