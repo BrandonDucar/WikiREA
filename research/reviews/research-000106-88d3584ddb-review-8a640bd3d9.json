@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000106-88d3584ddb-review-8a640bd3d9",
+  "parentJobId": "research-000106-88d3584ddb",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "7efdab1fd1a896b57434e9f3927fd4f78f3956eaf69714a7702d7ff5936b19cc",
+  "sourcePin": {
+    "id": "S1",
+    "title": "ARM architecture family",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+    "revision": "1386168955",
+    "observedAt": "2026-11-18T13:15:41.471Z",
+    "sourceTimestamp": "2026-11-17T02:13:39Z",
+    "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+    "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 160955,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft claims 'ARM AArch32 is a 32-bit RISC instruction set architecture introduced in 1985' but source shows ARM family introduced 1985; AArch32 as a named 32-bit execution state was formalized with ARMv8 (2011) per infobox.",
+      "Draft states 'register file of 15 general-purpose 32-bit registers plus a link register, with the program counter separate' but source infobox says '15 × 32-bit integer registers, including R14 (link register), but not R15 (PC)' meaning PC is R15, not separate.",
+      "Draft claims 'Thumb-2 mode which mixes 16-bit and 32-bit instructions' and 'processor switching between modes using branch-and-link instructions or state-bit manipulation in the program counter' but source only notes encoding uses mixed 16/32-bit instructions, no mechanism for switching described.",
+      "Draft lists 'Jazelle for Java bytecode handling, various DSP and cryptography extensions, and floating-point units' as extensions but source marks Jazelle and Thumb as 'obsolete since ARMv8' in AArch32 infobox.",
+      "Draft states 'AArch32 operates in a bi-endian mode with little-endian as default' and 'serves as the 32-bit complement to the 64-bit AArch64' but source shows bi-endian for both AArch32 and AArch64 infoboxes, not a distinguishing feature."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-e7d3ef3a-1a27-4404-a816-1eaa09b1c84c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5259,
+    "outputTokens": 338
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
