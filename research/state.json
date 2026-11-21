@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T00:34:37.230Z",
+  "updatedAt": "2026-11-21T00:34:41.214Z",
   "sequence": 155,
   "jobs": [
     {
@@ -7049,13 +7049,44 @@
       "topic": "Big Data",
       "day": "2026-11-21",
       "runId": "44844720892",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T00:34:37.230Z",
       "expiresAt": "2026-11-21T00:49:37.230Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Big data",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384597515",
+        "revision": "1384597515",
+        "observedAt": "2026-11-21T00:34:39.398Z",
+        "sourceTimestamp": "2026-11-09T01:52:33Z",
+        "sha256": "44e66cc324452eb26bbd9bbc0cc9c1d1af4e62d472170a7f7fc54f1ddb5488a2",
+        "excerptSha256": "c4ed11e07efca226f51c35cc310790471dca836978431bdf9190594417e883c7",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 163929,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-0bd03645-619c-4d81-8fe9-513981e57d48",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4709,
+        "outputTokens": 287
+      },
+      "packet": "research/packets/research-000155-e0d42dc021.json",
+      "packetDigest": "e497c3a3e9a0ffcdfce2795ad38c8f52d9ec42a578e1b57cc8c9e59b6c807d9e",
+      "finishedAt": "2026-11-21T00:34:41.214Z"
     }
   ],
   "discovered": [
@@ -8040,11 +8071,6 @@
       "discoveredFrom": "research-000052-0783a62649"
     },
     {
-      "title": "Big Data",
-      "role": "source-curator",
-      "discoveredFrom": "research-000053-0d543f9d61"
-    },
-    {
       "title": "AbiWord",
       "role": "application-tracer",
       "discoveredFrom": "research-000054-be07f6d7e2"
@@ -8881,11 +8907,6 @@
     },
     {
       "title": "Application program",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000081-ee73a932d9"
-    },
-    {
-      "title": "Big data",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000081-ee73a932d9"
     },
@@ -11113,6 +11134,46 @@
       "title": "Bitcoin",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000154-b2939d3f81"
+    },
+    {
+      "title": "23andme",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "A/B testing",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "Academy Awards",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "Accuracy and precision",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "Alan Turing Institute",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "Alation",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "Alexandre Bayen",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "Alternative financial service",
+      "role": "source-curator",
+      "discoveredFrom": "research-000155-e0d42dc021"
     }
   ],
   "reviewJobs": [

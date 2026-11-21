@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000155-e0d42dc021",
+  "topic": "Big Data",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Big data refers to datasets too large or complex for traditional processing software. Its analysis can reveal correlations for business trends, disease prevention, and crime combat. The term originated in the 1990s and grew alongside data from mobile devices, IoT sensors, and digital logs. Processing often requires massively parallel software across many servers. Value extraction uses predictive analytics and user behavior methods, though data size remains a moving target based on analytical capabilities.",
+    "mechanisms": [
+      {
+        "title": "Parallel Processing Infrastructure",
+        "explanation": "Processing and analyzing big data may require massively parallel software running on tens, hundreds, or thousands of servers to handle volumes that traditional relational databases and desktop software cannot manage.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Value Extraction via Advanced Analytics",
+        "explanation": "Current usage refers to predictive analytics, user behavior analytics, and other advanced methods that extract value from large datasets, rather than the data size itself.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact technical thresholds defining \"big data\" for specific organizations",
+      "Complete technical implementation details of parallel processing frameworks",
+      "Long-term reliability and veracity assurance methods at scale",
+      "Specific organizational ownership models for enterprise-wide big data initiatives"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Big data",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384597515",
+    "revision": "1384597515",
+    "observedAt": "2026-11-21T00:34:39.398Z",
+    "sourceTimestamp": "2026-11-09T01:52:33Z",
+    "sha256": "44e66cc324452eb26bbd9bbc0cc9c1d1af4e62d472170a7f7fc54f1ddb5488a2",
+    "excerptSha256": "c4ed11e07efca226f51c35cc310790471dca836978431bdf9190594417e883c7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 163929,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-0bd03645-619c-4d81-8fe9-513981e57d48",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4709,
+    "outputTokens": 287
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "d2a8972737ccb642daa42f3522d1941c211c479d32a2a185fbb6b37ca24ffef3",
+  "artifactDigest": "e497c3a3e9a0ffcdfce2795ad38c8f52d9ec42a578e1b57cc8c9e59b6c807d9e"
+}
