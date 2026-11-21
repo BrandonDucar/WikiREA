@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T10:13:37.263Z",
-  "sequence": 164,
+  "updatedAt": "2026-11-21T12:19:02.509Z",
+  "sequence": 165,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7508,6 +7508,20 @@
       "packet": "research/packets/research-000164-5e297a40df.json",
       "packetDigest": "8412784098fffb9694ec4564e6978aab462bc9201f8b62d596b78a1bd355cc68",
       "finishedAt": "2026-11-21T10:13:37.263Z"
+    },
+    {
+      "id": "research-000165-c56f2595ec",
+      "role": "source-curator",
+      "topic": "ACM Computing Classification System",
+      "day": "2026-11-21",
+      "runId": "44903274244",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T12:19:02.509Z",
+      "expiresAt": "2026-11-21T12:34:02.509Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
