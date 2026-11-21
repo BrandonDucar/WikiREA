@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T20:13:56.382Z",
-  "sequence": 172,
+  "updatedAt": "2026-11-21T21:13:02.163Z",
+  "sequence": 173,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7884,6 +7884,20 @@
       "packet": "research/packets/research-000172-7ead05dd86.json",
       "packetDigest": "f04c6a50718b1d9a9f5fdc45c4e337cec37722dcbccdc37bc5432859d4fc4893",
       "finishedAt": "2026-11-21T20:13:56.382Z"
+    },
+    {
+      "id": "research-000173-6582eb78aa",
+      "role": "adversarial-reviewer",
+      "topic": "Computational complexity theory",
+      "day": "2026-11-21",
+      "runId": "44950366058",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T21:13:02.163Z",
+      "expiresAt": "2026-11-21T21:28:02.163Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
