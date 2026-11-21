@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T18:15:24.370Z",
-  "sequence": 170,
+  "updatedAt": "2026-11-21T19:11:50.749Z",
+  "sequence": 171,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7790,6 +7790,20 @@
       "packet": "research/packets/research-000170-74be4998ce.json",
       "packetDigest": "afa5a5c926c89bc5030ece40933f4ca98f6efc20f22cdf0c7632181cd61eb072",
       "finishedAt": "2026-11-21T18:15:24.370Z"
+    },
+    {
+      "id": "research-000171-e8859065a1",
+      "role": "market-data-researcher",
+      "topic": "C (programming language)",
+      "day": "2026-11-21",
+      "runId": "44939621872",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T19:11:50.749Z",
+      "expiresAt": "2026-11-21T19:26:50.749Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
