@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T17:24:03.094Z",
-  "sequence": 169,
+  "updatedAt": "2026-11-21T18:15:20.587Z",
+  "sequence": 170,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7745,6 +7745,20 @@
       "packet": "research/packets/research-000169-e23ec81b67.json",
       "packetDigest": "d1fff1f03b19d919a27e5d900332177684a64c189e7d767426fac0203a0ca1d2",
       "finishedAt": "2026-11-21T16:14:33.677Z"
+    },
+    {
+      "id": "research-000170-74be4998ce",
+      "role": "hardware-interoperability-scout",
+      "topic": "3D concrete printing",
+      "day": "2026-11-21",
+      "runId": "44934495571",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T18:15:20.587Z",
+      "expiresAt": "2026-11-21T18:30:20.587Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
