@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T00:34:41.214Z",
-  "sequence": 155,
+  "updatedAt": "2026-11-21T01:15:34.012Z",
+  "sequence": 156,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7087,6 +7087,20 @@
       "packet": "research/packets/research-000155-e0d42dc021.json",
       "packetDigest": "e497c3a3e9a0ffcdfce2795ad38c8f52d9ec42a578e1b57cc8c9e59b6c807d9e",
       "finishedAt": "2026-11-21T00:34:41.214Z"
+    },
+    {
+      "id": "research-000156-1ede42270e",
+      "role": "application-tracer",
+      "topic": "AbiWord",
+      "day": "2026-11-21",
+      "runId": "44849073845",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T01:15:34.012Z",
+      "expiresAt": "2026-11-21T01:30:34.012Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
