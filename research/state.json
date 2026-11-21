@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T04:16:15.745Z",
+  "updatedAt": "2026-11-21T04:16:21.761Z",
   "sequence": 159,
   "jobs": [
     {
@@ -7233,21 +7233,47 @@
       "topic": "Andrew Dickson White",
       "day": "2026-11-21",
       "runId": "44865247477",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T04:16:15.745Z",
       "expiresAt": "2026-11-21T04:31:15.745Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Andrew Dickson White",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384314177",
+        "revision": "1384314177",
+        "observedAt": "2026-11-21T04:16:17.863Z",
+        "sourceTimestamp": "2026-11-07T18:01:19Z",
+        "sha256": "e44d504860224e3505039bcb8e0dbe5e830cde9b273c4c6315f2887f8ca23416",
+        "excerptSha256": "4d707be44e04f20deca96eb45f72ae5fddf6cd9eab7d7b3c5cd5f6ea6fa438f6",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 49070,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4788997f-90fa-40d9-9334-f7e544aff589",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4214,
+        "outputTokens": 330
+      },
+      "packet": "research/packets/research-000159-d7edd549b8.json",
+      "packetDigest": "b1f7bea91ed25ffddaa4be368bf42ba9f18ef23a440d73bb6d2cd63f6d91cb13",
+      "finishedAt": "2026-11-21T04:16:21.761Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Andrew Dickson White",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000022-5ba2f1d513"
-    },
     {
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
@@ -11372,6 +11398,46 @@
       "title": "ASP.NET AJAX",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000158-b325d82d12"
+    },
+    {
+      "title": "55th New York State Legislature",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "A History of the Warfare of Science with Theology in Christendom",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "Aaron A. Sargent",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "Aaron Augustus Sargent",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "Adolph Dubs",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "Akira Iriye",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "Alan Goodrich Kirk",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "Alanson B. Houghton",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000159-d7edd549b8"
     }
   ],
   "reviewJobs": [

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000159-d7edd549b8",
+  "topic": "Andrew Dickson White",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Andrew Dickson White (1832–1918) was an American historian and educator who co-founded Cornell University and served as its first president for nearly two decades. He expanded college curricula and served as U.S. ambassador to Germany and Russia. He was a key proponent of the conflict thesis, arguing science and religion have historically been in conflict, detailed in his 800-page work History of the Warfare of Science with Theology in Christendom. He also served in the New York State Senate and held diplomatic posts. His efforts sought to broaden the scope of higher education.",
+    "mechanisms": [
+      {
+        "title": "Curriculum expansion at Cornell",
+        "explanation": "White expanded the scope of college curricula at Cornell University, introducing new fields and approaches beyond traditional classical education.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Conflict thesis advocacy",
+        "explanation": "White was a key proponent of the conflict thesis, arguing that science and religion have historically been in conflict, which he attempted to prove in his 800-page work History of the Warfare of Science with Theology in Christendom.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Specific mechanisms of his curriculum reform at Cornell beyond general expansion",
+      "Details of his diplomatic activities as ambassador to Germany and Russia",
+      "The extent of his personal involvement in the conflict thesis beyond authorship",
+      "How his Senate experience influenced his educational philosophy"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Andrew Dickson White",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384314177",
+    "revision": "1384314177",
+    "observedAt": "2026-11-21T04:16:17.863Z",
+    "sourceTimestamp": "2026-11-07T18:01:19Z",
+    "sha256": "e44d504860224e3505039bcb8e0dbe5e830cde9b273c4c6315f2887f8ca23416",
+    "excerptSha256": "4d707be44e04f20deca96eb45f72ae5fddf6cd9eab7d7b3c5cd5f6ea6fa438f6",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 49070,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4788997f-90fa-40d9-9334-f7e544aff589",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4214,
+    "outputTokens": 330
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "afcff89fead709ed93e689c5d2e65d911f23310d09df9339f72beeb478eee79a",
+  "artifactDigest": "b1f7bea91ed25ffddaa4be368bf42ba9f18ef23a440d73bb6d2cd63f6d91cb13"
+}
