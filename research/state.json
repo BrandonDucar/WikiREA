@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T06:22:12.367Z",
+  "updatedAt": "2026-11-21T06:22:16.679Z",
   "sequence": 160,
   "jobs": [
     {
@@ -7282,13 +7282,44 @@
       "topic": "3D bioprinting",
       "day": "2026-11-21",
       "runId": "44875202451",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T06:22:12.367Z",
       "expiresAt": "2026-11-21T06:37:12.367Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D bioprinting",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385818867",
+        "revision": "1385818867",
+        "observedAt": "2026-11-21T06:22:13.906Z",
+        "sourceTimestamp": "2026-11-15T10:10:27Z",
+        "sha256": "402ebae69cb5dffdd310b42f3cb2de09f03956aea5f864bc3f36a46d5979f35d",
+        "excerptSha256": "f06d99c38dcd3e8347f34bf2b63e3848ba8e182b0bfbbe6a171fb3e03a7c4caa",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 45409,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b92017d3-b14f-41b6-8414-02796a422329",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4625,
+        "outputTokens": 369
+      },
+      "packet": "research/packets/research-000160-7aefa3d960.json",
+      "packetDigest": "688ecefddec8cc3c435fc7a9e58f81cfb533ffba5ed470e1dc2e9863dc9467fb",
+      "finishedAt": "2026-11-21T06:22:16.679Z"
     }
   ],
   "discovered": [
@@ -7296,11 +7327,6 @@
       "title": "Andrew Dickson White House",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000022-5ba2f1d513"
-    },
-    {
-      "title": "3D bioprinting",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
     },
     {
       "title": "3D concrete printing",
@@ -11456,6 +11482,41 @@
       "title": "Alanson B. Houghton",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000159-d7edd549b8"
+    },
+    {
+      "title": "3D printing processes",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000160-7aefa3d960"
+    },
+    {
+      "title": "3D scanning",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000160-7aefa3d960"
+    },
+    {
+      "title": "Academic health science centre",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000160-7aefa3d960"
+    },
+    {
+      "title": "Acute care",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000160-7aefa3d960"
+    },
+    {
+      "title": "Allied health professions",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000160-7aefa3d960"
+    },
+    {
+      "title": "Animal welfare",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000160-7aefa3d960"
+    },
+    {
+      "title": "Annals of Biomedical Engineering",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000160-7aefa3d960"
     }
   ],
   "reviewJobs": [

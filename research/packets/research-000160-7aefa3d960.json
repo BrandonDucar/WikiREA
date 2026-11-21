@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000160-7aefa3d960",
+  "topic": "3D bioprinting",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3D bioprinting uses layer-by-layer deposition of bioinks—cells mixed with hydrogels and nutrients—to fabricate tissue-like structures. The process spans pre-bioprinting (imaging, cell isolation, scaffold design), bioprinting (extrusion or projection of bioinks guided by medical scans), and post-bioprinting (incubation and bioreactor stimulation to mature tissue and promote vascularization). Multiple printing technologies exist, including extrusion, stereolithography, and magnetic bioprinting, each suited to specific cell types and tissue targets.",
+    "mechanisms": [
+      {
+        "title": "Layer-by-layer bioink deposition",
+        "explanation": "Cells are mixed with liquefied hydrogel bioinks and deposited in successive layers using printer cartridges. The bioinks provide oxygen and nutrients while the layer-by-layer approach builds tissue-like structures guided by tomographic reconstructions of patient scans.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Post-bioprinting maturation via bioreactors",
+        "explanation": "After printing, mechanical and chemical stimulations in bioreactors send signals to cells to control tissue remodeling and growth. Different bioreactor types—convective flow, compression, microgravity—are ideal for specific tissues such as cartilage.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise micro-scale organization of functional and supporting cell types within printed constructs",
+      "Long-term viability and function of bioprinted constructs after transplantation",
+      "Full replication of native extracellular matrix composition and solubility factors",
+      "Integration of printed tissues with host vasculature and nervous systems in vivo"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D bioprinting",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385818867",
+    "revision": "1385818867",
+    "observedAt": "2026-11-21T06:22:13.906Z",
+    "sourceTimestamp": "2026-11-15T10:10:27Z",
+    "sha256": "402ebae69cb5dffdd310b42f3cb2de09f03956aea5f864bc3f36a46d5979f35d",
+    "excerptSha256": "f06d99c38dcd3e8347f34bf2b63e3848ba8e182b0bfbbe6a171fb3e03a7c4caa",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 45409,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-b92017d3-b14f-41b6-8414-02796a422329",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4625,
+    "outputTokens": 369
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "d21c77049d036215cb72c87223c5799e558dc98dd70cd287226861cb9b14f083",
+  "artifactDigest": "688ecefddec8cc3c435fc7a9e58f81cfb533ffba5ed470e1dc2e9863dc9467fb"
+}
