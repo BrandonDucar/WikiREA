@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000115-3a9bfdcc26",
+  "title": "Archetypes",
+  "role": "source-curator",
+  "createdAt": "2026-11-21T21:24:37.792Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Archetype is a cross-disciplinary concept denoting an original pattern or inherited behavioral tendency that subsequent instances emulate. In psychology, particularly Jungian theory, archetypes are innate, collective schemas shaping perception and behavior. In literary and cultural analysis, they function as recurring symbols or motifs that facilitate reader identification. Etymologically, the term derives from Greek roots meaning \"first-molded.\" Usage varies: the concept may refer to a prototype, an inherited behavioral trait, or a recurrent narrative symbol, with qualifications of may, often, or usually applying to its manifestations.",
+  "mechanisms": [
+    {
+      "title": "Inherited collective schema",
+      "explanation": "Archetypes function as innate, universal prototypes for sensory impression images, operating as collective psychological organs that shape perception and behavior without being predominantly defined by individual representation.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Recurring narrative motif",
+      "explanation": "Archetypes serve as constantly-recurring symbols or motifs in literature and media, drawing from comparative anthropology and Jungian theory to produce shared imagery that aids in universal reader identification.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The precise neurological or computational implementation of archetypal influence in artificial or biological systems",
+    "Whether archetypal tendencies are strictly genetic, cultural, or an interaction of both factors",
+    "The degree to which archetypes determine versus merely shape literary or psychological outcomes",
+    "The exact mapping between Jung's primordial images and specific literary or cultural motifs across all contexts"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Archetype",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1377214678",
+      "revision": "1377214678",
+      "observedAt": "2026-11-19T00:36:41.669Z",
+      "sourceTimestamp": "2026-09-28T09:46:42Z",
+      "sha256": "4412f47b2bca3cf2c58c522dc6c3bad9214fcef9dbcef6e477e24beb99c77004",
+      "excerptSha256": "dc608eddd69f96ba058dcc4e11253018e2c04e03af20f53305a7075771ee9285",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 17636,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects the three definitional strands (prototype, inherited tendency, recurring motif) and preserves qualifiers such as 'may' and 'often'.",
+      "Mechanism descriptions are grounded in the source text: innate collective schemas and recurring narrative motifs are both explicitly described.",
+      "Unknowns list legitimate gaps (neurological implementation, genetic vs cultural basis, determinative strength, exact mapping) without inventing claims.",
+      "No unsupported mechanisms or copied passages appear in the draft.",
+      "Etymology and Jungian framework are correctly attributed without overstatement."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-cc1781fe-2f27-4dde-808e-1b4aa816aaa5",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4252,
+      "outputTokens": 342
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-801a08ef-faf1-4d59-8519-b3955230259c",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4584,
+      "outputTokens": 125
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "33ae30d10766896aec6669bae914851db6feee5cdfe182ff81f2b925c23e8555",
+    "artifactDigest": "a6de0aa05beb674ac7577f1480de3a8b6c692e80c21002b70d7b15e55e7e86a2",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000115-3a9bfdcc26.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

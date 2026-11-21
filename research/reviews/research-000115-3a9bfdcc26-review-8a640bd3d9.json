@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000115-3a9bfdcc26-review-8a640bd3d9",
+  "parentJobId": "research-000115-3a9bfdcc26",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "a6de0aa05beb674ac7577f1480de3a8b6c692e80c21002b70d7b15e55e7e86a2",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Archetype",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1377214678",
+    "revision": "1377214678",
+    "observedAt": "2026-11-19T00:36:41.669Z",
+    "sourceTimestamp": "2026-09-28T09:46:42Z",
+    "sha256": "4412f47b2bca3cf2c58c522dc6c3bad9214fcef9dbcef6e477e24beb99c77004",
+    "excerptSha256": "dc608eddd69f96ba058dcc4e11253018e2c04e03af20f53305a7075771ee9285",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17636,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects the three definitional strands (prototype, inherited tendency, recurring motif) and preserves qualifiers such as 'may' and 'often'.",
+      "Mechanism descriptions are grounded in the source text: innate collective schemas and recurring narrative motifs are both explicitly described.",
+      "Unknowns list legitimate gaps (neurological implementation, genetic vs cultural basis, determinative strength, exact mapping) without inventing claims.",
+      "No unsupported mechanisms or copied passages appear in the draft.",
+      "Etymology and Jungian framework are correctly attributed without overstatement."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-801a08ef-faf1-4d59-8519-b3955230259c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4584,
+    "outputTokens": 125
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
