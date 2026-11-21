@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000112-53ff8e8db5-review-8a640bd3d9",
+  "parentJobId": "research-000112-53ff8e8db5",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "8796ef8e68cff1467c21ef6cb6aef2197548f71e7d37bd715efc7c51c416c9b9",
+  "sourcePin": {
+    "id": "S1",
+    "title": "45 rpm adapter",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1357440704",
+    "revision": "1357440704",
+    "observedAt": "2026-11-18T20:15:13.745Z",
+    "sourceTimestamp": "2026-06-02T17:39:23Z",
+    "sha256": "b033bf2473504cbbdf65608064ca524f7c590ceb3a1bc27e9b8244ee1b89abf1",
+    "excerptSha256": "b033bf2473504cbbdf65608064ca524f7c590ceb3a1bc27e9b8244ee1b89abf1",
+    "inspectedCharacters": 3816,
+    "totalCharacters": 3816,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on adapter function, types, historical progression, and SX2 details",
+      "Mechanisms correctly describe spindle fit insertion and stack play adapter functions with proper source attribution",
+      "Unknowns appropriately identify specific gaps flagged in source (manufacturers of spindle changes, EMI adapter details, SX2 manufacturing constraints, spider adapter variations)",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All claims trace to source text with appropriate qualifiers preserved"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-c0bc49c7-4274-4663-ba09-c794aab63a62",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1518,
+    "outputTokens": 111
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

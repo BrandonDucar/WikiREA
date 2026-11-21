@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000112-53ff8e8db5",
+  "title": "45 rpm adapter",
+  "role": "music-events",
+  "createdAt": "2026-11-21T15:24:43.828Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A 45 rpm adapter is a small insert placed in the center spindle hole of a 45 rpm record, allowing it to be played on a turntable's standard spindle. Adapters vary from single-record solid inserts to larger multi-record spindles. Early versions were metal and difficult to remove; later plastic \"spider\" inserts became common. The SX2 adapter, designed by DJ Mark McLaughlan in the 1980s-90s, was created to facilitate handling 7-inch discs during mixing and is now a rare collector's item.",
+  "mechanisms": [
+    {
+      "title": "Spindle Fit Insertion",
+      "explanation": "The adapter fits into the large spindle hole of a 45 rpm record, reducing its diameter to match the smaller spindle size of a standard turntable, thereby enabling playback.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Stack Play Adapter",
+      "explanation": "Larger adapters fit over the entire spindle of a record changer, permitting a stack of 45 rpm records to be played sequentially.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Which specific manufacturers supplied complete spindle changes for 45s",
+    "The exact design details of the EMI circular adapter with four small notches",
+    "The specific manufacturing constraints that limited the SX2's production run",
+    "The full range of varying shapes and colors available for generic \"spider\" adapters beyond the noted yellow and red"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "45 rpm adapter",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1357440704",
+      "revision": "1357440704",
+      "observedAt": "2026-11-18T20:15:13.745Z",
+      "sourceTimestamp": "2026-06-02T17:39:23Z",
+      "sha256": "b033bf2473504cbbdf65608064ca524f7c590ceb3a1bc27e9b8244ee1b89abf1",
+      "excerptSha256": "b033bf2473504cbbdf65608064ca524f7c590ceb3a1bc27e9b8244ee1b89abf1",
+      "inspectedCharacters": 3816,
+      "totalCharacters": 3816,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on adapter function, types, historical progression, and SX2 details",
+      "Mechanisms correctly describe spindle fit insertion and stack play adapter functions with proper source attribution",
+      "Unknowns appropriately identify specific gaps flagged in source (manufacturers of spindle changes, EMI adapter details, SX2 manufacturing constraints, spider adapter variations)",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All claims trace to source text with appropriate qualifiers preserved"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-1cfac4e8-9e01-499a-adf5-8ec83832d64a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 1247,
+      "outputTokens": 338
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-c0bc49c7-4274-4663-ba09-c794aab63a62",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 1518,
+      "outputTokens": 111
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "58a203812313582deec286746661a05f567de096c2541f82c85d00b76893a6d8",
+    "artifactDigest": "8796ef8e68cff1467c21ef6cb6aef2197548f71e7d37bd715efc7c51c416c9b9",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000112-53ff8e8db5.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
