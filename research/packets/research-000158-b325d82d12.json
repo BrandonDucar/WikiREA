@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000158-b325d82d12",
+  "topic": ".NET MAUI",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The .NET platform is a free, open-source, managed code framework for Windows, Linux, and macOS, serving as a cross-platform successor to the .NET Framework. It uses C#, C++, and C as programming languages and supports multiple architectures. New versions are released annually, with .NET 11 being the most recent short-term support release and .NET 10 the latest long-term support version. The platform evolved from proprietary .NET Framework to open-source .NET Core, which introduced a bazaar-style development model under the .NET Foundation. It supports cross-platform execution and includes features for desktop and library development.",
+    "mechanisms": [
+      {
+        "title": "Managed code execution environment",
+        "explanation": "The platform provides a managed execution environment that handles memory and resource management for applications built with C#, C++, and C. This abstraction layer allows code to run across different operating systems without direct hardware access.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Cross-platform class library abstraction",
+        "explanation": "The framework offers a unified class library that abstracts platform-specific details, enabling developers to write code once and deploy to Windows, Linux, or macOS. This abstraction handles operating system differences through conditional implementations.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mechanism for platform-specific API bridging between managed and native code",
+      "Details of the runtime's just-in-time compilation strategy across architectures",
+      "Internal workings of the garbage collector in multi-platform scenarios",
+      "Precise method of version selection between .NET Framework and .NET Core/5+ runtimes"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+    "revision": "1384980993",
+    "observedAt": "2026-11-21T03:17:13.618Z",
+    "sourceTimestamp": "2026-11-11T05:21:33Z",
+    "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+    "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39476,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-7f7eb214-c5ff-492b-b57e-b616714710a2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4848,
+    "outputTokens": 358
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f42d8412d50371b4f623068bc6611e1c8585edd01045e5efaab33a64c2c42208",
+  "artifactDigest": "07ae2c386f9ed0068821a6d944d97b52aaaaffc28d8036513080529697a18e19"
+}

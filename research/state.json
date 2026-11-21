@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T03:17:11.788Z",
+  "updatedAt": "2026-11-21T03:17:15.921Z",
   "sequence": 158,
   "jobs": [
     {
@@ -7188,21 +7188,47 @@
       "topic": ".NET MAUI",
       "day": "2026-11-21",
       "runId": "44860315854",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T03:17:11.788Z",
       "expiresAt": "2026-11-21T03:32:11.788Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": ".NET",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+        "revision": "1384980993",
+        "observedAt": "2026-11-21T03:17:13.618Z",
+        "sourceTimestamp": "2026-11-11T05:21:33Z",
+        "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+        "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 39476,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-7f7eb214-c5ff-492b-b57e-b616714710a2",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4848,
+        "outputTokens": 358
+      },
+      "packet": "research/packets/research-000158-b325d82d12.json",
+      "packetDigest": "07ae2c386f9ed0068821a6d944d97b52aaaaffc28d8036513080529697a18e19",
+      "finishedAt": "2026-11-21T03:17:15.921Z"
     }
   ],
   "discovered": [
-    {
-      "title": ".NET MAUI",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000021-ec00986789"
-    },
     {
       "title": "Andrew Dickson White",
       "role": "simulation-researcher",
@@ -9584,11 +9610,6 @@
       "discoveredFrom": "research-000096-72085958da"
     },
     {
-      "title": ".NET MAUI",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000097-06e9d81ac9"
-    },
-    {
       "title": ".NET Micro Framework",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000097-06e9d81ac9"
@@ -11332,6 +11353,11 @@
       "title": "Arc (web browser)",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000157-eba06105bd"
+    },
+    {
+      "title": "ASP.NET AJAX",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000158-b325d82d12"
     }
   ],
   "reviewJobs": [
