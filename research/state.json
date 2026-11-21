@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T19:11:50.749Z",
+  "updatedAt": "2026-11-21T19:11:54.697Z",
   "sequence": 171,
   "jobs": [
     {
@@ -7797,13 +7797,44 @@
       "topic": "C (programming language)",
       "day": "2026-11-21",
       "runId": "44939621872",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T19:11:50.749Z",
       "expiresAt": "2026-11-21T19:26:50.749Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "C (programming language)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385839600",
+        "revision": "1385839600",
+        "observedAt": "2026-11-21T19:11:52.483Z",
+        "sourceTimestamp": "2026-11-15T13:37:34Z",
+        "sha256": "76c88efc7e0b960e5a275b8411f24ee68f89a2dd4d839dbcf5080416c09ad4f7",
+        "excerptSha256": "63087f01c28b4f07d232c0e7add2f40ef5ba791eb1f6cd5465ef11bbe6ce4080",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 103935,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9c065faa-574e-41b5-bcb7-63690e17f617",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4146,
+        "outputTokens": 403
+      },
+      "packet": "research/packets/research-000171-e8859065a1.json",
+      "packetDigest": "24421802fa7210f895c7e46c5e4e6e86f372b4db2e1d8bffc8be1d0dbecc449c",
+      "finishedAt": "2026-11-21T19:11:54.697Z"
     }
   ],
   "discovered": [
@@ -8923,11 +8954,6 @@
       "discoveredFrom": "research-000060-2c92eab7e0"
     },
     {
-      "title": "C (programming language)",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000061-0942144a15"
-    },
-    {
       "title": "Bandwidth (computing)",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
@@ -9478,11 +9504,6 @@
       "discoveredFrom": "research-000079-2fd46267fc"
     },
     {
-      "title": "C (programming language)",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000079-2fd46267fc"
-    },
-    {
       "title": "Command-line interface",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000079-2fd46267fc"
@@ -9579,11 +9600,6 @@
     },
     {
       "title": "Backward compatibility",
-      "role": "music-events",
-      "discoveredFrom": "research-000082-3295e49fa9"
-    },
-    {
-      "title": "C (programming language)",
       "role": "music-events",
       "discoveredFrom": "research-000082-3295e49fa9"
     },
@@ -12236,6 +12252,46 @@
       "title": "Architecture",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000170-74be4998ce"
+    },
+    {
+      "title": "\"Hello, World!\" program",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
+    },
+    {
+      "title": "?:",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
+    },
+    {
+      "title": "ALGOL",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
+    },
+    {
+      "title": "ALGOL 68",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
+    },
+    {
+      "title": "AMD Optimizing C/C++ Compiler",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
+    },
+    {
+      "title": "AMPL",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
+    },
+    {
+      "title": "ANSI C",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
+    },
+    {
+      "title": "APL (programming language)",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000171-e8859065a1"
     }
   ],
   "reviewJobs": [

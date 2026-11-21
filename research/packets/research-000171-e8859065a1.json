@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000171-e8859065a1",
+  "topic": "C (programming language)",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "C is a general-purpose, imperative, procedural language created in 1972 by Dennis Ritchie. It provides programmers with relatively direct access to CPU architecture features, making it suitable for implementing operating system kernels, device drivers, and protocol stacks. C supports structured programming, static typing, and recursion, with a small keyword set and user-defined identifiers. It compiles to low-level code that maps efficiently to machine instructions while maintaining cross-platform portability. The language offers manual memory management via pointers, a static type system with implicit conversions, and preprocessor directives for macros and conditional compilation. Standard libraries supply I/O, string manipulation, and mathematical functions. Since 2000, C has typically ranked as the most or second-most popular language in the TIOBE index, used across platforms from supercomputers to microcontrollers.",
+    "mechanisms": [
+      {
+        "title": "Static typing and manual memory management",
+        "explanation": "C enforces a static type system with weak enforcement and implicit conversions between primitive types. Manual memory management is achieved through pointers and dynamic allocation functions from the standard library, giving programmers direct control over computer memory.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Preprocessor and compilation model",
+        "explanation": "C uses a preprocessor for macro definition, source-file inclusion, and conditional compilation. The language is designed to compile to low-level code that maps efficiently to machine instructions with minimal runtime support, enabling direct hardware access while maintaining portability across platforms.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact runtime behavior of implicit type conversions across all platform implementations",
+      "Internal details of standard library implementations for I/O and string handling",
+      "Specific mechanisms of cross-platform portability in compiled binaries",
+      "Precise reasons for C's declining use in application software despite kernel prevalence"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "C (programming language)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385839600",
+    "revision": "1385839600",
+    "observedAt": "2026-11-21T19:11:52.483Z",
+    "sourceTimestamp": "2026-11-15T13:37:34Z",
+    "sha256": "76c88efc7e0b960e5a275b8411f24ee68f89a2dd4d839dbcf5080416c09ad4f7",
+    "excerptSha256": "63087f01c28b4f07d232c0e7add2f40ef5ba791eb1f6cd5465ef11bbe6ce4080",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 103935,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-9c065faa-574e-41b5-bcb7-63690e17f617",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4146,
+    "outputTokens": 403
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f058ef1c38cb7d3a8ddef639ebdec56861d4f5ad017070c5030d20075b8b874b",
+  "artifactDigest": "24421802fa7210f895c7e46c5e4e6e86f372b4db2e1d8bffc8be1d0dbecc449c"
+}
