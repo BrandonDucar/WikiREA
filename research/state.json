@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T12:19:11.021Z",
-  "sequence": 165,
+  "updatedAt": "2026-11-21T13:13:26.906Z",
+  "sequence": 166,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7553,6 +7553,20 @@
       "packet": "research/packets/research-000165-c56f2595ec.json",
       "packetDigest": "5de43968ac0ded64a086434b7a08bbc41ecea0adb2bd87d3fcbc3f806e5a103d",
       "finishedAt": "2026-11-21T12:19:11.021Z"
+    },
+    {
+      "id": "research-000166-f8991dec00",
+      "role": "application-tracer",
+      "topic": ".3ds",
+      "day": "2026-11-21",
+      "runId": "44907764797",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T13:13:26.906Z",
+      "expiresAt": "2026-11-21T13:28:26.906Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
