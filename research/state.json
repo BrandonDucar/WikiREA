@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T10:13:32.799Z",
+  "updatedAt": "2026-11-21T10:13:37.263Z",
   "sequence": 164,
   "jobs": [
     {
@@ -7470,13 +7470,44 @@
       "topic": "Doi (identifier)",
       "day": "2026-11-21",
       "runId": "44893305027",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T10:13:32.799Z",
       "expiresAt": "2026-11-21T10:28:32.799Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Digital object identifier",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386700546",
+        "revision": "1386700546",
+        "observedAt": "2026-11-21T10:13:34.575Z",
+        "sourceTimestamp": "2026-11-20T01:39:08Z",
+        "sha256": "05d9ede74027e36b03694fe6bf3ce5b3fec6e96f34b1638b6a7c2425180e886d",
+        "excerptSha256": "c6bae8f896c5c33a15d7e9c1f3ebfebc2d02dd693a235dd8c66690aba44c8773",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 40765,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ed1bc75b-9bf4-4dfa-bb2f-2dbdf7a77a97",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4481,
+        "outputTokens": 340
+      },
+      "packet": "research/packets/research-000164-5e297a40df.json",
+      "packetDigest": "8412784098fffb9694ec4564e6978aab462bc9201f8b62d596b78a1bd355cc68",
+      "finishedAt": "2026-11-21T10:13:37.263Z"
     }
   ],
   "discovered": [
@@ -8376,11 +8407,6 @@
       "discoveredFrom": "research-000051-14b168413b"
     },
     {
-      "title": "Doi (identifier)",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000051-14b168413b"
-    },
-    {
       "title": "ISBN (identifier)",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000051-14b168413b"
@@ -8674,11 +8700,6 @@
       "title": "Computational complexity theory",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000063-1d20ea4b59"
-    },
-    {
-      "title": "Doi (identifier)",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000064-c6c5b9eab5"
     },
     {
       "title": "Address space layout randomization",
@@ -9207,11 +9228,6 @@
     },
     {
       "title": "Common Object Request Broker Architecture",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000079-2fd46267fc"
-    },
-    {
-      "title": "Doi (identifier)",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000079-2fd46267fc"
     },
@@ -11221,11 +11237,6 @@
       "discoveredFrom": "research-000145-c8ac6bc4f7"
     },
     {
-      "title": "Doi (identifier)",
-      "role": "source-curator",
-      "discoveredFrom": "research-000145-c8ac6bc4f7"
-    },
-    {
       "title": "Georgia Tech",
       "role": "source-curator",
       "discoveredFrom": "research-000145-c8ac6bc4f7"
@@ -11764,6 +11775,46 @@
       "title": "Block graph",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "110 film",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "126 film",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "135 film",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "501(c)(6) organization",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "A440 (pitch standard)",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "ALGOL 60",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "ANSI C",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
+    },
+    {
+      "title": "ANSI escape code",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000164-5e297a40df"
     }
   ],
   "reviewJobs": [
