@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T21:24:37.793Z",
-  "sequence": 173,
+  "updatedAt": "2026-11-21T22:13:13.432Z",
+  "sequence": 174,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7933,6 +7933,20 @@
       "packet": "research/packets/research-000173-6582eb78aa.json",
       "packetDigest": "ab1391512a74e7edd94ed434d3a9a519b556ba176ea7dfbb2172bcbc2fb655da",
       "finishedAt": "2026-11-21T21:13:06.882Z"
+    },
+    {
+      "id": "research-000174-885bb348ef",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Ad hoc On-Demand Distance Vector Routing",
+      "day": "2026-11-21",
+      "runId": "44955589536",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T22:13:13.432Z",
+      "expiresAt": "2026-11-21T22:28:13.432Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
