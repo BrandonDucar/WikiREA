@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000110-a6c8e54557",
+  "title": "3D-printed firearm",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-21T09:25:08.411Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "3D-printed firearms are produced using desktop printers, typically combining printed plastic frames or receivers with standard metal components such as barrels, actions, and triggers. The printed parts generally have short operational lives and tend to fail after limited use. Communities distribute open-source plans, enabling replication without traditional manufacturing infrastructure. Legal status varies, with some jurisdictions restricting distribution while others permit personal production. The technology has been used in conflict zones and has inspired decentralized maker movements despite regulatory challenges.",
+  "mechanisms": [
+    {
+      "title": "Printed structural frame/receiver",
+      "explanation": "The firearm's frame or receiver is printed in plastic using desktop 3D printing. In legal definitions (particularly the United States), the receiver defines the firearm's identity. Printed frames typically have short service lives and are often used as a base for metal components.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Integration of metal components",
+      "explanation": "Functional operation relies on standard, commercially available metal parts such as barrels, actions, and triggers. These components are not printed but inserted into the printed frame/receiver to create a functional firearm. The combination of printed and metal parts is a common configuration in 3D-printed firearm culture.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact wear limits and failure modes of specific printed designs under sustained firing",
+    "Long-term structural integrity of printed frames when used with high-pressure cartridges",
+    "Precise mechanical tolerances required between printed and metal components for reliable function",
+    "Whether all 3D-printed firearms incorporate metal components or if some attempt fully plastic operation"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "3D-printed firearm",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386428652",
+      "revision": "1386428652",
+      "observedAt": "2026-11-18T18:16:59.795Z",
+      "sourceTimestamp": "2026-11-18T13:51:25Z",
+      "sha256": "be033e5e64dc9a3d51024feceda8b89626c7eeb5b6fb52a7ed54fe49e5dbff41",
+      "excerptSha256": "7d523854b1623933b0f9ca643eb86159d3305199536b4fd1fef0a476ffe11d16",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 53931,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 3D-printed firearms combining printed frames with metal components",
+      "Mechanisms correctly describe printed structural frames/receivers and integration of metal parts with proper legal context",
+      "Unknowns appropriately identify gaps in source regarding wear limits, structural integrity, tolerances, and fully plastic designs",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically', 'generally', 'often' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-2a64cd5d-6480-48ea-9578-f461fcb68da0",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5086,
+      "outputTokens": 366
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-1aba6718-af82-410f-947b-72fc74c80719",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5374,
+      "outputTokens": 104
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "ad807beb64e2217e9c42e98594df4f1425d002eaf761a6c4875777c8fd7a87a0",
+    "artifactDigest": "667647a56cd304a09a963828896bf8d7e0567b999b719a2b2cd6add755430451",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000110-a6c8e54557.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

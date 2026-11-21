@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000110-a6c8e54557-review-8a640bd3d9",
+  "parentJobId": "research-000110-a6c8e54557",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "667647a56cd304a09a963828896bf8d7e0567b999b719a2b2cd6add755430451",
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D-printed firearm",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386428652",
+    "revision": "1386428652",
+    "observedAt": "2026-11-18T18:16:59.795Z",
+    "sourceTimestamp": "2026-11-18T13:51:25Z",
+    "sha256": "be033e5e64dc9a3d51024feceda8b89626c7eeb5b6fb52a7ed54fe49e5dbff41",
+    "excerptSha256": "7d523854b1623933b0f9ca643eb86159d3305199536b4fd1fef0a476ffe11d16",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 53931,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 3D-printed firearms combining printed frames with metal components",
+      "Mechanisms correctly describe printed structural frames/receivers and integration of metal parts with proper legal context",
+      "Unknowns appropriately identify gaps in source regarding wear limits, structural integrity, tolerances, and fully plastic designs",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically', 'generally', 'often' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1aba6718-af82-410f-947b-72fc74c80719",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5374,
+    "outputTokens": 104
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
