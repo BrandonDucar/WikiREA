@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-20T22:13:35.072Z",
-  "sequence": 154,
+  "updatedAt": "2026-11-21T00:34:37.230Z",
+  "sequence": 155,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7042,6 +7042,20 @@
       "packet": "research/packets/research-000154-b2939d3f81.json",
       "packetDigest": "47e868f86415a20bb9c036ab9acae379a39f3ca316b3154d7a480139e113da2f",
       "finishedAt": "2026-11-20T22:13:35.072Z"
+    },
+    {
+      "id": "research-000155-e0d42dc021",
+      "role": "source-curator",
+      "topic": "Big Data",
+      "day": "2026-11-21",
+      "runId": "44844720892",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T00:34:37.230Z",
+      "expiresAt": "2026-11-21T00:49:37.230Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
