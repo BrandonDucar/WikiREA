@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T07:25:03.026Z",
-  "sequence": 161,
+  "updatedAt": "2026-11-21T08:17:50.159Z",
+  "sequence": 162,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7369,6 +7369,20 @@
       "packet": "research/packets/research-000161-a506862a0b.json",
       "packetDigest": "83b52942647ffb8aa81ced19cc8b01631f77a72a501aadd9d4136f2996e1140a",
       "finishedAt": "2026-11-21T07:15:22.501Z"
+    },
+    {
+      "id": "research-000162-ba41f37cb3",
+      "role": "music-events",
+      "topic": "Album era",
+      "day": "2026-11-21",
+      "runId": "44884200177",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T08:17:50.159Z",
+      "expiresAt": "2026-11-21T08:32:50.159Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
