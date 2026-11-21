@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T15:13:20.528Z",
+  "updatedAt": "2026-11-21T15:13:25.628Z",
   "sequence": 168,
   "jobs": [
     {
@@ -7654,13 +7654,44 @@
       "topic": "16-bit computing",
       "day": "2026-11-21",
       "runId": "44918001019",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T15:13:20.528Z",
       "expiresAt": "2026-11-21T15:28:20.528Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "16-bit computing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381652031",
+        "revision": "1381652031",
+        "observedAt": "2026-11-21T15:13:22.909Z",
+        "sourceTimestamp": "2026-10-23T22:19:19Z",
+        "sha256": "ff584fbb70fec041e7195cfbdaac9926dfed2f4999be8035dc5297ba44d48448",
+        "excerptSha256": "ff584fbb70fec041e7195cfbdaac9926dfed2f4999be8035dc5297ba44d48448",
+        "inspectedCharacters": 13191,
+        "totalCharacters": 13191,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4fcac383-dfa1-41d8-af88-79cd817fde61",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4650,
+        "outputTokens": 431
+      },
+      "packet": "research/packets/research-000168-bf14467b91.json",
+      "packetDigest": "42773c2d7ddfae50926a46c6ce6b52176d518da38959f4dc1d0d9a390b1c4017",
+      "finishedAt": "2026-11-21T15:13:25.628Z"
     }
   ],
   "discovered": [
@@ -7673,11 +7704,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "16-bit computing",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000025-6fb0247cd6"
     },
     {
       "title": "2.5D",
@@ -10215,11 +10241,6 @@
       "discoveredFrom": "research-000106-88d3584ddb"
     },
     {
-      "title": "16-bit computing",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000106-88d3584ddb"
-    },
-    {
       "title": "24-bit computing",
       "role": "application-tracer",
       "discoveredFrom": "research-000106-88d3584ddb"
@@ -10246,11 +10267,6 @@
     },
     {
       "title": "12-bit computing",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000107-a83fc40ab1"
-    },
-    {
-      "title": "16-bit computing",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000107-a83fc40ab1"
     },
@@ -12038,6 +12054,46 @@
       "title": "Asus",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "1-bit computing",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "12-bit computing",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "16-bit (disambiguation)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "16-bit color",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "16-bit era",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "18-bit computing",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "1801 series CPU",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
+    },
+    {
+      "title": "24-bit computing",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000168-bf14467b91"
     }
   ],
   "reviewJobs": [
