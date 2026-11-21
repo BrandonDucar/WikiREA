@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000114-65951320f6-review-8a640bd3d9",
+  "parentJobId": "research-000114-65951320f6",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "f84cb164d4cc97d2279177d0320dd1852a958ded39919ee042218364d3050f4f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Barbara Liskov",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385192200",
+    "revision": "1385192200",
+    "observedAt": "2026-11-18T22:14:07.472Z",
+    "sourceTimestamp": "2026-11-12T08:14:28Z",
+    "sha256": "57ce4b5192482ace8ecc0d2c1a4a9628dbcf3ba4474a966bbb61619c5636bcf7",
+    "excerptSha256": "1f5b2e5a45bf03387540f90fa1fee0384575b44d50e907aa084760ba428291b9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 23746,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Liskov's contributions to programming languages, distributed computing, abstract data types, and the Liskov substitution principle",
+      "Mechanisms correctly capture abstract data types/data abstraction and Liskov substitution principle with appropriate source attribution",
+      "Unknowns appropriately identify specific technical details not elaborated in the source text",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "Qualifiers like 'pioneering', 'foundational', and 'widely taught' are supported by source descriptions of her work's influence"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-724a3b4f-3a93-4d43-a205-ae656bfd6f98",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4681,
+    "outputTokens": 123
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
