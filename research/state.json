@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T13:25:06.380Z",
-  "sequence": 166,
+  "updatedAt": "2026-11-21T14:13:41.004Z",
+  "sequence": 167,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7602,6 +7602,20 @@
       "packet": "research/packets/research-000166-f8991dec00.json",
       "packetDigest": "f81860d406de80814a8fcec04783e89916e958b2c25c7dd1e0a5777f67dc9191",
       "finishedAt": "2026-11-21T13:13:31.412Z"
+    },
+    {
+      "id": "research-000167-ba1b2e15e6",
+      "role": "runtime-researcher",
+      "topic": "86Box",
+      "day": "2026-11-21",
+      "runId": "44912822874",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T14:13:41.004Z",
+      "expiresAt": "2026-11-21T14:28:41.004Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
