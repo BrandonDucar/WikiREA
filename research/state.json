@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T08:17:54.693Z",
-  "sequence": 162,
+  "updatedAt": "2026-11-21T09:15:37.821Z",
+  "sequence": 163,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7414,6 +7414,20 @@
       "packet": "research/packets/research-000162-ba41f37cb3.json",
       "packetDigest": "ae6761193bad62d1289791821d61b3d15353840568a07d863ced73accf95ff4f",
       "finishedAt": "2026-11-21T08:17:54.693Z"
+    },
+    {
+      "id": "research-000163-55f88bffaa",
+      "role": "adversarial-reviewer",
+      "topic": "Clique (graph theory)",
+      "day": "2026-11-21",
+      "runId": "44888710299",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T09:15:37.821Z",
+      "expiresAt": "2026-11-21T09:30:37.821Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
