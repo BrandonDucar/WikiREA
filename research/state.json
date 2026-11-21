@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T19:24:25.500Z",
-  "sequence": 171,
+  "updatedAt": "2026-11-21T20:13:51.972Z",
+  "sequence": 172,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7839,6 +7839,20 @@
       "packet": "research/packets/research-000171-e8859065a1.json",
       "packetDigest": "24421802fa7210f895c7e46c5e4e6e86f372b4db2e1d8bffc8be1d0dbecc449c",
       "finishedAt": "2026-11-21T19:11:54.697Z"
+    },
+    {
+      "id": "research-000172-7ead05dd86",
+      "role": "music-events",
+      "topic": "5.1 surround sound",
+      "day": "2026-11-21",
+      "runId": "44945156759",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T20:13:51.972Z",
+      "expiresAt": "2026-11-21T20:28:51.972Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
