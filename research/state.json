@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T01:15:34.012Z",
+  "updatedAt": "2026-11-21T01:15:38.406Z",
   "sequence": 156,
   "jobs": [
     {
@@ -7094,13 +7094,44 @@
       "topic": "AbiWord",
       "day": "2026-11-21",
       "runId": "44849073845",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T01:15:34.012Z",
       "expiresAt": "2026-11-21T01:30:34.012Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AbiWord",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386805190",
+        "revision": "1386805190",
+        "observedAt": "2026-11-21T01:15:36.100Z",
+        "sourceTimestamp": "2026-11-20T18:34:23Z",
+        "sha256": "cdfad8c125f7812bcbc6251ff056fa1da447af4040b922b2bffd77338340a1b3",
+        "excerptSha256": "cdfad8c125f7812bcbc6251ff056fa1da447af4040b922b2bffd77338340a1b3",
+        "inspectedCharacters": 13389,
+        "totalCharacters": 13389,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1aa4e67c-34ac-4f57-893c-401c3c79180a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4743,
+        "outputTokens": 443
+      },
+      "packet": "research/packets/research-000156-1ede42270e.json",
+      "packetDigest": "e597d7acaa30316d0a5d699af3ce20a20f253fae2ca786a52be32cd22cb648f1",
+      "finishedAt": "2026-11-21T01:15:38.406Z"
     }
   ],
   "discovered": [
@@ -8083,11 +8114,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "AbiWord",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000054-be07f6d7e2"
     },
     {
       "title": "ACM Computing Classification System",
@@ -11188,6 +11214,41 @@
       "title": "Alternative financial service",
       "role": "source-curator",
       "discoveredFrom": "research-000155-e0d42dc021"
+    },
+    {
+      "title": "1st Word",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000156-1ede42270e"
+    },
+    {
+      "title": "AbiSource",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000156-1ede42270e"
+    },
+    {
+      "title": "Adobe Document Cloud",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000156-1ede42270e"
+    },
+    {
+      "title": "Adobe InCopy",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000156-1ede42270e"
+    },
+    {
+      "title": "AlphaSmart",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000156-1ede42270e"
+    },
+    {
+      "title": "AmigaOS",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000156-1ede42270e"
+    },
+    {
+      "title": "Anjuta",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000156-1ede42270e"
     }
   ],
   "reviewJobs": [
