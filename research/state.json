@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T08:17:50.159Z",
+  "updatedAt": "2026-11-21T08:17:54.693Z",
   "sequence": 162,
   "jobs": [
     {
@@ -7376,13 +7376,44 @@
       "topic": "Album era",
       "day": "2026-11-21",
       "runId": "44884200177",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T08:17:50.159Z",
       "expiresAt": "2026-11-21T08:32:50.159Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Album era",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385872563",
+        "revision": "1385872563",
+        "observedAt": "2026-11-21T08:17:52.363Z",
+        "sourceTimestamp": "2026-11-15T18:42:26Z",
+        "sha256": "bffaa7f1b548fc05b80e1666c85278ff0afb7827a92f7871dfce382117943f6f",
+        "excerptSha256": "052e04db79fb47cc17729e04ea9f6eabd43dc930c26b077bbbc6a624951fd633",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 103982,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-d450699d-644e-4113-b217-53fa41b8865c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4419,
+        "outputTokens": 488
+      },
+      "packet": "research/packets/research-000162-ba41f37cb3.json",
+      "packetDigest": "ae6761193bad62d1289791821d61b3d15353840568a07d863ced73accf95ff4f",
+      "finishedAt": "2026-11-21T08:17:54.693Z"
     }
   ],
   "discovered": [
@@ -7395,11 +7426,6 @@
       "title": "3D concrete printing",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000023-14e109cc66"
-    },
-    {
-      "title": "Album era",
-      "role": "music-events",
-      "discoveredFrom": "research-000024-ee7dc4a4fd"
     },
     {
       "title": "16-bit computing",
@@ -11600,6 +11626,46 @@
       "title": "ALGLIB",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000161-a506862a0b"
+    },
+    {
+      "title": "1500s in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "1510s in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "1520s in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "1530s in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "1540s in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "1940s in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "1950s in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "1960s",
+      "role": "music-events",
+      "discoveredFrom": "research-000162-ba41f37cb3"
     }
   ],
   "reviewJobs": [
