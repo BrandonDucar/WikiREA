@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000108-694efc1972",
+  "title": ".NET Compiler Platform",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-21T07:25:03.025Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": ".NET Compiler Platform, codenamed Roslyn, is a Microsoft open-source project providing compilers and APIs for C# and Visual Basic. It exposes compilation phases—lexical, syntactic, semantic analysis, and code emission—as reusable services. The compilers are self-hosting, written in C# and VB.NET, and available via NuGet packages. Roslyn enables programmatic compilation, code analysis, and refactoring within IDEs and custom tools.",
+  "mechanisms": [
+    {
+      "title": "Compiler APIs",
+      "explanation": "Roslyn exposes APIs that allow direct invocation of compilation phases such as syntax tree construction, semantic binding, and IL code emission. These APIs are accessible from .NET code and support programmatic compilation and analysis.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Self-hosting compilers",
+      "explanation": "The C# and VB.NET compilers within Roslyn are written in their respective languages, enabling the compilers to compile their own source code. This design supports iterative development and tooling built on the platform.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal architecture of the compilation pipeline beyond exposed APIs",
+    "Whether all planned language feature implementations are complete in current releases",
+    "Full scope of platform-agnostic compilation capabilities across all target runtimes",
+    "Details of the transition from CodePlex to GitHub and its impact on project stewardship"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Roslyn (compiler)",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375186724",
+      "revision": "1375186724",
+      "observedAt": "2026-11-18T15:14:48.387Z",
+      "sourceTimestamp": "2026-09-16T08:53:22Z",
+      "sha256": "b9e4a137b0adaf149e5e55879d4aa2cccdba96a12acad007189dd11a1d7fb5c6",
+      "excerptSha256": "b9e4a137b0adaf149e5e55879d4aa2cccdba96a12acad007189dd11a1d7fb5c6",
+      "inspectedCharacters": 12876,
+      "totalCharacters": 12876,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Roslyn as open-source compiler platform with exposed APIs",
+      "Mechanisms correctly describe Compiler APIs and self-hosting compilers with proper source attribution",
+      "Unknowns appropriately identify gaps in source regarding internal architecture, feature completeness, platform scope, and CodePlex transition details",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'exposes' and 'enabling' preserve appropriate uncertainty"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-cbab0eeb-f280-425b-a7d8-8eb07eba29ce",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3729,
+      "outputTokens": 317
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-94887350-d3af-42db-912a-33352c090321",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4124,
+      "outputTokens": 101
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "5ebc8a69bd13fa6b80e97ba35d311e459e2d5c96f6a584641d2d4268bcdc332c",
+    "artifactDigest": "6cf286ae06fd0cbb00c26b4621f033398ffc2b7e58ca04c31bf2f0616000bc4d",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000108-694efc1972.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

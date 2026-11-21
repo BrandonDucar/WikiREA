@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000108-694efc1972-review-8a640bd3d9",
+  "parentJobId": "research-000108-694efc1972",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "6cf286ae06fd0cbb00c26b4621f033398ffc2b7e58ca04c31bf2f0616000bc4d",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Roslyn (compiler)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1375186724",
+    "revision": "1375186724",
+    "observedAt": "2026-11-18T15:14:48.387Z",
+    "sourceTimestamp": "2026-09-16T08:53:22Z",
+    "sha256": "b9e4a137b0adaf149e5e55879d4aa2cccdba96a12acad007189dd11a1d7fb5c6",
+    "excerptSha256": "b9e4a137b0adaf149e5e55879d4aa2cccdba96a12acad007189dd11a1d7fb5c6",
+    "inspectedCharacters": 12876,
+    "totalCharacters": 12876,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Roslyn as open-source compiler platform with exposed APIs",
+      "Mechanisms correctly describe Compiler APIs and self-hosting compilers with proper source attribution",
+      "Unknowns appropriately identify gaps in source regarding internal architecture, feature completeness, platform scope, and CodePlex transition details",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'exposes' and 'enabling' preserve appropriate uncertainty"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-94887350-d3af-42db-912a-33352c090321",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4124,
+    "outputTokens": 101
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
