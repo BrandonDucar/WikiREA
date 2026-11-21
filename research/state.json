@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T05:25:13.897Z",
-  "sequence": 159,
+  "updatedAt": "2026-11-21T06:22:12.367Z",
+  "sequence": 160,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7275,6 +7275,20 @@
       "packet": "research/packets/research-000159-d7edd549b8.json",
       "packetDigest": "b1f7bea91ed25ffddaa4be368bf42ba9f18ef23a440d73bb6d2cd63f6d91cb13",
       "finishedAt": "2026-11-21T04:16:21.761Z"
+    },
+    {
+      "id": "research-000160-7aefa3d960",
+      "role": "hardware-interoperability-scout",
+      "topic": "3D bioprinting",
+      "day": "2026-11-21",
+      "runId": "44875202451",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T06:22:12.367Z",
+      "expiresAt": "2026-11-21T06:37:12.367Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
