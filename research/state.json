@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T02:19:19.661Z",
-  "sequence": 157,
+  "updatedAt": "2026-11-21T03:17:11.788Z",
+  "sequence": 158,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7181,6 +7181,20 @@
       "packet": "research/packets/research-000157-eba06105bd.json",
       "packetDigest": "a55091e2bb2dd286ee4144b6ab2e197640fb27c7d5983b7fc303fdfaf6c116a6",
       "finishedAt": "2026-11-21T02:19:19.661Z"
+    },
+    {
+      "id": "research-000158-b325d82d12",
+      "role": "game-mechanic-researcher",
+      "topic": ".NET MAUI",
+      "day": "2026-11-21",
+      "runId": "44860315854",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T03:17:11.788Z",
+      "expiresAt": "2026-11-21T03:32:11.788Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
