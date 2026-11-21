@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000174-885bb348ef",
+  "topic": "Ad hoc On-Demand Distance Vector Routing",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AODV is a routing protocol for mobile ad hoc wireless networks that operates on a demand-driven basis. Each node maintains a monotonically increasing sequence number to guarantee loop-free paths and stores a path index with the next hop address, that node's sequence number, and hop distance. When a data packet must be forwarded to an unknown destination, the source initiates route discovery by broadcasting Route Request (RREQ) packets. Nodes forward these requests, and the first to reach the destination sends a Route Reply (RREP) back along a temporary path. If a link breaks, Route Error (RERR) messages alert the network. A time-to-live field limits retransmissions, and a binary backoff mechanism spaces request retries at increasing intervals.",
+    "mechanisms": [
+      {
+        "title": "Sequence numbers and path indexing",
+        "explanation": "Every node maintains a sequence number that increases monotonically over time. Nodes store a path index containing the next hop's address, that node's sequence number, and the hop count distance. This structure ensures loop-free routing and allows nodes to evaluate path quality when multiple routes exist.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "On-demand route discovery via RREQ/RREP",
+        "explanation": "The network stays silent until a route is needed. The source broadcasts a Route Request (RREQ) packet. Intermediate nodes forward the request, and the destination responds with a Route Reply (RREP) through a chosen path. The source then selects the most convenient path, typically the shortest. If a link later fails, a Route Error (RERR) message is generated to notify other nodes.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact binary backoff interval calculation and maximum retry limits per implementation",
+      "Mechanisms for handling highly dynamic topology changes without route staleness",
+      "Details of path selection criteria beyond hop count when multiple routes are received",
+      "Integration of link quality metrics beyond the basic hop distance stored in path indices"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Ad hoc On-Demand Distance Vector Routing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1356527201",
+    "revision": "1356527201",
+    "observedAt": "2026-11-21T22:13:15.917Z",
+    "sourceTimestamp": "2026-05-28T08:55:32Z",
+    "sha256": "4bf9c62603a5de8fa6346aaebe10f4473fa96b61f7952a4dbdf3ff68eb221a7e",
+    "excerptSha256": "4bf9c62603a5de8fa6346aaebe10f4473fa96b61f7952a4dbdf3ff68eb221a7e",
+    "inspectedCharacters": 5461,
+    "totalCharacters": 5461,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8b719dad-bb3b-453f-80c8-740acfcc5607",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1698,
+    "outputTokens": 445
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "af34fedf0273767226824a9180da25f1495a2958daa8cf0c3210b2edf45e7501",
+  "artifactDigest": "481e5c499c2b025defe7360e4e193c755320f82901f8a32f94ac803ac2cf50bb"
+}
