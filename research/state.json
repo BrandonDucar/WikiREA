@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T06:22:16.679Z",
-  "sequence": 160,
+  "updatedAt": "2026-11-21T07:15:18.831Z",
+  "sequence": 161,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7320,6 +7320,20 @@
       "packet": "research/packets/research-000160-7aefa3d960.json",
       "packetDigest": "688ecefddec8cc3c435fc7a9e58f81cfb533ffba5ed470e1dc2e9863dc9467fb",
       "finishedAt": "2026-11-21T06:22:16.679Z"
+    },
+    {
+      "id": "research-000161-a506862a0b",
+      "role": "market-data-researcher",
+      "topic": "C++",
+      "day": "2026-11-21",
+      "runId": "44879365319",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T07:15:18.831Z",
+      "expiresAt": "2026-11-21T07:30:18.831Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
