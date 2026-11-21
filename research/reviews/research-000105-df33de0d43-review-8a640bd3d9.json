@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000105-df33de0d43-review-8a640bd3d9",
+  "parentJobId": "research-000105-df33de0d43",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "7a80ce1567e9e0502816216b2cc887a6a6e383064c5e8519d2a7b1e12b5e342d",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache Hadoop",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1371349805",
+    "revision": "1371349805",
+    "observedAt": "2026-11-18T12:20:44.015Z",
+    "sourceTimestamp": "2026-08-26T01:20:50Z",
+    "sha256": "c1d7d748b3a9dcf826b58fe0032a27cbfc0de7498913fafc77fb6fa380228114",
+    "excerptSha256": "955a2bda9549ffd9e54936acc88280e1973cd712ec3496198f2840db41fad693",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 49527,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Hadoop's purpose, core components (HDFS, YARN, MapReduce), design assumptions, and origins.",
+      "Mechanisms correctly describe distributed storage via HDFS and parallel processing via MapReduce/YARN with data locality, matching source explanations.",
+      "Unknowns appropriately list details not covered in the source such as exact line counts, internal implementation specifics, performance benchmarks, and ecosystem project details.",
+      "No unsupported mechanisms, copied passages, or invented execution detected.",
+      "All claims in draft are supported by or consistent with the provided source text."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-bc43a062-a4d1-48ae-b0b9-f2586e5ed356",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5660,
+    "outputTokens": 128
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

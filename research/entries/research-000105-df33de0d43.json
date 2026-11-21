@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000105-df33de0d43",
+  "title": "Apache Hadoop",
+  "role": "source-curator",
+  "createdAt": "2026-11-21T01:24:51.662Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Apache Hadoop is an open-source framework for distributed storage and processing of large datasets. It splits data into blocks distributed across commodity hardware clusters and processes them in parallel using a MapReduce programming model. The core components are HDFS for storage and YARN for resource management, enabling data locality where computation moves to data rather than vice versa. Hadoop's design assumes frequent hardware failures and handles them automatically. The framework was inspired by Google's GFS and MapReduce papers and was initially developed within the Apache Nutch project before becoming a top-level Apache project in 2012.",
+  "mechanisms": [
+    {
+      "title": "Distributed Storage via HDFS",
+      "explanation": "Hadoop Distributed File System (HDFS) stores data across cluster nodes as large blocks, replicating them to tolerate node failures. It provides high aggregate bandwidth by distributing storage across commodity hardware, with the framework assuming hardware failures are common and handling them automatically.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Parallel Processing via MapReduce and YARN",
+      "explanation": "The MapReduce programming model processes data in two phases—map and reduce—across cluster nodes. YARN (Yet Another Resource Negotiator) manages computing resources and schedules applications, enabling data locality where code is transferred to nodes holding the relevant data blocks, improving efficiency over traditional high-speed networking approaches.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact line counts and version history details beyond stated summaries",
+    "Internal code structure or implementation specifics of Hadoop modules",
+    "Performance benchmarks or correctness guarantees of specific Hadoop versions",
+    "Details of Hadoop ecosystem projects beyond those documented in the source"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Apache Hadoop",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371349805",
+      "revision": "1371349805",
+      "observedAt": "2026-11-18T12:20:44.015Z",
+      "sourceTimestamp": "2026-08-26T01:20:50Z",
+      "sha256": "c1d7d748b3a9dcf826b58fe0032a27cbfc0de7498913fafc77fb6fa380228114",
+      "excerptSha256": "955a2bda9549ffd9e54936acc88280e1973cd712ec3496198f2840db41fad693",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 49527,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on Hadoop's purpose, core components (HDFS, YARN, MapReduce), design assumptions, and origins.",
+      "Mechanisms correctly describe distributed storage via HDFS and parallel processing via MapReduce/YARN with data locality, matching source explanations.",
+      "Unknowns appropriately list details not covered in the source such as exact line counts, internal implementation specifics, performance benchmarks, and ecosystem project details.",
+      "No unsupported mechanisms, copied passages, or invented execution detected.",
+      "All claims in draft are supported by or consistent with the provided source text."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-3f97d91e-ded8-4dd5-851a-ff69edf01f3c",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5276,
+      "outputTokens": 375
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-bc43a062-a4d1-48ae-b0b9-f2586e5ed356",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5660,
+      "outputTokens": 128
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "d4d8a355ccc0d5a30d711959df949d81c2bb00a6cc11257dd3f1ca6432e2e366",
+    "artifactDigest": "7a80ce1567e9e0502816216b2cc887a6a6e383064c5e8519d2a7b1e12b5e342d",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000105-df33de0d43.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
