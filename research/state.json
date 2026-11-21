@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T02:19:16.004Z",
+  "updatedAt": "2026-11-21T02:19:19.661Z",
   "sequence": 157,
   "jobs": [
     {
@@ -7143,13 +7143,44 @@
       "topic": "AT&T Pogo",
       "day": "2026-11-21",
       "runId": "44855213566",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T02:19:16.004Z",
       "expiresAt": "2026-11-21T02:34:16.004Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AT&T Pogo",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383600913",
+        "revision": "1383600913",
+        "observedAt": "2026-11-21T02:19:18.100Z",
+        "sourceTimestamp": "2026-11-03T16:47:24Z",
+        "sha256": "82cc8ba3abb444170928bca56942f74e4a53143bf61c5e947956de8279180299",
+        "excerptSha256": "82cc8ba3abb444170928bca56942f74e4a53143bf61c5e947956de8279180299",
+        "inspectedCharacters": 2956,
+        "totalCharacters": 2956,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-67ef183c-ccba-4e85-aa9a-b7dab3fd7ae9",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1186,
+        "outputTokens": 243
+      },
+      "packet": "research/packets/research-000157-eba06105bd.json",
+      "packetDigest": "a55091e2bb2dd286ee4144b6ab2e197640fb27c7d5983b7fc303fdfaf6c116a6",
+      "finishedAt": "2026-11-21T02:19:19.661Z"
     }
   ],
   "discovered": [
@@ -8207,11 +8238,6 @@
       "title": "3D paint tool",
       "role": "application-tracer",
       "discoveredFrom": "research-000056-4de8f52dba"
-    },
-    {
-      "title": "AT&T Pogo",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000057-1df2912289"
     },
     {
       "title": "\"Hello, World!\" program",
@@ -11267,6 +11293,31 @@
       "title": "Anjuta",
       "role": "application-tracer",
       "discoveredFrom": "research-000156-1ede42270e"
+    },
+    {
+      "title": "AT&T",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000157-eba06105bd"
+    },
+    {
+      "title": "Agora (web browser)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000157-eba06105bd"
+    },
+    {
+      "title": "AllMusic",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000157-eba06105bd"
+    },
+    {
+      "title": "Arachne (web browser)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000157-eba06105bd"
+    },
+    {
+      "title": "Arc (web browser)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000157-eba06105bd"
     }
   ],
   "reviewJobs": [

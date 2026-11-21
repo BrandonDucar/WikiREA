@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000157-eba06105bd",
+  "topic": "AT&T Pogo",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AT&T Pogo was a discontinued, Firefox-based web browser developed by AT&T and Vizible. It entered private beta with features including multiple homepage support, visual tab thumbnails, visual bookmark and history management, and a searchable bookmark/history feature. The project ended when Vizible sold its intellectual property to Open Text.",
+    "mechanisms": [
+      {
+        "title": "Visual tab management",
+        "explanation": "Displayed thumbnail previews for each open tab, allowing users to visually identify and switch between pages.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Visual bookmark and history management",
+        "explanation": "Provided visual interfaces for managing bookmarks and browsing history, including a search feature to locate specific items.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The specific rendering engine modifications beyond the Firefox base",
+      "The exact technical implementation of the visual management interfaces",
+      "The reasons for Vizible's intellectual property sale to Open Text",
+      "Whether the visual features were extensions or core browser modifications"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "AT&T Pogo",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383600913",
+    "revision": "1383600913",
+    "observedAt": "2026-11-21T02:19:18.100Z",
+    "sourceTimestamp": "2026-11-03T16:47:24Z",
+    "sha256": "82cc8ba3abb444170928bca56942f74e4a53143bf61c5e947956de8279180299",
+    "excerptSha256": "82cc8ba3abb444170928bca56942f74e4a53143bf61c5e947956de8279180299",
+    "inspectedCharacters": 2956,
+    "totalCharacters": 2956,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-67ef183c-ccba-4e85-aa9a-b7dab3fd7ae9",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1186,
+    "outputTokens": 243
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "bd68f1e7ea5ce3a05df569f75e10c856826561ffbc4e1bf7ffe0e968b3102dcf",
+  "artifactDigest": "a55091e2bb2dd286ee4144b6ab2e197640fb27c7d5983b7fc303fdfaf6c116a6"
+}
