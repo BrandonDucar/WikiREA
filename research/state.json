@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T14:13:41.004Z",
+  "updatedAt": "2026-11-21T14:13:46.237Z",
   "sequence": 167,
   "jobs": [
     {
@@ -7609,13 +7609,44 @@
       "topic": "86Box",
       "day": "2026-11-21",
       "runId": "44912822874",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T14:13:41.004Z",
       "expiresAt": "2026-11-21T14:28:41.004Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "86Box",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1364322771",
+        "revision": "1364322771",
+        "observedAt": "2026-11-21T14:13:43.242Z",
+        "sourceTimestamp": "2026-07-15T22:36:00Z",
+        "sha256": "a204f3f4e2e8b2cfd5b76b3654f0dd7f007dfb18baaf08584ad3131471397b5e",
+        "excerptSha256": "a204f3f4e2e8b2cfd5b76b3654f0dd7f007dfb18baaf08584ad3131471397b5e",
+        "inspectedCharacters": 12384,
+        "totalCharacters": 12384,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9d1797ec-0b2b-4e67-9825-27040de3c90e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4147,
+        "outputTokens": 424
+      },
+      "packet": "research/packets/research-000167-ba1b2e15e6.json",
+      "packetDigest": "6ee997456b4624dcc29d18eba270ca1de7d073e16164be054ee932f442c1568f",
+      "finishedAt": "2026-11-21T14:13:46.237Z"
     }
   ],
   "discovered": [
@@ -8873,11 +8904,6 @@
       "title": "AMosaic",
       "role": "application-tracer",
       "discoveredFrom": "research-000066-02c0e9d820"
-    },
-    {
-      "title": "86Box",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000067-a5933051f2"
     },
     {
       "title": "ACM Comput. Surv.",
@@ -11958,6 +11984,46 @@
       "title": "Autodesk 3ds Max",
       "role": "application-tracer",
       "discoveredFrom": "research-000166-f8991dec00"
+    },
+    {
+      "title": "3D acceleration",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "3dfx",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "AMD",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "Ad Lib, Inc.",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "Amazon Web Services",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "Application virtualization",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "Apptainer",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
+    },
+    {
+      "title": "Asus",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000167-ba1b2e15e6"
     }
   ],
   "reviewJobs": [
