@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T09:15:37.821Z",
+  "updatedAt": "2026-11-21T09:15:41.012Z",
   "sequence": 163,
   "jobs": [
     {
@@ -7421,13 +7421,44 @@
       "topic": "Clique (graph theory)",
       "day": "2026-11-21",
       "runId": "44888710299",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T09:15:37.821Z",
       "expiresAt": "2026-11-21T09:30:37.821Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Clique (graph theory)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1378641406",
+        "revision": "1378641406",
+        "observedAt": "2026-11-21T09:15:39.537Z",
+        "sourceTimestamp": "2026-10-05T11:37:25Z",
+        "sha256": "6a614917f5be52087bb6ab15694b965f2b79e38b9c8aeaa537da0d8e54a65553",
+        "excerptSha256": "210bfdf8371d81f7c4022287b3d2ff0eda50e130bae9d25fffd5ba6aa1c6cc57",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 20703,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-d02a085b-f441-48e3-86a3-f91223e77261",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4185,
+        "outputTokens": 352
+      },
+      "packet": "research/packets/research-000163-55f88bffaa.json",
+      "packetDigest": "234f38cdbc704dd9647c8a3ec9344ae622f01c4990bbbfa71ac4f681abad6223",
+      "finishedAt": "2026-11-21T09:15:41.012Z"
     }
   ],
   "discovered": [
@@ -8620,11 +8651,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Clique (graph theory)",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000063-1d20ea4b59"
     },
     {
       "title": "Computational complexity theory",
@@ -11680,6 +11706,46 @@
       "title": "1960s",
       "role": "music-events",
       "discoveredFrom": "research-000162-ba41f37cb3"
+    },
+    {
+      "title": "Abstract simplicial complex",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "Adjacent (graph theory)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "Automatic test pattern generation",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "Biclustering",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "Biconnected component",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "Bioinformatics",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "Bipartite dimension",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
+    },
+    {
+      "title": "Block graph",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000163-55f88bffaa"
     }
   ],
   "reviewJobs": [
