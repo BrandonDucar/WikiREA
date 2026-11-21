@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T18:15:20.587Z",
+  "updatedAt": "2026-11-21T18:15:24.370Z",
   "sequence": 170,
   "jobs": [
     {
@@ -7752,21 +7752,47 @@
       "topic": "3D concrete printing",
       "day": "2026-11-21",
       "runId": "44934495571",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-21T18:15:20.587Z",
       "expiresAt": "2026-11-21T18:30:20.587Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D concrete printing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381252406",
+        "revision": "1381252406",
+        "observedAt": "2026-11-21T18:15:22.531Z",
+        "sourceTimestamp": "2026-10-21T01:08:47Z",
+        "sha256": "471a98128da42be9a52a81777864e52e3f5e57f84af4902ebd15d08bff0a215f",
+        "excerptSha256": "b777fd7cedb7a2c0af3d9a5ebee3141f62e95b762c85db945a234a0deacef70a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 54768,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-15561fe0-1bcb-4e29-8a0f-37efac17c552",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3937,
+        "outputTokens": 363
+      },
+      "packet": "research/packets/research-000170-74be4998ce.json",
+      "packetDigest": "afa5a5c926c89bc5030ece40933f4ca98f6efc20f22cdf0c7632181cd61eb072",
+      "finishedAt": "2026-11-21T18:15:24.370Z"
     }
   ],
   "discovered": [
-    {
-      "title": "3D concrete printing",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000023-14e109cc66"
-    },
     {
       "title": "2.5D",
       "role": "game-mechanic-researcher",
@@ -12171,6 +12197,31 @@
       "title": "Caldwell Hall (Ithaca, New York)",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000169-e23ec81b67"
+    },
+    {
+      "title": "Accelerating change",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000170-74be4998ce"
+    },
+    {
+      "title": "Anisotropy",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000170-74be4998ce"
+    },
+    {
+      "title": "Annika Raatz",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000170-74be4998ce"
+    },
+    {
+      "title": "Applications of 3D printing",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000170-74be4998ce"
+    },
+    {
+      "title": "Architecture",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000170-74be4998ce"
     }
   ],
   "reviewJobs": [
