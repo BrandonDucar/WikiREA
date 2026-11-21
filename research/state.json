@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T03:27:22.715Z",
-  "sequence": 158,
+  "updatedAt": "2026-11-21T04:16:15.745Z",
+  "sequence": 159,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7226,6 +7226,20 @@
       "packet": "research/packets/research-000158-b325d82d12.json",
       "packetDigest": "07ae2c386f9ed0068821a6d944d97b52aaaaffc28d8036513080529697a18e19",
       "finishedAt": "2026-11-21T03:17:15.921Z"
+    },
+    {
+      "id": "research-000159-d7edd549b8",
+      "role": "simulation-researcher",
+      "topic": "Andrew Dickson White",
+      "day": "2026-11-21",
+      "runId": "44865247477",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-21T04:16:15.745Z",
+      "expiresAt": "2026-11-21T04:31:15.745Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
