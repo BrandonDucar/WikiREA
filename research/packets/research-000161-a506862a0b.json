@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000161-a506862a0b",
+  "topic": "C++",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "C++ is a high-level, general-purpose language created by Bjarne Stroustrup as an extension of C, first released in 1985. It supports multiple paradigms including procedural, object-oriented, functional, and generic programming. The language is designed for systems and embedded programming, emphasizing performance, efficiency, and flexibility. C++ is usually implemented as a compiled language with multiple vendor-provided compilers. It is standardized by ISO, with the latest standard ISO/IEC 14882:2024 (C++23) ratified in October 2024. C++ has been widely used for software infrastructure, video games, servers, and performance-critical applications.",
+    "mechanisms": [
+      {
+        "title": "Multi-paradigm design",
+        "explanation": "C++ was designed from the start to support multiple programming paradigms—procedural, object-oriented, functional, and generic—allowing programmers to choose the best style for the task while maintaining performance. This flexibility is a core design goal rather than a retrofitted feature.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Compiled implementation",
+        "explanation": "C++ is typically implemented as a compiled language, meaning source code is transformed into machine code by vendor-provided compilers (e.g., GCC, Clang, MSVC). This enables low-level memory manipulation and direct hardware access, which supports its use in systems programming and resource-constrained environments.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact details of the C++ object model and memory layout across different compilers",
+      "Implementation-specific behavior of template instantiation and code generation",
+      "Precise mechanics of the language's evolution under the three-year release schedule since 2012",
+      "Vendor-specific extensions and their conformance to the ISO standard"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "C++",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384030937",
+    "revision": "1384030937",
+    "observedAt": "2026-11-21T07:15:20.520Z",
+    "sourceTimestamp": "2026-11-06T06:26:57Z",
+    "sha256": "3a209fd381e5eddf25c6cb9955353c7e20275a2c4b5305afee17cc54f5d48f88",
+    "excerptSha256": "7dce73f1022f64ff871cc862008bc75abeb6dd66f36a6fc46108630e2e4bf36f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 65347,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-df145d92-f80b-409b-a8ca-a42160eb49d4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4904,
+    "outputTokens": 411
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "27ca127e3613d72b59c245993669e59a1b7e840d2c6d1833545407e3c895b8ca",
+  "artifactDigest": "83b52942647ffb8aa81ced19cc8b01631f77a72a501aadd9d4136f2996e1140a"
+}
