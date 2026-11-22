@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000185-900d2f282e",
+  "topic": "Algorithm design",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Algorithm design creates finite, rigorous instruction sequences to solve specific problems or perform computation. Designers specify initial states and inputs, then define well-ordered state transitions that may include conditional logic to divert execution paths. The process terminates in a final state with output. While deterministic execution is common, randomized algorithms incorporate random input. Designers express algorithms in formal languages within finite space and time, enabling execution by computing agents. The field traces origins to ancient mathematical procedures and the 9th-century work of Persian scholar al-Khwarizmi, whose name gives the term its etymology.",
+    "mechanisms": [
+      {
+        "title": "Instruction Sequencing and State Transitions",
+        "explanation": "Algorithm design specifies a finite sequence of mathematically rigorous instructions that proceed through successive states from initial input to final output. Each step transforms the current state toward termination, with transitions that may be deterministic or, in randomized algorithms, incorporate random input. The design must define well-ordered progression through a finite number of states.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Conditional Logic and Decision Paths",
+        "explanation": "Advanced algorithm design employs conditional statements to divert code execution through various routes, enabling automated decision-making and reasoning. These conditionals allow algorithms to handle different input scenarios and produce appropriate outputs based on assessed conditions, forming the basis for automation in problem-solving.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific algorithm designs guarantee optimal results for all problem instances",
+      "The role of continuous methods or analog devices in algorithm execution",
+      "Whether processes with random interior processes (beyond input) qualify as algorithms",
+      "The complete range of problem domains where heuristics substitute for formal algorithms"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Algorithm",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385709966",
+    "revision": "1385709966",
+    "observedAt": "2026-11-22T12:19:27.264Z",
+    "sourceTimestamp": "2026-11-14T21:36:46Z",
+    "sha256": "1b16ca3f8d5bec749b8ffb95dce067317cabf28ebdbbc3043f068ae8b48a3d85",
+    "excerptSha256": "e7f6305f3a82d6a4c44886927a055722b4f20ea285c6267579c4d49ca9a95aa2",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 68030,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8b36abb3-aa61-41d6-b581-5ba3ed038234",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4501,
+    "outputTokens": 378
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fd8993ec996594c150917c6fe9f4db576a2b6e14403fbd57b1aac4c82129d724",
+  "artifactDigest": "f905d4cea7ce5f5fb43480cc4953e3920bbdb33c6a4dc766038e739b70223203"
+}
