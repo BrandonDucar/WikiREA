@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T07:24:38.792Z",
-  "sequence": 181,
+  "updatedAt": "2026-11-22T08:18:23.471Z",
+  "sequence": 182,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8301,6 +8301,20 @@
       "packet": "research/packets/research-000181-20dfaf3c6a.json",
       "packetDigest": "31a611b38ccefba36064a3197738f884d5158775845b34512d96de091f8ccf61",
       "finishedAt": "2026-11-22T07:15:24.112Z"
+    },
+    {
+      "id": "research-000182-ef503cdb72",
+      "role": "music-events",
+      "topic": "Acoustica (software)",
+      "day": "2026-11-22",
+      "runId": "45002174378",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T08:18:23.471Z",
+      "expiresAt": "2026-11-22T08:33:23.471Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
