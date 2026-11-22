@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T13:24:56.458Z",
-  "sequence": 186,
+  "updatedAt": "2026-11-22T14:13:32.505Z",
+  "sequence": 187,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8534,6 +8534,20 @@
       "packet": "research/packets/research-000186-d80d39e7bd.json",
       "packetDigest": "d8326d522bdeebab2377916970d493d9447cf65846bf388507f5f8cc5989edd6",
       "finishedAt": "2026-11-22T13:13:35.775Z"
+    },
+    {
+      "id": "research-000187-721aeb0bd1",
+      "role": "runtime-researcher",
+      "topic": "Abstraction layer",
+      "day": "2026-11-22",
+      "runId": "45031643074",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T14:13:32.505Z",
+      "expiresAt": "2026-11-22T14:28:32.505Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
