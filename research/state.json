@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T00:37:48.870Z",
+  "updatedAt": "2026-11-22T00:37:52.666Z",
   "sequence": 175,
   "jobs": [
     {
@@ -7985,13 +7985,44 @@
       "topic": "APT (software)",
       "day": "2026-11-22",
       "runId": "44967541055",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T00:37:48.870Z",
       "expiresAt": "2026-11-22T00:52:48.870Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "APT (software)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382376888",
+        "revision": "1382376888",
+        "observedAt": "2026-11-22T00:37:50.935Z",
+        "sourceTimestamp": "2026-10-28T11:22:39Z",
+        "sha256": "bfe8fa1be4ebe5a71dc944341de2c7d40764013d578cb448c51c056694560d2f",
+        "excerptSha256": "da806323184c25a705506fa74bd4f03cdc62a598486ff68f77a506bf6e174784",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 23795,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-be96b704-0e68-40f5-a9dc-b32442de5e45",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3954,
+        "outputTokens": 281
+      },
+      "packet": "research/packets/research-000175-b8c68d68e2.json",
+      "packetDigest": "6d31eb0df79712b8c69420fe9aaed11fe92af365e841e0cce6f1ab2e63d355e8",
+      "finishedAt": "2026-11-22T00:37:52.666Z"
     }
   ],
   "discovered": [
@@ -8929,11 +8960,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "APT (software)",
-      "role": "source-curator",
-      "discoveredFrom": "research-000055-d84aa316b7"
     },
     {
       "title": "Algorithm design",
@@ -12549,6 +12575,46 @@
       "title": "Bluetooth Low Energy",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000174-885bb348ef"
+    },
+    {
+      "title": "APT-RPM",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "Add-on (Mozilla)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "Alien (file converter)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "Allmyapps",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "Amazon Appstore",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "Anaconda (Python distribution)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "Apache Ivy",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "Apache Maven",
+      "role": "source-curator",
+      "discoveredFrom": "research-000175-b8c68d68e2"
     }
   ],
   "reviewJobs": [

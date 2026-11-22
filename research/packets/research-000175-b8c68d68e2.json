@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000175-b8c68d68e2",
+  "topic": "APT (software)",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "APT is a free-software user interface that automates retrieval, configuration, and installation of software packages on Debian and Debian-like systems. It resolves dependencies, retrieves packages from configured repositories, and invokes dpkg in a topological sequence. APT includes command-line tools (apt, apt-get, apt-cache) and supports configuration via sources.list, preferences, and pinning to manage package versions and sources.",
+    "mechanisms": [
+      {
+        "title": "Dependency resolution and automated installation",
+        "explanation": "APT retrieves and installs packages while automatically resolving and installing dependency packages, thereby preventing installation failures caused by missing dependencies.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Repository retrieval and package management",
+        "explanation": "APT uses configuration files such as /etc/apt/sources.list to locate and retrieve packages from network or removable media repositories, and manages package index updates and version selection.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal algorithmic details of topological sorting beyond source description",
+      "Complete list of all possible conflict resolution outcomes in edge cases",
+      "Specific implementation of apt-preferences mechanism beyond documented policy",
+      "Details of graphical front-end integration beyond listed examples"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "APT (software)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382376888",
+    "revision": "1382376888",
+    "observedAt": "2026-11-22T00:37:50.935Z",
+    "sourceTimestamp": "2026-10-28T11:22:39Z",
+    "sha256": "bfe8fa1be4ebe5a71dc944341de2c7d40764013d578cb448c51c056694560d2f",
+    "excerptSha256": "da806323184c25a705506fa74bd4f03cdc62a598486ff68f77a506bf6e174784",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 23795,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-be96b704-0e68-40f5-a9dc-b32442de5e45",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3954,
+    "outputTokens": 281
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "cae39d1bece86e2f2f157a0d1a284a31b862a89904bd837e452050a44a8965c2",
+  "artifactDigest": "6d31eb0df79712b8c69420fe9aaed11fe92af365e841e0cce6f1ab2e63d355e8"
+}
