@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000189-ace25bcaa0",
+  "topic": "Actuarial mathematics",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Actuarial science applies mathematical and statistical methods to assess risk in insurance, pensions, finance, and related fields. Actuaries use probability theory and predictive analysis to model contingent events, estimate future liabilities, and determine premiums or funding requirements. The discipline has evolved from deterministic models to incorporate stochastic methods and modern financial theory, particularly since the 1980s, though assumption-dependent concepts such as discount rates remain prevalent. Applications span life and health insurance, pension design, property and casualty products, and increasingly, non-traditional domains such as criminal justice risk assessment.",
+    "mechanisms": [
+      {
+        "title": "Probabilistic risk modeling",
+        "explanation": "Actuaries construct mathematical models using probability theory and statistical analysis to estimate the likelihood and financial impact of future events such as mortality, morbidity, or default. These models inform premium setting, reserve requirements, and funding strategies.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Discounted cash flow and present value calculations",
+        "explanation": "A core technique involves discounting future benefit payments to their present value using interest rate assumptions. This allows actuaries to compare the value of funds set aside today against obligations due many years in the future.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The extent to which stochastic methods have replaced assumption-dependent deterministic models in routine practice",
+      "How specific non-traditional applications, such as criminal sentencing models, translate actuarial risk metrics into policy decisions",
+      "The degree of consistency between traditional actuarial discount rate practices and arbitrage-free risk-neutral valuation frameworks used in modern financial economics",
+      "The long-term validity and predictive accuracy of actuarial models when applied outside their original insurance and pension contexts"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Actuarial science",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381043142",
+    "revision": "1381043142",
+    "observedAt": "2026-11-22T16:15:04.286Z",
+    "sourceTimestamp": "2026-10-19T17:15:57Z",
+    "sha256": "bbc5ce4ac4a6ea9c40bfd1e0662acfcb0dad36e63d9fe35806400d275b655883",
+    "excerptSha256": "1f0a87b0577c8f60b1baf7a18c5db602d7d8a63c8a53a67fdb430c3123e61b89",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 35161,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-b5ab8f85-159b-4a21-b733-bfef2a194ea5",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3216,
+    "outputTokens": 385
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "23fea8df6d56ebab4601ca5216c78b2fb913d27ca5ad8a22466241990fed9c39",
+  "artifactDigest": "2fe14809bd0136787ff0aeeff052a79358de327d7078c5a253634cf2bf58924d"
+}

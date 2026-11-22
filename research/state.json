@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T16:15:01.713Z",
+  "updatedAt": "2026-11-22T16:15:06.364Z",
   "sequence": 189,
   "jobs": [
     {
@@ -8635,13 +8635,44 @@
       "topic": "Actuarial mathematics",
       "day": "2026-11-22",
       "runId": "45042740116",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T16:15:01.713Z",
       "expiresAt": "2026-11-22T16:30:01.713Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Actuarial science",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381043142",
+        "revision": "1381043142",
+        "observedAt": "2026-11-22T16:15:04.286Z",
+        "sourceTimestamp": "2026-10-19T17:15:57Z",
+        "sha256": "bbc5ce4ac4a6ea9c40bfd1e0662acfcb0dad36e63d9fe35806400d275b655883",
+        "excerptSha256": "1f0a87b0577c8f60b1baf7a18c5db602d7d8a63c8a53a67fdb430c3123e61b89",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 35161,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b5ab8f85-159b-4a21-b733-bfef2a194ea5",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3216,
+        "outputTokens": 385
+      },
+      "packet": "research/packets/research-000189-ace25bcaa0.json",
+      "packetDigest": "2fe14809bd0136787ff0aeeff052a79358de327d7078c5a253634cf2bf58924d",
+      "finishedAt": "2026-11-22T16:15:06.364Z"
     }
   ],
   "discovered": [
@@ -8664,11 +8695,6 @@
       "title": "3D projection",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000025-6fb0247cd6"
-    },
-    {
-      "title": "Actuarial mathematics",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000026-bf20caf174"
     },
     {
       "title": "Additive process",
@@ -13494,6 +13520,41 @@
       "title": "Decal",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000188-0648763024"
+    },
+    {
+      "title": "Accident insurance",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000189-ace25bcaa0"
+    },
+    {
+      "title": "Accidental death and dismemberment insurance",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000189-ace25bcaa0"
+    },
+    {
+      "title": "Act of God",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000189-ace25bcaa0"
+    },
+    {
+      "title": "Actual cash value",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000189-ace25bcaa0"
+    },
+    {
+      "title": "Actuarial control cycle",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000189-ace25bcaa0"
+    },
+    {
+      "title": "Actuarial credentialing and exams",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000189-ace25bcaa0"
+    },
+    {
+      "title": "Actuarial exam",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000189-ace25bcaa0"
     }
   ],
   "reviewJobs": [
