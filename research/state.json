@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T17:24:00.287Z",
-  "sequence": 189,
+  "updatedAt": "2026-11-22T18:16:20.603Z",
+  "sequence": 190,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8677,6 +8677,20 @@
       "packet": "research/packets/research-000189-ace25bcaa0.json",
       "packetDigest": "2fe14809bd0136787ff0aeeff052a79358de327d7078c5a253634cf2bf58924d",
       "finishedAt": "2026-11-22T16:15:06.364Z"
+    },
+    {
+      "id": "research-000190-9b7c3cf173",
+      "role": "hardware-interoperability-scout",
+      "topic": "ASHRAE",
+      "day": "2026-11-22",
+      "runId": "45054108694",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T18:16:20.603Z",
+      "expiresAt": "2026-11-22T18:31:20.603Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
