@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000120-692efd4cd9-review-8a640bd3d9",
+  "parentJobId": "research-000120-692efd4cd9",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "23525b3490ce7065e34b4e6de9846ed767588e99c04adb6b6c86cfea6cac61fa",
+  "sourcePin": {
+    "id": "S1",
+    "title": "3DBenchy",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379682996",
+    "revision": "1379682996",
+    "observedAt": "2026-11-19T06:25:10.940Z",
+    "sourceTimestamp": "2026-10-11T08:47:02Z",
+    "sha256": "87e659c19342b6afdb54c2474da9ac8aa593b4f3f4e90417b63367f8d0425ca6",
+    "excerptSha256": "87e659c19342b6afdb54c2474da9ac8aa593b4f3f4e90417b63367f8d0425ca6",
+    "inspectedCharacters": 10083,
+    "totalCharacters": 10083,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content about 3DBenchy's purpose, release history, and licensing transition",
+      "Mechanisms correctly capture the two main assessment methods described in source: geometric feature assessment and nominal dimension measurement",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims traceable to provided source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-d7179a00-9b3b-4163-aa36-cda28faf06c1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3486,
+    "outputTokens": 89
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

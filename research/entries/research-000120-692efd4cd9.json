@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000120-692efd4cd9",
+  "title": "3DBenchy",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-22T09:24:58.766Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "3DBenchy is a widely used 3D model designed to test and calibrate the accuracy and capabilities of 3D printers. It serves as a common benchmark model, originally released in 2015 under a Creative Commons license that was later transitioned to the public domain. The model's geometric features allow users to visually assess printer performance across various parameters, and its nominal dimensions provide a measurable baseline for evaluating variation.",
+  "mechanisms": [
+    {
+      "title": "Geometric Feature Assessment",
+      "explanation": "The model's unique geometric features provide visual benchmarks to assess a large variety of 3D printing capabilities. These features reveal surface deviation, skewness, warping, parallelism, resolution, overhang issues, layer-stepping capability, and first-layer problems through specific design elements such as a smooth hull, bilateral symmetry checks, parallel surfaces, a nameplate, a cabin roof bridge, acute angled surfaces, and embedded keel characters.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Nominal Dimension Measurement",
+      "explanation": "The model provides a set of precisely defined nominal dimensions that serve as a measurable baseline for assessing variation. These dimensions, including overall length, width, height, and specific component measurements like funnel diameter and nameplate thickness, can be easily measured with calipers to evaluate printer accuracy against specified targets.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The specific internal design decisions and intent behind the model's geometric features beyond their calibration purpose",
+    "The complete technical specification of the original Creative Tools manufacturing process for the model",
+    "The full extent of printer capabilities that the model is designed to test beyond those explicitly listed features",
+    "Whether the model's design intentionally prioritizes certain printer types or technologies over others"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "3DBenchy",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379682996",
+      "revision": "1379682996",
+      "observedAt": "2026-11-19T06:25:10.940Z",
+      "sourceTimestamp": "2026-10-11T08:47:02Z",
+      "sha256": "87e659c19342b6afdb54c2474da9ac8aa593b4f3f4e90417b63367f8d0425ca6",
+      "excerptSha256": "87e659c19342b6afdb54c2474da9ac8aa593b4f3f4e90417b63367f8d0425ca6",
+      "inspectedCharacters": 10083,
+      "totalCharacters": 10083,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content about 3DBenchy's purpose, release history, and licensing transition",
+      "Mechanisms correctly capture the two main assessment methods described in source: geometric feature assessment and nominal dimension measurement",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims traceable to provided source text"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-160b0e94-495a-4429-8326-1875b97700dd",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3102,
+      "outputTokens": 393
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-d7179a00-9b3b-4163-aa36-cda28faf06c1",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3486,
+      "outputTokens": 89
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "bbabbb18887cc857e117c930f542a7cb79d9c633234ad196d578e2b2147370fa",
+    "artifactDigest": "23525b3490ce7065e34b4e6de9846ed767588e99c04adb6b6c86cfea6cac61fa",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000120-692efd4cd9.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
