@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T06:22:17.220Z",
+  "updatedAt": "2026-11-22T06:22:21.992Z",
   "sequence": 180,
   "jobs": [
     {
@@ -8214,13 +8214,44 @@
       "topic": "501(c)(3)",
       "day": "2026-11-22",
       "runId": "44993403058",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T06:22:17.220Z",
       "expiresAt": "2026-11-22T06:37:17.220Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "501(c)(3) organization",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382925264",
+        "revision": "1382925264",
+        "observedAt": "2026-11-22T06:22:19.706Z",
+        "sourceTimestamp": "2026-10-31T01:03:08Z",
+        "sha256": "eff906c38d35825b9d8df38d0394791f33edceca59a36e1599fab00549aa97bd",
+        "excerptSha256": "66b940f59e349ee187d4cfbe569b37b04367714783a9a1661aa1afeb6a81d8e9",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 46035,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-7bff7b1d-28eb-49f6-a7a5-b16aa078a0ce",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4226,
+        "outputTokens": 467
+      },
+      "packet": "research/packets/research-000180-8f7452b007.json",
+      "packetDigest": "06ad10063e2d39458aa2eabde49108ed064dc218a1c1b4368d9ad5606b2f8550",
+      "finishedAt": "2026-11-22T06:22:21.992Z"
     }
   ],
   "discovered": [
@@ -8283,11 +8314,6 @@
       "title": "Autoregressive model",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000026-bf20caf174"
-    },
-    {
-      "title": "501(c)(3)",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000027-b59cd37049"
     },
     {
       "title": "ASHRAE",
@@ -12863,6 +12889,46 @@
       "title": "Almost surely",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000179-0f88570dfa"
+    },
+    {
+      "title": "501(c)(4)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "501(c) organization",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "501(h) election",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "Affordable Care Act",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "Amateur sports",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "Barber Conable",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "Charitable contribution deductions in the United States",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "Charitable organization",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000180-8f7452b007"
     }
   ],
   "reviewJobs": [
