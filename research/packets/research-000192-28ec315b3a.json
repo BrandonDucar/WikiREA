@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000192-28ec315b3a",
+  "topic": "Adobe Soundbooth",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Adobe Soundbooth was a discontinued digital audio editor for Windows and Intel-based Mac OS X, positioned between simple tools and Adobe Audition. It featured task-based workflows, royalty-free sound effects, and dynamic linking to After Effects and Premiere Pro for video playback without rendering. Sound Documents enabled Flash multi-track projects. It lacked basic features like file creation (added in CS4) and audio reversal, and had no batch processing. Development ceased in 2011 as Adobe Audition CS5.5 replaced it in the Creative Suite.",
+    "mechanisms": [
+      {
+        "title": "Dynamic linking for video playback",
+        "explanation": "Allows video sequences from Adobe After Effects and Premiere Pro to be played inside Soundbooth without prior rendering, intended to save users time during editing workflows.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Adobe Sound Document format for Flash",
+        "explanation": "Enables Adobe Flash to create multi-track audio projects within Soundbooth, extending its utility for interactive media developers.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Implementation details of the task-based interface design",
+      "Reason for omission of basic audio reversal feature despite user demand",
+      "Specific technical constraints preventing batch processing functionality",
+      "Factors behind the decision to discontinue the product in 2011"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adobe Soundbooth",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382484289",
+    "revision": "1382484289",
+    "observedAt": "2026-11-22T20:14:42.108Z",
+    "sourceTimestamp": "2026-10-28T22:56:10Z",
+    "sha256": "f0c572798ee9ef22911a9ea8ee8547fd748e0a9537fcea1801093940b99dea89",
+    "excerptSha256": "f0c572798ee9ef22911a9ea8ee8547fd748e0a9537fcea1801093940b99dea89",
+    "inspectedCharacters": 6556,
+    "totalCharacters": 6556,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4adf05e4-83df-4c5f-a32a-6e19691ec4a4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2039,
+    "outputTokens": 306
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1d203f1b9353e45f4969bbb6c8d77317bf9317bde1728670c5806dbe9f1bb997",
+  "artifactDigest": "d69ce92be44b537ea5f91f6aeabec9947d09a51a32aa3836dae001f2b7011524"
+}

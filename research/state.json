@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T20:14:39.963Z",
+  "updatedAt": "2026-11-22T20:14:43.986Z",
   "sequence": 192,
   "jobs": [
     {
@@ -8778,13 +8778,44 @@
       "topic": "Adobe Soundbooth",
       "day": "2026-11-22",
       "runId": "45065298758",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T20:14:39.963Z",
       "expiresAt": "2026-11-22T20:29:39.963Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adobe Soundbooth",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382484289",
+        "revision": "1382484289",
+        "observedAt": "2026-11-22T20:14:42.108Z",
+        "sourceTimestamp": "2026-10-28T22:56:10Z",
+        "sha256": "f0c572798ee9ef22911a9ea8ee8547fd748e0a9537fcea1801093940b99dea89",
+        "excerptSha256": "f0c572798ee9ef22911a9ea8ee8547fd748e0a9537fcea1801093940b99dea89",
+        "inspectedCharacters": 6556,
+        "totalCharacters": 6556,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4adf05e4-83df-4c5f-a32a-6e19691ec4a4",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2039,
+        "outputTokens": 306
+      },
+      "packet": "research/packets/research-000192-28ec315b3a.json",
+      "packetDigest": "d69ce92be44b537ea5f91f6aeabec9947d09a51a32aa3836dae001f2b7011524",
+      "finishedAt": "2026-11-22T20:14:43.986Z"
     }
   ],
   "discovered": [
@@ -8867,11 +8898,6 @@
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
-    },
-    {
-      "title": "Adobe Soundbooth",
-      "role": "music-events",
-      "discoveredFrom": "research-000028-66915e6d6c"
     },
     {
       "title": "Anvil Studio",
@@ -13702,6 +13728,46 @@
       "title": "Advance-Decline Data",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000191-a45ba03b47"
+    },
+    {
+      "title": "64-bit",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": "ActionScript",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": "Adobe AIR",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": "Adobe Acrobat",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": "Adobe Acrobat Connect",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": "Adobe After Effects",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": "Adobe Animate",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": "Adobe Bridge",
+      "role": "music-events",
+      "discoveredFrom": "research-000192-28ec315b3a"
     }
   ],
   "reviewJobs": [
