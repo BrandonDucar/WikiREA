@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T10:13:36.707Z",
-  "sequence": 184,
+  "updatedAt": "2026-11-22T12:19:25.260Z",
+  "sequence": 185,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8440,6 +8440,20 @@
       "packet": "research/packets/research-000184-2694caccae.json",
       "packetDigest": "1fd2758bc1a28871e6e7d1406aae0b49fdadeba1e7d899c04d87541038b5d2b7",
       "finishedAt": "2026-11-22T10:13:36.707Z"
+    },
+    {
+      "id": "research-000185-900d2f282e",
+      "role": "source-curator",
+      "topic": "Algorithm design",
+      "day": "2026-11-22",
+      "runId": "45021661550",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T12:19:25.260Z",
+      "expiresAt": "2026-11-22T12:34:25.260Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
