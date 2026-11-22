@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T01:24:16.237Z",
-  "sequence": 176,
+  "updatedAt": "2026-11-22T02:20:15.220Z",
+  "sequence": 177,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8068,6 +8068,20 @@
       "packet": "research/packets/research-000176-f0fc9dbc65.json",
       "packetDigest": "a0f42ca10ed10b8abf9b7efeab5d7470f4df8ea7b9a5418a80e40c36ddaecd49",
       "finishedAt": "2026-11-22T01:15:37.982Z"
+    },
+    {
+      "id": "research-000177-e08dfb06b2",
+      "role": "runtime-researcher",
+      "topic": "ACM Comput. Surv.",
+      "day": "2026-11-22",
+      "runId": "44975604102",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T02:20:15.220Z",
+      "expiresAt": "2026-11-22T02:35:15.220Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [

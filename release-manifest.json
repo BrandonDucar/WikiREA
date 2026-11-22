@@ -2018,8 +2018,8 @@
     },
     {
       "path": "research/state.json",
-      "sizeBytes": 558484,
-      "sha256": "63f944154ed0a3e62f80b247a9a898d20bcf5baaaa471853e7004bcbd322012f"
+      "sizeBytes": 558905,
+      "sha256": "296bc2f35294f6e582e7db3b30c86d5a1df6cc6ac70eb965b0c067752e16e6f2"
     },
     {
       "path": "scripts/build-site.mjs",
