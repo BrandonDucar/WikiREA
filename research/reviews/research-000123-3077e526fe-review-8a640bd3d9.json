@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000123-3077e526fe-review-8a640bd3d9",
+  "parentJobId": "research-000123-3077e526fe",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "7ef28e20ebd8041295976a9225eb50cec0c2479662d419eb9365e15a685244ad",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Algorithm",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385709966",
+    "revision": "1385709966",
+    "observedAt": "2026-11-19T09:16:40.204Z",
+    "sourceTimestamp": "2026-11-14T21:36:46Z",
+    "sha256": "1b16ca3f8d5bec749b8ffb95dce067317cabf28ebdbbc3043f068ae8b48a3d85",
+    "excerptSha256": "e7f6305f3a82d6a4c44886927a055722b4f20ea285c6267579c4d49ca9a95aa2",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 68030,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of algorithm as finite, rigorous instruction sequence with termination",
+      "Mechanisms correctly capture deterministic state progression and conditional routing described in source",
+      "Unknowns properly identify genuine gaps: metaphorical mapping, non-deterministic qualification, termination conditions, ancient mechanism details",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically', 'may', 'some' preserved from source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-bd2d48b3-ec6e-4161-a3c1-662181c76774",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4802,
+    "outputTokens": 98
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
