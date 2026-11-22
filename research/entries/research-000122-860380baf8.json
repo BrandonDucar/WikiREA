@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000122-860380baf8",
+  "title": "8-Track Heaven",
+  "role": "music-events",
+  "createdAt": "2026-11-22T15:24:13.020Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "8-Track Heaven was a website dedicated to 8-track cartridges and equipment, founded in July 1995 by Malcolm Riviera, Abigail Lavine, Russ Forster, and Chip Rowe. It served enthusiasts with free ads, tips, and links. The site profiled 8-track album releases during the 1990s, published the documentary film \"So Wrong They're Right\" in 1995, and maintained a Twitter presence until the domain expired in 2024 following Riviera's death circa 2023.",
+  "mechanisms": [
+    {
+      "title": "Enthusiast resource provision",
+      "explanation": "The site offered free advertisements, practical tips, and curated links to assist collectors and fans of 8-track cartridges and associated equipment.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Cultural documentation and media production",
+      "explanation": "8-Track Heaven profiled 1990s 8-track album releases and produced the documentary film \"So Wrong They're Right,\" which won best feature-length documentary at the 1995 Chicago Underground Film Festival.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact technical architecture of the website",
+    "Details of internal content management practices",
+    "Specific metrics of user engagement or traffic",
+    "Precise nature of the site's revenue model or advertising setup"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "8-Track Heaven",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383089561",
+      "revision": "1383089561",
+      "observedAt": "2026-11-19T08:19:45.596Z",
+      "sourceTimestamp": "2026-10-31T23:02:29Z",
+      "sha256": "51325113d866887f6b8046ee76f3e9e7b00f3742ecbf6179b1ab791409deb7c4",
+      "excerptSha256": "51325113d866887f6b8046ee76f3e9e7b00f3742ecbf6179b1ab791409deb7c4",
+      "inspectedCharacters": 11378,
+      "totalCharacters": 11378,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects founding details, purpose, and timeline from source text",
+      "Mechanisms correctly capture enthusiast resource provision and cultural documentation with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'circa' for death date and 'early summer' for domain expiration preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-43c11d8c-83e7-410f-a618-c81db7b1fe60",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3762,
+      "outputTokens": 322
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-cf8c360f-36c4-46c2-9400-4015908c8688",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4086,
+      "outputTokens": 90
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "0f4096cb34c189517a74a25bee7ff4cf084fc8dbca2c2d93d25bde396bef3835",
+    "artifactDigest": "853bda8a7f5be0aa33a89d94953168c14a70b434a4c695f15f93258f39cacef2",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000122-860380baf8.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

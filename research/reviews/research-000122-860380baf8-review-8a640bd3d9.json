@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000122-860380baf8-review-8a640bd3d9",
+  "parentJobId": "research-000122-860380baf8",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "853bda8a7f5be0aa33a89d94953168c14a70b434a4c695f15f93258f39cacef2",
+  "sourcePin": {
+    "id": "S1",
+    "title": "8-Track Heaven",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383089561",
+    "revision": "1383089561",
+    "observedAt": "2026-11-19T08:19:45.596Z",
+    "sourceTimestamp": "2026-10-31T23:02:29Z",
+    "sha256": "51325113d866887f6b8046ee76f3e9e7b00f3742ecbf6179b1ab791409deb7c4",
+    "excerptSha256": "51325113d866887f6b8046ee76f3e9e7b00f3742ecbf6179b1ab791409deb7c4",
+    "inspectedCharacters": 11378,
+    "totalCharacters": 11378,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects founding details, purpose, and timeline from source text",
+      "Mechanisms correctly capture enthusiast resource provision and cultural documentation with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'circa' for death date and 'early summer' for domain expiration preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-cf8c360f-36c4-46c2-9400-4015908c8688",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4086,
+    "outputTokens": 90
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
