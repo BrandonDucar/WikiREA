@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000186-d80d39e7bd",
+  "topic": "3D-Coat",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3DCoat is a commercial digital sculpting application that supports both voxel and polygonal modeling workflows. It provides tools for automatic and manual polygonal topology creation, UV mapping, and texture painting with natural media tools. The software can import models from other 3D applications via Applink plugins, convert them into voxel objects for refinement, and generate PBR texture maps. A live link to external applications allows transfer of model and texture data. The program includes an auto-retopology feature that generates a quad-dominant mesh skin over voxel sculptures.",
+    "mechanisms": [
+      {
+        "title": "Dynamic patch tessellation and polygonal sculpting",
+        "explanation": "The software specializes in voxel and polygonal sculpting using dynamic patch tessellation technology, which allows for adaptive mesh refinement during sculpting operations.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Auto-retopology and quad-dominant mesh generation",
+        "explanation": "A proprietary algorithm generates a polygonal mesh skin over voxel sculptures, composed primarily of quadrangles, enabling clean topology for further modeling or animation workflows.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact implementation details of the proprietary skinning algorithm",
+      "Specific technical specifications of the dynamic patch tessellation system",
+      "How the Applink pipeline establishes live connections to external applications",
+      "Complete workflow for PBR texture map generation pipeline"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D-Coat",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379682662",
+    "revision": "1379682662",
+    "observedAt": "2026-11-22T13:13:34.321Z",
+    "sourceTimestamp": "2026-10-11T08:43:05Z",
+    "sha256": "d6399b3899e91cdedf27796daac8eb138be736b01d048133f2c38b0bd1c3e13c",
+    "excerptSha256": "d6399b3899e91cdedf27796daac8eb138be736b01d048133f2c38b0bd1c3e13c",
+    "inspectedCharacters": 2812,
+    "totalCharacters": 2812,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-d2377de1-7548-41db-b198-848c6bcd75e6",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1017,
+    "outputTokens": 317
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "7875fc2f4bea9655a69d2f3e645b1d2a6a81bda9a4dc9e96aee1b1cc3590f47f",
+  "artifactDigest": "d8326d522bdeebab2377916970d493d9447cf65846bf388507f5f8cc5989edd6"
+}
