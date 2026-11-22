@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T07:15:19.663Z",
+  "updatedAt": "2026-11-22T07:15:24.112Z",
   "sequence": 181,
   "jobs": [
     {
@@ -8259,13 +8259,44 @@
       "topic": "Accumulation/distribution index",
       "day": "2026-11-22",
       "runId": "44997382067",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T07:15:19.663Z",
       "expiresAt": "2026-11-22T07:30:19.663Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Accumulation/distribution index",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1371642893",
+        "revision": "1371642893",
+        "observedAt": "2026-11-22T07:15:21.607Z",
+        "sourceTimestamp": "2026-08-27T16:07:15Z",
+        "sha256": "74e61e1a1f64701a5e8846db8de6d46c1408922d895e7e921835293c6181cfe8",
+        "excerptSha256": "74e61e1a1f64701a5e8846db8de6d46c1408922d895e7e921835293c6181cfe8",
+        "inspectedCharacters": 2747,
+        "totalCharacters": 2747,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b0d6b54f-ea6a-436b-b3af-5550c713a43e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 909,
+        "outputTokens": 404
+      },
+      "packet": "research/packets/research-000181-20dfaf3c6a.json",
+      "packetDigest": "31a611b38ccefba36064a3197738f884d5158775845b34512d96de091f8ccf61",
+      "finishedAt": "2026-11-22T07:15:24.112Z"
     }
   ],
   "discovered": [
@@ -9588,11 +9619,6 @@
       "title": "ADAT Lightpipe",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000070-adbb730263"
-    },
-    {
-      "title": "Accumulation/distribution index",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000071-c3f1701a85"
     },
     {
       "title": "Advance–decline line",
@@ -12943,6 +12969,16 @@
       "title": "Charitable organization",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000180-8f7452b007"
+    },
+    {
+      "title": "Breakout (technical analysis)",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000181-20dfaf3c6a"
+    },
+    {
+      "title": "Broadening top",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000181-20dfaf3c6a"
     }
   ],
   "reviewJobs": [

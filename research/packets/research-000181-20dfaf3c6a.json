@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000181-20dfaf3c6a",
+  "topic": "Accumulation/distribution index",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The accumulation/distribution index is a technical analysis indicator that relates price and volume to gauge market commitment and detect divergences. It calculates a Closing Volume (CLV) factor ranging from -1 to +1 based on where the close falls within the day's price range, then cumulatively adds volume multiplied by this factor. The resulting shape, not its absolute level, signals whether buyers or sellers are dominant, with divergences between the indicator and price suggesting potential trend weakening.",
+    "mechanisms": [
+      {
+        "title": "CLV factor calculation",
+        "explanation": "The indicator first computes a Closing Volume (CLV) factor that ranges from -1 to +1. A CLV of -1 occurs when the close equals the day's low, +1 when it equals the high, and intermediate values reflect the close's position within the daily range. This factor weights the day's volume based on where price closed relative to the day's price extremes.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Cumulative volume accumulation",
+        "explanation": "The index then cumulatively adds each period's volume multiplied by the CLV factor. Because the starting point is arbitrary, the resulting line's shape—not its level—reveals whether accumulation (buyers finishing near highs) or distribution (sellers finishing near lows) is occurring. Divergences between this cumulative line and price action are used to identify weakening trends.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The precise computational handling of gaps or limit moves in the CLV formula",
+      "Whether the indicator's leading signal reliability varies across different market regimes or asset classes",
+      "The specific threshold values or crossover rules typically used to generate buy or sell signals",
+      "How the arbitrary starting point might interact with extended holding periods or resets"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Accumulation/distribution index",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1371642893",
+    "revision": "1371642893",
+    "observedAt": "2026-11-22T07:15:21.607Z",
+    "sourceTimestamp": "2026-08-27T16:07:15Z",
+    "sha256": "74e61e1a1f64701a5e8846db8de6d46c1408922d895e7e921835293c6181cfe8",
+    "excerptSha256": "74e61e1a1f64701a5e8846db8de6d46c1408922d895e7e921835293c6181cfe8",
+    "inspectedCharacters": 2747,
+    "totalCharacters": 2747,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-b0d6b54f-ea6a-436b-b3af-5550c713a43e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 909,
+    "outputTokens": 404
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "63e01af0fe4848c2ce48426d4f5c9374eda8bb8239608d839ffdbe24a0e406f2",
+  "artifactDigest": "31a611b38ccefba36064a3197738f884d5158775845b34512d96de091f8ccf61"
+}
