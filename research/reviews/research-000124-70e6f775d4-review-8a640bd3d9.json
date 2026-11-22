@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000124-70e6f775d4-review-8a640bd3d9",
+  "parentJobId": "research-000124-70e6f775d4",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "d3491fc34e033c7a012366c76db03db59e3db12d585c7162ffb8224fa69fdd49",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Byzantine fault",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386025150",
+    "revision": "1386025150",
+    "observedAt": "2026-11-19T10:15:46.576Z",
+    "sourceTimestamp": "2026-11-16T13:01:55Z",
+    "sha256": "650ec5cf8525b5575b7f9c7867c94da4d21681f898ba2e7d838405835a2fe4ef",
+    "excerptSha256": "56661943ba19263a743481a17c56c042a5dc3153407616c9014d8c5626c062b6",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 36504,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects the source definition of Byzantine fault and BFT",
+      "Mechanisms correctly capture the n > 3t threshold and synchronous communication requirement from the source",
+      "Unknowns are appropriate gaps not fully addressed in the source text",
+      "No unsupported mechanisms or invented execution details are present",
+      "Qualifiers like 'often' and 'may' are preserved where the source uses them"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-80c7f5f4-16a1-4e19-b24d-37e5e2a9dacd",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4382,
+    "outputTokens": 91
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
