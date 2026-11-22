@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000193-428d9b4755",
+  "topic": "AFL++",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "American Fuzzy Lop (AFL) is a free, open-source fuzzer that uses genetic algorithms to maximize code coverage and uncover software bugs. It requires a command to run the target program and an initial input. AFL first minimizes the input, then iteratively mutates it using deterministic bit-flips, integer adjustments, and dictionary-based replacements. After deterministic steps, it applies 'havoc' mutations—random overwrites and block operations—and 'splicing' to combine inputs. The fuzzer tracks coverage via 'binned hitcounts' of control-flow edges, adding new inputs to a queue only when they produce unseen coverage metrics, prioritizing inputs that trigger crashes or hangs.",
+    "mechanisms": [
+      {
+        "title": "Deterministic and Havoc Mutation",
+        "explanation": "AFL generates new test cases by first applying a deterministic sequence of bit-flips, integer increments/decrements, and dictionary-based replacements to existing inputs. Once these are exhausted, it performs 'havoc' mutations, overwriting bytes with random values and applying block-level operations like deletion, duplication, and byte-filling. These stages explore the input space systematically before resorting to crossover.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Binned Hitcount Coverage Metric",
+        "explanation": "AFL measures code coverage by counting how often each control-flow edge is traversed during execution. Hitcounts are binned into eight categories (1, 2, 3, 4–7, 8–15, 16–31, 32–127, 128+). A new input is retained in the queue only if it produces a (edge, binned count) pair not previously observed, enabling efficient prioritization of inputs that expand program exploration without computationally expensive trace comparisons.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How AFL's internal queue prioritization selects among equally covered inputs",
+      "The precise algorithmic trigger for initiating splice operations beyond queue exhaustion",
+      "Whether and how AFL adapts mutation rates based on historical coverage patterns",
+      "The internal mechanics of the instrumentation helper functions when source code is unavailable"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "American Fuzzy Lop (software)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1375239935",
+    "revision": "1375239935",
+    "observedAt": "2026-11-22T21:13:23.765Z",
+    "sourceTimestamp": "2026-09-16T16:45:54Z",
+    "sha256": "4508058ac30411f2aaa56311bb03f33e1820f938a2ca062a6de6f3e214b79e21",
+    "excerptSha256": "e62bbb3e03bf96c38738b3ce5b2a9dab090e580b7358bd856591330806e4f971",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 24756,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-08ff6244-02a4-49b7-98ed-ba8f9fcdfbe7",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4647,
+    "outputTokens": 481
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "7b37ac0cdc151d99791fbba9831de9957038fd733ff1b7b418fe904accc154cb",
+  "artifactDigest": "a8bf5f3b5f9efa069ee9733b663c3dddc220ebbc1fa9c6b32decea1ab5b703bf"
+}

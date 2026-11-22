@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T21:13:22.113Z",
+  "updatedAt": "2026-11-22T21:13:26.758Z",
   "sequence": 193,
   "jobs": [
     {
@@ -8823,13 +8823,44 @@
       "topic": "AFL++",
       "day": "2026-11-22",
       "runId": "45070853985",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T21:13:22.113Z",
       "expiresAt": "2026-11-22T21:28:22.113Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "American Fuzzy Lop (software)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1375239935",
+        "revision": "1375239935",
+        "observedAt": "2026-11-22T21:13:23.765Z",
+        "sourceTimestamp": "2026-09-16T16:45:54Z",
+        "sha256": "4508058ac30411f2aaa56311bb03f33e1820f938a2ca062a6de6f3e214b79e21",
+        "excerptSha256": "e62bbb3e03bf96c38738b3ce5b2a9dab090e580b7358bd856591330806e4f971",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 24756,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-08ff6244-02a4-49b7-98ed-ba8f9fcdfbe7",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4647,
+        "outputTokens": 481
+      },
+      "packet": "research/packets/research-000193-428d9b4755.json",
+      "packetDigest": "a8bf5f3b5f9efa069ee9733b663c3dddc220ebbc1fa9c6b32decea1ab5b703bf",
+      "finishedAt": "2026-11-22T21:13:26.758Z"
     }
   ],
   "discovered": [
@@ -10162,11 +10193,6 @@
       "title": "BSD licenses",
       "role": "music-events",
       "discoveredFrom": "research-000072-2f715e698c"
-    },
-    {
-      "title": "AFL++",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000073-067e4b69de"
     },
     {
       "title": "API testing",
@@ -13782,6 +13808,46 @@
       "title": "Adobe Bridge",
       "role": "music-events",
       "discoveredFrom": "research-000192-28ec315b3a"
+    },
+    {
+      "title": ".app (top-level domain)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": ".dev",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": ".google",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": ".zip (top-level domain)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": "111 Eighth Avenue",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": "2011 Slovenian YouTube incident",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": "2013 YouTube Music Awards",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": "2015 YouTube Music Awards",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000193-428d9b4755"
     }
   ],
   "reviewJobs": [
