@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T14:13:36.915Z",
-  "sequence": 187,
+  "updatedAt": "2026-11-22T15:13:10.390Z",
+  "sequence": 188,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8579,6 +8579,20 @@
       "packet": "research/packets/research-000187-721aeb0bd1.json",
       "packetDigest": "b5ac908bd7552efde20686c1ecb4bbf82de909730ee8957c8f058916a3184ecd",
       "finishedAt": "2026-11-22T14:13:36.915Z"
+    },
+    {
+      "id": "research-000188-0648763024",
+      "role": "game-mechanic-researcher",
+      "topic": "2D geometric model",
+      "day": "2026-11-22",
+      "runId": "45037068673",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T15:13:10.390Z",
+      "expiresAt": "2026-11-22T15:28:10.390Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
