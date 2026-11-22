@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T15:13:10.390Z",
+  "updatedAt": "2026-11-22T15:13:13.987Z",
   "sequence": 188,
   "jobs": [
     {
@@ -8586,21 +8586,47 @@
       "topic": "2D geometric model",
       "day": "2026-11-22",
       "runId": "45037068673",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T15:13:10.390Z",
       "expiresAt": "2026-11-22T15:28:10.390Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "2D geometric model",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1287064856",
+        "revision": "1287064856",
+        "observedAt": "2026-11-22T15:13:12.318Z",
+        "sourceTimestamp": "2025-04-23T19:30:15Z",
+        "sha256": "b513f4f4d4c682eee88b684747c39d0b6daafda250d893a445d8e3ac3f554712",
+        "excerptSha256": "b513f4f4d4c682eee88b684747c39d0b6daafda250d893a445d8e3ac3f554712",
+        "inspectedCharacters": 2188,
+        "totalCharacters": 2188,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-73af21d3-5b0d-433f-bef6-f0feb77df3c7",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 895,
+        "outputTokens": 284
+      },
+      "packet": "research/packets/research-000188-0648763024.json",
+      "packetDigest": "41f7285a330704c3e47e854455ae2c714ad31272a505872a18953859dc8477f5",
+      "finishedAt": "2026-11-22T15:13:13.987Z"
     }
   ],
   "discovered": [
-    {
-      "title": "2D geometric model",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000025-6fb0247cd6"
-    },
     {
       "title": "2D geometric primitive",
       "role": "game-mechanic-researcher",
@@ -13415,6 +13441,41 @@
       "title": "Compiler",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "Automobile",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000188-0648763024"
+    },
+    {
+      "title": "Boolean operations on polygons",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000188-0648763024"
+    },
+    {
+      "title": "Boundary representation",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000188-0648763024"
+    },
+    {
+      "title": "Cartesian plane",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000188-0648763024"
+    },
+    {
+      "title": "Circles",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000188-0648763024"
+    },
+    {
+      "title": "Computational geometry",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000188-0648763024"
+    },
+    {
+      "title": "Decal",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000188-0648763024"
     }
   ],
   "reviewJobs": [

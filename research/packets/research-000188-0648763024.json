@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000188-0648763024",
+  "topic": "2D geometric model",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A 2D geometric model represents objects as planar figures on a Euclidean or Cartesian plane, sufficient for flat entities like sheet metal parts or circular storm models viewed from above. It serves as a foundational tool in 2D computer graphics and technical diagrams, often functioning as a component within larger 3D constructions, such as automobile decals. Modern architecture employs digital rendering techniques to simulate three-dimensional perception from these two-dimensional representations.",
+    "mechanisms": [
+      {
+        "title": "Planar Representation",
+        "explanation": "Objects are encoded as two-dimensional figures, allowing adequate description of flat physical entities and serving as building blocks for complex 3D structures.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Integration in Graphics and Rendering",
+        "explanation": "These models are essential for 2D graphics and are frequently used as components in 3D models; modern architecture uses digital rendering to convey 3D perception from 2D geometric data.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise computational algorithms for Boolean polygon operations",
+      "Specific implementation details of digital rendering techniques",
+      "Exact methods for modeling curved contour geometry",
+      "Details on how 2D models translate to physical sheet metal fabrication"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "2D geometric model",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1287064856",
+    "revision": "1287064856",
+    "observedAt": "2026-11-22T15:13:12.318Z",
+    "sourceTimestamp": "2025-04-23T19:30:15Z",
+    "sha256": "b513f4f4d4c682eee88b684747c39d0b6daafda250d893a445d8e3ac3f554712",
+    "excerptSha256": "b513f4f4d4c682eee88b684747c39d0b6daafda250d893a445d8e3ac3f554712",
+    "inspectedCharacters": 2188,
+    "totalCharacters": 2188,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-73af21d3-5b0d-433f-bef6-f0feb77df3c7",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 895,
+    "outputTokens": 284
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "20b6dc42776028c2c47ec72cf01d9192a98a4fbc5b26ac1c7aeb3a4320e8614a",
+  "artifactDigest": "41f7285a330704c3e47e854455ae2c714ad31272a505872a18953859dc8477f5"
+}
