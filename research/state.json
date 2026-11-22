@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T19:11:57.395Z",
+  "updatedAt": "2026-11-22T19:12:04.000Z",
   "sequence": 191,
   "jobs": [
     {
@@ -8729,13 +8729,44 @@
       "topic": "Advance–decline line",
       "day": "2026-11-22",
       "runId": "45059370818",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T19:11:57.395Z",
       "expiresAt": "2026-11-22T19:26:57.395Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Advance–decline line",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1356713339",
+        "revision": "1356713339",
+        "observedAt": "2026-11-22T19:11:59.919Z",
+        "sourceTimestamp": "2026-05-29T11:05:29Z",
+        "sha256": "ef155decaefd500a5b2313d4cce362f934f1e3b26711e796971409585d8d6bc7",
+        "excerptSha256": "ef155decaefd500a5b2313d4cce362f934f1e3b26711e796971409585d8d6bc7",
+        "inspectedCharacters": 6224,
+        "totalCharacters": 6224,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-54005b42-bfe5-4ca2-abb7-c7e4509e5dd8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1856,
+        "outputTokens": 369
+      },
+      "packet": "research/packets/research-000191-a45ba03b47.json",
+      "packetDigest": "dcff6b05e6e5d444653bd27df0f70c34be7191cad7ac769b617d4633ca93724e",
+      "finishedAt": "2026-11-22T19:12:04.000Z"
     }
   ],
   "discovered": [
@@ -10008,11 +10039,6 @@
       "title": "ADAT Lightpipe",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000070-adbb730263"
-    },
-    {
-      "title": "Advance–decline line",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000071-c3f1701a85"
     },
     {
       "title": "Average directional movement index",
@@ -13648,6 +13674,16 @@
       "title": "Air Conditioning, Heating and Refrigeration Institute",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000190-9b7c3cf173"
+    },
+    {
+      "title": "2008 financial crisis",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000191-a45ba03b47"
+    },
+    {
+      "title": "Advance-Decline Data",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000191-a45ba03b47"
     }
   ],
   "reviewJobs": [

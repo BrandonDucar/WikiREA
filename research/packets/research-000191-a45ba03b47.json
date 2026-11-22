@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000191-a45ba03b47",
+  "topic": "Advance–decline line",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The advance–decline line is a cumulative technical indicator that tracks daily net advances (advancing issues minus declining issues) across a market index. It measures participation breadth beyond price-weighted indices, revealing whether market moves are supported by broad stock involvement or concentrated in large caps. Divergence between the index and the ADL can signal misleading trends, while sustained ADL direction suggests persistence. The indicator applies to both price and volume data, serving as a daily check on trend validity.",
+    "mechanisms": [
+      {
+        "title": "Cumulative Net Advance Calculation",
+        "explanation": "Each day the ADL updates by adding today's net advances (advancing stocks minus declining stocks) to yesterday's ADL value. This creates a running total that moves up when advancing issues outnumber declining ones and down when the reverse occurs, providing a breadth gauge across the index universe.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Divergence Detection",
+        "explanation": "When a market index rises while the ADL falls, or vice versa, it indicates potential misalignment between price movement and underlying participation. Documented instances include the late Dot-com bubble, the Roaring Twenties bull market, and the 2008 financial crisis, where such divergence preceded or accompanied trend changes.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact weighting scheme for individual stock inclusion in specific index ADL calculations",
+      "Precise threshold values that trigger trading signals in practice",
+      "Whether volume-based ADL formulas produce materially different signals than price-based formulas",
+      "Mechanism for ADL behavior in markets with limited advance/decline data availability"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Advance–decline line",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1356713339",
+    "revision": "1356713339",
+    "observedAt": "2026-11-22T19:11:59.919Z",
+    "sourceTimestamp": "2026-05-29T11:05:29Z",
+    "sha256": "ef155decaefd500a5b2313d4cce362f934f1e3b26711e796971409585d8d6bc7",
+    "excerptSha256": "ef155decaefd500a5b2313d4cce362f934f1e3b26711e796971409585d8d6bc7",
+    "inspectedCharacters": 6224,
+    "totalCharacters": 6224,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-54005b42-bfe5-4ca2-abb7-c7e4509e5dd8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1856,
+    "outputTokens": 369
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b133e1d2c114c33b45b9d72018d8e0d710374384fb4b890acfcf5ebac5752f1a",
+  "artifactDigest": "dcff6b05e6e5d444653bd27df0f70c34be7191cad7ac769b617d4633ca93724e"
+}
