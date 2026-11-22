@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T02:20:15.220Z",
+  "updatedAt": "2026-11-22T02:20:18.701Z",
   "sequence": 177,
   "jobs": [
     {
@@ -8075,13 +8075,44 @@
       "topic": "ACM Comput. Surv.",
       "day": "2026-11-22",
       "runId": "44975604102",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T02:20:15.220Z",
       "expiresAt": "2026-11-22T02:35:15.220Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ACM Computing Surveys",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1369939508",
+        "revision": "1369939508",
+        "observedAt": "2026-11-22T02:20:16.876Z",
+        "sourceTimestamp": "2026-08-18T03:28:39Z",
+        "sha256": "deadcb54d64eed9842484e36d3575287cd75da652fda6782da51c9db148de9dc",
+        "excerptSha256": "deadcb54d64eed9842484e36d3575287cd75da652fda6782da51c9db148de9dc",
+        "inspectedCharacters": 2822,
+        "totalCharacters": 2822,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-09254248-436c-432b-a349-9d78f8296c79",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1108,
+        "outputTokens": 294
+      },
+      "packet": "research/packets/research-000177-e08dfb06b2.json",
+      "packetDigest": "3bd22b1372cbfd2b4174c824735f462fc4b83db4f2a7da8083002389fd6d05d5",
+      "finishedAt": "2026-11-22T02:20:18.701Z"
     }
   ],
   "discovered": [
@@ -9299,11 +9330,6 @@
       "title": "AMosaic",
       "role": "application-tracer",
       "discoveredFrom": "research-000066-02c0e9d820"
-    },
-    {
-      "title": "ACM Comput. Surv.",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000067-a5933051f2"
     },
     {
       "title": "Abstraction layer",
@@ -12709,6 +12735,11 @@
       "title": "Academy Award",
       "role": "application-tracer",
       "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "ACM Computing Reviews",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000177-e08dfb06b2"
     }
   ],
   "reviewJobs": [

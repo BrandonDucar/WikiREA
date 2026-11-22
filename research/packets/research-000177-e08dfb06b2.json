@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000177-e08dfb06b2",
+  "topic": "ACM Comput. Surv.",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ACM Computing Surveys is a peer-reviewed quarterly journal published by the Association for Computing Machinery that disseminates survey articles and tutorials across computer science. Established in 1969, it holds a 2023 impact factor of 23.8 and maintains a top-tier ranking in the field. The journal serves as a review venue synthesizing established knowledge rather than presenting original research results.",
+    "mechanisms": [
+      {
+        "title": "Survey and tutorial publication model",
+        "explanation": "The journal functions by commissioning or selecting comprehensive survey articles and tutorials that synthesize existing knowledge within specific computer science domains, providing structured overviews for researchers and practitioners.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Ranking and prestige indicators",
+        "explanation": "The journal's standing is measured through impact factor metrics (23.8 in 2023) and periodic rankings (e.g., A* ranking, 1st in Computers category), which reflect community perception and citation patterns rather than technical operation.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Peer review criteria and selection process details",
+      "Editorial workflow and article commissioning mechanisms",
+      "Long-term preservation and archival practices",
+      "Reader engagement and citation behavior patterns"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ACM Computing Surveys",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1369939508",
+    "revision": "1369939508",
+    "observedAt": "2026-11-22T02:20:16.876Z",
+    "sourceTimestamp": "2026-08-18T03:28:39Z",
+    "sha256": "deadcb54d64eed9842484e36d3575287cd75da652fda6782da51c9db148de9dc",
+    "excerptSha256": "deadcb54d64eed9842484e36d3575287cd75da652fda6782da51c9db148de9dc",
+    "inspectedCharacters": 2822,
+    "totalCharacters": 2822,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-09254248-436c-432b-a349-9d78f8296c79",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1108,
+    "outputTokens": 294
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "949756b779b17048153de794db207689535bcb1652053bbc5e090bc9231c75ec",
+  "artifactDigest": "3bd22b1372cbfd2b4174c824735f462fc4b83db4f2a7da8083002389fd6d05d5"
+}
