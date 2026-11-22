@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T08:18:28.125Z",
-  "sequence": 182,
+  "updatedAt": "2026-11-22T09:15:10.156Z",
+  "sequence": 183,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8346,6 +8346,20 @@
       "packet": "research/packets/research-000182-ef503cdb72.json",
       "packetDigest": "01cfa832711bb8e8c982fbd48f675b4f01f3ee5e674315c869a22984ea204054",
       "finishedAt": "2026-11-22T08:18:28.125Z"
+    },
+    {
+      "id": "research-000183-61fc58aa42",
+      "role": "adversarial-reviewer",
+      "topic": "A/B testing",
+      "day": "2026-11-22",
+      "runId": "45006611239",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T09:15:10.156Z",
+      "expiresAt": "2026-11-22T09:30:10.156Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
