@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T09:15:10.156Z",
+  "updatedAt": "2026-11-22T09:15:14.734Z",
   "sequence": 183,
   "jobs": [
     {
@@ -8353,13 +8353,44 @@
       "topic": "A/B testing",
       "day": "2026-11-22",
       "runId": "45006611239",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T09:15:10.156Z",
       "expiresAt": "2026-11-22T09:30:10.156Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "A/B testing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383222547",
+        "revision": "1383222547",
+        "observedAt": "2026-11-22T09:15:12.278Z",
+        "sourceTimestamp": "2026-11-01T16:55:07Z",
+        "sha256": "d910b9663809050dd7dac8c8c2a9d67413ec972067e405c4fd4a6494efe76457",
+        "excerptSha256": "c080f025d544f4f0df3e44e70fc8afe140609d6140bc192adf3615981d170e0b",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 29894,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ceb0cc3b-ae78-4d50-a3df-d228040de1bf",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4205,
+        "outputTokens": 322
+      },
+      "packet": "research/packets/research-000183-61fc58aa42.json",
+      "packetDigest": "da533ce176ed4a42278407776fdb2ef2cba063ff8891a14d4544584d48ba24a8",
+      "finishedAt": "2026-11-22T09:15:14.734Z"
     }
   ],
   "discovered": [
@@ -9529,11 +9560,6 @@
       "discoveredFrom": "research-000066-02c0e9d820"
     },
     {
-      "title": "A/B testing",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000066-02c0e9d820"
-    },
-    {
       "title": "AI assistant",
       "role": "application-tracer",
       "discoveredFrom": "research-000066-02c0e9d820"
@@ -9747,11 +9773,6 @@
       "title": "BSD licenses",
       "role": "music-events",
       "discoveredFrom": "research-000072-2f715e698c"
-    },
-    {
-      "title": "A/B testing",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000073-067e4b69de"
     },
     {
       "title": "AFL++",
@@ -12214,11 +12235,6 @@
       "discoveredFrom": "research-000155-e0d42dc021"
     },
     {
-      "title": "A/B testing",
-      "role": "source-curator",
-      "discoveredFrom": "research-000155-e0d42dc021"
-    },
-    {
       "title": "Academy Awards",
       "role": "source-curator",
       "discoveredFrom": "research-000155-e0d42dc021"
@@ -13052,6 +13068,36 @@
       "title": "AudioDesk",
       "role": "music-events",
       "discoveredFrom": "research-000182-ef503cdb72"
+    },
+    {
+      "title": "Accelerated failure time model",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000183-61fc58aa42"
+    },
+    {
+      "title": "Actuarial science",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000183-61fc58aa42"
+    },
+    {
+      "title": "Adaptive clinical trial",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000183-61fc58aa42"
+    },
+    {
+      "title": "Adaptive control",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000183-61fc58aa42"
+    },
+    {
+      "title": "Advertising",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000183-61fc58aa42"
+    },
+    {
+      "title": "Airbnb",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000183-61fc58aa42"
     }
   ],
   "reviewJobs": [

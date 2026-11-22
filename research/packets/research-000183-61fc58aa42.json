@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000183-61fc58aa42",
+  "topic": "A/B testing",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A/B testing is a randomized controlled experiment comparing two variants (A and B) to determine which performs better on a single variable. Users are randomly assigned to view different versions, and outcomes such as click-through or conversion rates are measured. Statistical hypothesis testing evaluates whether observed differences are significant or due to chance. Segmentation can reveal variant effectiveness within specific user groups, but requires balanced distribution of attributes to avoid bias. Tests require sufficient sample size to reduce error, though variance-reduction techniques can minimize needed participants.",
+    "mechanisms": [
+      {
+        "title": "Randomized assignment and variant comparison",
+        "explanation": "Users are randomly split into groups, each seeing a different version of the tested variable. Responses are collected and compared using appropriate statistical tests to identify which variant yields the desired outcome more often.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Segmentation and targeted application",
+        "explanation": "Test results may vary across user subgroups. If a variant underperforms overall but excels in a specific segment, future deployment can target that segment with the superior variant, provided the original test balanced key attributes across groups.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact sample size needed for significance in low-traffic contexts",
+      "Long-term effects of deploying a winning variant beyond the test period",
+      "Interaction effects between multiple simultaneous variables",
+      "Potential carryover or learning effects when users experience multiple variants"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "A/B testing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383222547",
+    "revision": "1383222547",
+    "observedAt": "2026-11-22T09:15:12.278Z",
+    "sourceTimestamp": "2026-11-01T16:55:07Z",
+    "sha256": "d910b9663809050dd7dac8c8c2a9d67413ec972067e405c4fd4a6494efe76457",
+    "excerptSha256": "c080f025d544f4f0df3e44e70fc8afe140609d6140bc192adf3615981d170e0b",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 29894,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-ceb0cc3b-ae78-4d50-a3df-d228040de1bf",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4205,
+    "outputTokens": 322
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "cae4403b65b3282923ba3e5f3a8b2c07e91a8313a23ab0359edc184316e62a48",
+  "artifactDigest": "da533ce176ed4a42278407776fdb2ef2cba063ff8891a14d4544584d48ba24a8"
+}
