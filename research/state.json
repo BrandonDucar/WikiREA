@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T01:15:33.371Z",
+  "updatedAt": "2026-11-22T01:15:37.982Z",
   "sequence": 176,
   "jobs": [
     {
@@ -8030,13 +8030,44 @@
       "topic": "2D animation",
       "day": "2026-11-22",
       "runId": "44970578719",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T01:15:33.371Z",
       "expiresAt": "2026-11-22T01:30:33.371Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Traditional animation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383837811",
+        "revision": "1383837811",
+        "observedAt": "2026-11-22T01:15:34.974Z",
+        "sourceTimestamp": "2026-11-05T02:42:13Z",
+        "sha256": "127f05b28cbd48ba8e596bdc801dd12d1d859ffe5c26b3619dfab1db4a312308",
+        "excerptSha256": "3217c393eccadd2bf89047ec17b3073b64a6d81b3404b68f2b2bf622de19c845",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 57581,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-8dc2d4b1-2f7f-4d35-98f7-90c48c15bb06",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3573,
+        "outputTokens": 331
+      },
+      "packet": "research/packets/research-000176-f0fc9dbc65.json",
+      "packetDigest": "a0f42ca10ed10b8abf9b7efeab5d7470f4df8ea7b9a5418a80e40c36ddaecd49",
+      "finishedAt": "2026-11-22T01:15:37.982Z"
     }
   ],
   "discovered": [
@@ -8999,11 +9030,6 @@
       "title": "Apache Groovy",
       "role": "source-curator",
       "discoveredFrom": "research-000055-d84aa316b7"
-    },
-    {
-      "title": "2D animation",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000056-4de8f52dba"
     },
     {
       "title": "3D-Coat",
@@ -12629,6 +12655,46 @@
       "title": "Apache Maven",
       "role": "source-curator",
       "discoveredFrom": "research-000175-b8c68d68e2"
+    },
+    {
+      "title": "2.5D",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "3D film",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "A-ha",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "A Pup Named Scooby-Doo",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "A Scanner Darkly (film)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "Absolute film",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "Abstract animation",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
+    },
+    {
+      "title": "Academy Award",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000176-f0fc9dbc65"
     }
   ],
   "reviewJobs": [
