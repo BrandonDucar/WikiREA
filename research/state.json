@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T10:13:31.364Z",
+  "updatedAt": "2026-11-22T10:13:36.707Z",
   "sequence": 184,
   "jobs": [
     {
@@ -8402,13 +8402,44 @@
       "topic": "Back pressure",
       "day": "2026-11-22",
       "runId": "45011371114",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T10:13:31.364Z",
       "expiresAt": "2026-11-22T10:28:31.364Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Back pressure",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1352049482",
+        "revision": "1352049482",
+        "observedAt": "2026-11-22T10:13:33.726Z",
+        "sourceTimestamp": "2026-05-01T18:35:23Z",
+        "sha256": "b4ce9fb012e8fd941f95ae4804b6959df4f466fb615d4b44fc8ae753eea3885c",
+        "excerptSha256": "b4ce9fb012e8fd941f95ae4804b6959df4f466fb615d4b44fc8ae753eea3885c",
+        "inspectedCharacters": 6313,
+        "totalCharacters": 6313,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5efd7ee6-0c05-4586-87fd-de564178818e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2020,
+        "outputTokens": 317
+      },
+      "packet": "research/packets/research-000184-2694caccae.json",
+      "packetDigest": "1fd2758bc1a28871e6e7d1406aae0b49fdadeba1e7d899c04d87541038b5d2b7",
+      "finishedAt": "2026-11-22T10:13:36.707Z"
     }
   ],
   "discovered": [
@@ -9826,11 +9857,6 @@
       "title": "Advanced persistent threat",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000073-067e4b69de"
-    },
-    {
-      "title": "Back pressure",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000074-403d103bb4"
     },
     {
       "title": "Diversity backpressure routing",
@@ -13116,6 +13142,46 @@
       "title": "Airbnb",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000183-61fc58aa42"
+    },
+    {
+      "title": "Catalytic converter",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
+    },
+    {
+      "title": "Column chromatography",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
+    },
+    {
+      "title": "Defence Science and Technology Group",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
+    },
+    {
+      "title": "Distributed computing",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
+    },
+    {
+      "title": "Engine efficiency",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
+    },
+    {
+      "title": "Event-driven architecture",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
+    },
+    {
+      "title": "Exhaust manifold",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
+    },
+    {
+      "title": "Exhaust pulse pressure charging",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000184-2694caccae"
     }
   ],
   "reviewJobs": [

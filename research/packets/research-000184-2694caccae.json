@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000184-2694caccae",
+  "topic": "Back pressure",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Back pressure describes resistance to fluid or data flow. In physical systems, obstructions or tight bends create resistance via friction loss and pressure drop, affecting engine efficiency and requiring pump effort to overcome column resistance in chromatography. In distributed computing and event-driven architecture, it is a technique to regulate data flow and prevent software components from becoming overwhelmed. The term originates from fluid dynamics but applies conceptually to flow regulation in software systems.",
+    "mechanisms": [
+      {
+        "title": "Physical fluid resistance",
+        "explanation": "Obstructions or tight bends in pipes create resistance to flow through friction loss and pressure drop. This resistance opposes the desired flow and can reduce engine efficiency, increase fuel consumption, and require greater pump effort in systems like chromatography columns.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Data flow regulation",
+        "explanation": "In distributed computing and event-driven architecture, back pressure is a technique used to regulate the flow of data between components. It ensures that software components do not become overwhelmed by excess data, preventing system degradation or failure.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact implementation details of back pressure algorithms in specific distributed systems",
+      "Variable geometry effects on exhaust system timing and efficiency across operating ranges",
+      "Precise relationship between column packing particle size and back pressure thresholds in chromatography",
+      "Specific timing mechanisms that determine optimum engine efficiency in two-stroke exhaust systems"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Back pressure",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1352049482",
+    "revision": "1352049482",
+    "observedAt": "2026-11-22T10:13:33.726Z",
+    "sourceTimestamp": "2026-05-01T18:35:23Z",
+    "sha256": "b4ce9fb012e8fd941f95ae4804b6959df4f466fb615d4b44fc8ae753eea3885c",
+    "excerptSha256": "b4ce9fb012e8fd941f95ae4804b6959df4f466fb615d4b44fc8ae753eea3885c",
+    "inspectedCharacters": 6313,
+    "totalCharacters": 6313,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-5efd7ee6-0c05-4586-87fd-de564178818e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2020,
+    "outputTokens": 317
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fed277ca3e0374b521a111aed087440160a4856c96c33526ec005f0f8419e461",
+  "artifactDigest": "1fd2758bc1a28871e6e7d1406aae0b49fdadeba1e7d899c04d87541038b5d2b7"
+}
