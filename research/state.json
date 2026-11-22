@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T09:24:58.766Z",
-  "sequence": 183,
+  "updatedAt": "2026-11-22T10:13:31.364Z",
+  "sequence": 184,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8395,6 +8395,20 @@
       "packet": "research/packets/research-000183-61fc58aa42.json",
       "packetDigest": "da533ce176ed4a42278407776fdb2ef2cba063ff8891a14d4544584d48ba24a8",
       "finishedAt": "2026-11-22T09:15:14.734Z"
+    },
+    {
+      "id": "research-000184-2694caccae",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Back pressure",
+      "day": "2026-11-22",
+      "runId": "45011371114",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T10:13:31.364Z",
+      "expiresAt": "2026-11-22T10:28:31.364Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
