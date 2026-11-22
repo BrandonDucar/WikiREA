@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-21T22:13:17.970Z",
-  "sequence": 174,
+  "updatedAt": "2026-11-22T00:37:48.870Z",
+  "sequence": 175,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -7978,6 +7978,20 @@
       "packet": "research/packets/research-000174-885bb348ef.json",
       "packetDigest": "481e5c499c2b025defe7360e4e193c755320f82901f8a32f94ac803ac2cf50bb",
       "finishedAt": "2026-11-21T22:13:17.970Z"
+    },
+    {
+      "id": "research-000175-b8c68d68e2",
+      "role": "source-curator",
+      "topic": "APT (software)",
+      "day": "2026-11-22",
+      "runId": "44967541055",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T00:37:48.870Z",
+      "expiresAt": "2026-11-22T00:52:48.870Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
