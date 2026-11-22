@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T06:22:21.992Z",
-  "sequence": 180,
+  "updatedAt": "2026-11-22T07:15:19.663Z",
+  "sequence": 181,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8252,6 +8252,20 @@
       "packet": "research/packets/research-000180-8f7452b007.json",
       "packetDigest": "06ad10063e2d39458aa2eabde49108ed064dc218a1c1b4368d9ad5606b2f8550",
       "finishedAt": "2026-11-22T06:22:21.992Z"
+    },
+    {
+      "id": "research-000181-20dfaf3c6a",
+      "role": "market-data-researcher",
+      "topic": "Accumulation/distribution index",
+      "day": "2026-11-22",
+      "runId": "44997382067",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T07:15:19.663Z",
+      "expiresAt": "2026-11-22T07:30:19.663Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
