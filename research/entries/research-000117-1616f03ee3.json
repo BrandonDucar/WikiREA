@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000117-1616f03ee3",
+  "title": "360 Secure Browser",
+  "role": "runtime-researcher",
+  "createdAt": "2026-11-22T03:27:26.538Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "360 Secure Browser is a cross-platform freeware web browser developed by Qihoo 360. It primarily uses the Blink engine for rendering, with an optional Trident engine for compatibility mode. The browser supports Windows, macOS, Android, and iOS. It is notable for its dual-engine architecture, default Chrome-like rendering, and the ability to spoof user-agent strings to mimic Chrome or Internet Explorer. The browser's market presence in China was historically significant, though usage statistics are contested. It has been involved in controversies regarding hidden mechanisms and aggressive promotion tactics.",
+  "mechanisms": [
+    {
+      "title": "Dual-engine rendering",
+      "explanation": "The browser defaults to the Blink engine for webpage rendering, which is the same engine used by Google Chrome. When running in compatibility mode, it switches to the Trident engine found in Internet Explorer to render legacy webpages.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "User-agent spoofing",
+      "explanation": "To aid compatibility and masking, the browser spoofs its user-agent string, presenting itself as either Google Chrome or Internet Explorer. This makes it difficult for developers to target or identify the browser using standard sniffing techniques.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The specific implementation details of the dual-engine switching mechanism and when compatibility mode is triggered.",
+    "The full extent and nature of the 'undeclared mechanism' (ExtSmartWiz.dll) mentioned in independent 2012 analyses, including its precise function and server communication patterns.",
+    "Whether the browser's historical high usage numbers are primarily due to technical factors or promotional tactics such as warning pop-ups and integration with parent software.",
+    "The current status and specifics of the browser's user-agent string behavior in its latest versions, given that distinguishable strings are no longer offered as of 2017."
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "360 Secure Browser",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381651609",
+      "revision": "1381651609",
+      "observedAt": "2026-11-19T02:19:52.229Z",
+      "sourceTimestamp": "2026-10-23T22:14:55Z",
+      "sha256": "e290bca5b498a473dd8f3f3caf4f1508940b0709227fa2114bfe573974d52cb6",
+      "excerptSha256": "e290bca5b498a473dd8f3f3caf4f1508940b0709227fa2114bfe573974d52cb6",
+      "inspectedCharacters": 9328,
+      "totalCharacters": 9328,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on developer, engines, platforms, and controversies.",
+      "Mechanisms correctly describe dual-engine rendering and user-agent spoofing with proper source attribution.",
+      "Unknowns appropriately identify gaps in implementation details, backdoor specifics, usage drivers, and current UA behavior.",
+      "No unsupported mechanisms or invented execution details present.",
+      "Qualifiers like 'optional', 'historically', and 'contested' are preserved from source."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-44ce5add-abff-4950-a3c7-bda196340781",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3405,
+      "outputTokens": 420
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-b653362e-8240-4468-b20e-bc7b03523e14",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3805,
+      "outputTokens": 102
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "301b8c432960417fabda7fcde3f63f192ac5df4ec1a694f8b108e831837e8058",
+    "artifactDigest": "8beae8e378f210c06a3da665dd41f887b59891e75f6d191f352e5ccfb2c29746",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000117-1616f03ee3.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

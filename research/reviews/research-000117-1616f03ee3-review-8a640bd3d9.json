@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000117-1616f03ee3-review-8a640bd3d9",
+  "parentJobId": "research-000117-1616f03ee3",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "8beae8e378f210c06a3da665dd41f887b59891e75f6d191f352e5ccfb2c29746",
+  "sourcePin": {
+    "id": "S1",
+    "title": "360 Secure Browser",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381651609",
+    "revision": "1381651609",
+    "observedAt": "2026-11-19T02:19:52.229Z",
+    "sourceTimestamp": "2026-10-23T22:14:55Z",
+    "sha256": "e290bca5b498a473dd8f3f3caf4f1508940b0709227fa2114bfe573974d52cb6",
+    "excerptSha256": "e290bca5b498a473dd8f3f3caf4f1508940b0709227fa2114bfe573974d52cb6",
+    "inspectedCharacters": 9328,
+    "totalCharacters": 9328,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on developer, engines, platforms, and controversies.",
+      "Mechanisms correctly describe dual-engine rendering and user-agent spoofing with proper source attribution.",
+      "Unknowns appropriately identify gaps in implementation details, backdoor specifics, usage drivers, and current UA behavior.",
+      "No unsupported mechanisms or invented execution details present.",
+      "Qualifiers like 'optional', 'historically', and 'contested' are preserved from source."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-b653362e-8240-4468-b20e-bc7b03523e14",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3805,
+    "outputTokens": 102
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
