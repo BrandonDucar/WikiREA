@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000119-07746dda00",
+  "title": "Academic journal",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-22T07:24:38.792Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Academic journals are periodical publications where scholars disseminate research within specific disciplines. They rely on peer review for quality control and serve as the primary venue for researchers to share findings, with publication often tied to career advancement. Originating in the 17th century with the Philosophical Transactions of the Royal Society, the system has expanded to thousands of specialized and general journals, transitioning from print to electronic formats to increase accessibility while maintaining scrutiny of submitted work.",
+  "mechanisms": [
+    {
+      "title": "Peer Review Process",
+      "explanation": "Research articles submitted to journals undergo evaluation by established contemporaries in the field to assess quality, validity, and relevance before publication. This scrutiny distinguishes academic journals from popular media and ensures a baseline of methodological rigor, though the process may introduce bias or delay dissemination.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Publication and Career Incentives",
+      "explanation": "Researchers are expected to publish in academic journals to advance their careers, as promotion and funding often depend on publication output and journal impact. This \"publish or perish\" environment creates pressure to disseminate findings frequently, sometimes prioritizing quantity over nuance.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact criteria used by journals to reject or accept submissions beyond peer review",
+    "Details of internal editorial decision-making workflows",
+    "Long-term effects of open-access models on quality standards",
+    "Mechanisms for post-publication correction or retraction of flawed articles"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Academic journal",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383761347",
+      "revision": "1383761347",
+      "observedAt": "2026-11-19T04:17:38.434Z",
+      "sourceTimestamp": "2026-11-04T18:17:53Z",
+      "sha256": "b05f4a920247e35d5e4f7ac85d83c6bc900f7ce005ee639acafcdafca3fe08a6",
+      "excerptSha256": "8d89acaf22c5cff1e5abd0965e15faccb14a0c7292f862e5b12aac7cf58a0ebb",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 58818,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on definition, history, peer review, and career incentives",
+      "Mechanisms correctly capture peer review process and publication incentives with appropriate qualifiers",
+      "Unknowns list valid gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Source citations properly referenced in mechanisms"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-81364ce7-4f97-4890-aec6-75b558105825",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4175,
+      "outputTokens": 336
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-ac3552ae-c6f9-4000-b081-be3a90048c36",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4457,
+      "outputTokens": 77
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "07310f8debbd02e1d84c6c2275abf7e2faa4b43e5a8b2c2a52462056182b7bfc",
+    "artifactDigest": "90a10d372cb88b2d2bcc2c918e58da93346478fb3668404bcabcb25b1882982c",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000119-07746dda00.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
