@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000116-ad048b955e-review-8a640bd3d9",
+  "parentJobId": "research-000116-ad048b955e",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "6b500372f05da00bfe90ef3190ab7f74812aa1d40109cac8341f50009ef8d959",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AArch64",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383931367",
+    "revision": "1383931367",
+    "observedAt": "2026-11-19T01:15:57.477Z",
+    "sourceTimestamp": "2026-11-05T17:43:54Z",
+    "sha256": "a6e5942af98f715bd4053b6332efaccd80de80861812c71dfb8901932d8a2628",
+    "excerptSha256": "0160b47f57482a8b8c7dea897143f7752456a7e14eeeca56521b3cc04c0356b0",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 42891,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft claims 'tracer' mechanisms and 'application-tracer functionality' which are absent from source text",
+      "Draft invents 'trace buffers', 'trace compression', 'tracer control registers' with no source support",
+      "Source describes AArch64 execution states, registers, instruction sets, exception levels, and extensions only",
+      "Draft's 'unknowns' section fabricates tracer-related questions not addressed in source",
+      "No source mention of tracing, debug, or profiling hardware features in AArch64 context"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-f6dd8c64-8849-45ce-9b5d-17bd990b0558",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5094,
+    "outputTokens": 116
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
