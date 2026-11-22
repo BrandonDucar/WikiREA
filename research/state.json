@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T18:16:24.096Z",
-  "sequence": 190,
+  "updatedAt": "2026-11-22T19:11:57.395Z",
+  "sequence": 191,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8722,6 +8722,20 @@
       "packet": "research/packets/research-000190-9b7c3cf173.json",
       "packetDigest": "de03f6bafb108971a05acccbc1b2abd52a69b84fd243441f8d3a3f970cabf7e8",
       "finishedAt": "2026-11-22T18:16:24.096Z"
+    },
+    {
+      "id": "research-000191-a45ba03b47",
+      "role": "market-data-researcher",
+      "topic": "Advance–decline line",
+      "day": "2026-11-22",
+      "runId": "45059370818",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T19:11:57.395Z",
+      "expiresAt": "2026-11-22T19:26:57.395Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
