@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000187-721aeb0bd1",
+  "topic": "Abstraction layer",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An abstraction layer is a computing concept that hides the working details of a subsystem to facilitate interoperability and platform independence. It functions as a generalization of conceptual models or algorithms, expressing similarities across specific implementations. By simplifying complex systems into reusable design patterns, it allows quick recognition of applicable situations. A layer depends on those below it but can exist independently of those above, often forming hierarchies such as the OSI model's seven layers. As noted by David Wheeler, adding another level of indirection addresses many computer science problems, though excessive layers can hinder rather than help.",
+    "mechanisms": [
+      {
+        "title": "Generalization of conceptual models",
+        "explanation": "Abstraction layers arise from broad similarities across specific implementations, encapsulating these commonalities into generalized models. This allows for the distillation of useful concepts or design patterns, enabling quick recognition of applicable situations without requiring knowledge of lower-level details.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Dependency-based layering",
+        "explanation": "A layer is defined as being on top of another if it depends on it. Every layer can function without layers above it but requires the layers below it to operate. This structure allows layers to be composed into hierarchies, such as the seven layers of the OSI model, each addressing different communication needs and reducing engineering complexity.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The specific internal mechanisms by which graphics libraries translate programmer commands into device-specific drawing operations",
+      "How firmware may vary in inclusion of operating systems and applications versus low-level software",
+      "The precise criteria that distinguish a composed construct from a true abstraction layer that shields users from complexity",
+      "The detailed transformation processes the operating system performs to mediate device physical characteristics at the byte-stream level"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Abstraction layer",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1376530207",
+    "revision": "1376530207",
+    "observedAt": "2026-11-22T14:13:34.757Z",
+    "sourceTimestamp": "2026-09-24T18:41:58Z",
+    "sha256": "df71b26dc752e971227dbb0e45af47cd3a3afd1e9cad5c1631df8166d34120d1",
+    "excerptSha256": "df71b26dc752e971227dbb0e45af47cd3a3afd1e9cad5c1631df8166d34120d1",
+    "inspectedCharacters": 6536,
+    "totalCharacters": 6536,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-686b00de-b67a-475f-b954-b9f405133766",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1771,
+    "outputTokens": 390
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "398d52283c101208be9b42511d2ea51279a14f4a93661ff2d08ae71e042d2574",
+  "artifactDigest": "b5ac908bd7552efde20686c1ecb4bbf82de909730ee8957c8f058916a3184ecd"
+}

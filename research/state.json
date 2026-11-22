@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T14:13:32.505Z",
+  "updatedAt": "2026-11-22T14:13:36.915Z",
   "sequence": 187,
   "jobs": [
     {
@@ -8541,13 +8541,44 @@
       "topic": "Abstraction layer",
       "day": "2026-11-22",
       "runId": "45031643074",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T14:13:32.505Z",
       "expiresAt": "2026-11-22T14:28:32.505Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Abstraction layer",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1376530207",
+        "revision": "1376530207",
+        "observedAt": "2026-11-22T14:13:34.757Z",
+        "sourceTimestamp": "2026-09-24T18:41:58Z",
+        "sha256": "df71b26dc752e971227dbb0e45af47cd3a3afd1e9cad5c1631df8166d34120d1",
+        "excerptSha256": "df71b26dc752e971227dbb0e45af47cd3a3afd1e9cad5c1631df8166d34120d1",
+        "inspectedCharacters": 6536,
+        "totalCharacters": 6536,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-686b00de-b67a-475f-b954-b9f405133766",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1771,
+        "outputTokens": 390
+      },
+      "packet": "research/packets/research-000187-721aeb0bd1.json",
+      "packetDigest": "b5ac908bd7552efde20686c1ecb4bbf82de909730ee8957c8f058916a3184ecd",
+      "finishedAt": "2026-11-22T14:13:36.915Z"
     }
   ],
   "discovered": [
@@ -9342,11 +9373,6 @@
       "discoveredFrom": "research-000049-10bfbc3df7"
     },
     {
-      "title": "Abstraction layer",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000049-10bfbc3df7"
-    },
-    {
       "title": "Abstraction principle (computer programming)",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000049-10bfbc3df7"
@@ -9725,11 +9751,6 @@
       "title": "AMosaic",
       "role": "application-tracer",
       "discoveredFrom": "research-000066-02c0e9d820"
-    },
-    {
-      "title": "Abstraction layer",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000067-a5933051f2"
     },
     {
       "title": "Adaptive optimization",
@@ -13340,6 +13361,46 @@
       "title": "Autodesk Alias",
       "role": "application-tracer",
       "discoveredFrom": "research-000186-d80d39e7bd"
+    },
+    {
+      "title": "Andrew S. Tanenbaum",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "Application binary interface",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "Application programming interface",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "Assembly language",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "Butler Lampson",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "CRT monitor",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "Compiled language",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
+    },
+    {
+      "title": "Compiler",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000187-721aeb0bd1"
     }
   ],
   "reviewJobs": [
