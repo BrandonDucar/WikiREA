@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T21:24:57.954Z",
-  "sequence": 193,
+  "updatedAt": "2026-11-22T22:14:28.437Z",
+  "sequence": 194,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8865,6 +8865,20 @@
       "packet": "research/packets/research-000193-428d9b4755.json",
       "packetDigest": "a8bf5f3b5f9efa069ee9733b663c3dddc220ebbc1fa9c6b32decea1ab5b703bf",
       "finishedAt": "2026-11-22T21:13:26.758Z"
+    },
+    {
+      "id": "research-000194-b387b40de6",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Diversity backpressure routing",
+      "day": "2026-11-22",
+      "runId": "45076587685",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T22:14:28.437Z",
+      "expiresAt": "2026-11-22T22:29:28.437Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
