@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000118-9a613356d7-review-8a640bd3d9",
+  "parentJobId": "research-000118-9a613356d7",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "bdf771d99269d2e5979849ca1d6ff5cab8991b821a9b8cd4786ea798ffc0e2eb",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+    "revision": "1384980993",
+    "observedAt": "2026-11-19T03:17:38.322Z",
+    "sourceTimestamp": "2026-11-11T05:21:33Z",
+    "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+    "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39476,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft claims '.NET 11, released in November 2026' and '.NET 10' as latest LTS; source infobox shows latest release .NET 10.0 with access-date 2026-10-05 and preview links, but no mention of .NET 11 or November 2026 release.",
+      "Draft states 'annual release cycles producing short-term support versions and longer-term support releases'; source only says 'New versions ... are released annually, typically in November' and mentions STS/LTS for .NET 11/10 but those versions are not verified in source.",
+      "Mechanism 'Managed code execution environment' cites source S1 but source text does not describe memory layout, type safety, or security sandboxing mechanisms.",
+      "Mechanism 'Cross-platform abstraction layer' cites source S1 but source text does not explain translation of platform-specific operations or decoupling from OS APIs.",
+      "Draft summary says 'runs on various CPU architectures including x86-64, ARM, and IBM Z'; source infobox lists IA-32, x86-64, ARM, Power ISA, s390x (IBM Z) but draft omits IA-32 and Power ISA."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-aba64ad4-217e-4c60-97ea-9d8638397e10",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5158,
+    "outputTokens": 278
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
