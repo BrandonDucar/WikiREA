@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T03:27:26.538Z",
-  "sequence": 178,
+  "updatedAt": "2026-11-22T04:16:37.445Z",
+  "sequence": 179,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8162,6 +8162,20 @@
       "packet": "research/packets/research-000178-d56994492a.json",
       "packetDigest": "56920a6fa3b5a6092a6599f826d60ad7c6b07b18d5522b72cd70d90c46196985",
       "finishedAt": "2026-11-22T03:17:40.150Z"
+    },
+    {
+      "id": "research-000179-0f88570dfa",
+      "role": "simulation-researcher",
+      "topic": "Abstract Wiener space",
+      "day": "2026-11-22",
+      "runId": "44984320743",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T04:16:37.445Z",
+      "expiresAt": "2026-11-22T04:31:37.445Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
