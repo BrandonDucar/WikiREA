@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000190-9b7c3cf173",
+  "topic": "ASHRAE",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ASHRAE is a global not-for-profit professional association founded in 1895 that advances HVAC&R design and construction. Its 50,000+ members in 132 countries include engineers, architects, and manufacturers. The organization produces the ASHRAE Handbook and consensus standards that address energy efficiency, indoor air quality, and refrigeration safety. It also publishes magazines, books, and supports research and continuing education. ASHRAE's headquarters buildings serve as sustainability case studies, demonstrating applied technologies such as dedicated outdoor air systems and heat recovery.",
+    "mechanisms": [
+      {
+        "title": "Consensus standard development",
+        "explanation": "ASHRAE develops and publishes technical standards through a consensus process involving volunteer experts. These standards, such as Standard 62.1 for ventilation and Standard 90.1 for energy efficiency, are periodically reviewed, revised, and republished. They are frequently referenced in building codes and used by engineers, contractors, and government agencies to guide HVAC system design and construction.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Research and continuing education program",
+        "explanation": "The society funds research projects and offers continuing education programs aimed at improving building services engineering, energy efficiency, indoor air quality, and sustainable development. These programs support the professional development of members and the advancement of HVAC&R technology.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The specific internal decision-making process for standard adoption by member vote",
+      "Detailed technical implementation of proprietary HVAC equipment designs referenced in ASHRAE publications",
+      "The exact mechanisms of data extraction from ASHRAE headquarters buildings for external research",
+      "Whether ASHRAE standards directly dictate the hardware interoperability of specific commercial building automation products"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASHRAE",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383306500",
+    "revision": "1383306500",
+    "observedAt": "2026-11-22T18:16:22.376Z",
+    "sourceTimestamp": "2026-11-02T01:11:51Z",
+    "sha256": "3eb71b1ce68bc3efa5aa38f31c96e5ffc9a25234132630604b7f79f7959c3e9f",
+    "excerptSha256": "64559a32bffbbd27d06cf29d39e790ca7db79b861598bc18acbe075e31081f95",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15359,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-521d1a4c-5fe3-419a-983b-e1a15d6dd843",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4331,
+    "outputTokens": 398
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "4efeb80e160043c14687bb5df6dea14b390b17b9152cb70cfae82dd2f9f7557b",
+  "artifactDigest": "de03f6bafb108971a05acccbc1b2abd52a69b84fd243441f8d3a3f970cabf7e8"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T18:16:20.603Z",
+  "updatedAt": "2026-11-22T18:16:24.096Z",
   "sequence": 190,
   "jobs": [
     {
@@ -8684,13 +8684,44 @@
       "topic": "ASHRAE",
       "day": "2026-11-22",
       "runId": "45054108694",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T18:16:20.603Z",
       "expiresAt": "2026-11-22T18:31:20.603Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ASHRAE",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383306500",
+        "revision": "1383306500",
+        "observedAt": "2026-11-22T18:16:22.376Z",
+        "sourceTimestamp": "2026-11-02T01:11:51Z",
+        "sha256": "3eb71b1ce68bc3efa5aa38f31c96e5ffc9a25234132630604b7f79f7959c3e9f",
+        "excerptSha256": "64559a32bffbbd27d06cf29d39e790ca7db79b861598bc18acbe075e31081f95",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 15359,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-521d1a4c-5fe3-419a-983b-e1a15d6dd843",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4331,
+        "outputTokens": 398
+      },
+      "packet": "research/packets/research-000190-9b7c3cf173.json",
+      "packetDigest": "de03f6bafb108971a05acccbc1b2abd52a69b84fd243441f8d3a3f970cabf7e8",
+      "finishedAt": "2026-11-22T18:16:24.096Z"
     }
   ],
   "discovered": [
@@ -8743,11 +8774,6 @@
       "title": "Autoregressive model",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000026-bf20caf174"
-    },
-    {
-      "title": "ASHRAE",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000027-b59cd37049"
     },
     {
       "title": "ASHRAE Handbook",
@@ -13573,6 +13599,41 @@
       "title": "Actuarial exam",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000189-ace25bcaa0"
+    },
+    {
+      "title": "47th Street (Manhattan)",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000190-9b7c3cf173"
+    },
+    {
+      "title": "ASHRAE 55",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000190-9b7c3cf173"
+    },
+    {
+      "title": "ASHRAE 90.1",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000190-9b7c3cf173"
+    },
+    {
+      "title": "Absorption refrigerator",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000190-9b7c3cf173"
+    },
+    {
+      "title": "Absorption–compression heat pump",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000190-9b7c3cf173"
+    },
+    {
+      "title": "Air-mixing plenum",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000190-9b7c3cf173"
+    },
+    {
+      "title": "Air Conditioning, Heating and Refrigeration Institute",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000190-9b7c3cf173"
     }
   ],
   "reviewJobs": [
