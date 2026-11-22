@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T22:14:28.437Z",
+  "updatedAt": "2026-11-22T22:14:30.506Z",
   "sequence": 194,
   "jobs": [
     {
@@ -8872,13 +8872,19 @@
       "topic": "Diversity backpressure routing",
       "day": "2026-11-22",
       "runId": "45076587685",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-22T22:14:28.437Z",
       "expiresAt": "2026-11-22T22:29:28.437Z",
       "callsReserved": 2,
       "callsAttempted": 0,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "error": "HTTP_404",
+      "diagnostic": {
+        "httpStatus": 404,
+        "retryAfter": null
+      },
+      "finishedAt": "2026-11-22T22:14:30.506Z"
     }
   ],
   "discovered": [
