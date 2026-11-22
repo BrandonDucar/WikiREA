@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T19:24:36.994Z",
-  "sequence": 191,
+  "updatedAt": "2026-11-22T20:14:39.963Z",
+  "sequence": 192,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8771,6 +8771,20 @@
       "packet": "research/packets/research-000191-a45ba03b47.json",
       "packetDigest": "dcff6b05e6e5d444653bd27df0f70c34be7191cad7ac769b617d4633ca93724e",
       "finishedAt": "2026-11-22T19:12:04.000Z"
+    },
+    {
+      "id": "research-000192-28ec315b3a",
+      "role": "music-events",
+      "topic": "Adobe Soundbooth",
+      "day": "2026-11-22",
+      "runId": "45065298758",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T20:14:39.963Z",
+      "expiresAt": "2026-11-22T20:29:39.963Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
