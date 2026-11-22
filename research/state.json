@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T12:19:29.425Z",
-  "sequence": 185,
+  "updatedAt": "2026-11-22T13:13:32.489Z",
+  "sequence": 186,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8485,6 +8485,20 @@
       "packet": "research/packets/research-000185-900d2f282e.json",
       "packetDigest": "f905d4cea7ce5f5fb43480cc4953e3920bbdb33c6a4dc766038e739b70223203",
       "finishedAt": "2026-11-22T12:19:29.425Z"
+    },
+    {
+      "id": "research-000186-d80d39e7bd",
+      "role": "application-tracer",
+      "topic": "3D-Coat",
+      "day": "2026-11-22",
+      "runId": "45026345107",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T13:13:32.489Z",
+      "expiresAt": "2026-11-22T13:28:32.489Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
