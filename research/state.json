@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T15:24:13.021Z",
-  "sequence": 188,
+  "updatedAt": "2026-11-22T16:15:01.713Z",
+  "sequence": 189,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8628,6 +8628,20 @@
       "packet": "research/packets/research-000188-0648763024.json",
       "packetDigest": "41f7285a330704c3e47e854455ae2c714ad31272a505872a18953859dc8477f5",
       "finishedAt": "2026-11-22T15:13:13.987Z"
+    },
+    {
+      "id": "research-000189-ace25bcaa0",
+      "role": "simulation-researcher",
+      "topic": "Actuarial mathematics",
+      "day": "2026-11-22",
+      "runId": "45042740116",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T16:15:01.713Z",
+      "expiresAt": "2026-11-22T16:30:01.713Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
