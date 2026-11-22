@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T20:14:43.986Z",
-  "sequence": 192,
+  "updatedAt": "2026-11-22T21:13:22.113Z",
+  "sequence": 193,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8816,6 +8816,20 @@
       "packet": "research/packets/research-000192-28ec315b3a.json",
       "packetDigest": "d69ce92be44b537ea5f91f6aeabec9947d09a51a32aa3836dae001f2b7011524",
       "finishedAt": "2026-11-22T20:14:43.986Z"
+    },
+    {
+      "id": "research-000193-428d9b4755",
+      "role": "adversarial-reviewer",
+      "topic": "AFL++",
+      "day": "2026-11-22",
+      "runId": "45070853985",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-22T21:13:22.113Z",
+      "expiresAt": "2026-11-22T21:28:22.113Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [

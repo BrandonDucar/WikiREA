@@ -2173,8 +2173,8 @@
     },
     {
       "path": "research/state.json",
-      "sizeBytes": 606310,
-      "sha256": "915cee7256e68274c8444a06995ffb7ce94a50013200b0e4a39c5c745bab43e6"
+      "sizeBytes": 606721,
+      "sha256": "45cf61880a440b12516f2bbb2a62984888e710fc3ca383aaf4ff9e6df9970fb2"
     },
     {
       "path": "scripts/build-site.mjs",
