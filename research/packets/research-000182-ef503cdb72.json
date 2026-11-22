@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000182-ef503cdb72",
+  "topic": "Acoustica (software)",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Acoustica is a digital audio editor by Acon Digital available in Standard and Premium editions. It provides core editing features such as single-track clip editing and multitrack sessions, alongside batch processing and audio CD project support. The software includes real-time analysis tools for level metering (RMS, peak, peak hold), loudness metering (EBU R-128), spectrum analysis, and phase correlation metering. Audio recording supports resolutions up to 32-bit depth and 192 kHz sampling rate. Premium Edition adds spectral editing, multi-channel support up to 7.1.2, and a large collection of VST, VST3, Audio Units, and AAX plug-ins, including an ARA2 clip editor. Both editions share the same basic feature set.",
+    "mechanisms": [
+      {
+        "title": "Real-time analysis pipeline",
+        "explanation": "The software processes audio for real-time display of level metering (RMS, peak, peak hold), loudness metering (EBU R-128), spectrum analysis, and phase correlation metering during playback or recording sessions.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Edition-specific processing architecture",
+        "explanation": "Standard Edition provides processing tools for mastering, audio restoration, and sound design. Premium Edition extends this architecture with spectral editing, multi-channel support up to 7.1.2 channels, and a large collection of VST, VST3, Audio Units, and AAX plug-ins, including an ARA2 clip editor for host application integration.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal architecture of the real-time analysis tools",
+      "Details of the spectral editing algorithm implementation",
+      "Specifics of multi-channel audio routing beyond the stated 7.1.2 support",
+      "Implementation details of the ARA2 plug-in integration with host applications"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Acoustica (software)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1306517238",
+    "revision": "1306517238",
+    "observedAt": "2026-11-22T08:18:25.484Z",
+    "sourceTimestamp": "2025-08-18T04:45:59Z",
+    "sha256": "8627dcf4513e8b0e25d5d578aa8876856e6839d22487b46502093f11b9431441",
+    "excerptSha256": "8627dcf4513e8b0e25d5d578aa8876856e6839d22487b46502093f11b9431441",
+    "inspectedCharacters": 2815,
+    "totalCharacters": 2815,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4dcc0cb4-505f-4874-a0b7-32e06c8697c9",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1010,
+    "outputTokens": 425
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "8f6a5b71acaa9f39a493a9c0cc761202be0e70f0b090be73ead7766c47e911a5",
+  "artifactDigest": "01cfa832711bb8e8c982fbd48f675b4f01f3ee5e674315c869a22984ea204054"
+}

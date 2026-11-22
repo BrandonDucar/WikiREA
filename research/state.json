@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T08:18:23.471Z",
+  "updatedAt": "2026-11-22T08:18:28.125Z",
   "sequence": 182,
   "jobs": [
     {
@@ -8308,13 +8308,44 @@
       "topic": "Acoustica (software)",
       "day": "2026-11-22",
       "runId": "45002174378",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-22T08:18:23.471Z",
       "expiresAt": "2026-11-22T08:33:23.471Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Acoustica (software)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1306517238",
+        "revision": "1306517238",
+        "observedAt": "2026-11-22T08:18:25.484Z",
+        "sourceTimestamp": "2025-08-18T04:45:59Z",
+        "sha256": "8627dcf4513e8b0e25d5d578aa8876856e6839d22487b46502093f11b9431441",
+        "excerptSha256": "8627dcf4513e8b0e25d5d578aa8876856e6839d22487b46502093f11b9431441",
+        "inspectedCharacters": 2815,
+        "totalCharacters": 2815,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4dcc0cb4-505f-4874-a0b7-32e06c8697c9",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1010,
+        "outputTokens": 425
+      },
+      "packet": "research/packets/research-000182-ef503cdb72.json",
+      "packetDigest": "01cfa832711bb8e8c982fbd48f675b4f01f3ee5e674315c869a22984ea204054",
+      "finishedAt": "2026-11-22T08:18:28.125Z"
     }
   ],
   "discovered": [
@@ -8412,11 +8443,6 @@
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
-    },
-    {
-      "title": "Acoustica (software)",
-      "role": "music-events",
-      "discoveredFrom": "research-000028-66915e6d6c"
     },
     {
       "title": "Adobe Soundbooth",
@@ -12997,6 +13023,21 @@
       "title": "Broadening top",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000181-20dfaf3c6a"
+    },
+    {
+      "title": "ARA2",
+      "role": "music-events",
+      "discoveredFrom": "research-000182-ef503cdb72"
+    },
+    {
+      "title": "Acon Digital",
+      "role": "music-events",
+      "discoveredFrom": "research-000182-ef503cdb72"
+    },
+    {
+      "title": "AudioDesk",
+      "role": "music-events",
+      "discoveredFrom": "research-000182-ef503cdb72"
     }
   ],
   "reviewJobs": [
