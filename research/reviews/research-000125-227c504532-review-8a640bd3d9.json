@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000125-227c504532-review-8a640bd3d9",
+  "parentJobId": "research-000125-227c504532",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "976882ae153f8fed724a05dd6724877040615a9ec7027399dbe704d4c8dd4334",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Audio file format",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379364583",
+    "revision": "1379364583",
+    "observedAt": "2026-11-19T12:20:48.317Z",
+    "sourceTimestamp": "2026-10-09T14:40:39Z",
+    "sha256": "d20f3eb488fd0a2d2ab1bfbc81c99dfe1e0bc36250d4717ffe2b4f54a0b40796",
+    "excerptSha256": "0c60df86fbb8f0890ed9dfd0948ccd1757fc558598a1612146e96c6e27957934",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 18207,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on audio file format categories and characteristics",
+      "Mechanisms correctly describe uncompressed LPCM header structure and lossy psychoacoustic compression from source",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often' and 'roughly' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-f85fb196-21f1-47cb-8d6d-632e8466a10d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4542,
+    "outputTokens": 88
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
