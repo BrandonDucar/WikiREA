@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000129-25ff439585-review-8a640bd3d9",
+  "parentJobId": "research-000129-25ff439585",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "d04ff4e570acfba129460e11db93407b2cc0b66fed8d1152a8579c5f36b69b69",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Administrative Science Quarterly",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1355768332",
+    "revision": "1355768332",
+    "observedAt": "2026-11-19T16:16:30.569Z",
+    "sourceTimestamp": "2026-05-23T20:27:11Z",
+    "sha256": "5eee746ed35345b8076a46bf831ee492870bf1a1fb199764ecfcb5416b31d453",
+    "excerptSha256": "5eee746ed35345b8076a46bf831ee492870bf1a1fb199764ecfcb5416b31d453",
+    "inspectedCharacters": 3744,
+    "totalCharacters": 3744,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including establishment year, publisher, scope, indexing, and 2022 impact factor with rankings",
+      "Mechanisms correctly capture interdisciplinary publishing model and ranking/indexing infrastructure as described in source",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "All factual claims traceable to source text with proper qualifiers preserved"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-530a7735-8459-4d2c-848f-31bdd8deb373",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1553,
+    "outputTokens": 95
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
