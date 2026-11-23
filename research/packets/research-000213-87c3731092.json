@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000213-87c3731092",
+  "topic": "Abstract syntax tree",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An abstract syntax tree (AST) is a tree data structure that represents the abstract syntactic structure of source code, focusing on structural and content-related details while omitting nonessential punctuation like parentheses and semicolons. It serves as an intermediate representation in compilers, enabling semantic analysis, code transformation, and generation. ASTs are built by parsers from formal language grammar and are used for tasks such as clone detection and differencing. The structure preserves variable types, declaration locations, statement ordering, and binary operation components, and supports unparsing back to source code.",
+    "mechanisms": [
+      {
+        "title": "Structural representation and node encoding",
+        "explanation": "The AST encodes program structure by converting source code constructs into tree nodes. Each node denotes a construct occurring in the text, such as an if-condition-then statement represented by a single node with three branches. Parentheses and other delimiters are implicit in the tree structure and do not appear as separate nodes. Variable types, declaration locations, statement ordering, and binary operation components are explicitly preserved to support subsequent compiler phases.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Intermediate representation for compiler phases",
+        "explanation": "The AST acts as an intermediate representation through several compiler stages, starting after syntax analysis. It enables semantic analysis, symbol table generation, and code generation. The tree can be edited and enhanced with annotations, and later unparsed into source code form that is sufficiently similar to the original and identical in execution upon recompilation.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How context-sensitive language features are fully resolved within the AST without additional analysis passes",
+      "The exact method by which operator overloading and duck typing are represented or resolved in the tree structure",
+      "Whether the AST preserves runtime behavior details beyond position and type information",
+      "How arbitrary-length children such as command-shell argument lists are uniformly modeled across different language implementations"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Abstract syntax tree",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380221583",
+    "revision": "1380221583",
+    "observedAt": "2026-11-23T21:13:37.973Z",
+    "sourceTimestamp": "2026-10-14T14:12:25Z",
+    "sha256": "9296e03a329d7e86a14c03878a255c1295d29f9f22bd9e48894acc76510697ab",
+    "excerptSha256": "9296e03a329d7e86a14c03878a255c1295d29f9f22bd9e48894acc76510697ab",
+    "inspectedCharacters": 12863,
+    "totalCharacters": 12863,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-d492092f-c91e-42d5-982c-278b6cce79de",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3632,
+    "outputTokens": 421
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "6a785214a508813b4840a8b0f7e6cd29a2a912ffa3d729f0c4a73f3312037c0f",
+  "artifactDigest": "d6c70e3dfc2ac4d032669b72aa33c6671ec7156865b8fff3a109a790507f4952"
+}
