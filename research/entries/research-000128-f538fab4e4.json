@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000128-f538fab4e4",
+  "title": ".NET Foundation",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-23T05:27:46.810Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The .NET Foundation is a 501(c)(6) organization founded by Microsoft in 2014 to improve open-source software development around the .NET Framework. It operates license-agnostically, allowing projects to choose any OSI-approved license, and uses GitHub to host managed projects. Membership is open to contributors, who can vote in board elections. As of 2026, it stewards 556 active projects, including core .NET, Entity Framework, MSBuild, and NuGet, with a board of directors elected by members.",
+  "mechanisms": [
+    {
+      "title": "Governance via member voting",
+      "explanation": "Anyone who has contributed to .NET Foundation projects can apply for membership. Members vote in elections for the board of directors, which preserves the health of the organization.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Project stewardship and hosting",
+      "explanation": "The foundation uses GitHub to host open-source projects it manages. Projects accepted by the foundation are free to choose any open-source license, and the foundation stewards an expanding collection of active projects.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The specific criteria used to select projects for inclusion under the foundation's stewardship",
+    "The internal decision-making process for board elections beyond member voting",
+    "The detailed workflow for how projects transition to or from the foundation",
+    "The full scope of licensing choices made by individual projects hosted by the foundation"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": ".NET Foundation",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368045305",
+      "revision": "1368045305",
+      "observedAt": "2026-11-19T15:15:14.758Z",
+      "sourceTimestamp": "2026-08-06T18:16:44Z",
+      "sha256": "ed0dc51fb48756dc19910ea4c1ab9423f4e1ed02fa49e584ce25333829095fc9",
+      "excerptSha256": "ed0dc51fb48756dc19910ea4c1ab9423f4e1ed02fa49e584ce25333829095fc9",
+      "inspectedCharacters": 5155,
+      "totalCharacters": 5155,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on founding, tax status, license-agnostic policy, GitHub hosting, membership, and project count",
+      "Mechanisms correctly describe governance via member voting and project stewardship with GitHub hosting",
+      "Unknowns appropriately identify gaps not covered in source (selection criteria, board election details, project transition workflow, licensing choices)",
+      "No unsupported mechanisms or invented execution present",
+      "All claims traceable to provided source text"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-20da56fd-098e-4696-b78a-7d9f494edc3d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 1711,
+      "outputTokens": 339
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-c1153ad4-ba2e-49b6-9f7c-0d3530ba420f",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2006,
+      "outputTokens": 103
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "36f4e0bb6496b09188f912d9dfac88afea32cb2490999cea80393d057069a41f",
+    "artifactDigest": "dd5093e4505f61c54ecb9e5324f4ad98505ea9e32ccef91d7f8e513a3e575a2b",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000128-f538fab4e4.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
