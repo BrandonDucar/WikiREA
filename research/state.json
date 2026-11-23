@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T05:27:46.811Z",
-  "sequence": 199,
+  "updatedAt": "2026-11-23T06:33:30.066Z",
+  "sequence": 200,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9122,6 +9122,20 @@
       "packet": "research/packets/research-000199-e9cb620e19.json",
       "packetDigest": "e8738873be1b9af14849458742c537ef57c8dfffc1d7a9223a87e55d68781a76",
       "finishedAt": "2026-11-23T04:19:25.226Z"
+    },
+    {
+      "id": "research-000200-a62225c1d0",
+      "role": "hardware-interoperability-scout",
+      "topic": "ASHRAE Handbook",
+      "day": "2026-11-23",
+      "runId": "45124884741",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T06:33:30.066Z",
+      "expiresAt": "2026-11-23T06:48:30.066Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
