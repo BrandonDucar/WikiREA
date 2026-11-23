@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T09:30:07.836Z",
-  "sequence": 203,
+  "updatedAt": "2026-11-23T10:16:03.695Z",
+  "sequence": 204,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9310,6 +9310,20 @@
       "packet": "research/packets/research-000203-daf4bf4c1c.json",
       "packetDigest": "b7caa97defff3d4b4336d7bcd932a323e56d51c3b06dab22131d2f1705b9c138",
       "finishedAt": "2026-11-23T09:21:20.287Z"
+    },
+    {
+      "id": "research-000204-213ed284bd",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Drift plus penalty",
+      "day": "2026-11-23",
+      "runId": "45154499353",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T10:16:03.695Z",
+      "expiresAt": "2026-11-23T10:31:03.695Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
