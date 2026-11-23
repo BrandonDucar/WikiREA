@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T03:19:43.873Z",
+  "updatedAt": "2026-11-23T03:19:49.737Z",
   "sequence": 198,
   "jobs": [
     {
@@ -9031,21 +9031,47 @@
       "topic": "2D geometric primitive",
       "day": "2026-11-23",
       "runId": "45105308269",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T03:19:43.873Z",
       "expiresAt": "2026-11-23T03:34:43.873Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Geometric primitive",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386096222",
+        "revision": "1386096222",
+        "observedAt": "2026-11-23T03:19:45.826Z",
+        "sourceTimestamp": "2026-11-16T22:26:49Z",
+        "sha256": "b22509f7da03d7ab6a43ac969d1d8f1ac966e505d407c393250259a582fa9e85",
+        "excerptSha256": "b22509f7da03d7ab6a43ac969d1d8f1ac966e505d407c393250259a582fa9e85",
+        "inspectedCharacters": 10844,
+        "totalCharacters": 10844,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-731b8c54-55ca-407c-afbd-110ee7733bb1",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2739,
+        "outputTokens": 447
+      },
+      "packet": "research/packets/research-000198-35ca16db72.json",
+      "packetDigest": "cabb919df0f208a8566e57ba2c2f9384b44419dc0b737e3eae7250a3abd493cd",
+      "finishedAt": "2026-11-23T03:19:49.737Z"
     }
   ],
   "discovered": [
-    {
-      "title": "2D geometric primitive",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000025-6fb0247cd6"
-    },
     {
       "title": "2D rotation",
       "role": "game-mechanic-researcher",
@@ -14085,6 +14111,41 @@
       "title": "JVM bytecode",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "3D Studio Max",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000198-35ca16db72"
+    },
+    {
+      "title": "3D modelling",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000198-35ca16db72"
+    },
+    {
+      "title": "Arc (geometry)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000198-35ca16db72"
+    },
+    {
+      "title": "Box modelling",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000198-35ca16db72"
+    },
+    {
+      "title": "Bézier curve",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000198-35ca16db72"
+    },
+    {
+      "title": "Cartesian coordinate system",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000198-35ca16db72"
+    },
+    {
+      "title": "Computer-aided design",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000198-35ca16db72"
     }
   ],
   "reviewJobs": [

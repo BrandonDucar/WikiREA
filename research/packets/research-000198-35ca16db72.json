@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000198-35ca16db72",
+  "topic": "2D geometric primitive",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "In 2D vector graphics and GIS, the most basic atomic shapes are points and line segments. Modern systems typically use curves (lines, circles, arcs) and polygons as primitives, with triangles often treated as fundamental because any polygon can be constructed from them via triangulation. These primitives serve as building blocks; all other graphic elements are composed from them. In GIS, terrain is sometimes modeled as a 2.5D scalar field. Vector data structures store a finite sample of points and use interpolation algorithms to reconstruct shape. Parametric shapes like ellipses are defined by minimal parameters. Three-dimensional modeling extends this with triangle meshes and NURBS surfaces, but the core 2D mechanism relies on points, lines, and closed polygons.",
+    "mechanisms": [
+      {
+        "title": "Point and Line Segment Primitives",
+        "explanation": "The most primitive elements are points (0-dimensional locations) and straight line segments (1-dimensional). Early vector graphics systems relied solely on these. In modern 2D systems, lines and curves are built from samples of points, with software interpolating the intervening shape as parametric curves such as Bézier curves or circular arcs.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Polygon and Triangle Construction",
+        "explanation": "Polygons are defined as closed polylines that bound a 2D region. Because arbitrary polygons are complex, many systems treat triangles as the fundamental primitive, since every polygon can be decomposed into triangles through polygon triangulation. This allows consistent rendering and spatial partitioning into interior and exterior regions.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific interpolation algorithms choose between linear, cubic, or Bézier segment types at runtime",
+      "Whether a given implementation treats triangles as true geometric primitives or merely as a derived construct from polylines",
+      "The extent to which curves are stored as primitive entities versus being generated from straight-line segments",
+      "How dimensional generalization (e.g., representing a city as a point) is algorithmically enforced in vector data models"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Geometric primitive",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386096222",
+    "revision": "1386096222",
+    "observedAt": "2026-11-23T03:19:45.826Z",
+    "sourceTimestamp": "2026-11-16T22:26:49Z",
+    "sha256": "b22509f7da03d7ab6a43ac969d1d8f1ac966e505d407c393250259a582fa9e85",
+    "excerptSha256": "b22509f7da03d7ab6a43ac969d1d8f1ac966e505d407c393250259a582fa9e85",
+    "inspectedCharacters": 10844,
+    "totalCharacters": 10844,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-731b8c54-55ca-407c-afbd-110ee7733bb1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2739,
+    "outputTokens": 447
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f23ac8e3cd9e5db55819aaac6cc213e7de77c87790d93dbc2e09f91081f60627",
+  "artifactDigest": "cabb919df0f208a8566e57ba2c2f9384b44419dc0b737e3eae7250a3abd493cd"
+}
