@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000126-41f80a2813",
+  "title": "AES encryption",
+  "role": "application-tracer",
+  "createdAt": "2026-11-23T01:25:39.164Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "AES is a specification for encrypting electronic data established by NIST, adopted as a FIPS standard in 2001. It is a symmetric-key block cipher based on a substitution–permutation network, operating on 128-bit blocks with key sizes of 128, 192, or 256 bits. The number of processing rounds is 10, 12, or 14 respectively. Each round applies SubBytes (byte substitution using a lookup table), ShiftRows (row-wise cyclic shifting), MixColumns (column-wise linear mixing), and AddRoundKey (XOR with a derived round key). The key schedule expands the cipher key into round keys. Decryption uses inverse operations. AES superseded DES and is used by the US government; it is the only publicly accessible cipher approved by NSA for top-secret information when used in an approved module.",
+  "mechanisms": [
+    {
+      "title": "SubBytes",
+      "explanation": "Each byte in the state array is replaced using a fixed 8-bit lookup table (S-box). The S-box is derived from the multiplicative inverse in GF(2^8) combined with an invertible affine transformation, providing non-linearity and avoiding algebraic attacks.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Key Expansion",
+      "explanation": "The cipher key is expanded into a series of round keys using the AES key schedule. A separate 128-bit round key block is generated for each round plus one additional key, which is XORed with the state during the AddRoundKey step.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact implementation details of the S-box construction beyond the described inverse and affine combination",
+    "Precise hardware or software optimization techniques for MixColumns across different platforms",
+    "Full details of the affine transformation constants used in the S-box generation",
+    "Specific countermeasures against side-channel attacks in particular AES implementations"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Advanced Encryption Standard",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386057520",
+      "revision": "1386057520",
+      "observedAt": "2026-11-19T13:16:01.428Z",
+      "sourceTimestamp": "2026-11-16T17:50:49Z",
+      "sha256": "08cc554176a7e3703a3632470187a1d9ef8e522f8198a9386d37cd0c22eafc60",
+      "excerptSha256": "895dafbc742269e396c593e8c0612d74b23321b67bd5ce45cff7ed3590303b73",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 51937,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects NIST adoption, FIPS 197, symmetric-key block cipher, SPN structure, block/key sizes, round counts, and NSA approval for top secret with approved module.",
+      "Mechanism descriptions for SubBytes and Key Expansion match source details: S-box from multiplicative inverse in GF(2^8) plus affine transformation; key schedule produces 128-bit round keys per round plus one.",
+      "Unknowns listed are appropriate gaps not fully detailed in the source (S-box affine constants, MixColumns optimizations, side-channel countermeasures).",
+      "No unsupported mechanisms, copied passages, or invented execution detected.",
+      "All factual claims in draft are supported by the provided source text."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-83039e73-a000-483b-95c9-efb0eaea0719",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4594,
+      "outputTokens": 435
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-4407318c-f75d-4cbe-96fa-3401601bf22e",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5030,
+      "outputTokens": 159
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "5d71634b5f34cf92d62f93b34aaff22ab432fc783cf5b895bd37a5426de5b7f5",
+    "artifactDigest": "6355043f92dd322679543bb16c9f85a9aeae43a1c597466b4a0aa2f3f8e4565c",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000126-41f80a2813.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
