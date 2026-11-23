@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T12:22:33.055Z",
-  "sequence": 205,
+  "updatedAt": "2026-11-23T13:17:02.952Z",
+  "sequence": 206,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9400,6 +9400,20 @@
       "packet": "research/packets/research-000205-870b6638dc.json",
       "packetDigest": "c19a18fc4c8b404fee550ee693a5a3e070f29f0673e259c77572a69c150301e6",
       "finishedAt": "2026-11-23T12:22:33.055Z"
+    },
+    {
+      "id": "research-000206-e8bfdd2f7a",
+      "role": "application-tracer",
+      "topic": "3D computer graphics software",
+      "day": "2026-11-23",
+      "runId": "45182370383",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T13:17:02.952Z",
+      "expiresAt": "2026-11-23T13:32:02.952Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
