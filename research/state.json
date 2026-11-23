@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T18:17:12.137Z",
-  "sequence": 210,
+  "updatedAt": "2026-11-23T19:12:18.257Z",
+  "sequence": 211,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9637,6 +9637,20 @@
       "packet": "research/packets/research-000210-7388c982ae.json",
       "packetDigest": "521c293945822d859df35bbf515572893b63e596898f23316c6dac2332ac205a",
       "finishedAt": "2026-11-23T18:17:12.137Z"
+    },
+    {
+      "id": "research-000211-bb08a48ba3",
+      "role": "market-data-researcher",
+      "topic": "Average true range",
+      "day": "2026-11-23",
+      "runId": "45246445597",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T19:12:18.257Z",
+      "expiresAt": "2026-11-23T19:27:18.257Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
