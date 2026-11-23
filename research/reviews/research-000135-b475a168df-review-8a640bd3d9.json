@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000135-b475a168df-review-8a640bd3d9",
+  "parentJobId": "research-000135-b475a168df",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "e29ebc8d8c98ce3bbc769f6ac9154a385355d3b652c4ae8998af41384ebc2c00",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Audit trail",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1367201092",
+    "revision": "1367201092",
+    "observedAt": "2026-11-20T00:33:48.571Z",
+    "sourceTimestamp": "2026-08-01T17:32:51Z",
+    "sha256": "65f6ffb03b1ccabd3675de8f188cc9426ee119380d545a08cc521f413ec5b720",
+    "excerptSha256": "65f6ffb03b1ccabd3675de8f188cc9426ee119380d545a08cc521f413ec5b720",
+    "inspectedCharacters": 10252,
+    "totalCharacters": 10252,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope",
+      "Mechanisms correctly capture privileged-mode generation and access restriction from source",
+      "Unknowns appropriately identify gaps not addressed in source",
+      "No unsupported mechanisms or invented execution details",
+      "Regulatory and industry examples align with source citations"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-b99596d8-380e-4fb0-b034-3605e1053604",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3083,
+    "outputTokens": 67
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
