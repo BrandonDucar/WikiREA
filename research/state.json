@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T06:33:30.066Z",
+  "updatedAt": "2026-11-23T06:33:34.200Z",
   "sequence": 200,
   "jobs": [
     {
@@ -9129,13 +9129,44 @@
       "topic": "ASHRAE Handbook",
       "day": "2026-11-23",
       "runId": "45124884741",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T06:33:30.066Z",
       "expiresAt": "2026-11-23T06:48:30.066Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ASHRAE Handbook",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1324399282",
+        "revision": "1324399282",
+        "observedAt": "2026-11-23T06:33:32.550Z",
+        "sourceTimestamp": "2025-11-27T10:42:41Z",
+        "sha256": "381f8015ec2af6f0c511631694c2a70e78cc2760688fc3bb967739f708edd376",
+        "excerptSha256": "381f8015ec2af6f0c511631694c2a70e78cc2760688fc3bb967739f708edd376",
+        "inspectedCharacters": 7030,
+        "totalCharacters": 7030,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-456c5e48-00d1-4d32-89b9-173abd5a33d6",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2179,
+        "outputTokens": 299
+      },
+      "packet": "research/packets/research-000200-a62225c1d0.json",
+      "packetDigest": "0face7ed0dc495def2706deacaa9eb0e3276cfa08517e9b39bacf4bcd79daa3a",
+      "finishedAt": "2026-11-23T06:33:34.200Z"
     }
   ],
   "discovered": [
@@ -9178,11 +9209,6 @@
       "title": "Autoregressive model",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000026-bf20caf174"
-    },
-    {
-      "title": "ASHRAE Handbook",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000027-b59cd37049"
     },
     {
       "title": "ASTM A325",
@@ -14223,6 +14249,26 @@
       "title": "Bessel process",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000199-e9cb620e19"
+    },
+    {
+      "title": "Air Movement and Control Association",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000200-a62225c1d0"
+    },
+    {
+      "title": "Air barrier",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000200-a62225c1d0"
+    },
+    {
+      "title": "Air changes per hour",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000200-a62225c1d0"
+    },
+    {
+      "title": "Air conditioner inverter",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000200-a62225c1d0"
     }
   ],
   "reviewJobs": [
