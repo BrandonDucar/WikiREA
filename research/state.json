@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T17:25:05.294Z",
-  "sequence": 209,
+  "updatedAt": "2026-11-23T18:17:07.841Z",
+  "sequence": 210,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9592,6 +9592,20 @@
       "packet": "research/packets/research-000209-23136c9b8e.json",
       "packetDigest": "ff762a12abf2f1c742b923c8d94d805eb9394105f4a1519f576febb58938ff06",
       "finishedAt": "2026-11-23T16:16:23.270Z"
+    },
+    {
+      "id": "research-000210-7388c982ae",
+      "role": "hardware-interoperability-scout",
+      "topic": "ASTM A325",
+      "day": "2026-11-23",
+      "runId": "45236703846",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T18:17:07.841Z",
+      "expiresAt": "2026-11-23T18:32:07.841Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
