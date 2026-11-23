@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T16:16:15.985Z",
+  "updatedAt": "2026-11-23T16:16:23.270Z",
   "sequence": 209,
   "jobs": [
     {
@@ -9550,13 +9550,44 @@
       "topic": "Airy process",
       "day": "2026-11-23",
       "runId": "45214524728",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T16:16:15.985Z",
       "expiresAt": "2026-11-23T16:31:15.985Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Airy process",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1306709002",
+        "revision": "1306709002",
+        "observedAt": "2026-11-23T16:16:18.362Z",
+        "sourceTimestamp": "2025-08-19T07:36:49Z",
+        "sha256": "e9a6fab16df6d85b1812370ea922ba33d9d0db1ebbfb24d888e8b8f5e4c95075",
+        "excerptSha256": "e9a6fab16df6d85b1812370ea922ba33d9d0db1ebbfb24d888e8b8f5e4c95075",
+        "inspectedCharacters": 6280,
+        "totalCharacters": 6280,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9ce2da34-fbeb-4475-8102-3e2f2b65e110",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2478,
+        "outputTokens": 559
+      },
+      "packet": "research/packets/research-000209-23136c9b8e.json",
+      "packetDigest": "ff762a12abf2f1c742b923c8d94d805eb9394105f4a1519f576febb58938ff06",
+      "finishedAt": "2026-11-23T16:16:23.270Z"
     }
   ],
   "discovered": [
@@ -9569,11 +9600,6 @@
       "title": "3D projection",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000025-6fb0247cd6"
-    },
-    {
-      "title": "Airy process",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000026-bf20caf174"
     },
     {
       "title": "Asset pricing model",
@@ -14834,6 +14860,16 @@
       "title": "Column vector",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000208-130d412f6d"
+    },
+    {
+      "title": "Airy function",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000209-23136c9b8e"
+    },
+    {
+      "title": "Asymmetric simple exclusion process",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000209-23136c9b8e"
     }
   ],
   "reviewJobs": [

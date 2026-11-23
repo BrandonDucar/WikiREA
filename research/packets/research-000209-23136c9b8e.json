@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000209-23136c9b8e",
+  "topic": "Airy process",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Airy processes are stationary stochastic processes that arise as universal limit objects in random growth and random matrix theory, describing spatial fluctuations in the (1+1)-dimensional KPZ universality class. The Airy_2 process, introduced by Prähofer and Spohn in 2002, emerges as the scaling limit of the PNG droplet model with step initial conditions. Its finite-dimensional distribution is expressed via a Fredholm determinant involving an extended Airy kernel, and its one-point marginal is the Tracy-Widom distribution of the Gaussian Unitary Ensemble. Variants include Airy_1 and Airy_stat, each linked to different initial conditions and kernel structures.",
+    "mechanisms": [
+      {
+        "title": "Finite-dimensional distribution via Fredholm determinant",
+        "explanation": "The Airy_2 process is defined through its finite-dimensional distributions using a Fredholm determinant of the extended Airy kernel. For any set of times t_1,...,t_n and thresholds ξ_1,...,ξ_n, the probability that the process stays below those thresholds is given by det(1 - f^{1/2} K_ext_Ai f^{1/2}) on L^2 of the time set times R, where f is an indicator function and K_ext_Ai is the extended Airy kernel involving integrals of Airy functions. When all times are equal, the kernel reduces to the Airy kernel and the marginal distribution becomes the Tracy-Widom GUE distribution.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Emergence from KPZ universality class scaling limits",
+        "explanation": "Airy processes are conjectured to be universal limits describing the long-time, large-scale spatial fluctuations of models in the KPZ universality class. The Airy_2 process specifically arises as the scaling limit of the PNG droplet model with step initial conditions, and more generally as the limit of TASEP fluctuations with step initial conditions. The Airy_1 process similarly emerges from TASEP with flat initial conditions, with its one-point marginal being a scalar multiple of the Tracy-Widom GOE distribution.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact construction method for sample paths beyond finite-dimensional distributions",
+      "Complete characterization of the extended Airy kernel's dependence on time ordering beyond the given integral formulas",
+      "Mechanism ensuring almost sure continuity of sample paths for the Airy_2 process beyond the cited proof for the PNG droplet model",
+      "Relationship details between Airy_1 and Airy_2 processes beyond their emergence from different TASEP initial conditions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Airy process",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1306709002",
+    "revision": "1306709002",
+    "observedAt": "2026-11-23T16:16:18.362Z",
+    "sourceTimestamp": "2025-08-19T07:36:49Z",
+    "sha256": "e9a6fab16df6d85b1812370ea922ba33d9d0db1ebbfb24d888e8b8f5e4c95075",
+    "excerptSha256": "e9a6fab16df6d85b1812370ea922ba33d9d0db1ebbfb24d888e8b8f5e4c95075",
+    "inspectedCharacters": 6280,
+    "totalCharacters": 6280,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-9ce2da34-fbeb-4475-8102-3e2f2b65e110",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2478,
+    "outputTokens": 559
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "11553e0b357d91a59c66af14550668cbfdbbef74fb3aab57fb0f426028221caf",
+  "artifactDigest": "ff762a12abf2f1c742b923c8d94d805eb9394105f4a1519f576febb58938ff06"
+}
