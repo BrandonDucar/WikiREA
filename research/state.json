@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T15:25:58.131Z",
-  "sequence": 208,
+  "updatedAt": "2026-11-23T16:16:15.985Z",
+  "sequence": 209,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9543,6 +9543,20 @@
       "packet": "research/packets/research-000208-130d412f6d.json",
       "packetDigest": "92a66dacbe59c93e1857645fb9909e8ea1f69897933765e6fdafd9900b5af652",
       "finishedAt": "2026-11-23T15:16:07.395Z"
+    },
+    {
+      "id": "research-000209-23136c9b8e",
+      "role": "simulation-researcher",
+      "topic": "Airy process",
+      "day": "2026-11-23",
+      "runId": "45214524728",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T16:16:15.985Z",
+      "expiresAt": "2026-11-23T16:31:15.985Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
