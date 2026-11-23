@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000207-b6b3af50e8",
+  "topic": "Addison-Wesley",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Addison-Wesley is an American educational publisher and imprint of Pearson plc, founded in 1942 by Lew and Melbourne Cummings. It primarily publishes textbooks and computer science literature, distributing technical titles via O'Reilly Online Learning. While historically significant for foundational works in programming and mathematics, the majority of its sales derive from the United States and Europe. The imprint operates under Pearson's educational division, having undergone several corporate transitions including acquisitions and rebranding.",
+    "mechanisms": [
+      {
+        "title": "Imprint and Distribution Model",
+        "explanation": "Addison-Wesley functions as an imprint of Pearson plc, distributing technical titles through the O'Reilly Online Learning e-reference service. Its publications focus on textbooks and computer literature, with the majority of sales originating from the United States and Europe.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Historical Corporate Evolution",
+        "explanation": "Founded in 1942, Addison-Wesley was acquired by Pearson PLC in 1988, became part of Addison Wesley Longman in 1994, and saw its trade division sold to Perseus Books Group in 1997. Pearson subsequently merged its educational division with Simon & Schuster to form Pearson Education, rebranding to Pearson in 2011 and relocating offices to Boston.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact current executive leadership and organizational structure",
+      "Detailed financial breakdowns beyond regional sales percentages",
+      "Specific internal editorial or author selection processes",
+      "Precise mechanisms for contemporary digital distribution beyond stated O'Reilly partnership"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Addison-Wesley",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384854146",
+    "revision": "1384854146",
+    "observedAt": "2026-11-23T14:16:49.347Z",
+    "sourceTimestamp": "2026-11-10T11:28:49Z",
+    "sha256": "0b224856c7be47b04c85c5b205b9e29f679a3d0d1bcff7e17f41ede82f13f09d",
+    "excerptSha256": "0b224856c7be47b04c85c5b205b9e29f679a3d0d1bcff7e17f41ede82f13f09d",
+    "inspectedCharacters": 6452,
+    "totalCharacters": 6452,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c918f7ca-04dc-4a89-9f38-cb89d48e59a8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2109,
+    "outputTokens": 368
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b6dd2219edd79cf2a5f37ce90e15e994b35a00ebcd246a27d816d39328f6540e",
+  "artifactDigest": "134107ec1a7a5b6ff3a4141f5a835a40549e58918487499babfd930bcc434552"
+}
