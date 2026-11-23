@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T20:14:23.159Z",
+  "updatedAt": "2026-11-23T20:14:26.812Z",
   "sequence": 212,
   "jobs": [
     {
@@ -9693,13 +9693,44 @@
       "topic": "Ardour (software)",
       "day": "2026-11-23",
       "runId": "45257264762",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T20:14:23.159Z",
       "expiresAt": "2026-11-23T20:29:23.159Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Ardour (software)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384210850",
+        "revision": "1384210850",
+        "observedAt": "2026-11-23T20:14:25.033Z",
+        "sourceTimestamp": "2026-11-07T04:19:05Z",
+        "sha256": "4d5d5c06ff8c6c967359cae14f2c07003132d63d0c59be206577ec999b5a9372",
+        "excerptSha256": "4d5d5c06ff8c6c967359cae14f2c07003132d63d0c59be206577ec999b5a9372",
+        "inspectedCharacters": 10878,
+        "totalCharacters": 10878,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2f28482f-d555-4daa-afd2-7fbbac208faa",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3486,
+        "outputTokens": 378
+      },
+      "packet": "research/packets/research-000212-e501166961.json",
+      "packetDigest": "ef78259a5f8050244ab83f19a57b488a5d0da7d01a3f78ea689efdbcd9d33020",
+      "finishedAt": "2026-11-23T20:14:26.812Z"
     }
   ],
   "discovered": [
@@ -9752,11 +9783,6 @@
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
-    },
-    {
-      "title": "Ardour (software)",
-      "role": "music-events",
-      "discoveredFrom": "research-000028-66915e6d6c"
     },
     {
       "title": "Audacity (audio editor)",
@@ -14997,6 +15023,26 @@
       "title": "Candlestick pattern",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000211-bb08a48ba3"
+    },
+    {
+      "title": "32-bit computing",
+      "role": "music-events",
+      "discoveredFrom": "research-000212-e501166961"
+    },
+    {
+      "title": "AI agent",
+      "role": "music-events",
+      "discoveredFrom": "research-000212-e501166961"
+    },
+    {
+      "title": "ARM architecture",
+      "role": "music-events",
+      "discoveredFrom": "research-000212-e501166961"
+    },
+    {
+      "title": "Audio Interchange File Format",
+      "role": "music-events",
+      "discoveredFrom": "research-000212-e501166961"
     }
   ],
   "reviewJobs": [

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000212-e501166961",
+  "topic": "Ardour (software)",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Ardour is a cross-platform, open-source digital audio workstation designed for professional use. It provides a flexible routing system for mixing an unlimited number of tracks and buses, and supports sample-level editing operations such as trimming, splitting, and time-stretching. The software can function as a mastering environment and exports standard audio CD metadata. It integrates AI-assisted workflows through a Model Context Protocol server, allowing AI agents to manage plug-ins and MIDI data. Ardour adheres to industry standards for timing and format compatibility across Linux, macOS, FreeBSD, and Windows.",
+    "mechanisms": [
+      {
+        "title": "Anything-to-anywhere routing and automation",
+        "explanation": "Ardour uses an 'anything to anywhere' routing system that allows arbitrary connections between tracks and buses. Gain, panning, and plug-in parameters can be automated, and all internal mixing is performed in 32-bit floating-point format to maintain audio fidelity.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "MCP server for AI-assisted workflows",
+        "explanation": "Ardour supports AI-assisted workflows via a Model Context Protocol server. This mechanism allows AI agents to insert or remove audio plug-ins, create and edit MIDI notes and regions, and modify session information.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Internal signal routing implementation details beyond the documented 'anything to anywhere' model",
+      "Precise algorithmic details of the sample-level time-stretching and crossfade editors",
+      "Specifics of how the MCP server communicates with AI agents at the protocol level",
+      "Low-level audio engine architecture for real-time processing across supported platforms"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Ardour (software)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384210850",
+    "revision": "1384210850",
+    "observedAt": "2026-11-23T20:14:25.033Z",
+    "sourceTimestamp": "2026-11-07T04:19:05Z",
+    "sha256": "4d5d5c06ff8c6c967359cae14f2c07003132d63d0c59be206577ec999b5a9372",
+    "excerptSha256": "4d5d5c06ff8c6c967359cae14f2c07003132d63d0c59be206577ec999b5a9372",
+    "inspectedCharacters": 10878,
+    "totalCharacters": 10878,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2f28482f-d555-4daa-afd2-7fbbac208faa",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3486,
+    "outputTokens": 378
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ded99e8dc15a645ccf6361046fbef9a625ecd4ac00d1ab62c448af959d0493ad",
+  "artifactDigest": "ef78259a5f8050244ab83f19a57b488a5d0da7d01a3f78ea689efdbcd9d33020"
+}
