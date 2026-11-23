@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T07:19:09.961Z",
+  "updatedAt": "2026-11-23T07:19:14.694Z",
   "sequence": 201,
   "jobs": [
     {
@@ -9174,13 +9174,44 @@
       "topic": "Average directional movement index",
       "day": "2026-11-23",
       "runId": "45130185478",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T07:19:09.961Z",
       "expiresAt": "2026-11-23T07:34:09.961Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Average directional movement index",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382225286",
+        "revision": "1382225286",
+        "observedAt": "2026-11-23T07:19:12.459Z",
+        "sourceTimestamp": "2026-10-27T11:56:54Z",
+        "sha256": "a0e660b024de0051f3acc27df9506fe833c22042b55e16a2f51160d220d8ca3a",
+        "excerptSha256": "a0e660b024de0051f3acc27df9506fe833c22042b55e16a2f51160d220d8ca3a",
+        "inspectedCharacters": 6256,
+        "totalCharacters": 6256,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1955912e-d6be-4488-b9de-64f3b06c45a8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2063,
+        "outputTokens": 359
+      },
+      "packet": "research/packets/research-000201-23fcde4895.json",
+      "packetDigest": "5a7aae229a11a9b6c079eaf0d32b709e70207ecd370913fa575593d2a09af813",
+      "finishedAt": "2026-11-23T07:19:14.694Z"
     }
   ],
   "discovered": [
@@ -10413,11 +10444,6 @@
       "title": "ADAT Lightpipe",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000070-adbb730263"
-    },
-    {
-      "title": "Average directional movement index",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000071-c3f1701a85"
     },
     {
       "title": "Average true range",
@@ -14283,6 +14309,16 @@
       "title": "Air conditioner inverter",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000200-a62225c1d0"
+    },
+    {
+      "title": "Bull trap",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000201-23fcde4895"
+    },
+    {
+      "title": "Candlestick chart",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000201-23fcde4895"
     }
   ],
   "reviewJobs": [

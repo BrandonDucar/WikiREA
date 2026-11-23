@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000201-23fcde4895",
+  "topic": "Average directional movement index",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The average directional movement index (ADX) is a technical indicator developed in 1978 to quantify trend strength in financial price series. It is derived from two directional indicators that compare upward and downward price movements over a smoothed period, typically 14 periods. The resulting value ranges from 0 to 100, with readings below 20 indicating weak trend conditions and readings above 40 signaling strong trend strength. As a lagging metric, ADX confirms trend existence rather than predicting direction or momentum.",
+    "mechanisms": [
+      {
+        "title": "Directional movement calculation",
+        "explanation": "ADX begins by calculating upward and downward price movements from high-low ranges. Positive and negative directional movements are determined by comparing these ranges, then smoothed using Wilder's modified moving average over a default 14-period length. The resulting directional indicators are normalized by the smoothed true range to produce percentage values.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Directional index smoothing",
+        "explanation": "The directional index is computed as the absolute difference between the two directional indicators divided by their sum, then scaled to 100. This index is subsequently smoothed using the same Wilder smoothing method to produce the final ADX value, which maintains the 0-100 range through recursive initialization and updating.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise initialization point for the first smoothed average calculation",
+      "Behavior of ADX when directional indicator values approach zero",
+      "Exact threshold interpretation variations across different market regimes",
+      "Performance characteristics when using alternative moving average types"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Average directional movement index",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382225286",
+    "revision": "1382225286",
+    "observedAt": "2026-11-23T07:19:12.459Z",
+    "sourceTimestamp": "2026-10-27T11:56:54Z",
+    "sha256": "a0e660b024de0051f3acc27df9506fe833c22042b55e16a2f51160d220d8ca3a",
+    "excerptSha256": "a0e660b024de0051f3acc27df9506fe833c22042b55e16a2f51160d220d8ca3a",
+    "inspectedCharacters": 6256,
+    "totalCharacters": 6256,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-1955912e-d6be-4488-b9de-64f3b06c45a8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2063,
+    "outputTokens": 359
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b3db9d5acf4b3101189d95df5daf30a9b419836f2734a046c5a1e9cf92626be5",
+  "artifactDigest": "5a7aae229a11a9b6c079eaf0d32b709e70207ecd370913fa575593d2a09af813"
+}
