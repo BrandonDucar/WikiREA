@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000133-1eeb25dedb",
+  "title": "Bipartite graph",
+  "role": "adversarial-reviewer",
+  "createdAt": "2026-11-23T17:25:05.294Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A bipartite graph partitions vertices into two independent sets where every edge connects a vertex from one set to the other. This structure naturally models relations between two distinct classes of objects, such as users and items, or players and clubs. The defining property is that no odd-length cycles exist, which is equivalent to the graph being 2-colorable. Bipartite graphs are foundational in discrete mathematics and appear in diverse contexts, from social network analysis to railway scheduling and network design.",
+  "mechanisms": [
+    {
+      "title": "Vertex Partitioning and Edge Routing",
+      "explanation": "Vertices are divided into two disjoint sets, U and V. By definition, every edge must originate in one set and terminate in the other; edges never connect two vertices within the same set. This routing constraint enforces the bipartite structure and enables modeling of pairwise interactions between two distinct entity types.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "2-Colorability and Odd-Cycle Exclusion",
+      "explanation": "A graph is bipartite if and only if its vertices can be colored with two colors such that no edge connects same-colored vertices. Equivalently, the graph contains no cycle of odd length. This coloring property provides a practical test for bipartiteness and underpins many algorithmic applications.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How bipartite partitioning is chosen when a graph admits multiple valid divisions",
+    "Algorithmic complexity of determining bipartiteness for dynamic or streaming graphs",
+    "Whether all real-world relational datasets naturally map to a strict two-set partition",
+    "Implementation-specific details of bipartite graph libraries regarding memory layout and traversal order"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Bipartite graph",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368863674",
+      "revision": "1368863674",
+      "observedAt": "2026-11-19T21:14:00.264Z",
+      "sourceTimestamp": "2026-08-11T14:08:52Z",
+      "sha256": "b29ff0d199a1bb761546ea90369940c46b28bbbdd5189f7bc9450ea8c57439b5",
+      "excerptSha256": "bf72aeb8b82bda675f948d7a167e5a83c659484b25ecd1afaca83b1e3bfce2d9",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 33596,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of bipartite graphs as vertex partitions into two independent sets with edges only between sets",
+      "Mechanism 1 correctly describes vertex partitioning and edge routing constraint from source",
+      "Mechanism 2 correctly captures 2-colorability and odd-cycle exclusion equivalence from source",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-eab46e16-6e72-4629-bd38-6900f305efe4",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4561,
+      "outputTokens": 373
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-52e5edf8-6670-420b-96e9-656f2352c2d1",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4893,
+      "outputTokens": 97
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "8f93f7e4f8aed38a3511881acc68feae6d748a65278495278ffe41da66dc9361",
+    "artifactDigest": "86838b8f2fd25a1e9234d5939af31311499f4d830c72f5ec693c6a3f8d17be24",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000133-1eeb25dedb.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
