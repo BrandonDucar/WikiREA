@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T10:16:08.790Z",
-  "sequence": 204,
+  "updatedAt": "2026-11-23T12:22:26.452Z",
+  "sequence": 205,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9355,6 +9355,20 @@
       "packet": "research/packets/research-000204-213ed284bd.json",
       "packetDigest": "fe780e389da1b4f35fdbc070c12053990f0743e8f56972760e1796d580163fc9",
       "finishedAt": "2026-11-23T10:16:08.790Z"
+    },
+    {
+      "id": "research-000205-870b6638dc",
+      "role": "source-curator",
+      "topic": "Analysis of algorithms",
+      "day": "2026-11-23",
+      "runId": "45173652609",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T12:22:26.452Z",
+      "expiresAt": "2026-11-23T12:37:26.452Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
