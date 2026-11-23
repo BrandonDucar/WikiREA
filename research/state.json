@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T03:29:53.318Z",
-  "sequence": 198,
+  "updatedAt": "2026-11-23T04:19:20.272Z",
+  "sequence": 199,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9073,6 +9073,20 @@
       "packet": "research/packets/research-000198-35ca16db72.json",
       "packetDigest": "cabb919df0f208a8566e57ba2c2f9384b44419dc0b737e3eae7250a3abd493cd",
       "finishedAt": "2026-11-23T03:19:49.737Z"
+    },
+    {
+      "id": "research-000199-e9cb620e19",
+      "role": "simulation-researcher",
+      "topic": "Additive process",
+      "day": "2026-11-23",
+      "runId": "45111124779",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T04:19:20.272Z",
+      "expiresAt": "2026-11-23T04:34:20.272Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
