@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000211-bb08a48ba3",
+  "topic": "Average true range",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Average true range (ATR) is a volatility indicator developed by Welles Wilder Jr. for commodities, now used across markets. It measures the degree of price movement over a selected period, typically 14 periods, using a smoothed moving average of \"true range\" values. True range is defined as the greatest of three values: the current period's high-low range, the absolute difference between the current high and the previous close, or the absolute difference between the current low and the previous close. ATR does not indicate price trend, only volatility magnitude. It is calculated as a smoothed moving average of true range values, with the first value computed as an arithmetic mean of the initial N true range values. ATR is applied in position sizing, where current ATR (or a multiple) serves as a self-adjusting stop-loss distance to align trade volume with observed market volatility.",
+    "mechanisms": [
+      {
+        "title": "True range calculation",
+        "explanation": "True range extends the simple high-low range by incorporating the previous close. It is the largest of three values: the current period's high minus low, the absolute difference between the current high and the previous close, or the absolute difference between the current low and the previous close. This ensures all price gaps and limit moves are captured in the volatility measure.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Smoothed moving average of true range",
+        "explanation": "ATR is derived as a smoothed moving average (SMMA) of true range values over N periods. Wilder recommended a 14-period smoothing. The first ATR value is calculated as the arithmetic mean of the initial N true range values; subsequent values use a recursive formula that weights the previous ATR and the current true range.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact formula for the smoothing constant beyond Wilder's stated 14-period SMMA",
+      "Whether the recursive ATR formula matches a specific exponential moving average implementation",
+      "Precise conditions under which ATR is applied to position sizing versus other volatility measures",
+      "Details of back-adjustment procedures for futures contracts and their interaction with ATR calculation"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Average true range",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1359428659",
+    "revision": "1359428659",
+    "observedAt": "2026-11-23T19:12:20.317Z",
+    "sourceTimestamp": "2026-06-15T06:32:57Z",
+    "sha256": "67abdcea2900d0f08f17ff3573555360e26ea518510f023490e93c1689452d56",
+    "excerptSha256": "67abdcea2900d0f08f17ff3573555360e26ea518510f023490e93c1689452d56",
+    "inspectedCharacters": 4885,
+    "totalCharacters": 4885,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-3ddc11d7-9b55-401f-9ba5-8e90d33c2dc7",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1475,
+    "outputTokens": 468
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3ba7f3b517fa40c0087023d3213cfbbbdb99737954257f1656d82507232a1b01",
+  "artifactDigest": "098cc653408453289fdd480479a0b07dfb8f6018adccd1cdaf4cc835625159e1"
+}

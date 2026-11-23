@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T19:12:18.257Z",
+  "updatedAt": "2026-11-23T19:12:23.305Z",
   "sequence": 211,
   "jobs": [
     {
@@ -9644,13 +9644,44 @@
       "topic": "Average true range",
       "day": "2026-11-23",
       "runId": "45246445597",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T19:12:18.257Z",
       "expiresAt": "2026-11-23T19:27:18.257Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Average true range",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1359428659",
+        "revision": "1359428659",
+        "observedAt": "2026-11-23T19:12:20.317Z",
+        "sourceTimestamp": "2026-06-15T06:32:57Z",
+        "sha256": "67abdcea2900d0f08f17ff3573555360e26ea518510f023490e93c1689452d56",
+        "excerptSha256": "67abdcea2900d0f08f17ff3573555360e26ea518510f023490e93c1689452d56",
+        "inspectedCharacters": 4885,
+        "totalCharacters": 4885,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-3ddc11d7-9b55-401f-9ba5-8e90d33c2dc7",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1475,
+        "outputTokens": 468
+      },
+      "packet": "research/packets/research-000211-bb08a48ba3.json",
+      "packetDigest": "098cc653408453289fdd480479a0b07dfb8f6018adccd1cdaf4cc835625159e1",
+      "finishedAt": "2026-11-23T19:12:23.305Z"
     }
   ],
   "discovered": [
@@ -10843,11 +10874,6 @@
       "title": "ADAT Lightpipe",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000070-adbb730263"
-    },
-    {
-      "title": "Average true range",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000071-c3f1701a85"
     },
     {
       "title": "Bear market",
@@ -14948,6 +14974,11 @@
       "title": "ASTM F883",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000210-7388c982ae"
+    },
+    {
+      "title": "Candlestick pattern",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000211-bb08a48ba3"
     }
   ],
   "reviewJobs": [
