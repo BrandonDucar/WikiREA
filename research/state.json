@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T01:25:39.164Z",
-  "sequence": 196,
+  "updatedAt": "2026-11-23T02:22:10.171Z",
+  "sequence": 197,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8979,6 +8979,20 @@
       "packet": "research/packets/research-000196-1a87923a11.json",
       "packetDigest": "718f2637c0d581f2e99b4ff5ffcf8f81302bdcbe06d73d7a68b2848a80a1ddd4",
       "finishedAt": "2026-11-23T01:17:38.930Z"
+    },
+    {
+      "id": "research-000197-93c0e81731",
+      "role": "runtime-researcher",
+      "topic": "Adaptive optimization",
+      "day": "2026-11-23",
+      "runId": "45099782695",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T02:22:10.171Z",
+      "expiresAt": "2026-11-23T02:37:10.171Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
