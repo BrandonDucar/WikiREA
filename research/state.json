@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T00:38:41.164Z",
-  "sequence": 195,
+  "updatedAt": "2026-11-23T01:17:34.008Z",
+  "sequence": 196,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8930,6 +8930,20 @@
       "packet": "research/packets/research-000195-3733335e81.json",
       "packetDigest": "959eea451b34a0a1a7beaf1b5699689532504b7f61a9d3dc47200825217539fd",
       "finishedAt": "2026-11-23T00:38:41.164Z"
+    },
+    {
+      "id": "research-000196-1a87923a11",
+      "role": "application-tracer",
+      "topic": "3D Movie Maker",
+      "day": "2026-11-23",
+      "runId": "45093720418",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T01:17:34.008Z",
+      "expiresAt": "2026-11-23T01:32:34.008Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
