@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T07:28:01.201Z",
-  "sequence": 201,
+  "updatedAt": "2026-11-23T08:22:34.198Z",
+  "sequence": 202,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9216,6 +9216,20 @@
       "packet": "research/packets/research-000201-23fcde4895.json",
       "packetDigest": "5a7aae229a11a9b6c079eaf0d32b709e70207ecd370913fa575593d2a09af813",
       "finishedAt": "2026-11-23T07:19:14.694Z"
+    },
+    {
+      "id": "research-000202-9ceeb5ba09",
+      "role": "music-events",
+      "topic": "Anvil Studio",
+      "day": "2026-11-23",
+      "runId": "45138090957",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T08:22:34.198Z",
+      "expiresAt": "2026-11-23T08:37:34.198Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
