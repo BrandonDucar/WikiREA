@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T13:27:01.652Z",
-  "sequence": 206,
+  "updatedAt": "2026-11-23T14:16:47.249Z",
+  "sequence": 207,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9449,6 +9449,20 @@
       "packet": "research/packets/research-000206-e8bfdd2f7a.json",
       "packetDigest": "6a837d106b5bc70b4ec295c7eabbaace28c656a3d0a73990ae548cc82dfbc677",
       "finishedAt": "2026-11-23T13:17:07.583Z"
+    },
+    {
+      "id": "research-000207-b6b3af50e8",
+      "role": "runtime-researcher",
+      "topic": "Addison-Wesley",
+      "day": "2026-11-23",
+      "runId": "45192462708",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T14:16:47.249Z",
+      "expiresAt": "2026-11-23T14:31:47.249Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
