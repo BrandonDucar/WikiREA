@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T12:22:26.452Z",
+  "updatedAt": "2026-11-23T12:22:33.055Z",
   "sequence": 205,
   "jobs": [
     {
@@ -9362,13 +9362,44 @@
       "topic": "Analysis of algorithms",
       "day": "2026-11-23",
       "runId": "45173652609",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T12:22:26.452Z",
       "expiresAt": "2026-11-23T12:37:26.452Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Analysis of algorithms",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1365706079",
+        "revision": "1365706079",
+        "observedAt": "2026-11-23T12:22:29.089Z",
+        "sourceTimestamp": "2026-07-24T00:03:55Z",
+        "sha256": "113ba8e760c84352c460a6fcfe48b58f5ced145d7ac2b3bf82f8dd1a91b66534",
+        "excerptSha256": "8adc6f902dc17288f27670b7a5ad79c310cb20a67a399ca0ea9aa780fa5ab262",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 25878,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4c58da7a-3ac7-497f-8166-e91eef82b462",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4225,
+        "outputTokens": 309
+      },
+      "packet": "research/packets/research-000205-870b6638dc.json",
+      "packetDigest": "c19a18fc4c8b404fee550ee693a5a3e070f29f0673e259c77572a69c150301e6",
+      "finishedAt": "2026-11-23T12:22:33.055Z"
     }
   ],
   "discovered": [
@@ -10231,11 +10262,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "Analysis of algorithms",
-      "role": "source-curator",
-      "discoveredFrom": "research-000055-d84aa316b7"
     },
     {
       "title": "Antivirus software",
@@ -14546,6 +14572,26 @@
       "title": "Jensen's inequality",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000204-213ed284bd"
+    },
+    {
+      "title": "Amortized analysis",
+      "role": "source-curator",
+      "discoveredFrom": "research-000205-870b6638dc"
+    },
+    {
+      "title": "Arbitrary-precision arithmetic",
+      "role": "source-curator",
+      "discoveredFrom": "research-000205-870b6638dc"
+    },
+    {
+      "title": "Arithmetic progression",
+      "role": "source-curator",
+      "discoveredFrom": "research-000205-870b6638dc"
+    },
+    {
+      "title": "Asymptotic analysis",
+      "role": "source-curator",
+      "discoveredFrom": "research-000205-870b6638dc"
     }
   ],
   "reviewJobs": [

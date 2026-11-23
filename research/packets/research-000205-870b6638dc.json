@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000205-870b6638dc",
+  "topic": "Analysis of algorithms",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Analysis of algorithms determines computational complexity by relating input size to resource usage, typically time or storage. Efficiency is assessed by how slowly resource functions grow relative to input scale. Asymptotic notation like Big O describes growth rates for large inputs, while exact measures depend on specific computational models. Different implementations of the same algorithm can vary by a constant factor. Published lower bounds may reflect restricted models, allowing practical algorithms to surpass theoretical limits.",
+    "mechanisms": [
+      {
+        "title": "Asymptotic complexity estimation",
+        "explanation": "Complexity functions are estimated for arbitrarily large input sizes using asymptotic analysis. Big O, Big-omega, and Big-theta notation classify growth rates, allowing comparison of algorithms independent of constant factors or specific implementations.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Cost model selection",
+        "explanation": "Two primary cost models assign operation costs: the uniform cost model gives constant cost per machine operation, while the logarithmic cost model charges proportionally to bit size. The logarithmic model applies when analyzing algorithms where operand size matters, such as arbitrary-precision arithmetic.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact runtime behavior for specific hardware-software combinations",
+      "Hidden constant factors that affect real-world performance",
+      "Practical optimizations that bypass theoretical lower bounds",
+      "Performance characteristics of algorithms on non-ideal inputs"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Analysis of algorithms",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1365706079",
+    "revision": "1365706079",
+    "observedAt": "2026-11-23T12:22:29.089Z",
+    "sourceTimestamp": "2026-07-24T00:03:55Z",
+    "sha256": "113ba8e760c84352c460a6fcfe48b58f5ced145d7ac2b3bf82f8dd1a91b66534",
+    "excerptSha256": "8adc6f902dc17288f27670b7a5ad79c310cb20a67a399ca0ea9aa780fa5ab262",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 25878,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4c58da7a-3ac7-497f-8166-e91eef82b462",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4225,
+    "outputTokens": 309
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "511c51bf92c6c39f75a3a5e611347ad5709d620f0a94b55248a9fa3ac0132c0a",
+  "artifactDigest": "c19a18fc4c8b404fee550ee693a5a3e070f29f0673e259c77572a69c150301e6"
+}
