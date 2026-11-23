@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000199-e9cb620e19",
+  "topic": "Additive process",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An additive process is a cadlag stochastic process with independent increments and continuity in probability, generalizing Lévy processes by relaxing the stationary increments requirement. It can model complex phenomena with time-dependent drift or volatility. Key mechanisms include independent increments, continuity in probability, and the Lévy–Khintchine representation defining the process via a generating triplet of drift, covariance, and Lévy measure. Subclasses such as additive subordinators, Sato processes, and additive normal tempered stable processes extend the framework for specific applications. Simulation leverages increment independence for computational efficiency, using techniques like jump truncation, Gaussian approximation, and characteristic function inversion with Fast Fourier transform.",
+    "mechanisms": [
+      {
+        "title": "Independent Increments",
+        "explanation": "The process has independent increments if for any 0 ≤ p < r ≤ s < t, the increment X_t - X_s is independent of X_r - X_p. This property allows separate simulation of increments and enables parallelization.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Lévy–Khintchine Representation",
+        "explanation": "An additive process at time t has an infinitely divisible distribution characterized by a generating triplet (γ_t, A_t, ν_t): γ_t is a drift vector, A_t is a covariance matrix, and ν_t is a Lévy measure satisfying ν_t({0}) = 0 and ∫(1 ∧ x²)ν_t(dx) < ∞. The characteristic function is explicitly given by the Lévy–Khintchine formula.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact time-dependence structure of the generating triplet (γ_t, A_t, ν_t) in general additive processes",
+      "Whether mutual independence of finite increments holds beyond pairwise independence",
+      "Physical implementation details of jump simulation truncation thresholds in practical software",
+      "Complete characterization of time-inhomogeneous parameter evolution (k_t, η_t) in additive normal tempered stable processes"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Additive process",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1376833561",
+    "revision": "1376833561",
+    "observedAt": "2026-11-23T04:19:22.299Z",
+    "sourceTimestamp": "2026-09-26T14:27:12Z",
+    "sha256": "f50e2c4bbc53740804d400d820453d8634ef5e2d7251ac5338d1a23014dc3eff",
+    "excerptSha256": "bfb4306b086fde142b1c9f7a88c70c9408db7adeea615137020d083cf76e5708",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 16455,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2139d1b7-a4d2-433a-95a4-4c8b532c7ba8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4479,
+    "outputTokens": 441
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b365f5649e24cc05d8750ed487d8542f77497a97c6ed6954f30ed91ea0a3deca",
+  "artifactDigest": "e8738873be1b9af14849458742c537ef57c8dfffc1d7a9223a87e55d68781a76"
+}
