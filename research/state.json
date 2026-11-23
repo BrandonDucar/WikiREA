@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T15:15:56.977Z",
+  "updatedAt": "2026-11-23T15:16:07.395Z",
   "sequence": 208,
   "jobs": [
     {
@@ -9501,21 +9501,47 @@
       "topic": "2D rotation",
       "day": "2026-11-23",
       "runId": "45203252426",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T15:15:56.977Z",
       "expiresAt": "2026-11-23T15:30:56.977Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "2D rotation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1355915771",
+        "revision": "1355915771",
+        "observedAt": "2026-11-23T15:15:59.296Z",
+        "sourceTimestamp": "2026-05-24T17:41:00Z",
+        "sha256": "ddc8456983f58acfcbafc905a130811065e4e460eee7ad6f91e62c6d70103385",
+        "excerptSha256": "ddc8456983f58acfcbafc905a130811065e4e460eee7ad6f91e62c6d70103385",
+        "inspectedCharacters": 3258,
+        "totalCharacters": 3258,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-18c8704e-5cee-4619-a644-51eac2c7d52d",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1114,
+        "outputTokens": 406
+      },
+      "packet": "research/packets/research-000208-130d412f6d.json",
+      "packetDigest": "92a66dacbe59c93e1857645fb9909e8ea1f69897933765e6fdafd9900b5af652",
+      "finishedAt": "2026-11-23T15:16:07.395Z"
     }
   ],
   "discovered": [
-    {
-      "title": "2D rotation",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000025-6fb0247cd6"
-    },
     {
       "title": "2D to 3D conversion",
       "role": "game-mechanic-researcher",
@@ -14755,6 +14781,41 @@
       "title": "Bjarne Stroustrup",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000207-b6b3af50e8"
+    },
+    {
+      "title": "3D rotation",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000208-130d412f6d"
+    },
+    {
+      "title": "Angle of rotation",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000208-130d412f6d"
+    },
+    {
+      "title": "Circle",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000208-130d412f6d"
+    },
+    {
+      "title": "Circle group",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000208-130d412f6d"
+    },
+    {
+      "title": "Circular motion",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000208-130d412f6d"
+    },
+    {
+      "title": "Clockwise",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000208-130d412f6d"
+    },
+    {
+      "title": "Column vector",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000208-130d412f6d"
     }
   ],
   "reviewJobs": [

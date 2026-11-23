@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000208-130d412f6d",
+  "topic": "2D rotation",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A 2D rotation moves points around a fixed centre point on a plane, preserving distance from that centre. The rotation angle, measured in degrees or radians, defines the turn amount and direction (clockwise or counter-clockwise). Mathematically, the original coordinates are transformed using trigonometric functions: the new x-coordinate equals the original x times the cosine of the angle minus the original y times the sine of the angle, while the new y-coordinate equals the original x times the sine plus the original y times the cosine. This operation can be represented as multiplying a column vector by a rotation matrix or by multiplying a complex number by e^{iθ}. The transformation preserves the point's distance from the centre and the angle between the original and rotated positions equals the rotation angle.",
+    "mechanisms": [
+      {
+        "title": "Matrix transformation",
+        "explanation": "The point (x, y) is treated as a column vector and multiplied by a 2×2 matrix containing cosine and sine of the rotation angle. This produces new coordinates (x', y') that represent the rotated position.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Complex number multiplication",
+        "explanation": "Points are represented as complex numbers x + iy. Rotating by angle θ involves multiplying the number by e^{iθ} and expanding using Euler's formula. Equating real and imaginary parts yields the same coordinate transformation as the matrix method.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How the rotation matrix entries are precomputed or stored in specific software implementations",
+      "Whether the rotation origin is always the coordinate origin or can be any arbitrary point in the plane",
+      "If commutative properties observed in complex number rotations hold for all game engine rotation functions",
+      "The numerical precision handling when applying repeated small rotations over many frames"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "2D rotation",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1355915771",
+    "revision": "1355915771",
+    "observedAt": "2026-11-23T15:15:59.296Z",
+    "sourceTimestamp": "2026-05-24T17:41:00Z",
+    "sha256": "ddc8456983f58acfcbafc905a130811065e4e460eee7ad6f91e62c6d70103385",
+    "excerptSha256": "ddc8456983f58acfcbafc905a130811065e4e460eee7ad6f91e62c6d70103385",
+    "inspectedCharacters": 3258,
+    "totalCharacters": 3258,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-18c8704e-5cee-4619-a644-51eac2c7d52d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1114,
+    "outputTokens": 406
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "675966ada80f249ef81c6fde8b244145aaf9db68bb69405ef4fa17f662f25b2f",
+  "artifactDigest": "92a66dacbe59c93e1857645fb9909e8ea1f69897933765e6fdafd9900b5af652"
+}
