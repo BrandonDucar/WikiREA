@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000132-a819e01d1d",
+  "title": "ADAT",
+  "role": "music-events",
+  "createdAt": "2026-11-23T15:25:58.130Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "ADAT is a magnetic tape format introduced by Alesis in 1991 that records eight digital audio tracks onto standard S-VHS videotape. It enabled affordable multitrack recording for project studios, with units capable of linking together to record up to 128 tracks simultaneously. The format supports 16-bit (Type I) or 20-bit (Type II) samples and offers variable sample rates (44.1 or 48 kHz) for pitch control. Remote operation is possible via dedicated controllers.",
+  "mechanisms": [
+    {
+      "title": "Tape-based multitrack recording",
+      "explanation": "ADAT records eight digital audio tracks simultaneously onto an S-VHS videotape using a rotating head and helical scan write method. Multiple ADAT units can be linked together to achieve sample-accurate timing for recording up to 128 tracks at once.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Sample-rate pitch control",
+      "explanation": "Pitch control is achieved by varying the sample rate, which adjusts the tape speed accordingly. The format supports common industry sample rates of 44.1 kHz and 48 kHz, allowing flexibility in recording speed and pitch.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact head alignment and azimuth calibration details",
+    "Long-term magnetic stability and generational format compatibility limits",
+    "Internal signal processing architecture for track separation",
+    "Precise mechanical timing mechanisms for sample-exact locate functions"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ADAT",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380837114",
+      "revision": "1380837114",
+      "observedAt": "2026-11-19T20:16:09.603Z",
+      "sourceTimestamp": "2026-10-18T06:57:49Z",
+      "sha256": "272c516ab7ec1486873778f9c9842f71d533fe1d91667e6f4068f749d3847f0e",
+      "excerptSha256": "272c516ab7ec1486873778f9c9842f71d533fe1d91667e6f4068f749d3847f0e",
+      "inspectedCharacters": 6269,
+      "totalCharacters": 6269,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on ADAT format, track count, S-VHS media, linking capability, bit depths, sample rates, and remote control",
+      "Mechanism descriptions for tape-based multitrack recording and sample-rate pitch control are directly supported by source text",
+      "Unknowns list appropriately identifies technical details not covered in the source material",
+      "No unsupported mechanisms, copied passages, or invented execution details present",
+      "All factual claims in draft align with cited source information"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-7e888543-05e2-4bf1-bdbc-dc4dc912b8b8",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2123,
+      "outputTokens": 345
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-9db8e5a3-045e-458c-ad5c-ca7b056e817d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2433,
+      "outputTokens": 109
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "87f1f2c6d56dec6f6c9fc2413e1991f1ef81488c5ee80f11faf739985ab30734",
+    "artifactDigest": "f4afbdf205a2fe7ea8fa957a275223486f5461ad3f0b42163d9e0214637352b6",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000132-a819e01d1d.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

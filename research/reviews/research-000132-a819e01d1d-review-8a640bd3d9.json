@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000132-a819e01d1d-review-8a640bd3d9",
+  "parentJobId": "research-000132-a819e01d1d",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "f4afbdf205a2fe7ea8fa957a275223486f5461ad3f0b42163d9e0214637352b6",
+  "sourcePin": {
+    "id": "S1",
+    "title": "ADAT",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380837114",
+    "revision": "1380837114",
+    "observedAt": "2026-11-19T20:16:09.603Z",
+    "sourceTimestamp": "2026-10-18T06:57:49Z",
+    "sha256": "272c516ab7ec1486873778f9c9842f71d533fe1d91667e6f4068f749d3847f0e",
+    "excerptSha256": "272c516ab7ec1486873778f9c9842f71d533fe1d91667e6f4068f749d3847f0e",
+    "inspectedCharacters": 6269,
+    "totalCharacters": 6269,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on ADAT format, track count, S-VHS media, linking capability, bit depths, sample rates, and remote control",
+      "Mechanism descriptions for tape-based multitrack recording and sample-rate pitch control are directly supported by source text",
+      "Unknowns list appropriately identifies technical details not covered in the source material",
+      "No unsupported mechanisms, copied passages, or invented execution details present",
+      "All factual claims in draft align with cited source information"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-9db8e5a3-045e-458c-ad5c-ca7b056e817d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2433,
+    "outputTokens": 109
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
