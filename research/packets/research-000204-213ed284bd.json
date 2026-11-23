@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000204-213ed284bd",
+  "topic": "Drift plus penalty",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The drift-plus-penalty method stabilizes queueing networks while minimizing the time average of a penalty function. It defines a Lyapunov function based on queue backlogs and greedily minimizes a drift-plus-penalty expression each time slot. A non-negative weight V controls the trade-off between penalty minimization and average queue size. When V=0, the method reduces to backpressure routing. The technique uses virtual queues to enforce time-average constraints and can optimize diverse objectives like power, throughput, and reward metrics without requiring knowledge of arrival distributions.",
+    "mechanisms": [
+      {
+        "title": "Lyapunov drift minimization",
+        "explanation": "Each time slot observes the current queue state and selects control actions to greedily minimize an upper bound on the Lyapunov drift, defined as the difference between the Lyapunov function at time t+1 and time t, typically based on squared queue sizes.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Drift-plus-penalty expression optimization",
+        "explanation": "Control actions are chosen to minimize the sum of the Lyapunov drift and V times the penalty function p(t). The weight V can be tuned to make the time average of p(t) arbitrarily close to optimal, at the expense of larger average queue sizes.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact probability distributions of random events and control action outcomes",
+      "Convexity or continuity assumptions for the penalty and constraint functions",
+      "Specific convergence rates for queue backlog stabilization under arbitrary V values",
+      "Detailed implementation steps for non-queueing stochastic systems beyond the stated applications"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Drift plus penalty",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1312061186",
+    "revision": "1312061186",
+    "observedAt": "2026-11-23T10:16:05.564Z",
+    "sourceTimestamp": "2025-09-18T12:46:09Z",
+    "sha256": "39e33d385beef533f0674d09e3f4346c707d6cb44035e329710a3d9eb4b5e6c0",
+    "excerptSha256": "2808ce080d198ad0de65e033ca2d5cf74d9bb6a52d40e4b5c1aa3d0638b5e5a0",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 40560,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-cbf08254-ba15-43e4-b29e-f5a17bcd6b69",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4269,
+    "outputTokens": 363
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "9a5dcbbb02b7ad7d91a7de14d8ed67770bddd72dc9b94da5ffe540353b039c9c",
+  "artifactDigest": "fe780e389da1b4f35fdbc070c12053990f0743e8f56972760e1796d580163fc9"
+}
