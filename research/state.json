@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T02:22:10.171Z",
+  "updatedAt": "2026-11-23T02:22:14.941Z",
   "sequence": 197,
   "jobs": [
     {
@@ -8986,13 +8986,44 @@
       "topic": "Adaptive optimization",
       "day": "2026-11-23",
       "runId": "45099782695",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T02:22:10.171Z",
       "expiresAt": "2026-11-23T02:37:10.171Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adaptive optimization",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384596557",
+        "revision": "1384596557",
+        "observedAt": "2026-11-23T02:22:12.270Z",
+        "sourceTimestamp": "2026-11-09T01:47:07Z",
+        "sha256": "31bcfe738c3d58521e589a121bb76711d21ff65b411ecb6cc433836ba581ada8",
+        "excerptSha256": "31bcfe738c3d58521e589a121bb76711d21ff65b411ecb6cc433836ba581ada8",
+        "inspectedCharacters": 2819,
+        "totalCharacters": 2819,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-8620c41d-d578-4b18-a4a3-9df85621695c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 895,
+        "outputTokens": 349
+      },
+      "packet": "research/packets/research-000197-93c0e81731.json",
+      "packetDigest": "3886efa81cb77c90657c97aac216d5c568149dd757bc2272e58e93ae13d4abfb",
+      "finishedAt": "2026-11-23T02:22:14.941Z"
     }
   ],
   "discovered": [
@@ -10130,11 +10161,6 @@
       "title": "AMosaic",
       "role": "application-tracer",
       "discoveredFrom": "research-000066-02c0e9d820"
-    },
-    {
-      "title": "Adaptive optimization",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000067-a5933051f2"
     },
     {
       "title": "Addison-Wesley",
@@ -14005,6 +14031,46 @@
       "title": "ASP.NET Core",
       "role": "application-tracer",
       "discoveredFrom": "research-000196-1a87923a11"
+    },
+    {
+      "title": "Ars Technica",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "Computer program",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "Dynamic recompilation",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "Dynamo project",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "HotSpot",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "Hot spot (computer programming)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "Inline expansion",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
+    },
+    {
+      "title": "JVM bytecode",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000197-93c0e81731"
     }
   ],
   "reviewJobs": [

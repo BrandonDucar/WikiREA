@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000197-93c0e81731",
+  "topic": "Adaptive optimization",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Adaptive optimization is a computer science technique that dynamically recompiles program portions based on runtime execution profiles. It balances just-in-time compilation with interpretation, and can optimize away branches or inline procedure calls when local data conditions favor specific code paths. If execution patterns shift, the system recompiles to optimize the new common case. Notable examples include HotSpot and the Dynamo system. In some Java virtual machines, provably reversible execution of bytecode allows the optimizer to make risky assumptions; when assumptions fail, the system unwinds to a valid state and interprets correctly.",
+    "mechanisms": [
+      {
+        "title": "Dynamic recompilation based on execution profiles",
+        "explanation": "The system monitors runtime behavior and recompiles frequently executed code paths into optimized assembly. It trades off compilation overhead against interpretation speed, adapting when execution patterns change.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Assumption-based optimization with safe deoptimization",
+        "explanation": "When execution over bytecode ranges can be provably reversed, the optimizer may assume favorable conditions (e.g., all transactions are checks). If assumptions prove incorrect, the system unwinds to a valid state and falls back to correct interpretation rather than producing erroneous results.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How frequently execution patterns must shift to trigger recompilation in practice",
+      "Exact thresholds or heuristics governing when optimization decisions are made",
+      "Whether all adaptive optimizers support reversible bytecode execution for assumption rollback",
+      "The specific mechanisms by which inline expansion cost is measured and compared against interpretation overhead"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adaptive optimization",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384596557",
+    "revision": "1384596557",
+    "observedAt": "2026-11-23T02:22:12.270Z",
+    "sourceTimestamp": "2026-11-09T01:47:07Z",
+    "sha256": "31bcfe738c3d58521e589a121bb76711d21ff65b411ecb6cc433836ba581ada8",
+    "excerptSha256": "31bcfe738c3d58521e589a121bb76711d21ff65b411ecb6cc433836ba581ada8",
+    "inspectedCharacters": 2819,
+    "totalCharacters": 2819,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8620c41d-d578-4b18-a4a3-9df85621695c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 895,
+    "outputTokens": 349
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1de910a3a0bc51a047cff5b1ec2402fcbdb5d5ddc37f9ae107075f041f4472fb",
+  "artifactDigest": "3886efa81cb77c90657c97aac216d5c568149dd757bc2272e58e93ae13d4abfb"
+}
