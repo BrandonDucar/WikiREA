@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T01:17:34.008Z",
+  "updatedAt": "2026-11-23T01:17:38.930Z",
   "sequence": 196,
   "jobs": [
     {
@@ -8937,13 +8937,44 @@
       "topic": "3D Movie Maker",
       "day": "2026-11-23",
       "runId": "45093720418",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T01:17:34.008Z",
       "expiresAt": "2026-11-23T01:32:34.008Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D Movie Maker",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383700146",
+        "revision": "1383700146",
+        "observedAt": "2026-11-23T01:17:36.348Z",
+        "sourceTimestamp": "2026-11-04T06:39:36Z",
+        "sha256": "11641800dbeabc631da2cae35190bbb91f84a930bfa3a3430299f113f4ec7769",
+        "excerptSha256": "6feb3c7a504efd3c4d18a5e34aa204e15bc74192d7879c33eb00843c2a31c6fd",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 14434,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-de3ca1e4-835e-436d-9e93-3e6ce168541c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4128,
+        "outputTokens": 437
+      },
+      "packet": "research/packets/research-000196-1a87923a11.json",
+      "packetDigest": "718f2637c0d581f2e99b4ff5ffcf8f81302bdcbe06d73d7a68b2848a80a1ddd4",
+      "finishedAt": "2026-11-23T01:17:38.930Z"
     }
   ],
   "discovered": [
@@ -9204,11 +9235,6 @@
     },
     {
       "title": "3D Gaussian splatting",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000033-a2037c0afa"
-    },
-    {
-      "title": "3D Movie Maker",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000033-a2037c0afa"
     },
@@ -9846,11 +9872,6 @@
       "title": "Apache Groovy",
       "role": "source-curator",
       "discoveredFrom": "research-000055-d84aa316b7"
-    },
-    {
-      "title": "3D Movie Maker",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000056-4de8f52dba"
     },
     {
       "title": "3D computer graphics software",
@@ -13941,6 +13962,31 @@
       "title": "Application programming interface",
       "role": "source-curator",
       "discoveredFrom": "research-000195-3733335e81"
+    },
+    {
+      "title": ".NET Micro Framework",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000196-1a87923a11"
+    },
+    {
+      "title": "2 Stupid Dogs",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000196-1a87923a11"
+    },
+    {
+      "title": "ASP.NET",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000196-1a87923a11"
+    },
+    {
+      "title": "ASP.NET AJAX",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000196-1a87923a11"
+    },
+    {
+      "title": "ASP.NET Core",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000196-1a87923a11"
     }
   ],
   "reviewJobs": [

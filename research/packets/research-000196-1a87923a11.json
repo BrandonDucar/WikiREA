@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000196-1a87923a11",
+  "topic": "3D Movie Maker",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3D Movie Maker is a discontinued 1995 Microsoft Kids children's program for creating films using pre-rendered 3D environments. Users place characters and props into static scenes, add actions, sound, music, text, and special effects, and save movies in .3mm format. The interface is structured around a virtual theater building housing creation and viewing tools. The program runs on a software rasterized 3D graphics engine and renders backgrounds as depth-buffered images to occlude polygonal meshes. Playback is capped to 6-8 frames per second due to hardware limitations. Following open-sourcing of the BRender engine in 2022, the program's source code became available under the MIT License.",
+    "mechanisms": [
+      {
+        "title": "Pre-rendered background occlusion via depth buffer",
+        "explanation": "Scene backgrounds are pre-rendered images with an associated depth buffer. At runtime, the depth buffer is compared against rendered polygonal meshes to determine which background elements should appear in front of or behind characters and props, creating the illusion of 3D occlusion despite backgrounds being two-dimensional images.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Frame-position storage and destructive editing",
+        "explanation": "The software stores character and object positions for each frame rather than abstract keyframes or inbetweens. Movies are recorded frame-by-frame in quick succession using a destructive editing paradigm, meaning edits replace prior frame data. Playback frame rate is internally capped to 6-8 fps depending on system performance.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal data structure of .3mm and .vmm file formats beyond documented frame positions",
+      "Precise mechanism for runtime interpolation between stored frame positions",
+      "Details of how the MIT-licensed BRender engine source code maps to the original 1995 binary behavior",
+      "Specific process for converting movies to external video file formats using third-party utilities"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D Movie Maker",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383700146",
+    "revision": "1383700146",
+    "observedAt": "2026-11-23T01:17:36.348Z",
+    "sourceTimestamp": "2026-11-04T06:39:36Z",
+    "sha256": "11641800dbeabc631da2cae35190bbb91f84a930bfa3a3430299f113f4ec7769",
+    "excerptSha256": "6feb3c7a504efd3c4d18a5e34aa204e15bc74192d7879c33eb00843c2a31c6fd",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 14434,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-de3ca1e4-835e-436d-9e93-3e6ce168541c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4128,
+    "outputTokens": 437
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "13b8bb67211bea4739a3543e80575146ac524f775ed63bdde6609c24ed1bac0b",
+  "artifactDigest": "718f2637c0d581f2e99b4ff5ffcf8f81302bdcbe06d73d7a68b2848a80a1ddd4"
+}
