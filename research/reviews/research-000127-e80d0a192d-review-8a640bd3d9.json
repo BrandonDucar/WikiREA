@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000127-e80d0a192d-review-8a640bd3d9",
+  "parentJobId": "research-000127-e80d0a192d",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "b98a83d11760c6e6b3c6e43aa8c254f5a8b26cbff649e57951b447e0fd7c6f0d",
+  "sourcePin": {
+    "id": "S1",
+    "title": "64-bit computing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384996448",
+    "revision": "1384996448",
+    "observedAt": "2026-11-19T14:16:44.471Z",
+    "sourceTimestamp": "2026-11-11T08:12:45Z",
+    "sha256": "d8c32c2b688a5d4ec8d4d0dd94fa2df14855393fa483ba6ae098723c86dd1f02",
+    "excerptSha256": "b84642dd7a195a4c77e77d447e1d9b920d4c27d492f534f92ef6e5dd03142073",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 61056,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 64-bit definitions, register capacity, and historical timeline",
+      "Mechanisms correctly describe register width limiting addressability and partial virtual/physical address support in x86-64/AArch64",
+      "Unknowns appropriately identify gaps in source about physical address limitations, bus/register size differences, and floating-point hardware variations",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often', 'not all', and 'several' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-a9ad6ba1-c08b-41ca-9b2b-7f5a69206f78",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4753,
+    "outputTokens": 116
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

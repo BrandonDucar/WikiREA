@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000127-e80d0a192d",
+  "title": "64-bit computing",
+  "role": "runtime-researcher",
+  "createdAt": "2026-11-23T03:29:53.317Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "64-bit computing uses 64-bit integers, memory addresses, and processor registers to handle larger data units than 32-bit systems. A 64-bit register can store 2^64 distinct values, enabling direct access to 2^64 bytes (16 exabytes) of byte-addressable memory. While 64-bit processors have existed in supercomputers since the 1970s and RISC workstations since the early 1990s, they entered the mainstream personal computer market in 2003 with x86-64 and PowerPC G5 processors. The primary benefit is the ability to address far more physical RAM than the 4 GB limit of 32-bit architectures, though the full 64-bit address space is rarely utilized in practice.",
+  "mechanisms": [
+    {
+      "title": "64-bit processor registers",
+      "explanation": "Processor registers that are 64 bits wide allow direct support for 64-bit data types and memory addresses. The width of these registers normally limits the amount of directly addressable memory, even if other register types (e.g., floating-point) are wider.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "64-bit virtual and physical addressing",
+      "explanation": "64-bit computing uses machine code with 64-bit virtual memory addresses. However, not all instruction sets support full 64-bit virtual addresses; for example, x86-64 and AArch64 support only 48 bits, with the remaining 16 bits required to be all zeros or all ones. Several 64-bit instruction sets also support fewer than 64 bits of physical memory address.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Why some 64-bit instruction sets support fewer than 64 bits of physical memory address",
+    "How external data buses or address buses with sizes different from registers affect addressability",
+    "The specific reasons why the full 64-bit address space is rarely utilized despite theoretical capacity",
+    "Whether all 64-bit CPUs integrate floating-point hardware based on 64-bit units of data"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "64-bit computing",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384996448",
+      "revision": "1384996448",
+      "observedAt": "2026-11-19T14:16:44.471Z",
+      "sourceTimestamp": "2026-11-11T08:12:45Z",
+      "sha256": "d8c32c2b688a5d4ec8d4d0dd94fa2df14855393fa483ba6ae098723c86dd1f02",
+      "excerptSha256": "b84642dd7a195a4c77e77d447e1d9b920d4c27d492f534f92ef6e5dd03142073",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 61056,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 64-bit definitions, register capacity, and historical timeline",
+      "Mechanisms correctly describe register width limiting addressability and partial virtual/physical address support in x86-64/AArch64",
+      "Unknowns appropriately identify gaps in source about physical address limitations, bus/register size differences, and floating-point hardware variations",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'often', 'not all', and 'several' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-debd5c6a-f661-441f-9170-e164162d396e",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4329,
+      "outputTokens": 485
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-a9ad6ba1-c08b-41ca-9b2b-7f5a69206f78",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4753,
+      "outputTokens": 116
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "d151a5456b0a11ef6d016777183a2e5c322834286acd2664bfc79d8ead899a6f",
+    "artifactDigest": "b98a83d11760c6e6b3c6e43aa8c254f5a8b26cbff649e57951b447e0fd7c6f0d",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000127-e80d0a192d.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
