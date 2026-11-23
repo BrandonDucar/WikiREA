@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000134-1a10ad904f-review-8a640bd3d9",
+  "parentJobId": "research-000134-1a10ad904f",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "c52334ce9e157bfae7c000d127401ce7ec992621e9658edb3389eec526271b14",
+  "sourcePin": {
+    "id": "S1",
+    "title": "CiteSeerX",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1374489038",
+    "revision": "1374489038",
+    "observedAt": "2026-11-19T22:14:13.191Z",
+    "sourceTimestamp": "2026-09-12T11:19:55Z",
+    "sha256": "a27cd0bfc678010c9f48c343a948b4bb9243993812a3e4be09aa0737090d9586",
+    "excerptSha256": "db8d7333bbbd55b0ca87b6a647761477446a5467d676930be9d05fa80a33c7a3",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15749,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including shutdown timeline, scope, and limitations",
+      "Mechanisms correctly describe focused crawling, automated metadata extraction, and open data sharing with proper qualifiers",
+      "Unknowns appropriately identify gaps in architecture decisions, redirection details, specific algorithms, and funding timeline",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims traceable to source text with appropriate may/often qualifiers preserved"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-5a006b2f-2b6a-4544-b87f-3bb3dd177e1b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4556,
+    "outputTokens": 97
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
