@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000195-3733335e81",
+  "topic": "Algorithmic efficiency",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Algorithmic efficiency describes how an algorithm uses computational resources like time and memory. It functions as a productivity metric for repetitive processes, where minimizing resource use is ideal, though time and space demands often conflict. Efficiency is judged relative to acceptable performance levels, which have shifted dramatically due to hardware improvements. Practical efficiency depends not only on theoretical complexity but also on implementation choices, language, compiler settings, and hardware specifics, making it a nuanced engineering concern rather than a purely theoretical property.",
+    "mechanisms": [
+      {
+        "title": "Asymptotic Complexity Estimation",
+        "explanation": "Algorithms are analyzed using Big O notation to estimate how resource consumption grows relative to input size. This asymptotic measure describes the upper bound of complexity, allowing comparison of scalability across different algorithm designs, though it may be less accurate for small input sizes.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Resource Trade-off Management",
+        "explanation": "Efficiency decisions involve balancing competing resource demands, such as time versus space. Specific algorithms may optimize one resource at the expense of another; for example, some algorithms minimize write operations or memory footprint while accepting higher time complexity, depending on the application's priorities.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific implementation choices like compiler optimizations or language runtime affect real-world efficiency beyond theoretical bounds",
+      "The precise impact of hardware-specific factors such as cache locality, data alignment, and garbage collection on algorithm performance",
+      "The exact threshold at which algorithmic efficiency transitions from acceptable to unacceptable across different computing eras and hardware classes",
+      "The degree to which AI-generated code currently meets performance standards in resource-constrained environments"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Algorithmic efficiency",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382281894",
+    "revision": "1382281894",
+    "observedAt": "2026-11-23T00:38:39.252Z",
+    "sourceTimestamp": "2026-10-27T19:38:38Z",
+    "sha256": "134ee1c05ecec07665667f0bcb5d8125bc1470d3f8dbb2c1d649260ccefa8d99",
+    "excerptSha256": "b66f42cf3829599c314144a01122310b53d2987e3ae88c65a2a6ab2c1661cda3",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 29262,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-468c06a7-4245-4431-bd28-7df9b8bed4b5",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3658,
+    "outputTokens": 372
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "039cbdf4bac91e29d52383b3ce4ee899204a0f04cab9d902fb46b2626f0d23dc",
+  "artifactDigest": "959eea451b34a0a1a7beaf1b5699689532504b7f61a9d3dc47200825217539fd"
+}

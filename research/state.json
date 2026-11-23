@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T00:38:37.553Z",
+  "updatedAt": "2026-11-23T00:38:41.164Z",
   "sequence": 195,
   "jobs": [
     {
@@ -8892,13 +8892,44 @@
       "topic": "Algorithmic efficiency",
       "day": "2026-11-23",
       "runId": "45089957693",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T00:38:37.553Z",
       "expiresAt": "2026-11-23T00:53:37.553Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Algorithmic efficiency",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382281894",
+        "revision": "1382281894",
+        "observedAt": "2026-11-23T00:38:39.252Z",
+        "sourceTimestamp": "2026-10-27T19:38:38Z",
+        "sha256": "134ee1c05ecec07665667f0bcb5d8125bc1470d3f8dbb2c1d649260ccefa8d99",
+        "excerptSha256": "b66f42cf3829599c314144a01122310b53d2987e3ae88c65a2a6ab2c1661cda3",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 29262,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-468c06a7-4245-4431-bd28-7df9b8bed4b5",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3658,
+        "outputTokens": 372
+      },
+      "packet": "research/packets/research-000195-3733335e81.json",
+      "packetDigest": "959eea451b34a0a1a7beaf1b5699689532504b7f61a9d3dc47200825217539fd",
+      "finishedAt": "2026-11-23T00:38:41.164Z"
     }
   ],
   "discovered": [
@@ -9788,11 +9819,6 @@
       "discoveredFrom": "research-000052-0783a62649"
     },
     {
-      "title": "Algorithmic efficiency",
-      "role": "source-curator",
-      "discoveredFrom": "research-000055-d84aa316b7"
-    },
-    {
       "title": "Analysis of algorithms",
       "role": "source-curator",
       "discoveredFrom": "research-000055-d84aa316b7"
@@ -10261,11 +10287,6 @@
       "title": "Advanced persistent threat",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000073-067e4b69de"
-    },
-    {
-      "title": "Diversity backpressure routing",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000074-403d103bb4"
     },
     {
       "title": "Drift plus penalty",
@@ -13886,6 +13907,26 @@
       "title": "2015 YouTube Music Awards",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000193-428d9b4755"
+    },
+    {
+      "title": "ARM architecture",
+      "role": "source-curator",
+      "discoveredFrom": "research-000195-3733335e81"
+    },
+    {
+      "title": "Adaptability",
+      "role": "source-curator",
+      "discoveredFrom": "research-000195-3733335e81"
+    },
+    {
+      "title": "Analysis of parallel algorithms",
+      "role": "source-curator",
+      "discoveredFrom": "research-000195-3733335e81"
+    },
+    {
+      "title": "Application programming interface",
+      "role": "source-curator",
+      "discoveredFrom": "research-000195-3733335e81"
     }
   ],
   "reviewJobs": [
