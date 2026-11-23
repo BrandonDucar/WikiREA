@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T08:22:34.198Z",
+  "updatedAt": "2026-11-23T08:22:40.509Z",
   "sequence": 202,
   "jobs": [
     {
@@ -9223,13 +9223,44 @@
       "topic": "Anvil Studio",
       "day": "2026-11-23",
       "runId": "45138090957",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T08:22:34.198Z",
       "expiresAt": "2026-11-23T08:37:34.198Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Anvil Studio",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1306363476",
+        "revision": "1306363476",
+        "observedAt": "2026-11-23T08:22:36.682Z",
+        "sourceTimestamp": "2025-08-17T10:02:36Z",
+        "sha256": "11cc5ce35c908937f2eb9ed3a785952f465fc17b7b18c0653f1190c6373d9461",
+        "excerptSha256": "11cc5ce35c908937f2eb9ed3a785952f465fc17b7b18c0653f1190c6373d9461",
+        "inspectedCharacters": 11800,
+        "totalCharacters": 11800,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1699313a-425a-4f55-b6c8-fe23181ca212",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4189,
+        "outputTokens": 341
+      },
+      "packet": "research/packets/research-000202-9ceeb5ba09.json",
+      "packetDigest": "36804896ccca674bc84e823660fdd7c51bfcbd1d25a3ab835b3c247a311e06b6",
+      "finishedAt": "2026-11-23T08:22:40.509Z"
     }
   ],
   "discovered": [
@@ -9297,11 +9328,6 @@
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
-    },
-    {
-      "title": "Anvil Studio",
-      "role": "music-events",
-      "discoveredFrom": "research-000028-66915e6d6c"
     },
     {
       "title": "Ardour (software)",
@@ -14337,6 +14363,16 @@
       "title": "Candlestick chart",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000201-23fcde4895"
+    },
+    {
+      "title": "Audio editing software",
+      "role": "music-events",
+      "discoveredFrom": "research-000202-9ceeb5ba09"
+    },
+    {
+      "title": "BIAS Peak",
+      "role": "music-events",
+      "discoveredFrom": "research-000202-9ceeb5ba09"
     }
   ],
   "reviewJobs": [

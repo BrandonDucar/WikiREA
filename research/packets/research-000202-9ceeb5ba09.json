@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000202-9ceeb5ba09",
+  "topic": "Anvil Studio",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Anvil Studio is a Windows-only freemium digital audio workstation for MIDI and audio editing. It provides free core functionality for editing tracks via staff, piano roll, percussion, TAB, and event list editors. The software routes playback through a General MIDI synthesizer or assignable VST instruments and external MIDI devices. Audio processing relies on Core Audio, ASIO, DirectX, or WDM drivers. It supports standard MIDI files and uses MIDI event FF 7F to control rendering properties such as fonts, note positioning, and audio file links.",
+    "mechanisms": [
+      {
+        "title": "Track editing interfaces",
+        "explanation": "Users edit individual tracks using dedicated editors — staff, piano roll, percussion, TAB, or MIDI event list — each providing distinct workflows for music-event manipulation.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Playback routing and driver support",
+        "explanation": "The program defaults to a General MIDI synthesizer but allows track assignment to VST instruments or external MIDI devices. Audio processing is handled through supported driver types including Core Audio, ASIO, DirectX, and WDM.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal architecture of the MIDI event FF 7F handler",
+      "Whether VST plugin loading occurs via a specific SDK version or wrapper",
+      "Details of audio engine integration beyond listed driver types",
+      "Mechanism of add-on optional feature activation within the freemium model"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Anvil Studio",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1306363476",
+    "revision": "1306363476",
+    "observedAt": "2026-11-23T08:22:36.682Z",
+    "sourceTimestamp": "2025-08-17T10:02:36Z",
+    "sha256": "11cc5ce35c908937f2eb9ed3a785952f465fc17b7b18c0653f1190c6373d9461",
+    "excerptSha256": "11cc5ce35c908937f2eb9ed3a785952f465fc17b7b18c0653f1190c6373d9461",
+    "inspectedCharacters": 11800,
+    "totalCharacters": 11800,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-1699313a-425a-4f55-b6c8-fe23181ca212",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4189,
+    "outputTokens": 341
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f644ff07a64b018d22783c189e41addcfc148f8b14612442bd841367eb7f667f",
+  "artifactDigest": "36804896ccca674bc84e823660fdd7c51bfcbd1d25a3ab835b3c247a311e06b6"
+}
