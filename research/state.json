@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T08:22:40.509Z",
-  "sequence": 202,
+  "updatedAt": "2026-11-23T09:21:15.507Z",
+  "sequence": 203,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9261,6 +9261,20 @@
       "packet": "research/packets/research-000202-9ceeb5ba09.json",
       "packetDigest": "36804896ccca674bc84e823660fdd7c51bfcbd1d25a3ab835b3c247a311e06b6",
       "finishedAt": "2026-11-23T08:22:40.509Z"
+    },
+    {
+      "id": "research-000203-daf4bf4c1c",
+      "role": "adversarial-reviewer",
+      "topic": "API testing",
+      "day": "2026-11-23",
+      "runId": "45146199968",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T09:21:15.507Z",
+      "expiresAt": "2026-11-23T09:36:15.507Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
