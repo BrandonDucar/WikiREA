@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T06:33:34.200Z",
-  "sequence": 200,
+  "updatedAt": "2026-11-23T07:19:09.961Z",
+  "sequence": 201,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9167,6 +9167,20 @@
       "packet": "research/packets/research-000200-a62225c1d0.json",
       "packetDigest": "0face7ed0dc495def2706deacaa9eb0e3276cfa08517e9b39bacf4bcd79daa3a",
       "finishedAt": "2026-11-23T06:33:34.200Z"
+    },
+    {
+      "id": "research-000201-23fcde4895",
+      "role": "market-data-researcher",
+      "topic": "Average directional movement index",
+      "day": "2026-11-23",
+      "runId": "45130185478",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T07:19:09.961Z",
+      "expiresAt": "2026-11-23T07:34:09.961Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
