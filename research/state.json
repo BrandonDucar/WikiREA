@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T14:16:52.531Z",
-  "sequence": 207,
+  "updatedAt": "2026-11-23T15:15:56.977Z",
+  "sequence": 208,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9494,6 +9494,20 @@
       "packet": "research/packets/research-000207-b6b3af50e8.json",
       "packetDigest": "134107ec1a7a5b6ff3a4141f5a835a40549e58918487499babfd930bcc434552",
       "finishedAt": "2026-11-23T14:16:52.531Z"
+    },
+    {
+      "id": "research-000208-130d412f6d",
+      "role": "game-mechanic-researcher",
+      "topic": "2D rotation",
+      "day": "2026-11-23",
+      "runId": "45203252426",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T15:15:56.977Z",
+      "expiresAt": "2026-11-23T15:30:56.977Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
