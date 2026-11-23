@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T02:22:14.941Z",
-  "sequence": 197,
+  "updatedAt": "2026-11-23T03:19:43.873Z",
+  "sequence": 198,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9024,6 +9024,20 @@
       "packet": "research/packets/research-000197-93c0e81731.json",
       "packetDigest": "3886efa81cb77c90657c97aac216d5c568149dd757bc2272e58e93ae13d4abfb",
       "finishedAt": "2026-11-23T02:22:14.941Z"
+    },
+    {
+      "id": "research-000198-35ca16db72",
+      "role": "game-mechanic-researcher",
+      "topic": "2D geometric primitive",
+      "day": "2026-11-23",
+      "runId": "45105308269",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T03:19:43.873Z",
+      "expiresAt": "2026-11-23T03:34:43.873Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
