@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T19:24:55.527Z",
-  "sequence": 211,
+  "updatedAt": "2026-11-23T20:14:23.159Z",
+  "sequence": 212,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9686,6 +9686,20 @@
       "packet": "research/packets/research-000211-bb08a48ba3.json",
       "packetDigest": "098cc653408453289fdd480479a0b07dfb8f6018adccd1cdaf4cc835625159e1",
       "finishedAt": "2026-11-23T19:12:23.305Z"
+    },
+    {
+      "id": "research-000212-e501166961",
+      "role": "music-events",
+      "topic": "Ardour (software)",
+      "day": "2026-11-23",
+      "runId": "45257264762",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T20:14:23.159Z",
+      "expiresAt": "2026-11-23T20:29:23.159Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
