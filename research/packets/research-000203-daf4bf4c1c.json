@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000203-daf4bf4c1c",
+  "topic": "API testing",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "API testing evaluates application interfaces directly at the message layer, bypassing GUI constraints. It validates functionality, reliability, performance, and security across feasible requests, edge cases, and attack vectors. The practice is favored for automation due to API stability and shorter maintenance cycles compared to GUI tests, particularly in Agile and DevOps environments. Testing encompasses smoke, functional, security, fuzzing, load, and penetration methods, often using service virtualization to simulate unavailable dependencies.",
+    "mechanisms": [
+      {
+        "title": "Message-layer execution and validation",
+        "explanation": "API testing operates at the communications protocol message layer, sending requests and verifying responses without a graphical interface. This enables direct assessment of functional correctness, response format, timing, and security behavior across diverse protocols and payload types.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Automation suitability and maintenance advantages",
+        "explanation": "API layers are considered more stable than GUIs, making tests less brittle and easier to maintain amid frequent releases. This supports continuous testing workflows and allows teams to increase API test coverage while reducing reliance on GUI-based validation.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal implementation details of specific API testing tools",
+      "Complete reverse engineering of proprietary API designs",
+      "Physical hardware teardown or low-level protocol dissection",
+      "Guaranteed correctness of test outcomes for all possible inputs"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "API testing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383677884",
+    "revision": "1383677884",
+    "observedAt": "2026-11-23T09:21:17.663Z",
+    "sourceTimestamp": "2026-11-04T03:11:10Z",
+    "sha256": "fbfd1091b46539dec592e0591d1136adb4d89264cc6c172d4e8fb16f75c9f355",
+    "excerptSha256": "fbfd1091b46539dec592e0591d1136adb4d89264cc6c172d4e8fb16f75c9f355",
+    "inspectedCharacters": 11056,
+    "totalCharacters": 11056,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-887c18ca-1292-4e47-9e63-a677b04690f1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2890,
+    "outputTokens": 317
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "9d1fae715fbe84b0fc5fbc0e5fcdf4d7219c6ef4a197eb18c22fdc50f2c90cba",
+  "artifactDigest": "b7caa97defff3d4b4336d7bcd932a323e56d51c3b06dab22131d2f1705b9c138"
+}

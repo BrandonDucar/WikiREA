@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T09:21:15.507Z",
+  "updatedAt": "2026-11-23T09:21:20.287Z",
   "sequence": 203,
   "jobs": [
     {
@@ -9268,13 +9268,44 @@
       "topic": "API testing",
       "day": "2026-11-23",
       "runId": "45146199968",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-23T09:21:15.507Z",
       "expiresAt": "2026-11-23T09:36:15.507Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "API testing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383677884",
+        "revision": "1383677884",
+        "observedAt": "2026-11-23T09:21:17.663Z",
+        "sourceTimestamp": "2026-11-04T03:11:10Z",
+        "sha256": "fbfd1091b46539dec592e0591d1136adb4d89264cc6c172d4e8fb16f75c9f355",
+        "excerptSha256": "fbfd1091b46539dec592e0591d1136adb4d89264cc6c172d4e8fb16f75c9f355",
+        "inspectedCharacters": 11056,
+        "totalCharacters": 11056,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-887c18ca-1292-4e47-9e63-a677b04690f1",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2890,
+        "outputTokens": 317
+      },
+      "packet": "research/packets/research-000203-daf4bf4c1c.json",
+      "packetDigest": "b7caa97defff3d4b4336d7bcd932a323e56d51c3b06dab22131d2f1705b9c138",
+      "finishedAt": "2026-11-23T09:21:20.287Z"
     }
   ],
   "discovered": [
@@ -10562,11 +10593,6 @@
       "title": "BSD licenses",
       "role": "music-events",
       "discoveredFrom": "research-000072-2f715e698c"
-    },
-    {
-      "title": "API testing",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000073-067e4b69de"
     },
     {
       "title": "Abstract syntax tree",
@@ -14387,6 +14413,41 @@
       "title": "BIAS Peak",
       "role": "music-events",
       "discoveredFrom": "research-000202-9ceeb5ba09"
+    },
+    {
+      "title": "Acceptance test-driven development",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000203-daf4bf4c1c"
+    },
+    {
+      "title": "Adaptive software development",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000203-daf4bf4c1c"
+    },
+    {
+      "title": "Agile software development",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000203-daf4bf4c1c"
+    },
+    {
+      "title": "All-pairs testing",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000203-daf4bf4c1c"
+    },
+    {
+      "title": "Application-release automation",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000203-daf4bf4c1c"
+    },
+    {
+      "title": "Application logic",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000203-daf4bf4c1c"
+    },
+    {
+      "title": "Application programming interface",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000203-daf4bf4c1c"
     }
   ],
   "reviewJobs": [
