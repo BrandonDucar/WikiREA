@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000214-b16d5e0641",
+  "topic": "ExOR (wireless network protocol)",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ExOR is a wireless ad hoc routing protocol that combines routing and media access to improve efficiency. It operates by having intermediate radios retransmit packets only when closer radios fail, using a 'batch map' to track progress. The protocol reduces redundant transmissions by piggybacking progress information on data packets, allowing distant radios to learn which packets have already been forwarded. It relies on a conventional routing protocol to estimate transmission probabilities and uses sorted radio lists to prioritize closer forwards. Data blocks larger than 100,000 bytes are split into batches; smaller messages use the most reliable route. The authors report roughly double the efficiency of fixed-optimal routing and delivery-time variation reduced to one quarter, though response time in latency-sensitive applications may be affected by buffering.",
+    "mechanisms": [
+      {
+        "title": "Batch-based probabilistic forwarding",
+        "explanation": "The source broadcasts a batch of packets. Intermediate radios sort themselves by distance to the destination. Radios closer to the destination retransmit first. When a radio times out, it transmits only those packets that no closer radio has yet retransmitted, piggybacking its batch map to inform farther radios of progress. This avoids redundant retransmissions and allows information about packet progress to flow backward toward the source.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Routing information and probability estimation",
+        "explanation": "ExOR uses a conventional routing protocol, RRTc, to collect data on the probability of successful transmission between pairs of radios. Timer values in intermediate radios are estimated based on the number of packets in a batch and the likelihood of correct transmission from each radio, enabling the protocol to select the most efficient forwarder.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How timer estimates are precisely calculated in dynamic network conditions",
+      "Whether the protocol handles dynamic topology changes without manual reconfiguration",
+      "The specific method by which batch maps are updated when packets are erased by closer radios",
+      "The long-term availability and licensing status of the original ExOR software implementation"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ExOR",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1333809101",
+    "revision": "1333809101",
+    "observedAt": "2026-11-23T22:13:11.609Z",
+    "sourceTimestamp": "2026-01-19T21:45:56Z",
+    "sha256": "a6060a5774c2c357015ef44a14376f7bee4cb6dac9f894e65d9861b0f531c0cf",
+    "excerptSha256": "a6060a5774c2c357015ef44a14376f7bee4cb6dac9f894e65d9861b0f531c0cf",
+    "inspectedCharacters": 9578,
+    "totalCharacters": 9578,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c4894a66-501e-4c5c-bc2e-970da733aa65",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2470,
+    "outputTokens": 444
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "c66718213b5907cd9919921e67e34d4e61ec7914e3e9017e2c77f84d0053934b",
+  "artifactDigest": "3c163a08ab448b82ffc99afc06038b2db8960d0f20087f66289136da6853ba03"
+}
