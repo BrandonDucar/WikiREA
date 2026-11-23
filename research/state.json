@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T21:25:30.906Z",
-  "sequence": 213,
+  "updatedAt": "2026-11-23T22:13:09.525Z",
+  "sequence": 214,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9780,6 +9780,20 @@
       "packet": "research/packets/research-000213-87c3731092.json",
       "packetDigest": "d6c70e3dfc2ac4d032669b72aa33c6671ec7156865b8fff3a109a790507f4952",
       "finishedAt": "2026-11-23T21:13:39.870Z"
+    },
+    {
+      "id": "research-000214-b16d5e0641",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "ExOR (wireless network protocol)",
+      "day": "2026-11-23",
+      "runId": "45277511414",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T22:13:09.525Z",
+      "expiresAt": "2026-11-23T22:28:09.525Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
