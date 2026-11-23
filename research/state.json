@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-22T22:14:30.506Z",
-  "sequence": 194,
+  "updatedAt": "2026-11-23T00:38:37.553Z",
+  "sequence": 195,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -8885,6 +8885,20 @@
         "retryAfter": null
       },
       "finishedAt": "2026-11-22T22:14:30.506Z"
+    },
+    {
+      "id": "research-000195-3733335e81",
+      "role": "source-curator",
+      "topic": "Algorithmic efficiency",
+      "day": "2026-11-23",
+      "runId": "45089957693",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-23T00:38:37.553Z",
+      "expiresAt": "2026-11-23T00:53:37.553Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
