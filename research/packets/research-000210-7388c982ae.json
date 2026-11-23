@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000210-7388c982ae",
+  "topic": "ASTM A325",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ASTM A325 is a withdrawn ASTM International standard for heavy hex structural bolts, originally specifying mechanical properties for diameters 1/2 to 1+1/2 inch and metric sizes M12–36. It defined two or three material types (medium carbon steel, martensitic steel, weathering steel) that are quenched and tempered. The standard classified connections as slip critical (SC) or bearing type (N, X) based on thread position. Although withdrawn in 2016, it was replaced by ASTM F3125 while retaining A325 as a grade name. Bolt heads bear markings indicating grade and type.",
+    "mechanisms": [
+      {
+        "title": "Material hardening process",
+        "explanation": "Bolts are made from medium carbon, boron, alloy, or martensitic steel and are quenched and tempered to achieve specified tensile strengths of 120–105 ksi (imperial) or 830 MPa (metric).",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Connection classification",
+        "explanation": "The standard defines slip critical (SC) connections where bolts rely on friction, and bearing type (N or X) connections where threads may or may not lie on the shear plane, affecting load distribution.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact rationale for withdrawal and replacement by ASTM F3125",
+      "Whether Type 2 martensitic steel remains part of the current F3125 grade structure",
+      "Detailed metallurgical reasons for the specific hardness ranges (C19–35 Rockwell)",
+      "Precise criteria for when threads are classified as on or off the shear plane"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASTM A325",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379026368",
+    "revision": "1379026368",
+    "observedAt": "2026-11-23T18:17:10.222Z",
+    "sourceTimestamp": "2026-10-07T13:15:03Z",
+    "sha256": "7e691fe8306cf26b6ab3a1a6a29d88bc60748f45ba19777bd65ccf416e29122d",
+    "excerptSha256": "7e691fe8306cf26b6ab3a1a6a29d88bc60748f45ba19777bd65ccf416e29122d",
+    "inspectedCharacters": 6897,
+    "totalCharacters": 6897,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c7660198-2d62-44ab-a655-53e337a3419a",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2488,
+    "outputTokens": 392
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "269348fe8b5fe23753c521ab027d2b27c746cc05cd1e4e5708777b96191cecf8",
+  "artifactDigest": "521c293945822d859df35bbf515572893b63e596898f23316c6dac2332ac205a"
+}
