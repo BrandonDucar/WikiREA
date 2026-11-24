@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T01:25:42.246Z",
-  "sequence": 216,
+  "updatedAt": "2026-11-24T02:20:46.244Z",
+  "sequence": 217,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9919,6 +9919,20 @@
       "packet": "research/packets/research-000216-b4dff76019.json",
       "packetDigest": "2718d7e5790fa10fbf679a0e97b59357a6861f883fdf4c6bc7556aa70636d470",
       "finishedAt": "2026-11-24T01:16:05.483Z"
+    },
+    {
+      "id": "research-000217-cf7a73d9bd",
+      "role": "runtime-researcher",
+      "topic": "Adele Goldberg (computer scientist)",
+      "day": "2026-11-24",
+      "runId": "45311669376",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T02:20:46.244Z",
+      "expiresAt": "2026-11-24T02:35:46.244Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
