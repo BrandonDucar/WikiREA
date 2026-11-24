@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000142-676df3b651",
+  "title": "AMC Matador",
+  "role": "music-events",
+  "createdAt": "2026-11-24T15:25:56.060Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The AMC Matador was a mid- and full-size automobile produced by American Motors Corporation from 1971 to 1978. Initially positioned as a family car, it transitioned to a full-size platform in 1974. The model found use as a police vehicle and appeared in media, including a James Bond film. It was also marketed internationally and competed in NASCAR racing with factory support.",
+  "mechanisms": [
+    {
+      "title": "Platform transition and redesign",
+      "explanation": "The first generation (1971–1973) used a mid-size platform with hardtop, sedan, and wagon body styles. The second generation (1974–1978) shifted to a full-size platform, introducing a new two-door coupe with a unique design that shared no panels with other body styles, featuring a fastback silhouette and flared fenders.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Marketing and naming repositioning",
+      "explanation": "AMC renamed its intermediate models from 'Rebel' to 'Matador' to distance the line from counterculture connotations and appeal to family-oriented buyers. A 'What's a Matador?' ad campaign used self-deprecating humor to build consumer familiarity and dealership traffic.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact engineering details of the V8 engine options and their calibration for police packages",
+    "Specific production volumes for each body style and market",
+    "Technical specifications of the bumper system's impact-absorbing mechanism",
+    "Detailed design rationale for the coupe's interior ergonomic constraints"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "AMC Matador",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386507976",
+      "revision": "1386507976",
+      "observedAt": "2026-11-20T08:19:37.116Z",
+      "sourceTimestamp": "2026-11-18T22:57:36Z",
+      "sha256": "e552818451f9c834025ad95e028ace78913b4ee4dcdf423f3569b8b3fb0605f1",
+      "excerptSha256": "56d8a7ecbaa72d5d44dc0f521dc0253b5717f943c8d24edf0dd79bce2ede778f",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 156998,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on production years, platform transition, police use, media appearances, international marketing, and NASCAR competition",
+      "Mechanism descriptions correctly capture the platform transition/redesign and marketing repositioning with proper source attribution",
+      "Unknowns list appropriately identifies specific technical details not covered in the source text",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All claims in draft are substantiated by the provided source material"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-dc598a5c-ce7c-43f7-a0d0-13390a6cdaa8",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4458,
+      "outputTokens": 371
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-9451d69c-3ff8-4d96-b142-196d2833f6d2",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4807,
+      "outputTokens": 104
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "4da0f1d8e7aebb2669a188f0fe8f047db6fbde8cb60d57b4e187ab6553245974",
+    "artifactDigest": "e875a0a1b479516166da956dfceb4793fc9f6213ae5b7498fe6e32311f140fb4",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000142-676df3b651.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

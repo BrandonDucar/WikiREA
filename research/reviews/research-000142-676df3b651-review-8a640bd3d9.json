@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000142-676df3b651-review-8a640bd3d9",
+  "parentJobId": "research-000142-676df3b651",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "e875a0a1b479516166da956dfceb4793fc9f6213ae5b7498fe6e32311f140fb4",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AMC Matador",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386507976",
+    "revision": "1386507976",
+    "observedAt": "2026-11-20T08:19:37.116Z",
+    "sourceTimestamp": "2026-11-18T22:57:36Z",
+    "sha256": "e552818451f9c834025ad95e028ace78913b4ee4dcdf423f3569b8b3fb0605f1",
+    "excerptSha256": "56d8a7ecbaa72d5d44dc0f521dc0253b5717f943c8d24edf0dd79bce2ede778f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 156998,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on production years, platform transition, police use, media appearances, international marketing, and NASCAR competition",
+      "Mechanism descriptions correctly capture the platform transition/redesign and marketing repositioning with proper source attribution",
+      "Unknowns list appropriately identifies specific technical details not covered in the source text",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All claims in draft are substantiated by the provided source material"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-9451d69c-3ff8-4d96-b142-196d2833f6d2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4807,
+    "outputTokens": 104
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
