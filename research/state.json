@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T08:20:14.609Z",
-  "sequence": 222,
+  "updatedAt": "2026-11-24T09:17:11.202Z",
+  "sequence": 223,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10197,6 +10197,20 @@
       "packet": "research/packets/research-000222-c9e45bb968.json",
       "packetDigest": "1564925f18428705d88503882fbd55cd56a4e234a7d0c8153e19071d93fe417c",
       "finishedAt": "2026-11-24T08:20:14.609Z"
+    },
+    {
+      "id": "research-000223-35e5c621fd",
+      "role": "adversarial-reviewer",
+      "topic": "Acceptance testing",
+      "day": "2026-11-24",
+      "runId": "45363710923",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T09:17:11.202Z",
+      "expiresAt": "2026-11-24T09:32:11.202Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
