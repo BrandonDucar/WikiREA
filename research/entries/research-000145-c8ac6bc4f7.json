@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000145-c8ac6bc4f7",
+  "title": "Beth Plale",
+  "role": "source-curator",
+  "createdAt": "2026-11-24T21:25:01.594Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Beth A. Plale is Executive Director of the School of Computer and Data Sciences at the University of Oregon. She is recognized for contributions to open science, trust in AI, fairness, reproducibility, and data science policy. Her career spans academia, leadership roles at Indiana University and the Pervasive Technology Institute, and a science advisory position at the National Science Foundation.",
+  "mechanisms": [
+    {
+      "title": "Data provenance and open science leadership",
+      "explanation": "Plale has been a founding scientist of the Research Data Alliance and author of key works on data provenance, aiming to improve open access to data and support reproducibility in e-science.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "AI trust, fairness, and policy advising",
+      "explanation": "She works on trust in artificial intelligence, fairness, and reproducibility, and served as a science advisor at the National Science Foundation, influencing data science policy.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Specific technical mechanisms of her research software approach to hazard detection",
+    "Details of her executive director role at the University of Oregon School of Computer and Data Sciences",
+    "The nature of her postdoctoral research at Georgia Tech",
+    "Her complete publication list beyond selected works listed in the source"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Beth Plale",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1372565014",
+      "revision": "1372565014",
+      "observedAt": "2026-11-20T12:20:42.221Z",
+      "sourceTimestamp": "2026-09-01T07:19:33Z",
+      "sha256": "66b03c8681891fff424fd9f75c4e4864d5e70503286ad7d946c116ec858df920",
+      "excerptSha256": "66b03c8681891fff424fd9f75c4e4864d5e70503286ad7d946c116ec858df920",
+      "inspectedCharacters": 6578,
+      "totalCharacters": 6578,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about current role and research focus",
+      "Mechanisms correctly map to founding RDA role and NSF advisory position cited in source",
+      "Unknowns appropriately identify gaps not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'aiming to' and 'influencing' preserve appropriate uncertainty"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-3e65f39c-11c8-4755-88eb-833ef6431182",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2481,
+      "outputTokens": 293
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-e20a1e29-e371-4464-9e9a-40b09abff34e",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2743,
+      "outputTokens": 86
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "9121ede63c402b7d68eb19f4e333b49eed3524de19854cab2c51aa71f1d06ccd",
+    "artifactDigest": "5ecd44ec7cfe67f8547314484e9b94accf97e5f2a96fe6dd528855bf6524147b",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000145-c8ac6bc4f7.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

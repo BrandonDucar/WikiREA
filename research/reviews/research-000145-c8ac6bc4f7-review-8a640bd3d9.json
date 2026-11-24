@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000145-c8ac6bc4f7-review-8a640bd3d9",
+  "parentJobId": "research-000145-c8ac6bc4f7",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "5ecd44ec7cfe67f8547314484e9b94accf97e5f2a96fe6dd528855bf6524147b",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Beth Plale",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1372565014",
+    "revision": "1372565014",
+    "observedAt": "2026-11-20T12:20:42.221Z",
+    "sourceTimestamp": "2026-09-01T07:19:33Z",
+    "sha256": "66b03c8681891fff424fd9f75c4e4864d5e70503286ad7d946c116ec858df920",
+    "excerptSha256": "66b03c8681891fff424fd9f75c4e4864d5e70503286ad7d946c116ec858df920",
+    "inspectedCharacters": 6578,
+    "totalCharacters": 6578,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about current role and research focus",
+      "Mechanisms correctly map to founding RDA role and NSF advisory position cited in source",
+      "Unknowns appropriately identify gaps not covered in source text",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'aiming to' and 'influencing' preserve appropriate uncertainty"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-e20a1e29-e371-4464-9e9a-40b09abff34e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2743,
+    "outputTokens": 86
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
