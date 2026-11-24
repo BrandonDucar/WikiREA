@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T21:25:01.594Z",
-  "sequence": 233,
+  "updatedAt": "2026-11-24T22:13:32.014Z",
+  "sequence": 234,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10688,6 +10688,20 @@
       "packet": "research/packets/research-000233-eb96a018f2.json",
       "packetDigest": "bad506bed0b25481bac31c963344156b6b5c7b8c64d74cd223ce01cb88da1866",
       "finishedAt": "2026-11-24T21:14:27.595Z"
+    },
+    {
+      "id": "research-000234-c96ded1401",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Geographic routing",
+      "day": "2026-11-24",
+      "runId": "45498868616",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T22:13:32.014Z",
+      "expiresAt": "2026-11-24T22:28:32.014Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
