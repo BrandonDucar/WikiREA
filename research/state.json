@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T17:25:11.635Z",
-  "sequence": 229,
+  "updatedAt": "2026-11-24T18:17:51.848Z",
+  "sequence": 230,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10500,6 +10500,20 @@
       "packet": "research/packets/research-000229-1b7608b0e3.json",
       "packetDigest": "8c32b78e5c3d4880d9917011edf34518ac977d8ba8add681a6484552a15a3e5c",
       "finishedAt": "2026-11-24T16:17:31.682Z"
+    },
+    {
+      "id": "research-000230-430f8c855d",
+      "role": "hardware-interoperability-scout",
+      "topic": "ASTM A490",
+      "day": "2026-11-24",
+      "runId": "45457960372",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T18:17:51.848Z",
+      "expiresAt": "2026-11-24T18:32:51.848Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
