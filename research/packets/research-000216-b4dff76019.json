@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000216-b4dff76019",
+  "topic": "3D modeling",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3D modeling creates mathematical coordinate-based representations of surfaces in three dimensions using software that manipulates vertices, edges, and polygons. Models are built manually, algorithmically, or via scanning, and may be solid (defining volume) or shell (defining surface). Shell models must be manifold to represent real objects. The process converts abstract primitives into polygon meshes via tessellation. Models are used for rendering, simulation, or physical creation through 3D printing. Software ranges from parametric and polygonal modelers to digital sculpting tools and photogrammetry pipelines.",
+    "mechanisms": [
+      {
+        "title": "Polygon mesh construction",
+        "explanation": "Vertices in 3D space are connected by line segments to form polygon meshes. The majority of modern models use textured polygonal meshes because they are flexible and render quickly, though polygons are planar and approximate curved surfaces using many small faces.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Tessellation and primitive conversion",
+        "explanation": "Abstract geometric primitives such as spheres or cones are broken down into polygon meshes through tessellation. Triangular meshes are favored because their planar surface projections are convex and easy to rasterize, enabling efficient rendering in graphics pipelines.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How procedural generation algorithms define vertex positions without explicit user geometry",
+      "The internal topology creation process during digital sculpting displacement mapping",
+      "Whether parametric feature trees preserve design intent across software migrations",
+      "The extent to which photogrammetry algorithms reconstruct watertight manifold meshes from unstructured photo sets"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D modeling",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381161398",
+    "revision": "1381161398",
+    "observedAt": "2026-11-24T01:16:03.540Z",
+    "sourceTimestamp": "2026-10-20T10:55:38Z",
+    "sha256": "2060acfea3b31c317f706d6f25e6ab6394ca0b51b0160934ab54ed7fb31da7c3",
+    "excerptSha256": "74e7b1d96fb293931a8763d8d53964663109ac1cc832fdd743ab64ed8752f769",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 43444,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-a841c114-4caa-4487-b6be-f50cecab15a7",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3949,
+    "outputTokens": 358
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "447eb5c034ef84e437308e435ba4330cd65bcb4852df85233db476500ae98fc6",
+  "artifactDigest": "2718d7e5790fa10fbf679a0e97b59357a6861f883fdf4c6bc7556aa70636d470"
+}

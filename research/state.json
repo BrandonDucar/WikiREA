@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T01:16:01.315Z",
+  "updatedAt": "2026-11-24T01:16:05.483Z",
   "sequence": 216,
   "jobs": [
     {
@@ -9877,13 +9877,44 @@
       "topic": "3D modeling",
       "day": "2026-11-24",
       "runId": "45303727367",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T01:16:01.315Z",
       "expiresAt": "2026-11-24T01:31:01.315Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D modeling",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381161398",
+        "revision": "1381161398",
+        "observedAt": "2026-11-24T01:16:03.540Z",
+        "sourceTimestamp": "2026-10-20T10:55:38Z",
+        "sha256": "2060acfea3b31c317f706d6f25e6ab6394ca0b51b0160934ab54ed7fb31da7c3",
+        "excerptSha256": "74e7b1d96fb293931a8763d8d53964663109ac1cc832fdd743ab64ed8752f769",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 43444,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-a841c114-4caa-4487-b6be-f50cecab15a7",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3949,
+        "outputTokens": 358
+      },
+      "packet": "research/packets/research-000216-b4dff76019.json",
+      "packetDigest": "2718d7e5790fa10fbf679a0e97b59357a6861f883fdf4c6bc7556aa70636d470",
+      "finishedAt": "2026-11-24T01:16:05.483Z"
     }
   ],
   "discovered": [
@@ -10726,11 +10757,6 @@
       "title": "Apache Groovy",
       "role": "source-curator",
       "discoveredFrom": "research-000055-d84aa316b7"
-    },
-    {
-      "title": "3D modeling",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000056-4de8f52dba"
     },
     {
       "title": "3D models",
@@ -12524,11 +12550,6 @@
     },
     {
       "title": "1951 USAF resolution test chart",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000120-692efd4cd9"
-    },
-    {
-      "title": "3D modeling",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000120-692efd4cd9"
     },
@@ -15291,6 +15312,41 @@
       "title": "Advanced persistent threat",
       "role": "source-curator",
       "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "3DF Zephyr",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000216-b4dff76019"
+    },
+    {
+      "title": "3D city model",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000216-b4dff76019"
+    },
+    {
+      "title": "3D content retrieval",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000216-b4dff76019"
+    },
+    {
+      "title": "3D figure",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000216-b4dff76019"
+    },
+    {
+      "title": "3D model",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000216-b4dff76019"
+    },
+    {
+      "title": "3D printing marketplace",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000216-b4dff76019"
+    },
+    {
+      "title": "3D rendering",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000216-b4dff76019"
     }
   ],
   "reviewJobs": [
