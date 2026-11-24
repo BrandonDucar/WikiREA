@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T19:12:52.266Z",
+  "updatedAt": "2026-11-24T19:12:57.842Z",
   "sequence": 231,
   "jobs": [
     {
@@ -10552,13 +10552,44 @@
       "topic": "Bollinger Bands",
       "day": "2026-11-24",
       "runId": "45467794503",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T19:12:52.266Z",
       "expiresAt": "2026-11-24T19:27:52.266Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Bollinger Bands",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1377419488",
+        "revision": "1377419488",
+        "observedAt": "2026-11-24T19:12:54.570Z",
+        "sourceTimestamp": "2026-09-29T08:05:33Z",
+        "sha256": "abac5ac4c111ddcd34d4ebbd30eaf13ba480c1f848bbae0a5f1914f005e2170d",
+        "excerptSha256": "98e6f2d62a9e04a162e38bf6c44f817c5d17de4613ab9b8ffaad80b20493dd4a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 16148,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-052b6833-8799-45d6-8da9-b0385e311ebd",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3881,
+        "outputTokens": 456
+      },
+      "packet": "research/packets/research-000231-7a9bb9699c.json",
+      "packetDigest": "c2c44a3d948fe00bcee78d511939c018a4e82d1eb733df0331f51615f70e7110",
+      "finishedAt": "2026-11-24T19:12:57.842Z"
     }
   ],
   "discovered": [
@@ -11681,16 +11712,6 @@
       "title": "ADAT Lightpipe",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000070-adbb730263"
-    },
-    {
-      "title": "Bollinger Bands",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000071-c3f1701a85"
-    },
-    {
-      "title": "Bollinger bands",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000071-c3f1701a85"
     },
     {
       "title": "Breadth of market",
@@ -16236,6 +16257,26 @@
       "title": "ASTM Subcommittee E20.02 on Radiation Thermometry",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000230-430f8c855d"
+    },
+    {
+      "title": "Anne-Marie Baiynd",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000231-7a9bb9699c"
+    },
+    {
+      "title": "Autocorrelation",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000231-7a9bb9699c"
+    },
+    {
+      "title": "Automated trading system",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000231-7a9bb9699c"
+    },
+    {
+      "title": "Buy and hold",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000231-7a9bb9699c"
     }
   ],
   "reviewJobs": [

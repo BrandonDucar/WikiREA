@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000231-7a9bb9699c",
+  "topic": "Bollinger Bands",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Bollinger Bands are a statistical chart overlaying a moving average with upper and lower bands set at K times the N-period standard deviation. Two user-defined parameters control the chart's responsiveness to price data. The default uses a 20-period simple moving average with K=2. The band width reflects volatility; narrowing bands indicate low volatility while expanding bands signal increased price action. Prices are considered high near the upper band and low near the lower band. The indicator is not strictly about price data alone but expresses user-chosen assumptions. Various studies show mixed effectiveness, with some finding no consistent advantage over buy-and-hold, while contrarian strategies and parameter tuning may yield positive returns in certain markets. The default 20-period/2-standard-deviation setup captures roughly 88% of price data, not the 95% expected under a normal distribution due to fat tails and serial correlation in price series.",
+    "mechanisms": [
+      {
+        "title": "Band construction from moving average and standard deviation",
+        "explanation": "Bollinger Bands consist of a middle moving average band, an upper band at K times N-period standard deviation above the moving average, and a lower band at K times N-period standard deviation below. The same period N is used for both the middle band and standard deviation calculation. Typical default values are N=20 days and K=2.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Volatility visualization and %b normalization",
+        "explanation": "The width between upper and lower bands expresses volatility; bandwidth normalizes this width by dividing by the middle band. The %b indicator normalizes price position within the bands, where %b=1 at the upper band and %b=0 at the lower band, derived from stochastic oscillator methodology.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise long-term data containment percentage under real market conditions",
+      "Causal relationship between band width changes and future price direction",
+      "Optimal parameter selection for all asset classes and market environments",
+      "Complete reverse engineering of proprietary calculation variations"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Bollinger Bands",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1377419488",
+    "revision": "1377419488",
+    "observedAt": "2026-11-24T19:12:54.570Z",
+    "sourceTimestamp": "2026-09-29T08:05:33Z",
+    "sha256": "abac5ac4c111ddcd34d4ebbd30eaf13ba480c1f848bbae0a5f1914f005e2170d",
+    "excerptSha256": "98e6f2d62a9e04a162e38bf6c44f817c5d17de4613ab9b8ffaad80b20493dd4a",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 16148,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-052b6833-8799-45d6-8da9-b0385e311ebd",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3881,
+    "outputTokens": 456
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e5fd7fc544f90a968bd0b54baad32a517872ae68fa8c00d38df659dab3aef0b6",
+  "artifactDigest": "c2c44a3d948fe00bcee78d511939c018a4e82d1eb733df0331f51615f70e7110"
+}
