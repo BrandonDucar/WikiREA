@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T12:21:56.075Z",
+  "updatedAt": "2026-11-24T12:22:00.115Z",
   "sequence": 225,
   "jobs": [
     {
@@ -10270,13 +10270,44 @@
       "topic": "Apache Groovy",
       "day": "2026-11-24",
       "runId": "45392772251",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T12:21:56.075Z",
       "expiresAt": "2026-11-24T12:36:56.075Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Apache Groovy",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383466553",
+        "revision": "1383466553",
+        "observedAt": "2026-11-24T12:21:58.324Z",
+        "sourceTimestamp": "2026-11-02T21:00:19Z",
+        "sha256": "7a6a1d63148f3f7845c08028bce86071dbdccfca8b32e5b09ae7f4dffaf87b05",
+        "excerptSha256": "90b751a043904baf91f398f844f6520efd0ec666b807ec6c2905e61b932ff5c9",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 36070,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c3c5bff7-9b6b-4109-97d8-9348f04d3ee0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4490,
+        "outputTokens": 317
+      },
+      "packet": "research/packets/research-000225-7a4d0289d3.json",
+      "packetDigest": "b98cf26f2699472706bc1cc9de691f4347e739ac8dc934b7297430d091a018c0",
+      "finishedAt": "2026-11-24T12:22:00.115Z"
     }
   ],
   "discovered": [
@@ -11094,11 +11125,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "Apache Groovy",
-      "role": "source-curator",
-      "discoveredFrom": "research-000055-d84aa316b7"
     },
     {
       "title": "3D models",
@@ -15909,6 +15935,41 @@
       "title": "Burke's theorem",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "APL (programming language)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000225-7a4d0289d3"
+    },
+    {
+      "title": "Ada (programming language)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000225-7a4d0289d3"
+    },
+    {
+      "title": "Android (operating system)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000225-7a4d0289d3"
+    },
+    {
+      "title": "Android Runtime",
+      "role": "source-curator",
+      "discoveredFrom": "research-000225-7a4d0289d3"
+    },
+    {
+      "title": "Android Studio",
+      "role": "source-curator",
+      "discoveredFrom": "research-000225-7a4d0289d3"
+    },
+    {
+      "title": "Android software development",
+      "role": "source-curator",
+      "discoveredFrom": "research-000225-7a4d0289d3"
+    },
+    {
+      "title": "Apache Accumulo",
+      "role": "source-curator",
+      "discoveredFrom": "research-000225-7a4d0289d3"
     }
   ],
   "reviewJobs": [

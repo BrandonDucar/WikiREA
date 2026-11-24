@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000225-7a4d0289d3",
+  "topic": "Apache Groovy",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Apache Groovy is a JVM-hosted, multi-paradigm language that extends Java syntax with dynamic and static typing, closures, and AST transformations. It compiles to Java bytecode and interoperates with Java libraries. Since version 2, Groovy supports static compilation, type inference, and modularity via jar shipping. Features include prototype extension through ExpandoMetaClass, native support for XML/HTML markup, and scripting execution. Governance shifted from Codehaus to the Apache Software Foundation in 2015.",
+    "mechanisms": [
+      {
+        "title": "AST Transformations and Annotations",
+        "explanation": "Groovy's power stems from abstract syntax tree (AST) transformations triggered through annotations, enabling compile-time metaprogramming and language extensions.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Metaprogramming via ExpandoMetaClass",
+        "explanation": "Groovy supports prototype extension and runtime class modification through ExpandoMetaClass, allowing developers to add methods and properties to existing classes, including numeric types, using a domain-specific language syntax.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact runtime behavior of dynamic typing interactions with static compilation",
+      "Details of the metaclass registry mechanism for cross-language access",
+      "Specific performance characteristics of invokedynamic-based optimizations",
+      "Governance and development structure post-Apache incubation"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache Groovy",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383466553",
+    "revision": "1383466553",
+    "observedAt": "2026-11-24T12:21:58.324Z",
+    "sourceTimestamp": "2026-11-02T21:00:19Z",
+    "sha256": "7a6a1d63148f3f7845c08028bce86071dbdccfca8b32e5b09ae7f4dffaf87b05",
+    "excerptSha256": "90b751a043904baf91f398f844f6520efd0ec666b807ec6c2905e61b932ff5c9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 36070,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c3c5bff7-9b6b-4109-97d8-9348f04d3ee0",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4490,
+    "outputTokens": 317
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "bf5039a72656874eec904b185abf7f25c7babb70c9898e50246069bf40c6d1a3",
+  "artifactDigest": "b98cf26f2699472706bc1cc9de691f4347e739ac8dc934b7297430d091a018c0"
+}
