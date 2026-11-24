@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000138-9f2e3471d1",
+  "title": ".NET Framework version history",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-24T05:26:02.305Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Microsoft began .NET Framework development in the late 1990s as NGWS, releasing version 1.0 in February 2002 to replace legacy Windows platforms. Since then, nine major upgrades have shipped, seven coinciding with new Visual Studio releases. Versions 2.0 and 4.0 introduced significant CLR updates for performance, security, and language interoperability. When the CLR version stays the same, newer framework releases typically supersede prior ones via in-place updates. The family includes .NET Compact Framework for mobile/embedded Windows CE and .NET Micro Framework for severely resource-constrained devices. .NET Framework 4.8 was announced as the last major version, with future work shifting to the cross-platform .NET Core (later simply .NET), though 4.8.1 followed in August 2022.",
+  "mechanisms": [
+    {
+      "title": "CLR versioning and in-place supersession",
+      "explanation": "When the Common Language Runtime version remains unchanged, newer .NET Framework releases typically replace previous versions through in-place updates rather than side-by-side installation.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Platform-specific framework variants",
+      "explanation": "The .NET Framework family includes reduced-footprint variants: .NET Compact Framework for Windows CE/mobile devices and .NET Micro Framework for severely resource-constrained embedded targets.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact version-to-OS inclusion mapping for all historical SKUs",
+    "Whether in-place updates preserve application compatibility across all framework version jumps",
+    "Details of the internal version negotiation logic between CLR and framework binaries",
+    "Reasons for the discontinuation of major version numbering after 4.8"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": ".NET Framework version history",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385426053",
+      "revision": "1385426053",
+      "observedAt": "2026-11-20T03:17:44.180Z",
+      "sourceTimestamp": "2026-11-13T06:20:27Z",
+      "sha256": "9a4b297f18b57c8ccea2bf5ee3c14d8aebe42c8f5c112ee62a91bf76b8d91ac2",
+      "excerptSha256": "c09ececf16caaaac85aafc3677019fce7b8fd596c57ed931ba44182b7a0b91aa",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 87984,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about NGWS origin, 1.0 release date, nine upgrades, CLR updates in 2.0/4.0, in-place supersession pattern, Compact/Micro Framework variants, 4.8 as last major version with shift to .NET Core, and 4.8.1 release.",
+      "Mechanisms correctly capture CLR versioning/in-place supersession and platform-specific variants with proper source attribution.",
+      "Unknowns list genuine gaps not resolved by the source (exact OS inclusion mapping, compatibility guarantees, internal version negotiation logic, discontinuation rationale).",
+      "No invented execution details or unsupported causal mechanisms introduced.",
+      "Qualifiers like 'typically' and 'announced as' preserved from source language."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-dea408ba-512a-4f96-85ce-67953c4663a1",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5232,
+      "outputTokens": 395
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-a21769c0-17fa-4cf7-bdfe-6871d169d315",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5587,
+      "outputTokens": 164
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "89df74f467133a858a0acc9aaf25ac514f30a7e77b2da82e4710c73a63f08063",
+    "artifactDigest": "a34f3c66229b57b6dbaa17a45949a1e3990590d4bfc4c3317219a7069ea0a7de",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000138-9f2e3471d1.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000138-9f2e3471d1-review-8a640bd3d9",
+  "parentJobId": "research-000138-9f2e3471d1",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "a34f3c66229b57b6dbaa17a45949a1e3990590d4bfc4c3317219a7069ea0a7de",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET Framework version history",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385426053",
+    "revision": "1385426053",
+    "observedAt": "2026-11-20T03:17:44.180Z",
+    "sourceTimestamp": "2026-11-13T06:20:27Z",
+    "sha256": "9a4b297f18b57c8ccea2bf5ee3c14d8aebe42c8f5c112ee62a91bf76b8d91ac2",
+    "excerptSha256": "c09ececf16caaaac85aafc3677019fce7b8fd596c57ed931ba44182b7a0b91aa",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 87984,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about NGWS origin, 1.0 release date, nine upgrades, CLR updates in 2.0/4.0, in-place supersession pattern, Compact/Micro Framework variants, 4.8 as last major version with shift to .NET Core, and 4.8.1 release.",
+      "Mechanisms correctly capture CLR versioning/in-place supersession and platform-specific variants with proper source attribution.",
+      "Unknowns list genuine gaps not resolved by the source (exact OS inclusion mapping, compatibility guarantees, internal version negotiation logic, discontinuation rationale).",
+      "No invented execution details or unsupported causal mechanisms introduced.",
+      "Qualifiers like 'typically' and 'announced as' preserved from source language."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-a21769c0-17fa-4cf7-bdfe-6871d169d315",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5587,
+    "outputTokens": 164
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
