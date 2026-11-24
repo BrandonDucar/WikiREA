@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000226-67efd06de0",
+  "topic": "3D models",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3D modeling creates mathematical coordinate-based representations of surfaces in three dimensions using software that manipulates vertices, edges, and polygons. Models may be built manually, algorithmically via procedural techniques, or captured through 3D scanning. The resulting data can be displayed as 2D images via rendering or used in simulations. Models are classified as solid, defining volume, or shell/surface-only representations. Shell models must be manifold to function as physical objects. Common representations include polygonal meshes, NURBS curves, and displacement or volumetric sculpting. The choice of method depends on the intended application, whether engineering, animation, or game-ready assets.",
+    "mechanisms": [
+      {
+        "title": "Vertex-Polygon Mesh Construction",
+        "explanation": "Artists or algorithms position vertices in 3D space and connect them with line segments to form polygon meshes. The vast majority of modern models use textured polygonal representations because they render quickly, though planar polygons can only approximate curved surfaces using many small faces.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Procedural and Scanned Generation",
+        "explanation": "Models may be created algorithmically through procedural modeling or captured automatically via 3D scanning of real-world objects. Scanning interprets shape and texture from photographs taken at multiple angles, while procedural methods generate geometry via rules and parameters rather than manual editing.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific rendering pipelines convert mesh data into final pixels",
+      "The internal topology decisions made by proprietary software during automatic retopology",
+      "Whether displacement or volumetric sculpting preserves exact surface area under deformation",
+      "The extent to which parametric feature histories are retained when models are exported between file formats"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D modeling",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381161398",
+    "revision": "1381161398",
+    "observedAt": "2026-11-24T13:15:57.818Z",
+    "sourceTimestamp": "2026-10-20T10:55:38Z",
+    "sha256": "2060acfea3b31c317f706d6f25e6ab6394ca0b51b0160934ab54ed7fb31da7c3",
+    "excerptSha256": "74e7b1d96fb293931a8763d8d53964663109ac1cc832fdd743ab64ed8752f769",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 43444,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-242d4d0a-34a5-4e1d-b874-861e6f6ac0dd",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3949,
+    "outputTokens": 385
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b7f562259ac4e3a68f33368a9ee65be784461f72b65590793bd4eeec6bb43e8c",
+  "artifactDigest": "dfa3ee59e90965b9d7493947e9f7ee03bb987f31a5d11a5872013602d32f36b0"
+}

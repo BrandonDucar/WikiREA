@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T13:15:55.681Z",
+  "updatedAt": "2026-11-24T13:16:00.452Z",
   "sequence": 226,
   "jobs": [
     {
@@ -10315,13 +10315,44 @@
       "topic": "3D models",
       "day": "2026-11-24",
       "runId": "45401594603",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T13:15:55.681Z",
       "expiresAt": "2026-11-24T13:30:55.681Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D modeling",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381161398",
+        "revision": "1381161398",
+        "observedAt": "2026-11-24T13:15:57.818Z",
+        "sourceTimestamp": "2026-10-20T10:55:38Z",
+        "sha256": "2060acfea3b31c317f706d6f25e6ab6394ca0b51b0160934ab54ed7fb31da7c3",
+        "excerptSha256": "74e7b1d96fb293931a8763d8d53964663109ac1cc832fdd743ab64ed8752f769",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 43444,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-242d4d0a-34a5-4e1d-b874-861e6f6ac0dd",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3949,
+        "outputTokens": 385
+      },
+      "packet": "research/packets/research-000226-67efd06de0.json",
+      "packetDigest": "dfa3ee59e90965b9d7493947e9f7ee03bb987f31a5d11a5872013602d32f36b0",
+      "finishedAt": "2026-11-24T13:16:00.452Z"
     }
   ],
   "discovered": [
@@ -11139,11 +11170,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "3D models",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000056-4de8f52dba"
     },
     {
       "title": "3D paint tool",
