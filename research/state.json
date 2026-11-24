@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T08:20:10.340Z",
+  "updatedAt": "2026-11-24T08:20:14.609Z",
   "sequence": 222,
   "jobs": [
     {
@@ -10159,13 +10159,44 @@
       "topic": "Audacity (audio editor)",
       "day": "2026-11-24",
       "runId": "45355196748",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T08:20:10.340Z",
       "expiresAt": "2026-11-24T08:35:10.340Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Audacity (audio editor)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1382150051",
+        "revision": "1382150051",
+        "observedAt": "2026-11-24T08:20:12.364Z",
+        "sourceTimestamp": "2026-10-26T22:45:48Z",
+        "sha256": "6b2c1443c9c3d04da798ccaf1c7cf47a9bd59874d800e8e2109084bef4fa5429",
+        "excerptSha256": "8e843c379aefb899bae204d78a0a420450c34f747866c7561ec952b472c5fec3",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 47519,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f37e198d-211c-4722-84f9-8ec443f9fc5c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4599,
+        "outputTokens": 355
+      },
+      "packet": "research/packets/research-000222-c9e45bb968.json",
+      "packetDigest": "1564925f18428705d88503882fbd55cd56a4e234a7d0c8153e19071d93fe417c",
+      "finishedAt": "2026-11-24T08:20:14.609Z"
     }
   ],
   "discovered": [
@@ -10203,11 +10234,6 @@
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
-    },
-    {
-      "title": "Audacity (audio editor)",
-      "role": "music-events",
-      "discoveredFrom": "research-000028-66915e6d6c"
     },
     {
       "title": "3D Hunting: Grizzly",
@@ -15738,6 +15764,41 @@
       "title": "1979 oil crisis",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "Academic Free License",
+      "role": "music-events",
+      "discoveredFrom": "research-000222-c9e45bb968"
+    },
+    {
+      "title": "Adaptive Multi-Rate audio codec",
+      "role": "music-events",
+      "discoveredFrom": "research-000222-c9e45bb968"
+    },
+    {
+      "title": "Advanced Audio Coding",
+      "role": "music-events",
+      "discoveredFrom": "research-000222-c9e45bb968"
+    },
+    {
+      "title": "Afrikaans",
+      "role": "music-events",
+      "discoveredFrom": "research-000222-c9e45bb968"
+    },
+    {
+      "title": "Albanian language",
+      "role": "music-events",
+      "discoveredFrom": "research-000222-c9e45bb968"
+    },
+    {
+      "title": "Alternative terms for free software",
+      "role": "music-events",
+      "discoveredFrom": "research-000222-c9e45bb968"
+    },
+    {
+      "title": "American English",
+      "role": "music-events",
+      "discoveredFrom": "research-000222-c9e45bb968"
     }
   ],
   "reviewJobs": [

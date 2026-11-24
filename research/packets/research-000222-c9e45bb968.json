@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000222-c9e45bb968",
+  "topic": "Audacity (audio editor)",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Audacity is a free, open-source digital audio editor and recorder available across Windows, macOS, and Linux. It captures multi-track audio from sound cards and supports post-processing tasks like trimming, fading, and normalization. The application includes specialized recording modes such as Timer Record and Punch/ Roll. Its interface displays a timeline with tracks and basic controls. Since 2021, development is led by Muse Group, and the 4.0 release switched its UI framework from wxWidgets to Qt. It is used in educational settings for sound creation and has been employed to record and mix full albums.",
+    "mechanisms": [
+      {
+        "title": "Multi-track recording and playback pipeline",
+        "explanation": "Audacity captures audio from sound card inputs into separate tracks, which are then mixed and played back on a shared timeline. It supports simultaneous recording when hardware permits and offers modes like Timer Record and Punch/ Roll for scheduled or looped capture.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Post-processing and effects pipeline",
+        "explanation": "After recording, audio can be edited through a suite of effects including normalization, trimming, and fading in/out. These operations apply to selected regions or entire tracks within the timeline.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact signal processing architecture for built-in effects",
+      "Internal representation of audio data formats beyond basic sample handling",
+      "Details of the Qt-based UI framework integration in version 4.0",
+      "Mechanisms behind the Timer Record and Punch/ Roll scheduling features"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Audacity (audio editor)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382150051",
+    "revision": "1382150051",
+    "observedAt": "2026-11-24T08:20:12.364Z",
+    "sourceTimestamp": "2026-10-26T22:45:48Z",
+    "sha256": "6b2c1443c9c3d04da798ccaf1c7cf47a9bd59874d800e8e2109084bef4fa5429",
+    "excerptSha256": "8e843c379aefb899bae204d78a0a420450c34f747866c7561ec952b472c5fec3",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 47519,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f37e198d-211c-4722-84f9-8ec443f9fc5c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4599,
+    "outputTokens": 355
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "6c4b45c6f8c844bb0196cde25029163432a4e0465c6b5dd39936030a754a2ae8",
+  "artifactDigest": "1564925f18428705d88503882fbd55cd56a4e234a7d0c8153e19071d93fe417c"
+}
