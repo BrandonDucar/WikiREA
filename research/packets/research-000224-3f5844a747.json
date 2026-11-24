@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000224-3f5844a747",
+  "topic": "FIFO (computing and electronics)",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "FIFO (first in, first out) is a scheduling method where the oldest entry in a queue is processed first. It applies to both software data structures and hardware buffering. In software, FIFOs are often built on circular buffers or lists and typically require locking for thread safety. In hardware, FIFOs use dual-ported memory, read/write address counters, and control logic to buffer data between devices operating at different rates, such as disk controllers, network devices, and multimedia streams.",
+    "mechanisms": [
+      {
+        "title": "Software FIFO Structure",
+        "explanation": "Software FIFOs are typically implemented using a circular buffer or list structure. Most implementations are not thread safe and require a locking mechanism to ensure the data structure is manipulated by only one thread at a time.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Hardware FIFO Buffering",
+        "explanation": "Hardware FIFOs consist of two counters serving as read and write memory address registers, a memory array (typically dual-ported), and status/control logic. This design allows concurrent read and write operations to buffer data between hardware devices or between software and hardware operating at different data rates.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Thread safety implementation details beyond the noted locking requirement",
+      "Specific memory architecture variations in hardware FIFO designs",
+      "Exact control logic mechanisms for concurrent read/write operations",
+      "Performance characteristics across different FIFO implementations"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "FIFO (computing and electronics)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1372397809",
+    "revision": "1372397809",
+    "observedAt": "2026-11-24T10:14:50.481Z",
+    "sourceTimestamp": "2026-08-31T15:23:18Z",
+    "sha256": "15512dd1fea2b0e8a5b25ffa2baa5640ea63f86f6b13f1b7e24cfe976cfa1192",
+    "excerptSha256": "15512dd1fea2b0e8a5b25ffa2baa5640ea63f86f6b13f1b7e24cfe976cfa1192",
+    "inspectedCharacters": 5052,
+    "totalCharacters": 5052,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-5878c6f9-99e2-464b-b833-8a76538582a3",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1554,
+    "outputTokens": 329
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "011ad70663d38d07f5bc6436db9d647d8692043e866a684f331f7f7a935fa904",
+  "artifactDigest": "bfa107baa7aad719407c03d57c79b3aaf8716123778f46410c5f962d7bbf3a4f"
+}

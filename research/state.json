@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T10:14:48.222Z",
+  "updatedAt": "2026-11-24T10:14:52.715Z",
   "sequence": 224,
   "jobs": [
     {
@@ -10225,13 +10225,44 @@
       "topic": "FIFO (computing and electronics)",
       "day": "2026-11-24",
       "runId": "45372892351",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T10:14:48.222Z",
       "expiresAt": "2026-11-24T10:29:48.222Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "FIFO (computing and electronics)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1372397809",
+        "revision": "1372397809",
+        "observedAt": "2026-11-24T10:14:50.481Z",
+        "sourceTimestamp": "2026-08-31T15:23:18Z",
+        "sha256": "15512dd1fea2b0e8a5b25ffa2baa5640ea63f86f6b13f1b7e24cfe976cfa1192",
+        "excerptSha256": "15512dd1fea2b0e8a5b25ffa2baa5640ea63f86f6b13f1b7e24cfe976cfa1192",
+        "inspectedCharacters": 5052,
+        "totalCharacters": 5052,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5878c6f9-99e2-464b-b833-8a76538582a3",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1554,
+        "outputTokens": 329
+      },
+      "packet": "research/packets/research-000224-3f5844a747.json",
+      "packetDigest": "bfa107baa7aad719407c03d57c79b3aaf8716123778f46410c5f962d7bbf3a4f",
+      "finishedAt": "2026-11-24T10:14:52.715Z"
     }
   ],
   "discovered": [
@@ -11436,11 +11467,6 @@
       "discoveredFrom": "research-000072-2f715e698c"
     },
     {
-      "title": "Acceptance testing",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000073-067e4b69de"
-    },
-    {
       "title": "Active learning (machine learning)",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000073-067e4b69de"
@@ -11454,11 +11480,6 @@
       "title": "Advanced persistent threat",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000073-067e4b69de"
-    },
-    {
-      "title": "FIFO (computing and electronics)",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000074-403d103bb4"
     },
     {
       "title": "Geographic routing",
@@ -15834,6 +15855,46 @@
       "title": "American English",
       "role": "music-events",
       "discoveredFrom": "research-000222-c9e45bb968"
+    },
+    {
+      "title": "Acronym",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "Adversarial queueing network",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "Arrival theorem",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "BCMP network",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "Balance equation",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "Beneš method",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "Bulk queue",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
+    },
+    {
+      "title": "Burke's theorem",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000224-3f5844a747"
     }
   ],
   "reviewJobs": [
