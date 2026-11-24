@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T02:20:50.382Z",
-  "sequence": 217,
+  "updatedAt": "2026-11-24T03:18:22.756Z",
+  "sequence": 218,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9964,6 +9964,20 @@
       "packet": "research/packets/research-000217-cf7a73d9bd.json",
       "packetDigest": "b84fd9ab28b3698e78ed80e624821404181ddea3b5359fcf0a15ce2be933b0b8",
       "finishedAt": "2026-11-24T02:20:50.382Z"
+    },
+    {
+      "id": "research-000218-7787cbf765",
+      "role": "game-mechanic-researcher",
+      "topic": "2D to 3D conversion",
+      "day": "2026-11-24",
+      "runId": "45318553179",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T03:18:22.756Z",
+      "expiresAt": "2026-11-24T03:33:22.756Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
