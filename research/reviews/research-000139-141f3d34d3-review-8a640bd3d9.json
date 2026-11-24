@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000139-141f3d34d3-review-8a640bd3d9",
+  "parentJobId": "research-000139-141f3d34d3",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "d6271ee62691692abcaa70816db1ffc78f04ccd240100fa6203251813e5a3396",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Aleph Samach",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380650568",
+    "revision": "1380650568",
+    "observedAt": "2026-11-20T04:18:01.488Z",
+    "sourceTimestamp": "2026-10-17T01:51:04Z",
+    "sha256": "6bfc58687b7ae0503a915fca688131bb748ec633cef2b79305aa48a0925d5c75",
+    "excerptSha256": "6bfc58687b7ae0503a915fca688131bb748ec633cef2b79305aa48a0925d5c75",
+    "inspectedCharacters": 11144,
+    "totalCharacters": 11144,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft summary claims 'Jewish-themed' but source only states Hebrew letters Aleph and Samach without indicating Jewish theme",
+      "Draft states 'active until 1981' but source documents activity through 1985-86 and infobox shows defunct_date 'After 1985'",
+      "Mechanism 'Transition to Senior Societies' presents 'stepping stone' as functional mechanism but source only describes historical pattern, not formal mechanism",
+      "Unknowns list 'exact reasons and timeline for transition... after 1985, despite documented activity in the late 1980s' but source shows no activity in late 1980s, only through 1985-86",
+      "Draft summary says 'last documented active through 1985-86' but source citations show latest as 1985-1986 academic year, not necessarily through 1986"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-18c918cc-c8bb-4187-9e28-516fbf05a34f",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4707,
+    "outputTokens": 212
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
