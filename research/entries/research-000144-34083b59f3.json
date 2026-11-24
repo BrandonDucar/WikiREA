@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000144-34083b59f3",
+  "title": "Computer science",
+  "role": "glossary-and-mechanics-editor",
+  "createdAt": "2026-11-24T19:24:37.643Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Computer science is the systematic study of algorithmic processes that describe and transform information, encompassing both theoretical disciplines like algorithms and computation theory and applied fields such as hardware and software design. Its fundamental question—'What can be (efficiently) automated?'—drives inquiry across areas ranging from abstract models of computation to practical implementations in operating systems, networks, and embedded devices. Core components include algorithms, data structures, programming languages, and computational problem-solving, with artificial intelligence and machine learning aiming to synthesize goal-oriented processes like decision-making and learning. The field's highest distinction is the Turing Award, recognizing seminal contributions to computation and its applications.",
+  "mechanisms": [
+    {
+      "title": "Algorithmic Process Design",
+      "explanation": "Computer science designs algorithmic processes that systematically describe and transform information, forming the core mechanism for problem-solving and automation across theoretical and applied domains.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Information Transformation Architecture",
+      "explanation": "The field constructs hardware and software systems that manage data repositories, execute computational workflows, and enable human-computer interaction through defined interfaces and principles.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact physical implementation details of future quantum computing architectures",
+    "Complete reverse engineering of proprietary software internals",
+    "Precise causal links between specific algorithmic patterns and emergent AI behaviors",
+    "Full historical origins of all computational concepts predating modern digital computers"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Computer science",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380596843",
+      "revision": "1380596843",
+      "observedAt": "2026-11-20T10:15:44.004Z",
+      "sourceTimestamp": "2026-10-16T18:39:42Z",
+      "sha256": "8602cb8686833f4dfc30824df5e1de2f96f5b66b7ffe6531b71323bafee55cec",
+      "excerptSha256": "c48bd44f626abf195fbe8131cc0981d79ec2bac591fac4c8fa754b9566bc9fca",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 73179,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of computer science as study of computation, information, and automation with theoretical and applied disciplines",
+      "Fundamental question 'What can be (efficiently) automated?' correctly attributed to Denning et al. and MIT sources",
+      "Core components (algorithms, data structures, programming languages, AI/ML) match source enumeration",
+      "Mechanisms are high-level abstractions consistent with source descriptions of algorithmic processes and information transformation systems",
+      "Unknowns appropriately identify genuine gaps not claimed in source (quantum architectures, proprietary internals, AI emergence, pre-digital origins)"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-62ef2681-9c4b-49ad-9581-0bf6185c4904",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4555,
+      "outputTokens": 321
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-880b1ef8-dd81-46ec-926b-7eb18d7d7420",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4816,
+      "outputTokens": 133
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "93ad9fd5798cffa7bc6e1afd4c462edea994702661d5a948cbac3665d10ad3b8",
+    "artifactDigest": "201a98b551a3404169648a26007f8054ec4308424f3f1685beaec1c4a1f98bf4",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000144-34083b59f3.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

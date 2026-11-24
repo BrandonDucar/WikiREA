@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000144-34083b59f3-review-8a640bd3d9",
+  "parentJobId": "research-000144-34083b59f3",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "201a98b551a3404169648a26007f8054ec4308424f3f1685beaec1c4a1f98bf4",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Computer science",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380596843",
+    "revision": "1380596843",
+    "observedAt": "2026-11-20T10:15:44.004Z",
+    "sourceTimestamp": "2026-10-16T18:39:42Z",
+    "sha256": "8602cb8686833f4dfc30824df5e1de2f96f5b66b7ffe6531b71323bafee55cec",
+    "excerptSha256": "c48bd44f626abf195fbe8131cc0981d79ec2bac591fac4c8fa754b9566bc9fca",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 73179,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition of computer science as study of computation, information, and automation with theoretical and applied disciplines",
+      "Fundamental question 'What can be (efficiently) automated?' correctly attributed to Denning et al. and MIT sources",
+      "Core components (algorithms, data structures, programming languages, AI/ML) match source enumeration",
+      "Mechanisms are high-level abstractions consistent with source descriptions of algorithmic processes and information transformation systems",
+      "Unknowns appropriately identify genuine gaps not claimed in source (quantum architectures, proprietary internals, AI emergence, pre-digital origins)"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-880b1ef8-dd81-46ec-926b-7eb18d7d7420",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4816,
+    "outputTokens": 133
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
