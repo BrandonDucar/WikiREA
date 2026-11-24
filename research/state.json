@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T00:33:20.338Z",
-  "sequence": 215,
+  "updatedAt": "2026-11-24T01:16:01.315Z",
+  "sequence": 216,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9870,6 +9870,20 @@
       "packet": "research/packets/research-000215-7c8fc365e1.json",
       "packetDigest": "60d210298c4982ff9ca7454cfccd8ca145d6a0c4bcf6cfc5bcad3cee927e36fc",
       "finishedAt": "2026-11-24T00:33:20.338Z"
+    },
+    {
+      "id": "research-000216-b4dff76019",
+      "role": "application-tracer",
+      "topic": "3D modeling",
+      "day": "2026-11-24",
+      "runId": "45303727367",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T01:16:01.315Z",
+      "expiresAt": "2026-11-24T01:31:01.315Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
