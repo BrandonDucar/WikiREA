@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T06:25:04.851Z",
-  "sequence": 220,
+  "updatedAt": "2026-11-24T07:16:35.130Z",
+  "sequence": 221,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10107,6 +10107,20 @@
       "packet": "research/packets/research-000220-f65d0da53f.json",
       "packetDigest": "687dd8db3aad857f279ac7cbf23655581cd900dda4c7006432b58b283074b4a8",
       "finishedAt": "2026-11-24T06:25:04.851Z"
+    },
+    {
+      "id": "research-000221-f0bca61ced",
+      "role": "market-data-researcher",
+      "topic": "Bear market",
+      "day": "2026-11-24",
+      "runId": "45346715749",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T07:16:35.130Z",
+      "expiresAt": "2026-11-24T07:31:35.130Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
