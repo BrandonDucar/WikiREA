@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T19:24:37.644Z",
-  "sequence": 231,
+  "updatedAt": "2026-11-24T20:14:37.736Z",
+  "sequence": 232,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10594,6 +10594,20 @@
       "packet": "research/packets/research-000231-7a9bb9699c.json",
       "packetDigest": "c2c44a3d948fe00bcee78d511939c018a4e82d1eb733df0331f51615f70e7110",
       "finishedAt": "2026-11-24T19:12:57.842Z"
+    },
+    {
+      "id": "research-000232-b05cc2670b",
+      "role": "music-events",
+      "topic": "Algorithmic composition",
+      "day": "2026-11-24",
+      "runId": "45478670552",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T20:14:37.736Z",
+      "expiresAt": "2026-11-24T20:29:37.736Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
