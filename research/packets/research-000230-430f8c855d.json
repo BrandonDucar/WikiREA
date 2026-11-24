@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000230-430f8c855d",
+  "topic": "ASTM A490",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ASTM A490 and A490M are ASTM International standards for heavy hex structural bolts made from alloy steel, withdrawn in 2016 and replaced by ASTM F3125. These bolts offer higher strength than A325 equivalents and are available in imperial and metric forms. They are defined by connection types (SC, N, X) and head markings indicating grade. Coatings such as hot-dip galvanization, mechanical deposition, or electroplating are generally avoided. Thread length is kept short to maintain thread integrity outside the joint.",
+    "mechanisms": [
+      {
+        "title": "Higher Strength Alloy Construction",
+        "explanation": "These bolts are manufactured from alloy steel that is heat-treated to achieve a minimum tensile strength of 150 ksi (imperial) or 1040 MPa (metric), making them significantly stronger than standard structural bolts. This increased strength allows for smaller bolt sizes or fewer bolts to achieve the same structural capacity.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Connection Type Definition",
+        "explanation": "The standard defines three connection types to govern bolt performance: SC (slip critical), N (bearing with threads on the shear plane), and X (bearing with threads excluded from the shear plane). The choice of connection type affects how the joint transfers load and whether slip is permitted under service loads.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact heat treatment parameters used to achieve specified strength levels",
+      "Long-term performance data for A490 bolts in modern structural applications",
+      "Specific coating compatibility limitations beyond the general prohibition noted",
+      "Detailed manufacturing tolerances for metric versus imperial thread forms"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASTM A490",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1103026198",
+    "revision": "1103026198",
+    "observedAt": "2026-11-24T18:17:53.735Z",
+    "sourceTimestamp": "2022-08-08T02:09:52Z",
+    "sha256": "10066e040e8d13b310f23c58e130ebea149c8d1cb42842c5629ef7fbe6913893",
+    "excerptSha256": "10066e040e8d13b310f23c58e130ebea149c8d1cb42842c5629ef7fbe6913893",
+    "inspectedCharacters": 5079,
+    "totalCharacters": 5079,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2dfa4172-7bbb-4340-a41f-8feb04a488b2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1928,
+    "outputTokens": 384
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1c2771dbf52c6f0ed8f8218fc0d9d876bda853bee881fb0a9cf657abe25f3a89",
+  "artifactDigest": "4e9fd7bdbc06876dd9c6265a88512258f0a95fb332134b47aa707fe66b2bfdb3"
+}

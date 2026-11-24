@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T18:17:51.848Z",
+  "updatedAt": "2026-11-24T18:17:56.179Z",
   "sequence": 230,
   "jobs": [
     {
@@ -10507,13 +10507,44 @@
       "topic": "ASTM A490",
       "day": "2026-11-24",
       "runId": "45457960372",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T18:17:51.848Z",
       "expiresAt": "2026-11-24T18:32:51.848Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ASTM A490",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1103026198",
+        "revision": "1103026198",
+        "observedAt": "2026-11-24T18:17:53.735Z",
+        "sourceTimestamp": "2022-08-08T02:09:52Z",
+        "sha256": "10066e040e8d13b310f23c58e130ebea149c8d1cb42842c5629ef7fbe6913893",
+        "excerptSha256": "10066e040e8d13b310f23c58e130ebea149c8d1cb42842c5629ef7fbe6913893",
+        "inspectedCharacters": 5079,
+        "totalCharacters": 5079,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2dfa4172-7bbb-4340-a41f-8feb04a488b2",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1928,
+        "outputTokens": 384
+      },
+      "packet": "research/packets/research-000230-430f8c855d.json",
+      "packetDigest": "4e9fd7bdbc06876dd9c6265a88512258f0a95fb332134b47aa707fe66b2bfdb3",
+      "finishedAt": "2026-11-24T18:17:56.179Z"
     }
   ],
   "discovered": [
@@ -10526,11 +10557,6 @@
       "title": "Autoregressive model",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000026-bf20caf174"
-    },
-    {
-      "title": "ASTM A490",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000027-b59cd37049"
     },
     {
       "title": "ASTM A500",
@@ -16191,6 +16217,11 @@
       "title": "Anscombe transform",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000229-1b7608b0e3"
+    },
+    {
+      "title": "ASTM Subcommittee E20.02 on Radiation Thermometry",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000230-430f8c855d"
     }
   ],
   "reviewJobs": [
