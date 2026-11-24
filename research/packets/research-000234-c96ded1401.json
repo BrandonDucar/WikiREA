@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000234-c96ded1401",
+  "topic": "Geographic routing",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Geographic routing is a packet-forwarding principle for wireless networks that uses geographic position information rather than network addresses to route messages toward a destination. Each node must know its own location and the destination's location, allowing routing without prior topology knowledge. The two primary mechanisms are greedy forwarding, which selects the neighbor making the best local progress toward the destination, and face routing, which recovers from local dead ends by following the boundaries of the communication graph. Together, these strategies guarantee delivery in unit disk graph models. A related concept, greedy embedding, maps nodes into virtual coordinate spaces to enable geographic routing when physical positions are unavailable.",
+    "mechanisms": [
+      {
+        "title": "Greedy Forwarding",
+        "explanation": "Each node forwards the message to the neighbor that achieves the best local progress toward the destination, using criteria such as minimizing distance, projected distance on the source-destination line, or minimizing the angle to the destination. This approach can fail when no neighbor is closer to the destination, creating a dead end.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Face Routing",
+        "explanation": "When greedy forwarding reaches a dead end, face routing guides the message along the edges of a planar subgraph surrounding the obstacle, changing direction at edges that cross the source-destination line. This recovery strategy allows the message to reach a position where greedy forwarding can resume, and was originally combined with greedy forwarding as the GFG scheme to guarantee delivery.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How distributed planarization is achieved in realistic wireless sensor networks without global topology knowledge",
+      "The scalability limits of face routing when applied to three-dimensional network environments",
+      "The specific conditions under which greedy forwarding variants may produce routing loops despite known loop-free properties",
+      "How virtual position assignment in greedy embedding preserves routing guarantees when physical coordinates are absent"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Geographic routing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385624838",
+    "revision": "1385624838",
+    "observedAt": "2026-11-24T22:13:34.122Z",
+    "sourceTimestamp": "2026-11-14T08:29:08Z",
+    "sha256": "cc629ee877a8a11146d377f7f6b73aa26ad124122a00a7a7b20e5e80d43274aa",
+    "excerptSha256": "cc629ee877a8a11146d377f7f6b73aa26ad124122a00a7a7b20e5e80d43274aa",
+    "inspectedCharacters": 7964,
+    "totalCharacters": 7964,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-e391ed3e-efbc-4ab1-b19b-6d2904700542",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2539,
+    "outputTokens": 408
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "28e54789ba809214a2f76887a327517fe3d2d8446b804eb29f10624833a0539d",
+  "artifactDigest": "19dace420809fdb22fb5a06366f5f0bbb1755e3ed7c607a3138e763451552b27"
+}

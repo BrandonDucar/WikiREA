@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T22:13:32.014Z",
+  "updatedAt": "2026-11-24T22:13:39.684Z",
   "sequence": 234,
   "jobs": [
     {
@@ -10695,13 +10695,44 @@
       "topic": "Geographic routing",
       "day": "2026-11-24",
       "runId": "45498868616",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T22:13:32.014Z",
       "expiresAt": "2026-11-24T22:28:32.014Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Geographic routing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385624838",
+        "revision": "1385624838",
+        "observedAt": "2026-11-24T22:13:34.122Z",
+        "sourceTimestamp": "2026-11-14T08:29:08Z",
+        "sha256": "cc629ee877a8a11146d377f7f6b73aa26ad124122a00a7a7b20e5e80d43274aa",
+        "excerptSha256": "cc629ee877a8a11146d377f7f6b73aa26ad124122a00a7a7b20e5e80d43274aa",
+        "inspectedCharacters": 7964,
+        "totalCharacters": 7964,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-e391ed3e-efbc-4ab1-b19b-6d2904700542",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2539,
+        "outputTokens": 408
+      },
+      "packet": "research/packets/research-000234-c96ded1401.json",
+      "packetDigest": "19dace420809fdb22fb5a06366f5f0bbb1755e3ed7c607a3138e763451552b27",
+      "finishedAt": "2026-11-24T22:13:39.684Z"
     }
   ],
   "discovered": [
@@ -11869,11 +11900,6 @@
       "title": "Advanced persistent threat",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000073-067e4b69de"
-    },
-    {
-      "title": "Geographic routing",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000074-403d103bb4"
     },
     {
       "title": "2010 Haiti earthquake",
@@ -16454,6 +16480,46 @@
       "title": "Aspartate transaminase",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "Christos Papadimitriou",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "Flooding algorithm",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "Geographic position",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "Greedy embedding",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "Ion Stoica",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "Jit Bose",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "Jorge Urrutia Galicia",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "List of ad hoc routing protocols",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000234-c96ded1401"
     }
   ],
   "reviewJobs": [
