@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T20:14:37.736Z",
+  "updatedAt": "2026-11-24T20:14:46.715Z",
   "sequence": 232,
   "jobs": [
     {
@@ -10601,13 +10601,44 @@
       "topic": "Algorithmic composition",
       "day": "2026-11-24",
       "runId": "45478670552",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T20:14:37.736Z",
       "expiresAt": "2026-11-24T20:29:37.736Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Algorithmic composition",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1366320928",
+        "revision": "1366320928",
+        "observedAt": "2026-11-24T20:14:40.149Z",
+        "sourceTimestamp": "2026-07-27T09:51:11Z",
+        "sha256": "d6d43644b0634d8fc3fb0f958160ae8daea8fb3c0b337b35acfb0ee553e1284f",
+        "excerptSha256": "fcedd425ad1daf53fa314c5bd344dd117ee341079440c06b35d35ca920081061",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 19051,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5691fb58-d678-4234-b0e4-d6662a408838",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3931,
+        "outputTokens": 360
+      },
+      "packet": "research/packets/research-000232-b05cc2670b.json",
+      "packetDigest": "7395e4f6d07afd46e4ef4db1cb4e0d4bb303d8540b75ed89f83fda47eff14f66",
+      "finishedAt": "2026-11-24T20:14:46.715Z"
     }
   ],
   "discovered": [
@@ -10735,11 +10766,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Algorithmic composition",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "Applications of artificial intelligence",
@@ -16295,6 +16321,46 @@
       "title": "Buy and hold",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000231-7a9bb9699c"
+    },
+    {
+      "title": "12-tone",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "ACM Computing Surveys",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "Aleatoric music",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "American Association for Artificial Intelligence",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "Andranik Tangian",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "Artificial intelligence in music",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "Barry Vercoe",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "Bell Labs",
+      "role": "music-events",
+      "discoveredFrom": "research-000232-b05cc2670b"
     }
   ],
   "reviewJobs": [

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000232-b05cc2670b",
+  "topic": "Algorithmic composition",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Algorithmic composition uses formal rules and data to generate music without continuous human direction. It encompasses techniques ranging from centuries-old voice-leading patterns to modern systems that translate non-musical data—such as text, images, or scientific measurements—into sound. Methods include mathematical models like stochastic processes and Markov chains, knowledge-based systems encoding genre rules, grammatical rule-sets, evolutionary algorithms inspired by natural selection, and hybrid systems that combine multiple approaches. Translational models map concepts from source material to musical parameters such as pitch or chord quality, while learning systems derive style from example material.",
+    "mechanisms": [
+      {
+        "title": "Stochastic and mathematical models",
+        "explanation": "Compositions are generated using non-deterministic methods such as Markov chains and Gaussian distributions, where the composer weights random possibilities rather than specifying every note. These models may incorporate natural phenomena or integer sequences to determine pitch and rhythm.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Grammars and rule-based systems",
+        "explanation": "Musical pieces are constructed by applying defined grammatical rules, often at a macro level covering harmony and rhythm. Knowledge-based systems encode genre-specific aesthetic codes through rule-sets that must be fulfilled for a composition to be considered complete.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How hybrid systems combine multiple algorithmic models in practice",
+      "The extent to which learning systems autonomously determine genre versus relying on programmer-supplied examples",
+      "Whether translational models preserve semantic meaning or merely map surface features to musical parameters",
+      "The long-term aesthetic effectiveness of evolutionary methods beyond supervised iteration"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Algorithmic composition",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1366320928",
+    "revision": "1366320928",
+    "observedAt": "2026-11-24T20:14:40.149Z",
+    "sourceTimestamp": "2026-07-27T09:51:11Z",
+    "sha256": "d6d43644b0634d8fc3fb0f958160ae8daea8fb3c0b337b35acfb0ee553e1284f",
+    "excerptSha256": "fcedd425ad1daf53fa314c5bd344dd117ee341079440c06b35d35ca920081061",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 19051,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-5691fb58-d678-4234-b0e4-d6662a408838",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3931,
+    "outputTokens": 360
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f6d55365ba7d7aecc59f6d00fabb4e28dc11245697d7024bd488bf1a7b028e58",
+  "artifactDigest": "7395e4f6d07afd46e4ef4db1cb4e0d4bb303d8540b75ed89f83fda47eff14f66"
+}
