@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000220-f65d0da53f",
+  "topic": "ASTM A354",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ASTM A354 is an ASTM International standard defining chemical and mechanical properties for alloy steel bolts, screws, and studs up to 4 inches diameter. It establishes grades BC and BD with distinct head markings and specifies recommended nut grades and styles for each fastener type. The standard explicitly limits use to applications where fasteners are not tensioned beyond 50% of tensile strength, recommending ASTM A490 heavy hex bolts for higher-tension applications despite equivalent strength.",
+    "mechanisms": [
+      {
+        "title": "Grade classification system",
+        "explanation": "The standard categorizes externally threaded alloy steel fasteners into Grade BC and Grade BD, each with specific head markings, nominal size ranges, proof and yield strength thresholds, minimum tensile strength, and core hardness ranges measured in Rockwell C scale.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Nut compatibility pairing",
+        "explanation": "The standard defines recommended nut grades and styles for each fastener grade and surface finish, allowing greater strength nuts to be used while specifying heavy hex nut styles for coated or over-tapped requirements.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact chemical composition thresholds for alloy steel",
+      "Specific heat treatment processes achieving designated hardness ranges",
+      "Long-term performance data under sustained tension loading",
+      "Detailed manufacturing tolerances beyond stated size ranges"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASTM A354",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1317575599",
+    "revision": "1317575599",
+    "observedAt": "2026-11-24T06:25:03.231Z",
+    "sourceTimestamp": "2025-10-18T20:13:03Z",
+    "sha256": "d66a7573c1778d8e219b8d96d52e173abed457176fdba7629543b81ea6ce0dc8",
+    "excerptSha256": "d66a7573c1778d8e219b8d96d52e173abed457176fdba7629543b81ea6ce0dc8",
+    "inspectedCharacters": 2892,
+    "totalCharacters": 2892,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f81a65f8-2cd0-46c0-9830-a8bffa7c6559",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1139,
+    "outputTokens": 310
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ef58056b206ed662406ec7a299a7612322dd682c428deed7cc7951444b673723",
+  "artifactDigest": "687dd8db3aad857f279ac7cbf23655581cd900dda4c7006432b58b283074b4a8"
+}
