@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T02:20:46.244Z",
+  "updatedAt": "2026-11-24T02:20:50.382Z",
   "sequence": 217,
   "jobs": [
     {
@@ -9926,13 +9926,44 @@
       "topic": "Adele Goldberg (computer scientist)",
       "day": "2026-11-24",
       "runId": "45311669376",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T02:20:46.244Z",
       "expiresAt": "2026-11-24T02:35:46.244Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adele Goldberg (computer scientist)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386649145",
+        "revision": "1386649145",
+        "observedAt": "2026-11-24T02:20:48.511Z",
+        "sourceTimestamp": "2026-11-19T18:42:21Z",
+        "sha256": "9e20c3bf4279af3b7c831f74d06194421d566d3599cf9c03ebdd74728e51fa4c",
+        "excerptSha256": "5708ee70c04fff96e1a69dc54fdda305ffd157426c205921a234d81a8e80e474",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 18784,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f8d61abe-2c34-4c9b-90e4-f6d389c76d75",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3983,
+        "outputTokens": 396
+      },
+      "packet": "research/packets/research-000217-cf7a73d9bd.json",
+      "packetDigest": "b84fd9ab28b3698e78ed80e624821404181ddea3b5359fcf0a15ce2be933b0b8",
+      "finishedAt": "2026-11-24T02:20:50.382Z"
     }
   ],
   "discovered": [
@@ -11005,11 +11036,6 @@
       "title": "AMosaic",
       "role": "application-tracer",
       "discoveredFrom": "research-000066-02c0e9d820"
-    },
-    {
-      "title": "Adele Goldberg (computer scientist)",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000067-a5933051f2"
     },
     {
       "title": "API",
@@ -15365,6 +15391,46 @@
       "title": "3D rendering",
       "role": "application-tracer",
       "discoveredFrom": "research-000216-b4dff76019"
+    },
+    {
+      "title": "AIDA/Web",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "Adele Goldberg (linguist)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "Alan Kay",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "Amber Smalltalk",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "Andreas Raab",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "Association for Computing Machinery",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "Boston",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "Chicago",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000217-cf7a73d9bd"
     }
   ],
   "reviewJobs": [
