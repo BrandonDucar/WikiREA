@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T15:15:52.559Z",
+  "updatedAt": "2026-11-24T15:15:57.114Z",
   "sequence": 228,
   "jobs": [
     {
@@ -10409,21 +10409,47 @@
       "topic": "3D projection",
       "day": "2026-11-24",
       "runId": "45423408826",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T15:15:52.559Z",
       "expiresAt": "2026-11-24T15:30:52.559Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3D projection",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381739094",
+        "revision": "1381739094",
+        "observedAt": "2026-11-24T15:15:54.889Z",
+        "sourceTimestamp": "2026-10-24T13:31:42Z",
+        "sha256": "e9a4631cca4b94de705d79a0a90ae9f01ca61b5651e36b3bb1691432041b3efd",
+        "excerptSha256": "e5fe53d7f9a34ea81fedac00704f47ea00e47a7c13e19d508532c3095df0c472",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 33309,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-6e37365f-bf83-46b3-b881-76523589386c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3604,
+        "outputTokens": 345
+      },
+      "packet": "research/packets/research-000228-e239576fac.json",
+      "packetDigest": "0a21fb3a6db932471a5522444c3099610d0cf1e9c941d68525abdee8d37db67d",
+      "finishedAt": "2026-11-24T15:15:57.114Z"
     }
   ],
   "discovered": [
-    {
-      "title": "3D projection",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000025-6fb0247cd6"
-    },
     {
       "title": "Autoregressive conditional heteroskedasticity",
       "role": "simulation-researcher",
@@ -16063,6 +16089,26 @@
       "title": "24-bit",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000227-9167a56e53"
+    },
+    {
+      "title": "ACM Computing Surveys",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000228-e239576fac"
+    },
+    {
+      "title": "AI Lab",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000228-e239576fac"
+    },
+    {
+      "title": "ANSI/ASME Y14.1",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000228-e239576fac"
+    },
+    {
+      "title": "Anamorphosis",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000228-e239576fac"
     }
   ],
   "reviewJobs": [
