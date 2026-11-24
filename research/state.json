@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T15:25:56.060Z",
-  "sequence": 228,
+  "updatedAt": "2026-11-24T16:17:25.820Z",
+  "sequence": 229,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10451,6 +10451,20 @@
       "packet": "research/packets/research-000228-e239576fac.json",
       "packetDigest": "0a21fb3a6db932471a5522444c3099610d0cf1e9c941d68525abdee8d37db67d",
       "finishedAt": "2026-11-24T15:15:57.114Z"
+    },
+    {
+      "id": "research-000229-1b7608b0e3",
+      "role": "simulation-researcher",
+      "topic": "Autoregressive conditional heteroskedasticity",
+      "day": "2026-11-24",
+      "runId": "45435355622",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T16:17:25.820Z",
+      "expiresAt": "2026-11-24T16:32:25.820Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
