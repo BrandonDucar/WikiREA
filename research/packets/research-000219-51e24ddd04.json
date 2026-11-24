@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000219-51e24ddd04",
+  "topic": "Asset pricing model",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Asset pricing models formalize principles for valuing equities and debt instruments. Equilibrium pricing models, such as CAPM and multi-factor models, determine prices through market supply and demand, incorporating macroeconomic variables and investor preferences to reflect risk. Risk-neutral or rational pricing models value derivatives and fixed-income instruments by ensuring no arbitrage opportunities exist relative to fundamental securities, often using stochastic processes and state prices to derive unique risk-adjusted rates.",
+    "mechanisms": [
+      {
+        "title": "Equilibrium Pricing via Market Forces",
+        "explanation": "Under general equilibrium theory, asset prices are set where supply equals demand, incorporating macroeconomic variables and investor preferences to reflect systematic risk. Models like CAPM and multi-factor models emerge from modern portfolio theory and use market-wide factors to price assets.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Rational / Risk-Neutral Pricing via Arbitrage-Free Conditions",
+        "explanation": "Rational pricing calculates derivative and fixed-income prices so they are arbitrage-free relative to fundamental securities. This approach uses stochastic processes and state prices to derive a unique risk price for each asset, often assuming log-normal processes or incorporating mean reversion and stochastic volatility.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How individual investor preferences are aggregated into market-clearing prices in large-dimension general equilibrium models",
+      "The exact calibration methods for stochastic process parameters in specific derivative pricing models",
+      "Whether state price densities can be uniquely recovered from observed market prices in all market conditions",
+      "The computational complexity of implementing multi-curve yield frameworks for complex interest rate derivatives"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Asset pricing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1372793073",
+    "revision": "1372793073",
+    "observedAt": "2026-11-24T04:17:57.161Z",
+    "sourceTimestamp": "2026-09-02T08:20:23Z",
+    "sha256": "694129663dd5c144e06049c35e8451904d078970a703104efca3ad15e5d64c1d",
+    "excerptSha256": "694129663dd5c144e06049c35e8451904d078970a703104efca3ad15e5d64c1d",
+    "inspectedCharacters": 12055,
+    "totalCharacters": 12055,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8000bacb-65d7-45a0-9c9d-841ea34cbf64",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3419,
+    "outputTokens": 358
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "9d9a4f563054c5e8e7cb3a7db7bc2d433ec81e94adfd23a361c0e317f0d5cd16",
+  "artifactDigest": "9c2e66c5c241416f389ecc66c46defe909d254fef2acecad1f672328182c096a"
+}
