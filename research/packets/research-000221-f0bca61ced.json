@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000221-f0bca61ced",
+  "topic": "Bear market",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A bear market denotes a sustained decline in stock prices, typically defined by a 20% or greater drop over at least two months. It represents a transition from investor optimism to widespread fear and pessimism. Key characteristics include rising volatility measured by the VIX, falling consumer sentiment, and increasing unemployment expectations. Bear markets conclude when prices recover to new highs, often following a 20% rally from recent lows. Historically, average bear markets last about 13 months and result in a 30% cumulative loss, with annualized declines ranging from -19.7% to -47%. Notable examples include the 1929 crash leading to the Great Depression, the 1973-1982 period tied to the energy crisis, and the 2025 downturn linked to trade tensions and tariff policies.",
+    "mechanisms": [
+      {
+        "title": "Price Decline Threshold and Investor Sentiment",
+        "explanation": "A bear market is triggered when stock prices fall 20% or more over at least two months, marking a transition from optimism to fear. This threshold distinguishes bear markets from ordinary corrections (10-20% declines). The psychological shift involves widespread investor pessimism replacing prior optimism, often accompanied by heightened anxiety measured by the VIX index.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Macroeconomic Triggers and Recovery Conditions",
+        "explanation": "Bear markets frequently originate from external economic shocks such as trade tensions, tariff policies, or energy crises. The 2025 bear market was primarily attributed to escalating trade tensions and tariff policies. Markets typically exit bear territory when indices gain 20% or more from their lows, signaling a recovery from the recent lows to new highs.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The precise causal mechanisms linking specific tariff policies to sustained market declines",
+      "Why some 20% price drops remain corrections while others progress to full bear markets",
+      "The exact relationship between VIX increases and the onset of bear market conditions",
+      "The varying durations and depths of bear markets across different economic contexts"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Market trend",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385846684",
+    "revision": "1385846684",
+    "observedAt": "2026-11-24T07:16:37.931Z",
+    "sourceTimestamp": "2026-11-15T14:52:42Z",
+    "sha256": "1f94977e5578615dad1d4b0d0def46ee2b5a5b2d9870bbfafe50e4c86e647eb8",
+    "excerptSha256": "812cdcdf727572e064fb78646b9c729b128cec0133cfc9b7b02f384307223f12",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 24847,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-d1eadf27-48dd-45e7-ab08-46358ab6730e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4332,
+    "outputTokens": 485
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "d2bb89e62b7330956cbad4548972ca1abb4935cd4eb954bc27b025538fbb0d88",
+  "artifactDigest": "ae793f72c9f8353f9aab60f1b342d6e45c0b318b461a3b5cf61abdce5024a2e2"
+}

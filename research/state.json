@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T07:16:35.130Z",
+  "updatedAt": "2026-11-24T07:16:40.579Z",
   "sequence": 221,
   "jobs": [
     {
@@ -10114,13 +10114,44 @@
       "topic": "Bear market",
       "day": "2026-11-24",
       "runId": "45346715749",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T07:16:35.130Z",
       "expiresAt": "2026-11-24T07:31:35.130Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Market trend",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385846684",
+        "revision": "1385846684",
+        "observedAt": "2026-11-24T07:16:37.931Z",
+        "sourceTimestamp": "2026-11-15T14:52:42Z",
+        "sha256": "1f94977e5578615dad1d4b0d0def46ee2b5a5b2d9870bbfafe50e4c86e647eb8",
+        "excerptSha256": "812cdcdf727572e064fb78646b9c729b128cec0133cfc9b7b02f384307223f12",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 24847,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-d1eadf27-48dd-45e7-ab08-46358ab6730e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4332,
+        "outputTokens": 485
+      },
+      "packet": "research/packets/research-000221-f0bca61ced.json",
+      "packetDigest": "ae793f72c9f8353f9aab60f1b342d6e45c0b318b461a3b5cf61abdce5024a2e2",
+      "finishedAt": "2026-11-24T07:16:40.579Z"
     }
   ],
   "discovered": [
@@ -11278,11 +11309,6 @@
       "title": "ADAT Lightpipe",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000070-adbb730263"
-    },
-    {
-      "title": "Bear market",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000071-c3f1701a85"
     },
     {
       "title": "Bollinger Bands",
@@ -15658,6 +15684,46 @@
       "title": "ASTM International Award of Merit",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000220-f65d0da53f"
+    },
+    {
+      "title": "1920s Florida land boom",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "1970s commodities boom",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "1970s energy crisis",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "1973 oil crisis",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "1973–1974 stock market crash",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "1973–1975 recession",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "1976 sterling crisis",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
+    },
+    {
+      "title": "1979 oil crisis",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000221-f0bca61ced"
     }
   ],
   "reviewJobs": [
