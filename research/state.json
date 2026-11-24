@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T03:28:16.144Z",
-  "sequence": 218,
+  "updatedAt": "2026-11-24T04:17:54.946Z",
+  "sequence": 219,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10013,6 +10013,20 @@
       "packet": "research/packets/research-000218-7787cbf765.json",
       "packetDigest": "99dbb370b560a6962c9cc37f1bd6f5c1d777fe5658033b89fdc3d4c9b0bdc0f3",
       "finishedAt": "2026-11-24T03:18:27.609Z"
+    },
+    {
+      "id": "research-000219-51e24ddd04",
+      "role": "simulation-researcher",
+      "topic": "Asset pricing model",
+      "day": "2026-11-24",
+      "runId": "45325388422",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T04:17:54.946Z",
+      "expiresAt": "2026-11-24T04:32:54.946Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
