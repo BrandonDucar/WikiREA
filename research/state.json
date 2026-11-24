@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T20:14:46.715Z",
-  "sequence": 232,
+  "updatedAt": "2026-11-24T21:14:23.180Z",
+  "sequence": 233,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10639,6 +10639,20 @@
       "packet": "research/packets/research-000232-b05cc2670b.json",
       "packetDigest": "7395e4f6d07afd46e4ef4db1cb4e0d4bb303d8540b75ed89f83fda47eff14f66",
       "finishedAt": "2026-11-24T20:14:46.715Z"
+    },
+    {
+      "id": "research-000233-eb96a018f2",
+      "role": "adversarial-reviewer",
+      "topic": "Active learning (machine learning)",
+      "day": "2026-11-24",
+      "runId": "45489029584",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T21:14:23.180Z",
+      "expiresAt": "2026-11-24T21:29:23.180Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
