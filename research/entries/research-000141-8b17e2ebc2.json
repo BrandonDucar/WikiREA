@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000141-8b17e2ebc2",
+  "title": "Apache License 2.0",
+  "role": "market-data-researcher",
+  "createdAt": "2026-11-24T13:25:07.353Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The Apache License 2.0 is a permissive free-software license created by the Apache Software Foundation that allows users to freely use, distribute, and modify software. It permits combining code with GPLv3 projects, but contributions implicitly grant a patent license, and patent litigation against the work terminates that license. While widely adopted by major projects like Android, it is not considered free by OpenBSD due to its patent provisions and the involvement of contract law with copyright.",
+  "mechanisms": [
+    {
+      "title": "Permissive licensing and attribution",
+      "explanation": "Users may use, distribute, and modify the software for any purpose without paying royalties. The license requires preserving copyright notices, disclaimers, and attribution in unmodified files. Modified files must include a notice that changes were made. A NOTICE file distributed with the work must retain third-party attributions, though these notices do not alter the license terms.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Patent license termination clause",
+      "explanation": "Section 3 of the license grants users a patent license from contributors to make, use, sell, or import the work. However, if a user initiates patent litigation alleging that the software or a contribution infringes patents, any patent licenses granted under the license are automatically terminated for that work.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How jurisdiction-specific contract law variations affect the predictability of license terms",
+    "Whether the patent license explicitly covers contributors' own patents beyond necessarily infringing ones",
+    "The exact scope of what constitutes a \"contribution\" that triggers the implicit patent grant",
+    "How the NOTICE file requirements interact with other attribution mechanisms in derivative works"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Apache License",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384205635",
+      "revision": "1384205635",
+      "observedAt": "2026-11-20T07:16:32.567Z",
+      "sourceTimestamp": "2026-11-07T03:38:32Z",
+      "sha256": "99f804a0c07171366c9d83e6fe6a9610589be865e6cac9cc133b39c597a51f10",
+      "excerptSha256": "99f804a0c07171366c9d83e6fe6a9610589be865e6cac9cc133b39c597a51f10",
+      "inspectedCharacters": 11681,
+      "totalCharacters": 11681,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on permissive nature, GPLv3 compatibility, patent termination clause, Android adoption, and OpenBSD objection",
+      "Mechanism 1 correctly describes permissive licensing terms including attribution preservation, modification notices, and NOTICE file requirements per source",
+      "Mechanism 2 accurately captures Section 3 patent license grant and termination upon patent litigation per source",
+      "Unknowns appropriately identify gaps not addressed in source: jurisdiction-specific contract law effects, patent scope beyond necessarily infringing patents, contribution definition scope, and NOTICE file interaction details",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-81c6b4b2-f41f-4891-818f-6c8aac77c567",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3267,
+      "outputTokens": 382
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-47e3e373-cb6d-400d-bb85-0c5370885cdd",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3639,
+      "outputTokens": 139
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "9e3548fe47c58f91b472a9a1775ac33f76b2a17c80ff9e0f6bb9ec0b9882c0b0",
+    "artifactDigest": "fd541b282e26aa20cf6ea6f0d8be20f47083d291ac4c23d9af0e83e800a0badb",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000141-8b17e2ebc2.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

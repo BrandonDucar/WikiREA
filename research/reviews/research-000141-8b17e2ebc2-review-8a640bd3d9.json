@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000141-8b17e2ebc2-review-8a640bd3d9",
+  "parentJobId": "research-000141-8b17e2ebc2",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "fd541b282e26aa20cf6ea6f0d8be20f47083d291ac4c23d9af0e83e800a0badb",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache License",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384205635",
+    "revision": "1384205635",
+    "observedAt": "2026-11-20T07:16:32.567Z",
+    "sourceTimestamp": "2026-11-07T03:38:32Z",
+    "sha256": "99f804a0c07171366c9d83e6fe6a9610589be865e6cac9cc133b39c597a51f10",
+    "excerptSha256": "99f804a0c07171366c9d83e6fe6a9610589be865e6cac9cc133b39c597a51f10",
+    "inspectedCharacters": 11681,
+    "totalCharacters": 11681,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on permissive nature, GPLv3 compatibility, patent termination clause, Android adoption, and OpenBSD objection",
+      "Mechanism 1 correctly describes permissive licensing terms including attribution preservation, modification notices, and NOTICE file requirements per source",
+      "Mechanism 2 accurately captures Section 3 patent license grant and termination upon patent litigation per source",
+      "Unknowns appropriately identify gaps not addressed in source: jurisdiction-specific contract law effects, patent scope beyond necessarily infringing patents, contribution definition scope, and NOTICE file interaction details",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-47e3e373-cb6d-400d-bb85-0c5370885cdd",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3639,
+    "outputTokens": 139
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
