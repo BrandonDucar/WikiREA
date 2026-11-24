@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000229-1b7608b0e3",
+  "topic": "Autoregressive conditional heteroskedasticity",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Autoregressive conditional heteroskedasticity (ARCH) models the variance of a time series' error terms as dependent on past squared residuals, capturing volatility clustering in financial data. When error variance follows an ARMA process, the model becomes GARCH, which adds lagged conditional variance terms. Extensions like NAGARCH incorporate asymmetry to reflect the leverage effect, while EGARCH allows log-variance to have unrestricted parameter signs. These models are estimated via least squares and tested using Lagrange multiplier or Ljung–Box statistics, but implementation details such as lag selection and decay factors remain empirically driven.",
+    "mechanisms": [
+      {
+        "title": "ARCH mechanism",
+        "explanation": "Variance at time t is modeled as a linear function of the q previous squared residuals, with non-negative coefficients and a positive intercept, creating time-varying volatility from past shock sizes.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "GARCH extension",
+        "explanation": "Adds lagged conditional variance terms (beta terms) to the variance equation, allowing dependence on both past squared innovations and past variance estimates for longer memory of volatility.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise lag order selection criteria for specific datasets",
+      "Subjective decay factor choice in alternative EWMA approaches",
+      "Whether asymmetry parameters fully capture leverage effects across all asset classes",
+      "Exact conditions under which IGARCH unit root restrictions hold in finite samples"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Autoregressive conditional heteroskedasticity",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384691659",
+    "revision": "1384691659",
+    "observedAt": "2026-11-24T16:17:29.462Z",
+    "sourceTimestamp": "2026-11-09T16:37:01Z",
+    "sha256": "a779f7947c715ccd1c1213a792937e6ff4c1e9c05ad6419433e79d640c0a2b79",
+    "excerptSha256": "24d9b9da7987e9e7f0c262598b2bd889d20d6e4183575b62c6bb7429d58d3d2e",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 28264,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-ac999f76-1c63-4a37-8586-65e644047147",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4687,
+    "outputTokens": 327
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "d9b94b40370784db775b600b083593ae755cd77c92a73f3df6c6a996f3a81bbc",
+  "artifactDigest": "8c32b78e5c3d4880d9917011edf34518ac977d8ba8add681a6484552a15a3e5c"
+}

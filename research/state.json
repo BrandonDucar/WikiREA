@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T16:17:25.820Z",
+  "updatedAt": "2026-11-24T16:17:31.682Z",
   "sequence": 229,
   "jobs": [
     {
@@ -10458,21 +10458,47 @@
       "topic": "Autoregressive conditional heteroskedasticity",
       "day": "2026-11-24",
       "runId": "45435355622",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T16:17:25.820Z",
       "expiresAt": "2026-11-24T16:32:25.820Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Autoregressive conditional heteroskedasticity",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384691659",
+        "revision": "1384691659",
+        "observedAt": "2026-11-24T16:17:29.462Z",
+        "sourceTimestamp": "2026-11-09T16:37:01Z",
+        "sha256": "a779f7947c715ccd1c1213a792937e6ff4c1e9c05ad6419433e79d640c0a2b79",
+        "excerptSha256": "24d9b9da7987e9e7f0c262598b2bd889d20d6e4183575b62c6bb7429d58d3d2e",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 28264,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ac999f76-1c63-4a37-8586-65e644047147",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4687,
+        "outputTokens": 327
+      },
+      "packet": "research/packets/research-000229-1b7608b0e3.json",
+      "packetDigest": "8c32b78e5c3d4880d9917011edf34518ac977d8ba8add681a6484552a15a3e5c",
+      "finishedAt": "2026-11-24T16:17:31.682Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Autoregressive conditional heteroskedasticity",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000026-bf20caf174"
-    },
     {
       "title": "Autoregressive integrated moving average",
       "role": "simulation-researcher",
@@ -16127,6 +16153,26 @@
       "title": "Anamorphosis",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000228-e239576fac"
+    },
+    {
+      "title": "Analysis of covariance",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000229-1b7608b0e3"
+    },
+    {
+      "title": "Analysis of variance",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000229-1b7608b0e3"
+    },
+    {
+      "title": "Anderson–Darling test",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000229-1b7608b0e3"
+    },
+    {
+      "title": "Anscombe transform",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000229-1b7608b0e3"
     }
   ],
   "reviewJobs": [
