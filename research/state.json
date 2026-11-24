@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T14:16:30.711Z",
-  "sequence": 227,
+  "updatedAt": "2026-11-24T15:15:52.559Z",
+  "sequence": 228,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10402,6 +10402,20 @@
       "packet": "research/packets/research-000227-9167a56e53.json",
       "packetDigest": "7ea339df5a16d31dea0a74bd5d8fc58b12b4e06c6e53d80c27fb4c4d53771034",
       "finishedAt": "2026-11-24T14:16:30.711Z"
+    },
+    {
+      "id": "research-000228-e239576fac",
+      "role": "game-mechanic-researcher",
+      "topic": "3D projection",
+      "day": "2026-11-24",
+      "runId": "45423408826",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T15:15:52.559Z",
+      "expiresAt": "2026-11-24T15:30:52.559Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
