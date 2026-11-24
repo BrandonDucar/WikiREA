@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T21:14:23.180Z",
+  "updatedAt": "2026-11-24T21:14:27.595Z",
   "sequence": 233,
   "jobs": [
     {
@@ -10646,13 +10646,44 @@
       "topic": "Active learning (machine learning)",
       "day": "2026-11-24",
       "runId": "45489029584",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T21:14:23.180Z",
       "expiresAt": "2026-11-24T21:29:23.180Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Active learning (machine learning)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385710025",
+        "revision": "1385710025",
+        "observedAt": "2026-11-24T21:14:25.082Z",
+        "sourceTimestamp": "2026-11-14T21:37:16Z",
+        "sha256": "f26463b838cdf3d90be01553557bf0560187907d443993b599044c9f85ff7507",
+        "excerptSha256": "471e44c272dbfc5d638d67ab28ef3c669423f888b1ce4673575945cf6f249792",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 19500,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-8c462530-fd21-4c29-b6a2-fbf9db0c8aec",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3963,
+        "outputTokens": 344
+      },
+      "packet": "research/packets/research-000233-eb96a018f2.json",
+      "packetDigest": "bad506bed0b25481bac31c963344156b6b5c7b8c64d74cd223ce01cb88da1866",
+      "finishedAt": "2026-11-24T21:14:27.595Z"
     }
   ],
   "discovered": [
@@ -11812,11 +11843,6 @@
       "discoveredFrom": "research-000072-2f715e698c"
     },
     {
-      "title": "Active learning (machine learning)",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000073-067e4b69de"
-    },
-    {
       "title": "AddressSanitizer",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000073-067e4b69de"
@@ -12928,11 +12954,6 @@
     },
     {
       "title": "ACM Computing Surveys",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000111-9f9e754a87"
-    },
-    {
-      "title": "Active learning (machine learning)",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000111-9f9e754a87"
     },
@@ -16375,6 +16396,46 @@
       "title": "Bell Labs",
       "role": "music-events",
       "discoveredFrom": "research-000232-b05cc2670b"
+    },
+    {
+      "title": "AAAI Conference on Artificial Intelligence",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "Active learning",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "Alanine transaminase",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "AlexNet",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "Amazon Mechanical Turk",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "Apprenticeship learning",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "Artificial neural network",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
+    },
+    {
+      "title": "Aspartate transaminase",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000233-eb96a018f2"
     }
   ],
   "reviewJobs": [

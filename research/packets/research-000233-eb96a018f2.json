@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000233-eb96a018f2",
+  "topic": "Active learning (machine learning)",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Active learning is a machine learning paradigm where an algorithm actively queries a human teacher or oracle to label data points, reducing the number of examples needed compared to standard supervised learning. It operates under the assumption that labeled data is scarce while unlabeled data is abundant. The algorithm selects the most informative or uncertain instances for labeling, iteratively improving the model with fewer total labels. The human expert, often fatiguable, provides the labels, making the teacher's effort the practical bottleneck rather than computational memory. The framework is applicable in pool-based, stream-based, and query-synthesis scenarios, and can be scaled via crowdsourcing platforms.",
+    "mechanisms": [
+      {
+        "title": "Uncertainty Sampling",
+        "explanation": "The algorithm selects data points for which the current model is least certain about the correct output, querying the teacher to resolve ambiguity and improve model confidence.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Query by Committee",
+        "explanation": "Multiple models are trained on the current labeled data and vote on the label for each unlabeled instance; instances where the committee disagrees the most are chosen for labeling to maximize informativeness.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact computational cost of scaling active learning to extremely large datasets beyond crowdsourcing limits",
+      "Guarantees of label efficiency when the teacher's expertise or availability varies dynamically",
+      "Interaction effects between synthetic data generation fidelity and high-dimensional feature spaces",
+      "Long-term model stability when active learning loops are combined with online or incremental learning policies"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Active learning (machine learning)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385710025",
+    "revision": "1385710025",
+    "observedAt": "2026-11-24T21:14:25.082Z",
+    "sourceTimestamp": "2026-11-14T21:37:16Z",
+    "sha256": "f26463b838cdf3d90be01553557bf0560187907d443993b599044c9f85ff7507",
+    "excerptSha256": "471e44c272dbfc5d638d67ab28ef3c669423f888b1ce4673575945cf6f249792",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 19500,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8c462530-fd21-4c29-b6a2-fbf9db0c8aec",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3963,
+    "outputTokens": 344
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3f1421a8a83935d7d95e77342e1d516b3f6c8f813f6d3b2bc58907a7932f9bea",
+  "artifactDigest": "bad506bed0b25481bac31c963344156b6b5c7b8c64d74cd223ce01cb88da1866"
+}
