@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000218-7787cbf765",
+  "topic": "2D to 3D conversion",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "2D to 3D conversion transforms flat film into stereoscopic imagery by generating separate views for each eye. The process relies on creating depth maps—grayscale images indicating per-pixel depth—to shift original pixels laterally. High-quality methods allocate a \"depth budget,\" segment surfaces, assign depth values, synthesize stereo pairs via 2D-plus-depth rendering, and fill uncovered areas. Lower-quality automatic conversion serves cheap 3DTV and VOD. Computer-animated films with accessible source data can be re-rendered using a second virtual camera, achieving quality comparable to native stereo. The technique is widely used for non-CGI blockbusters, though stereo post-production is complex and costly compared to 2D workflows.",
+    "mechanisms": [
+      {
+        "title": "Depth-map-based stereo generation",
+        "explanation": "A depth map, a grayscale image matching the original 2D frame, encodes per-pixel depth. Pixels are shifted left or right based on this map and a target parallax setting, synthesizing left and right eye views. This 2D-plus-depth approach inherently cannot represent semi-transparent surfaces or occluded geometry, often resulting in a 2.5D appearance.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Depth budget allocation and scene segmentation",
+        "explanation": "Conversion workflows must define the range of permitted disparity, set the screen-plane convergence point, and isolate important surfaces via segmentation or rotoscoping. Each surface receives a depth map composed into a scene map, with micro-relief added to prevent a \"cardboard\" effect. Uncovered areas from differing view angles are filled via inpainting or artist work, as exact reconstruction is generally impossible.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How automation techniques generate accurate depth maps for translucent or reflective objects",
+      "The specific algorithms used to fill uncovered areas without introducing visual artifacts",
+      "Whether depth micro-relief can be reliably added to organic subjects like hair or fur",
+      "The practical limits of depth budget allocation when stereo mismatches are large"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "2D to 3D conversion",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1378928333",
+    "revision": "1378928333",
+    "observedAt": "2026-11-24T03:18:25.394Z",
+    "sourceTimestamp": "2026-10-06T23:47:42Z",
+    "sha256": "160b0b6a7e739ca5f83344291f3dc45c8d8340bbe7ae05702406b1c997214294",
+    "excerptSha256": "7bdc81e2c0e102c6153912ca4a827448009cf2bb05f5223adb843a0ccda5839c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 22800,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-804868df-6a40-4b80-8978-b4d40dc70e8e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3827,
+    "outputTokens": 456
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f5087556446667568c230440c0853772ba332a337c10969ebc47882fc03fa03b",
+  "artifactDigest": "99dbb370b560a6962c9cc37f1bd6f5c1d777fe5658033b89fdc3d4c9b0bdc0f3"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T03:18:22.756Z",
+  "updatedAt": "2026-11-24T03:18:27.609Z",
   "sequence": 218,
   "jobs": [
     {
@@ -9971,21 +9971,47 @@
       "topic": "2D to 3D conversion",
       "day": "2026-11-24",
       "runId": "45318553179",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T03:18:22.756Z",
       "expiresAt": "2026-11-24T03:33:22.756Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "2D to 3D conversion",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1378928333",
+        "revision": "1378928333",
+        "observedAt": "2026-11-24T03:18:25.394Z",
+        "sourceTimestamp": "2026-10-06T23:47:42Z",
+        "sha256": "160b0b6a7e739ca5f83344291f3dc45c8d8340bbe7ae05702406b1c997214294",
+        "excerptSha256": "7bdc81e2c0e102c6153912ca4a827448009cf2bb05f5223adb843a0ccda5839c",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 22800,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-804868df-6a40-4b80-8978-b4d40dc70e8e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3827,
+        "outputTokens": 456
+      },
+      "packet": "research/packets/research-000218-7787cbf765.json",
+      "packetDigest": "99dbb370b560a6962c9cc37f1bd6f5c1d777fe5658033b89fdc3d4c9b0bdc0f3",
+      "finishedAt": "2026-11-24T03:18:27.609Z"
     }
   ],
   "discovered": [
-    {
-      "title": "2D to 3D conversion",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000025-6fb0247cd6"
-    },
     {
       "title": "3D projection",
       "role": "game-mechanic-researcher",
@@ -15445,6 +15471,46 @@
       "title": "Chicago",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000217-cf7a73d9bd"
+    },
+    {
+      "title": "2.5D (visual perception)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
+    },
+    {
+      "title": "2D-plus-depth",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
+    },
+    {
+      "title": "2D plus Delta",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
+    },
+    {
+      "title": "3DTV",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
+    },
+    {
+      "title": "3D camcorder",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
+    },
+    {
+      "title": "3D display",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
+    },
+    {
+      "title": "3D film",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
+    },
+    {
+      "title": "3D reconstruction",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000218-7787cbf765"
     }
   ],
   "reviewJobs": [
