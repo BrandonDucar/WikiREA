@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000227-9167a56e53",
+  "topic": "32-bit computing",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "32-bit computing describes processor architectures that operate on 32-bit data units. Compared to narrower designs, 32-bit systems can perform larger calculations more efficiently and process more data per clock cycle. From the 1980s until about 2006, typical personal computers used a 32-bit address bus, permitting up to 4 GiB of RAM access. The first hybrid 16/32-bit microprocessor, the Motorola 68000, appeared in the late 1970s, while fully 32-bit designs such as the Intel 80386 became dominant by the early 1990s, enabling early mass adoption of the World Wide Web. Since the mid-2000s, mainstream PCs, smartphones, and servers have transitioned to 64-bit architectures, though 32-bit designs remain in use for embedded and specific applications. A 32-bit processor register can store 2^32 values; with unsigned representation the range is 0 to 4,294,967,295, and with two's complement the range is -2,147,483,648 to 2,147,483,647. This limits direct logical or physical addressable memory to 4 GiB of byte-addressable space, though some 32-bit processors use wider external buses to exceed this limit.",
+    "mechanisms": [
+      {
+        "title": "32-bit data path and register width",
+        "explanation": "Processors operate on 32-bit units of data, allowing more efficient large calculations and more data processed per clock cycle compared to narrower bit widths. Registers store 2^32 distinct values, with integer ranges defined by representation (unsigned: 0 to 4,294,967,295; two's complement: -2,147,483,648 to 2,147,483,647).",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "32-bit address bus limitation",
+        "explanation": "Typical 32-bit personal computers from the 1980s to about 2006 used a 32-bit address bus, which permits direct access to at most 4 GiB of byte-addressable RAM. Some 32-bit processors employ wider external address buses (e.g., 36-bit) to access more than 4 GB of memory, but the core logical address space remains constrained to 32 bits.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Whether all 32-bit processors use exactly 32-bit physical addresses, or if implementations vary in address width",
+      "The extent to which compromises such as 16-bit ALUs or narrower buses in older 32-bit families limited performance relative to their register width",
+      "How external bus widths greater than 32 bits are integrated within the core 32-bit architectural state",
+      "The specific mechanisms by which operating systems manage segmentation versus linear 32-bit address spaces on x86 platforms"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "32-bit computing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383428639",
+    "revision": "1383428639",
+    "observedAt": "2026-11-24T14:16:26.173Z",
+    "sourceTimestamp": "2026-11-02T17:02:33Z",
+    "sha256": "4f7b8f305fd7bb7b9fa5f14003e2b48bf1938eb667a67c582dc7366876fa99e2",
+    "excerptSha256": "4f7b8f305fd7bb7b9fa5f14003e2b48bf1938eb667a67c582dc7366876fa99e2",
+    "inspectedCharacters": 10890,
+    "totalCharacters": 10890,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c3d15229-9d87-4e02-953b-4983c3fa407a",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3567,
+    "outputTokens": 702
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "c2d744302245d9a17deb4917c68e63725c66d8d54cde5fce8e06f731717d3e01",
+  "artifactDigest": "7ea339df5a16d31dea0a74bd5d8fc58b12b4e06c6e53d80c27fb4c4d53771034"
+}

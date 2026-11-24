@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T14:16:24.250Z",
+  "updatedAt": "2026-11-24T14:16:30.711Z",
   "sequence": 227,
   "jobs": [
     {
@@ -10364,13 +10364,44 @@
       "topic": "32-bit computing",
       "day": "2026-11-24",
       "runId": "45412220392",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T14:16:24.250Z",
       "expiresAt": "2026-11-24T14:31:24.250Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "32-bit computing",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383428639",
+        "revision": "1383428639",
+        "observedAt": "2026-11-24T14:16:26.173Z",
+        "sourceTimestamp": "2026-11-02T17:02:33Z",
+        "sha256": "4f7b8f305fd7bb7b9fa5f14003e2b48bf1938eb667a67c582dc7366876fa99e2",
+        "excerptSha256": "4f7b8f305fd7bb7b9fa5f14003e2b48bf1938eb667a67c582dc7366876fa99e2",
+        "inspectedCharacters": 10890,
+        "totalCharacters": 10890,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-c3d15229-9d87-4e02-953b-4983c3fa407a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3567,
+        "outputTokens": 702
+      },
+      "packet": "research/packets/research-000227-9167a56e53.json",
+      "packetDigest": "7ea339df5a16d31dea0a74bd5d8fc58b12b4e06c6e53d80c27fb4c4d53771034",
+      "finishedAt": "2026-11-24T14:16:30.711Z"
     }
   ],
   "discovered": [
@@ -11205,11 +11236,6 @@
       "discoveredFrom": "research-000058-eb6a376636"
     },
     {
-      "title": "32-bit computing",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000058-eb6a376636"
-    },
-    {
       "title": "360-degree video",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000058-eb6a376636"
@@ -11658,11 +11684,6 @@
       "title": "Adobe Photoshop",
       "role": "application-tracer",
       "discoveredFrom": "research-000076-83a6537129"
-    },
-    {
-      "title": "32-bit computing",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000077-cd12fec18e"
     },
     {
       "title": "ARM architecture",
@@ -12848,11 +12869,6 @@
       "title": "Afflatus",
       "role": "source-curator",
       "discoveredFrom": "research-000115-3a9bfdcc26"
-    },
-    {
-      "title": "32-bit computing",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000116-ad048b955e"
     },
     {
       "title": "3DNow!",
@@ -15580,11 +15596,6 @@
       "discoveredFrom": "research-000211-bb08a48ba3"
     },
     {
-      "title": "32-bit computing",
-      "role": "music-events",
-      "discoveredFrom": "research-000212-e501166961"
-    },
-    {
       "title": "AI agent",
       "role": "music-events",
       "discoveredFrom": "research-000212-e501166961"
@@ -16028,6 +16039,16 @@
       "title": "Apache Accumulo",
       "role": "source-curator",
       "discoveredFrom": "research-000225-7a4d0289d3"
+    },
+    {
+      "title": "2,147,483,647",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000227-9167a56e53"
+    },
+    {
+      "title": "24-bit",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000227-9167a56e53"
     }
   ],
   "reviewJobs": [
