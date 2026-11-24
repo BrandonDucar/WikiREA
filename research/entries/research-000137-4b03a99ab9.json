@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000137-4b03a99ab9",
+  "title": "ACM Queue",
+  "role": "runtime-researcher",
+  "createdAt": "2026-11-24T03:28:16.143Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "ACM Queue is a bimonthly electronic trade magazine for practicing software engineers, published by the Association for Computing Machinery since 2003. It bridges academic and industrial computer science, featuring research articles, columns, and interviews. Unlike peer-reviewed journals, publication requires invitation and review but is not formally peer-reviewed. Content is editorially curated and available by subscription.",
+  "mechanisms": [
+    {
+      "title": "Editorial selection process",
+      "explanation": "Only articles from specifically invited authors undergo a review process before publication, distinguishing it from open academic journals.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Content format and distribution",
+      "explanation": "The magazine publishes research articles, columns, and interviews in electronic form, with some content cross-published in ACM's Communications magazine Practitioner section.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact internal review criteria used for invited author submissions",
+    "Whether content undergoes post-publication editorial updates",
+    "Details of subscription management and access controls",
+    "Specific workflow for column and interview feature selection"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ACM Queue",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1357822846",
+      "revision": "1357822846",
+      "observedAt": "2026-11-20T02:19:53.218Z",
+      "sourceTimestamp": "2026-06-04T21:50:48Z",
+      "sha256": "b9846cae1786c1985484a58729700d8d65abf5d4a989ede9a27701f3d0f07440",
+      "excerptSha256": "b9846cae1786c1985484a58729700d8d65abf5d4a989ede9a27701f3d0f07440",
+      "inspectedCharacters": 5240,
+      "totalCharacters": 5240,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about publication type, audience, publisher, frequency, and peer-review status",
+      "Mechanisms correctly describe invitation-only author selection with review process and electronic distribution with cross-publication",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'specifically invited' and 'not considered a peer-reviewed journal' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-52bd126c-800e-4f5a-a767-fffbc3f8580d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 1807,
+      "outputTokens": 255
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-e6fff614-9ddf-45ed-927c-f9397b023471",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2022,
+      "outputTokens": 100
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "65b68ac21d14cb00274057dcae44a8d7f80e9198cee5728233c0b832ed6cc588",
+    "artifactDigest": "3f0f0f4ffc13e2717540c287a46a6750828b8792017d226b983e7a2a623013c2",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000137-4b03a99ab9.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
