@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T09:17:11.202Z",
+  "updatedAt": "2026-11-24T09:17:21.026Z",
   "sequence": 223,
   "jobs": [
     {
@@ -10204,13 +10204,16 @@
       "topic": "Acceptance testing",
       "day": "2026-11-24",
       "runId": "45363710923",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-24T09:17:11.202Z",
       "expiresAt": "2026-11-24T09:32:11.202Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "writer",
+      "error": "RESEARCH_FAILED",
+      "finishedAt": "2026-11-24T09:17:21.026Z"
     }
   ],
   "discovered": [
