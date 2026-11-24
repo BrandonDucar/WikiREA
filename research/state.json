@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T10:14:52.715Z",
-  "sequence": 224,
+  "updatedAt": "2026-11-24T12:21:56.075Z",
+  "sequence": 225,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10263,6 +10263,20 @@
       "packet": "research/packets/research-000224-3f5844a747.json",
       "packetDigest": "bfa107baa7aad719407c03d57c79b3aaf8716123778f46410c5f962d7bbf3a4f",
       "finishedAt": "2026-11-24T10:14:52.715Z"
+    },
+    {
+      "id": "research-000225-7a4d0289d3",
+      "role": "source-curator",
+      "topic": "Apache Groovy",
+      "day": "2026-11-24",
+      "runId": "45392772251",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T12:21:56.075Z",
+      "expiresAt": "2026-11-24T12:36:56.075Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
