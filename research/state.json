@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-23T22:13:13.300Z",
-  "sequence": 214,
+  "updatedAt": "2026-11-24T00:33:16.250Z",
+  "sequence": 215,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -9825,6 +9825,20 @@
       "packet": "research/packets/research-000214-b16d5e0641.json",
       "packetDigest": "3c163a08ab448b82ffc99afc06038b2db8960d0f20087f66289136da6853ba03",
       "finishedAt": "2026-11-23T22:13:13.300Z"
+    },
+    {
+      "id": "research-000215-7c8fc365e1",
+      "role": "source-curator",
+      "topic": "Antivirus software",
+      "day": "2026-11-24",
+      "runId": "45298073716",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T00:33:16.250Z",
+      "expiresAt": "2026-11-24T00:48:16.250Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
