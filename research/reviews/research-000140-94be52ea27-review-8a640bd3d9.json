@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000140-94be52ea27-review-8a640bd3d9",
+  "parentJobId": "research-000140-94be52ea27",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "b3ea79eff0edcda6add58c931c2581d7fac9312a7e83b920793394d7accebf60",
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D Slash",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1375332502",
+    "revision": "1375332502",
+    "observedAt": "2026-11-20T06:24:32.241Z",
+    "sourceTimestamp": "2026-09-17T04:25:52Z",
+    "sha256": "9b7b803a33a578545a85551044a0bafade88cfed40cb8ceb4b40a012bfffcdd2",
+    "excerptSha256": "9b7b803a33a578545a85551044a0bafade88cfed40cb8ceb4b40a012bfffcdd2",
+    "inspectedCharacters": 9831,
+    "totalCharacters": 9831,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including voxel/octree basis, stone-cutter metaphor, STL output, platform availability, integrations, proprietary license, Metal language, and CC BY-NC-SA content terms.",
+      "Mechanism descriptions for octree geometry and stone-cutter toolset are directly supported by source text with appropriate technical detail.",
+      "Unknowns correctly identify gaps in source information regarding Metal language implementation, octree-to-mesh conversion specifics, sync implementation status, and proprietary licensing mechanisms.",
+      "No unsupported mechanisms, copied passages, or invented execution details detected.",
+      "All claims preserve qualifiers and distinguish known facts from unknowns appropriately."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-a0881728-54a1-4251-b750-b634bb3c0f82",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3586,
+    "outputTokens": 141
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

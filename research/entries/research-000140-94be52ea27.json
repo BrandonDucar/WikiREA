@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000140-94be52ea27",
+  "title": "3D Slash",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-24T09:26:54.212Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "3D Slash is a voxel-based 3D modeling application designed to simplify 3D design for beginners and educators. It represents geometry using an octree of cuboids, enabling implicit level-of-detail control. The software provides a stone-cutter metaphor toolset for adding, removing, and coloring cuboids, and outputs .STL files for 3D printing. It is available across web browsers, Windows, macOS, Linux, and Raspberry Pi, and integrates with platforms like Thingiverse, Google Drive, and Onshape. The software is proprietary and uses a custom functional language called Metal. Content created online is licensed under Creative Commons BY-NC-SA unless a premium subscription is purchased.",
+  "mechanisms": [
+    {
+      "title": "Octree-based geometry representation",
+      "explanation": "Geometry is represented as a tree of deformed cuboid shapes. Each cuboid can be full, empty, or subdivided into eight smaller cuboids. This structure implicitly defines level of detail by cutting the tree at arbitrary depth, allowing the software to manage model complexity without explicit user settings.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Stone-cutter metaphor toolset",
+      "explanation": "The user interface provides tools modeled after stone-cutting actions: a hammer to remove cuboids, a trowel to add them, a chisel to remove slices, a brush to set colors, and wood filler to add slices. These tools map intuitive editing actions to cuboid manipulation within the octree structure.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "The internal implementation details of the Metal functional language and its compilation to executable software.",
+    "The specific technical process by which octree cuboids are converted to triangle meshes for .STL export.",
+    "Whether the offline and online synchronization capabilities described as a technical challenge have been fully implemented or their current status.",
+    "The proprietary licensing terms and technical mechanisms governing the Creative Commons BY-NC-SA license assignment for user-created content."
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "3D Slash",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375332502",
+      "revision": "1375332502",
+      "observedAt": "2026-11-20T06:24:32.241Z",
+      "sourceTimestamp": "2026-09-17T04:25:52Z",
+      "sha256": "9b7b803a33a578545a85551044a0bafade88cfed40cb8ceb4b40a012bfffcdd2",
+      "excerptSha256": "9b7b803a33a578545a85551044a0bafade88cfed40cb8ceb4b40a012bfffcdd2",
+      "inspectedCharacters": 9831,
+      "totalCharacters": 9831,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including voxel/octree basis, stone-cutter metaphor, STL output, platform availability, integrations, proprietary license, Metal language, and CC BY-NC-SA content terms.",
+      "Mechanism descriptions for octree geometry and stone-cutter toolset are directly supported by source text with appropriate technical detail.",
+      "Unknowns correctly identify gaps in source information regarding Metal language implementation, octree-to-mesh conversion specifics, sync implementation status, and proprietary licensing mechanisms.",
+      "No unsupported mechanisms, copied passages, or invented execution details detected.",
+      "All claims preserve qualifiers and distinguish known facts from unknowns appropriately."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-c3bda15d-4c4a-4d50-8a31-5a50d572732d",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3194,
+      "outputTokens": 438
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-a0881728-54a1-4251-b750-b634bb3c0f82",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3586,
+      "outputTokens": 141
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "57ed894f46bf65d59283298c65a6e98f202a40a4d3e0558dd62f64c1cec26dfe",
+    "artifactDigest": "b3ea79eff0edcda6add58c931c2581d7fac9312a7e83b920793394d7accebf60",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000140-94be52ea27.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
