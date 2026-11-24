@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T07:27:15.026Z",
-  "sequence": 221,
+  "updatedAt": "2026-11-24T08:20:10.340Z",
+  "sequence": 222,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10152,6 +10152,20 @@
       "packet": "research/packets/research-000221-f0bca61ced.json",
       "packetDigest": "ae793f72c9f8353f9aab60f1b342d6e45c0b318b461a3b5cf61abdce5024a2e2",
       "finishedAt": "2026-11-24T07:16:40.579Z"
+    },
+    {
+      "id": "research-000222-c9e45bb968",
+      "role": "music-events",
+      "topic": "Audacity (audio editor)",
+      "day": "2026-11-24",
+      "runId": "45355196748",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T08:20:10.340Z",
+      "expiresAt": "2026-11-24T08:35:10.340Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
