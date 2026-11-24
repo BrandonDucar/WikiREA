@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T00:33:16.250Z",
+  "updatedAt": "2026-11-24T00:33:20.338Z",
   "sequence": 215,
   "jobs": [
     {
@@ -9832,13 +9832,44 @@
       "topic": "Antivirus software",
       "day": "2026-11-24",
       "runId": "45298073716",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-24T00:33:16.250Z",
       "expiresAt": "2026-11-24T00:48:16.250Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Antivirus software",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386168739",
+        "revision": "1386168739",
+        "observedAt": "2026-11-24T00:33:18.597Z",
+        "sourceTimestamp": "2026-11-17T02:11:50Z",
+        "sha256": "040f259d41a05f17c29765a18611e5c121ad13e9e3c205aba1ea00502af53344",
+        "excerptSha256": "40c1bc88867aac87833f81bfb1f8ea966cdb26251032fb595164a924f98729a9",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 104325,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-bfaaac83-4d2b-4461-bb84-51f2aea11ddc",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4923,
+        "outputTokens": 287
+      },
+      "packet": "research/packets/research-000215-7c8fc365e1.json",
+      "packetDigest": "60d210298c4982ff9ca7454cfccd8ca145d6a0c4bcf6cfc5bcad3cee927e36fc",
+      "finishedAt": "2026-11-24T00:33:20.338Z"
     }
   ],
   "discovered": [
@@ -10676,11 +10707,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "Antivirus software",
-      "role": "source-curator",
-      "discoveredFrom": "research-000055-d84aa316b7"
     },
     {
       "title": "Apache Groovy",
@@ -12234,11 +12260,6 @@
     },
     {
       "title": "AlexNet",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000111-9f9e754a87"
-    },
-    {
-      "title": "Antivirus software",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000111-9f9e754a87"
     },
@@ -15216,6 +15237,46 @@
       "title": "Integrated circuit",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000214-b16d5e0641"
+    },
+    {
+      "title": "360 Total Security",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "AV-Comparatives",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "AV-TEST",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "AVG (software)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "AVG AntiVirus",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "AVG Technologies",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "Ad blocking",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
+    },
+    {
+      "title": "Advanced persistent threat",
+      "role": "source-curator",
+      "discoveredFrom": "research-000215-7c8fc365e1"
     }
   ],
   "reviewJobs": [

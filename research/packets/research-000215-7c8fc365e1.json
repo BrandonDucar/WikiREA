@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000215-7c8fc365e1",
+  "topic": "Antivirus software",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Antivirus software is designed to prevent, detect, and remove malware, evolving from early virus-specific tools to broader protection against malicious URLs, spam, and phishing. Early implementations relied on signature-based detection of executable files and boot sectors, primarily via floppy disks before widespread internet use. Modern products incorporate heuristic analysis and behavioral monitoring to address the exponential growth of threats and the acknowledged impossibility of perfect detection.",
+    "mechanisms": [
+      {
+        "title": "Signature-based detection",
+        "explanation": "Identifies malware by comparing file contents or behavior against a database of known threat signatures. This method is effective for known threats but limited against novel or polymorphic code.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Heuristic analysis",
+        "explanation": "Evaluates code behavior and structure to suspect malicious intent without requiring a known signature. Released as a de facto industry standard in 1987, it addresses the limitation that no algorithm can perfectly detect all possible viruses.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal algorithms of commercial products",
+      "Real-time behavioral monitoring implementation details",
+      "Integration of URL, spam, and phishing protection mechanisms",
+      "Effectiveness against zero-day or highly obfuscated threats"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Antivirus software",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386168739",
+    "revision": "1386168739",
+    "observedAt": "2026-11-24T00:33:18.597Z",
+    "sourceTimestamp": "2026-11-17T02:11:50Z",
+    "sha256": "040f259d41a05f17c29765a18611e5c121ad13e9e3c205aba1ea00502af53344",
+    "excerptSha256": "40c1bc88867aac87833f81bfb1f8ea966cdb26251032fb595164a924f98729a9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 104325,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-bfaaac83-4d2b-4461-bb84-51f2aea11ddc",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4923,
+    "outputTokens": 287
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b7974f547f595b4fc925716b765f89e59e6e38947ecdf714c42f4edc954ecb93",
+  "artifactDigest": "60d210298c4982ff9ca7454cfccd8ca145d6a0c4bcf6cfc5bcad3cee927e36fc"
+}
