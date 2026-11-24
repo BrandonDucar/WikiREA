@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T18:17:56.179Z",
-  "sequence": 230,
+  "updatedAt": "2026-11-24T19:12:52.266Z",
+  "sequence": 231,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10545,6 +10545,20 @@
       "packet": "research/packets/research-000230-430f8c855d.json",
       "packetDigest": "4e9fd7bdbc06876dd9c6265a88512258f0a95fb332134b47aa707fe66b2bfdb3",
       "finishedAt": "2026-11-24T18:17:56.179Z"
+    },
+    {
+      "id": "research-000231-7a9bb9699c",
+      "role": "market-data-researcher",
+      "topic": "Bollinger Bands",
+      "day": "2026-11-24",
+      "runId": "45467794503",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-24T19:12:52.266Z",
+      "expiresAt": "2026-11-24T19:27:52.266Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
