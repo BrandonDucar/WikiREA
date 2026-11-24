@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000136-3ec311958b-review-8a640bd3d9",
+  "parentJobId": "research-000136-3ec311958b",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "5bc73f568a39e1f2dc09f3d04efb4d8c3c01487dc41d5f1cc26b3f2ceb33034a",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AArch64",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383931367",
+    "revision": "1383931367",
+    "observedAt": "2026-11-20T01:15:10.475Z",
+    "sourceTimestamp": "2026-11-05T17:43:54Z",
+    "sha256": "a6e5942af98f715bd4053b6332efaccd80de80861812c71dfb8901932d8a2628",
+    "excerptSha256": "0160b47f57482a8b8c7dea897143f7752456a7e14eeeca56521b3cc04c0356b0",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 42891,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on ARM64/AArch64 introduction, execution states, register counts, and compatibility model",
+      "Mechanisms correctly describe 64-bit execution state with A64 instruction set and backward compatibility via AArch32 coexistence",
+      "Source IDs properly reference the single source document provided",
+      "Unknowns appropriately identify implementation details not covered in source text",
+      "No unsupported mechanisms, copied passages, or invented execution claims detected"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-4a9bbb01-db5e-4b7d-93a9-abcd1a01fdfd",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5212,
+    "outputTokens": 104
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000136-3ec311958b",
+  "title": "ARM64",
+  "role": "application-tracer",
+  "createdAt": "2026-11-24T01:25:42.245Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "ARM64 (AArch64) is a 64-bit extension of the ARM architecture introduced in 2011 with ARMv8-A. It adds a 64-bit execution state and the A64 instruction set alongside the existing 32-bit AArch32 state, enabling greater memory capacity and performance. The architecture maintains backward compatibility by supporting both 32-bit and 64-bit execution, allowing 32-bit applications to run on 64-bit operating systems. ARM64 includes enhanced SIMD (Neon) with 32 registers, dedicated cryptography instructions, and a new exception system. It is implemented in application processors like Cortex-A series and is mandatory in ARMv9-A. The 64-bit state uses 31 general-purpose registers and 32 128-bit SIMD registers, with addresses assumed 64-bit.",
+  "mechanisms": [
+    {
+      "title": "64-bit Execution State and A64 Instruction Set",
+      "explanation": "ARM64 introduces a distinct 64-bit execution state (AArch64) with the new A64 instruction set. This state provides 31 general-purpose 64-bit registers and 32 × 128-bit SIMD registers, replacing the 32-bit AArch32 state. It supports 64-bit addresses and instructions that can operate on 32-bit or 64-bit arguments, enabling larger memory spaces and faster calculations compared to 32-bit versions.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Backward Compatibility via AArch32 Coexistence",
+      "explanation": "ARM64 is designed to work alongside the older 32-bit mode (AArch32), supporting both execution states within the same architecture. This allows 32-bit user-space applications to run on 64-bit operating systems and permits a 32-bit OS to operate under a 64-bit hypervisor. Processors may support one or both states at different exception levels, maintaining compatibility with existing 32-bit ARMv7-A software.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact implementation details of how 32-bit and 64-bit states are switched at runtime",
+    "Specific hardware mechanisms for the new exception system with fewer banked registers and modes",
+    "Whether all ARMv8-A processors support both AArch64 and AArch32 at all exception levels",
+    "The full scope of microarchitectural changes beyond the architectural specification when moving from AArch32 to AArch64"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "AArch64",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383931367",
+      "revision": "1383931367",
+      "observedAt": "2026-11-20T01:15:10.475Z",
+      "sourceTimestamp": "2026-11-05T17:43:54Z",
+      "sha256": "a6e5942af98f715bd4053b6332efaccd80de80861812c71dfb8901932d8a2628",
+      "excerptSha256": "0160b47f57482a8b8c7dea897143f7752456a7e14eeeca56521b3cc04c0356b0",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 42891,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on ARM64/AArch64 introduction, execution states, register counts, and compatibility model",
+      "Mechanisms correctly describe 64-bit execution state with A64 instruction set and backward compatibility via AArch32 coexistence",
+      "Source IDs properly reference the single source document provided",
+      "Unknowns appropriately identify implementation details not covered in source text",
+      "No unsupported mechanisms, copied passages, or invented execution claims detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-5f7c49e2-439a-471c-9b41-7cf132a3c775",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4620,
+      "outputTokens": 576
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-4a9bbb01-db5e-4b7d-93a9-abcd1a01fdfd",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5212,
+      "outputTokens": 104
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "90c8e49a3d54c8792904c8b39291faf0e8f6564d66573e926789339a97009c40",
+    "artifactDigest": "5bc73f568a39e1f2dc09f3d04efb4d8c3c01487dc41d5f1cc26b3f2ceb33034a",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000136-3ec311958b.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
