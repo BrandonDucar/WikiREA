@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000155-e0d42dc021-review-8a640bd3d9",
+  "parentJobId": "research-000155-e0d42dc021",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "e497c3a3e9a0ffcdfce2795ad38c8f52d9ec42a578e1b57cc8c9e59b6c807d9e",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Big data",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384597515",
+    "revision": "1384597515",
+    "observedAt": "2026-11-21T00:34:39.398Z",
+    "sourceTimestamp": "2026-11-09T01:52:33Z",
+    "sha256": "44e66cc324452eb26bbd9bbc0cc9c1d1af4e62d472170a7f7fc54f1ddb5488a2",
+    "excerptSha256": "c4ed11e07efca226f51c35cc310790471dca836978431bdf9190594417e883c7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 163929,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and scope",
+      "Mechanisms correctly cite source for parallel processing and value extraction claims",
+      "Unknowns appropriately identify gaps in thresholds, implementation details, veracity methods, and ownership models",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'may require' and 'varies depending' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-dc61b6af-fa0a-4050-822a-0011ecc87251",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4920,
+    "outputTokens": 84
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
