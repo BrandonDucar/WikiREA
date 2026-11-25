@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000245-b3bee6ad5e",
+  "topic": "Arch Linux",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Arch Linux is an open-source, rolling-release distribution designed for general-purpose use. It provides monthly installation media snapshots and is intentionally minimal, requiring user configuration during installation. The system is kept up-to-date by regularly updating individual software packages. Comprehensive community documentation is provided via the ArchWiki.",
+    "mechanisms": [
+      {
+        "title": "Package management via pacman",
+        "explanation": "Pacman, a package manager written specifically for Arch Linux, handles the installation, removal, and updating of software packages. It interfaces with the libalpm back-end and supports repository package signing since Pacman 4.0.0, with mandatory signing for official packages as of March 2012.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Community-driven software repository (AUR)",
+        "explanation": "The Arch User Repository (AUR) serves as a community-driven repository providing packages not included in official repositories and alternative versions. AUR packages can be built manually or installed through helper tools such as yay.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact motivations behind the choice of the name \"Arch\" beyond the stated etymological preference",
+      "Details of the specific workflow for user configuration during a minimal installation",
+      "Technical particulars of how monthly installation media snapshots are generated and distributed",
+      "Whether and how the documented influence of CRUX and BSD manifests in current implementation details"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Arch Linux",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387084670",
+    "revision": "1387084670",
+    "observedAt": "2026-11-25T12:22:28.688Z",
+    "sourceTimestamp": "2026-11-22T11:39:26Z",
+    "sha256": "0c7a7ff449d5204debda867c96a8b6bdd14c10f8b234d5b5bef224379e009b8a",
+    "excerptSha256": "1d1997dfc5b6bd7f3e9aaaad8a89a3f97a561aaaf0191350ea80d11c65dbef78",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 65510,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-50b30b53-644e-4137-95c2-1f6ee499f966",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4859,
+    "outputTokens": 324
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "11fde82059399497ef17b83ebeb869c276b2b7207e4c09d85e63ff96dbf3d07d",
+  "artifactDigest": "3f522b04b7b58e284524d56dea1a1a12c6e83718155374056369746d881337e7"
+}

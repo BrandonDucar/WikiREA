@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T12:22:26.093Z",
+  "updatedAt": "2026-11-25T12:22:31.141Z",
   "sequence": 245,
   "jobs": [
     {
@@ -11181,13 +11181,44 @@
       "topic": "Arch Linux",
       "day": "2026-11-25",
       "runId": "45613101813",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T12:22:26.093Z",
       "expiresAt": "2026-11-25T12:37:26.093Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Arch Linux",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387084670",
+        "revision": "1387084670",
+        "observedAt": "2026-11-25T12:22:28.688Z",
+        "sourceTimestamp": "2026-11-22T11:39:26Z",
+        "sha256": "0c7a7ff449d5204debda867c96a8b6bdd14c10f8b234d5b5bef224379e009b8a",
+        "excerptSha256": "1d1997dfc5b6bd7f3e9aaaad8a89a3f97a561aaaf0191350ea80d11c65dbef78",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 65510,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-50b30b53-644e-4137-95c2-1f6ee499f966",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4859,
+        "outputTokens": 324
+      },
+      "packet": "research/packets/research-000245-b3bee6ad5e.json",
+      "packetDigest": "3f522b04b7b58e284524d56dea1a1a12c6e83718155374056369746d881337e7",
+      "finishedAt": "2026-11-25T12:22:31.141Z"
     }
   ],
   "discovered": [
@@ -12112,11 +12143,6 @@
       "discoveredFrom": "research-000062-4539c21763"
     },
     {
-      "title": "Arch Linux",
-      "role": "source-curator",
-      "discoveredFrom": "research-000065-e0e23685a6"
-    },
-    {
       "title": "Bazel (software)",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
@@ -12663,11 +12689,6 @@
     },
     {
       "title": "Age of Empires II: The Age of Kings",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000086-074bf12801"
-    },
-    {
-      "title": "Arch Linux",
       "role": "application-tracer",
       "discoveredFrom": "research-000086-074bf12801"
     },
@@ -17140,6 +17161,41 @@
       "title": "Abstract type",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000244-189657d6d1"
+    },
+    {
+      "title": "/e/ (operating system)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000245-b3bee6ad5e"
+    },
+    {
+      "title": "4MLinux",
+      "role": "source-curator",
+      "discoveredFrom": "research-000245-b3bee6ad5e"
+    },
+    {
+      "title": "ALT Linux",
+      "role": "source-curator",
+      "discoveredFrom": "research-000245-b3bee6ad5e"
+    },
+    {
+      "title": "Absolute Linux",
+      "role": "source-curator",
+      "discoveredFrom": "research-000245-b3bee6ad5e"
+    },
+    {
+      "title": "AlmaLinux",
+      "role": "source-curator",
+      "discoveredFrom": "research-000245-b3bee6ad5e"
+    },
+    {
+      "title": "Alpine Linux",
+      "role": "source-curator",
+      "discoveredFrom": "research-000245-b3bee6ad5e"
+    },
+    {
+      "title": "Android-x86",
+      "role": "source-curator",
+      "discoveredFrom": "research-000245-b3bee6ad5e"
     }
   ],
   "reviewJobs": [
