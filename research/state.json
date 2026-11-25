@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T06:25:22.292Z",
-  "sequence": 240,
+  "updatedAt": "2026-11-25T07:17:12.357Z",
+  "sequence": 241,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10990,6 +10990,20 @@
       "packet": "research/packets/research-000240-d563ad7655.json",
       "packetDigest": "92973c6cd6fff5bf6b4279763dc9a0b95d23faf5d7fabf467b3c242c5a4ff5b3",
       "finishedAt": "2026-11-25T06:25:22.292Z"
+    },
+    {
+      "id": "research-000241-25d47be982",
+      "role": "market-data-researcher",
+      "topic": "Breadth of market",
+      "day": "2026-11-25",
+      "runId": "45566904690",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T07:17:12.357Z",
+      "expiresAt": "2026-11-25T07:32:12.357Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
