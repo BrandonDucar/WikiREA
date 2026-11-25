@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000147-ed7aca690a-review-8a640bd3d9",
+  "parentJobId": "research-000147-ed7aca690a",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "137e4a3cc53616b8a92b66322e89865f319e2e4c542fc4827ea89561be0f291d",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AOL Explorer",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1357144098",
+    "revision": "1357144098",
+    "observedAt": "2026-11-20T14:15:56.547Z",
+    "sourceTimestamp": "2026-06-01T00:31:44Z",
+    "sha256": "72b783955850d9a3add29bcdc05e33b37bb439873a44bd92271ec84f69070c92",
+    "excerptSha256": "72b783955850d9a3add29bcdc05e33b37bb439873a44bd92271ec84f69070c92",
+    "inspectedCharacters": 4811,
+    "totalCharacters": 4811,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including release date, distribution methods, engine, features, version 1.5 additions, and succession timeline",
+      "Mechanisms correctly identify Trident engine usage and feature set with proper source attribution",
+      "Unknowns appropriately distinguish genuinely unspecified technical details from documented facts",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims trace to provided Wikipedia source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-ea95ade0-10bc-43a9-9e25-b6db4f5709a1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2032,
+    "outputTokens": 91
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
