@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000251-e92f0ee951",
+  "topic": "Alation",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Alation is a privately held enterprise software company founded in 2012 that provides a data catalog product designed to help organizations search, understand, and govern their data. The platform combines machine learning to recommend relevant data assets and crowdsourced user contributions to surface trustworthy information. It supports natural language querying to lower the barrier for non-technical users and integrates with downstream analytics platforms such as Snowflake, Tableau, and Databricks. As of late 2022, Alation reported over 700 employees and a valuation exceeding $1.7 billion after multiple funding rounds.",
+    "mechanisms": [
+      {
+        "title": "Machine‑learning‑driven data recommendations",
+        "explanation": "Alation applies machine learning models to analyze usage patterns, metadata, and user interactions in order to surface the most relevant data assets and rank them by trustworthiness. This mechanism underlies the catalog’s ability to suggest datasets and columns that match a user’s query context.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Crowdsourced metadata and validation",
+        "explanation": "The platform incorporates user‑generated contributions such as tags, ratings, and tribal knowledge to enrich the catalog’s metadata. Community input helps surface data assets that might otherwise remain hidden and provides a signal for data quality and trust.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact algorithms used for ranking and recommendation",
+      "Details of how natural language queries are translated into backend queries across diverse data sources",
+      "Specific technical implementation of the integration layer with third‑party platforms like Snowflake or Tableau",
+      "Whether the system employs supervised, unsupervised, or hybrid machine‑learning approaches"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Alation",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384313848",
+    "revision": "1384313848",
+    "observedAt": "2026-11-25T19:12:13.682Z",
+    "sourceTimestamp": "2026-11-07T17:59:39Z",
+    "sha256": "440307546d11962cdb77633b4718dae3c38f21c50c18d87f2e85416d918830eb",
+    "excerptSha256": "440307546d11962cdb77633b4718dae3c38f21c50c18d87f2e85416d918830eb",
+    "inspectedCharacters": 13673,
+    "totalCharacters": 13673,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2340dd1e-b068-426f-b305-2e5590e91e6f",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4349,
+    "outputTokens": 382
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "d10a792911231c4d6a5d4e7ec4fe93b0a69e68916eae628d09ceff3b7e39329c",
+  "artifactDigest": "cf18e01fa676566d0bf9db7addf779a289edab4b1e457cc6fdc20fcd3cfee561"
+}

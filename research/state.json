@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T19:12:11.256Z",
+  "updatedAt": "2026-11-25T19:12:18.762Z",
   "sequence": 251,
   "jobs": [
     {
@@ -11438,13 +11438,44 @@
       "topic": "Alation",
       "day": "2026-11-25",
       "runId": "45682810581",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T19:12:11.256Z",
       "expiresAt": "2026-11-25T19:27:11.256Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Alation",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384313848",
+        "revision": "1384313848",
+        "observedAt": "2026-11-25T19:12:13.682Z",
+        "sourceTimestamp": "2026-11-07T17:59:39Z",
+        "sha256": "440307546d11962cdb77633b4718dae3c38f21c50c18d87f2e85416d918830eb",
+        "excerptSha256": "440307546d11962cdb77633b4718dae3c38f21c50c18d87f2e85416d918830eb",
+        "inspectedCharacters": 13673,
+        "totalCharacters": 13673,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2340dd1e-b068-426f-b305-2e5590e91e6f",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4349,
+        "outputTokens": 382
+      },
+      "packet": "research/packets/research-000251-e92f0ee951.json",
+      "packetDigest": "cf18e01fa676566d0bf9db7addf779a289edab4b1e457cc6fdc20fcd3cfee561",
+      "finishedAt": "2026-11-25T19:12:18.762Z"
     }
   ],
   "discovered": [
@@ -12712,11 +12743,6 @@
       "title": "ASIC",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000080-0033b77269"
-    },
-    {
-      "title": "Alation",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000081-ee73a932d9"
     },
     {
       "title": "Application program",
@@ -14885,11 +14911,6 @@
     },
     {
       "title": "Alan Turing Institute",
-      "role": "source-curator",
-      "discoveredFrom": "research-000155-e0d42dc021"
-    },
-    {
-      "title": "Alation",
       "role": "source-curator",
       "discoveredFrom": "research-000155-e0d42dc021"
     },
@@ -17512,6 +17533,46 @@
       "title": "Charles Benjamin Dudley",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000250-5615a295f1"
+    },
+    {
+      "title": "American Family Insurance",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "Annual recurring revenue",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "Bloomberg News",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "Business Insider",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "Computer software",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "Crowdsourcing",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "Data catalog",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "David Epstein (journalist)",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000251-e92f0ee951"
     }
   ],
   "reviewJobs": [
