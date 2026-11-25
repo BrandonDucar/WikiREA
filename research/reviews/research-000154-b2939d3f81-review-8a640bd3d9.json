@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000154-b2939d3f81-review-8a640bd3d9",
+  "parentJobId": "research-000154-b2939d3f81",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "47e868f86415a20bb9c036ab9acae379a39f3ca316b3154d7a480139e113da2f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Consensus (computer science)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386029502",
+    "revision": "1386029502",
+    "observedAt": "2026-11-20T22:13:32.502Z",
+    "sourceTimestamp": "2026-11-16T13:46:28Z",
+    "sha256": "cbfb2dbfe7a58beef5827d00e34b854116f88c3d475d1ef51bd114a44c52f226",
+    "excerptSha256": "475e283350c79f147db83ef408e8c46c3e77f7c9f5888ddceb31fcd35432b57d",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 48308,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on consensus problem, properties, failure models, FLP impossibility, and permissioned/permissionless distinction",
+      "Mechanisms correctly capture authenticated communication models (oral vs written) and fault tolerance properties (termination, integrity, agreement) with proper source attribution",
+      "Unknowns appropriately identify gaps not fully addressed in source (practical tradeoffs, randomized algorithm conditions, reconfiguration mechanisms, Sybil attack mitigation details)",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All claims in draft are grounded in the provided source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-6b71d8f9-0d65-409d-9b83-c3efd6fa1546",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3857,
+    "outputTokens": 128
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

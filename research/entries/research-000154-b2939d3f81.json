@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000154-b2939d3f81",
+  "title": "Consensus (computer science)",
+  "role": "glossary-and-mechanics-editor",
+  "createdAt": "2026-11-25T19:24:55.661Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Consensus in distributed computing addresses how processes agree on a single data value despite failures. Processes propose candidate values and communicate to reach agreement. Protocols must handle faulty processes that may send conflicting data or stop entirely. The problem requires satisfying three core properties: termination, integrity, and agreement. Variants exist for crash versus Byzantine failures, and for synchronous versus asynchronous systems. In asynchronous settings, deterministic consensus is impossible with even one crash failure (FLP impossibility), though randomized algorithms can circumvent this. Consensus protocols are categorized as permissioned, assuming a fixed authenticated group, or permissionless, using artificial barriers like proof-of-work to prevent Sybil attacks.",
+  "mechanisms": [
+    {
+      "title": "Authenticated communication channels",
+      "explanation": "Processes communicate through channels where message sources are known. Stronger 'written communication' models use digital signatures so receivers learn the full communication history, allowing protocols to tolerate more faults than 'oral communication' models where only the immediate source is known.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Fault tolerance properties",
+      "explanation": "Consensus protocols must satisfy termination (every correct process eventually decides), integrity (if all correct processes propose the same value, that value must be decided), and agreement (all correct processes decide the same value). Protocols tolerating Byzantine failures additionally require that any decided value was proposed by a correct process.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How practical implementations balance message complexity against fault tolerance thresholds in dynamic networks",
+    "Precise conditions under which randomized algorithms achieve safety versus liveness under worst-case scheduling",
+    "Mechanisms for reconfiguration in multi-valued consensus protocols without losing agreement properties",
+    "How permissionless protocols specifically mitigate Sybil attacks beyond artificial cost barriers"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Consensus (computer science)",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386029502",
+      "revision": "1386029502",
+      "observedAt": "2026-11-20T22:13:32.502Z",
+      "sourceTimestamp": "2026-11-16T13:46:28Z",
+      "sha256": "cbfb2dbfe7a58beef5827d00e34b854116f88c3d475d1ef51bd114a44c52f226",
+      "excerptSha256": "475e283350c79f147db83ef408e8c46c3e77f7c9f5888ddceb31fcd35432b57d",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 48308,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on consensus problem, properties, failure models, FLP impossibility, and permissioned/permissionless distinction",
+      "Mechanisms correctly capture authenticated communication models (oral vs written) and fault tolerance properties (termination, integrity, agreement) with proper source attribution",
+      "Unknowns appropriately identify gaps not fully addressed in source (practical tradeoffs, randomized algorithm conditions, reconfiguration mechanisms, Sybil attack mitigation details)",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All claims in draft are grounded in the provided source text"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-e6880dcc-d7e7-4158-add9-33fdcdbfc6e8",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3486,
+      "outputTokens": 392
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-6b71d8f9-0d65-409d-9b83-c3efd6fa1546",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3857,
+      "outputTokens": 128
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "07cfcadf8ae4ef72ecf409bfb9dd8488da23076f1381f6b6efa8d2460412c931",
+    "artifactDigest": "47e868f86415a20bb9c036ab9acae379a39f3ca316b3154d7a480139e113da2f",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000154-b2939d3f81.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
