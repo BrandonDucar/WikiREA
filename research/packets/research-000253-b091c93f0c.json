@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000253-b091c93f0c",
+  "topic": "Advanced persistent threat",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Advanced persistent threat (APT) denotes stealthy, continuous hacking operations typically orchestrated by a state or state-sponsored group that gain unauthorized network access and remain undetected for extended periods. Motivations are generally political or economic. APT actors employ a mix of commercial, open-source, and intelligence-gathering techniques, often combining multiple methods to compromise targets and maintain long-term access through low-and-slow campaigns rather than constant attacks. The median dwell-time—the period an APT goes undetected—varies globally, with reported averages of 71 days in the Americas, 177 in EMEA, and 204 in APAC. While originally tied to state actors, the term now also covers non-state groups conducting large-scale targeted intrusions for specific goals.",
+    "mechanisms": [
+      {
+        "title": "Stealthy intrusion and persistence",
+        "explanation": "APT operators gain unauthorized access via techniques such as social engineering, human intelligence, or physical infiltration, then deploy custom malware to establish and sustain long-term presence within the target network. Their approach is typically low-and-slow, emphasizing continuous monitoring and interaction to achieve defined objectives rather than launching constant attacks.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Extended dwell-time and objective achievement",
+        "explanation": "The defining characteristic of an APT is its prolonged undetected presence, allowing attackers significant time to propagate through the network and achieve their goals. Reported median dwell-times differ by region, averaging 71 days in the Americas, 177 in EMEA, and 204 in APAC, providing attackers ample opportunity to exfiltrate data, spy, or disrupt operations.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact composition of operator toolkits beyond stated capabilities",
+      "Specific methods of re-access after loss of initial entry",
+      "Details of coordination between non-state groups and external entities",
+      "Full scope of targets beyond listed major business sectors"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Advanced persistent threat",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384555396",
+    "revision": "1384555396",
+    "observedAt": "2026-11-25T21:14:51.619Z",
+    "sourceTimestamp": "2026-11-08T21:09:44Z",
+    "sha256": "f0229335f8f4d1daba961d126454af7dd7c76ca9f6d4073447ea86e44f907b02",
+    "excerptSha256": "1a2f8e72b3d271afbdbba2715eb10d32838c359520eacfda455a3eb353fd84c2",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 58689,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-e7baa67f-531f-423c-9def-cb4e7745fa54",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4387,
+    "outputTokens": 443
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "922fc32481020d43ebc02679c632e119ffe9eee56ca1d5f85ba230b45445b702",
+  "artifactDigest": "75d29b72d1c654176e3bb72ad0623d75804c886515213a271c2e99e3d0c4af35"
+}

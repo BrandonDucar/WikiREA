@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T21:14:49.838Z",
+  "updatedAt": "2026-11-25T21:14:54.506Z",
   "sequence": 253,
   "jobs": [
     {
@@ -11532,13 +11532,44 @@
       "topic": "Advanced persistent threat",
       "day": "2026-11-25",
       "runId": "45702515507",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T21:14:49.838Z",
       "expiresAt": "2026-11-25T21:29:49.838Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Advanced persistent threat",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384555396",
+        "revision": "1384555396",
+        "observedAt": "2026-11-25T21:14:51.619Z",
+        "sourceTimestamp": "2026-11-08T21:09:44Z",
+        "sha256": "f0229335f8f4d1daba961d126454af7dd7c76ca9f6d4073447ea86e44f907b02",
+        "excerptSha256": "1a2f8e72b3d271afbdbba2715eb10d32838c359520eacfda455a3eb353fd84c2",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 58689,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-e7baa67f-531f-423c-9def-cb4e7745fa54",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4387,
+        "outputTokens": 443
+      },
+      "packet": "research/packets/research-000253-b091c93f0c.json",
+      "packetDigest": "75d29b72d1c654176e3bb72ad0623d75804c886515213a271c2e99e3d0c4af35",
+      "finishedAt": "2026-11-25T21:14:54.506Z"
     }
   ],
   "discovered": [
@@ -12628,11 +12659,6 @@
       "discoveredFrom": "research-000072-2f715e698c"
     },
     {
-      "title": "Advanced persistent threat",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000073-067e4b69de"
-    },
-    {
       "title": "2010 Haiti earthquake",
       "role": "source-curator",
       "discoveredFrom": "research-000075-35dfb2a4a7"
@@ -13704,11 +13730,6 @@
     },
     {
       "title": "ACM Computing Surveys",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000111-9f9e754a87"
-    },
-    {
-      "title": "Advanced persistent threat",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000111-9f9e754a87"
     },
@@ -16693,11 +16714,6 @@
       "discoveredFrom": "research-000215-7c8fc365e1"
     },
     {
-      "title": "Advanced persistent threat",
-      "role": "source-curator",
-      "discoveredFrom": "research-000215-7c8fc365e1"
-    },
-    {
       "title": "3DF Zephyr",
       "role": "application-tracer",
       "discoveredFrom": "research-000216-b4dff76019"
@@ -17671,6 +17687,46 @@
       "title": "Air on the G String",
       "role": "music-events",
       "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "APT32",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "APT40",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "Adware",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "Americas",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "Andy Greenberg",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "Appin (company)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "Application security",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "Arbitrary code execution",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000253-b091c93f0c"
     }
   ],
   "reviewJobs": [
