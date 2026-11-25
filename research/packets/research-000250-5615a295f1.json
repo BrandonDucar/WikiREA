@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000250-5615a295f1",
+  "topic": "ASTM A53 steel",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ASTM A53 is a carbon steel pipe specification covering seamless and welded types used for structural and low-pressure fluid conveyance. It is produced in three types—furnace-butt-welded, electric-resistance-welded, and seamless—each available in Grades A and B. The steel is made via open-hearth, electric-furnace, or basic-oxygen processes. Welded Grade B requires heat treatment to eliminate untempered martensite. The pipe is sized by the NPS system and commonly has threaded or plain ends for water, air, or steam service.",
+    "mechanisms": [
+      {
+        "title": "Weld seam tempering",
+        "explanation": "For ASTM A53 Type E electric-resistance-welded Grade B pipe, the weld seam is heat treated after welding to a minimum of 1000 °F (540 °C) to ensure no untempered martensite remains.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Steel production process",
+        "explanation": "The steel for both seamless and welded ASTM A53 pipe is made by open-hearth, electric-furnace, or basic-oxygen processes. If different grades are sequentially strand cast, transition material must be identified and removed.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Cold expansion limits for Type E pipe",
+      "Preference between ASTM A53 and A500 tube in structural applications",
+      "Specific transition material removal procedures",
+      "Nonexpanded versus cold-expanded state options for Type E"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASTM A53 steel",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1315419237",
+    "revision": "1315419237",
+    "observedAt": "2026-11-25T18:16:42.853Z",
+    "sourceTimestamp": "2025-10-06T15:30:45Z",
+    "sha256": "8c4b917bdcac3d1d2e74bb6ce6d1cb661c415abc3ed0c9b199adaa548b4656ab",
+    "excerptSha256": "8c4b917bdcac3d1d2e74bb6ce6d1cb661c415abc3ed0c9b199adaa548b4656ab",
+    "inspectedCharacters": 4897,
+    "totalCharacters": 4897,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-94810bf3-a7ed-45c2-b2cb-8567d3c0f4c4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1538,
+    "outputTokens": 361
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "777ada98ab291bbb1284fe5c1c719185c881c1423e841c8ac71b59f7e4b559d6",
+  "artifactDigest": "3d8ed46f94907e90167df80011a3fa599c7bc14a950ca5d2b8b30b8ce8d825e3"
+}
