@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000252-1543f0c25f",
+  "topic": "Bach",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Johann Sebastian Bach (1685–1750) was a German composer and musician of the late Baroque period, renowned for his prolific output across instruments and forms. He is known for orchestral works like the Brandenburg Concertos, solo instrumental suites, keyboard works such as the Goldberg Variations, organ pieces including the Toccata and Fugue in D minor, and major choral works like the St Matthew Passion. Bach is celebrated for his mastery of counterpoint and harmonic organisation, and his adoption of rhythms and forms from Italy and France. His music includes hundreds of sacred and secular cantatas, concertos, suites, and fugues. Though acclaimed today, he was known primarily as an organist in his own lifetime; his reputation grew after the 19th-century Bach Revival sparked by Felix Mendelssohn.",
+    "mechanisms": [
+      {
+        "title": "Counterpoint and harmonic organisation",
+        "explanation": "Bach enriched established German styles through his mastery of counterpoint, harmonic and motivic organisation, and adaptation of rhythms, forms, and textures from abroad, particularly Italy and France.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Church and secular composition cycles",
+        "explanation": "As Thomaskantor in Leipzig, Bach composed annual cycles of church cantatas and music for the Collegium Musicum, alongside prolific output of concertos, suites, and fugues across multiple genres.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact nature of Bach's early musical education before age 10",
+      "Extent of self-directed study versus formal instruction in organ and composition",
+      "Precise reasons for his difficult relations with employers in Leipzig and earlier positions",
+      "Full scope of works lost when family members sold cantatas for scrap paper"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Johann Sebastian Bach",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386818268",
+    "revision": "1386818268",
+    "observedAt": "2026-11-25T20:14:51.117Z",
+    "sourceTimestamp": "2026-11-20T20:08:51Z",
+    "sha256": "2acb8e34839ac7f251ba42828fdca38231db2a3e2f92aa5c3d1e31eda0a43cbb",
+    "excerptSha256": "d0c7b16e98070b3014c1bea464f2016005635df5d1dafe95383ee2de63e01c1a",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 165125,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-bbb49674-0cc8-4d7e-ab37-107b1a31c8f5",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4314,
+    "outputTokens": 394
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "8521a521f42b1493524615b4a2e7d3eeac51babaee5629aca9b9aef683c41545",
+  "artifactDigest": "206b641b0a73a0ce240ad62c16b2e748a18c75b90c9262b10014a51c0b69964b"
+}

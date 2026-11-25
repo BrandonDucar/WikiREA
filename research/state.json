@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T20:14:49.249Z",
+  "updatedAt": "2026-11-25T20:14:54.292Z",
   "sequence": 252,
   "jobs": [
     {
@@ -11487,13 +11487,44 @@
       "topic": "Bach",
       "day": "2026-11-25",
       "runId": "45693068242",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T20:14:49.249Z",
       "expiresAt": "2026-11-25T20:29:49.249Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Johann Sebastian Bach",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386818268",
+        "revision": "1386818268",
+        "observedAt": "2026-11-25T20:14:51.117Z",
+        "sourceTimestamp": "2026-11-20T20:08:51Z",
+        "sha256": "2acb8e34839ac7f251ba42828fdca38231db2a3e2f92aa5c3d1e31eda0a43cbb",
+        "excerptSha256": "d0c7b16e98070b3014c1bea464f2016005635df5d1dafe95383ee2de63e01c1a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 165125,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-bbb49674-0cc8-4d7e-ab37-107b1a31c8f5",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4314,
+        "outputTokens": 394
+      },
+      "packet": "research/packets/research-000252-1543f0c25f.json",
+      "packetDigest": "206b641b0a73a0ce240ad62c16b2e748a18c75b90c9262b10014a51c0b69964b",
+      "finishedAt": "2026-11-25T20:14:54.292Z"
     }
   ],
   "discovered": [
@@ -11591,11 +11622,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Bach",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "Beethoven",
@@ -17591,6 +17617,46 @@
       "title": "David Epstein (journalist)",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000251-e92f0ee951"
+    },
+    {
+      "title": "24 Preludes, Op. 28 (Chopin)",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "24 Preludes and Fugues (Shostakovich)",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "Abraham Mendelssohn",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "Adam Reusner",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "Adam Václav Michna z Otradovic",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "Adolph Bernhard Marx",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "Advent",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
+    },
+    {
+      "title": "Air on the G String",
+      "role": "music-events",
+      "discoveredFrom": "research-000252-1543f0c25f"
     }
   ],
   "reviewJobs": [
