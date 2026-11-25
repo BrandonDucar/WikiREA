@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000249-8ea2e54b7b",
+  "topic": "Autoregressive model",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An autoregressive model represents a stochastic process where each output variable depends linearly on its own prior values, forming a difference equation driven by white noise. It serves as a foundational component of ARMA and ARIMA time series frameworks, with extensions like time-varying autoregressive models accommodating non-stationary dynamics. Stationarity requires root constraints outside the unit circle; otherwise, effects persist or diverge. Shocks propagate infinitely forward, decaying geometrically when stationary. While classical AR models are linear, large language models adopt the autoregressive label without linear dependence.",
+    "mechanisms": [
+      {
+        "title": "Linear dependence on prior values",
+        "explanation": "The model specifies output variables that are dependent linearly on their own previous values on a stochastic basis, expressed as a stochastic difference equation where current output is a weighted sum of lagged outputs plus white noise innovation.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Infinite impulse response from shocks",
+        "explanation": "A one-time shock affects the evolving variable infinitely far into the future; the effect diminishes toward zero over time if the process is stationary, but persists indefinitely otherwise.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise parameter estimation methods for non-stationary series",
+      "Exact mapping between classical AR coefficients and large language model token generation dynamics",
+      "Long-term behavior under structural breaks not captured by constant coefficients",
+      "Detailed interaction mechanisms between AR and moving-average components in hybrid models"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Autoregressive model",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385519587",
+    "revision": "1385519587",
+    "observedAt": "2026-11-25T16:20:21.654Z",
+    "sourceTimestamp": "2026-11-13T18:38:15Z",
+    "sha256": "494d10f8f6981429e466646596620bff2047d3e3ed6dbd2cca113b8db182a01c",
+    "excerptSha256": "ec6e5a49effa0d62338e327abc35905fb37e446de863737cc1d35399fcaa329f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 40081,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-fedf826a-eaad-4265-b41c-b87e46c0d9e2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4466,
+    "outputTokens": 333
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "78d06bab09ab0c0ec1da2120f4386b8607142acd7f4861fea8bf2ed2ebacb224",
+  "artifactDigest": "ca9b2e9d4b0610776a333a8bb2f50ad838a97d7f4b307248ad6c6719f542e002"
+}

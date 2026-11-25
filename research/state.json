@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T16:20:18.004Z",
+  "updatedAt": "2026-11-25T16:20:24.422Z",
   "sequence": 249,
   "jobs": [
     {
@@ -11344,30 +11344,51 @@
       "topic": "Autoregressive model",
       "day": "2026-11-25",
       "runId": "45652675928",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T16:20:18.004Z",
       "expiresAt": "2026-11-25T16:35:18.004Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Autoregressive model",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385519587",
+        "revision": "1385519587",
+        "observedAt": "2026-11-25T16:20:21.654Z",
+        "sourceTimestamp": "2026-11-13T18:38:15Z",
+        "sha256": "494d10f8f6981429e466646596620bff2047d3e3ed6dbd2cca113b8db182a01c",
+        "excerptSha256": "ec6e5a49effa0d62338e327abc35905fb37e446de863737cc1d35399fcaa329f",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 40081,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-fedf826a-eaad-4265-b41c-b87e46c0d9e2",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4466,
+        "outputTokens": 333
+      },
+      "packet": "research/packets/research-000249-8ea2e54b7b.json",
+      "packetDigest": "ca9b2e9d4b0610776a333a8bb2f50ad838a97d7f4b307248ad6c6719f542e002",
+      "finishedAt": "2026-11-25T16:20:24.422Z"
     }
   ],
   "discovered": [
     {
-      "title": "Autoregressive model",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000026-bf20caf174"
-    },
-    {
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
-    },
-    {
-      "title": "3D Hunting: Trophy Game",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000029-4aa4540b02"
     },
     {
       "title": "3D Hunting: Trophy Whitetail",
@@ -17383,6 +17404,46 @@
       "title": "Apple News",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000247-46e35d30f0"
+    },
+    {
+      "title": "15.ai",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
+    },
+    {
+      "title": "ACT-R",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
+    },
+    {
+      "title": "AI-induced psychosis",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
+    },
+    {
+      "title": "AI agent",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
+    },
+    {
+      "title": "AI alignment",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
+    },
+    {
+      "title": "AI anthropomorphism",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
+    },
+    {
+      "title": "AI boom",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
+    },
+    {
+      "title": "AI bubble",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000249-8ea2e54b7b"
     }
   ],
   "reviewJobs": [
