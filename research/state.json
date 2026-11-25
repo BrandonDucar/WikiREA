@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T15:16:09.770Z",
+  "updatedAt": "2026-11-25T15:16:12.586Z",
   "sequence": 248,
   "jobs": [
     {
@@ -11320,13 +11320,19 @@
       "topic": "3D Hunting: Trophy Game",
       "day": "2026-11-25",
       "runId": "45643204729",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-25T15:16:09.770Z",
       "expiresAt": "2026-11-25T15:31:09.770Z",
       "callsReserved": 2,
       "callsAttempted": 0,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "error": "HTTP_404",
+      "diagnostic": {
+        "httpStatus": 404,
+        "retryAfter": null
+      },
+      "finishedAt": "2026-11-25T15:16:12.586Z"
     }
   ],
   "discovered": [
