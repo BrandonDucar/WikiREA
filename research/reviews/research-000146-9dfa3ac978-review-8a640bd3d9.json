@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000146-9dfa3ac978-review-8a640bd3d9",
+  "parentJobId": "research-000146-9dfa3ac978",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "417d0876ddf2b69a495f252d2924a8f82f8e635074eafbf6b6df86519a059f42",
+  "sourcePin": {
+    "id": "S1",
+    "title": "ARM architecture family",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+    "revision": "1386168955",
+    "observedAt": "2026-11-20T13:15:37.711Z",
+    "sourceTimestamp": "2026-11-17T02:13:39Z",
+    "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+    "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 160955,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects ARM as RISC ISA family developed by Arm Holdings with licensing model",
+      "Mechanisms correctly describe RISC load-store design, register files, and instruction encodings per infobox data",
+      "Extension diversification (SVE, SME, SMT, cryptography, virtualization) and profile targeting (A/R/M) are supported by source infobox extensions lists",
+      "Chip count claim (230+ billion) matches cited Arm newsroom source",
+      "Unknowns appropriately identify proprietary/implementation-specific details not in source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-11eea91d-2799-4e44-8687-e374d2d52c3c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5220,
+    "outputTokens": 122
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
