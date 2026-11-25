@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000151-d79d72a069-review-8a640bd3d9",
+  "parentJobId": "research-000151-d79d72a069",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "859e18c2f960d003da254aafde49ca3877d0fadc99fbe06c6a08b84eb5f42c96",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache Pinot",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381331971",
+    "revision": "1381331971",
+    "observedAt": "2026-11-20T19:13:31.807Z",
+    "sourceTimestamp": "2026-10-21T17:58:10Z",
+    "sha256": "435b2896e24cdb95ac475da2a2ad4e6ab275efa2fd939ff6d6208a092d723483",
+    "excerptSha256": "435b2896e24cdb95ac475da2a2ad4e6ab275efa2fd939ff6d6208a092d723483",
+    "inspectedCharacters": 11419,
+    "totalCharacters": 11419,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source description of Pinot as open-source, distributed, column-oriented OLAP data store with low-latency queries over streaming/batch sources",
+      "Mechanism 1 correctly describes pluggable indexing types (Sorted, Bitmap, Inverted, Star-Tree, Range) and broker-based query routing using segment-to-server routing table per source",
+      "Mechanism 2 correctly describes Apache Helix for cluster management with embedded agents and ZooKeeper coordination per source",
+      "Unknowns list appropriately identifies internal details not covered in source (data placement strategy, query pipeline details, compression parameters, ingestion guarantees)",
+      "No unsupported mechanisms, copied passages, or invented execution found"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-ce974490-c6ea-43ea-ba53-59450631da72",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4329,
+    "outputTokens": 151
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
