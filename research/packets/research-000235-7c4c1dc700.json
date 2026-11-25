@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000235-7c4c1dc700",
+  "topic": "Address space layout randomization",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Address space layout randomization (ASLR) is a computer security technique that prevents reliable exploitation of memory corruption vulnerabilities by randomly arranging the memory positions of key data areas within a process, including the executable base, stack, heap, and libraries. By making target addresses unpredictable, attackers must guess memory locations, and a wrong guess typically crashes the application. Effectiveness depends on the amount of entropy in random offsets; more virtual memory space and less frequent re-randomization increase security. While 32-bit systems typically offer around 8 bits of entropy, modern 64-bit systems provide millions of combinations. Attackers may reduce entropy through information leaks, format string vulnerabilities, or alignment-based attacks. Recent empirical analysis (2024) indicates that while Linux distributions maintain robust randomization, Windows and macOS often fail to adequately randomize executable code and libraries, and Linux entropy has decreased since version 5.18.",
+    "mechanisms": [
+      {
+        "title": "Randomized memory placement",
+        "explanation": "ASLR randomly arranges the address space positions of key data areas of a process, including the base of the executable and the positions of the stack, heap, and libraries, preventing attackers from reliably redirecting code execution to a particular exploited function in memory.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Entropy-dependent security",
+        "explanation": "Security is increased by increasing the search space; more entropy is present when randomization occurs over a larger virtual memory area or with less frequent re-randomization. The probability of an attacker succeeding is calculated based on the number of bits of entropy (N) and the number of attempts (α), with success probability approaching certainty only when entropy is low.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact entropy bit counts for specific modern operating system implementations",
+      "Whether CPU branch target predictor buffer or MMU walking page table side channels can be fully mitigated against",
+      "The practical effectiveness of library load order randomization as a standalone entropy source",
+      "The specific impact of Linux kernel version 5.18 and later on library entropy reduction"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Address space layout randomization",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384592330",
+    "revision": "1384592330",
+    "observedAt": "2026-11-25T00:36:24.899Z",
+    "sourceTimestamp": "2026-11-09T01:19:11Z",
+    "sha256": "0f844d8350b2b3c822bb1c903db8190d069a1fd34bbe72a5f63baf712c50ba05",
+    "excerptSha256": "829563a0734b405b093ff3df49eb8407251c9ee1f3d7d62f5bc488e9b41e543d",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 40211,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-572610b9-0f3c-42ce-bc31-268ddddc85b0",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3973,
+    "outputTokens": 458
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b3632e2c2ec6028ba84d115ace3f0f8828537b3f72259528dedfd1972b241c0a",
+  "artifactDigest": "d91d8372f33dab23813aa583b324894ac804ddebd4315926445bf0b7d7609eab"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T00:36:23.078Z",
+  "updatedAt": "2026-11-25T00:36:27.713Z",
   "sequence": 235,
   "jobs": [
     {
@@ -10740,13 +10740,44 @@
       "topic": "Address space layout randomization",
       "day": "2026-11-25",
       "runId": "45519339038",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T00:36:23.078Z",
       "expiresAt": "2026-11-25T00:51:23.078Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Address space layout randomization",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384592330",
+        "revision": "1384592330",
+        "observedAt": "2026-11-25T00:36:24.899Z",
+        "sourceTimestamp": "2026-11-09T01:19:11Z",
+        "sha256": "0f844d8350b2b3c822bb1c903db8190d069a1fd34bbe72a5f63baf712c50ba05",
+        "excerptSha256": "829563a0734b405b093ff3df49eb8407251c9ee1f3d7d62f5bc488e9b41e543d",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 40211,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-572610b9-0f3c-42ce-bc31-268ddddc85b0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3973,
+        "outputTokens": 458
+      },
+      "packet": "research/packets/research-000235-7c4c1dc700.json",
+      "packetDigest": "d91d8372f33dab23813aa583b324894ac804ddebd4315926445bf0b7d7609eab",
+      "finishedAt": "2026-11-25T00:36:27.713Z"
     }
   ],
   "discovered": [
@@ -11694,11 +11725,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Address space layout randomization",
-      "role": "source-curator",
-      "discoveredFrom": "research-000065-e0e23685a6"
     },
     {
       "title": "Arch Linux",
@@ -16534,6 +16560,41 @@
       "title": "List of ad hoc routing protocols",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000234-c96ded1401"
+    },
+    {
+      "title": "64-bit",
+      "role": "source-curator",
+      "discoveredFrom": "research-000235-7c4c1dc700"
+    },
+    {
+      "title": "Address space",
+      "role": "source-curator",
+      "discoveredFrom": "research-000235-7c4c1dc700"
+    },
+    {
+      "title": "Apple Inc.",
+      "role": "source-curator",
+      "discoveredFrom": "research-000235-7c4c1dc700"
+    },
+    {
+      "title": "Ars Technica",
+      "role": "source-curator",
+      "discoveredFrom": "research-000235-7c4c1dc700"
+    },
+    {
+      "title": "Base address",
+      "role": "source-curator",
+      "discoveredFrom": "research-000235-7c4c1dc700"
+    },
+    {
+      "title": "Binary prefix",
+      "role": "source-curator",
+      "discoveredFrom": "research-000235-7c4c1dc700"
+    },
+    {
+      "title": "Branch predictor",
+      "role": "source-curator",
+      "discoveredFrom": "research-000235-7c4c1dc700"
     }
   ],
   "reviewJobs": [
