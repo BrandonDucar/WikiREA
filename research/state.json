@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T14:16:17.989Z",
+  "updatedAt": "2026-11-25T14:16:23.286Z",
   "sequence": 247,
   "jobs": [
     {
@@ -11275,13 +11275,44 @@
       "topic": "Accelerated Mobile Pages",
       "day": "2026-11-25",
       "runId": "45632209511",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T14:16:17.989Z",
       "expiresAt": "2026-11-25T14:31:17.989Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Accelerated Mobile Pages",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386167812",
+        "revision": "1386167812",
+        "observedAt": "2026-11-25T14:16:20.045Z",
+        "sourceTimestamp": "2026-11-17T02:05:24Z",
+        "sha256": "c19b1f3a9266cf208f4b1148e1dd31922262e6d9432ccae90e4248b14cfb907b",
+        "excerptSha256": "2698b753c591c03a9b94649f192cc01cfff842327815f987d75a552b92f0cf59",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 42486,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-bb195fb3-a9a5-4d17-831b-cc2f76ef44e6",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4825,
+        "outputTokens": 339
+      },
+      "packet": "research/packets/research-000247-46e35d30f0.json",
+      "packetDigest": "d11d55a5df2d9dc7facf47d304c4ba0793115596c79747ae3fde59444ab1babc",
+      "finishedAt": "2026-11-25T14:16:23.286Z"
     }
   ],
   "discovered": [
@@ -12469,11 +12500,6 @@
       "title": "Adobe Photoshop",
       "role": "application-tracer",
       "discoveredFrom": "research-000076-83a6537129"
-    },
-    {
-      "title": "Accelerated Mobile Pages",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000077-cd12fec18e"
     },
     {
       "title": "ActionScript",
@@ -17289,6 +17315,36 @@
       "title": "COLLADA",
       "role": "application-tracer",
       "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": "Acronym",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000247-46e35d30f0"
+    },
+    {
+      "title": "Adobe Inc.",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000247-46e35d30f0"
+    },
+    {
+      "title": "AngularJS",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000247-46e35d30f0"
+    },
+    {
+      "title": "Angular (web framework)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000247-46e35d30f0"
+    },
+    {
+      "title": "Apache Beam",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000247-46e35d30f0"
+    },
+    {
+      "title": "Apple News",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000247-46e35d30f0"
     }
   ],
   "reviewJobs": [
