@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T09:26:59.106Z",
+  "updatedAt": "2026-11-25T09:27:06.731Z",
   "sequence": 243,
   "jobs": [
     {
@@ -19222,8 +19222,10 @@
       "runId": "45585483237",
       "reservedAt": "2026-11-25T09:26:59.106Z",
       "expiresAt": "2026-11-25T09:41:59.106Z",
-      "status": "RESERVED",
-      "callsAttempted": 0
+      "status": "REVIEW_HELD",
+      "callsAttempted": 1,
+      "artifact": "research/reviews/research-000150-bcc15d8324-review-8a640bd3d9.json",
+      "finishedAt": "2026-11-25T09:27:06.731Z"
     }
   ],
   "providerHold": {

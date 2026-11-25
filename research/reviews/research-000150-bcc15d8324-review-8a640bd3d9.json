@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000150-bcc15d8324-review-8a640bd3d9",
+  "parentJobId": "research-000150-bcc15d8324",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "6365346b76f633a3d10e3edf19b839ee08b7d50399cd0fb2d7690bae47f39cbf",
+  "sourcePin": {
+    "id": "S1",
+    "title": "3D Systems",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382066944",
+    "revision": "1382066944",
+    "observedAt": "2026-11-20T18:18:01.524Z",
+    "sourceTimestamp": "2026-10-26T11:08:10Z",
+    "sha256": "24d3f04d70f3a70569a842e78c3bc04e8f84402107bca6689d4979df7de3a746",
+    "excerptSha256": "b09c11906c1d091c905a203b3716828986c919a3623a82f97a02cd88d93ffb0a",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 30782,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft claims '3D Systems was included on Business Insider's America's Most Innovative Businesses 2027 list' citing a 2025 article about a 2027 list — future-dated and unsupported by source",
+      "Draft states 'He remains the CEO as of February 17, 2023' but source only confirms appointment effective May 26, 2020, not continued tenure",
+      "Draft summary says 'Founded in 1986 by Chuck Hull, inventor of stereolithography' but source shows founded in Valencia, California, not just '1986'",
+      "Draft mechanisms cite 'S1' but no source IDs are defined or mapped in the packet",
+      "Draft includes financial figures (revenue $440M, net income -$255M) from infobox but these are not verified against cited SEC filing in source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-466453bf-82e0-4c0a-83c4-747cd9942000",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4977,
+    "outputTokens": 205
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
