@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000240-d563ad7655",
+  "topic": "ASTM A500",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ASTM A500 is the most common US specification for cold-formed welded and seamless carbon steel hollow structural sections (HSS) in round, square, and rectangular shapes. It defines four grades based on strength requirements, with Grade C being the most widely used. The standard applies to structural tubing and is distinct from hot-formed ASTM A501. Canadian standards prefer CSA G40.21.",
+    "mechanisms": [
+      {
+        "title": "Grade classification system",
+        "explanation": "ASTM A500 categorizes cold-formed carbon steel tubing into four grades (A, B, C, D) primarily based on minimum tensile and yield strength requirements. Grade C is the most commonly specified, while Grade D requires heat treatment. The grades reflect increasing minimum strength thresholds.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Material composition limits",
+        "explanation": "The specification sets maximum percentages for carbon (up to 0.26%), manganese (up to 1.35%), phosphorus (up to 0.035%), and sulfur (up to 0.035%). Copper content is listed as optional minimum. These composition limits influence the mechanical properties and grade classification.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Heat treatment requirements for Grades A, B, and C",
+      "Specific copper minimum content thresholds when specified",
+      "Formability differences between round, square, and rectangular shapes",
+      "Long-term performance variations in different environmental conditions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ASTM A500",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1277299171",
+    "revision": "1277299171",
+    "observedAt": "2026-11-25T06:25:20.482Z",
+    "sourceTimestamp": "2025-02-23T21:07:37Z",
+    "sha256": "451af803d3f2447b710314fb249f29336379f27be32d20126c5a907b87009201",
+    "excerptSha256": "451af803d3f2447b710314fb249f29336379f27be32d20126c5a907b87009201",
+    "inspectedCharacters": 3097,
+    "totalCharacters": 3097,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-707b888f-7d6f-49e6-b724-14bc4e392e5b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1420,
+    "outputTokens": 341
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e39e40e47a3b5dcf70988a94467409c0ef1c777d60a2406377298ef40c8eba14",
+  "artifactDigest": "92973c6cd6fff5bf6b4279763dc9a0b95d23faf5d7fabf467b3c242c5a4ff5b3"
+}
