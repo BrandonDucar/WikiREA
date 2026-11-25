@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000241-25d47be982",
+  "topic": "Breadth of market",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Breadth of market is a technical analysis indicator that measures market health by comparing the number of advancing stocks to declining stocks within a given index or exchange. It serves as a confirmation tool for price movements, where positive breadth (more advancers than decliners) suggests bullish momentum supporting price rises, while negative breadth indicates bearish momentum and potential price declines.",
+    "mechanisms": [
+      {
+        "title": "Advance/Decline Ratio Calculation",
+        "explanation": "The core mechanism involves calculating the ratio of advancing stocks to declining stocks within a specific market index or exchange. This ratio quantifies the proportion of participating stocks moving in a particular direction, forming the basis for breadth assessment.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Momentum Confirmation Logic",
+        "explanation": "Market breadth functions as a confirmation mechanism for price momentum. Positive breadth, where advancers exceed decliners, is interpreted as evidence that bullish forces control market momentum, helping validate upward price moves in the index. Conversely, negative breadth confirms bearish momentum and potential downside moves.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise mathematical formula variations beyond the basic advance/decline ratio",
+      "Specific threshold values or thresholds that define 'positive' or 'negative' breadth states",
+      "Detailed methodology for applying breadth indicators across different market exchanges beyond general reference",
+      "Long-term predictive validity or causal relationship between breadth signals and future price action"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Breadth of market",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1303192628",
+    "revision": "1303192628",
+    "observedAt": "2026-11-25T07:17:14.141Z",
+    "sourceTimestamp": "2025-07-29T15:28:11Z",
+    "sha256": "9e042a8fd3ae888d60e684edbe4af1a703a8a626c62116e2d4c3e0735727867c",
+    "excerptSha256": "9e042a8fd3ae888d60e684edbe4af1a703a8a626c62116e2d4c3e0735727867c",
+    "inspectedCharacters": 1089,
+    "totalCharacters": 1089,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-c6247b7a-36c8-4562-a1ce-e1e92089d171",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 507,
+    "outputTokens": 329
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "879b4e491736d116035b0f924c3acbd9225b93b2f649288087c5381d1ad73c5e",
+  "artifactDigest": "e8c7ab45712bcead04a2a7173fb68b0a6c97860bceadd2e66da8b87f66491909"
+}
