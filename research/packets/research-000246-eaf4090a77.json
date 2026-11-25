@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000246-eaf4090a77",
+  "topic": "3DMLW",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "3DMLW is a discontinued open-source XML-based markup language for representing interactive 2D and 3D web content. It uses an open-source software suite with its own scripting language and plug-in interface for browser integration. The rendering engine relies on OpenGL and a scene library. A server toolset provides batch conversion and texture atlas generation. Content is viewed via plug-ins for Internet Explorer and NPAPI browsers, though these are no longer available. It supported various 3D model formats and used Lua scripting for animation and events.",
+    "mechanisms": [
+      {
+        "title": "Rendering pipeline",
+        "explanation": "The rendering engine uses industry standard OpenGL and consists of a scene library and graphics library providing an optimized pipeline for scene structures. The scene library can be utilized independently for mesh manipulation without rendering.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Plug-in interface and scripting",
+        "explanation": "The plug-in interface mediates input/output between host windows and the application, with native support for common browsers. A Lua scripting facility is provided for animating 3D scenes and handling events, demonstrated by color-fading scripts that modify object attributes.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mechanism of browser plug-in integration beyond native support claims",
+      "Details of the independent scene library usage outside rendering context",
+      "Specifics of batch conversion processes and texture atlas generation workflow",
+      "Post-2009 availability and functional status of documented applications"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "3DMLW",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1148190843",
+    "revision": "1148190843",
+    "observedAt": "2026-11-25T13:16:54.556Z",
+    "sourceTimestamp": "2023-04-04T16:34:22Z",
+    "sha256": "a2ece9408b902862671cd8e338c71244797fd0a17b95498df163c25f644cd4cf",
+    "excerptSha256": "a2ece9408b902862671cd8e338c71244797fd0a17b95498df163c25f644cd4cf",
+    "inspectedCharacters": 5589,
+    "totalCharacters": 5589,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-3b1025f4-16ef-4aed-b8af-955f01c9de16",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1863,
+    "outputTokens": 336
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "072945439def7e4c72b2eb6eff58033cb070411c529af3a77e88e672335bf374",
+  "artifactDigest": "bc394c2408cc16022e76146c4019eae3afebd9584eba02c04d65f29b9c591ba1"
+}

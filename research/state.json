@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T13:16:51.541Z",
+  "updatedAt": "2026-11-25T13:16:56.625Z",
   "sequence": 246,
   "jobs": [
     {
@@ -11226,13 +11226,44 @@
       "topic": "3DMLW",
       "day": "2026-11-25",
       "runId": "45621922917",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T13:16:51.541Z",
       "expiresAt": "2026-11-25T13:31:51.541Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "3DMLW",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1148190843",
+        "revision": "1148190843",
+        "observedAt": "2026-11-25T13:16:54.556Z",
+        "sourceTimestamp": "2023-04-04T16:34:22Z",
+        "sha256": "a2ece9408b902862671cd8e338c71244797fd0a17b95498df163c25f644cd4cf",
+        "excerptSha256": "a2ece9408b902862671cd8e338c71244797fd0a17b95498df163c25f644cd4cf",
+        "inspectedCharacters": 5589,
+        "totalCharacters": 5589,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-3b1025f4-16ef-4aed-b8af-955f01c9de16",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1863,
+        "outputTokens": 336
+      },
+      "packet": "research/packets/research-000246-eaf4090a77.json",
+      "packetDigest": "bc394c2408cc16022e76146c4019eae3afebd9584eba02c04d65f29b9c591ba1",
+      "finishedAt": "2026-11-25T13:16:56.625Z"
     }
   ],
   "discovered": [
@@ -12185,11 +12216,6 @@
       "title": "Chain of trust",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
-    },
-    {
-      "title": "3DMLW",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000066-02c0e9d820"
     },
     {
       "title": "AI assistant",
@@ -14460,11 +14486,6 @@
       "title": "32-bit",
       "role": "application-tracer",
       "discoveredFrom": "research-000146-9dfa3ac978"
-    },
-    {
-      "title": "3DMLW",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000147-ed7aca690a"
     },
     {
       "title": "AIM (software)",
@@ -17210,6 +17231,46 @@
       "title": "Android-x86",
       "role": "source-curator",
       "discoveredFrom": "research-000245-b3bee6ad5e"
+    },
+    {
+      "title": ".an8",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": ".pts",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": "3DML",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": "3DXML",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": "3D Wayfinder",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": "Asymptote (vector graphics language)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": "BSD",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
+    },
+    {
+      "title": "COLLADA",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000246-eaf4090a77"
     }
   ],
   "reviewJobs": [
