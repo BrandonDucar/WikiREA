@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T12:22:31.141Z",
-  "sequence": 245,
+  "updatedAt": "2026-11-25T13:16:51.541Z",
+  "sequence": 246,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11219,6 +11219,20 @@
       "packet": "research/packets/research-000245-b3bee6ad5e.json",
       "packetDigest": "3f522b04b7b58e284524d56dea1a1a12c6e83718155374056369746d881337e7",
       "finishedAt": "2026-11-25T12:22:31.141Z"
+    },
+    {
+      "id": "research-000246-eaf4090a77",
+      "role": "application-tracer",
+      "topic": "3DMLW",
+      "day": "2026-11-25",
+      "runId": "45621922917",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T13:16:51.541Z",
+      "expiresAt": "2026-11-25T13:31:51.541Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
