@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T02:20:59.915Z",
+  "updatedAt": "2026-11-25T02:21:07.173Z",
   "sequence": 237,
   "jobs": [
     {
@@ -10834,13 +10834,44 @@
       "topic": "ARM architecture",
       "day": "2026-11-25",
       "runId": "45532289775",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T02:20:59.915Z",
       "expiresAt": "2026-11-25T02:35:59.915Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ARM architecture family",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+        "revision": "1386168955",
+        "observedAt": "2026-11-25T02:21:01.995Z",
+        "sourceTimestamp": "2026-11-17T02:13:39Z",
+        "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+        "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 160955,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-784bebd3-a7b1-4d30-9945-1f0f593f5947",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4753,
+        "outputTokens": 464
+      },
+      "packet": "research/packets/research-000237-f0af40d9b3.json",
+      "packetDigest": "877670fab33ec9cbb50be30af02c5c3a7c82f98d34dd5b781738511551e334a2",
+      "finishedAt": "2026-11-25T02:21:07.173Z"
     }
   ],
   "discovered": [
@@ -12073,11 +12104,6 @@
       "title": "Adobe Photoshop",
       "role": "application-tracer",
       "discoveredFrom": "research-000076-83a6537129"
-    },
-    {
-      "title": "ARM architecture",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000077-cd12fec18e"
     },
     {
       "title": "Accelerated Mobile Pages",
@@ -13855,11 +13881,6 @@
       "discoveredFrom": "research-000135-b475a168df"
     },
     {
-      "title": "ARM architecture",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000136-3ec311958b"
-    },
-    {
       "title": "AAAI/ACM Conference on AI, Ethics, and Society",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000137-4b03a99ab9"
@@ -15565,11 +15586,6 @@
       "discoveredFrom": "research-000193-428d9b4755"
     },
     {
-      "title": "ARM architecture",
-      "role": "source-curator",
-      "discoveredFrom": "research-000195-3733335e81"
-    },
-    {
       "title": "Adaptability",
       "role": "source-curator",
       "discoveredFrom": "research-000195-3733335e81"
@@ -15981,11 +15997,6 @@
     },
     {
       "title": "AI agent",
-      "role": "music-events",
-      "discoveredFrom": "research-000212-e501166961"
-    },
-    {
-      "title": "ARM architecture",
       "role": "music-events",
       "discoveredFrom": "research-000212-e501166961"
     },
@@ -16693,6 +16704,21 @@
       "title": "3D graphics pipelines",
       "role": "application-tracer",
       "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "26-bit",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000237-f0af40d9b3"
+    },
+    {
+      "title": "32-bit",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000237-f0af40d9b3"
+    },
+    {
+      "title": "4-bit computing",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000237-f0af40d9b3"
     }
   ],
   "reviewJobs": [

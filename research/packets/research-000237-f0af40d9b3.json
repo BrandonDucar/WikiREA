@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000237-f0af40d9b3",
+  "topic": "ARM architecture",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ARM is a family of RISC instruction set architectures developed by Arm Holdings and licensed for implementation. Designers Sophie Wilson and Steve Furber created the architecture for Acorn Computers in 1985. ARM processors use a load-store architecture with condition-code branching and feature 31 general-purpose 64-bit registers in the 64-bit AArch64 mode, or 15 32-bit registers in AArch32 mode. The architecture supports bi-endian operation and includes extensions like Thumb-2 for code density, Advanced SIMD (Neon) for media processing, and virtualization. Variants span 32-bit microcontrollers to 64-bit server cores, with over 230 billion chips produced as of 2024.",
+    "mechanisms": [
+      {
+        "title": "Load-Store Architecture",
+        "explanation": "ARM processors use a load-store architecture where arithmetic operations work only on register contents, and memory access requires explicit load and store instructions. This separates data movement from computation, enabling simpler pipelining and consistent register usage across the instruction set.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Register File and Encoding",
+        "explanation": "The architecture defines distinct register files for integer and floating-point/SIMD operations. AArch64 provides 31 × 64-bit general-purpose registers and 32 × 128-bit SIMD/floating-point registers. AArch32 offers 15 × 32-bit integer registers (with the link register R14) and up to 32 × 64-bit optional SIMD/floating-point registers. Instruction encoding differs between 32-bit fixed-length and mixed 16/32-bit Thumb-2 modes.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact microarchitectural implementation details of specific core designs",
+      "Proprietary licensing terms and royalty structures for ISA usage",
+      "Internal pipeline scheduling and out-of-order execution mechanisms in modern cores",
+      "Specific power management states and transition behaviors across ARM generations"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ARM architecture family",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386168955",
+    "revision": "1386168955",
+    "observedAt": "2026-11-25T02:21:01.995Z",
+    "sourceTimestamp": "2026-11-17T02:13:39Z",
+    "sha256": "d1195f6bf65ac29cd6d3ce4a8046b439f4aeee933d58e847ab65394cf49d5d46",
+    "excerptSha256": "69b05a82e92e85f872acabf20866114719f588417ef1ae07e36a24ccf2047461",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 160955,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-784bebd3-a7b1-4d30-9945-1f0f593f5947",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4753,
+    "outputTokens": 464
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "2af4f3672f96aeeff3b6733a65342099b67222ffe6df148034ca4d7d02340728",
+  "artifactDigest": "877670fab33ec9cbb50be30af02c5c3a7c82f98d34dd5b781738511551e334a2"
+}
