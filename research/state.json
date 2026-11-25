@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T07:26:59.527Z",
-  "sequence": 241,
+  "updatedAt": "2026-11-25T08:20:33.373Z",
+  "sequence": 242,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11039,6 +11039,20 @@
       "packet": "research/packets/research-000241-25d47be982.json",
       "packetDigest": "e8c7ab45712bcead04a2a7173fb68b0a6c97860bceadd2e66da8b87f66491909",
       "finishedAt": "2026-11-25T07:17:15.794Z"
+    },
+    {
+      "id": "research-000242-fef2dda2b6",
+      "role": "music-events",
+      "topic": "Applications of artificial intelligence",
+      "day": "2026-11-25",
+      "runId": "45575394040",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T08:20:33.373Z",
+      "expiresAt": "2026-11-25T08:35:33.373Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
