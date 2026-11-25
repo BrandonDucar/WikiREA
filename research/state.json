@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T18:16:46.106Z",
-  "sequence": 250,
+  "updatedAt": "2026-11-25T19:12:11.256Z",
+  "sequence": 251,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11431,6 +11431,20 @@
       "packet": "research/packets/research-000250-5615a295f1.json",
       "packetDigest": "3d8ed46f94907e90167df80011a3fa599c7bc14a950ca5d2b8b30b8ce8d825e3",
       "finishedAt": "2026-11-25T18:16:46.106Z"
+    },
+    {
+      "id": "research-000251-e92f0ee951",
+      "role": "market-data-researcher",
+      "topic": "Alation",
+      "day": "2026-11-25",
+      "runId": "45682810581",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T19:12:11.256Z",
+      "expiresAt": "2026-11-25T19:27:11.256Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
