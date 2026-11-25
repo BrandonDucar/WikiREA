@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T22:14:55.138Z",
+  "updatedAt": "2026-11-25T22:15:00.348Z",
   "sequence": 254,
   "jobs": [
     {
@@ -11581,13 +11581,44 @@
       "topic": "Action–domain–responder",
       "day": "2026-11-25",
       "runId": "45711548836",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T22:14:55.138Z",
       "expiresAt": "2026-11-25T22:29:55.138Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Action–domain–responder",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383254219",
+        "revision": "1383254219",
+        "observedAt": "2026-11-25T22:14:58.142Z",
+        "sourceTimestamp": "2026-11-01T19:33:43Z",
+        "sha256": "21712aae6e1348e2e4f0af1480441f1a17397f4c358f6a9f5a765c31abf50fbb",
+        "excerptSha256": "21712aae6e1348e2e4f0af1480441f1a17397f4c358f6a9f5a765c31abf50fbb",
+        "inspectedCharacters": 3267,
+        "totalCharacters": 3267,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-65ae7049-404a-4d93-981e-54e87f0b046a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1069,
+        "outputTokens": 359
+      },
+      "packet": "research/packets/research-000254-ef528063e2.json",
+      "packetDigest": "0f87bbd5cad403c71f4823e1d23f2c6477e984e58e76e4fe0de8ec2b93ff4f77",
+      "finishedAt": "2026-11-25T22:15:00.348Z"
     }
   ],
   "discovered": [
@@ -12552,11 +12583,6 @@
       "discoveredFrom": "research-000068-e1044edf96"
     },
     {
-      "title": "Action–domain–responder",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000068-e1044edf96"
-    },
-    {
       "title": "Active object",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000068-e1044edf96"
@@ -12945,11 +12971,6 @@
       "title": "Average",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000083-ece4b38be5"
-    },
-    {
-      "title": "Action–domain–responder",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000084-e3f4a4ce2e"
     },
     {
       "title": "Active object",
@@ -17745,6 +17766,21 @@
       "title": "Arbitrary code execution",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000253-b091c93f0c"
+    },
+    {
+      "title": "Asynchronous method invocation",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000254-ef528063e2"
+    },
+    {
+      "title": "Balking pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000254-ef528063e2"
+    },
+    {
+      "title": "Behavioral pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000254-ef528063e2"
     }
   ],
   "reviewJobs": [
