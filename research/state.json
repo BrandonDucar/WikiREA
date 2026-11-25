@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T14:16:23.286Z",
-  "sequence": 247,
+  "updatedAt": "2026-11-25T15:16:09.770Z",
+  "sequence": 248,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11313,6 +11313,20 @@
       "packet": "research/packets/research-000247-46e35d30f0.json",
       "packetDigest": "d11d55a5df2d9dc7facf47d304c4ba0793115596c79747ae3fde59444ab1babc",
       "finishedAt": "2026-11-25T14:16:23.286Z"
+    },
+    {
+      "id": "research-000248-a49d41a791",
+      "role": "game-mechanic-researcher",
+      "topic": "3D Hunting: Trophy Game",
+      "day": "2026-11-25",
+      "runId": "45643204729",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T15:16:09.770Z",
+      "expiresAt": "2026-11-25T15:31:09.770Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
