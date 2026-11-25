@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T17:24:58.325Z",
-  "sequence": 249,
+  "updatedAt": "2026-11-25T18:16:40.277Z",
+  "sequence": 250,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11386,6 +11386,20 @@
       "packet": "research/packets/research-000249-8ea2e54b7b.json",
       "packetDigest": "ca9b2e9d4b0610776a333a8bb2f50ad838a97d7f4b307248ad6c6719f542e002",
       "finishedAt": "2026-11-25T16:20:24.422Z"
+    },
+    {
+      "id": "research-000250-5615a295f1",
+      "role": "hardware-interoperability-scout",
+      "topic": "ASTM A53 steel",
+      "day": "2026-11-25",
+      "runId": "45673457195",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T18:16:40.277Z",
+      "expiresAt": "2026-11-25T18:31:40.277Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
