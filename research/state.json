@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T04:18:35.373Z",
+  "updatedAt": "2026-11-25T04:18:39.996Z",
   "sequence": 239,
   "jobs": [
     {
@@ -10903,21 +10903,47 @@
       "topic": "Autoregressive integrated moving average",
       "day": "2026-11-25",
       "runId": "45545872400",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T04:18:35.373Z",
       "expiresAt": "2026-11-25T04:33:35.373Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Autoregressive integrated moving average",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1376654709",
+        "revision": "1376654709",
+        "observedAt": "2026-11-25T04:18:37.692Z",
+        "sourceTimestamp": "2026-09-25T13:40:56Z",
+        "sha256": "8618f7c097419e2b8db364b35f9a9f5c51267626b16804c8c24299dc13fe2c22",
+        "excerptSha256": "8faa93c34b8236bb8b08dbedbd4e3bc8dc12a832ed42407196eed005bfde3fc8",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 23796,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9dce0f87-2b39-4250-9790-70a07b2f36a2",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4271,
+        "outputTokens": 478
+      },
+      "packet": "research/packets/research-000239-dc13eb30a9.json",
+      "packetDigest": "73d2955a615f1f263c94970b0c255e990d5174086d6c95ca6ff258d171438dc7",
+      "finishedAt": "2026-11-25T04:18:39.996Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Autoregressive integrated moving average",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000026-bf20caf174"
-    },
     {
       "title": "Autoregressive model",
       "role": "simulation-researcher",
@@ -10932,11 +10958,6 @@
       "title": "ASTM A53 steel",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000027-b59cd37049"
-    },
-    {
-      "title": "3D Hunting: Grizzly",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000029-4aa4540b02"
     },
     {
       "title": "3D Hunting: Trophy Game",
@@ -16757,6 +16778,36 @@
       "title": "4-bit computing",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000237-f0af40d9b3"
+    },
+    {
+      "title": "Apache Spark",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000239-dc13eb30a9"
+    },
+    {
+      "title": "Arimaa",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000239-dc13eb30a9"
+    },
+    {
+      "title": "Autocorrelation",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000239-dc13eb30a9"
+    },
+    {
+      "title": "Autocorrelation function",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000239-dc13eb30a9"
+    },
+    {
+      "title": "Autocovariance",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000239-dc13eb30a9"
+    },
+    {
+      "title": "Autoregressive fractionally integrated moving average",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000239-dc13eb30a9"
     }
   ],
   "reviewJobs": [
