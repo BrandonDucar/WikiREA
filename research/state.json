@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T03:30:07.688Z",
-  "sequence": 238,
+  "updatedAt": "2026-11-25T04:18:35.373Z",
+  "sequence": 239,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10896,6 +10896,20 @@
         "retryAfter": null
       },
       "finishedAt": "2026-11-25T03:18:02.841Z"
+    },
+    {
+      "id": "research-000239-dc13eb30a9",
+      "role": "simulation-researcher",
+      "topic": "Autoregressive integrated moving average",
+      "day": "2026-11-25",
+      "runId": "45545872400",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T04:18:35.373Z",
+      "expiresAt": "2026-11-25T04:33:35.373Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
