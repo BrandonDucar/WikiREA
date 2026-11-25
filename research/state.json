@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T19:24:55.662Z",
-  "sequence": 251,
+  "updatedAt": "2026-11-25T20:14:49.249Z",
+  "sequence": 252,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11480,6 +11480,20 @@
       "packet": "research/packets/research-000251-e92f0ee951.json",
       "packetDigest": "cf18e01fa676566d0bf9db7addf779a289edab4b1e457cc6fdc20fcd3cfee561",
       "finishedAt": "2026-11-25T19:12:18.762Z"
+    },
+    {
+      "id": "research-000252-1543f0c25f",
+      "role": "music-events",
+      "topic": "Bach",
+      "day": "2026-11-25",
+      "runId": "45693068242",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T20:14:49.249Z",
+      "expiresAt": "2026-11-25T20:29:49.249Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
