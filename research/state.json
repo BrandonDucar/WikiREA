@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T10:16:27.690Z",
-  "sequence": 244,
+  "updatedAt": "2026-11-25T12:22:26.093Z",
+  "sequence": 245,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11174,6 +11174,20 @@
       "packet": "research/packets/research-000244-189657d6d1.json",
       "packetDigest": "fbdc7783c9da7819d49bf11fb116a0443606df0acabc702cb6c360a198079387",
       "finishedAt": "2026-11-25T10:16:27.690Z"
+    },
+    {
+      "id": "research-000245-b3bee6ad5e",
+      "role": "source-curator",
+      "topic": "Arch Linux",
+      "day": "2026-11-25",
+      "runId": "45613101813",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T12:22:26.093Z",
+      "expiresAt": "2026-11-25T12:37:26.093Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
