@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T01:16:26.798Z",
+  "updatedAt": "2026-11-25T01:16:32.389Z",
   "sequence": 236,
   "jobs": [
     {
@@ -10785,13 +10785,44 @@
       "topic": "3D paint tool",
       "day": "2026-11-25",
       "runId": "45524489049",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T01:16:26.798Z",
       "expiresAt": "2026-11-25T01:31:26.798Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Glossary of computer graphics",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1371483338",
+        "revision": "1371483338",
+        "observedAt": "2026-11-25T01:16:29.487Z",
+        "sourceTimestamp": "2026-08-26T18:40:39Z",
+        "sha256": "9b94c94bab0e3b8b2055fba2aaaea247fba291e10a16f6c73ac7523486b2195a",
+        "excerptSha256": "e8e08c6cccfa819c8895d98b6224587cf355197eee0a9352f4b0794b0277a36a",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 63384,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2a5f5cc2-c70c-4046-8946-0693983a8b0e",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4074,
+        "outputTokens": 289
+      },
+      "packet": "research/packets/research-000236-dd309c821a.json",
+      "packetDigest": "f270518f4688613a00d837094311685ebc4843e0b97c379850590e9d2a616135",
+      "finishedAt": "2026-11-25T01:16:32.389Z"
     }
   ],
   "discovered": [
@@ -11589,11 +11620,6 @@
       "title": "6502",
       "role": "music-events",
       "discoveredFrom": "research-000052-0783a62649"
-    },
-    {
-      "title": "3D paint tool",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000056-4de8f52dba"
     },
     {
       "title": "\"Hello, World!\" program",
@@ -16609,6 +16635,46 @@
       "title": "Branch predictor",
       "role": "source-curator",
       "discoveredFrom": "research-000235-7c4c1dc700"
+    },
+    {
+      "title": "2D array",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "2D plane",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "2D polygon",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "32-bit word",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "3D graphics",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "3D graphics application",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "3D graphics pipeline",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
+    },
+    {
+      "title": "3D graphics pipelines",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000236-dd309c821a"
     }
   ],
   "reviewJobs": [

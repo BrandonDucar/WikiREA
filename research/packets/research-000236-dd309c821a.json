@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000236-dd309c821a",
+  "topic": "3D paint tool",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A 3D paint tool is a graphics application designed for digital painting directly onto the texture map channels of a 3D model while it is rotated in view. It allows artists to paint surface details that are then mapped onto the geometry, and some implementations also permit modification of vertex attributes. The tool operates within the context of 3D graphics pipelines and texture mapping workflows.",
+    "mechanisms": [
+      {
+        "title": "Direct texture channel painting",
+        "explanation": "The application captures brush strokes and maps them onto the image channels of the texture map associated with the currently visible faces of the 3D model, allowing real-time modification of color, transparency, or other channel data.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Vertex attribute modification",
+        "explanation": "Certain implementations extend beyond surface painting to allow direct editing of vertex attributes such as position, normals, or other geometric properties, though this capability varies between applications.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mapping pipeline between brush input and texture coordinate assignment",
+      "Whether modifications are applied per-pixel, per-texel, or via procedural generation",
+      "Support for multi-resolution or displacement painting workflows",
+      "Integration with external rendering engines or game pipelines"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Glossary of computer graphics",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1371483338",
+    "revision": "1371483338",
+    "observedAt": "2026-11-25T01:16:29.487Z",
+    "sourceTimestamp": "2026-08-26T18:40:39Z",
+    "sha256": "9b94c94bab0e3b8b2055fba2aaaea247fba291e10a16f6c73ac7523486b2195a",
+    "excerptSha256": "e8e08c6cccfa819c8895d98b6224587cf355197eee0a9352f4b0794b0277a36a",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 63384,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2a5f5cc2-c70c-4046-8946-0693983a8b0e",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4074,
+    "outputTokens": 289
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fba9cfa3f4a2a6dbf449d28cfccbc7461623b99333f83a536082f6979d6c1c71",
+  "artifactDigest": "f270518f4688613a00d837094311685ebc4843e0b97c379850590e9d2a616135"
+}
