@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T01:25:39.106Z",
-  "sequence": 236,
+  "updatedAt": "2026-11-25T02:20:59.915Z",
+  "sequence": 237,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10827,6 +10827,20 @@
       "packet": "research/packets/research-000236-dd309c821a.json",
       "packetDigest": "f270518f4688613a00d837094311685ebc4843e0b97c379850590e9d2a616135",
       "finishedAt": "2026-11-25T01:16:32.389Z"
+    },
+    {
+      "id": "research-000237-f0af40d9b3",
+      "role": "runtime-researcher",
+      "topic": "ARM architecture",
+      "day": "2026-11-25",
+      "runId": "45532289775",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T02:20:59.915Z",
+      "expiresAt": "2026-11-25T02:35:59.915Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
