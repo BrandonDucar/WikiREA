@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T20:14:54.292Z",
-  "sequence": 252,
+  "updatedAt": "2026-11-25T21:14:49.838Z",
+  "sequence": 253,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11525,6 +11525,20 @@
       "packet": "research/packets/research-000252-1543f0c25f.json",
       "packetDigest": "206b641b0a73a0ce240ad62c16b2e748a18c75b90c9262b10014a51c0b69964b",
       "finishedAt": "2026-11-25T20:14:54.292Z"
+    },
+    {
+      "id": "research-000253-b091c93f0c",
+      "role": "adversarial-reviewer",
+      "topic": "Advanced persistent threat",
+      "day": "2026-11-25",
+      "runId": "45702515507",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T21:14:49.838Z",
+      "expiresAt": "2026-11-25T21:29:49.838Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
