@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T00:36:27.713Z",
-  "sequence": 235,
+  "updatedAt": "2026-11-25T01:16:26.798Z",
+  "sequence": 236,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10778,6 +10778,20 @@
       "packet": "research/packets/research-000235-7c4c1dc700.json",
       "packetDigest": "d91d8372f33dab23813aa583b324894ac804ddebd4315926445bf0b7d7609eab",
       "finishedAt": "2026-11-25T00:36:27.713Z"
+    },
+    {
+      "id": "research-000236-dd309c821a",
+      "role": "application-tracer",
+      "topic": "3D paint tool",
+      "day": "2026-11-25",
+      "runId": "45524489049",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T01:16:26.798Z",
+      "expiresAt": "2026-11-25T01:31:26.798Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
