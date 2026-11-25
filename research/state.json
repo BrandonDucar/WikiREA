@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-24T22:13:39.684Z",
-  "sequence": 234,
+  "updatedAt": "2026-11-25T00:36:23.078Z",
+  "sequence": 235,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10733,6 +10733,20 @@
       "packet": "research/packets/research-000234-c96ded1401.json",
       "packetDigest": "19dace420809fdb22fb5a06366f5f0bbb1755e3ed7c607a3138e763451552b27",
       "finishedAt": "2026-11-24T22:13:39.684Z"
+    },
+    {
+      "id": "research-000235-7c4c1dc700",
+      "role": "source-curator",
+      "topic": "Address space layout randomization",
+      "day": "2026-11-25",
+      "runId": "45519339038",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T00:36:23.078Z",
+      "expiresAt": "2026-11-25T00:51:23.078Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
