@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T08:20:38.011Z",
-  "sequence": 242,
+  "updatedAt": "2026-11-25T09:17:28.921Z",
+  "sequence": 243,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11084,6 +11084,20 @@
       "packet": "research/packets/research-000242-fef2dda2b6.json",
       "packetDigest": "c010cf21030439a63121c7ed09af80ca79f579fd4a70919e07b70eb9634e6a19",
       "finishedAt": "2026-11-25T08:20:38.011Z"
+    },
+    {
+      "id": "research-000243-6ad294bf74",
+      "role": "adversarial-reviewer",
+      "topic": "AddressSanitizer",
+      "day": "2026-11-25",
+      "runId": "45583976895",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T09:17:28.921Z",
+      "expiresAt": "2026-11-25T09:32:28.921Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
