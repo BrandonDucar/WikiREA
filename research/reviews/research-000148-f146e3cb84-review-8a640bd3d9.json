@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000148-f146e3cb84-review-8a640bd3d9",
+  "parentJobId": "research-000148-f146e3cb84",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "63ea6c3a8d01ac6ad2a05c85450ed45738a603abcc3ee3b487d8a46910dea38e",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET Gadgeteer",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1376770335",
+    "revision": "1376770335",
+    "observedAt": "2026-11-20T15:15:04.848Z",
+    "sourceTimestamp": "2026-09-26T03:26:52Z",
+    "sha256": "58869d73e8ed02271516ce8713e78d1aacef12dc244dbf52d267723e6c60f493",
+    "excerptSha256": "58869d73e8ed02271516ce8713e78d1aacef12dc244dbf52d267723e6c60f493",
+    "inspectedCharacters": 12163,
+    "totalCharacters": 12163,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including platform purpose, licensing, and discontinuation timeline",
+      "Mechanisms correctly describe standardized socket/letter scheme and Visual Studio code generation with proper qualifiers",
+      "Unknowns appropriately identify gaps in hardware interface details, support status, driver abstraction depth, and third-party licensing terms",
+      "No unsupported mechanisms or invented execution details present",
+      "All claims traceable to provided source material"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-26cb8dcf-b8bf-4684-bf59-2ebdc9327b6c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4565,
+    "outputTokens": 93
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
