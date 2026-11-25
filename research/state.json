@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T13:26:43.935Z",
-  "sequence": 246,
+  "updatedAt": "2026-11-25T14:16:17.989Z",
+  "sequence": 247,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11268,6 +11268,20 @@
       "packet": "research/packets/research-000246-eaf4090a77.json",
       "packetDigest": "bc394c2408cc16022e76146c4019eae3afebd9584eba02c04d65f29b9c591ba1",
       "finishedAt": "2026-11-25T13:16:56.625Z"
+    },
+    {
+      "id": "research-000247-46e35d30f0",
+      "role": "runtime-researcher",
+      "topic": "Accelerated Mobile Pages",
+      "day": "2026-11-25",
+      "runId": "45632209511",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T14:16:17.989Z",
+      "expiresAt": "2026-11-25T14:31:17.989Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
