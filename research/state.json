@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T08:20:33.373Z",
+  "updatedAt": "2026-11-25T08:20:38.011Z",
   "sequence": 242,
   "jobs": [
     {
@@ -11046,13 +11046,44 @@
       "topic": "Applications of artificial intelligence",
       "day": "2026-11-25",
       "runId": "45575394040",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T08:20:33.373Z",
       "expiresAt": "2026-11-25T08:35:33.373Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Applications of artificial intelligence",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387525378",
+        "revision": "1387525378",
+        "observedAt": "2026-11-25T08:20:35.787Z",
+        "sourceTimestamp": "2026-11-24T10:20:50Z",
+        "sha256": "8207f323fe255c8933e9bee3dd89cb995e0603c21a580dcdbf23e0a7d37d2651",
+        "excerptSha256": "7d22fc0c816ea060a61339bfed7b7121ca2b575ba45c5fe36f48f8c25859eef1",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 193750,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4953e21a-5c59-462d-9892-3b77af53b1e6",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4770,
+        "outputTokens": 267
+      },
+      "packet": "research/packets/research-000242-fef2dda2b6.json",
+      "packetDigest": "c010cf21030439a63121c7ed09af80ca79f579fd4a70919e07b70eb9634e6a19",
+      "finishedAt": "2026-11-25T08:20:38.011Z"
     }
   ],
   "discovered": [
@@ -11165,11 +11196,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Applications of artificial intelligence",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "Bach",
@@ -16930,6 +16956,46 @@
       "title": "Commodity channel index",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000241-25d47be982"
+    },
+    {
+      "title": "'Oumuamua",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "100% renewable energy",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "15.ai",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "2026 cyberattacks by rogue OpenAI agents",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "3D optical data storage",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "AARON",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "ACT-R",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "AI-assisted reverse engineering",
+      "role": "music-events",
+      "discoveredFrom": "research-000242-fef2dda2b6"
     }
   ],
   "reviewJobs": [

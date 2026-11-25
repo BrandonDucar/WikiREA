@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000242-fef2dda2b6",
+  "topic": "Applications of artificial intelligence",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Since the 2020s, generative AI built on Transformer architecture has enabled machines to create music from chat-based prompts. These systems analyze patterns in existing compositions to generate novel audio, offering tools for composition, remixing, and production. While capable of producing listenable tracks, outputs often require human curation to meet artistic standards.",
+    "mechanisms": [
+      {
+        "title": "Pattern learning from training data",
+        "explanation": "Generative AI models study large collections of existing music to internalize structural patterns, harmonies, and stylistic features, then apply this learned knowledge to synthesize new audio segments.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Chat-based prompting interface",
+        "explanation": "Users guide music generation through natural language prompts, allowing specification of genre, mood, or instrumentation without requiring technical expertise in audio engineering or coding.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How models balance creativity versus replication of training examples",
+      "Long-term copyright and attribution implications for AI-generated compositions",
+      "Technical constraints on real-time music generation latency",
+      "Reliability of generated output across diverse musical styles"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Applications of artificial intelligence",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387525378",
+    "revision": "1387525378",
+    "observedAt": "2026-11-25T08:20:35.787Z",
+    "sourceTimestamp": "2026-11-24T10:20:50Z",
+    "sha256": "8207f323fe255c8933e9bee3dd89cb995e0603c21a580dcdbf23e0a7d37d2651",
+    "excerptSha256": "7d22fc0c816ea060a61339bfed7b7121ca2b575ba45c5fe36f48f8c25859eef1",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 193750,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4953e21a-5c59-462d-9892-3b77af53b1e6",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4770,
+    "outputTokens": 267
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "0d5571641d8acdbcd05b06b34b34ee0f862cf6f0993eb3301e8855b24a8baee3",
+  "artifactDigest": "c010cf21030439a63121c7ed09af80ca79f579fd4a70919e07b70eb9634e6a19"
+}
