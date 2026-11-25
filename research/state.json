@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T02:21:07.173Z",
-  "sequence": 237,
+  "updatedAt": "2026-11-25T03:18:00.250Z",
+  "sequence": 238,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -10872,6 +10872,20 @@
       "packet": "research/packets/research-000237-f0af40d9b3.json",
       "packetDigest": "877670fab33ec9cbb50be30af02c5c3a7c82f98d34dd5b781738511551e334a2",
       "finishedAt": "2026-11-25T02:21:07.173Z"
+    },
+    {
+      "id": "research-000238-f54935617f",
+      "role": "game-mechanic-researcher",
+      "topic": "3D Hunting: Grizzly",
+      "day": "2026-11-25",
+      "runId": "45538991609",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-25T03:18:00.250Z",
+      "expiresAt": "2026-11-25T03:33:00.250Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
