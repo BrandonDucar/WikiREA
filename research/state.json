@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T10:16:22.443Z",
+  "updatedAt": "2026-11-25T10:16:27.690Z",
   "sequence": 244,
   "jobs": [
     {
@@ -11136,13 +11136,44 @@
       "topic": "Abstract factory pattern",
       "day": "2026-11-25",
       "runId": "45593358052",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T10:16:22.443Z",
       "expiresAt": "2026-11-25T10:31:22.443Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Abstract factory pattern",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1362959175",
+        "revision": "1362959175",
+        "observedAt": "2026-11-25T10:16:25.974Z",
+        "sourceTimestamp": "2026-07-07T05:13:40Z",
+        "sha256": "bc15f7ba5ea7bdcc3bb3184ba915f9e411ab825b88b53a1ccc8a85f19690b2c1",
+        "excerptSha256": "5c0df1d8243ea95a58f20a61381e9576e8ae20e0164f0a01c7981c413f476daf",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 16932,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-9dc8e43c-c795-42b6-8745-19fbe7fe43a4",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3613,
+        "outputTokens": 297
+      },
+      "packet": "research/packets/research-000244-189657d6d1.json",
+      "packetDigest": "fbdc7783c9da7819d49bf11fb116a0443606df0acabc702cb6c360a198079387",
+      "finishedAt": "2026-11-25T10:16:27.690Z"
     }
   ],
   "discovered": [
@@ -12137,11 +12168,6 @@
       "discoveredFrom": "research-000068-e1044edf96"
     },
     {
-      "title": "Abstract factory pattern",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000068-e1044edf96"
-    },
-    {
       "title": "Action–domain–responder",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000068-e1044edf96"
@@ -12550,11 +12576,6 @@
       "title": "Average",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000083-ece4b38be5"
-    },
-    {
-      "title": "Abstract factory pattern",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000084-e3f4a4ce2e"
     },
     {
       "title": "Action–domain–responder",
@@ -17090,6 +17111,21 @@
       "title": "FFmpeg",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "Abstract class",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000244-189657d6d1"
+    },
+    {
+      "title": "Abstract interface",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000244-189657d6d1"
+    },
+    {
+      "title": "Abstract type",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000244-189657d6d1"
     }
   ],
   "reviewJobs": [
