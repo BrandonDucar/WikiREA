@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000153-33d8823661-review-8a640bd3d9",
+  "parentJobId": "research-000153-33d8823661",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "f88a106199cbac6b0e56c8aefc7ab881b6fe3f69f62f5046ebecba47ec30ec04",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Brute-force search",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1303411415",
+    "revision": "1303411415",
+    "observedAt": "2026-11-20T21:13:42.582Z",
+    "sourceTimestamp": "2025-07-30T21:09:11Z",
+    "sha256": "497623bca555b564ef3fd176f8fe7b370970cd3830bc8c237393df7a258796fd",
+    "excerptSha256": "1b5ceb92335acea992a76606617c1c5ac595a6d9aefd31da7273675f32e6cc20",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15049,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definition and trade-offs",
+      "Mechanisms correctly capture exhaustive enumeration and heuristic reduction with source support",
+      "Unknowns appropriately identify gaps not addressed in source",
+      "No unsupported mechanisms or invented execution details",
+      "Qualifiers like 'often' and 'typically' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-f96ab253-bb62-4029-955e-4f285b72d5b6",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4273,
+    "outputTokens": 72
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
