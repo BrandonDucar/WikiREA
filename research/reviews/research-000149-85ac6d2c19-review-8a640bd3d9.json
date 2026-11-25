@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000149-85ac6d2c19-review-8a640bd3d9",
+  "parentJobId": "research-000149-85ac6d2c19",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "3bf5bd9c6187f874dfca1f7395cb57aeb47e367a41bf0f34385d4b12cfd9f79b",
+  "sourcePin": {
+    "id": "S1",
+    "title": "All Sports Competition (Cornell University)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380651013",
+    "revision": "1380651013",
+    "observedAt": "2026-11-20T16:16:03.706Z",
+    "sourceTimestamp": "2026-10-17T01:54:05Z",
+    "sha256": "94f0737bee23bfd690640869783e6dc437e9c2413d6e69c148375742dad66fb9",
+    "excerptSha256": "bcb8c92f5d2ed766e9c6b62b49acd042384746d39ad45a3130d85f7d18153314",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 21463,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects the source's description of the All Sports Championship as an intramural program awarding a trophy based on cumulative points across Fall and Spring Term sports.",
+      "Mechanisms correctly capture point accumulation across sports and fraternal/organizational participation as described in the source.",
+      "Unknowns appropriately identify gaps in the source regarding current point-allocation formulas, non-fraternity participation, WWII restructuring details, and the 2011 Sigma Alpha Epsilon rescission.",
+      "No unsupported mechanisms, copied passages, or invented execution details are present in the draft.",
+      "All claims in the draft are grounded in the provided source text with appropriate qualifiers."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-74335511-15ff-4e03-a9da-13e5baf48585",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3764,
+    "outputTokens": 147
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

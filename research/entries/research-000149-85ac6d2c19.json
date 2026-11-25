@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000149-85ac6d2c19",
+  "title": "All Sports Competition (Cornell University)",
+  "role": "simulation-researcher",
+  "createdAt": "2026-11-25T07:26:59.527Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "All Sports Championship at Cornell University is an intramural program awarding the All Sports Trophy based on performance across Fall and Spring Term competitions. Points are earned per sport, with each concluding in a University Championship. Historically open to all students, the competition has seen periods of intense inter-fraternity rivalry, wartime suspension and military integration, and post-war oligarchic distribution among houses. The program originated in 1905 with Charles Van Patten 'Tar' Young's advocacy and expanded significantly by 1937, becoming the largest collegiate intramural program in the country.",
+  "mechanisms": [
+    {
+      "title": "Point accumulation across sports",
+      "explanation": "Each sport competition ends in a University Championship, and the resulting points are tallied toward the All Sports Trophy. The trophy is awarded based on cumulative performance across the series of Fall and Spring Term sports.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Fraternal and organizational participation",
+      "explanation": "Competition primarily involves fraternities, clubs, and informal student groupings. Historical data shows houses such as Beta Theta Pi, Chi Psi, and Sigma Alpha Epsilon achieving repeated victories, while the trophy has moved frequently among a wide competitor base in the program's early decades.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact current point-allocation formula or weighting system across sports",
+    "Whether individual student-athletes or non-fraternity participants can earn points toward the trophy",
+    "Details of how the competition was suspended and restructured during the Second World War",
+    "Mechanisms behind the university's rescission of Sigma Alpha Epsilon's 2011 trophy lead"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "All Sports Competition (Cornell University)",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380651013",
+      "revision": "1380651013",
+      "observedAt": "2026-11-20T16:16:03.706Z",
+      "sourceTimestamp": "2026-10-17T01:54:05Z",
+      "sha256": "94f0737bee23bfd690640869783e6dc437e9c2413d6e69c148375742dad66fb9",
+      "excerptSha256": "bcb8c92f5d2ed766e9c6b62b49acd042384746d39ad45a3130d85f7d18153314",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 21463,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects the source's description of the All Sports Championship as an intramural program awarding a trophy based on cumulative points across Fall and Spring Term sports.",
+      "Mechanisms correctly capture point accumulation across sports and fraternal/organizational participation as described in the source.",
+      "Unknowns appropriately identify gaps in the source regarding current point-allocation formulas, non-fraternity participation, WWII restructuring details, and the 2011 Sigma Alpha Epsilon rescission.",
+      "No unsupported mechanisms, copied passages, or invented execution details are present in the draft.",
+      "All claims in the draft are grounded in the provided source text with appropriate qualifiers."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-3921a9e8-e2b7-4a24-9083-5f21e04fdd79",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3433,
+      "outputTokens": 380
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-74335511-15ff-4e03-a9da-13e5baf48585",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3764,
+      "outputTokens": 147
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "c30a696ad9e6652c7e9820bac934ac8f87c2c19890aaa9a1a292eb18e7575a84",
+    "artifactDigest": "3bf5bd9c6187f874dfca1f7395cb57aeb47e367a41bf0f34385d4b12cfd9f79b",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000149-85ac6d2c19.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
