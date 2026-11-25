@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000243-6ad294bf74",
+  "topic": "AddressSanitizer",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AddressSanitizer (ASan) is a code sanitizer that detects memory bugs via compiler-inserted runtime instrumentation. It uses a shadow memory scheme to find heap-use-after-free, heap-buffer-overflow, stack-buffer-overflow, and global-buffer-overflow. ASan trades about 73% processing time and 240% memory for its coverage. It does not detect uninitialized reads (handled by MSan) or all arbitrary corruption, and adjacent struct/class buffers may overflow due to backward compatibility design choices.",
+    "mechanisms": [
+      {
+        "title": "Shadow memory scheme",
+        "explanation": "ASan maps application memory to a shadow memory region where each 8-byte chunk is represented by one shadow byte. Poison values in shadow bytes mark freed, overflowed, or out-of-bounds regions; runtime checks inspect these bytes to detect invalid accesses.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Runtime instrumentation and redzones",
+        "explanation": "The compiler inserts checks at runtime to validate memory accesses against shadow metadata. Redzone markers (fa/fb) surround allocated and freed regions to catch out-of-bounds and use-after-free errors respectively.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Why adjacent buffers in structs/classes are not protected from overflow beyond backward compatibility concerns",
+      "Exact overhead figures for all compiler and platform combinations beyond the stated 73% time and 240% memory",
+      "Whether HWAsan hardware acceleration is universally available or limited to specific ARM/x86 variants",
+      "Full scope of memory corruption patterns that remain undetectable despite shadow memory coverage"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Code sanitizer",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1367216157",
+    "revision": "1367216157",
+    "observedAt": "2026-11-25T09:17:31.854Z",
+    "sourceTimestamp": "2026-08-01T19:36:48Z",
+    "sha256": "9af9fe64c12d3257a908e8b1f85a35c2125e737deae0cccdf27e746159f78d72",
+    "excerptSha256": "0c3c12379911ea57d182ec7fb05fbd21ed6eb390cb9280fee82ef79ef719355f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 19292,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-5e968bce-3947-4f38-871f-a138739b0b08",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4816,
+    "outputTokens": 369
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "4603e964f40d6f97918ecac2ba59a0dfaf2ba85308d64e5760cfffebf61e9a8f",
+  "artifactDigest": "23fa9e347e7fed54d3a301f2ab93a0cb8f30c964859f89f3fde90586b4071fd6"
+}

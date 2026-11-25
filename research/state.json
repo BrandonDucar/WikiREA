@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T09:17:28.921Z",
+  "updatedAt": "2026-11-25T09:17:35.098Z",
   "sequence": 243,
   "jobs": [
     {
@@ -11091,13 +11091,44 @@
       "topic": "AddressSanitizer",
       "day": "2026-11-25",
       "runId": "45583976895",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-25T09:17:28.921Z",
       "expiresAt": "2026-11-25T09:32:28.921Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Code sanitizer",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1367216157",
+        "revision": "1367216157",
+        "observedAt": "2026-11-25T09:17:31.854Z",
+        "sourceTimestamp": "2026-08-01T19:36:48Z",
+        "sha256": "9af9fe64c12d3257a908e8b1f85a35c2125e737deae0cccdf27e746159f78d72",
+        "excerptSha256": "0c3c12379911ea57d182ec7fb05fbd21ed6eb390cb9280fee82ef79ef719355f",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 19292,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5e968bce-3947-4f38-871f-a138739b0b08",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4816,
+        "outputTokens": 369
+      },
+      "packet": "research/packets/research-000243-6ad294bf74.json",
+      "packetDigest": "23fa9e347e7fed54d3a301f2ab93a0cb8f30c964859f89f3fde90586b4071fd6",
+      "finishedAt": "2026-11-25T09:17:35.098Z"
     }
   ],
   "discovered": [
@@ -12220,11 +12251,6 @@
       "title": "BSD licenses",
       "role": "music-events",
       "discoveredFrom": "research-000072-2f715e698c"
-    },
-    {
-      "title": "AddressSanitizer",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000073-067e4b69de"
     },
     {
       "title": "Advanced persistent threat",
@@ -17010,6 +17036,46 @@
       "title": "AI-assisted reverse engineering",
       "role": "music-events",
       "discoveredFrom": "research-000242-fef2dda2b6"
+    },
+    {
+      "title": "Chromium (web browser)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "Clang",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "Code coverage",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "Compiler",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "Control-flow integrity",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "Data race",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "Deadlock (computer science)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
+    },
+    {
+      "title": "FFmpeg",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000243-6ad294bf74"
     }
   ],
   "reviewJobs": [
