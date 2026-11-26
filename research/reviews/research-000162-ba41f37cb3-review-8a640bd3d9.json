@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000162-ba41f37cb3-review-8a640bd3d9",
+  "parentJobId": "research-000162-ba41f37cb3",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "ae6761193bad62d1289791821d61b3d15353840568a07d863ced73accf95ff4f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Album era",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385872563",
+    "revision": "1385872563",
+    "observedAt": "2026-11-21T08:17:52.363Z",
+    "sourceTimestamp": "2026-11-15T18:42:26Z",
+    "sha256": "bffaa7f1b548fc05b80e1666c85278ff0afb7827a92f7871dfce382117943f6f",
+    "excerptSha256": "052e04db79fb47cc17729e04ea9f6eabd43dc930c26b077bbbc6a624951fd633",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 103982,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "The draft claims the album era 'peaked in 1999 at $15 billion in revenue, driven by CD sales' but the source only states 'leading to a revenue peak of $15 billion in 1999 (based on CD sales)' without confirming this was the overall peak or that CD sales were the sole driver.",
+      "The mechanism 'Format-driven market shift' claims 'price increases for CDs' but the source only says 'raising the prices of albums released in the popular new CD format' without specifying this was a response to declining LP sales or that it was a primary mechanism.",
+      "The mechanism 'Artist-driven conceptual unification' states the concept album was 'notably propelled by The Beatles' Rubber Soul' but the source presents this as one perspective among others, noting Sinatra's 1950s LPs 'had pioneered the form earlier' and that the concept album is 'sometimes [erroneously] assumed to be a product of the rock era'.",
+      "The draft states 'women, Black musicians, and the hip hop genre gained recognition and developed their own album-based standards' but the source only says 'Women and black musicians continued to gain critical recognition among the album era's predominantly white-male and rock-oriented canon, with the burgeoning hip hop genre developing its own album-based standards' - the draft omits the critical context of the 'predominantly white-male and rock-oriented canon'.",
+      "The draft claims the era 'effectively ended the album era' due to streaming, but the source says 'recording acts generally focused on singles, effectively ending the album era' - the draft misattributes the cause to streaming services rather than the shift in artist focus."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-c9226f1f-c80c-4979-812e-3e2e8ce69de0",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4867,
+    "outputTokens": 366
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
