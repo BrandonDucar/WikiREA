@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T07:27:03.019Z",
-  "sequence": 261,
+  "updatedAt": "2026-11-26T08:20:07.474Z",
+  "sequence": 262,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11917,6 +11917,20 @@
       "packet": "research/packets/research-000261-c3608c614f.json",
       "packetDigest": "564a4f2f3cfde47923d9c447e81aac09b1bc4daa984ad9e9561b48a6c9f7e551",
       "finishedAt": "2026-11-26T07:17:26.904Z"
+    },
+    {
+      "id": "research-000262-06b8663b5d",
+      "role": "music-events",
+      "topic": "Beethoven",
+      "day": "2026-11-26",
+      "runId": "45782259031",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T08:20:07.474Z",
+      "expiresAt": "2026-11-26T08:35:07.474Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
