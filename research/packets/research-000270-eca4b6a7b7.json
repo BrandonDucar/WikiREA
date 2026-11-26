@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000270-eca4b6a7b7",
+  "topic": "Adolf Martens",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Adolf Martens (1850–1914) was a German metallurgist honored as the namesake of martensite, a hard microstructure formed via a diffusionless solid-state phase transition. He also conducted early experimental work on the relationship between friction, sliding speed, and viscosity, contributing to the foundational understanding later formalized as the Stribeck curve. His career spanned materials science and tribology at the intersection of engineering and physics.",
+    "mechanisms": [
+      {
+        "title": "Martensitic transformation",
+        "explanation": "A diffusionless, solid-state phase transition in which carbon-rich phases in steel undergo a rapid, coordinated lattice change, producing a hard, brittle microstructure named in Martens' honor.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Friction and viscosity experimentation",
+        "explanation": "Early experimental exploration of the functional relationship between coefficient of friction, sliding speed, and viscosity, predating and contributing to the later Stribeck curve formulation.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The precise internal physical mechanism driving the diffusionless lattice change in martensite formation",
+      "Whether Martens directly derived the Stribeck curve relationship or if his data was independently replicated",
+      "The specific experimental apparatus or test conditions Martens used for his friction–viscosity measurements",
+      "The full extent of Martens' contributions to tribology beyond the documented 1888 experiments"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adolf Martens",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1311457384",
+    "revision": "1311457384",
+    "observedAt": "2026-11-26T18:18:01.790Z",
+    "sourceTimestamp": "2025-09-15T08:42:09Z",
+    "sha256": "f6dd5d42548d6e1e40280775b8b72721a135779ac1a1be373eae9182e24c0d7b",
+    "excerptSha256": "f6dd5d42548d6e1e40280775b8b72721a135779ac1a1be373eae9182e24c0d7b",
+    "inspectedCharacters": 2511,
+    "totalCharacters": 2511,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f833d720-118a-4e85-bfaa-b9ca54230b34",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1058,
+    "outputTokens": 330
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "31a6f742572efba58de0289068c9288158b96afc234a83347204441f5775b431",
+  "artifactDigest": "d9ac8f537a54cd5c6a170a271d040445e58ed6a183b2b29bcf1aab33606095ff"
+}

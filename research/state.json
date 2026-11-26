@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T18:17:58.833Z",
+  "updatedAt": "2026-11-26T18:18:03.821Z",
   "sequence": 270,
   "jobs": [
     {
@@ -12288,13 +12288,44 @@
       "topic": "Adolf Martens",
       "day": "2026-11-26",
       "runId": "45874780964",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T18:17:58.833Z",
       "expiresAt": "2026-11-26T18:32:58.833Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adolf Martens",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1311457384",
+        "revision": "1311457384",
+        "observedAt": "2026-11-26T18:18:01.790Z",
+        "sourceTimestamp": "2025-09-15T08:42:09Z",
+        "sha256": "f6dd5d42548d6e1e40280775b8b72721a135779ac1a1be373eae9182e24c0d7b",
+        "excerptSha256": "f6dd5d42548d6e1e40280775b8b72721a135779ac1a1be373eae9182e24c0d7b",
+        "inspectedCharacters": 2511,
+        "totalCharacters": 2511,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f833d720-118a-4e85-bfaa-b9ca54230b34",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1058,
+        "outputTokens": 330
+      },
+      "packet": "research/packets/research-000270-eca4b6a7b7.json",
+      "packetDigest": "d9ac8f537a54cd5c6a170a271d040445e58ed6a183b2b29bcf1aab33606095ff",
+      "finishedAt": "2026-11-26T18:18:03.821Z"
     }
   ],
   "discovered": [
@@ -12332,11 +12363,6 @@
       "title": "Black start",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000030-5a4bfec956"
-    },
-    {
-      "title": "Adolf Martens",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000031-03dd95243d"
     },
     {
       "title": "Age of Enlightenment",
@@ -18812,6 +18838,41 @@
       "title": "Addison Wesley",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "Diffusionless transformation",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000270-eca4b6a7b7"
+    },
+    {
+      "title": "Gammelin",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000270-eca4b6a7b7"
+    },
+    {
+      "title": "Groß-Lichterfelde",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000270-eca4b6a7b7"
+    },
+    {
+      "title": "Internet Archive",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000270-eca4b6a7b7"
+    },
+    {
+      "title": "Martensite",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000270-eca4b6a7b7"
+    },
+    {
+      "title": "Metallurgist",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000270-eca4b6a7b7"
+    },
+    {
+      "title": "Phase transition",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000270-eca4b6a7b7"
     }
   ],
   "reviewJobs": [
