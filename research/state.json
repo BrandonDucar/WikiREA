@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T05:26:10.679Z",
-  "sequence": 259,
+  "updatedAt": "2026-11-26T06:25:04.257Z",
+  "sequence": 260,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11827,6 +11827,20 @@
       "packet": "research/packets/research-000259-5ccdf8382e.json",
       "packetDigest": "c47adf2f52cc2d8e82e8256564b91adeb11a01905dd709e681b14f8c594b0f2a",
       "finishedAt": "2026-11-26T04:18:03.105Z"
+    },
+    {
+      "id": "research-000260-bd8fe7009f",
+      "role": "hardware-interoperability-scout",
+      "topic": "Acid dissociation constant",
+      "day": "2026-11-26",
+      "runId": "45768029247",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T06:25:04.257Z",
+      "expiresAt": "2026-11-26T06:40:04.257Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
