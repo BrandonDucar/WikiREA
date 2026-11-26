@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000156-1ede42270e-review-8a640bd3d9",
+  "parentJobId": "research-000156-1ede42270e",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "e597d7acaa30316d0a5d699af3ce20a20f253fae2ca786a52be32cd22cb648f1",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AbiWord",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386805190",
+    "revision": "1386805190",
+    "observedAt": "2026-11-21T01:15:36.100Z",
+    "sourceTimestamp": "2026-11-20T18:34:23Z",
+    "sha256": "cdfad8c125f7812bcbc6251ff056fa1da447af4040b922b2bffd77338340a1b3",
+    "excerptSha256": "cdfad8c125f7812bcbc6251ff056fa1da447af4040b922b2bffd77338340a1b3",
+    "inspectedCharacters": 13389,
+    "totalCharacters": 13389,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content with proper qualifiers",
+      "Mechanisms correctly cite source IDs and match documented features",
+      "Unknowns appropriately identify gaps not covered in source",
+      "No unsupported mechanisms or invented execution details",
+      "Preserves may/often qualifiers and distinguishes unknowns from factual claims"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-288c138e-793e-411b-9aa9-71b75a513a15",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5208,
+    "outputTokens": 72
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

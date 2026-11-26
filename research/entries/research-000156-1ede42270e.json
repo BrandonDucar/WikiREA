@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000156-1ede42270e",
+  "title": "AbiWord",
+  "role": "application-tracer",
+  "createdAt": "2026-11-26T01:25:32.137Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "AbiWord is a free, open-source word processor written in C++ and based on GTK+ since version 3. Originally developed by SourceGear Corporation and later adopted by the open-source community, it runs cross-platform including Linux, Windows, and macOS (via XQuartz). The application supports standard word processing features such as lists, indents, styles, tables, footnotes, and templates, as well as a Presentation view for screen-sized displays. It offers import/export filters for formats including .doc, .docx, .odt, and .rtf, with a native XML .abw format designed to reduce vendor lock-in. Collaboration is facilitated through GOCollab, supporting TCP and XMPP protocols. A US English-only grammar checker uses the Link Grammar parser. The interface mimics classic Microsoft Word for ease of migration, though direct cloning is no longer a priority.",
+  "mechanisms": [
+    {
+      "title": "Grammar checking via Link Grammar",
+      "explanation": "AbiWord includes a US English-only grammar checking plugin that uses the Link Grammar parser, an open-source syntax theory and parser now developed by the AbiWord project. This was the first integrated grammar checker in a free word processor.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Cross-platform GTK+ rendering",
+      "explanation": "Since version 3, AbiWord is based on GTK+ 3, enabling it to run cross-platform on Linux, Windows, and other systems. The macOS port has remained on version 2.4 since 2005 but can run non-natively through XQuartz.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact mechanism for GOCollab peer-to-peer protocol negotiation",
+    "Details of plug-in filter architecture for WordPerfect and other formats",
+    "Reason for cessation of Windows development beyond lack of maintainers",
+    "Specific steps for native macOS porting beyond XQuartz workaround"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "AbiWord",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386805190",
+      "revision": "1386805190",
+      "observedAt": "2026-11-21T01:15:36.100Z",
+      "sourceTimestamp": "2026-11-20T18:34:23Z",
+      "sha256": "cdfad8c125f7812bcbc6251ff056fa1da447af4040b922b2bffd77338340a1b3",
+      "excerptSha256": "cdfad8c125f7812bcbc6251ff056fa1da447af4040b922b2bffd77338340a1b3",
+      "inspectedCharacters": 13389,
+      "totalCharacters": 13389,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content with proper qualifiers",
+      "Mechanisms correctly cite source IDs and match documented features",
+      "Unknowns appropriately identify gaps not covered in source",
+      "No unsupported mechanisms or invented execution details",
+      "Preserves may/often qualifiers and distinguishes unknowns from factual claims"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-1aa4e67c-34ac-4f57-893c-401c3c79180a",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4743,
+      "outputTokens": 443
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-288c138e-793e-411b-9aa9-71b75a513a15",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5208,
+      "outputTokens": 72
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "919a56a83a1d76902a1b2e3a04f8461badba5fe3c6e749a40525d19928c20bfa",
+    "artifactDigest": "e597d7acaa30316d0a5d699af3ce20a20f253fae2ca786a52be32cd22cb648f1",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000156-1ede42270e.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
