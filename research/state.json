@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T20:15:34.510Z",
+  "updatedAt": "2026-11-26T20:17:27.412Z",
   "sequence": 272,
   "jobs": [
     {
@@ -12382,13 +12382,16 @@
       "topic": "Classical music",
       "day": "2026-11-26",
       "runId": "45889707442",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-26T20:15:34.510Z",
       "expiresAt": "2026-11-26T20:30:34.510Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "writer",
+      "error": "RESEARCH_FAILED",
+      "finishedAt": "2026-11-26T20:17:27.412Z"
     }
   ],
   "discovered": [
