@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T12:21:32.307Z",
+  "updatedAt": "2026-11-26T12:21:38.260Z",
   "sequence": 265,
   "jobs": [
     {
@@ -12059,13 +12059,44 @@
       "topic": "Binary code",
       "day": "2026-11-26",
       "runId": "45818876657",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T12:21:32.307Z",
       "expiresAt": "2026-11-26T12:36:32.307Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Binary code",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1374994216",
+        "revision": "1374994216",
+        "observedAt": "2026-11-26T12:21:34.810Z",
+        "sourceTimestamp": "2026-09-15T06:49:22Z",
+        "sha256": "49f0e98ed49b55ec92a2f60487dc458ea87e3511b8e7b91ceca03561fb821e15",
+        "excerptSha256": "3e911324de78e4d6c2ddadab67415b2f029cb9b4651e331f5f3fda0b22a337f7",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 15577,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-4c8eaed9-6d72-48d5-9181-f007f5eb28e1",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4454,
+        "outputTokens": 489
+      },
+      "packet": "research/packets/research-000265-e39c64d38d.json",
+      "packetDigest": "31002db6942e3fc672432116d704cf870defff895f9b38e658e2edf04aad09cc",
+      "finishedAt": "2026-11-26T12:21:38.260Z"
     }
   ],
   "discovered": [
@@ -12943,11 +12974,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Binary code",
-      "role": "source-curator",
-      "discoveredFrom": "research-000065-e0e23685a6"
     },
     {
       "title": "Bitcoin",
@@ -18463,6 +18489,46 @@
       "title": "Actor model",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000264-207a547290"
+    },
+    {
+      "title": "ASCII",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "A Symbolic Analysis of Relay and Switching Circuits",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "Alan Turing",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "American Standard Code for Information Interchange",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "Atanasoff–Berry Computer",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "Babalawo",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "Bagua",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "Binary-coded decimal",
+      "role": "source-curator",
+      "discoveredFrom": "research-000265-e39c64d38d"
     }
   ],
   "reviewJobs": [

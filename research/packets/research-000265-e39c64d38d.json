@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000265-e39c64d38d",
+  "topic": "Binary code",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Binary code is a data-encoding convention represented in binary notation, typically as sequences of 0s and 1s (bit strings). It enables representation of text, numbers, and other data through established mappings such as ASCII, where characters are assigned numeric codes that translate into bit strings. While all modern computer data is fundamentally binary, other bases like hexadecimal and octal are also used due to their power-of-2 relationship. Historically, the system was developed by Gottfried Leibniz in 1689, drawing inspiration from the I Ching and earlier binary-like systems. Practical application began with Claude Shannon's 1937 thesis linking Boolean algebra to electric circuits, enabling use in computing and electronics. Encoding systems like ASCII and binary-coded decimal map specific data types to binary representations.",
+    "mechanisms": [
+      {
+        "title": "Bit string encoding",
+        "explanation": "Binary code represents data as sequences of 0s and 1s, often called bit strings. These sequences encode information according to established conventions such as ASCII, where each character is assigned a numeric code that is rendered as a bit string. Other systems like binary-coded decimal use 4-bit nibbles to represent decimal digits.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Historical development and logical mapping",
+        "explanation": "The modern binary number system was invented by Gottfried Leibniz in 1689, who viewed binary numbers as symbolic of creation out of nothing and as a means to simplify logical reasoning. The system drew inspiration from the I Ching's hexagrams and earlier binary-like systems. Practical application emerged when Claude Shannon, in his 1937 master's thesis, linked Boolean algebra's AND, OR, NOT operations to electric circuits, establishing binary code's use in computing and electronics.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How specific non-text data types are consistently mapped to binary beyond the examples provided",
+      "The extent to which power-of-2 bases like hexadecimal are universally classified as binary code versus alternative representations",
+      "Details of implementation in specific hardware or software beyond the documented historical developments",
+      "The completeness of the historical lineage regarding earlier binary systems outside the documented European and Asian traditions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Binary code",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1374994216",
+    "revision": "1374994216",
+    "observedAt": "2026-11-26T12:21:34.810Z",
+    "sourceTimestamp": "2026-09-15T06:49:22Z",
+    "sha256": "49f0e98ed49b55ec92a2f60487dc458ea87e3511b8e7b91ceca03561fb821e15",
+    "excerptSha256": "3e911324de78e4d6c2ddadab67415b2f029cb9b4651e331f5f3fda0b22a337f7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15577,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-4c8eaed9-6d72-48d5-9181-f007f5eb28e1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4454,
+    "outputTokens": 489
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "c713aec48c8e4d7d63e0105fb45ced0afef57022086c9d8ceea6275a16067216",
+  "artifactDigest": "31002db6942e3fc672432116d704cf870defff895f9b38e658e2edf04aad09cc"
+}
