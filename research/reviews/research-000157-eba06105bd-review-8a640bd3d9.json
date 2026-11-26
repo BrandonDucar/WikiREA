@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000157-eba06105bd-review-8a640bd3d9",
+  "parentJobId": "research-000157-eba06105bd",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "a55091e2bb2dd286ee4144b6ab2e197640fb27c7d5983b7fc303fdfaf6c116a6",
+  "sourcePin": {
+    "id": "S1",
+    "title": "AT&T Pogo",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383600913",
+    "revision": "1383600913",
+    "observedAt": "2026-11-21T02:19:18.100Z",
+    "sourceTimestamp": "2026-11-03T16:47:24Z",
+    "sha256": "82cc8ba3abb444170928bca56942f74e4a53143bf61c5e947956de8279180299",
+    "excerptSha256": "82cc8ba3abb444170928bca56942f74e4a53143bf61c5e947956de8279180299",
+    "inspectedCharacters": 2956,
+    "totalCharacters": 2956,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about Firefox-based browser, private beta, features, and termination via IP sale",
+      "Mechanisms correctly describe visual tab thumbnails and visual bookmark/history management with search as stated in source Features section",
+      "Unknowns appropriately identify gaps not addressed in source (rendering engine details, implementation specifics, sale reasons, extension vs core modifications)",
+      "No unsupported mechanisms or invented execution details present",
+      "Source citations in draft (S1) align with source references for features"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-cf1625d5-8f8e-4b1b-838b-c64b783db62c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1364,
+    "outputTokens": 113
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
