@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T16:16:34.204Z",
+  "updatedAt": "2026-11-26T17:25:12.267Z",
   "sequence": 269,
   "jobs": [
     {
@@ -21128,6 +21128,18 @@
       "callsAttempted": 1,
       "artifact": "research/reviews/research-000162-ba41f37cb3-review-8a640bd3d9.json",
       "finishedAt": "2026-11-26T15:25:38.148Z"
+    },
+    {
+      "id": "research-000163-55f88bffaa-review-8a640bd3d9",
+      "parentJobId": "research-000163-55f88bffaa",
+      "packetDigest": "234f38cdbc704dd9647c8a3ec9344ae622f01c4990bbbfa71ac4f681abad6223",
+      "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+      "day": "2026-11-26",
+      "runId": "45867555091",
+      "reservedAt": "2026-11-26T17:25:12.267Z",
+      "expiresAt": "2026-11-26T17:40:12.267Z",
+      "status": "RESERVED",
+      "callsAttempted": 0
     }
   ],
   "providerHold": {
