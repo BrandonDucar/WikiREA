@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T18:18:03.821Z",
-  "sequence": 270,
+  "updatedAt": "2026-11-26T19:13:16.229Z",
+  "sequence": 271,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12326,6 +12326,20 @@
       "packet": "research/packets/research-000270-eca4b6a7b7.json",
       "packetDigest": "d9ac8f537a54cd5c6a170a271d040445e58ed6a183b2b29bcf1aab33606095ff",
       "finishedAt": "2026-11-26T18:18:03.821Z"
+    },
+    {
+      "id": "research-000271-f8b05c9178",
+      "role": "market-data-researcher",
+      "topic": "Business intelligence",
+      "day": "2026-11-26",
+      "runId": "45881983146",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T19:13:16.229Z",
+      "expiresAt": "2026-11-26T19:28:16.229Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
