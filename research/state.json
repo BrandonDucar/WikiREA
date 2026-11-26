@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-25T22:15:00.348Z",
-  "sequence": 254,
+  "updatedAt": "2026-11-26T00:35:10.167Z",
+  "sequence": 255,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11619,6 +11619,20 @@
       "packet": "research/packets/research-000254-ef528063e2.json",
       "packetDigest": "0f87bbd5cad403c71f4823e1d23f2c6477e984e58e76e4fe0de8ec2b93ff4f77",
       "finishedAt": "2026-11-25T22:15:00.348Z"
+    },
+    {
+      "id": "research-000255-ff01f0f948",
+      "role": "source-curator",
+      "topic": "Bazel (software)",
+      "day": "2026-11-26",
+      "runId": "45729771860",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T00:35:10.167Z",
+      "expiresAt": "2026-11-26T00:50:10.167Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
