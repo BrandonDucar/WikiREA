@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000274-ce11a8ff50",
+  "topic": "Active record pattern",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The Active Record pattern is an architectural pattern that stores in-memory object data in relational databases. It was named by Martin Fowler in 2003. Objects conforming to this pattern include functions such as Insert, Update, and Delete, with properties corresponding to database columns. The pattern acts as a Data Access Layer performing bidirectional transfer between a persistent data store and an in-memory representation. A database table or view is wrapped into a class, tying an object instance to a single row. Upon creation, a new row is added to the table upon save; loaded objects retrieve information from the database. Updates modify the corresponding row. The wrapper class implements accessor methods or properties for each column. Foreign key relationships are often exposed as object instances of the appropriate type. The pattern is commonly used by object persistence tools and in object–relational mapping (ORM).",
+    "mechanisms": [
+      {
+        "title": "Bidirectional Data Transfer",
+        "explanation": "The pattern performs bidirectional transfer of data between a persistent data store (often a relational database) and an in-memory data representation (the domain layer).",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Row-to-Object Mapping",
+        "explanation": "A database table or view is wrapped into a class, tying an object instance to a single row. The wrapper class implements accessor methods or properties for each column in the table or view.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact implementation details of foreign key relationship exposure beyond typical ORM behavior",
+      "Specific SQL generation logic for all supported database systems",
+      "Complete reverse engineering of private internals in specific framework implementations",
+      "Verification of correctness or comprehensive test coverage for all Active Record variants"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Active record pattern",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1338854499",
+    "revision": "1338854499",
+    "observedAt": "2026-11-26T22:14:28.400Z",
+    "sourceTimestamp": "2026-02-17T17:00:55Z",
+    "sha256": "58414daf8b670c8e60078c62288138df45ee5f7939a39be70f2f15413b85a285",
+    "excerptSha256": "58414daf8b670c8e60078c62288138df45ee5f7939a39be70f2f15413b85a285",
+    "inspectedCharacters": 8620,
+    "totalCharacters": 8620,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-19f6adf7-4a59-4bf1-83b7-dadc042b645a",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2207,
+    "outputTokens": 381
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "17b286f6d23156bb9bcd1ed090fa8b88c8748b943324d8b7cf218f4c6655f7c3",
+  "artifactDigest": "8c0279297f1536bf9578a125ebf7f2fdcd665d8898e8618d248df044dd9e4d50"
+}

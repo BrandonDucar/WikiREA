@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T22:14:26.515Z",
+  "updatedAt": "2026-11-26T22:14:30.205Z",
   "sequence": 274,
   "jobs": [
     {
@@ -12448,13 +12448,44 @@
       "topic": "Active record pattern",
       "day": "2026-11-26",
       "runId": "45903464807",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T22:14:26.515Z",
       "expiresAt": "2026-11-26T22:29:26.515Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Active record pattern",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1338854499",
+        "revision": "1338854499",
+        "observedAt": "2026-11-26T22:14:28.400Z",
+        "sourceTimestamp": "2026-02-17T17:00:55Z",
+        "sha256": "58414daf8b670c8e60078c62288138df45ee5f7939a39be70f2f15413b85a285",
+        "excerptSha256": "58414daf8b670c8e60078c62288138df45ee5f7939a39be70f2f15413b85a285",
+        "inspectedCharacters": 8620,
+        "totalCharacters": 8620,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-19f6adf7-4a59-4bf1-83b7-dadc042b645a",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2207,
+        "outputTokens": 381
+      },
+      "packet": "research/packets/research-000274-ce11a8ff50.json",
+      "packetDigest": "8c0279297f1536bf9578a125ebf7f2fdcd665d8898e8618d248df044dd9e4d50",
+      "finishedAt": "2026-11-26T22:14:30.205Z"
     }
   ],
   "discovered": [
@@ -13349,11 +13380,6 @@
       "discoveredFrom": "research-000068-e1044edf96"
     },
     {
-      "title": "Active record pattern",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000068-e1044edf96"
-    },
-    {
       "title": "Adapter pattern",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000068-e1044edf96"
@@ -13702,11 +13728,6 @@
       "title": "Average",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000083-ece4b38be5"
-    },
-    {
-      "title": "Active record pattern",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000084-e3f4a4ce2e"
     },
     {
       "title": "Adapter pattern",
@@ -19067,6 +19088,16 @@
       "title": "Clarendon Press",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Accessor",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000274-ce11a8ff50"
+    },
+    {
+      "title": "Architectural pattern (computer science)",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000274-ce11a8ff50"
     }
   ],
   "reviewJobs": [
