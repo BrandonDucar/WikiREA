@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T14:16:52.265Z",
-  "sequence": 267,
+  "updatedAt": "2026-11-26T15:15:45.385Z",
+  "sequence": 268,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12191,6 +12191,20 @@
       "packet": "research/packets/research-000267-786bb70c86.json",
       "packetDigest": "a027777ee5938c37add62efc7ed2c76f63e61100aff3f762d834eaaeb87cd6d7",
       "finishedAt": "2026-11-26T14:16:52.265Z"
+    },
+    {
+      "id": "research-000268-1966ad0e15",
+      "role": "game-mechanic-researcher",
+      "topic": "3ds Max",
+      "day": "2026-11-26",
+      "runId": "45847274987",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T15:15:45.385Z",
+      "expiresAt": "2026-11-26T15:30:45.385Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
