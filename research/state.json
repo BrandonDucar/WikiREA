@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T09:26:51.504Z",
-  "sequence": 263,
+  "updatedAt": "2026-11-26T10:15:59.578Z",
+  "sequence": 264,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12007,6 +12007,20 @@
       "packet": "research/packets/research-000263-b508b6a2ce.json",
       "packetDigest": "f06891c21b88b591fb2ff3d5df02d1c9ce312188792a777dd6f71ead8172afac",
       "finishedAt": "2026-11-26T09:17:32.775Z"
+    },
+    {
+      "id": "research-000264-207a547290",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Active object",
+      "day": "2026-11-26",
+      "runId": "45799687818",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T10:15:59.578Z",
+      "expiresAt": "2026-11-26T10:30:59.578Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
