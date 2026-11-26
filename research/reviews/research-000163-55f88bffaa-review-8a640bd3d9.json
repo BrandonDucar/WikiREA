@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000163-55f88bffaa-review-8a640bd3d9",
+  "parentJobId": "research-000163-55f88bffaa",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "234f38cdbc704dd9647c8a3ec9344ae622f01c4990bbbfa71ac4f681abad6223",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Clique (graph theory)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1378641406",
+    "revision": "1378641406",
+    "observedAt": "2026-11-21T09:15:39.537Z",
+    "sourceTimestamp": "2026-10-05T11:37:25Z",
+    "sha256": "6a614917f5be52087bb6ab15694b965f2b79e38b9c8aeaa537da0d8e54a65553",
+    "excerptSha256": "210bfdf8371d81f7c4022287b3d2ff0eda50e130bae9d25fffd5ba6aa1c6cc57",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20703,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of clique, maximal/maximum cliques, and clique number",
+      "Mechanisms correctly capture adjacency requirement and NP-completeness with Bron–Kerbosch example",
+      "Unknowns appropriately identify unresolved questions not claimed as facts in source",
+      "No invented mechanisms or unsupported claims detected",
+      "Qualifiers like 'often' and 'many' preserved from source language"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-e3a831fe-9bca-4fcd-beb6-53d62b81d072",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4524,
+    "outputTokens": 95
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

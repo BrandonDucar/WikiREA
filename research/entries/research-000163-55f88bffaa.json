@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000163-55f88bffaa",
+  "title": "Clique (graph theory)",
+  "role": "adversarial-reviewer",
+  "createdAt": "2026-11-26T17:25:19.474Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A clique is a subset of vertices in an undirected graph where every pair of distinct vertices is adjacent. It is equivalent to a complete induced subgraph. Maximal cliques cannot be enlarged by adding adjacent vertices, while maximum cliques are the largest possible cliques in a given graph. The clique number of a graph is the size of its maximum clique. Finding cliques is computationally hard (NP-complete), though algorithms exist for specific graph families. Cliques model social groups, biological structures, and network partitions across various scientific fields.",
+  "mechanisms": [
+    {
+      "title": "Clique definition and adjacency",
+      "explanation": "A clique requires that every two distinct vertices in the subset share an edge. This adjacency condition makes the induced subgraph complete. The size of the largest such subset defines the graph's clique number.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Algorithmic hardness and computation",
+      "explanation": "The clique problem—identifying a maximum clique or all cliques—is NP-complete and hard to approximate. Exact solutions often require exponential-time algorithms like Bron–Kerbosch, while polynomial-time methods exist only for restricted graph classes.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact maximum clique count for arbitrary graphs of practical size",
+    "Whether specific polynomial-time algorithms exist for all sparse graph families",
+    "Precise thresholds for clique emergence in random graph models",
+    "Optimal trade-offs between clique size and graph density in real-world networks"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Clique (graph theory)",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1378641406",
+      "revision": "1378641406",
+      "observedAt": "2026-11-21T09:15:39.537Z",
+      "sourceTimestamp": "2026-10-05T11:37:25Z",
+      "sha256": "6a614917f5be52087bb6ab15694b965f2b79e38b9c8aeaa537da0d8e54a65553",
+      "excerptSha256": "210bfdf8371d81f7c4022287b3d2ff0eda50e130bae9d25fffd5ba6aa1c6cc57",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 20703,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source definitions of clique, maximal/maximum cliques, and clique number",
+      "Mechanisms correctly capture adjacency requirement and NP-completeness with Bron–Kerbosch example",
+      "Unknowns appropriately identify unresolved questions not claimed as facts in source",
+      "No invented mechanisms or unsupported claims detected",
+      "Qualifiers like 'often' and 'many' preserved from source language"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-d02a085b-f441-48e3-86a3-f91223e77261",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4185,
+      "outputTokens": 352
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-e3a831fe-9bca-4fcd-beb6-53d62b81d072",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4524,
+      "outputTokens": 95
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "9a13baf4d1eac29c21e336d3c5dfcd789640725b1dac1b0df3d17da23b81344d",
+    "artifactDigest": "234f38cdbc704dd9647c8a3ec9344ae622f01c4990bbbfa71ac4f681abad6223",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000163-55f88bffaa.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
