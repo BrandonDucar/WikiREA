@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T15:15:45.385Z",
+  "updatedAt": "2026-11-26T15:15:51.135Z",
   "sequence": 268,
   "jobs": [
     {
@@ -12198,21 +12198,47 @@
       "topic": "3ds Max",
       "day": "2026-11-26",
       "runId": "45847274987",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T15:15:45.385Z",
       "expiresAt": "2026-11-26T15:30:45.385Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Autodesk 3ds Max",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385636310",
+        "revision": "1385636310",
+        "observedAt": "2026-11-26T15:15:48.819Z",
+        "sourceTimestamp": "2026-11-14T11:04:46Z",
+        "sha256": "75ae892aece63545ec0810bc5dc9fd9940689962434bd372dacef4b5a8025345",
+        "excerptSha256": "c1770c2f6a0671085956e283ab959cf1f79f61ecb3526189c030703c9462c4d4",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 30580,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-97fbdd38-564a-4b92-b150-405c15cc0d83",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4726,
+        "outputTokens": 287
+      },
+      "packet": "research/packets/research-000268-1966ad0e15.json",
+      "packetDigest": "62913e3e3273455d81ee0368df6aa7d914a4433cd1a64633c49a904977a6085e",
+      "finishedAt": "2026-11-26T15:15:51.135Z"
     }
   ],
   "discovered": [
-    {
-      "title": "3ds Max",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000029-4aa4540b02"
-    },
     {
       "title": "Adobe Photoshop",
       "role": "game-mechanic-researcher",
@@ -15839,11 +15865,6 @@
       "discoveredFrom": "research-000165-c56f2595ec"
     },
     {
-      "title": "3DS MAX",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000166-f8991dec00"
-    },
-    {
       "title": "3ds (disambiguation)",
       "role": "application-tracer",
       "discoveredFrom": "research-000166-f8991dec00"
@@ -18667,6 +18688,41 @@
       "title": "2013 YouTube Music Awards",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": "2012 (film)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000268-1966ad0e15"
+    },
+    {
+      "title": "3D animations",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000268-1966ad0e15"
+    },
+    {
+      "title": "3D computer game",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000268-1966ad0e15"
+    },
+    {
+      "title": "AC3D",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000268-1966ad0e15"
+    },
+    {
+      "title": "ACIS",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000268-1966ad0e15"
+    },
+    {
+      "title": "Adobe After Effects",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000268-1966ad0e15"
+    },
+    {
+      "title": "Amapi",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000268-1966ad0e15"
     }
   ],
   "reviewJobs": [
