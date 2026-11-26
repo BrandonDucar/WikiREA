@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000269-d9e08b014d",
+  "topic": "Assembly language",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Assembly language is a low-level programming paradigm with a near one-to-one mapping between its statements and a computer's machine code instructions. It emerged in 1947 as the first method to represent machine code in a readable form. Each language variant is tightly coupled to a specific processor architecture, such as x86 or ARM, and relies on an assembler utility to translate mnemonics into executable numerical code. While historically dominant for both systems and application programming, modern usage is limited to small, critical code segments within larger systems, such as roughly 2% of the Linux kernel, where direct hardware interaction or maximum performance is required. Programmers use symbolic labels, constants, and macros to improve readability, but the resulting code remains architecture-specific and non-portable across different processor families.",
+    "mechanisms": [
+      {
+        "title": "Mnemonic-to-machine code translation",
+        "explanation": "An assembler program translates combinations of mnemonics and syntax into their numerical equivalents, creating object code. This process establishes a strong correspondence between assembly statements and the architecture's machine code instructions.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Architecture-specific instruction mapping",
+        "explanation": "Each assembly language variant is specific to a particular computer architecture. The language's instructions correspond directly to the CPU's instruction set, making the code processor-dependent and non-portable across different architectures.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The exact historical transition point from hand-crafted machine code to widespread adoption of assembly languages",
+      "Whether all assemblers for a given architecture produce identical machine code outputs",
+      "The long-term viability of assembly language in future computing paradigms",
+      "The specific mechanisms by which inline assemblers integrate with high-level language compilers"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Assembly language",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385002538",
+    "revision": "1385002538",
+    "observedAt": "2026-11-26T16:16:31.434Z",
+    "sourceTimestamp": "2026-11-11T09:35:02Z",
+    "sha256": "e421df87ca6fb1bfcb164cba7246ce65a6dbd8f9ab3aef5ef80fae38a0439bc2",
+    "excerptSha256": "b42d4c1c768efcc2d709aa9f8b01120fc4f9dbbeef817869fb92e06427c26d46",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 93642,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-81153f03-23b5-48c5-b7bc-c0b8ba0ac7b1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3882,
+    "outputTokens": 390
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b78ecf8c9f5ae7f3d4843ff3ef8504a078dd77bdada9eaecc136f24b41b90b75",
+  "artifactDigest": "e932516423e6ae04abc54345b2168f9e0bfe9626d9af3a942c84eb7aa9225800"
+}

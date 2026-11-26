@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T16:16:29.482Z",
+  "updatedAt": "2026-11-26T16:16:34.204Z",
   "sequence": 269,
   "jobs": [
     {
@@ -12243,13 +12243,44 @@
       "topic": "Assembly language",
       "day": "2026-11-26",
       "runId": "45857193572",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T16:16:29.482Z",
       "expiresAt": "2026-11-26T16:31:29.482Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Assembly language",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385002538",
+        "revision": "1385002538",
+        "observedAt": "2026-11-26T16:16:31.434Z",
+        "sourceTimestamp": "2026-11-11T09:35:02Z",
+        "sha256": "e421df87ca6fb1bfcb164cba7246ce65a6dbd8f9ab3aef5ef80fae38a0439bc2",
+        "excerptSha256": "b42d4c1c768efcc2d709aa9f8b01120fc4f9dbbeef817869fb92e06427c26d46",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 93642,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-81153f03-23b5-48c5-b7bc-c0b8ba0ac7b1",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3882,
+        "outputTokens": 390
+      },
+      "packet": "research/packets/research-000269-d9e08b014d.json",
+      "packetDigest": "e932516423e6ae04abc54345b2168f9e0bfe9626d9af3a942c84eb7aa9225800",
+      "finishedAt": "2026-11-26T16:16:34.204Z"
     }
   ],
   "discovered": [
@@ -12262,11 +12293,6 @@
       "title": "Adventure Game Interpreter",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000029-4aa4540b02"
-    },
-    {
-      "title": "Assembly language",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000030-5a4bfec956"
     },
     {
       "title": "Authentication",
@@ -16514,11 +16540,6 @@
       "discoveredFrom": "research-000187-721aeb0bd1"
     },
     {
-      "title": "Assembly language",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000187-721aeb0bd1"
-    },
-    {
       "title": "Butler Lampson",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000187-721aeb0bd1"
@@ -18737,6 +18758,46 @@
       "title": "Amapi",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000268-1966ad0e15"
+    },
+    {
+      "title": "ALGOL",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "AMD",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "APEXC",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "AT&T syntax",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "AV1",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "AVX2",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "Ada (programming language)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
+    },
+    {
+      "title": "Addison Wesley",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000269-d9e08b014d"
     }
   ],
   "reviewJobs": [
