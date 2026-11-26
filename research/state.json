@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T00:35:15.303Z",
-  "sequence": 255,
+  "updatedAt": "2026-11-26T01:16:04.206Z",
+  "sequence": 256,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11664,6 +11664,20 @@
       "packet": "research/packets/research-000255-ff01f0f948.json",
       "packetDigest": "1f5e1e57a55f7dab1717687a059122bab09ec5036d7cd01990af449830984eb4",
       "finishedAt": "2026-11-26T00:35:15.303Z"
+    },
+    {
+      "id": "research-000256-1de3764e7d",
+      "role": "application-tracer",
+      "topic": "AI assistant",
+      "day": "2026-11-26",
+      "runId": "45734561857",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T01:16:04.206Z",
+      "expiresAt": "2026-11-26T01:31:04.206Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
