@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000165-c56f2595ec",
+  "title": "ACM Computing Classification System",
+  "role": "source-curator",
+  "createdAt": "2026-11-26T21:24:46.576Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The ACM Computing Classification System (CCS) is a hierarchical subject classification scheme for computer science topics, maintained by the Association for Computing Machinery. Since its inception in 1964, it has undergone seven revisions, with the current version published in 2012. The system organizes knowledge into four nested levels, such as Computing methodologies > Artificial intelligence > Knowledge representation and reasoning > Ontology engineering. It serves as a standard organizational tool for ACM journals and is comparable in scope and structure to the Mathematics Subject Classification.",
+  "mechanisms": [
+    {
+      "title": "Hierarchical nesting of four levels",
+      "explanation": "The CCS organizes topics into a four-level hierarchy. A top-level category is subdivided into second-level areas, which are further split into third-level topics, and finally into fourth-level subtopics. For example, the branch Computing methodologies contains Artificial intelligence, which contains Knowledge representation and reasoning, which contains Ontology engineering.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Revision history and version maintenance",
+      "explanation": "The system has been updated through seven revisions since the original 1964 publication. New versions were released in 1982, 1983, 1987, 1991, 1998, and 2012, reflecting the evolution of the field. ACM journals use the current version to classify published subjects.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact criteria used for each revision's structural changes",
+    "Internal decision-making process of the CCS Update Committee",
+    "Detailed mapping between CCS categories and other classification schemes",
+    "Current usage statistics across all ACM publications"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ACM Computing Classification System",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1361593496",
+      "revision": "1361593496",
+      "observedAt": "2026-11-21T12:19:04.638Z",
+      "sourceTimestamp": "2026-06-28T22:53:58Z",
+      "sha256": "e0e912d2a1106e83d573d02dca7189e6235fa868251d374fccecd6305c113e09",
+      "excerptSha256": "e0e912d2a1106e83d573d02dca7189e6235fa868251d374fccecd6305c113e09",
+      "inspectedCharacters": 4842,
+      "totalCharacters": 4842,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on CCS purpose, history, and structure",
+      "Mechanism descriptions match source examples and revision timeline",
+      "Unknowns appropriately identify gaps not addressed in source",
+      "No unsupported mechanisms or invented execution details",
+      "Qualifiers like 'comparable' and 'reflecting evolution' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-749de41e-a1f6-422e-b6a2-f4981f9e1619",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 1689,
+      "outputTokens": 388
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-95549232-f461-4ca1-95c2-89d6e09f2380",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2035,
+      "outputTokens": 79
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "06cf95d142813846ec36dfe99aef665bccd9bd602d3612e779c8cb5dde0c7cae",
+    "artifactDigest": "5de43968ac0ded64a086434b7a08bbc41ecea0adb2bd87d3fcbc3f806e5a103d",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000165-c56f2595ec.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
