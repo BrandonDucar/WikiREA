@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T09:17:27.987Z",
+  "updatedAt": "2026-11-26T09:17:32.775Z",
   "sequence": 263,
   "jobs": [
     {
@@ -11969,13 +11969,44 @@
       "topic": "Absolute value",
       "day": "2026-11-26",
       "runId": "45790571442",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T09:17:27.987Z",
       "expiresAt": "2026-11-26T09:32:27.987Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Absolute value",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383636972",
+        "revision": "1383636972",
+        "observedAt": "2026-11-26T09:17:30.547Z",
+        "sourceTimestamp": "2026-11-03T21:22:53Z",
+        "sha256": "2945653e9dbba9e6248e4de78cf5daefd49df9eaecd8044a3b629ae29baa0ed5",
+        "excerptSha256": "01383a9124392a9c7ef12280839fb2e5c41cb34350027a3642c8b7d8230b9fb0",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 33722,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-594d1afd-09b0-4f35-8bd2-be60a9527f1f",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4704,
+        "outputTokens": 365
+      },
+      "packet": "research/packets/research-000263-b508b6a2ce.json",
+      "packetDigest": "f06891c21b88b591fb2ff3d5df02d1c9ce312188792a777dd6f71ead8172afac",
+      "finishedAt": "2026-11-26T09:17:32.775Z"
     }
   ],
   "discovered": [
@@ -12106,11 +12137,6 @@
     },
     {
       "title": "Aad van der Vaart",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000034-548d2aa514"
-    },
-    {
-      "title": "Absolute value",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000034-548d2aa514"
     },
@@ -13248,11 +13274,6 @@
       "title": "Comparison of free software for audio",
       "role": "music-events",
       "discoveredFrom": "research-000082-3295e49fa9"
-    },
-    {
-      "title": "Absolute value",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000083-ece4b38be5"
     },
     {
       "title": "Absorbing element",
@@ -18343,6 +18364,46 @@
       "title": "Adalbert Gyrowetz",
       "role": "music-events",
       "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "0",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Absolute difference",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Absolute square",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Absolute value (algebra)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Absolute value (disambiguation)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Additive identity",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Additive inverse",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Analytic geometry",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000263-b508b6a2ce"
     }
   ],
   "reviewJobs": [

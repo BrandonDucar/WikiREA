@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000263-b508b6a2ce",
+  "topic": "Absolute value",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Absolute value quantifies the distance of a number from zero on the number line, always yielding a non-negative result. For real numbers, it returns the number itself if positive or zero, and its negation if negative. The concept extends to complex numbers via the Pythagorean theorem, computing distance from the origin in the complex plane. The function exhibits symmetry: the absolute value of a number and its negation are identical. It satisfies fundamental properties including non-negativity, positive definiteness, multiplicativity, and subadditivity (the triangle inequality). These properties enable solving absolute value inequalities and define distance metrics in mathematics.",
+    "mechanisms": [
+      {
+        "title": "Real number definition",
+        "explanation": "For any real number x, |x| equals x when x is non-negative, and equals -x when x is negative. This ensures the output is always non-negative, representing distance from zero along the number line.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Complex number extension",
+        "explanation": "For a complex number z = x + iy, the absolute value |z| equals sqrt(x² + y²), computing the Euclidean distance from the origin in the complex plane. This generalizes the real number definition using the Pythagorean theorem.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How absolute value behaves in non-archimedean contexts beyond ordered rings",
+      "Precise implementation details in all programming languages and computational software",
+      "Whether the vertical bar notation applies uniformly across all algebraic structures with defined absolute value",
+      "The full scope of applications beyond magnitude, distance, and norm in physical contexts"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Absolute value",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383636972",
+    "revision": "1383636972",
+    "observedAt": "2026-11-26T09:17:30.547Z",
+    "sourceTimestamp": "2026-11-03T21:22:53Z",
+    "sha256": "2945653e9dbba9e6248e4de78cf5daefd49df9eaecd8044a3b629ae29baa0ed5",
+    "excerptSha256": "01383a9124392a9c7ef12280839fb2e5c41cb34350027a3642c8b7d8230b9fb0",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 33722,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-594d1afd-09b0-4f35-8bd2-be60a9527f1f",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4704,
+    "outputTokens": 365
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "7ef2c303299ba8bdef0dab961acc6ee9b1b688012bd03c6bd70552e60682f33d",
+  "artifactDigest": "f06891c21b88b591fb2ff3d5df02d1c9ce312188792a777dd6f71ead8172afac"
+}
