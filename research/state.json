@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T03:28:09.789Z",
-  "sequence": 258,
+  "updatedAt": "2026-11-26T04:17:55.266Z",
+  "sequence": 259,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11782,6 +11782,20 @@
         "retryAfter": null
       },
       "finishedAt": "2026-11-26T03:17:52.982Z"
+    },
+    {
+      "id": "research-000259-5ccdf8382e",
+      "role": "simulation-researcher",
+      "topic": "Artificial intelligence",
+      "day": "2026-11-26",
+      "runId": "45754301546",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T04:17:55.266Z",
+      "expiresAt": "2026-11-26T04:32:55.266Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
