@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T15:25:38.148Z",
-  "sequence": 268,
+  "updatedAt": "2026-11-26T16:16:29.482Z",
+  "sequence": 269,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12236,6 +12236,20 @@
       "packet": "research/packets/research-000268-1966ad0e15.json",
       "packetDigest": "62913e3e3273455d81ee0368df6aa7d914a4433cd1a64633c49a904977a6085e",
       "finishedAt": "2026-11-26T15:15:51.135Z"
+    },
+    {
+      "id": "research-000269-d9e08b014d",
+      "role": "simulation-researcher",
+      "topic": "Assembly language",
+      "day": "2026-11-26",
+      "runId": "45857193572",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T16:16:29.482Z",
+      "expiresAt": "2026-11-26T16:31:29.482Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
