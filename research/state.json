@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T08:20:07.474Z",
+  "updatedAt": "2026-11-26T08:20:13.853Z",
   "sequence": 262,
   "jobs": [
     {
@@ -11924,13 +11924,44 @@
       "topic": "Beethoven",
       "day": "2026-11-26",
       "runId": "45782259031",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T08:20:07.474Z",
       "expiresAt": "2026-11-26T08:35:07.474Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Ludwig van Beethoven",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386678595",
+        "revision": "1386678595",
+        "observedAt": "2026-11-26T08:20:09.926Z",
+        "sourceTimestamp": "2026-11-19T22:52:55Z",
+        "sha256": "e776fe5b55b69093b92314222aa497d914bbfddc5cf86dae8be6c1ac92ab1fce",
+        "excerptSha256": "ed777f4bccbef7ab0981cbc7c55ff5ca34b262c53dfd3fc15c55699fa9d7046d",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 114411,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-70dae089-af68-4f0f-a5af-f9509621dcc4",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4300,
+        "outputTokens": 400
+      },
+      "packet": "research/packets/research-000262-06b8663b5d.json",
+      "packetDigest": "2229f1c362a8ea9c36f06c90e4f9bcf97f583d14751d7f7956e5f54f04a51e93",
+      "finishedAt": "2026-11-26T08:20:13.853Z"
     }
   ],
   "discovered": [
@@ -12013,11 +12044,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Beethoven",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "Classical music",
@@ -18263,6 +18289,46 @@
       "title": "Application platform as a service",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "1804 French constitutional referendum",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "1815 Beethoven",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "19th-Century Music",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "19th-century French literature",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "A Clockwork Orange (film)",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "A Clockwork Orange (novel)",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "Achim von Arnim",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
+    },
+    {
+      "title": "Adalbert Gyrowetz",
+      "role": "music-events",
+      "discoveredFrom": "research-000262-06b8663b5d"
     }
   ],
   "reviewJobs": [

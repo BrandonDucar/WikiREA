@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000262-06b8663b5d",
+  "topic": "Beethoven",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Beethoven (1770–1827) was a German composer and pianist who bridged Classical and Romantic music. He expanded instrumental forms like the symphony, piano sonata, and string quartet. His career is traditionally divided into three periods: early works reflecting Classical style, a middle period marked by personal distinction and growing fame despite emerging hearing loss, and a late period producing innovative, structurally complex works. He achieved early patronage through piano trios and dedicated compositions to aristocrats, and his middle-period symphonies and concertos became widely performed. His late works, including the Ninth Symphony and Missa solemnis, are noted for their scale and structural innovation.",
+    "mechanisms": [
+      {
+        "title": "Form expansion and structural innovation",
+        "explanation": "Beethoven expanded and redefined established instrumental forms—symphony, piano sonata, and string quartet—by increasing scale, thematic development, and structural complexity. His middle-period symphonies, particularly the Third and Fifth, exemplify this approach, as do his late piano sonatas and string quartets.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Patronage and public reception",
+        "explanation": "Beethoven gained early recognition and support through the patronage of aristocrats such as Prince Lichnowsky, who commissioned his first published opus works. His reputation as a virtuoso pianist and the popularity of compositions like the Pathétique and Moonlight sonatas contributed to widespread performance of his music.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact date of birth and the custom of baptism within 24 hours",
+      "Nature and cause of his hearing loss progression",
+      "Detailed compositional process and sketch materials",
+      "Specific reasons for the varying reception of his early publications"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Ludwig van Beethoven",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386678595",
+    "revision": "1386678595",
+    "observedAt": "2026-11-26T08:20:09.926Z",
+    "sourceTimestamp": "2026-11-19T22:52:55Z",
+    "sha256": "e776fe5b55b69093b92314222aa497d914bbfddc5cf86dae8be6c1ac92ab1fce",
+    "excerptSha256": "ed777f4bccbef7ab0981cbc7c55ff5ca34b262c53dfd3fc15c55699fa9d7046d",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 114411,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-70dae089-af68-4f0f-a5af-f9509621dcc4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4300,
+    "outputTokens": 400
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "0c783299693546c3e17fe6a1580724c4cae1509c89f9c1fbcb3239b88b6b356e",
+  "artifactDigest": "2229f1c362a8ea9c36f06c90e4f9bcf97f583d14751d7f7956e5f54f04a51e93"
+}
