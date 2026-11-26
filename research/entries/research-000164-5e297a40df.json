@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000164-5e297a40df",
+  "title": "Doi (identifier)",
+  "role": "glossary-and-mechanics-editor",
+  "createdAt": "2026-11-26T19:24:45.961Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A DOI is a persistent identifier standardized by ISO that uniquely identifies digital objects. It consists of a prefix identifying the registrant and a suffix chosen by the registrant to identify a specific object. The system uses a federation of registration agencies coordinated by the International DOI Foundation to assign and resolve identifiers to metadata, typically URLs, ensuring long-term actionability.",
+  "mechanisms": [
+    {
+      "title": "Structural composition",
+      "explanation": "A DOI string is divided into a prefix and suffix separated by a slash. The prefix begins with \"10\" and includes a registrant code (e.g., 10.1000), while the suffix is assigned by the registrant to identify the specific object. This structure allows the identifier to remain fixed even if the object's location changes.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Resolution via metadata binding",
+      "explanation": "A DOI resolves to its target object by being bound to metadata, typically a URL where the object is located. The International DOI Foundation coordinates a federation of registration agencies that manage this binding, allowing the DOI to redirect requests to the correct online location even if the URL changes.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact mechanism for how the federation of registration agencies coordinates prefix assignment and metadata updates",
+    "Details of the indecs Content Model implementation for metadata representation",
+    "Specific technical process for updating DOI metadata when publisher URLs change",
+    "Complete registry of all current DOI member organizations and their assigned prefix ranges"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Digital object identifier",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386700546",
+      "revision": "1386700546",
+      "observedAt": "2026-11-21T10:13:34.575Z",
+      "sourceTimestamp": "2026-11-20T01:39:08Z",
+      "sha256": "05d9ede74027e36b03694fe6bf3ce5b3fec6e96f34b1638b6a7c2425180e886d",
+      "excerptSha256": "c6bae8f896c5c33a15d7e9c1f3ebfebc2d02dd693a235dd8c66690aba44c8773",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 40765,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on DOI definition, structure, and resolution mechanism",
+      "Mechanisms correctly describe prefix/suffix composition and metadata binding for resolution",
+      "Unknowns appropriately identify gaps in source regarding federation coordination details, indecs model specifics, metadata update processes, and complete member registry",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'federation of registration agencies' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-ed1bc75b-9bf4-4dfa-bb2f-2dbdf7a77a97",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4481,
+      "outputTokens": 340
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-7e93b701-c369-4398-8b31-e12425e7bc82",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4759,
+      "outputTokens": 101
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "69d05879620917f6d4216e7b34a171f083d593885936e7bf0235d0d098708af9",
+    "artifactDigest": "8412784098fffb9694ec4564e6978aab462bc9201f8b62d596b78a1bd355cc68",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000164-5e297a40df.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

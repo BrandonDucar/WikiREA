@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000164-5e297a40df-review-8a640bd3d9",
+  "parentJobId": "research-000164-5e297a40df",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "8412784098fffb9694ec4564e6978aab462bc9201f8b62d596b78a1bd355cc68",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Digital object identifier",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386700546",
+    "revision": "1386700546",
+    "observedAt": "2026-11-21T10:13:34.575Z",
+    "sourceTimestamp": "2026-11-20T01:39:08Z",
+    "sha256": "05d9ede74027e36b03694fe6bf3ce5b3fec6e96f34b1638b6a7c2425180e886d",
+    "excerptSha256": "c6bae8f896c5c33a15d7e9c1f3ebfebc2d02dd693a235dd8c66690aba44c8773",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 40765,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on DOI definition, structure, and resolution mechanism",
+      "Mechanisms correctly describe prefix/suffix composition and metadata binding for resolution",
+      "Unknowns appropriately identify gaps in source regarding federation coordination details, indecs model specifics, metadata update processes, and complete member registry",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically' and 'federation of registration agencies' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-7e93b701-c369-4398-8b31-e12425e7bc82",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4759,
+    "outputTokens": 101
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
