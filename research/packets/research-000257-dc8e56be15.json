@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000257-dc8e56be15",
+  "topic": "ActionScript",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ActionScript is an object-oriented scripting language originally created for Adobe Flash, now implemented as a variant of ECMAScript (JavaScript). It evolved from simple frame commands into a full programming language supporting classes, events, and 3D graphics. Versions 2 and 3 differ in typing and performance, with AS3 using a just-in-time compiler and AVM2 virtual machine for significant speed improvements. The language is used for web animations, rich applications, desktop software via AIR, and game UI elements.",
+    "mechanisms": [
+      {
+        "title": "Compilation to bytecode and virtual machine execution",
+        "explanation": "ActionScript code is compiled into bytecode and executed by a virtual machine. ActionScript 1 and 2 run on AVM1, while ActionScript 3 uses the rewritten AVM2 with a just-in-time compiler for faster performance.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Event-driven programming model",
+        "explanation": "The language uses an event-handling model to manage user interactions, media, and system events. This model was expanded in later Flash Player versions to support complex application logic and multimedia control.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact runtime architecture of AVM1 versus AVM2 memory management",
+      "Details of prototype-based inheritance specific to ActionScript's early implementations",
+      "Internal representation of ECMAScript semantics within the ActionScript compiler",
+      "Mechanisms of GPU offloading and Stage3D graphics pipeline integration"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ActionScript",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373143562",
+    "revision": "1373143562",
+    "observedAt": "2026-11-26T02:20:11.448Z",
+    "sourceTimestamp": "2026-09-04T07:13:00Z",
+    "sha256": "f95f2d438f1d990ee3a8c187ad9e54a23646a7b2670fedcc6f6ec3d7a1ff1425",
+    "excerptSha256": "3d6168bf748c6b69ff51374416b00289f3708862bae88a4a2a445f35b26ace6c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 40491,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-fd70a8dd-3280-4754-91ef-eed6ee0f8e70",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3816,
+    "outputTokens": 341
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "80a7f42228ba305fb0f9dd045a9bb76fbca6d66abb0a0d57a2ca42322c8fb201",
+  "artifactDigest": "99fc4c37dfc16e72e31fe585a696dcc94a79d4edce241aea5c8a959e8ec4fc2e"
+}

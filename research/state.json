@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T02:20:08.660Z",
+  "updatedAt": "2026-11-26T02:20:14.368Z",
   "sequence": 257,
   "jobs": [
     {
@@ -11720,13 +11720,44 @@
       "topic": "ActionScript",
       "day": "2026-11-26",
       "runId": "45741698193",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T02:20:08.660Z",
       "expiresAt": "2026-11-26T02:35:08.660Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ActionScript",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1373143562",
+        "revision": "1373143562",
+        "observedAt": "2026-11-26T02:20:11.448Z",
+        "sourceTimestamp": "2026-09-04T07:13:00Z",
+        "sha256": "f95f2d438f1d990ee3a8c187ad9e54a23646a7b2670fedcc6f6ec3d7a1ff1425",
+        "excerptSha256": "3d6168bf748c6b69ff51374416b00289f3708862bae88a4a2a445f35b26ace6c",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 40491,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-fd70a8dd-3280-4754-91ef-eed6ee0f8e70",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3816,
+        "outputTokens": 341
+      },
+      "packet": "research/packets/research-000257-dc8e56be15.json",
+      "packetDigest": "99fc4c37dfc16e72e31fe585a696dcc94a79d4edce241aea5c8a959e8ec4fc2e",
+      "finishedAt": "2026-11-26T02:20:14.368Z"
     }
   ],
   "discovered": [
@@ -12874,11 +12905,6 @@
       "title": "Adobe Photoshop",
       "role": "application-tracer",
       "discoveredFrom": "research-000076-83a6537129"
-    },
-    {
-      "title": "ActionScript",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000077-cd12fec18e"
     },
     {
       "title": "Android (operating system)",
@@ -16241,11 +16267,6 @@
       "discoveredFrom": "research-000192-28ec315b3a"
     },
     {
-      "title": "ActionScript",
-      "role": "music-events",
-      "discoveredFrom": "research-000192-28ec315b3a"
-    },
-    {
       "title": "Adobe AIR",
       "role": "music-events",
       "discoveredFrom": "research-000192-28ec315b3a"
@@ -17944,6 +17965,46 @@
       "title": "Agentic AI",
       "role": "application-tracer",
       "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "API",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "ActionScript Virtual Machine 2",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "Action Message Format",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "Adobe AIR",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "Adobe Animate",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "Adobe Flash",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "Adobe Flash Builder",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "Adobe Flash Catalyst",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000257-dc8e56be15"
     }
   ],
   "reviewJobs": [
