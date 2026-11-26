@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000161-a506862a0b-review-8a640bd3d9",
+  "parentJobId": "research-000161-a506862a0b",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "83b52942647ffb8aa81ced19cc8b01631f77a72a501aadd9d4136f2996e1140a",
+  "sourcePin": {
+    "id": "S1",
+    "title": "C++",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384030937",
+    "revision": "1384030937",
+    "observedAt": "2026-11-21T07:15:20.520Z",
+    "sourceTimestamp": "2026-11-06T06:26:57Z",
+    "sha256": "3a209fd381e5eddf25c6cb9955353c7e20275a2c4b5305afee17cc54f5d48f88",
+    "excerptSha256": "7dce73f1022f64ff871cc862008bc75abeb6dd66f36a6fc46108630e2e4bf36f",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 65347,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source claims about C++ origins, paradigms, standardization, and use cases",
+      "Mechanisms correctly describe multi-paradigm design and compiled implementation as stated in source",
+      "Unknowns appropriately identify implementation-specific details not covered in source",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'usually implemented' and 'typically' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-d376cf44-aa6c-49f0-b531-13ca51a42b2b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5271,
+    "outputTokens": 90
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
