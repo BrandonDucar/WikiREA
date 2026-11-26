@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T06:25:04.257Z",
+  "updatedAt": "2026-11-26T06:25:09.615Z",
   "sequence": 260,
   "jobs": [
     {
@@ -11834,13 +11834,44 @@
       "topic": "Acid dissociation constant",
       "day": "2026-11-26",
       "runId": "45768029247",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T06:25:04.257Z",
       "expiresAt": "2026-11-26T06:40:04.257Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Acid dissociation constant",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379684544",
+        "revision": "1379684544",
+        "observedAt": "2026-11-26T06:25:06.407Z",
+        "sourceTimestamp": "2026-10-11T09:08:32Z",
+        "sha256": "1b12d600cc6d6a2585d71fb17f4e58967f97fcedeed84d4a76164d8ef754da8f",
+        "excerptSha256": "2188a5f5020d38f805f4686d2d01ce17138bc68be951f0aeb427f1b1df64a403",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 105315,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-daed11df-512a-4b07-b671-0104c6e4ddf0",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4580,
+        "outputTokens": 333
+      },
+      "packet": "research/packets/research-000260-bd8fe7009f.json",
+      "packetDigest": "6d7290ce47b54bcd8b325496abd275e291b46007270485359e7050e909c67114",
+      "finishedAt": "2026-11-26T06:25:09.615Z"
     }
   ],
   "discovered": [
@@ -11888,11 +11919,6 @@
       "title": "Black start",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000030-5a4bfec956"
-    },
-    {
-      "title": "Acid dissociation constant",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000031-03dd95243d"
     },
     {
       "title": "Adolf Martens",
@@ -18103,6 +18129,46 @@
       "title": "A* search algorithm",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000259-5ccdf8382e"
+    },
+    {
+      "title": "1,2-dichloroethane",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "2,4-Dinitrophenol",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "Absorbance",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "Acceptor number",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "Accuracy",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "Acetate",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "Acetic acid",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "Acetonitrile",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000260-bd8fe7009f"
     }
   ],
   "reviewJobs": [

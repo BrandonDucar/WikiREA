@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000260-bd8fe7009f",
+  "topic": "Acid dissociation constant",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The acid dissociation constant (Ka) quantifies the strength of an acid in solution as the equilibrium ratio of its dissociated ions (conjugate base and hydrogen ion) to its undissociated form. A lower Ka indicates a weaker acid that remains mostly undissociated, while a higher Ka indicates a stronger acid. The logarithmic pKa scale inverts this relationship, making lower values indicative of stronger acids. Ka values are temperature-dependent and influenced by molecular structure, solvent effects, and inductive or resonance phenomena, allowing prediction of pH and buffer behavior in chemical, biological, and environmental contexts.",
+    "mechanisms": [
+      {
+        "title": "Equilibrium Ratio Definition",
+        "explanation": "Ka is defined as the molar concentration ratio of the conjugate base and hydrogen ion to the undissociated acid at chemical equilibrium, representing the extent of proton release into solution.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Logarithmic pKa Scaling",
+        "explanation": "The negative base-10 logarithm of Ka yields pKa, which compresses the wide range of acid strengths into a convenient scale where lower values correspond to stronger acids and higher values to weaker acids.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact temperature coefficient for a given acid under all conditions",
+      "Specific inductive or resonance contributions for arbitrary organic structures",
+      "Detailed solvent reorganization energy during proton transfer",
+      "Precise pKa prediction for exotic or uncharacterized polyprotic systems"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Acid dissociation constant",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379684544",
+    "revision": "1379684544",
+    "observedAt": "2026-11-26T06:25:06.407Z",
+    "sourceTimestamp": "2026-10-11T09:08:32Z",
+    "sha256": "1b12d600cc6d6a2585d71fb17f4e58967f97fcedeed84d4a76164d8ef754da8f",
+    "excerptSha256": "2188a5f5020d38f805f4686d2d01ce17138bc68be951f0aeb427f1b1df64a403",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 105315,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-daed11df-512a-4b07-b671-0104c6e4ddf0",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4580,
+    "outputTokens": 333
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e5296603fe872519facce47b72a03899d0bc4c98586bdc430ff6dae2ddfd3269",
+  "artifactDigest": "6d7290ce47b54bcd8b325496abd275e291b46007270485359e7050e909c67114"
+}
