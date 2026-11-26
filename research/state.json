@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T20:17:27.412Z",
-  "sequence": 272,
+  "updatedAt": "2026-11-26T21:13:50.312Z",
+  "sequence": 273,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12392,6 +12392,20 @@
       "lastStage": "writer",
       "error": "RESEARCH_FAILED",
       "finishedAt": "2026-11-26T20:17:27.412Z"
+    },
+    {
+      "id": "research-000273-13a85deb79",
+      "role": "adversarial-reviewer",
+      "topic": "Absorbing element",
+      "day": "2026-11-26",
+      "runId": "45896640385",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T21:13:50.312Z",
+      "expiresAt": "2026-11-26T21:28:50.312Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
