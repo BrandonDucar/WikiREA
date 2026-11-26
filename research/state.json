@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T02:20:14.368Z",
-  "sequence": 257,
+  "updatedAt": "2026-11-26T03:17:51.114Z",
+  "sequence": 258,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11758,6 +11758,20 @@
       "packet": "research/packets/research-000257-dc8e56be15.json",
       "packetDigest": "99fc4c37dfc16e72e31fe585a696dcc94a79d4edce241aea5c8a959e8ec4fc2e",
       "finishedAt": "2026-11-26T02:20:14.368Z"
+    },
+    {
+      "id": "research-000258-92e6a1e665",
+      "role": "game-mechanic-researcher",
+      "topic": "3D Hunting: Trophy Whitetail",
+      "day": "2026-11-26",
+      "runId": "45747975002",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T03:17:51.114Z",
+      "expiresAt": "2026-11-26T03:32:51.114Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
