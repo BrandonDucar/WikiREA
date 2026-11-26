@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T21:13:50.312Z",
+  "updatedAt": "2026-11-26T21:13:54.190Z",
   "sequence": 273,
   "jobs": [
     {
@@ -12399,13 +12399,44 @@
       "topic": "Absorbing element",
       "day": "2026-11-26",
       "runId": "45896640385",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T21:13:50.312Z",
       "expiresAt": "2026-11-26T21:28:50.312Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Absorbing element",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1360606610",
+        "revision": "1360606610",
+        "observedAt": "2026-11-26T21:13:52.058Z",
+        "sourceTimestamp": "2026-06-22T15:07:54Z",
+        "sha256": "f0d2596576ab7bac94ac8aa85247d2074782b6d49c120d90fd5a2e6aa5c4a3cc",
+        "excerptSha256": "f0d2596576ab7bac94ac8aa85247d2074782b6d49c120d90fd5a2e6aa5c4a3cc",
+        "inspectedCharacters": 5539,
+        "totalCharacters": 5539,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-cd6c47b5-a1b1-4a96-9299-579b48ab3917",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2031,
+        "outputTokens": 425
+      },
+      "packet": "research/packets/research-000273-13a85deb79.json",
+      "packetDigest": "338dc4752e35a75fa3fca77b95e556c76c0effe2d3f669f21b71532635ab5539",
+      "finishedAt": "2026-11-26T21:13:54.190Z"
     }
   ],
   "discovered": [
@@ -12473,11 +12504,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Classical music",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "Computer music",
@@ -13628,11 +13654,6 @@
       "title": "Comparison of free software for audio",
       "role": "music-events",
       "discoveredFrom": "research-000082-3295e49fa9"
-    },
-    {
-      "title": "Absorbing element",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000083-ece4b38be5"
     },
     {
       "title": "Abstract algebra",
@@ -18988,6 +19009,46 @@
       "title": "Arcplan",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000271-f8b05c9178"
+    },
+    {
+      "title": "0 (number)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Absorbing set",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Annihilator (disambiguation)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Annihilator (ring theory)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Binary operation",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Binary relations",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Boolean algebra",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
+    },
+    {
+      "title": "Clarendon Press",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000273-13a85deb79"
     }
   ],
   "reviewJobs": [

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000273-13a85deb79",
+  "topic": "Absorbing element",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An absorbing element is a special element in a set with a binary operation such that combining it with any other element yields the absorbing element itself. It is synonymous with \"zero element\" in semigroup theory, though the term \"zero\" may denote the neutral element under additive notation. The defining property is that for all elements s in the set, z*s = s*z = z. While a magma can have at most one zero element, multiple absorbing elements may exist across different operations on the same set. The concept appears in diverse structures, from elementary arithmetic where any number multiplied by zero yields zero, to floating-point NaN values that absorb all operations, to logical constants (falsity and truth) under conjunction and disjunction, and to the empty set under intersection.",
+    "mechanisms": [
+      {
+        "title": "Formal Absorption Property",
+        "explanation": "The core mechanism is the formal property that an absorbing element z satisfies z*s = s*z = z for all elements s in the set under the binary operation *. This property collapses any input into the absorber, making it a fixed point of the operation.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Structural Collapse in Specific Domains",
+        "explanation": "In concrete domains, absorption manifests as the collapse of distinct values into a single canonical element. Examples include multiplication by zero yielding zero in arithmetic, NaN absorbing all floating-point operations, the empty set absorbing under intersection, and the top/bottom elements absorbing under logical OR/AND respectively.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How absorption interacts with non-associative operations outside semigroup frameworks",
+      "Whether every set with a binary operation necessarily contains an absorbing element",
+      "The precise conditions under which an absorbing element coincides with the identity element",
+      "How absorbing elements behave in infinite or uncountable sets with custom operations not covered by standard examples"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Absorbing element",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1360606610",
+    "revision": "1360606610",
+    "observedAt": "2026-11-26T21:13:52.058Z",
+    "sourceTimestamp": "2026-06-22T15:07:54Z",
+    "sha256": "f0d2596576ab7bac94ac8aa85247d2074782b6d49c120d90fd5a2e6aa5c4a3cc",
+    "excerptSha256": "f0d2596576ab7bac94ac8aa85247d2074782b6d49c120d90fd5a2e6aa5c4a3cc",
+    "inspectedCharacters": 5539,
+    "totalCharacters": 5539,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-cd6c47b5-a1b1-4a96-9299-579b48ab3917",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2031,
+    "outputTokens": 425
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e863a28c4f8f5b01e6c0861afd58dca0aaadedc61aa20baeb2249ed1b4897216",
+  "artifactDigest": "338dc4752e35a75fa3fca77b95e556c76c0effe2d3f669f21b71532635ab5539"
+}
