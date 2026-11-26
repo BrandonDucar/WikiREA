@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000255-ff01f0f948",
+  "topic": "Bazel (software)",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Bazel is a free, open-source build and test automation tool originally derived from Google's internal Blaze system. It uses the Starlark language to define build rules and macros, enabling reproducible builds across multiple programming languages within a single repository. Bazel employs sandboxing during compilation to enforce dependency isolation, requiring explicit input/output specification to support hermetic builds and cross-user caching. It supports a wide range of languages and can produce deployable artifacts for Android and iOS platforms.",
+    "mechanisms": [
+      {
+        "title": "Starlark-based build rules",
+        "explanation": "Build targets, rules, and macros are authored in Starlark, a Python-dialect language restricted from file I/O to prevent side-effects and ensure dependency-graph integrity.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Sandboxed compilation",
+        "explanation": "Bazel creates a sandbox directory filled with symlinks to explicit input dependencies during compilation, preventing unintended header inclusion and enforcing declared dependency boundaries.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact algorithm used for incremental build graph analysis",
+      "Details of hermetic artifact caching across distributed users",
+      "Internal path-rewriting mechanisms for cross-platform deployment",
+      "Complete implementation of Starlark restrictions and edge cases"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Bazel (software)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380302673",
+    "revision": "1380302673",
+    "observedAt": "2026-11-26T00:35:12.635Z",
+    "sourceTimestamp": "2026-10-14T23:42:11Z",
+    "sha256": "e9a75ddccf789559cc35cd992080716931d4d4c5b33f378fb23f1425819da5d9",
+    "excerptSha256": "e9a75ddccf789559cc35cd992080716931d4d4c5b33f378fb23f1425819da5d9",
+    "inspectedCharacters": 12119,
+    "totalCharacters": 12119,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-0b3f3da3-6e69-4990-83e1-6ba5b65cb7be",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3780,
+    "outputTokens": 297
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3f9d0eaea9cd89e37f2c44b8c4ec0ff7564e11e03a3257434e4d72afb465df6e",
+  "artifactDigest": "1f5e1e57a55f7dab1717687a059122bab09ec5036d7cd01990af449830984eb4"
+}

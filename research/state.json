@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T00:35:10.167Z",
+  "updatedAt": "2026-11-26T00:35:15.303Z",
   "sequence": 255,
   "jobs": [
     {
@@ -11626,13 +11626,44 @@
       "topic": "Bazel (software)",
       "day": "2026-11-26",
       "runId": "45729771860",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T00:35:10.167Z",
       "expiresAt": "2026-11-26T00:50:10.167Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Bazel (software)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380302673",
+        "revision": "1380302673",
+        "observedAt": "2026-11-26T00:35:12.635Z",
+        "sourceTimestamp": "2026-10-14T23:42:11Z",
+        "sha256": "e9a75ddccf789559cc35cd992080716931d4d4c5b33f378fb23f1425819da5d9",
+        "excerptSha256": "e9a75ddccf789559cc35cd992080716931d4d4c5b33f378fb23f1425819da5d9",
+        "inspectedCharacters": 12119,
+        "totalCharacters": 12119,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-0b3f3da3-6e69-4990-83e1-6ba5b65cb7be",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3780,
+        "outputTokens": 297
+      },
+      "packet": "research/packets/research-000255-ff01f0f948.json",
+      "packetDigest": "1f5e1e57a55f7dab1717687a059122bab09ec5036d7cd01990af449830984eb4",
+      "finishedAt": "2026-11-26T00:35:15.303Z"
     }
   ],
   "discovered": [
@@ -12535,11 +12566,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Bazel (software)",
-      "role": "source-curator",
-      "discoveredFrom": "research-000065-e0e23685a6"
     },
     {
       "title": "Binary code",
@@ -17795,6 +17821,31 @@
       "title": "Behavioral pattern",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000254-ef528063e2"
+    },
+    {
+      "title": "Anagram",
+      "role": "source-curator",
+      "discoveredFrom": "research-000255-ff01f0f948"
+    },
+    {
+      "title": "AngularJS",
+      "role": "source-curator",
+      "discoveredFrom": "research-000255-ff01f0f948"
+    },
+    {
+      "title": "Angular (web framework)",
+      "role": "source-curator",
+      "discoveredFrom": "research-000255-ff01f0f948"
+    },
+    {
+      "title": "Apache Ant",
+      "role": "source-curator",
+      "discoveredFrom": "research-000255-ff01f0f948"
+    },
+    {
+      "title": "Apache Beam",
+      "role": "source-curator",
+      "discoveredFrom": "research-000255-ff01f0f948"
     }
   ],
   "reviewJobs": [
