@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T01:25:32.137Z",
-  "sequence": 256,
+  "updatedAt": "2026-11-26T02:20:08.660Z",
+  "sequence": 257,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -11713,6 +11713,20 @@
       "packet": "research/packets/research-000256-1de3764e7d.json",
       "packetDigest": "1a83b78c2c942e1100aff99b38c72f070e66a68811b708661028e1b62c794292",
       "finishedAt": "2026-11-26T01:16:08.727Z"
+    },
+    {
+      "id": "research-000257-dc8e56be15",
+      "role": "runtime-researcher",
+      "topic": "ActionScript",
+      "day": "2026-11-26",
+      "runId": "45741698193",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T02:20:08.660Z",
+      "expiresAt": "2026-11-26T02:35:08.660Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
