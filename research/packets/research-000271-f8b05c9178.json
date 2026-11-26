@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000271-f8b05c9178",
+  "topic": "Business intelligence",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Business intelligence (BI) encompasses strategies, methodologies, and technologies that enterprises use to analyze data and manage business information, supporting decisions from operational to strategic levels. BI tools process structured and unstructured data to identify market opportunities, assess product suitability across segments, and evaluate marketing impact. The field combines data gathering, storage, and knowledge management with analysis to improve decision quality and timeliness. BI draws on both external market data and internal operational data to create a comprehensive intelligence view. The term originated in 1865 and was formalized in the late 1990s, distinguishing it from competitive intelligence and business analytics while sharing methodological overlap.",
+    "mechanisms": [
+      {
+        "title": "Data Integration and Analysis Pipeline",
+        "explanation": "BI systems integrate external market data with internal financial and operational data, often through data warehouses or marts, to enable comparative analysis and insight generation. This combined data supports strategic decision-making by providing a unified view not achievable from isolated sources.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Analytical Functionality for Market Insight",
+        "explanation": "BI tools provide reporting, online analytical processing, dashboards, data mining, and predictive/prescriptive analytics. These functions allow organizations to identify new opportunities, assess demand across market segments, and gauge the effectiveness of marketing efforts.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact technical architecture of proprietary BI platforms",
+      "Detailed implementation of real-time data streaming within BI systems",
+      "Specific algorithms used for proprietary predictive analytics models",
+      "Full scope of unstructured data processing techniques beyond stated general categories"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Business intelligence",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380650098",
+    "revision": "1380650098",
+    "observedAt": "2026-11-26T19:13:18.109Z",
+    "sourceTimestamp": "2026-10-17T01:48:01Z",
+    "sha256": "fd5323dcdc8e6ab7670572c75b78ccef91a1bec6afbd0b41727bc4ca99e1a759",
+    "excerptSha256": "755edfbf1693dfd66480863061ddf4b76ef957ca0130a08488e78c1c4d35db62",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 28477,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-00bf8b0b-32e7-449c-82e1-7c546e10333b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3938,
+    "outputTokens": 361
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b7aec351553074126c02dee9e6b6270ca84381b66efe79e11df45ef920c9c7c5",
+  "artifactDigest": "54f5034012ad54df8b2e30332ee4a60d1293e586ff3e5a2987cdb95e0047e4ae"
+}
