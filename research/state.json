@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T03:17:51.114Z",
+  "updatedAt": "2026-11-26T03:17:52.982Z",
   "sequence": 258,
   "jobs": [
     {
@@ -11765,13 +11765,19 @@
       "topic": "3D Hunting: Trophy Whitetail",
       "day": "2026-11-26",
       "runId": "45747975002",
-      "status": "RESERVED",
+      "status": "FAILED",
       "reservedAt": "2026-11-26T03:17:51.114Z",
       "expiresAt": "2026-11-26T03:32:51.114Z",
       "callsReserved": 2,
       "callsAttempted": 0,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "error": "HTTP_404",
+      "diagnostic": {
+        "httpStatus": 404,
+        "retryAfter": null
+      },
+      "finishedAt": "2026-11-26T03:17:52.982Z"
     }
   ],
   "discovered": [
