@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T10:16:05.832Z",
-  "sequence": 264,
+  "updatedAt": "2026-11-26T12:21:32.307Z",
+  "sequence": 265,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12052,6 +12052,20 @@
       "packet": "research/packets/research-000264-207a547290.json",
       "packetDigest": "3097908da22c37435da3f8d5314356f7d8660da29e3a948e35534a5bbcb04684",
       "finishedAt": "2026-11-26T10:16:05.832Z"
+    },
+    {
+      "id": "research-000265-e39c64d38d",
+      "role": "source-curator",
+      "topic": "Binary code",
+      "day": "2026-11-26",
+      "runId": "45818876657",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T12:21:32.307Z",
+      "expiresAt": "2026-11-26T12:36:32.307Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
