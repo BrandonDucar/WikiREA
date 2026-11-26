@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T13:26:21.186Z",
-  "sequence": 266,
+  "updatedAt": "2026-11-26T14:16:40.700Z",
+  "sequence": 267,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12146,6 +12146,20 @@
       "packet": "research/packets/research-000266-6843d88746.json",
       "packetDigest": "a6d3ff2bcf784b48d6d09b4e5b0ad62f83777e7a1577608d3d84b8768dfbbf1b",
       "finishedAt": "2026-11-26T13:16:09.488Z"
+    },
+    {
+      "id": "research-000267-786bb70c86",
+      "role": "runtime-researcher",
+      "topic": "Android (operating system)",
+      "day": "2026-11-26",
+      "runId": "45837346900",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T14:16:40.700Z",
+      "expiresAt": "2026-11-26T14:31:40.700Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
