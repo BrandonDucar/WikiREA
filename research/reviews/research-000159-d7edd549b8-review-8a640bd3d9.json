@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000159-d7edd549b8-review-8a640bd3d9",
+  "parentJobId": "research-000159-d7edd549b8",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "b1f7bea91ed25ffddaa4be368bf42ba9f18ef23a440d73bb6d2cd63f6d91cb13",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Andrew Dickson White",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384314177",
+    "revision": "1384314177",
+    "observedAt": "2026-11-21T04:16:17.863Z",
+    "sourceTimestamp": "2026-11-07T18:01:19Z",
+    "sha256": "e44d504860224e3505039bcb8e0dbe5e830cde9b273c4c6315f2887f8ca23416",
+    "excerptSha256": "4d707be44e04f20deca96eb45f72ae5fddf6cd9eab7d7b3c5cd5f6ea6fa438f6",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 49070,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Mechanism 'Curriculum expansion at Cornell' cites S1 but source text contains no details about specific curricular changes, new fields, or approaches at Cornell beyond general claim of expanding scope",
+      "Mechanism 'Conflict thesis advocacy' cites S1 but source text only states he was 'one of the founders' and 'tried to prove it' in his book, not that he was a 'key proponent' or details of his advocacy",
+      "Draft invents specific mechanisms ('introducing new fields and approaches beyond traditional classical education') not supported by source text",
+      "Source text focuses on biographical timeline and positions held, not on mechanisms of curriculum reform or conflict thesis advocacy",
+      "Draft presents general biographical claims as mechanistic explanations without factual support from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-b45582ac-7df1-4954-9c9a-0161a3af5465",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4540,
+    "outputTokens": 167
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
