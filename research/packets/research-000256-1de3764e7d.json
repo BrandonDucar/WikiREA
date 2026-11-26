@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000256-1de3764e7d",
+  "topic": "AI assistant",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A virtual assistant is a software agent that interprets user input—text, voice, or graphical—to execute tasks such as controlling devices, managing schedules, or answering questions. Early systems relied on pattern matching and hidden Markov models for speech recognition. Since the 2010s, integration of large language models has enabled more natural conversation and broader functionality, with prominent examples including Siri, Alexa, and Google Assistant. These assistants are embedded in smartphones, smart speakers, and enterprise platforms, often incorporating chatbot capabilities to streamline task execution.",
+    "mechanisms": [
+      {
+        "title": "Input interpretation and task routing",
+        "explanation": "The assistant processes user input (voice, text, or graphical signals) using speech recognition or pattern matching to identify intent, then routes the request to appropriate services or APIs for execution.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Contextual response generation",
+        "explanation": "Using large language model capabilities, the assistant generates coherent, context-aware responses or performs actions such as setting reminders, playing media, or retrieving information, adapting to user history and conversation flow.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact architecture of proprietary LLM integration in commercial assistants",
+      "Real-time adaptation mechanisms for diverse user environments",
+      "Details of multi-modal input fusion (voice + text + touch)",
+      "Internal pipelines for intent classification and slot filling"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Virtual assistant",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387460718",
+    "revision": "1387460718",
+    "observedAt": "2026-11-26T01:16:06.552Z",
+    "sourceTimestamp": "2026-11-24T01:24:30Z",
+    "sha256": "682159b375929558f263050e522d8d445d1656f21981e8b1fafef017ba0177fd",
+    "excerptSha256": "826a2cc64f8c170a3fc785b23ab6fa3ca908b44dbc712f32073ed76d11818321",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 62039,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-1328f6dd-0210-4eb3-ba20-ab5fa54448e2",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4189,
+    "outputTokens": 318
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "5de9f226d1b5ec43bcd39df93738ef022d59dcaffe4d48bc2ad596a627f8ca60",
+  "artifactDigest": "1a83b78c2c942e1100aff99b38c72f070e66a68811b708661028e1b62c794292"
+}

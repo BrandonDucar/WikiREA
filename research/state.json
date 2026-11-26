@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T01:16:04.206Z",
+  "updatedAt": "2026-11-26T01:16:08.727Z",
   "sequence": 256,
   "jobs": [
     {
@@ -11671,13 +11671,44 @@
       "topic": "AI assistant",
       "day": "2026-11-26",
       "runId": "45734561857",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T01:16:04.206Z",
       "expiresAt": "2026-11-26T01:31:04.206Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Virtual assistant",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387460718",
+        "revision": "1387460718",
+        "observedAt": "2026-11-26T01:16:06.552Z",
+        "sourceTimestamp": "2026-11-24T01:24:30Z",
+        "sha256": "682159b375929558f263050e522d8d445d1656f21981e8b1fafef017ba0177fd",
+        "excerptSha256": "826a2cc64f8c170a3fc785b23ab6fa3ca908b44dbc712f32073ed76d11818321",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 62039,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1328f6dd-0210-4eb3-ba20-ab5fa54448e2",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4189,
+        "outputTokens": 318
+      },
+      "packet": "research/packets/research-000256-1de3764e7d.json",
+      "packetDigest": "1a83b78c2c942e1100aff99b38c72f070e66a68811b708661028e1b62c794292",
+      "finishedAt": "2026-11-26T01:16:08.727Z"
     }
   ],
   "discovered": [
@@ -12605,11 +12636,6 @@
       "title": "Chain of trust",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
-    },
-    {
-      "title": "AI assistant",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000066-02c0e9d820"
     },
     {
       "title": "ALIWEB",
@@ -17860,6 +17886,46 @@
       "title": "Apache Beam",
       "role": "source-curator",
       "discoveredFrom": "research-000255-ff01f0f948"
+    },
+    {
+      "title": "1962 Seattle World's Fair",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "24/7 service",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "AI-complete",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "AIM (software)",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "Actions on Google",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "Adversarial stylometry",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "Aeromexico",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
+    },
+    {
+      "title": "Agentic AI",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000256-1de3764e7d"
     }
   ],
   "reviewJobs": [
