@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T17:25:12.267Z",
-  "sequence": 269,
+  "updatedAt": "2026-11-26T18:17:58.833Z",
+  "sequence": 270,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12281,6 +12281,20 @@
       "packet": "research/packets/research-000269-d9e08b014d.json",
       "packetDigest": "e932516423e6ae04abc54345b2168f9e0bfe9626d9af3a942c84eb7aa9225800",
       "finishedAt": "2026-11-26T16:16:34.204Z"
+    },
+    {
+      "id": "research-000270-eca4b6a7b7",
+      "role": "hardware-interoperability-scout",
+      "topic": "Adolf Martens",
+      "day": "2026-11-26",
+      "runId": "45874780964",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T18:17:58.833Z",
+      "expiresAt": "2026-11-26T18:32:58.833Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
