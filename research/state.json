@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T10:15:59.578Z",
+  "updatedAt": "2026-11-26T10:16:05.832Z",
   "sequence": 264,
   "jobs": [
     {
@@ -12014,13 +12014,44 @@
       "topic": "Active object",
       "day": "2026-11-26",
       "runId": "45799687818",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T10:15:59.578Z",
       "expiresAt": "2026-11-26T10:30:59.578Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Active object",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1379555088",
+        "revision": "1379555088",
+        "observedAt": "2026-11-26T10:16:01.620Z",
+        "sourceTimestamp": "2026-10-10T17:58:57Z",
+        "sha256": "2554b7dfe1c29aac9414f6ac13a7121cb4238f616168c1c8769544b648dc59bf",
+        "excerptSha256": "2554b7dfe1c29aac9414f6ac13a7121cb4238f616168c1c8769544b648dc59bf",
+        "inspectedCharacters": 6284,
+        "totalCharacters": 6284,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-af70bb8e-192b-4cc8-b7b2-ef551b6f56fe",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1830,
+        "outputTokens": 310
+      },
+      "packet": "research/packets/research-000264-207a547290.json",
+      "packetDigest": "3097908da22c37435da3f8d5314356f7d8660da29e3a948e35534a5bbcb04684",
+      "finishedAt": "2026-11-26T10:16:05.832Z"
     }
   ],
   "discovered": [
@@ -12950,11 +12981,6 @@
       "discoveredFrom": "research-000068-e1044edf96"
     },
     {
-      "title": "Active object",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000068-e1044edf96"
-    },
-    {
       "title": "Active record pattern",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000068-e1044edf96"
@@ -13323,11 +13349,6 @@
       "title": "Average",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000083-ece4b38be5"
-    },
-    {
-      "title": "Active object",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000084-e3f4a4ce2e"
     },
     {
       "title": "Active record pattern",
@@ -18418,6 +18439,16 @@
       "title": "Analytic geometry",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000263-b508b6a2ce"
+    },
+    {
+      "title": "Active objects",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000264-207a547290"
+    },
+    {
+      "title": "Actor model",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000264-207a547290"
     }
   ],
   "reviewJobs": [

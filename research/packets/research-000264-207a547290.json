@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000264-207a547290",
+  "topic": "Active object",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The active object pattern decouples method invocation from execution by routing calls through a proxy to a dedicated thread of control. It introduces concurrency via asynchronous method invocation and a scheduler that orders pending requests. The pattern uses a proxy for client access, an interface defining requests, a request queue, a scheduler, the method implementation, and a callback or variable for result return. It avoids race conditions by serializing state mutations through a single dispatch thread rather than relying on synchronization primitives.",
+    "mechanisms": [
+      {
+        "title": "Proxy and Request Queue",
+        "explanation": "A proxy exposes the active object's interface to clients. Client method calls are not executed immediately but enqueued as pending requests in a queue, separating invocation from execution.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Scheduler and Dispatch Thread",
+        "explanation": "A scheduler dequeues and decides which request to execute next. A dedicated dispatcher thread continuously processes the queue, running each request's task body sequentially, thereby serializing access to the object's internal state.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal scheduling policy used by the scheduler to order requests",
+      "Whether the pattern guarantees ordering of requests from a single client across multiple calls",
+      "Mechanism for handling exceptions thrown during request execution",
+      "Support for return values or futures beyond simple callback or variable mechanisms"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Active object",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1379555088",
+    "revision": "1379555088",
+    "observedAt": "2026-11-26T10:16:01.620Z",
+    "sourceTimestamp": "2026-10-10T17:58:57Z",
+    "sha256": "2554b7dfe1c29aac9414f6ac13a7121cb4238f616168c1c8769544b648dc59bf",
+    "excerptSha256": "2554b7dfe1c29aac9414f6ac13a7121cb4238f616168c1c8769544b648dc59bf",
+    "inspectedCharacters": 6284,
+    "totalCharacters": 6284,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-af70bb8e-192b-4cc8-b7b2-ef551b6f56fe",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1830,
+    "outputTokens": 310
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "090dba591a0f2daa5ce54f25e9bc12a2c37b60e902cec73d4db5a7cb4c0315f5",
+  "artifactDigest": "3097908da22c37435da3f8d5314356f7d8660da29e3a948e35534a5bbcb04684"
+}
