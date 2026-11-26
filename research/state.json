@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T07:17:21.878Z",
+  "updatedAt": "2026-11-26T07:17:26.904Z",
   "sequence": 261,
   "jobs": [
     {
@@ -11879,13 +11879,44 @@
       "topic": "Application program",
       "day": "2026-11-26",
       "runId": "45774170208",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T07:17:21.878Z",
       "expiresAt": "2026-11-26T07:32:21.878Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Application software",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384815844",
+        "revision": "1384815844",
+        "observedAt": "2026-11-26T07:17:24.343Z",
+        "sourceTimestamp": "2026-11-10T04:36:55Z",
+        "sha256": "87fe3f7c891ea56f67283c7f82a4f27caa56ac2414b3310568da06ff62743eb2",
+        "excerptSha256": "0c6a843d1cf3739081f75d8629d1786e82a67ed9ddfe7896b464d89ba341c356",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 17921,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-666b346e-241a-49d0-a660-28fb3846df48",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3721,
+        "outputTokens": 340
+      },
+      "packet": "research/packets/research-000261-c3608c614f.json",
+      "packetDigest": "564a4f2f3cfde47923d9c447e81aac09b1bc4daa984ad9e9561b48a6c9f7e551",
+      "finishedAt": "2026-11-26T07:17:26.904Z"
     }
   ],
   "discovered": [
@@ -13108,11 +13139,6 @@
       "title": "ASIC",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000080-0033b77269"
-    },
-    {
-      "title": "Application program",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000081-ee73a932d9"
     },
     {
       "title": "Business intelligence",
@@ -18183,6 +18209,46 @@
       "title": "Acetonitrile",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000260-bd8fe7009f"
+    },
+    {
+      "title": "Abbreviation",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "Accounting software",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "Animation software",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "Antitrust",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "App Store (Apple)",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "Apple II",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "Application lifecycle management",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
+    },
+    {
+      "title": "Application platform as a service",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000261-c3608c614f"
     }
   ],
   "reviewJobs": [

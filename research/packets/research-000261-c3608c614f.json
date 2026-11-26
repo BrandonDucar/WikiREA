@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000261-c3608c614f",
+  "topic": "Application program",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Application software serves as the user-facing layer of computing systems, translating complex capabilities into goal-driven workflows for end-users. Unlike system software that manages hardware and resources, applications focus on problem abstraction, user interaction, and domain-specific functionality. Popularized by the 2008 iOS App Store, the term 'app' now encompasses end-user programs across platforms. Applications may be proprietary or open-source, bundled with system software or published separately, and serve diverse purposes from content access to enterprise management. They are classified by platform, legal aspects, market scope, and purpose, ranging from horizontal tools like word processors to vertical industry-specific solutions.",
+    "mechanisms": [
+      {
+        "title": "User-Centric Workflow Translation",
+        "explanation": "Applications abstract complex system capabilities into task-oriented workflows, enabling end-users to accomplish specific goals through direct interaction rather than hardware orchestration or resource management.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Platform-Driven Distribution and Classification",
+        "explanation": "Applications are categorized and distributed based on computing platforms (operating systems, web browsers, mobile environments) and legal frameworks (proprietary, open-source, public domain), which determine availability, modification rights, and user interaction models.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Precise internal architecture of individual application programs",
+      "Mechanisms of platform-specific optimization beyond documented interfaces",
+      "Detailed processes of application lifecycle management systems",
+      "Specific integration methods between horizontal and vertical market software"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Application software",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384815844",
+    "revision": "1384815844",
+    "observedAt": "2026-11-26T07:17:24.343Z",
+    "sourceTimestamp": "2026-11-10T04:36:55Z",
+    "sha256": "87fe3f7c891ea56f67283c7f82a4f27caa56ac2414b3310568da06ff62743eb2",
+    "excerptSha256": "0c6a843d1cf3739081f75d8629d1786e82a67ed9ddfe7896b464d89ba341c356",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17921,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-666b346e-241a-49d0-a660-28fb3846df48",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3721,
+    "outputTokens": 340
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "aeac4afcd2f2b4ea1fb9cc6a33f9f9766d59a89c4b29dfaa80b938a432cdf6a0",
+  "artifactDigest": "564a4f2f3cfde47923d9c447e81aac09b1bc4daa984ad9e9561b48a6c9f7e551"
+}
