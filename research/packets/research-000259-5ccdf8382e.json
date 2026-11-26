@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000259-5ccdf8382e",
+  "topic": "Artificial intelligence",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Artificial intelligence refers to computational systems capable of performing tasks associated with human intelligence, such as learning, reasoning, and problem-solving. The field, spanning computer science, engineering, and mathematics, develops methods enabling machines to perceive environments and act to maximize goals. While early research focused on symbolic logic and knowledge representation, modern AI increasingly relies on machine learning, particularly large language models trained on vast text datasets. These models acquire knowledge implicitly rather than through explicit programming, though they struggle with accurate recall and valid reasoning. The field has evolved through cycles of optimism and funding shifts, accelerating after 2012 with GPU-accelerated neural networks and after 2017 with transformer architectures, driving the current generative AI boom.",
+    "mechanisms": [
+      {
+        "title": "Statistical Pattern Learning",
+        "explanation": "Modern AI systems, particularly large language models, acquire knowledge by being trained on massive datasets of text from books and websites. Rather than relying on explicitly programmed rules, these models learn statistical patterns and relationships within the data, enabling them to generate responses and perform tasks based on implicit learning rather than symbolic representation.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Neural Network Computation",
+        "explanation": "Artificial neural networks, especially transformer architectures introduced after 2017, process information through layered interconnected nodes that adjust weights during training. This architecture allows models to capture complex dependencies in data, forming the technical foundation for current generative AI capabilities.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How symbolic reasoning and sub-symbolic learning integrate in hybrid systems",
+      "The precise mechanisms enabling generalization beyond training data",
+      "Why certain AI models produce factually incorrect outputs or 'hallucinations'",
+      "The long-term trajectory toward artificial general intelligence capabilities"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Artificial intelligence",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387568646",
+    "revision": "1387568646",
+    "observedAt": "2026-11-26T04:17:57.671Z",
+    "sourceTimestamp": "2026-11-24T16:02:08Z",
+    "sha256": "2b738797d360bbbf0ea17fb74dfbb2212ab36e459c2129ac8f144149c7b9b7d5",
+    "excerptSha256": "eba29849f95bdd97564d4bbb75873da65da4a840a764d3e4512c414a38abaa89",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 286935,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-adad1d52-c179-4053-ad08-7635fcade4d1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4342,
+    "outputTokens": 397
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "2b71f6d42c782641bcde4ca5b03cc180f0705e0f46837906d7a43eabbf70e538",
+  "artifactDigest": "c47adf2f52cc2d8e82e8256564b91adeb11a01905dd709e681b14f8c594b0f2a"
+}

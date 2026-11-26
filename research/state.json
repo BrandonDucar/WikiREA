@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T04:17:55.266Z",
+  "updatedAt": "2026-11-26T04:18:03.105Z",
   "sequence": 259,
   "jobs": [
     {
@@ -11789,21 +11789,47 @@
       "topic": "Artificial intelligence",
       "day": "2026-11-26",
       "runId": "45754301546",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T04:17:55.266Z",
       "expiresAt": "2026-11-26T04:32:55.266Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Artificial intelligence",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387568646",
+        "revision": "1387568646",
+        "observedAt": "2026-11-26T04:17:57.671Z",
+        "sourceTimestamp": "2026-11-24T16:02:08Z",
+        "sha256": "2b738797d360bbbf0ea17fb74dfbb2212ab36e459c2129ac8f144149c7b9b7d5",
+        "excerptSha256": "eba29849f95bdd97564d4bbb75873da65da4a840a764d3e4512c414a38abaa89",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 286935,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-adad1d52-c179-4053-ad08-7635fcade4d1",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4342,
+        "outputTokens": 397
+      },
+      "packet": "research/packets/research-000259-5ccdf8382e.json",
+      "packetDigest": "c47adf2f52cc2d8e82e8256564b91adeb11a01905dd709e681b14f8c594b0f2a",
+      "finishedAt": "2026-11-26T04:18:03.105Z"
     }
   ],
   "discovered": [
-    {
-      "title": "3D Hunting: Trophy Whitetail",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000029-4aa4540b02"
-    },
     {
       "title": "3ds Max",
       "role": "game-mechanic-researcher",
@@ -11818,11 +11844,6 @@
       "title": "Adventure Game Interpreter",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000029-4aa4540b02"
-    },
-    {
-      "title": "Artificial intelligence",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000030-5a4bfec956"
     },
     {
       "title": "Assembly language",
@@ -14205,11 +14226,6 @@
       "discoveredFrom": "research-000120-692efd4cd9"
     },
     {
-      "title": "Artificial intelligence",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000120-692efd4cd9"
-    },
-    {
       "title": "Big Buck Bunny",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000120-692efd4cd9"
@@ -14913,11 +14929,6 @@
       "title": "Algebra",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000144-34083b59f3"
-    },
-    {
-      "title": "Artificial intelligence",
-      "role": "source-curator",
-      "discoveredFrom": "research-000145-c8ac6bc4f7"
     },
     {
       "title": "Association for Computing Machinery",
@@ -18043,6 +18054,41 @@
       "title": "Adobe Flash Catalyst",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000257-dc8e56be15"
+    },
+    {
+      "title": "1X Technologies",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000259-5ccdf8382e"
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000259-5ccdf8382e"
+    },
+    {
+      "title": "2001: A Space Odyssey (novel)",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000259-5ccdf8382e"
+    },
+    {
+      "title": "2024 Indian general election",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000259-5ccdf8382e"
+    },
+    {
+      "title": "2026 cyberattacks by rogue OpenAI agents",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000259-5ccdf8382e"
+    },
+    {
+      "title": "3D optical data storage",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000259-5ccdf8382e"
+    },
+    {
+      "title": "A* search algorithm",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000259-5ccdf8382e"
     }
   ],
   "reviewJobs": [
