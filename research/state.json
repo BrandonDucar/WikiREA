@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T12:21:38.260Z",
-  "sequence": 265,
+  "updatedAt": "2026-11-26T13:16:03.410Z",
+  "sequence": 266,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12097,6 +12097,20 @@
       "packet": "research/packets/research-000265-e39c64d38d.json",
       "packetDigest": "31002db6942e3fc672432116d704cf870defff895f9b38e658e2edf04aad09cc",
       "finishedAt": "2026-11-26T12:21:38.260Z"
+    },
+    {
+      "id": "research-000266-6843d88746",
+      "role": "application-tracer",
+      "topic": "ALIWEB",
+      "day": "2026-11-26",
+      "runId": "45827455852",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T13:16:03.410Z",
+      "expiresAt": "2026-11-26T13:31:03.410Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
