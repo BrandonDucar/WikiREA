@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T13:16:03.410Z",
+  "updatedAt": "2026-11-26T13:16:09.488Z",
   "sequence": 266,
   "jobs": [
     {
@@ -12104,13 +12104,44 @@
       "topic": "ALIWEB",
       "day": "2026-11-26",
       "runId": "45827455852",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T13:16:03.410Z",
       "expiresAt": "2026-11-26T13:31:03.410Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "ALIWEB",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1383567172",
+        "revision": "1383567172",
+        "observedAt": "2026-11-26T13:16:05.996Z",
+        "sourceTimestamp": "2026-11-03T11:07:46Z",
+        "sha256": "696bb708bdcfdf790816295985728bf45be4f08534fc78d421f40c6fdf2a64d3",
+        "excerptSha256": "696bb708bdcfdf790816295985728bf45be4f08534fc78d421f40c6fdf2a64d3",
+        "inspectedCharacters": 4924,
+        "totalCharacters": 4924,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-82017bcd-8801-4fff-ad99-aa3048fae275",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1725,
+        "outputTokens": 312
+      },
+      "packet": "research/packets/research-000266-6843d88746.json",
+      "packetDigest": "a6d3ff2bcf784b48d6d09b4e5b0ad62f83777e7a1577608d3d84b8768dfbbf1b",
+      "finishedAt": "2026-11-26T13:16:09.488Z"
     }
   ],
   "discovered": [
@@ -13008,11 +13039,6 @@
       "title": "Chain of trust",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
-    },
-    {
-      "title": "ALIWEB",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000066-02c0e9d820"
     },
     {
       "title": "ALynx",
@@ -15211,11 +15237,6 @@
     },
     {
       "title": "AIM (software)",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000147-ed7aca690a"
-    },
-    {
-      "title": "ALIWEB",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000147-ed7aca690a"
     },
@@ -18543,6 +18564,31 @@
       "title": "Binary-coded decimal",
       "role": "source-curator",
       "discoveredFrom": "research-000265-e39c64d38d"
+    },
+    {
+      "title": "123people",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000266-6843d88746"
+    },
+    {
+      "title": "A9.com",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000266-6843d88746"
+    },
+    {
+      "title": "AOL",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000266-6843d88746"
+    },
+    {
+      "title": "AOLpress",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000266-6843d88746"
+    },
+    {
+      "title": "ARPANET",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000266-6843d88746"
     }
   ],
   "reviewJobs": [

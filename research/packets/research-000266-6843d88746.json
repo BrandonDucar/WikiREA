@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000266-6843d88746",
+  "topic": "ALIWEB",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "ALIWEB was the first internet search engine, launched in 1994 by Martijn Koster at Nexor. It allowed webmasters to submit index files containing page descriptions and keywords, enabling the engine to index webpages without automated crawlers that consumed bandwidth. The system relied on user-submitted index files rather than automated discovery. A known database limitation caused early searches to terminate prematurely, but later developers resolved this by weighting results and searching the full database before display.",
+    "mechanisms": [
+      {
+        "title": "User-submitted index files",
+        "explanation": "Webmasters manually submitted index files to ALIWEB, providing page descriptions and keywords. This method empowered site owners to define search terms and avoided the bandwidth costs of automated crawling bots.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Database search scope limitation",
+        "explanation": "Early ALIWEB searches only traversed the database from the beginning until results exhausted or a requested limit was reached, rather than weighting and searching the entire database. Later developers fixed this by implementing full-database searches with result weighting.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Automated discovery mechanism for new index files",
+      "Exact method of index file format specification",
+      "Post-launch development timeline and succession of maintainers",
+      "Specific technical details of the result weighting implementation"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "ALIWEB",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383567172",
+    "revision": "1383567172",
+    "observedAt": "2026-11-26T13:16:05.996Z",
+    "sourceTimestamp": "2026-11-03T11:07:46Z",
+    "sha256": "696bb708bdcfdf790816295985728bf45be4f08534fc78d421f40c6fdf2a64d3",
+    "excerptSha256": "696bb708bdcfdf790816295985728bf45be4f08534fc78d421f40c6fdf2a64d3",
+    "inspectedCharacters": 4924,
+    "totalCharacters": 4924,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-82017bcd-8801-4fff-ad99-aa3048fae275",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1725,
+    "outputTokens": 312
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "71f98caaebd223e58af3e87a45db9383faf5cba41946af524cb8a47763e39541",
+  "artifactDigest": "a6d3ff2bcf784b48d6d09b4e5b0ad62f83777e7a1577608d3d84b8768dfbbf1b"
+}
