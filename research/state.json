@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T19:24:45.961Z",
-  "sequence": 271,
+  "updatedAt": "2026-11-26T20:15:34.510Z",
+  "sequence": 272,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12375,6 +12375,20 @@
       "packet": "research/packets/research-000271-f8b05c9178.json",
       "packetDigest": "54f5034012ad54df8b2e30332ee4a60d1293e586ff3e5a2987cdb95e0047e4ae",
       "finishedAt": "2026-11-26T19:13:19.978Z"
+    },
+    {
+      "id": "research-000272-17358a7872",
+      "role": "music-events",
+      "topic": "Classical music",
+      "day": "2026-11-26",
+      "runId": "45889707442",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-26T20:15:34.510Z",
+      "expiresAt": "2026-11-26T20:30:34.510Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
