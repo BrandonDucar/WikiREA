@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T14:16:40.700Z",
+  "updatedAt": "2026-11-26T14:16:52.265Z",
   "sequence": 267,
   "jobs": [
     {
@@ -12153,13 +12153,44 @@
       "topic": "Android (operating system)",
       "day": "2026-11-26",
       "runId": "45837346900",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-26T14:16:40.700Z",
       "expiresAt": "2026-11-26T14:31:40.700Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Android (operating system)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387629279",
+        "revision": "1387629279",
+        "observedAt": "2026-11-26T14:16:44.218Z",
+        "sourceTimestamp": "2026-11-24T22:17:56Z",
+        "sha256": "76b157a0fd2738582becf871a301983f6845904c51ad35bb8fb0c53678f5cf78",
+        "excerptSha256": "2b98cf3b5bbabcc6e812ca166f88a5a27bbf859f89f6f62dec07745d9fdf5255",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 396540,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-93f8c903-10b1-45ae-ac7a-87303d160ef5",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4373,
+        "outputTokens": 399
+      },
+      "packet": "research/packets/research-000267-786bb70c86.json",
+      "packetDigest": "a027777ee5938c37add62efc7ed2c76f63e61100aff3f762d834eaaeb87cd6d7",
+      "finishedAt": "2026-11-26T14:16:52.265Z"
     }
   ],
   "discovered": [
@@ -12605,11 +12636,6 @@
     },
     {
       "title": "Andries Brouwer",
-      "role": "music-events",
-      "discoveredFrom": "research-000044-b7ded53b4d"
-    },
-    {
-      "title": "Android (operating system)",
       "role": "music-events",
       "discoveredFrom": "research-000044-b7ded53b4d"
     },
@@ -13267,11 +13293,6 @@
       "title": "Adobe Photoshop",
       "role": "application-tracer",
       "discoveredFrom": "research-000076-83a6537129"
-    },
-    {
-      "title": "Android (operating system)",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000077-cd12fec18e"
     },
     {
       "title": "Abstract machine",
@@ -15069,11 +15090,6 @@
       "discoveredFrom": "research-000140-94be52ea27"
     },
     {
-      "title": "Android (operating system)",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000140-94be52ea27"
-    },
-    {
       "title": "Arborescence (graph theory)",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000140-94be52ea27"
@@ -15097,11 +15113,6 @@
       "title": "Google Drive",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000140-94be52ea27"
-    },
-    {
-      "title": "Android (operating system)",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000141-8b17e2ebc2"
     },
     {
       "title": "1973 oil crisis",
@@ -17489,11 +17500,6 @@
       "discoveredFrom": "research-000225-7a4d0289d3"
     },
     {
-      "title": "Android (operating system)",
-      "role": "source-curator",
-      "discoveredFrom": "research-000225-7a4d0289d3"
-    },
-    {
       "title": "Android Runtime",
       "role": "source-curator",
       "discoveredFrom": "research-000225-7a4d0289d3"
@@ -18607,6 +18613,46 @@
       "title": "ARPANET",
       "role": "application-tracer",
       "discoveredFrom": "research-000266-6843d88746"
+    },
+    {
+      "title": ".app (top-level domain)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": ".dev",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": ".google",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": ".zip (top-level domain)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": "/e/ (operating system)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": "111 Eighth Avenue",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": "2011 Slovenian YouTube incident",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
+    },
+    {
+      "title": "2013 YouTube Music Awards",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000267-786bb70c86"
     }
   ],
   "reviewJobs": [

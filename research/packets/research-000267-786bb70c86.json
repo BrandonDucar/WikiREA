@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000267-786bb70c86",
+  "topic": "Android (operating system)",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Android is a Linux-based operating system developed by Google, primarily for smartphones and tablets, distributed as the Android Open Source Project (AOSP) under Apache-2.0 and GPL-2.0-only licenses. Most devices run a proprietary open-core version including Google Mobile Services (GMS). The system supports 64-bit ARM and x86-64, and 32-bit ARMv7 and x86 ABIs. Applications are packaged as APKs and distributed via stores such as Google Play or third-party alternatives. The kernel is monolithic Linux, with a userland of Bionic libc, mksh, and Toybox. The UI is graphical and multi-touch. Updates are delivered over-the-air.",
+    "mechanisms": [
+      {
+        "title": "Application sandboxing and APK distribution",
+        "explanation": "Android packages software as APK files, which are installed and executed within a sandboxed environment. The platform enforces permission-based access control, and most devices rely on Google Play or vendor stores for distribution, though AOSP allows third-party stores and open-source alternatives.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Linux kernel and Bionic userland",
+        "explanation": "The operating system runs a monolithic Linux kernel paired with a Bionic libc implementation, mksh shell, and Toybox utilities. This combination provides the core system services, memory management, and hardware abstraction for the graphical multi-touch interface.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact runtime behavior of proprietary GMS components within AOSP",
+      "Details of vendor-customized UI modifications beyond documented theming",
+      "Internal scheduling or memory management policies of the Linux kernel as applied by Android",
+      "Complete scope of hardware acceleration pathways for the graphical UI"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Android (operating system)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387629279",
+    "revision": "1387629279",
+    "observedAt": "2026-11-26T14:16:44.218Z",
+    "sourceTimestamp": "2026-11-24T22:17:56Z",
+    "sha256": "76b157a0fd2738582becf871a301983f6845904c51ad35bb8fb0c53678f5cf78",
+    "excerptSha256": "2b98cf3b5bbabcc6e812ca166f88a5a27bbf859f89f6f62dec07745d9fdf5255",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 396540,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-93f8c903-10b1-45ae-ac7a-87303d160ef5",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4373,
+    "outputTokens": 399
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "34df5b4fa35767446e5fe57b1d24c01b532e50c8b99fd352ae40891546ae04e0",
+  "artifactDigest": "a027777ee5938c37add62efc7ed2c76f63e61100aff3f762d834eaaeb87cd6d7"
+}
