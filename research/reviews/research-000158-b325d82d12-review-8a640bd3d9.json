@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000158-b325d82d12-review-8a640bd3d9",
+  "parentJobId": "research-000158-b325d82d12",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "07ae2c386f9ed0068821a6d944d97b52aaaaffc28d8036513080529697a18e19",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".NET",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384980993",
+    "revision": "1384980993",
+    "observedAt": "2026-11-21T03:17:13.618Z",
+    "sourceTimestamp": "2026-11-11T05:21:33Z",
+    "sha256": "d05a31c8220acbacc15fb217303f2447aec5fa3828c26027b173273a1a77658c",
+    "excerptSha256": "3ccb90d7fc2f18110436651554b82f507a1b1adf51a46ff9fb92fef03ffe90e7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39476,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": false,
+    "reasons": [
+      "Draft claims '.NET 11' released November 2026 and '.NET 10' as latest LTS, but source shows latest release is .NET 10.0 (accessed 2026-10-05) and preview versions reference Q3295609/Q1072356, not .NET 11",
+      "Draft states 'New versions of the .NET platform are released annually, typically in November' but source only shows historical releases (2016-2020) and infobox template for dynamic version data, no explicit annual November cadence confirmed",
+      "Mechanism 'Managed code execution environment' cites S1 but source does not explain memory/resource management abstraction or cross-OS execution mechanics",
+      "Mechanism 'Cross-platform class library abstraction' cites S1 but source only lists supported OSs/architectures, not conditional implementation details or abstraction mechanics",
+      "Unknowns list 'Exact mechanism for platform-specific API bridging' etc. but these are not addressed in source; source only mentions supported platforms and Red Hat s390x support"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-ce098b4f-7753-4301-a1e6-132fd0f61a96",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5164,
+    "outputTokens": 249
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
