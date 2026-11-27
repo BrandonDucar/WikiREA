@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T08:20:04.923Z",
-  "sequence": 282,
+  "updatedAt": "2026-11-27T09:17:16.072Z",
+  "sequence": 283,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12862,6 +12862,20 @@
       "packet": "research/packets/research-000282-45ff2f0af3.json",
       "packetDigest": "7a1a9298b71f1759ba9fadd62932c12c92bee375919940ac70ea0da3d201d8c1",
       "finishedAt": "2026-11-27T08:20:04.923Z"
+    },
+    {
+      "id": "research-000283-a3b56cab29",
+      "role": "adversarial-reviewer",
+      "topic": "Abstract algebra",
+      "day": "2026-11-27",
+      "runId": "45972427754",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T09:17:16.072Z",
+      "expiresAt": "2026-11-27T09:32:16.072Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
