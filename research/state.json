@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T15:25:00.471Z",
-  "sequence": 288,
+  "updatedAt": "2026-11-27T16:16:49.970Z",
+  "sequence": 289,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13144,6 +13144,20 @@
       "packet": "research/packets/research-000288-448d4831db.json",
       "packetDigest": "b12edcd8a6e842bcdf22f0216268c536d17741cb6e4f14d9ef3d198ec55ea766",
       "finishedAt": "2026-11-27T15:15:28.804Z"
+    },
+    {
+      "id": "research-000289-895ca99299",
+      "role": "simulation-researcher",
+      "topic": "BIOS",
+      "day": "2026-11-27",
+      "runId": "46032227357",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T16:16:49.970Z",
+      "expiresAt": "2026-11-27T16:31:49.970Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
