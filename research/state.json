@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T02:20:27.003Z",
+  "updatedAt": "2026-11-27T02:20:39.471Z",
   "sequence": 277,
   "jobs": [
     {
@@ -12587,13 +12587,44 @@
       "topic": "Application software",
       "day": "2026-11-27",
       "runId": "45927728167",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T02:20:27.003Z",
       "expiresAt": "2026-11-27T02:35:27.003Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Application software",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384815844",
+        "revision": "1384815844",
+        "observedAt": "2026-11-27T02:20:29.786Z",
+        "sourceTimestamp": "2026-11-10T04:36:55Z",
+        "sha256": "87fe3f7c891ea56f67283c7f82a4f27caa56ac2414b3310568da06ff62743eb2",
+        "excerptSha256": "0c6a843d1cf3739081f75d8629d1786e82a67ed9ddfe7896b464d89ba341c356",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 17921,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-1fc938d7-5dea-4839-8f66-adb93799fa0f",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3720,
+        "outputTokens": 322
+      },
+      "packet": "research/packets/research-000277-7734b343a9.json",
+      "packetDigest": "ddc6732f755a92ec30d2a5625de4a736c8679581b93416d4c90cbf3318a0b0c8",
+      "finishedAt": "2026-11-27T02:20:39.471Z"
     }
   ],
   "discovered": [
@@ -13911,11 +13942,6 @@
       "title": "Crowdfunding",
       "role": "application-tracer",
       "discoveredFrom": "research-000086-074bf12801"
-    },
-    {
-      "title": "Application software",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000087-564644db83"
     },
     {
       "title": "Asynchronous I/O",
@@ -16454,11 +16480,6 @@
     },
     {
       "title": "Amazon Sidewalk",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000174-885bb348ef"
-    },
-    {
-      "title": "Application software",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000174-885bb348ef"
     },
@@ -19241,6 +19262,46 @@
       "title": "Agora (web browser)",
       "role": "application-tracer",
       "discoveredFrom": "research-000276-fe4b079102"
+    },
+    {
+      "title": "Abbreviation",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "Accounting software",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "Animation software",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "Antitrust",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "App Store (Apple)",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "Apple II",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "Application lifecycle management",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "Application platform as a service",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000277-7734b343a9"
     }
   ],
   "reviewJobs": [

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000277-7734b343a9",
+  "topic": "Application software",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Application software serves as the user-facing layer of computing systems, translating complex system capabilities into task-oriented workflows for end-users. Unlike system software that manages hardware and resources, application software focuses on problem abstraction, user interaction, and domain-specific functionality. Popularized by the 2008 iOS App Store, the term 'app' now encompasses end-user programs across platforms. Applications may be proprietary or open-source, bundled with system software or published separately, and serve diverse purposes from content consumption to enterprise process management.",
+    "mechanisms": [
+      {
+        "title": "User Interaction and Problem Abstraction",
+        "explanation": "Application software centers on user interaction and problem abstraction, designing goal-driven workflows that translate complex system capabilities into accessible tasks. This mechanism differentiates applications from system software by focusing on domain-specific functionality rather than hardware orchestration.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Platform-Dependent Execution Models",
+        "explanation": "Applications are categorized by their host computing platform, running either as native programs within an operating system environment or within web browsers. This mechanism determines how software interfaces with underlying system resources and affects compatibility across different computing environments.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal implementation details of application execution environments",
+      "Specific mechanisms of platform-specific application optimization",
+      "Complete classification boundaries between application and system software categories",
+      "Internal processes of application distribution and licensing enforcement"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Application software",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384815844",
+    "revision": "1384815844",
+    "observedAt": "2026-11-27T02:20:29.786Z",
+    "sourceTimestamp": "2026-11-10T04:36:55Z",
+    "sha256": "87fe3f7c891ea56f67283c7f82a4f27caa56ac2414b3310568da06ff62743eb2",
+    "excerptSha256": "0c6a843d1cf3739081f75d8629d1786e82a67ed9ddfe7896b464d89ba341c356",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 17921,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-1fc938d7-5dea-4839-8f66-adb93799fa0f",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3720,
+    "outputTokens": 322
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fdee434e996407a1932c697cf4758ab28b70c56138a17ce57b43ed99fad974ca",
+  "artifactDigest": "ddc6732f755a92ec30d2a5625de4a736c8679581b93416d4c90cbf3318a0b0c8"
+}
