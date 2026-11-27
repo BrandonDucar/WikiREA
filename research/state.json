@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T09:17:16.072Z",
+  "updatedAt": "2026-11-27T09:17:21.451Z",
   "sequence": 283,
   "jobs": [
     {
@@ -12869,13 +12869,44 @@
       "topic": "Abstract algebra",
       "day": "2026-11-27",
       "runId": "45972427754",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T09:17:16.072Z",
       "expiresAt": "2026-11-27T09:32:16.072Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Abstract algebra",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386672401",
+        "revision": "1386672401",
+        "observedAt": "2026-11-27T09:17:18.762Z",
+        "sourceTimestamp": "2026-11-19T21:52:40Z",
+        "sha256": "7d76d77ea4651ac580b3fab049cec46b3760f659ca94b4723fd40405af9a73f3",
+        "excerptSha256": "7044350784ac354d4bc65e3b0ed6142eb1ff7c921e510f21d45452d565c85b14",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 34315,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-fd3a6b3d-996d-4f1c-960c-3651f08a807b",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4183,
+        "outputTokens": 357
+      },
+      "packet": "research/packets/research-000283-a3b56cab29.json",
+      "packetDigest": "daf5f7fc280b3d917fe136deedc652913d616136c1c7befaf8968e4a6bfcd0f8",
+      "finishedAt": "2026-11-27T09:17:21.451Z"
     }
   ],
   "discovered": [
@@ -14048,11 +14079,6 @@
       "title": "Comparison of free software for audio",
       "role": "music-events",
       "discoveredFrom": "research-000082-3295e49fa9"
-    },
-    {
-      "title": "Abstract algebra",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000083-ece4b38be5"
     },
     {
       "title": "Addition",
@@ -19703,6 +19729,31 @@
       "title": "Acid techno",
       "role": "music-events",
       "discoveredFrom": "research-000282-45ff2f0af3"
+    },
+    {
+      "title": "Abelian group",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000283-a3b56cab29"
+    },
+    {
+      "title": "Abraham Fraenkel",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000283-a3b56cab29"
+    },
+    {
+      "title": "Abstrakt Algebra",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000283-a3b56cab29"
+    },
+    {
+      "title": "Affine geometry",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000283-a3b56cab29"
+    },
+    {
+      "title": "Algebra",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000283-a3b56cab29"
     }
   ],
   "reviewJobs": [
