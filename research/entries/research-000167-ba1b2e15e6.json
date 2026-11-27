@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000167-ba1b2e15e6",
+  "title": "86Box",
+  "role": "runtime-researcher",
+  "createdAt": "2026-11-27T03:28:37.386Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "86Box is an IBM PC emulator derived from PCem that runs legacy operating systems and software on Windows, Linux, and macOS. It emulates x86 processors from 8088 through Pentium MMX and Pentium Pro/II, along with graphics modes (CGA, EGA, VGA, VESA, Glide) and sound cards (Sound Blaster, AdLib, AWE32, etc.). It supports MS-DOS, Windows up to 7, OS/2, Linux, BSD, and BeOS on specific hardware. A built-in VM manager was added in version 5.0.",
+  "mechanisms": [
+    {
+      "title": "Processor emulation and recompilation",
+      "explanation": "86Box emulates Intel and compatible x86 processors (8088 through Pentium MMX, Pentium Pro/II). A mandatory recompiler is used for Pentium and Cyrix processors, while it is optional for i486 and WinChip. This allows accurate execution of legacy software on modern host hardware.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Graphics and video subsystem emulation",
+      "explanation": "The emulator supports text mode and multiple graphics adapters (Hercules, CGA, EGA, VGA, Mode X, VESA) and video APIs (DirectX, Glide). Specific hardware cards such as ATI Mach64, S3 Trio, and Voodoo 1/2/3 are emulated; a separate recompiler improves Voodoo performance.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact recompilation strategy for non-Pentium x86 cores",
+    "Low-level BIOS ROM loading and execution flow",
+    "Precise timing synchronization between emulated CPU, GPU, and PIC",
+    "Details of SCSI controller emulation and interrupt routing"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "86Box",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1364322771",
+      "revision": "1364322771",
+      "observedAt": "2026-11-21T14:13:43.242Z",
+      "sourceTimestamp": "2026-07-15T22:36:00Z",
+      "sha256": "a204f3f4e2e8b2cfd5b76b3654f0dd7f007dfb18baaf08584ad3131471397b5e",
+      "excerptSha256": "a204f3f4e2e8b2cfd5b76b3654f0dd7f007dfb18baaf08584ad3131471397b5e",
+      "inspectedCharacters": 12384,
+      "totalCharacters": 12384,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 86Box origins, supported platforms, hardware emulation scope, OS support, and VM manager addition.",
+      "Mechanism descriptions for processor emulation/recompilation and graphics/video subsystem are directly supported by source text with appropriate qualifiers (mandatory/optional recompiler, separate Voodoo recompiler).",
+      "Unknowns list appropriately identifies specific technical details not covered in the source (recompilation strategy for non-Pentium cores, BIOS ROM loading flow, timing synchronization, SCSI controller details).",
+      "No unsupported mechanisms, copied passages, or invented execution claims detected.",
+      "All factual claims in draft trace to source material; qualifiers like 'mandatory', 'optional', 'separate recompiler' preserved from source."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-9d1797ec-0b2b-4e67-9825-27040de3c90e",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4147,
+      "outputTokens": 424
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-9319bd85-0299-4a52-b0c6-67141e6926be",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4581,
+      "outputTokens": 169
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "372a15fc636fb7ec3964efefb844ac646e77d9285d6f62ec6efce95d49b43e07",
+    "artifactDigest": "6ee997456b4624dcc29d18eba270ca1de7d073e16164be054ee932f442c1568f",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000167-ba1b2e15e6.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

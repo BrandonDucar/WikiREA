@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000167-ba1b2e15e6-review-8a640bd3d9",
+  "parentJobId": "research-000167-ba1b2e15e6",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "6ee997456b4624dcc29d18eba270ca1de7d073e16164be054ee932f442c1568f",
+  "sourcePin": {
+    "id": "S1",
+    "title": "86Box",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1364322771",
+    "revision": "1364322771",
+    "observedAt": "2026-11-21T14:13:43.242Z",
+    "sourceTimestamp": "2026-07-15T22:36:00Z",
+    "sha256": "a204f3f4e2e8b2cfd5b76b3654f0dd7f007dfb18baaf08584ad3131471397b5e",
+    "excerptSha256": "a204f3f4e2e8b2cfd5b76b3654f0dd7f007dfb18baaf08584ad3131471397b5e",
+    "inspectedCharacters": 12384,
+    "totalCharacters": 12384,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 86Box origins, supported platforms, hardware emulation scope, OS support, and VM manager addition.",
+      "Mechanism descriptions for processor emulation/recompilation and graphics/video subsystem are directly supported by source text with appropriate qualifiers (mandatory/optional recompiler, separate Voodoo recompiler).",
+      "Unknowns list appropriately identifies specific technical details not covered in the source (recompilation strategy for non-Pentium cores, BIOS ROM loading flow, timing synchronization, SCSI controller details).",
+      "No unsupported mechanisms, copied passages, or invented execution claims detected.",
+      "All factual claims in draft trace to source material; qualifiers like 'mandatory', 'optional', 'separate recompiler' preserved from source."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-9319bd85-0299-4a52-b0c6-67141e6926be",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4581,
+    "outputTokens": 169
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
