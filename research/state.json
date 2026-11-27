@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T22:14:46.867Z",
+  "updatedAt": "2026-11-27T22:14:51.305Z",
   "sequence": 294,
   "jobs": [
     {
@@ -13376,13 +13376,44 @@
       "topic": "Anti-pattern",
       "day": "2026-11-27",
       "runId": "46075417719",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T22:14:46.867Z",
       "expiresAt": "2026-11-27T22:29:46.867Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Anti-pattern",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1376517271",
+        "revision": "1376517271",
+        "observedAt": "2026-11-27T22:14:49.199Z",
+        "sourceTimestamp": "2026-09-24T17:02:13Z",
+        "sha256": "4866d31091a1b66a5c953f84ee72511ef22ee67332f7c236049fd2e484c8df1e",
+        "excerptSha256": "4866d31091a1b66a5c953f84ee72511ef22ee67332f7c236049fd2e484c8df1e",
+        "inspectedCharacters": 8412,
+        "totalCharacters": 8412,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-5c2e426a-f5a5-4712-b15b-137cd321df65",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2757,
+        "outputTokens": 319
+      },
+      "packet": "research/packets/research-000294-e00c6cd7de.json",
+      "packetDigest": "a67ccfcef22a9a1a7732b4bc793b9113c37fedd6f1752bf1a26f4e8210913e9b",
+      "finishedAt": "2026-11-27T22:14:51.305Z"
     }
   ],
   "discovered": [
@@ -14217,11 +14248,6 @@
       "discoveredFrom": "research-000068-e1044edf96"
     },
     {
-      "title": "Anti-pattern",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000068-e1044edf96"
-    },
-    {
       "title": "AoS and SoA",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000068-e1044edf96"
@@ -14535,11 +14561,6 @@
       "title": "Average",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000083-ece4b38be5"
-    },
-    {
-      "title": "Anti-pattern",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000084-e3f4a4ce2e"
     },
     {
       "title": "Apache Kafka",
@@ -20475,6 +20496,26 @@
       "title": "Adder (electronics)",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000293-4da6c77eaa"
+    },
+    {
+      "title": "Analysis paralysis",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000294-e00c6cd7de"
+    },
+    {
+      "title": "Andrew Koenig (programmer)",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000294-e00c6cd7de"
+    },
+    {
+      "title": "AntiPatterns",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000294-e00c6cd7de"
+    },
+    {
+      "title": "Big Ball of Mud",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000294-e00c6cd7de"
     }
   ],
   "reviewJobs": [

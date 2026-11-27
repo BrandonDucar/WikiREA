@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000294-e00c6cd7de",
+  "topic": "Anti-pattern",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An anti-pattern is a commonly used solution to a problem that initially appears effective but ultimately causes more harm than benefit. Originating in software design and popularized beyond code, it is defined by repeated occurrence and the existence of a documented, effective alternative. Anti-patterns differ from bad habits in their structured, recurring nature and from good patterns by their net negative outcome. They appear across software engineering, project management, and organizational contexts, often persisting due to business pressures or legacy habits.",
+    "mechanisms": [
+      {
+        "title": "Initial Appearance of Effectiveness",
+        "explanation": "Anti-patterns begin as solutions that seem appropriate and effective at first glance, masking underlying drawbacks until broader consequences emerge.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Existence of a Better Alternative",
+        "explanation": "A documented, repeatable, and effective method exists to resolve the same problem, distinguishing the anti-pattern from a mere bad habit or untested idea.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Why certain anti-patterns persist despite known alternatives in specific organizational cultures",
+      "The exact threshold of repetition (beyond the rule-of-three) that formally classifies a practice as an anti-pattern",
+      "Whether all documented anti-patterns have a single, universally effective refactoring solution",
+      "The long-term evolutionary path of anti-patterns as software and project practices change over time"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Anti-pattern",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1376517271",
+    "revision": "1376517271",
+    "observedAt": "2026-11-27T22:14:49.199Z",
+    "sourceTimestamp": "2026-09-24T17:02:13Z",
+    "sha256": "4866d31091a1b66a5c953f84ee72511ef22ee67332f7c236049fd2e484c8df1e",
+    "excerptSha256": "4866d31091a1b66a5c953f84ee72511ef22ee67332f7c236049fd2e484c8df1e",
+    "inspectedCharacters": 8412,
+    "totalCharacters": 8412,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-5c2e426a-f5a5-4712-b15b-137cd321df65",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2757,
+    "outputTokens": 319
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "e5496916f8f9096b56914b03da4d2b11b4d38e67098afa3bdbd11ce2c6eb90c5",
+  "artifactDigest": "a67ccfcef22a9a1a7732b4bc793b9113c37fedd6f1752bf1a26f4e8210913e9b"
+}
