@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T09:27:19.915Z",
-  "sequence": 283,
+  "updatedAt": "2026-11-27T10:16:04.153Z",
+  "sequence": 284,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12911,6 +12911,20 @@
       "packet": "research/packets/research-000283-a3b56cab29.json",
       "packetDigest": "daf5f7fc280b3d917fe136deedc652913d616136c1c7befaf8968e4a6bfcd0f8",
       "finishedAt": "2026-11-27T09:17:21.451Z"
+    },
+    {
+      "id": "research-000284-7e21c9c555",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Adapter pattern",
+      "day": "2026-11-27",
+      "runId": "45980607275",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T10:16:04.153Z",
+      "expiresAt": "2026-11-27T10:31:04.153Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
