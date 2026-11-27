@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000168-bf14467b91-review-8a640bd3d9",
+  "parentJobId": "research-000168-bf14467b91",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "42773c2d7ddfae50926a46c6ce6b52176d518da38959f4dc1d0d9a390b1c4017",
+  "sourcePin": {
+    "id": "S1",
+    "title": "16-bit computing",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381652031",
+    "revision": "1381652031",
+    "observedAt": "2026-11-21T15:13:22.909Z",
+    "sourceTimestamp": "2026-10-23T22:19:19Z",
+    "sha256": "ff584fbb70fec041e7195cfbdaac9926dfed2f4999be8035dc5297ba44d48448",
+    "excerptSha256": "ff584fbb70fec041e7195cfbdaac9926dfed2f4999be8035dc5297ba44d48448",
+    "inspectedCharacters": 13191,
+    "totalCharacters": 13191,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 16-bit architecture, register width, and memory addressing",
+      "Mechanisms correctly describe register/data path width and address space limitations with proper qualifiers",
+      "Unknowns appropriately identify gaps not covered in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Source citations align with drafted explanations"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-c44a6dbe-3953-4ba3-953d-7a14b1174c34",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5181,
+    "outputTokens": 81
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

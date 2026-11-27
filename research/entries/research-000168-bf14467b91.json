@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000168-bf14467b91",
+  "title": "16-bit computing",
+  "role": "game-mechanic-researcher",
+  "createdAt": "2026-11-27T05:26:35.548Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "16-bit computing refers to processors with 16-bit internal registers and data paths, capable of addressing 64 KiB of memory directly. The architecture became common in minicomputers during the 1960s and dominated early microprocessors in the 1970s. While many 16-bit designs existed, most personal computer and embedded industries have moved to 32-bit or 8-bit solutions. Some systems labeled 16-bit use 16-bit registers with smaller external buses or address spaces, creating 16/32 or 16/24 hybrids. The term also applies to legacy software and microcontrollers still in use today.",
+  "mechanisms": [
+    {
+      "title": "Register and data path width",
+      "explanation": "Processors label themselves 16-bit when their internal general-purpose registers and arithmetic logic units are 16 bits wide. This allows manipulation of 16-bit binary integers in a single operation and determines the natural word size for instruction encoding and data movement within the CPU.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Memory address space limitation",
+      "explanation": "A flat 16-bit address bus can directly reference 2^16 (65,536) unique locations. With byte addressing, this yields 64 KiB of addressable memory. Systems exceeding this limit typically use memory segmentation, bank switching, or wider external buses combined with 16-bit internal registers.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact transition timeline from 16-bit to 32-bit dominance in specific application domains",
+    "Whether all systems marketed as 16-bit maintain consistent register-to-bus width ratios across different manufacturers",
+    "Long-term viability of 16-bit microcontrollers in modern embedded designs beyond cost considerations",
+    "The degree to which software compatibility requirements drove hardware evolution rather than pure performance considerations"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "16-bit computing",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381652031",
+      "revision": "1381652031",
+      "observedAt": "2026-11-21T15:13:22.909Z",
+      "sourceTimestamp": "2026-10-23T22:19:19Z",
+      "sha256": "ff584fbb70fec041e7195cfbdaac9926dfed2f4999be8035dc5297ba44d48448",
+      "excerptSha256": "ff584fbb70fec041e7195cfbdaac9926dfed2f4999be8035dc5297ba44d48448",
+      "inspectedCharacters": 13191,
+      "totalCharacters": 13191,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 16-bit architecture, register width, and memory addressing",
+      "Mechanisms correctly describe register/data path width and address space limitations with proper qualifiers",
+      "Unknowns appropriately identify gaps not covered in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Source citations align with drafted explanations"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-4fcac383-dfa1-41d8-af88-79cd817fde61",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4650,
+      "outputTokens": 431
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-c44a6dbe-3953-4ba3-953d-7a14b1174c34",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 5181,
+      "outputTokens": 81
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "3708072b30df654a8aac04804ed878b217bca7a7bcfbbbfdd4cab5703870c6a1",
+    "artifactDigest": "42773c2d7ddfae50926a46c6ce6b52176d518da38959f4dc1d0d9a390b1c4017",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000168-bf14467b91.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
