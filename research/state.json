@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T18:17:14.991Z",
-  "sequence": 290,
+  "updatedAt": "2026-11-27T19:11:49.502Z",
+  "sequence": 291,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13234,6 +13234,20 @@
       "packet": "research/packets/research-000290-6b3bae2696.json",
       "packetDigest": "b23826e4baf171900b1d3e8a4412d1b7e54a63598371c6d8d438899fb4568b69",
       "finishedAt": "2026-11-27T18:17:14.991Z"
+    },
+    {
+      "id": "research-000291-d0e52b43ad",
+      "role": "market-data-researcher",
+      "topic": "Check digit",
+      "day": "2026-11-27",
+      "runId": "46054954803",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T19:11:49.502Z",
+      "expiresAt": "2026-11-27T19:26:49.502Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
