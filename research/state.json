@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T05:26:35.549Z",
-  "sequence": 279,
+  "updatedAt": "2026-11-27T06:24:58.520Z",
+  "sequence": 280,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12723,6 +12723,20 @@
       "packet": "research/packets/research-000279-d8e93edef1.json",
       "packetDigest": "8b221d0e1a52c75080c34c9ae67d3ef44c23190c95867399db8a3ea1b281c823",
       "finishedAt": "2026-11-27T04:17:59.895Z"
+    },
+    {
+      "id": "research-000280-31fa6985f1",
+      "role": "hardware-interoperability-scout",
+      "topic": "Age of Enlightenment",
+      "day": "2026-11-27",
+      "runId": "45951696767",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T06:24:58.520Z",
+      "expiresAt": "2026-11-27T06:39:58.520Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
