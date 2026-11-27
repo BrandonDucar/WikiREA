@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T03:17:52.893Z",
+  "updatedAt": "2026-11-27T03:17:57.622Z",
   "sequence": 278,
   "jobs": [
     {
@@ -12632,21 +12632,47 @@
       "topic": "Adobe Photoshop",
       "day": "2026-11-27",
       "runId": "45933318349",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T03:17:52.893Z",
       "expiresAt": "2026-11-27T03:32:52.893Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adobe Photoshop",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1385900492",
+        "revision": "1385900492",
+        "observedAt": "2026-11-27T03:17:55.420Z",
+        "sourceTimestamp": "2026-11-15T21:51:21Z",
+        "sha256": "88eeec6ce3d7a9a98b68a755a4b62aa8cafe6e6d5581c283932f72bab4ae1db2",
+        "excerptSha256": "4c03fe50680e29ec2a483ba47523c21ef281a0721309486108fae520f028bc80",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 77699,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f579a4bf-faac-4d73-ac9f-3b6a7bcbc836",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4575,
+        "outputTokens": 373
+      },
+      "packet": "research/packets/research-000278-881f64781f.json",
+      "packetDigest": "08d7ba3ace1fca7c1b4b3a8fe1a55105370dd36e2c12d34249cd1bf56fdf8837",
+      "finishedAt": "2026-11-27T03:17:57.622Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Adobe Photoshop",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000029-4aa4540b02"
-    },
     {
       "title": "Adventure Game Interpreter",
       "role": "game-mechanic-researcher",
@@ -13699,11 +13725,6 @@
     },
     {
       "title": "Acorn (software)",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000076-83a6537129"
-    },
-    {
-      "title": "Adobe Photoshop",
       "role": "application-tracer",
       "discoveredFrom": "research-000076-83a6537129"
     },
@@ -19316,6 +19337,36 @@
       "title": "Application platform as a service",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000277-7734b343a9"
+    },
+    {
+      "title": "8bf",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000278-881f64781f"
+    },
+    {
+      "title": "ACDSee",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000278-881f64781f"
+    },
+    {
+      "title": "AVX2",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000278-881f64781f"
+    },
+    {
+      "title": "Ability Office",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000278-881f64781f"
+    },
+    {
+      "title": "Acorn (software)",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000278-881f64781f"
+    },
+    {
+      "title": "Adobe AIR",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000278-881f64781f"
     }
   ],
   "reviewJobs": [

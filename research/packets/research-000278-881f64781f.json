@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000278-881f64781f",
+  "topic": "Adobe Photoshop",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Adobe Photoshop is a proprietary raster graphics editor used for professional digital art and image manipulation. It supports layer-based editing, masks, alpha compositing, and various color models through its PSD and PSB formats. Beyond raster editing, it offers limited text, vector, 3D, and video capabilities extended via plug-ins. Originally developed in 1987 by Thomas and John Knoll as a grayscale display program, it was licensed to Adobe in 1988 and released in 1990. The software transitioned from one-time purchases to a subscription model with the Adobe Creative Cloud branding in 2013 and is now available on Windows, macOS, and iPadOS platforms.",
+    "mechanisms": [
+      {
+        "title": "Layer-based compositing with masks and alpha channels",
+        "explanation": "Photoshop organizes image data into stacked layers that can be independently adjusted. Masks and alpha compositing control transparency and visibility per layer, enabling non-destructive editing of complex compositions.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "File format architecture (PSD/PSB)",
+        "explanation": "The software uses its native PSD and PSB formats to preserve layer structure, masks, and alpha data. These formats support the full feature set including high bit-depth and large document capacities.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact internal data structures for plug-in execution",
+      "Details of real-time rendering pipeline for 3D and video filters",
+      "Proprietary color management engine implementation",
+      "Specifics of cross-platform optimization across ARM64 and x86-64 architectures"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adobe Photoshop",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385900492",
+    "revision": "1385900492",
+    "observedAt": "2026-11-27T03:17:55.420Z",
+    "sourceTimestamp": "2026-11-15T21:51:21Z",
+    "sha256": "88eeec6ce3d7a9a98b68a755a4b62aa8cafe6e6d5581c283932f72bab4ae1db2",
+    "excerptSha256": "4c03fe50680e29ec2a483ba47523c21ef281a0721309486108fae520f028bc80",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 77699,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f579a4bf-faac-4d73-ac9f-3b6a7bcbc836",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4575,
+    "outputTokens": 373
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "abb07923f9c65c85ba983a48c84831cf6891e124275988afdf79e6b726449287",
+  "artifactDigest": "08d7ba3ace1fca7c1b4b3a8fe1a55105370dd36e2c12d34249cd1bf56fdf8837"
+}
