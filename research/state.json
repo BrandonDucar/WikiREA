@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T21:13:20.519Z",
+  "updatedAt": "2026-11-27T21:13:25.018Z",
   "sequence": 293,
   "jobs": [
     {
@@ -13331,13 +13331,44 @@
       "topic": "Addition",
       "day": "2026-11-27",
       "runId": "46068848981",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T21:13:20.519Z",
       "expiresAt": "2026-11-27T21:28:20.519Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Addition",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384589507",
+        "revision": "1384589507",
+        "observedAt": "2026-11-27T21:13:22.975Z",
+        "sourceTimestamp": "2026-11-09T01:01:08Z",
+        "sha256": "0c3ed488e1db880100c965a455ae0117749e324501f8f05e6df1ec7875840d66",
+        "excerptSha256": "00a25e596d16eaf1c8786418f28ac1dc50bdcfe5b51ec08ab01f6561fccc5ea0",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 90094,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-0269791f-bea9-4748-b15b-8e7854fd8d60",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4437,
+        "outputTokens": 365
+      },
+      "packet": "research/packets/research-000293-4da6c77eaa.json",
+      "packetDigest": "746359b37bd22188150588d2866733570f9bbe3a81e508884a1e22da54824cb6",
+      "finishedAt": "2026-11-27T21:13:25.018Z"
     }
   ],
   "discovered": [
@@ -14470,11 +14501,6 @@
       "title": "Comparison of free software for audio",
       "role": "music-events",
       "discoveredFrom": "research-000082-3295e49fa9"
-    },
-    {
-      "title": "Addition",
-      "role": "adversarial-reviewer",
-      "discoveredFrom": "research-000083-ece4b38be5"
     },
     {
       "title": "Affine space",
@@ -20405,6 +20431,36 @@
       "title": "AI-generated violent extremist content",
       "role": "music-events",
       "discoveredFrom": "research-000292-22e25c0d28"
+    },
+    {
+      "title": "1 (number)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000293-4da6c77eaa"
+    },
+    {
+      "title": "ADD (disambiguation)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000293-4da6c77eaa"
+    },
+    {
+      "title": "Abacus",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000293-4da6c77eaa"
+    },
+    {
+      "title": "Acceleration",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000293-4da6c77eaa"
+    },
+    {
+      "title": "Ackermann function",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000293-4da6c77eaa"
+    },
+    {
+      "title": "Adder (electronics)",
+      "role": "adversarial-reviewer",
+      "discoveredFrom": "research-000293-4da6c77eaa"
     }
   ],
   "reviewJobs": [

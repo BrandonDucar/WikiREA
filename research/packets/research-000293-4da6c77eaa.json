@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000293-4da6c77eaa",
+  "topic": "Addition",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Addition is a fundamental arithmetic operation that combines two or more numbers into a single total, or sum. It is typically denoted by the plus sign (+) and applies to whole numbers, integers, and other numeric types. The operation is commutative, meaning the order of terms does not affect the result, and associative, meaning grouping does not change the outcome. Addition can be interpreted through combining sets or extending lengths, and it underpins counting and basic numerical tasks accessible even to infants and some animals. Mechanical aids from the abacus to modern computers continue to optimize its implementation.",
+    "mechanisms": [
+      {
+        "title": "Combining disjoint collections",
+        "explanation": "When two or more disjoint collections of objects are merged into one, the total number of objects in the resulting collection equals the sum of the numbers from the original collections. This set-combining interpretation provides a concrete foundation for the operation.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Extending an initial length",
+        "explanation": "Addition can be viewed as extending an original length by a given amount; the final length equals the sum of the original length and the extension. This length-extending interpretation assigns asymmetric roles to the terms, where one serves as the base and the other as the increment.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How addition extends to fractional or negative numbers beyond the set-combining model",
+      "The precise cognitive mechanisms enabling infants and some animals to perform basic addition",
+      "Details of the most efficient computer implementations of addition beyond general knowledge",
+      "The historical evolution of addition terminology and notation across all linguistic contexts"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Addition",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384589507",
+    "revision": "1384589507",
+    "observedAt": "2026-11-27T21:13:22.975Z",
+    "sourceTimestamp": "2026-11-09T01:01:08Z",
+    "sha256": "0c3ed488e1db880100c965a455ae0117749e324501f8f05e6df1ec7875840d66",
+    "excerptSha256": "00a25e596d16eaf1c8786418f28ac1dc50bdcfe5b51ec08ab01f6561fccc5ea0",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 90094,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-0269791f-bea9-4748-b15b-8e7854fd8d60",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4437,
+    "outputTokens": 365
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "a9037e474cf4fc0f52320dafd7eb14ae526503154634edfb292a263e1306ab88",
+  "artifactDigest": "746359b37bd22188150588d2866733570f9bbe3a81e508884a1e22da54824cb6"
+}
