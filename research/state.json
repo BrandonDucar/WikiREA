@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T10:16:08.345Z",
-  "sequence": 284,
+  "updatedAt": "2026-11-27T12:21:45.700Z",
+  "sequence": 285,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12956,6 +12956,20 @@
       "packet": "research/packets/research-000284-7e21c9c555.json",
       "packetDigest": "70cc08f3c96a3b806b6ee8d7c1aa49052f23515810904b8bf552435a9df3108d",
       "finishedAt": "2026-11-27T10:16:08.345Z"
+    },
+    {
+      "id": "research-000285-60d6380434",
+      "role": "source-curator",
+      "topic": "Bootstrappable builds",
+      "day": "2026-11-27",
+      "runId": "45997980218",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T12:21:45.700Z",
+      "expiresAt": "2026-11-27T12:36:45.700Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
