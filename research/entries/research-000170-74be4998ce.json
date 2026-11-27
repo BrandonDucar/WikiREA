@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000170-74be4998ce",
+  "title": "3D concrete printing",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-27T09:27:19.914Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "3D concrete printing encompasses additive manufacturing methods for cementitious materials, eliminating formwork and enabling complex geometries. Emerging from 1990s research, two primary methods dominate: binder jetting, which selectively binds powdered substrate with liquid agent, and layered extrusion, which numerically controls cement paste deposition. These processes support architectural applications from structural elements to entire buildings, though each faces distinct technical constraints regarding material behavior and post-processing.",
+  "mechanisms": [
+    {
+      "title": "Binder jetting powder binding",
+      "explanation": "A print head selectively deposits liquid binder onto a powdered substrate layer by layer, typically 0.2-2mm thick. The unbound powder provides continuous support during fabrication, allowing unsupported cantilevers and hollow parts. Post-processing involves powder removal, curing in controlled conditions, and surface coating application.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Layered extrusion material deposition",
+      "explanation": "A numerically controlled nozzle precisely extrudes cementitious paste in layers generally 5mm to few centimeters thick. An automatic troweling tool flattens layers and covers interlayer grooves for smooth surfaces. Critical parameters include process planning and deposition speed to manage material stiffening and hardening rates.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Recyclability of cement and aggregate powder exposed to ambient humidity during binder jetting processes",
+    "Whether cement hydration occurs in binder jetting concrete printing without additional curing",
+    "Long-term structural performance and load-bearing capacity of 3D-printed concrete elements",
+    "Precise integration methods for embedded steel reinforcement or building services during extrusion deposition"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "3D concrete printing",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381252406",
+      "revision": "1381252406",
+      "observedAt": "2026-11-21T18:15:22.531Z",
+      "sourceTimestamp": "2026-10-21T01:08:47Z",
+      "sha256": "471a98128da42be9a52a81777864e52e3f5e57f84af4902ebd15d08bff0a215f",
+      "excerptSha256": "b777fd7cedb7a2c0af3d9a5ebee3141f62e95b762c85db945a234a0deacef70a",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 54768,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 3D concrete printing methods and history",
+      "Mechanisms correctly describe binder jetting and layered extrusion processes with proper technical details",
+      "Unknowns appropriately identify genuine knowledge gaps from source (recyclability issues, hydration uncertainty, long-term performance, reinforcement integration)",
+      "No unsupported mechanisms or invented execution details present",
+      "Preserves qualifiers like 'typically' and 'generally' from source text"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-15561fe0-1bcb-4e29-8a0f-37efac17c552",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3937,
+      "outputTokens": 363
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-cc6617a0-023b-4357-a13f-d05e0adfef7c",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4230,
+      "outputTokens": 99
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "2eafed6297ffe8c757fa7698b1c5934487eab42809bcbc3146ba30fc413d3212",
+    "artifactDigest": "afa5a5c926c89bc5030ece40933f4ca98f6efc20f22cdf0c7632181cd61eb072",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000170-74be4998ce.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
