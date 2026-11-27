@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T00:35:46.737Z",
-  "sequence": 275,
+  "updatedAt": "2026-11-27T01:15:53.674Z",
+  "sequence": 276,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12531,6 +12531,20 @@
       "packet": "research/packets/research-000275-4541888c4d.json",
       "packetDigest": "12e0a897596d5eeaca28a5c2be289aa55978260f12634f385e871923f5685ec4",
       "finishedAt": "2026-11-27T00:35:46.737Z"
+    },
+    {
+      "id": "research-000276-fe4b079102",
+      "role": "application-tracer",
+      "topic": "ALynx",
+      "day": "2026-11-27",
+      "runId": "45921556631",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T01:15:53.674Z",
+      "expiresAt": "2026-11-27T01:30:53.674Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
