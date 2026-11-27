@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000284-7e21c9c555",
+  "topic": "Adapter pattern",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The adapter pattern is a software design pattern that resolves interface incompatibility between two classes. It introduces a separate adapter class that translates calls from a client expecting a target interface to the existing adaptee class. This allows the adaptee to be reused without modifying its source code. The pattern is commonly applied when integrating legacy or third-party components whose interfaces do not match the client's expectations, enabling cooperation through translation rather than code changes.",
+    "mechanisms": [
+      {
+        "title": "Object adapter delegation",
+        "explanation": "The adapter contains an instance of the adaptee class and delegates method calls to it at runtime, implementing the target interface in terms of the adaptee's specific operations.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Class adapter inheritance",
+        "explanation": "The adapter inherits from the adaptee class at compile-time, thereby implementing the target interface through inheritance of the adaptee's specific operation.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Runtime vs compile-time binding behavior in specific language implementations",
+      "Performance overhead introduced by the translation layer",
+      "Thread-safety guarantees when adapter wraps shared adaptee state",
+      "Interaction with polymorphic dispatch when multiple adapters are composed"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adapter pattern",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1388149812",
+    "revision": "1388149812",
+    "observedAt": "2026-11-27T10:16:06.593Z",
+    "sourceTimestamp": "2026-11-26T20:30:48Z",
+    "sha256": "1dc10c8099408bbf1b0770fde1a60cc14f08379be517e4f161897bd3b7e843e4",
+    "excerptSha256": "1dc10c8099408bbf1b0770fde1a60cc14f08379be517e4f161897bd3b7e843e4",
+    "inspectedCharacters": 8765,
+    "totalCharacters": 8765,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f2d64970-5ef7-418a-9c05-a239d6cda1e8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2486,
+    "outputTokens": 276
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1b5f122266526c1e803006fbdc8f1184f0b6ce1c3f87debf01a070f2ad399fa6",
+  "artifactDigest": "70cc08f3c96a3b806b6ee8d7c1aa49052f23515810904b8bf552435a9df3108d"
+}

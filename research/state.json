@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T10:16:04.153Z",
+  "updatedAt": "2026-11-27T10:16:08.345Z",
   "sequence": 284,
   "jobs": [
     {
@@ -12918,13 +12918,44 @@
       "topic": "Adapter pattern",
       "day": "2026-11-27",
       "runId": "45980607275",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T10:16:04.153Z",
       "expiresAt": "2026-11-27T10:31:04.153Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adapter pattern",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1388149812",
+        "revision": "1388149812",
+        "observedAt": "2026-11-27T10:16:06.593Z",
+        "sourceTimestamp": "2026-11-26T20:30:48Z",
+        "sha256": "1dc10c8099408bbf1b0770fde1a60cc14f08379be517e4f161897bd3b7e843e4",
+        "excerptSha256": "1dc10c8099408bbf1b0770fde1a60cc14f08379be517e4f161897bd3b7e843e4",
+        "inspectedCharacters": 8765,
+        "totalCharacters": 8765,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f2d64970-5ef7-418a-9c05-a239d6cda1e8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2486,
+        "outputTokens": 276
+      },
+      "packet": "research/packets/research-000284-7e21c9c555.json",
+      "packetDigest": "70cc08f3c96a3b806b6ee8d7c1aa49052f23515810904b8bf552435a9df3108d",
+      "finishedAt": "2026-11-27T10:16:08.345Z"
     }
   ],
   "discovered": [
@@ -13789,11 +13820,6 @@
       "discoveredFrom": "research-000068-e1044edf96"
     },
     {
-      "title": "Adapter pattern",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000068-e1044edf96"
-    },
-    {
       "title": "Anti-pattern",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000068-e1044edf96"
@@ -14122,11 +14148,6 @@
       "title": "Average",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000083-ece4b38be5"
-    },
-    {
-      "title": "Adapter pattern",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000084-e3f4a4ce2e"
     },
     {
       "title": "Anti-pattern",
@@ -19772,6 +19793,21 @@
       "title": "Algebra",
       "role": "adversarial-reviewer",
       "discoveredFrom": "research-000283-a3b56cab29"
+    },
+    {
+      "title": "Addison Wesley",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000284-7e21c9c555"
+    },
+    {
+      "title": "Binding properties pattern",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000284-7e21c9c555"
+    },
+    {
+      "title": "Blackboard (design pattern)",
+      "role": "glossary-and-mechanics-editor",
+      "discoveredFrom": "research-000284-7e21c9c555"
     }
   ],
   "reviewJobs": [
