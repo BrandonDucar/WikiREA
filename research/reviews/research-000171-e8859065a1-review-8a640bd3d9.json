@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000171-e8859065a1-review-8a640bd3d9",
+  "parentJobId": "research-000171-e8859065a1",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "24421802fa7210f895c7e46c5e4e6e86f372b4db2e1d8bffc8be1d0dbecc449c",
+  "sourcePin": {
+    "id": "S1",
+    "title": "C (programming language)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385839600",
+    "revision": "1385839600",
+    "observedAt": "2026-11-21T19:11:52.483Z",
+    "sourceTimestamp": "2026-11-15T13:37:34Z",
+    "sha256": "76c88efc7e0b960e5a275b8411f24ee68f89a2dd4d839dbcf5080416c09ad4f7",
+    "excerptSha256": "63087f01c28b4f07d232c0e7add2f40ef5ba791eb1f6cd5465ef11bbe6ce4080",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 103935,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on C's design, history, and usage",
+      "Mechanisms correctly capture static typing, manual memory management, and preprocessor model from source",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically ranked' and 'relatively direct access' preserved from source"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-91daebe3-26b1-43f7-93b1-d5cd0febe713",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4533,
+    "outputTokens": 89
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
