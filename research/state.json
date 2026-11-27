@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T13:15:28.349Z",
+  "updatedAt": "2026-11-27T13:15:33.467Z",
   "sequence": 286,
   "jobs": [
     {
@@ -13008,13 +13008,44 @@
       "topic": "AMSD Ariadna",
       "day": "2026-11-27",
       "runId": "46005525062",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T13:15:28.349Z",
       "expiresAt": "2026-11-27T13:30:28.349Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "AMSD Ariadna",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386927525",
+        "revision": "1386927525",
+        "observedAt": "2026-11-27T13:15:30.619Z",
+        "sourceTimestamp": "2026-11-21T13:58:53Z",
+        "sha256": "fe5a5e322a35f1f418a9b24cd0ec70910bbc49b98477cdace11273d561a070ca",
+        "excerptSha256": "fe5a5e322a35f1f418a9b24cd0ec70910bbc49b98477cdace11273d561a070ca",
+        "inspectedCharacters": 3251,
+        "totalCharacters": 3251,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-de85fc9b-df02-4bcd-900c-91a829fe9687",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 1168,
+        "outputTokens": 342
+      },
+      "packet": "research/packets/research-000286-d919fc3e30.json",
+      "packetDigest": "31f4b8bc8c21bc0c6c313bb6ed5accd72e100bde00171da5bfa1fcf8f2f8b1b2",
+      "finishedAt": "2026-11-27T13:15:33.467Z"
     }
   ],
   "discovered": [
@@ -13857,11 +13888,6 @@
       "title": "Chain of trust",
       "role": "source-curator",
       "discoveredFrom": "research-000065-e0e23685a6"
-    },
-    {
-      "title": "AMSD Ariadna",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000066-02c0e9d820"
     },
     {
       "title": "AMosaic",
@@ -15985,11 +16011,6 @@
     },
     {
       "title": "AIM (software)",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000147-ed7aca690a"
-    },
-    {
-      "title": "AMSD Ariadna",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000147-ed7aca690a"
     },
@@ -19902,6 +19923,11 @@
       "title": "Proprietary software",
       "role": "source-curator",
       "discoveredFrom": "research-000285-60d6380434"
+    },
+    {
+      "title": "AirMosaic",
+      "role": "application-tracer",
+      "discoveredFrom": "research-000286-d919fc3e30"
     }
   ],
   "reviewJobs": [

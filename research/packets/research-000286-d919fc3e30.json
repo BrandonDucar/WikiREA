@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000286-d919fc3e30",
+  "topic": "AMSD Ariadna",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AMSD Ariadna, released in 1995 by Advanced Multimedia System Design, was the first Russian web browser. It targeted Windows 95 and Windows NT platforms and included features such as HTML 3.2 support, a 50,000-word English-Russian dictionary, and PNG image support with transparency. It lacked support for animated GIFs and JavaScript. Despite its technical merits, it was proprietary software and struggled to compete against dominant free browsers like Internet Explorer and Netscape Navigator in the Russian market, leading to its eventual discontinuation.",
+    "mechanisms": [
+      {
+        "title": "Platform compatibility and feature set",
+        "explanation": "Ariadna was engineered specifically for early Windows environments (Windows 95 and Windows NT) and offered a curated feature set including HTML 3.2 rendering, dictionary lookup, and PNG transparency, while deliberately omitting animated GIF and JavaScript support.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Market positioning and discontinuation",
+        "explanation": "As proprietary software released alongside dominant no-cost browsers, Ariadna failed to gain market traction in Russia and was terminated a few years after its introduction.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact reasons for market failure beyond competition from free alternatives",
+      "Details of the internal rendering engine or source code architecture",
+      "Specific technical causes for the omission of JavaScript and animated GIF support",
+      "Whether any later versions or forks of Ariadna were ever released"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "AMSD Ariadna",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386927525",
+    "revision": "1386927525",
+    "observedAt": "2026-11-27T13:15:30.619Z",
+    "sourceTimestamp": "2026-11-21T13:58:53Z",
+    "sha256": "fe5a5e322a35f1f418a9b24cd0ec70910bbc49b98477cdace11273d561a070ca",
+    "excerptSha256": "fe5a5e322a35f1f418a9b24cd0ec70910bbc49b98477cdace11273d561a070ca",
+    "inspectedCharacters": 3251,
+    "totalCharacters": 3251,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-de85fc9b-df02-4bcd-900c-91a829fe9687",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1168,
+    "outputTokens": 342
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "dcb1b2574c8eac3c135e14e73e5835e4199049d849f0f668a2b1124f8c751720",
+  "artifactDigest": "31f4b8bc8c21bc0c6c313bb6ed5accd72e100bde00171da5bfa1fcf8f2f8b1b2"
+}
