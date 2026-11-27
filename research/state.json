@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T21:24:55.732Z",
-  "sequence": 293,
+  "updatedAt": "2026-11-27T22:14:46.867Z",
+  "sequence": 294,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13369,6 +13369,20 @@
       "packet": "research/packets/research-000293-4da6c77eaa.json",
       "packetDigest": "746359b37bd22188150588d2866733570f9bbe3a81e508884a1e22da54824cb6",
       "finishedAt": "2026-11-27T21:13:25.018Z"
+    },
+    {
+      "id": "research-000294-e00c6cd7de",
+      "role": "glossary-and-mechanics-editor",
+      "topic": "Anti-pattern",
+      "day": "2026-11-27",
+      "runId": "46075417719",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T22:14:46.867Z",
+      "expiresAt": "2026-11-27T22:29:46.867Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
