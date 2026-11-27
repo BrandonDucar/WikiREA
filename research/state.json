@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T13:25:19.005Z",
-  "sequence": 286,
+  "updatedAt": "2026-11-27T14:15:48.262Z",
+  "sequence": 287,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13050,6 +13050,20 @@
       "packet": "research/packets/research-000286-d919fc3e30.json",
       "packetDigest": "31f4b8bc8c21bc0c6c313bb6ed5accd72e100bde00171da5bfa1fcf8f2f8b1b2",
       "finishedAt": "2026-11-27T13:15:33.467Z"
+    },
+    {
+      "id": "research-000287-541467df9c",
+      "role": "runtime-researcher",
+      "topic": "Asynchronous I/O",
+      "day": "2026-11-27",
+      "runId": "46014308045",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T14:15:48.262Z",
+      "expiresAt": "2026-11-27T14:30:48.262Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
