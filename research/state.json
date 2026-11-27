@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T01:25:38.091Z",
-  "sequence": 276,
+  "updatedAt": "2026-11-27T02:20:27.003Z",
+  "sequence": 277,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12580,6 +12580,20 @@
       "packet": "research/packets/research-000276-fe4b079102.json",
       "packetDigest": "c8d6bc28e045585741a18b8663a73f219459689c4bd83c9953b7f1b750f2613d",
       "finishedAt": "2026-11-27T01:15:58.870Z"
+    },
+    {
+      "id": "research-000277-7734b343a9",
+      "role": "runtime-researcher",
+      "topic": "Application software",
+      "day": "2026-11-27",
+      "runId": "45927728167",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T02:20:27.003Z",
+      "expiresAt": "2026-11-27T02:35:27.003Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
