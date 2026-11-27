@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000172-7ead05dd86",
+  "title": "5.1 surround sound",
+  "role": "music-events",
+  "createdAt": "2026-11-27T15:25:00.470Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "5.1 surround sound is the most common home theater layout, using five full-bandwidth channels and one low-frequency effects channel for a subwoofer. It originated from early magnetic stereo and Dolby Stereo, with the 5.1 designation formalized in 1987. The system employs front left, front right, center, left surround, and right surround speakers, plus an LFE channel. In music contexts, proper localization for a center-positioned listener requires five matched speakers. The ITU-R BS 775 standard recommends identical speaker size and distance, with specific angle adjustments for movies versus music playback.",
+  "mechanisms": [
+    {
+      "title": "Channel Configuration",
+      "explanation": "The system routes distinct audio signals to five full-bandwidth speakers (front left, front right, center, left surround, right surround) and one dedicated low-frequency effects channel typically directed to a subwoofer, enabling spatial separation of dialogue, music, and effects.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Speaker Placement and Calibration",
+      "explanation": "ITU-R BS 775 recommends five similarly sized speakers placed at equal distances from the listener, with front speakers angled ±22.5° for music or ±30° for movies, and surround speakers at ±110°, to ensure consistent localization and equability across all acoustic sources.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How discrete audio signals are encoded into the single LFE channel for bass management",
+    "The specific signal processing that creates the perceived surround effect from encoded stereo surround channels",
+    "Whether all commercial 5.1 implementations maintain the matched speaker requirements for music listening",
+    "The exact crossover point and filtering strategy used to direct low-frequency content to the subwoofer"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "5.1 surround sound",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385597604",
+      "revision": "1385597604",
+      "observedAt": "2026-11-21T20:13:54.062Z",
+      "sourceTimestamp": "2026-11-14T03:31:03Z",
+      "sha256": "e8350282f3cb9c694bd65748ed2b93379e72fec1b2f5e021cd05209909dbbdea",
+      "excerptSha256": "e8350282f3cb9c694bd65748ed2b93379e72fec1b2f5e021cd05209909dbbdea",
+      "inspectedCharacters": 10049,
+      "totalCharacters": 10049,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on 5.1 layout, history, and ITU-R BS 775 placement guidelines",
+      "Mechanisms correctly describe channel configuration and speaker placement with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source (encoding details, bass management, commercial implementation variance)",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'typically directed' and 'recommends' preserved from source"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-1a4763cf-40b3-4792-8fc1-13d64acdaa16",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3143,
+      "outputTokens": 406
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-5e078d5d-a012-4331-89e8-bf75bf874aba",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3512,
+      "outputTokens": 104
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "b2e804f1b1d374dc18ff122d74b93e5a3085d4e8051e8d67a1fb96d7894dc3e6",
+    "artifactDigest": "f04c6a50718b1d9a9f5fdc45c4e337cec37722dcbccdc37bc5432859d4fc4893",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000172-7ead05dd86.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
