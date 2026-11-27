@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T16:16:49.970Z",
+  "updatedAt": "2026-11-27T16:16:59.675Z",
   "sequence": 289,
   "jobs": [
     {
@@ -13151,21 +13151,47 @@
       "topic": "BIOS",
       "day": "2026-11-27",
       "runId": "46032227357",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T16:16:49.970Z",
       "expiresAt": "2026-11-27T16:31:49.970Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "BIOS",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1388138739",
+        "revision": "1388138739",
+        "observedAt": "2026-11-27T16:16:52.554Z",
+        "sourceTimestamp": "2026-11-26T19:39:37Z",
+        "sha256": "35d858f626a2bd41f0c00b9094ddb239e582e75ad7e4fc5279ed5df2326d42c7",
+        "excerptSha256": "7c7048ccc477ad50b968cb865b17db20f2e64fbba8a136bad4133309fd2450d7",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 92563,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-870e6b7a-45c8-454c-9a38-0cf9361ee188",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3931,
+        "outputTokens": 435
+      },
+      "packet": "research/packets/research-000289-895ca99299.json",
+      "packetDigest": "96d219b1736e8b776604d414f030b1ae24d09930bda1406cc6ffa953ebadec00",
+      "finishedAt": "2026-11-27T16:16:59.675Z"
     }
   ],
   "discovered": [
-    {
-      "title": "BIOS",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000030-5a4bfec956"
-    },
     {
       "title": "Baron Munchausen",
       "role": "simulation-researcher",
@@ -20100,6 +20126,46 @@
       "title": "Apple II",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000288-448d4831db"
+    },
+    {
+      "title": "/boot/",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "60 Minutes",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "80286",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "80386",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "8086",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "8088",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "A20 gate",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "ACPI",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000289-895ca99299"
     }
   ],
   "reviewJobs": [

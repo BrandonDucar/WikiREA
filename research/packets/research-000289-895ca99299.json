@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000289-895ca99299",
+  "topic": "BIOS",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "BIOS is firmware pre-installed on a computer's motherboard that performs hardware initialization during boot and provides runtime services to operating systems. Originating from Gary Kildall's CP/M work in 1975, it was reverse-engineered by Compaq, Phoenix Technologies, and AMI to create compatible systems. Older PCs initialize and test hardware components via power-on self-test (POST), then load a boot loader from mass storage. Most implementations are motherboard-specific, interfacing with the system chipset. BIOS firmware was originally stored in ROM chips but later shifted to flash memory, allowing user updates that also introduce security risks like BIOS rootkits or potential motherboard bricking from failed upgrades. Unified Extensible Firmware Interface (UEFI) is the successor aiming to address BIOS limitations, though some legacy BIOS compatibility is often maintained.",
+    "mechanisms": [
+      {
+        "title": "Hardware Initialization and POST",
+        "explanation": "Upon power-on, BIOS initializes and tests system hardware components through the power-on self-test (POST). This process verifies component functionality before the boot loader is loaded from mass storage. The initialization is often motherboard-specific, interfacing with the system chipset to configure integrated devices such as display and storage.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Boot Loader Loading and Runtime Services",
+        "explanation": "After POST completes, BIOS locates and loads a boot loader from a mass storage device, which then initializes the operating system kernel. Additionally, BIOS provides runtime services and interrupt calls for keyboard, display, and storage I/O, though more recent operating systems typically do not use these BIOS interrupt calls after startup.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact proprietary implementation details of specific motherboard manufacturers",
+      "Internal code paths for all optional extension ROM scenarios",
+      "Precise mechanisms governing the transition from legacy BIOS to UEFI boot modes",
+      "Specific hardware initialization sequences for every possible peripheral configuration"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "BIOS",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1388138739",
+    "revision": "1388138739",
+    "observedAt": "2026-11-27T16:16:52.554Z",
+    "sourceTimestamp": "2026-11-26T19:39:37Z",
+    "sha256": "35d858f626a2bd41f0c00b9094ddb239e582e75ad7e4fc5279ed5df2326d42c7",
+    "excerptSha256": "7c7048ccc477ad50b968cb865b17db20f2e64fbba8a136bad4133309fd2450d7",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 92563,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-870e6b7a-45c8-454c-9a38-0cf9361ee188",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3931,
+    "outputTokens": 435
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "560884d1cf6bf3003e31f9a855120f08ebb95bb22d12ee2862be81f51adc98cf",
+  "artifactDigest": "96d219b1736e8b776604d414f030b1ae24d09930bda1406cc6ffa953ebadec00"
+}
