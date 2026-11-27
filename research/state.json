@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T02:20:39.471Z",
-  "sequence": 277,
+  "updatedAt": "2026-11-27T03:17:52.893Z",
+  "sequence": 278,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12625,6 +12625,20 @@
       "packet": "research/packets/research-000277-7734b343a9.json",
       "packetDigest": "ddc6732f755a92ec30d2a5625de4a736c8679581b93416d4c90cbf3318a0b0c8",
       "finishedAt": "2026-11-27T02:20:39.471Z"
+    },
+    {
+      "id": "research-000278-881f64781f",
+      "role": "game-mechanic-researcher",
+      "topic": "Adobe Photoshop",
+      "day": "2026-11-27",
+      "runId": "45933318349",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T03:17:52.893Z",
+      "expiresAt": "2026-11-27T03:32:52.893Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
