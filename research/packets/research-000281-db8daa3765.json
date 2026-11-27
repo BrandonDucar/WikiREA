@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000281-db8daa3765",
+  "topic": "Business rules",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Business rules define or constrain aspects of a business to guide behavior and structure. They specify actions under certain conditions or resolve to true/false. Organizations gather these rules proactively through documentation or reactively during projects. Rules may be informal but must be clearly documented to avoid conflicts. They are categorized as term definitions, relational facts, constraints, or derivations. When managed well, rules support goal achievement, risk reduction, compliance, and customer loyalty. Software can encode rules as business logic, but rules and logic are distinct practices.",
+    "mechanisms": [
+      {
+        "title": "Rule Definition and Categorization",
+        "explanation": "Business rules are expressed to specify actions when conditions are true or to resolve to true/false. The source categorizes rules into four types: definitions of business terms, facts relating terms to each other, constraints (action assertions), and derivations. This classification helps organize how rules describe operations, definitions, and organizational constraints.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Rule Gathering and Documentation",
+        "explanation": "Organizations collect business rules either proactively by hiring consultants to document standards, or incidentally during project stages like new product launches. Methods include extracting rules from IT documentation, holding workshops with subject matter experts, or using software to analyze legacy code and user behavior. Incidental gathering risks creating inconsistent or conflicting rules across units.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The exact cost and effort required to maintain consistent rule lists over time",
+      "How frequently inconsistent rules are created during incidental gathering versus proactive documentation",
+      "The specific translation challenges when converting natural language rules for engine execution",
+      "Whether software automation of rules preserves the intrinsic business practice versus engineering practice distinction"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Business rule",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1358523678",
+    "revision": "1358523678",
+    "observedAt": "2026-11-27T07:17:18.572Z",
+    "sourceTimestamp": "2026-06-09T06:24:35Z",
+    "sha256": "dbbe01609aa89ed8d692401c7cd53ab1d89108646670220604ff786eafb48a2d",
+    "excerptSha256": "dbbe01609aa89ed8d692401c7cd53ab1d89108646670220604ff786eafb48a2d",
+    "inspectedCharacters": 9724,
+    "totalCharacters": 9724,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-7dadb5b9-d2b2-4c4e-8c8c-339fb886e2ee",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2394,
+    "outputTokens": 383
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "77985fe7ff79461392e0027e54d5f19d07ad367415316795c2aa45a9503f194b",
+  "artifactDigest": "ec58bd23311d7c95eae306ed217b7578df9ffcdb166a7bf0a407c56b12fc9859"
+}

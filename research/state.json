@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T07:17:16.336Z",
+  "updatedAt": "2026-11-27T07:17:21.001Z",
   "sequence": 281,
   "jobs": [
     {
@@ -12775,13 +12775,44 @@
       "topic": "Business rules",
       "day": "2026-11-27",
       "runId": "45957403970",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T07:17:16.336Z",
       "expiresAt": "2026-11-27T07:32:16.336Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Business rule",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1358523678",
+        "revision": "1358523678",
+        "observedAt": "2026-11-27T07:17:18.572Z",
+        "sourceTimestamp": "2026-06-09T06:24:35Z",
+        "sha256": "dbbe01609aa89ed8d692401c7cd53ab1d89108646670220604ff786eafb48a2d",
+        "excerptSha256": "dbbe01609aa89ed8d692401c7cd53ab1d89108646670220604ff786eafb48a2d",
+        "inspectedCharacters": 9724,
+        "totalCharacters": 9724,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-7dadb5b9-d2b2-4c4e-8c8c-339fb886e2ee",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2394,
+        "outputTokens": 383
+      },
+      "packet": "research/packets/research-000281-db8daa3765.json",
+      "packetDigest": "ec58bd23311d7c95eae306ed217b7578df9ffcdb166a7bf0a407c56b12fc9859",
+      "finishedAt": "2026-11-27T07:17:21.001Z"
     }
   ],
   "discovered": [
@@ -13914,11 +13945,6 @@
       "title": "ASIC",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000080-0033b77269"
-    },
-    {
-      "title": "Business rules",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000081-ee73a932d9"
     },
     {
       "title": "Check digit",
@@ -19549,6 +19575,46 @@
       "title": "AUSCANNZUKUS",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "Aid",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "Business",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "Business Process Execution Language",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "Business Process Modeling Notation",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "Business analysis",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "Business analyst",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "Business logic",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "Business process",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000281-db8daa3765"
     }
   ],
   "reviewJobs": [
