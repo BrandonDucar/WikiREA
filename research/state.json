@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T14:15:53.984Z",
-  "sequence": 287,
+  "updatedAt": "2026-11-27T15:15:21.337Z",
+  "sequence": 288,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13095,6 +13095,20 @@
       "packet": "research/packets/research-000287-541467df9c.json",
       "packetDigest": "f2f57a5ffe71622a8bee0ca175b27b2369662692823c3c64eed9a737aae20581",
       "finishedAt": "2026-11-27T14:15:53.984Z"
+    },
+    {
+      "id": "research-000288-448d4831db",
+      "role": "game-mechanic-researcher",
+      "topic": "Adventure Game Interpreter",
+      "day": "2026-11-27",
+      "runId": "46023228724",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T15:15:21.337Z",
+      "expiresAt": "2026-11-27T15:30:21.337Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
