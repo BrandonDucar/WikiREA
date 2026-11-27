@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T20:15:24.307Z",
-  "sequence": 292,
+  "updatedAt": "2026-11-27T21:13:20.519Z",
+  "sequence": 293,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13324,6 +13324,20 @@
       "packet": "research/packets/research-000292-22e25c0d28.json",
       "packetDigest": "e357972eeb37ea0877caf2e64dad36edc377986b24c3a117b16c2452ae42d1e5",
       "finishedAt": "2026-11-27T20:15:24.307Z"
+    },
+    {
+      "id": "research-000293-4da6c77eaa",
+      "role": "adversarial-reviewer",
+      "topic": "Addition",
+      "day": "2026-11-27",
+      "runId": "46068848981",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T21:13:20.519Z",
+      "expiresAt": "2026-11-27T21:28:20.519Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
