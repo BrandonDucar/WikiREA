@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000166-f8991dec00-review-8a640bd3d9",
+  "parentJobId": "research-000166-f8991dec00",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "f81860d406de80814a8fcec04783e89916e958b2c25c7dd1e0a5777f67dc9191",
+  "sourcePin": {
+    "id": "S1",
+    "title": ".3ds",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1361694051",
+    "revision": "1361694051",
+    "observedAt": "2026-11-21T13:13:28.406Z",
+    "sourceTimestamp": "2026-06-29T14:43:48Z",
+    "sha256": "ae66ba1965da3bb56bd7f40d32182ac8df7a8e08040a4c5a3c8ee18f7a5455c9",
+    "excerptSha256": "ae66ba1965da3bb56bd7f40d32182ac8df7a8e08040a4c5a3c8ee18f7a5455c9",
+    "inspectedCharacters": 7510,
+    "totalCharacters": 7510,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on chunk-based binary structure, hierarchical organization, and legacy constraints",
+      "Mechanism descriptions correctly capture chunk parsing logic and geometry/material encoding details from source",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "All factual claims traceable to provided source text"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-5256a044-5d8b-426f-9c0f-3483b9d09fe1",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3079,
+    "outputTokens": 82
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000166-f8991dec00",
+  "title": ".3ds",
+  "role": "application-tracer",
+  "createdAt": "2026-11-27T01:25:38.090Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "The .3ds format is a binary, chunk-based file structure originally used by Autodesk 3ds Max (formerly 3D Studio DOS). It organizes data in hierarchical blocks identified by 2-byte IDs and 4-byte little-endian lengths, allowing parsers to skip unrecognized sections. Core geometry is stored as triangular meshes with vertex lists, face descriptions, and smoothing groups to approximate vertex normals. Material blocks define ambient, diffuse, specular, texture, bump, and reflection properties via sub-chunks. Animation data resides in a keyframer chunk containing position, rotation, and scale tracks across a frame range, with object names and pivot points. Filename and name lengths are restricted by legacy DOS constraints.",
+  "mechanisms": [
+    {
+      "title": "Chunk-based hierarchical parsing",
+      "explanation": "Data is stored in blocks each with a 2-byte identifier and a 4-byte little-endian length field. This structure lets parsers identify chunk types and skip unrecognized ones, supporting format extensions. The hierarchy mirrors a DOM tree, with main chunks containing sub-chunks for objects, materials, and animation tracks.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Geometry and material encoding",
+      "explanation": "Triangular meshes store vertex lists, face descriptions, and smoothing groups since vertex normals are not supported. Material blocks contain sub-chunks for color components and map types (texture, bump, reflection), each with filename and parameter sub-chunks. Name lengths are limited to 10 characters for objects/lights/cameras and 16 for materials due to DOS legacy constraints.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "How smoothing groups are algorithmically converted to vertex normals by receiving software",
+    "Whether the format supports any compression beyond the raw chunk structure",
+    "The exact method for handling texture map wrapping and filtering across different receiving applications",
+    "If and how modern extensions to the chunk system have been standardized beyond the documented IDs"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": ".3ds",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1361694051",
+      "revision": "1361694051",
+      "observedAt": "2026-11-21T13:13:28.406Z",
+      "sourceTimestamp": "2026-06-29T14:43:48Z",
+      "sha256": "ae66ba1965da3bb56bd7f40d32182ac8df7a8e08040a4c5a3c8ee18f7a5455c9",
+      "excerptSha256": "ae66ba1965da3bb56bd7f40d32182ac8df7a8e08040a4c5a3c8ee18f7a5455c9",
+      "inspectedCharacters": 7510,
+      "totalCharacters": 7510,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on chunk-based binary structure, hierarchical organization, and legacy constraints",
+      "Mechanism descriptions correctly capture chunk parsing logic and geometry/material encoding details from source",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "All factual claims traceable to provided source text"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-a6a326c1-10c5-42a0-8782-2c8f89e407c4",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 2660,
+      "outputTokens": 441
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-5256a044-5d8b-426f-9c0f-3483b9d09fe1",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3079,
+      "outputTokens": 82
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "eb4327858f90f20e5e11249670f044ae7ae55e38196177fa2eafb527491979c3",
+    "artifactDigest": "f81860d406de80814a8fcec04783e89916e958b2c25c7dd1e0a5777f67dc9191",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000166-f8991dec00.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
