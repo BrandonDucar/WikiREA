@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T12:21:52.393Z",
-  "sequence": 285,
+  "updatedAt": "2026-11-27T13:15:28.349Z",
+  "sequence": 286,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13001,6 +13001,20 @@
       "packet": "research/packets/research-000285-60d6380434.json",
       "packetDigest": "abe22460134eaae8b5d237b10c2c3019731c6a3c1c21cf0ba3c6eddfd02df228",
       "finishedAt": "2026-11-27T12:21:52.393Z"
+    },
+    {
+      "id": "research-000286-d919fc3e30",
+      "role": "application-tracer",
+      "topic": "AMSD Ariadna",
+      "day": "2026-11-27",
+      "runId": "46005525062",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T13:15:28.349Z",
+      "expiresAt": "2026-11-27T13:30:28.349Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
