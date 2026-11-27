@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T19:11:49.502Z",
+  "updatedAt": "2026-11-27T19:11:55.653Z",
   "sequence": 291,
   "jobs": [
     {
@@ -13241,13 +13241,44 @@
       "topic": "Check digit",
       "day": "2026-11-27",
       "runId": "46054954803",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T19:11:49.502Z",
       "expiresAt": "2026-11-27T19:26:49.502Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Check digit",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1388263937",
+        "revision": "1388263937",
+        "observedAt": "2026-11-27T19:11:52.130Z",
+        "sourceTimestamp": "2026-11-27T09:37:35Z",
+        "sha256": "589e96fb6d80623def5a135d736b766d740e52bddcf540e090ca77f1427b3799",
+        "excerptSha256": "fb4cab16ec3e6186a8111e2393f83637956ae97c1107664e2c2e0575f7c07146",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 20134,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-b1b43828-49a3-49db-923b-5db7103f9b6c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4361,
+        "outputTokens": 456
+      },
+      "packet": "research/packets/research-000291-d0e52b43ad.json",
+      "packetDigest": "7e3b89a8b3e50fb2e35cc6176dbb87f75d66a60b5eb8665e02eb78b6d96e0170",
+      "finishedAt": "2026-11-27T19:11:55.653Z"
     }
   ],
   "discovered": [
@@ -14345,11 +14376,6 @@
       "title": "ASIC",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000080-0033b77269"
-    },
-    {
-      "title": "Check digit",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000081-ee73a932d9"
     },
     {
       "title": "Chief data officer",
@@ -20260,6 +20286,46 @@
       "title": "Aerospace",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "AADHAAR",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "ABA routing transit number",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "ARK identifier",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "Bank code",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "Belgium",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "British Cattle Movement Service",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "CAS registry number",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "CUSIP",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000291-d0e52b43ad"
     }
   ],
   "reviewJobs": [

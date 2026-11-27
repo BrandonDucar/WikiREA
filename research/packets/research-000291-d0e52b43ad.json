@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000291-d0e52b43ad",
+  "topic": "Check digit",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A check digit is a redundancy check appended to identification numbers to detect manual input errors. It is computed from the other digits via a modular arithmetic algorithm. Simple systems use a sum modulo 10; weighted systems with coprime weights (e.g., 1,3,7,9) catch most single-digit and transposition errors. More complex algorithms like Luhn, Verhoeff, and Damm improve coverage but may still miss certain error patterns. Systems using modulo 11 can detect all single-digit and transposition errors but may produce a check digit of 10, represented as X.",
+    "mechanisms": [
+      {
+        "title": "Weighted sum modulo 10",
+        "explanation": "Digits are multiplied by position-specific weights (often 1, 3, 7, 9). The weighted sum is taken modulo 10; if the remainder is non-zero, it is subtracted from 10 to derive the check digit. This design catches all single-digit errors and approximately 90% of transposition errors because the weights are coprime with 10 and differ between adjacent positions.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Modulo 11 with distinct weights",
+        "explanation": "Positions are weighted 1 through 10. The weighted sum modulo 11 detects all single-digit substitution and transposition errors (including jump transpositions). The check digit may equal 10, represented as the letter X. This system offers stronger coverage than modulo 10 but at the cost of a possible X check digit.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Why some transposition errors (digit pairs differing by 5) are not caught in weighted modulo 10 systems",
+      "How multi-digit error patterns beyond twin errors are captured or missed in practice",
+      "The specific internal logic of the Verhoeff and Damm algorithms beyond their documented error coverage",
+      "Why modulo 11 systems sometimes produce a check digit of 10 and how that is handled in real-world numbering schemes"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Check digit",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1388263937",
+    "revision": "1388263937",
+    "observedAt": "2026-11-27T19:11:52.130Z",
+    "sourceTimestamp": "2026-11-27T09:37:35Z",
+    "sha256": "589e96fb6d80623def5a135d736b766d740e52bddcf540e090ca77f1427b3799",
+    "excerptSha256": "fb4cab16ec3e6186a8111e2393f83637956ae97c1107664e2c2e0575f7c07146",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 20134,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-b1b43828-49a3-49db-923b-5db7103f9b6c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4361,
+    "outputTokens": 456
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "8f30042aad374c70b66addd7690983725911e679b3f381cf016e2e8dfe14fa55",
+  "artifactDigest": "7e3b89a8b3e50fb2e35cc6176dbb87f75d66a60b5eb8665e02eb78b6d96e0170"
+}
