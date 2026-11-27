@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T07:26:55.810Z",
-  "sequence": 281,
+  "updatedAt": "2026-11-27T08:19:59.383Z",
+  "sequence": 282,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12817,6 +12817,20 @@
       "packet": "research/packets/research-000281-db8daa3765.json",
       "packetDigest": "ec58bd23311d7c95eae306ed217b7578df9ffcdb166a7bf0a407c56b12fc9859",
       "finishedAt": "2026-11-27T07:17:21.001Z"
+    },
+    {
+      "id": "research-000282-45ff2f0af3",
+      "role": "music-events",
+      "topic": "Computer music",
+      "day": "2026-11-27",
+      "runId": "45964824515",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T08:19:59.383Z",
+      "expiresAt": "2026-11-27T08:34:59.383Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
