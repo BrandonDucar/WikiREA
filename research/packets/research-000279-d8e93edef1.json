@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000279-d8e93edef1",
+  "topic": "Authentication",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Authentication is the act of proving an assertion, such as a user's identity, by verifying claimed attributes against known references. It differs from mere identification by requiring verification rather than just indication. In computer science, this typically involves validating credentials to grant access to confidential systems. Beyond digital contexts, authentication methods include credible witness testimony, physical attribute comparison, and documentary evidence, each carrying varying vulnerability to forgery or error.",
+    "mechanisms": [
+      {
+        "title": "Attribute comparison",
+        "explanation": "Verifying identity by comparing object attributes—such as style, materials, or construction—to known references. In digital contexts, this involves validating credentials against stored records. The source notes this method relies on the difficulty of creating indistinguishable forgeries and may be vulnerable to sophisticated mimicry.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Documentary evidence",
+        "explanation": "Authenticating through external records such as certificates, chain-of-custody logs, or trademark markings. The source describes how these records can be forged or separated from the artifact, and how secure key storage devices combined with digital connections offer more robust verification for consumer electronics and supply chain management.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How digital credential validation technically prevents replay or tampering attacks",
+      "The specific error rates of attribute comparison methods against sophisticated forgeries",
+      "Whether certificate forgery rates differ significantly across artifact types or regions",
+      "The practical effectiveness of secure coprocessors when mechanically attached to non-electronic components"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Authentication",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387106984",
+    "revision": "1387106984",
+    "observedAt": "2026-11-27T04:17:57.772Z",
+    "sourceTimestamp": "2026-11-22T15:48:16Z",
+    "sha256": "e4d7f95b4a6038c108eb5dbec88189f2bef7493962d1c96f413ecfb3cff09856",
+    "excerptSha256": "ef223f366744b64b44410aa2a62d70e4aa2d699e1ffad80d073eeccf606b1bb1",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 36207,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f5f66c4a-f618-4fc4-8422-731a4d55c68f",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3928,
+    "outputTokens": 339
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ef394b2eb2ad2f546ad79427084478bd5e3a99521f09cd93fb1de6b0bb6506a4",
+  "artifactDigest": "8b221d0e1a52c75080c34c9ae67d3ef44c23190c95867399db8a3ea1b281c823"
+}

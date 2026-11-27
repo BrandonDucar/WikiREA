@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T04:17:56.039Z",
+  "updatedAt": "2026-11-27T04:17:59.895Z",
   "sequence": 279,
   "jobs": [
     {
@@ -12681,13 +12681,44 @@
       "topic": "Authentication",
       "day": "2026-11-27",
       "runId": "45939099421",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T04:17:56.039Z",
       "expiresAt": "2026-11-27T04:32:56.039Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Authentication",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387106984",
+        "revision": "1387106984",
+        "observedAt": "2026-11-27T04:17:57.772Z",
+        "sourceTimestamp": "2026-11-22T15:48:16Z",
+        "sha256": "e4d7f95b4a6038c108eb5dbec88189f2bef7493962d1c96f413ecfb3cff09856",
+        "excerptSha256": "ef223f366744b64b44410aa2a62d70e4aa2d699e1ffad80d073eeccf606b1bb1",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 36207,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-f5f66c4a-f618-4fc4-8422-731a4d55c68f",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3928,
+        "outputTokens": 339
+      },
+      "packet": "research/packets/research-000279-d8e93edef1.json",
+      "packetDigest": "8b221d0e1a52c75080c34c9ae67d3ef44c23190c95867399db8a3ea1b281c823",
+      "finishedAt": "2026-11-27T04:17:59.895Z"
     }
   ],
   "discovered": [
@@ -12695,11 +12726,6 @@
       "title": "Adventure Game Interpreter",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000029-4aa4540b02"
-    },
-    {
-      "title": "Authentication",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000030-5a4bfec956"
     },
     {
       "title": "BIOS",
@@ -19385,6 +19411,46 @@
       "title": "Adobe AIR",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000278-881f64781f"
+    },
+    {
+      "title": "ACF2",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "Adware",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "Anthropology",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "Antique",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "Application security",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "Arbitrary code execution",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "Archaeologist",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "Art",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000279-d8e93edef1"
     }
   ],
   "reviewJobs": [
