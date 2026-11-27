@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000282-45ff2f0af3",
+  "topic": "Computer music",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Computer music applies computing technology to musical composition, enabling humans to create new works or allowing computers to generate music independently. The field traces its roots to early 20th-century electronic instruments. Early digital computers like the CSIRAC in Australia could play musical melodies as early as 1950, though these were often speculative or unreconstructed. Later, Max Mathews at Bell Labs developed the MUSIC-N program family, popularizing computer music and enabling digital sound synthesis. Algorithmic composition programs, such as the Illiac Suite, moved beyond simple playback to structural experimentation. FM synthesis research by John Chowning led to affordable digital synthesizers like the Yamaha DX7. Throughout, computer music has involved trade-offs between computational cost and sonic detail, often running off-line for extended periods to generate short passages of music.",
+    "mechanisms": [
+      {
+        "title": "Algorithmic composition and digital synthesis",
+        "explanation": "Computer music employs algorithmic composition programs and digital sound synthesis techniques, such as FM synthesis, to generate musical notes and timbres. Early systems like CSIRAC played pre-programmed melodies, while later frameworks like MUSIC-N enabled composers to define pitch, rhythm, and timbre through code, allowing for structured experimentation beyond simple playback.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Real-time vs. off-line rendering",
+        "explanation": "Computer music systems typically operate either in real-time, where sound is generated synchronously with performance, or off-line, where compositions are computed in advance—sometimes for hours or days—to produce a few minutes of audio. Early experiments achieved real-time playback, but most sophisticated programs ran offline on large mainframes due to computational costs.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How early computer music systems handled polyphonic texture and complex harmonic relationships in real time",
+      "The extent to which algorithmic composition programs influenced actual compositional practice versus serving as playback tools",
+      "The specific computational costs detailed in score interpretation versus raw synthesis for maintaining sonic fluidity",
+      "Whether later computer music practices directly descended from the earliest CSIRAC experiments or developed independently"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Computer music",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386373414",
+    "revision": "1386373414",
+    "observedAt": "2026-11-27T08:20:01.554Z",
+    "sourceTimestamp": "2026-11-18T05:03:13Z",
+    "sha256": "86b2a84e8888feb2fa82b0f7f4c08637c5c90d206a73253bcb61240accd3128f",
+    "excerptSha256": "f0383fdfe2b5c57042ef85352c3261e10e3385cb04d72b799c05cb141e108517",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 39372,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-8d249c25-894c-400d-899b-1c608a455ceb",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4378,
+    "outputTokens": 469
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ae79cabd451f0b5b2502397d9530fed5f7320f8e44937a2816702509c1ced054",
+  "artifactDigest": "7a1a9298b71f1759ba9fadd62932c12c92bee375919940ac70ea0da3d201d8c1"
+}

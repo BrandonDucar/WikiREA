@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T08:19:59.383Z",
+  "updatedAt": "2026-11-27T08:20:04.923Z",
   "sequence": 282,
   "jobs": [
     {
@@ -12824,13 +12824,44 @@
       "topic": "Computer music",
       "day": "2026-11-27",
       "runId": "45964824515",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T08:19:59.383Z",
       "expiresAt": "2026-11-27T08:34:59.383Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Computer music",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386373414",
+        "revision": "1386373414",
+        "observedAt": "2026-11-27T08:20:01.554Z",
+        "sourceTimestamp": "2026-11-18T05:03:13Z",
+        "sha256": "86b2a84e8888feb2fa82b0f7f4c08637c5c90d206a73253bcb61240accd3128f",
+        "excerptSha256": "f0383fdfe2b5c57042ef85352c3261e10e3385cb04d72b799c05cb141e108517",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 39372,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-8d249c25-894c-400d-899b-1c608a455ceb",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4378,
+        "outputTokens": 469
+      },
+      "packet": "research/packets/research-000282-45ff2f0af3.json",
+      "packetDigest": "7a1a9298b71f1759ba9fadd62932c12c92bee375919940ac70ea0da3d201d8c1",
+      "finishedAt": "2026-11-27T08:20:04.923Z"
     }
   ],
   "discovered": [
@@ -12883,11 +12914,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Computer music",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "Deep learning",
@@ -19633,6 +19659,36 @@
       "title": "Business process",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000281-db8daa3765"
+    },
+    {
+      "title": "2-step garage",
+      "role": "music-events",
+      "discoveredFrom": "research-000282-45ff2f0af3"
+    },
+    {
+      "title": "AI-generated music",
+      "role": "music-events",
+      "discoveredFrom": "research-000282-45ff2f0af3"
+    },
+    {
+      "title": "ASCII art",
+      "role": "music-events",
+      "discoveredFrom": "research-000282-45ff2f0af3"
+    },
+    {
+      "title": "Acid house",
+      "role": "music-events",
+      "discoveredFrom": "research-000282-45ff2f0af3"
+    },
+    {
+      "title": "Acid house party",
+      "role": "music-events",
+      "discoveredFrom": "research-000282-45ff2f0af3"
+    },
+    {
+      "title": "Acid techno",
+      "role": "music-events",
+      "discoveredFrom": "research-000282-45ff2f0af3"
     }
   ],
   "reviewJobs": [
