@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T00:35:38.139Z",
+  "updatedAt": "2026-11-27T00:35:46.737Z",
   "sequence": 275,
   "jobs": [
     {
@@ -12493,13 +12493,44 @@
       "topic": "Bitcoin",
       "day": "2026-11-27",
       "runId": "45917614875",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T00:35:38.139Z",
       "expiresAt": "2026-11-27T00:50:38.139Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Bitcoin",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387998997",
+        "revision": "1387998997",
+        "observedAt": "2026-11-27T00:35:40.022Z",
+        "sourceTimestamp": "2026-11-26T07:55:19Z",
+        "sha256": "359059f91de30cac728b47978bd326d34e9062c44a097285a07a42addac2367b",
+        "excerptSha256": "d2098062d54b2597ab8e4360ad1be4289aee8676d765500496bd1b00050fe3cf",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 114161,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-121388fd-027f-4d06-b9a4-bf4f46f2096c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 5079,
+        "outputTokens": 324
+      },
+      "packet": "research/packets/research-000275-4541888c4d.json",
+      "packetDigest": "12e0a897596d5eeaca28a5c2be289aa55978260f12634f385e871923f5685ec4",
+      "finishedAt": "2026-11-27T00:35:46.737Z"
     }
   ],
   "discovered": [
@@ -13352,11 +13383,6 @@
       "title": "Data type",
       "role": "music-events",
       "discoveredFrom": "research-000062-4539c21763"
-    },
-    {
-      "title": "Bitcoin",
-      "role": "source-curator",
-      "discoveredFrom": "research-000065-e0e23685a6"
     },
     {
       "title": "Bootstrappable builds",
@@ -15740,11 +15766,6 @@
     },
     {
       "title": "Big O notation",
-      "role": "glossary-and-mechanics-editor",
-      "discoveredFrom": "research-000154-b2939d3f81"
-    },
-    {
-      "title": "Bitcoin",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000154-b2939d3f81"
     },
@@ -19112,6 +19133,46 @@
       "title": "Architectural pattern (computer science)",
       "role": "glossary-and-mechanics-editor",
       "discoveredFrom": "research-000274-ce11a8ff50"
+    },
+    {
+      "title": "$CAR",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
+    },
+    {
+      "title": "$CHILLGUY",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
+    },
+    {
+      "title": "$Libra",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
+    },
+    {
+      "title": "$Libra cryptocurrency scandal",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
+    },
+    {
+      "title": "$Melania",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
+    },
+    {
+      "title": "$Trump",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
+    },
+    {
+      "title": "2009 United Kingdom bank rescue package",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
+    },
+    {
+      "title": "2018 Bitcoin bomb threats",
+      "role": "source-curator",
+      "discoveredFrom": "research-000275-4541888c4d"
     }
   ],
   "reviewJobs": [

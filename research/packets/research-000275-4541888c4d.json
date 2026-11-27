@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000275-4541888c4d",
+  "topic": "Bitcoin",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Bitcoin is a decentralized digital cryptocurrency introduced in 2009. It operates via a peer-to-peer network of computers (nodes) that each maintain an independent copy of a public distributed ledger called a blockchain. Transactions are validated using cryptography to prevent double-spending, and consensus on the ledger is achieved through a computationally intensive proof-of-work process known as mining, performed by specialized hardware. New bitcoins are issued according to a decentralized schedule, with block rewards halving approximately every four years, capped at 21 million units.",
+    "mechanisms": [
+      {
+        "title": "Transaction validation and double-spending prevention",
+        "explanation": "Each node independently verifies transactions using cryptographic techniques. This ensures that a bitcoin cannot be spent twice, provided the owner keeps sensitive data secret.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Consensus via proof-of-work mining",
+        "explanation": "Nodes reach agreement on blockchain content through a computationally intensive process called mining. Miners solve partial hash inversions using purpose-built hardware, securing the network and earning block rewards.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "The identity of the pseudonymous creator Satoshi Nakamoto",
+      "The long-term security implications of quantum computing on SHA-256 hashing",
+      "Precise environmental impact metrics beyond general criticism",
+      "Detailed technical specifications of Bitcoin Core implementation"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Bitcoin",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387998997",
+    "revision": "1387998997",
+    "observedAt": "2026-11-27T00:35:40.022Z",
+    "sourceTimestamp": "2026-11-26T07:55:19Z",
+    "sha256": "359059f91de30cac728b47978bd326d34e9062c44a097285a07a42addac2367b",
+    "excerptSha256": "d2098062d54b2597ab8e4360ad1be4289aee8676d765500496bd1b00050fe3cf",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 114161,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-121388fd-027f-4d06-b9a4-bf4f46f2096c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 5079,
+    "outputTokens": 324
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "0b236c126fb724d310d018bedf39157d01932daaff6884ea404f5285ddbb8455",
+  "artifactDigest": "12e0a897596d5eeaca28a5c2be289aa55978260f12634f385e871923f5685ec4"
+}
