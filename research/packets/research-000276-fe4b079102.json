@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000276-fe4b079102",
+  "topic": "ALynx",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Lynx is a text-based, cross-platform web browser first released in 1992 by the University of Kansas. It renders web pages as plain text with numbered or cursor-highlighted links, supports core protocols (HTTP, HTTPS, FTP, Gopher, NNTP, WAIS), and can launch external handlers for non-text content. It does not natively support JavaScript or graphical elements like images and video, but offers privacy advantages by blocking web bugs. Lynx is highly configurable via command-line options, configuration files, and runtime menus, and remains in active maintenance. It is commonly used for accessibility, remote access, web crawling, and testing website performance over low-bandwidth or text-only environments.",
+    "mechanisms": [
+      {
+        "title": "Text-only rendering and link navigation",
+        "explanation": "Lynx renders web pages as plain text, presenting links as highlighted items or numbered options that users select via cursor keys or number entry. This text-only approach avoids the need to render images or video natively.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Protocol handling via libwww fork",
+        "explanation": "Lynx implements network protocol support using a fork of the libwww library, initially forked in 1996. This forked codebase handles Gopher, HTTP, HTTPS, FTP, NNTP, and WAIS, with HTTPS support added later as patches addressing encryption concerns.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mechanism for runtime configuration persistence across sessions",
+      "Details of how external program launching handles non-text content types",
+      "Whether current HTTPS implementation fully resolves prior encryption concerns",
+      "Specifics of how Lynx's text substitutions map to modern HTML attributes in complex page layouts"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Lynx (web browser)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384561350",
+    "revision": "1384561350",
+    "observedAt": "2026-11-27T01:15:55.921Z",
+    "sourceTimestamp": "2026-11-08T21:42:18Z",
+    "sha256": "99c664b4f6384389ff7f381a6e2f6c987bdf4847f7539b8ef7e3f6d253a3f11b",
+    "excerptSha256": "68010e1349bccd2d3c386b97226ef89929a79af67800e2956a6cb9294dba533d",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 27868,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-e4091aed-7fd2-4903-a272-076d28854af8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4670,
+    "outputTokens": 392
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "fa0a72f35462d515ff494684f52201b7d621f2b9c73631cd79774de1e35e92b1",
+  "artifactDigest": "c8d6bc28e045585741a18b8663a73f219459689c4bd83c9953b7f1b750f2613d"
+}
