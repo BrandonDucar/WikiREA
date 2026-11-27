@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000285-60d6380434",
+  "topic": "Bootstrappable builds",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Bootstrappable builds is a process of compiling software without depending on compiler binaries not built from source through this process. It protects against compiler backdoors by minimizing reliance on opaque, precompiled tools. The required build tools are constructed from source through successive stages beginning with a small, auditable bootstrap seed. Methods include reducing the size of binaries used to bootstrap a distribution and identifying older compiler versions that can build newer ones. Techniques can reduce the initial binary to a single 357-byte seed, from which stages build a C compiler and subsequently other compilers or software. The project originated in 2016 as a spin-off of the Reproducible Builds project. In 2022, GNU Guix gained the ability to be built from the 357-byte binary.",
+    "mechanisms": [
+      {
+        "title": "Successive source-based stage building",
+        "explanation": "Build tools are constructed from source through successive stages, beginning with a small and auditable bootstrap seed. This process reduces dependence on opaque, precompiled tools by chaining compilations from an older version to a newer version.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Reducing initial binary size",
+        "explanation": "The size of binaries used to bootstrap a distribution can be reduced until a minimal seed, such as a single 357-byte binary, is achieved. From this seed, multiple stages can build a C compiler and subsequently other compilers or software.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How the specific 357-byte bootstrap seed is technically constructed and verified",
+      "The full extent of compilation time and resource requirements for multi-stage bootstrapping",
+      "Whether all software distributions can achieve bootstrappable builds using the described methods",
+      "The practical feasibility of maintaining older compiler versions and backporting architecture support for modern systems"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Bootstrappable builds",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1363909272",
+    "revision": "1363909272",
+    "observedAt": "2026-11-27T12:21:48.652Z",
+    "sourceTimestamp": "2026-07-13T06:44:35Z",
+    "sha256": "9a9376457504874e398ab582c928fa7cc0ae57564f66126cd27c11f4cec3e7fa",
+    "excerptSha256": "9a9376457504874e398ab582c928fa7cc0ae57564f66126cd27c11f4cec3e7fa",
+    "inspectedCharacters": 4887,
+    "totalCharacters": 4887,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-385602da-9aa1-41ad-bbca-0f16daeac4a9",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1463,
+    "outputTokens": 419
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "6f965903243e2f04fdaad8428a2607993e36b36f2909d13b96e2ece8af12c1da",
+  "artifactDigest": "abe22460134eaae8b5d237b10c2c3019731c6a3c1c21cf0ba3c6eddfd02df228"
+}
