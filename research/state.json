@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T06:25:02.569Z",
-  "sequence": 280,
+  "updatedAt": "2026-11-27T07:17:16.336Z",
+  "sequence": 281,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12768,6 +12768,20 @@
       "packet": "research/packets/research-000280-31fa6985f1.json",
       "packetDigest": "8729f69188b74ca8fdf82aa3736da6b68f939dcb9e5cafbf0a7a677f3da8e42a",
       "finishedAt": "2026-11-27T06:25:02.569Z"
+    },
+    {
+      "id": "research-000281-db8daa3765",
+      "role": "market-data-researcher",
+      "topic": "Business rules",
+      "day": "2026-11-27",
+      "runId": "45957403970",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T07:17:16.336Z",
+      "expiresAt": "2026-11-27T07:32:16.336Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
