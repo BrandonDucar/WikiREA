@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-26T22:14:30.205Z",
-  "sequence": 274,
+  "updatedAt": "2026-11-27T00:35:38.139Z",
+  "sequence": 275,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12486,6 +12486,20 @@
       "packet": "research/packets/research-000274-ce11a8ff50.json",
       "packetDigest": "8c0279297f1536bf9578a125ebf7f2fdcd665d8898e8618d248df044dd9e4d50",
       "finishedAt": "2026-11-26T22:14:30.205Z"
+    },
+    {
+      "id": "research-000275-4541888c4d",
+      "role": "source-curator",
+      "topic": "Bitcoin",
+      "day": "2026-11-27",
+      "runId": "45917614875",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T00:35:38.139Z",
+      "expiresAt": "2026-11-27T00:50:38.139Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
