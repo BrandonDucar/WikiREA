@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000288-448d4831db",
+  "topic": "Adventure Game Interpreter",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The Adventure Game Interpreter (AGI) is a game engine developed by Sierra On-Line to simplify development of animated, color adventure games. Programmers created a bespoke high-level language (Game Adaptation Language) that compiled into bytecode executed by the interpreter. AGI used vector graphics and off-screen data buffers to conserve disk space and prevent hidden object rendering. It was principally developed for 16-bit home computer architectures and ported to several 8-bit models. After five years and 14 titles, Sierra replaced AGI with the more sophisticated Sierra Creative Interpreter (SCI).",
+    "mechanisms": [
+      {
+        "title": "Game Adaptation Language compilation",
+        "explanation": "Programmers created a bespoke high-level language resembling C. A compiler translated this language into bytecode, which was executed by the Adventure Game Interpreter to run games.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Off-screen data buffer and bit-block transfer",
+        "explanation": "Beginning with AGI version 2, graphics were drawn in an off-screen data buffer and then bit-blitted into video memory. This conserved system resources and prevented the game from revealing hidden objects during rendering.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact technical specifications of the Game Adaptation Language syntax and compiler",
+      "Detailed internal architecture of the bytecode interpreter",
+      "Specific reasons for AGI's discontinuation beyond replacement by SCI",
+      "Complete list of proprietary features unique to AGI versus SCI"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Adventure Game Interpreter",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1373073835",
+    "revision": "1373073835",
+    "observedAt": "2026-11-27T15:15:26.127Z",
+    "sourceTimestamp": "2026-09-03T22:36:31Z",
+    "sha256": "854484767eec7f7d0af5eb2696b1b151a8317745fc221fe413549b46dafb6c43",
+    "excerptSha256": "f4f87d017d6096d6e8e54d7f052038512d7b80d5f5edfcb78e88c816819aec60",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 14709,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-6744da00-8dd8-4f4d-8910-45a67577d2d8",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4639,
+    "outputTokens": 342
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "64d5bf8df3fbcaa1dfa1d3410e6db65c30738f84cdd4b39b322d6844133cf18e",
+  "artifactDigest": "b12edcd8a6e842bcdf22f0216268c536d17741cb6e4f14d9ef3d198ec55ea766"
+}

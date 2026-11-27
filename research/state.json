@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T15:15:21.337Z",
+  "updatedAt": "2026-11-27T15:15:28.804Z",
   "sequence": 288,
   "jobs": [
     {
@@ -13102,21 +13102,47 @@
       "topic": "Adventure Game Interpreter",
       "day": "2026-11-27",
       "runId": "46023228724",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T15:15:21.337Z",
       "expiresAt": "2026-11-27T15:30:21.337Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Adventure Game Interpreter",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1373073835",
+        "revision": "1373073835",
+        "observedAt": "2026-11-27T15:15:26.127Z",
+        "sourceTimestamp": "2026-09-03T22:36:31Z",
+        "sha256": "854484767eec7f7d0af5eb2696b1b151a8317745fc221fe413549b46dafb6c43",
+        "excerptSha256": "f4f87d017d6096d6e8e54d7f052038512d7b80d5f5edfcb78e88c816819aec60",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 14709,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-6744da00-8dd8-4f4d-8910-45a67577d2d8",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4639,
+        "outputTokens": 342
+      },
+      "packet": "research/packets/research-000288-448d4831db.json",
+      "packetDigest": "b12edcd8a6e842bcdf22f0216268c536d17741cb6e4f14d9ef3d198ec55ea766",
+      "finishedAt": "2026-11-27T15:15:28.804Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Adventure Game Interpreter",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000029-4aa4540b02"
-    },
     {
       "title": "BIOS",
       "role": "simulation-researcher",
@@ -20021,6 +20047,41 @@
       "title": "C10k problem",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000287-541467df9c"
+    },
+    {
+      "title": "16-bit",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000288-448d4831db"
+    },
+    {
+      "title": "8-bit",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000288-448d4831db"
+    },
+    {
+      "title": "8-bit color",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000288-448d4831db"
+    },
+    {
+      "title": "Adventure Game Studio",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000288-448d4831db"
+    },
+    {
+      "title": "Amazon Lumberyard",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000288-448d4831db"
+    },
+    {
+      "title": "AmigaOS",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000288-448d4831db"
+    },
+    {
+      "title": "Apple II",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000288-448d4831db"
     }
   ],
   "reviewJobs": [
