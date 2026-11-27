@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000280-31fa6985f1",
+  "topic": "Age of Enlightenment",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The Age of Enlightenment was an 18th-century European intellectual and cultural movement emphasizing reason, empirical evidence, and the scientific method. It promoted ideals of individual liberty, religious tolerance, progress, and natural rights, advocating constitutional government and separation of church and state. Emerging from the Scientific Revolution, it spread through salons, scientific academies, coffeehouses, and print culture, undermining monarchical and religious authority and influencing later political revolutions and 19th-century intellectual currents such as liberalism and socialism.",
+    "mechanisms": [
+      {
+        "title": "Institutional circulation of ideas",
+        "explanation": "New institutions such as scientific academies, literary salons, coffeehouses, and Masonic lodges facilitated the widespread dissemination of Enlightenment thought. An expanding print culture of books, journals, and pamphlets further amplified reach across Europe and its colonies.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Philosophical foundations and methodological shift",
+        "explanation": "Thinkers built upon the Scientific Revolution, adopting reason, empirical inquiry, and the scientific method as central tools. Core doctrines included individual liberty, representative government, the rule of law, and religious freedom, contrasted against absolute monarchy and religious persecution.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact mechanisms by which print culture translated into sustained political reform",
+      "Details of how Enlightenment ideas interacted with non-European societies and colonial contexts",
+      "Specific pathways linking Enlightenment thought to the First Industrial Revolution",
+      "Internal organizational structures of salons and coffeehouses that determined ideological influence"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Age of Enlightenment",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384839351",
+    "revision": "1384839351",
+    "observedAt": "2026-11-27T06:25:00.419Z",
+    "sourceTimestamp": "2026-11-10T08:13:56Z",
+    "sha256": "b3cb3b9dd7522ca3c1d9ffc3f3044fe88ec84420e5fd7420dd15abca53a213e3",
+    "excerptSha256": "8600ea6d87a2f0ae6cf5c8d94ce0bf5b4b5247fba0b7d86087aa8235c4187d78",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 211574,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-42d82f04-928f-4975-8ca1-eced99c30590",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4277,
+    "outputTokens": 348
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "714760cb6fd09b6f91796b2c30feef38fb3f33167fbc84f39bb7d16805e3b595",
+  "artifactDigest": "8729f69188b74ca8fdf82aa3736da6b68f939dcb9e5cafbf0a7a677f3da8e42a"
+}

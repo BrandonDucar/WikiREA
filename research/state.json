@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T06:24:58.520Z",
+  "updatedAt": "2026-11-27T06:25:02.569Z",
   "sequence": 280,
   "jobs": [
     {
@@ -12730,13 +12730,44 @@
       "topic": "Age of Enlightenment",
       "day": "2026-11-27",
       "runId": "45951696767",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T06:24:58.520Z",
       "expiresAt": "2026-11-27T06:39:58.520Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Age of Enlightenment",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1384839351",
+        "revision": "1384839351",
+        "observedAt": "2026-11-27T06:25:00.419Z",
+        "sourceTimestamp": "2026-11-10T08:13:56Z",
+        "sha256": "b3cb3b9dd7522ca3c1d9ffc3f3044fe88ec84420e5fd7420dd15abca53a213e3",
+        "excerptSha256": "8600ea6d87a2f0ae6cf5c8d94ce0bf5b4b5247fba0b7d86087aa8235c4187d78",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 211574,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-42d82f04-928f-4975-8ca1-eced99c30590",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4277,
+        "outputTokens": 348
+      },
+      "packet": "research/packets/research-000280-31fa6985f1.json",
+      "packetDigest": "8729f69188b74ca8fdf82aa3736da6b68f939dcb9e5cafbf0a7a677f3da8e42a",
+      "finishedAt": "2026-11-27T06:25:02.569Z"
     }
   ],
   "discovered": [
@@ -12764,11 +12795,6 @@
       "title": "Black start",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000030-5a4bfec956"
-    },
-    {
-      "title": "Age of Enlightenment",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000031-03dd95243d"
     },
     {
       "title": "Aircraft",
@@ -19469,6 +19495,46 @@
       "title": "Art",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000279-d8e93edef1"
+    },
+    {
+      "title": "1755 Lisbon earthquake",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "2022 Russian invasion of Ukraine",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "20th-century Western painting",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "ABCANZ Armies",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "ANZUK",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "ANZUS",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "AUKUS",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
+    },
+    {
+      "title": "AUSCANNZUKUS",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000280-31fa6985f1"
     }
   ],
   "reviewJobs": [
