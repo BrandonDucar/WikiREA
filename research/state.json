@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T14:15:48.262Z",
+  "updatedAt": "2026-11-27T14:15:53.984Z",
   "sequence": 287,
   "jobs": [
     {
@@ -13057,13 +13057,44 @@
       "topic": "Asynchronous I/O",
       "day": "2026-11-27",
       "runId": "46014308045",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T14:15:48.262Z",
       "expiresAt": "2026-11-27T14:30:48.262Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Asynchronous I/O",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386866695",
+        "revision": "1386866695",
+        "observedAt": "2026-11-27T14:15:50.744Z",
+        "sourceTimestamp": "2026-11-21T02:58:53Z",
+        "sha256": "bcc5154302266dc3c9cdc1a881f40dc8e385147059ee5bc0f9afd3d8519a88f4",
+        "excerptSha256": "87d803b64320ee1c42c995ccbd19478e18c77297f0f17a4c4d41403d7a54de1b",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 25590,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-58629579-d568-4e52-b7f3-5eeb21f10344",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3292,
+        "outputTokens": 410
+      },
+      "packet": "research/packets/research-000287-541467df9c.json",
+      "packetDigest": "f2f57a5ffe71622a8bee0ca175b27b2369662692823c3c64eed9a737aae20581",
+      "finishedAt": "2026-11-27T14:15:53.984Z"
     }
   ],
   "discovered": [
@@ -14326,11 +14357,6 @@
       "title": "Crowdfunding",
       "role": "application-tracer",
       "discoveredFrom": "research-000086-074bf12801"
-    },
-    {
-      "title": "Asynchronous I/O",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000087-564644db83"
     },
     {
       "title": "Berkeley sockets",
@@ -19946,6 +19972,41 @@
       "title": "AirMosaic",
       "role": "application-tracer",
       "discoveredFrom": "research-000286-d919fc3e30"
+    },
+    {
+      "title": "Actor model",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000287-541467df9c"
+    },
+    {
+      "title": "Alan L. Cox",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000287-541467df9c"
+    },
+    {
+      "title": "AmigaOS",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000287-541467df9c"
+    },
+    {
+      "title": "Anupam Chanda",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000287-541467df9c"
+    },
+    {
+      "title": "Async/await",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000287-541467df9c"
+    },
+    {
+      "title": "BSD",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000287-541467df9c"
+    },
+    {
+      "title": "C10k problem",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000287-541467df9c"
     }
   ],
   "reviewJobs": [

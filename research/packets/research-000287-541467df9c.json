@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000287-541467df9c",
+  "topic": "Asynchronous I/O",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Asynchronous I/O allows a program to initiate an input/output operation and proceed with other tasks before the operation finishes, unlike synchronous I/O which blocks execution. It improves efficiency by preventing processor idle time during slow device operations, though it may increase latency. The system or API notifies the program upon completion, distinct from non-blocking I/O that requires polling. Forms include process-based distribution, polling, select loops, signals, callbacks, threads, and completion queues/ports, each trading complexity, overhead, or scalability for concurrent handling. Many operating systems provide multiple mechanisms, and careful programming with synchronization primitives is needed to manage resource conflicts.",
+    "mechanisms": [
+      {
+        "title": "Polling and Select Loops",
+        "explanation": "The program repeatedly checks device status or uses system calls like select()/poll() to detect readiness without blocking. This provides a non-blocking synchronous API that may implement asynchronous behavior, but can waste CPU cycles polling when idle and struggles to parallelize I/O across many sources, hindering scalability in high-concurrency servers.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Completion Queues/Ports",
+        "explanation": "The operating system places I/O completion events into queues or ports (e.g., io_uring on Linux, completion ports on Windows). The program retrieves these events to learn when operations finish, allowing efficient handling of many concurrent I/O operations with minimal polling overhead and better scalability than select loops for many-client server applications.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How hardware interrupts versus DMA interact with application-level async APIs",
+      "Exact overhead trade-offs between callback stacks and queue unwinding in real-world implementations",
+      "Whether emulated async APIs map cleanly to underlying OS mechanisms or introduce latency",
+      "The impact of asynchronous I/O on latency and throughput across diverse workloads"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Asynchronous I/O",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386866695",
+    "revision": "1386866695",
+    "observedAt": "2026-11-27T14:15:50.744Z",
+    "sourceTimestamp": "2026-11-21T02:58:53Z",
+    "sha256": "bcc5154302266dc3c9cdc1a881f40dc8e385147059ee5bc0f9afd3d8519a88f4",
+    "excerptSha256": "87d803b64320ee1c42c995ccbd19478e18c77297f0f17a4c4d41403d7a54de1b",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 25590,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-58629579-d568-4e52-b7f3-5eeb21f10344",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3292,
+    "outputTokens": 410
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "325f16a02e2a8fae8afa945ce361afc66719553554020447996ea44e98fe5cbf",
+  "artifactDigest": "f2f57a5ffe71622a8bee0ca175b27b2369662692823c3c64eed9a737aae20581"
+}
