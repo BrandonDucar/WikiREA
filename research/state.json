@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T19:24:23.891Z",
-  "sequence": 291,
+  "updatedAt": "2026-11-27T20:15:18.655Z",
+  "sequence": 292,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13279,6 +13279,20 @@
       "packet": "research/packets/research-000291-d0e52b43ad.json",
       "packetDigest": "7e3b89a8b3e50fb2e35cc6176dbb87f75d66a60b5eb8665e02eb78b6d96e0170",
       "finishedAt": "2026-11-27T19:11:55.653Z"
+    },
+    {
+      "id": "research-000292-22e25c0d28",
+      "role": "music-events",
+      "topic": "Deep learning",
+      "day": "2026-11-27",
+      "runId": "46062346605",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T20:15:18.655Z",
+      "expiresAt": "2026-11-27T20:30:18.655Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
