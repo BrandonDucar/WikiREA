@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000169-e23ec81b67-review-8a640bd3d9",
+  "parentJobId": "research-000169-e23ec81b67",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "d1fff1f03b19d919a27e5d900332177684a64c189e7d767426fac0203a0ca1d2",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Andrew Dickson White House",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380651998",
+    "revision": "1380651998",
+    "observedAt": "2026-11-21T16:14:29.385Z",
+    "sourceTimestamp": "2026-10-17T02:01:24Z",
+    "sha256": "52cf30164d00138cce1f548cb5f730bf883196b9ccdeb41b0c963854ba625620",
+    "excerptSha256": "52cf30164d00138cce1f548cb5f730bf883196b9ccdeb41b0c963854ba625620",
+    "inspectedCharacters": 4738,
+    "totalCharacters": 4738,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content including construction date, architectural style, architects, original purpose, repurposing timeline, and current use",
+      "Mechanisms correctly capture commission/design and repurposing/preservation narratives with proper source attribution",
+      "Unknowns appropriately identify gaps not addressed in source material",
+      "No unsupported mechanisms, copied passages, or invented execution detected",
+      "All factual claims in draft align with source text and citations"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-1c447f87-cb9d-4f8a-bbfd-76c223bf6a53",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1895,
+    "outputTokens": 99
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
