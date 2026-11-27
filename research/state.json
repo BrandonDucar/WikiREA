@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T18:17:10.772Z",
+  "updatedAt": "2026-11-27T18:17:14.991Z",
   "sequence": 290,
   "jobs": [
     {
@@ -13196,13 +13196,44 @@
       "topic": "Aircraft",
       "day": "2026-11-27",
       "runId": "46048292519",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T18:17:10.772Z",
       "expiresAt": "2026-11-27T18:32:10.772Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Aircraft",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386368929",
+        "revision": "1386368929",
+        "observedAt": "2026-11-27T18:17:12.859Z",
+        "sourceTimestamp": "2026-11-18T04:28:44Z",
+        "sha256": "323aea8ad10bfafdb4b1f3188827f283e5b408c84ec352aead5b75016b6edce8",
+        "excerptSha256": "be033fd20121ab50ac754ff480add64973e34cd7cdf824fc492ab1d955b15638",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 65974,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-063e6f35-bd19-4e2b-b352-2128a20e6e44",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4511,
+        "outputTokens": 367
+      },
+      "packet": "research/packets/research-000290-6b3bae2696.json",
+      "packetDigest": "b23826e4baf171900b1d3e8a4412d1b7e54a63598371c6d8d438899fb4568b69",
+      "finishedAt": "2026-11-27T18:17:14.991Z"
     }
   ],
   "discovered": [
@@ -13220,11 +13251,6 @@
       "title": "Black start",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000030-5a4bfec956"
-    },
-    {
-      "title": "Aircraft",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000031-03dd95243d"
     },
     {
       "title": "Aircraft skin",
@@ -20180,6 +20206,46 @@
       "title": "ACPI",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000289-895ca99299"
+    },
+    {
+      "title": "Adaptive compliant wing",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "Aerodynamic",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "Aerodynamic drag",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "Aerodynamic lift",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "Aerodynamics",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "Aerofoil",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "Aeronautics",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
+    },
+    {
+      "title": "Aerospace",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000290-6b3bae2696"
     }
   ],
   "reviewJobs": [

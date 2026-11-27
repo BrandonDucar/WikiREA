@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000290-6b3bae2696",
+  "topic": "Aircraft",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "An aircraft is a vehicle that flies by gaining support from the air, countering gravity through static lift, dynamic lift via airfoils, or engine-generated downward thrust. It encompasses lighter-than-air types like balloons and airships, as well as heavier-than-air types such as airplanes, rotorcraft, gliders, and drones. Classification depends on lift mechanism, propulsion, and usage. Human activity involving aircraft is aviation; design and construction fall under aeronautics. Aircraft may be crewed or unmanned, remotely controlled or autonomous. The basic cruciform tail configuration was established by 1909, and 21st-century advances include pilotless drones and computerized controls enabling unstable designs like flying wings.",
+    "mechanisms": [
+      {
+        "title": "Static lift (buoyancy)",
+        "explanation": "Lighter-than-air aircraft use lifting gases such as helium, hydrogen, or hot air that are less dense than the surrounding atmosphere to float, similar to how ships float on water. This method does not require forward motion to generate lift.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Dynamic lift (airfoil)",
+        "explanation": "Heavier-than-air aircraft generate lift through the movement of an airfoil through the air, creating pressure differences between upper and lower surfaces. This dynamic lift counters gravity and enables controlled flight.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Direct downward thrust from engines as a primary lift method",
+      "Precise classification criteria for all aircraft subtypes",
+      "Detailed design and construction processes of specific aircraft models",
+      "Full technical specifications of propulsion systems across aircraft types"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Aircraft",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386368929",
+    "revision": "1386368929",
+    "observedAt": "2026-11-27T18:17:12.859Z",
+    "sourceTimestamp": "2026-11-18T04:28:44Z",
+    "sha256": "323aea8ad10bfafdb4b1f3188827f283e5b408c84ec352aead5b75016b6edce8",
+    "excerptSha256": "be033fd20121ab50ac754ff480add64973e34cd7cdf824fc492ab1d955b15638",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 65974,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-063e6f35-bd19-4e2b-b352-2128a20e6e44",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4511,
+    "outputTokens": 367
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "7d8f86eb69d790801a671ac14d83f4f6684c3dcae18ef6cde13090ebcc0ab8fd",
+  "artifactDigest": "b23826e4baf171900b1d3e8a4412d1b7e54a63598371c6d8d438899fb4568b69"
+}
