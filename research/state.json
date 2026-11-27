@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T20:15:18.655Z",
+  "updatedAt": "2026-11-27T20:15:24.307Z",
   "sequence": 292,
   "jobs": [
     {
@@ -13286,13 +13286,44 @@
       "topic": "Deep learning",
       "day": "2026-11-27",
       "runId": "46062346605",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-27T20:15:18.655Z",
       "expiresAt": "2026-11-27T20:30:18.655Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Deep learning",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387808860",
+        "revision": "1387808860",
+        "observedAt": "2026-11-27T20:15:21.238Z",
+        "sourceTimestamp": "2026-11-25T15:22:33Z",
+        "sha256": "b6be1d53af22be0e82905c4ee9964a72dfd3e5d93d8209c8af528345daa4b1fb",
+        "excerptSha256": "0543cca2393e58af2b74a1afa65d4a7539f04f68e7e27869c7f7e8987415efb2",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 177619,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-dcab89a9-1c30-4e2d-b74b-3ce572a62b2c",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4641,
+        "outputTokens": 411
+      },
+      "packet": "research/packets/research-000292-22e25c0d28.json",
+      "packetDigest": "e357972eeb37ea0877caf2e64dad36edc377986b24c3a117b16c2452ae42d1e5",
+      "finishedAt": "2026-11-27T20:15:24.307Z"
     }
   ],
   "discovered": [
@@ -13330,11 +13361,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Deep learning",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "Mozart",
@@ -20340,6 +20366,31 @@
       "title": "CUSIP",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000291-d0e52b43ad"
+    },
+    {
+      "title": "01.AI",
+      "role": "music-events",
+      "discoveredFrom": "research-000292-22e25c0d28"
+    },
+    {
+      "title": "AAAI Conference on Artificial Intelligence",
+      "role": "music-events",
+      "discoveredFrom": "research-000292-22e25c0d28"
+    },
+    {
+      "title": "AI-assisted software development",
+      "role": "music-events",
+      "discoveredFrom": "research-000292-22e25c0d28"
+    },
+    {
+      "title": "AI-generated content in American politics",
+      "role": "music-events",
+      "discoveredFrom": "research-000292-22e25c0d28"
+    },
+    {
+      "title": "AI-generated violent extremist content",
+      "role": "music-events",
+      "discoveredFrom": "research-000292-22e25c0d28"
     }
   ],
   "reviewJobs": [

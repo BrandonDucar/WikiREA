@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000292-22e25c0d28",
+  "topic": "Deep learning",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Deep learning is a branch of machine learning that uses multilayered neural networks to transform input data into progressively more abstract representations. The 'deep' descriptor refers to the number of layers, enabling automatic feature discovery rather than hand-crafted engineering. These architectures stack artificial neurons to process data in tasks like classification and representation learning, drawing inspiration from biological neuroscience while functioning as low-quality brain models. The depth allows for credit assignment across transformation chains, with most researchers agreeing that depth beyond two layers provides effective feature extraction capabilities beyond what shallow networks can approximate.",
+    "mechanisms": [
+      {
+        "title": "Layered Representation Learning",
+        "explanation": "Data passes through successive layers of artificial neurons, each transforming the representation into more abstract forms. Early layers may detect basic patterns while deeper layers compose complex features. This hierarchy allows the model to automatically discover useful representations from raw data without manual feature engineering, though the number of layers and their sizes require hand-tuning for desired abstraction levels.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Credit Assignment via Transformation Chains",
+        "explanation": "Deep learning systems maintain a credit assignment path (CAP) representing the chain of transformations from input to output. The depth of this path determines the network's ability to model complex relationships. With CAP depth exceeding two layers, networks can extract features more effectively than shallow approximators. This structural depth enables the modeling of potentially causal connections between inputs and outputs, particularly in feedforward architectures where depth equals hidden layers plus one.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How biological neuroscience specifically inspires architecture choices beyond general inspiration",
+      "The exact threshold where depth transitions from shallow to deep learning across all network types",
+      "Whether recurrent networks' potentially unlimited CAP depth provides practical advantages beyond theoretical capacity",
+      "The specific mechanisms enabling unsupervised training in deep belief networks and related architectures"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Deep learning",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387808860",
+    "revision": "1387808860",
+    "observedAt": "2026-11-27T20:15:21.238Z",
+    "sourceTimestamp": "2026-11-25T15:22:33Z",
+    "sha256": "b6be1d53af22be0e82905c4ee9964a72dfd3e5d93d8209c8af528345daa4b1fb",
+    "excerptSha256": "0543cca2393e58af2b74a1afa65d4a7539f04f68e7e27869c7f7e8987415efb2",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 177619,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-dcab89a9-1c30-4e2d-b74b-3ce572a62b2c",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4641,
+    "outputTokens": 411
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ffcb8d77c6a30c51760044879326c92261f28f514d36174acf7d6172261f9029",
+  "artifactDigest": "e357972eeb37ea0877caf2e64dad36edc377986b24c3a117b16c2452ae42d1e5"
+}
