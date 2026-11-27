@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T03:28:37.387Z",
-  "sequence": 278,
+  "updatedAt": "2026-11-27T04:17:56.039Z",
+  "sequence": 279,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -12674,6 +12674,20 @@
       "packet": "research/packets/research-000278-881f64781f.json",
       "packetDigest": "08d7ba3ace1fca7c1b4b3a8fe1a55105370dd36e2c12d34249cd1bf56fdf8837",
       "finishedAt": "2026-11-27T03:17:57.622Z"
+    },
+    {
+      "id": "research-000279-d8e93edef1",
+      "role": "simulation-researcher",
+      "topic": "Authentication",
+      "day": "2026-11-27",
+      "runId": "45939099421",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-27T04:17:56.039Z",
+      "expiresAt": "2026-11-27T04:32:56.039Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
