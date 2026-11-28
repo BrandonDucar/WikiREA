@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000176-f0fc9dbc65",
+  "title": "2D animation",
+  "role": "application-tracer",
+  "createdAt": "2026-11-28T01:25:15.913Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "Traditional 2D animation creates the illusion of motion by drawing each frame by hand on transparent cels, which are then photographed over static backgrounds. The process begins with storyboards and scripts, followed by voice recording and design phases. Key animators draw major poses, and assistant animators fill in the gaps through inbetweening. Drawings are traced onto cels, inked, and painted on the reverse side before being layered and photographed frame-by-frame using a rostrum camera. Digital ink and paint now combines hand-drawn elements with computer compositing.",
+  "mechanisms": [
+    {
+      "title": "Frame-by-frame hand drawing",
+      "explanation": "Animators draw sequences on perforated transparent paper fitted to peg bars, creating key frames and pencil tests to review motion before passing to assistants who add missing frames via inbetweening.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "Cel transfer and layering",
+      "explanation": "Approved drawings are traced onto transparent plastic cels, inked on the outline, and painted on the reverse side. These cels are layered over backgrounds and photographed frame-by-frame using a rostrum camera to produce the final image.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact frame rate determination method per scene",
+    "Post-synchronization workflow for non-English language productions",
+    "Long-term stability of cellulose acetate cel material",
+    "Digital compositing pipeline integration with traditional hand-drawn elements"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Traditional animation",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383837811",
+      "revision": "1383837811",
+      "observedAt": "2026-11-22T01:15:34.974Z",
+      "sourceTimestamp": "2026-11-05T02:42:13Z",
+      "sha256": "127f05b28cbd48ba8e596bdc801dd12d1d859ffe5c26b3619dfab1db4a312308",
+      "excerptSha256": "3217c393eccadd2bf89047ec17b3073b64a6d81b3404b68f2b2bf622de19c845",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 57581,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source description of traditional animation process from storyboards through digital ink and paint",
+      "Mechanism 1 correctly captures frame-by-frame hand drawing on perforated paper with peg bars, key frames, pencil tests, and inbetweening as described in source",
+      "Mechanism 2 correctly describes cel transfer, inking, reverse-side painting, layering over backgrounds, and rostrum camera photography per source",
+      "Unknowns list appropriately identifies specific details not fully explained in source (frame rate determination, post-sync workflow, cel material stability, digital integration)",
+      "No unsupported mechanisms, copied passages, or invented execution detected"
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-8dc2d4b1-2f7f-4d35-98f7-90c48c15bb06",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3573,
+      "outputTokens": 331
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-5890c573-f560-4755-851c-fbaa5b349850",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 3861,
+      "outputTokens": 142
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "2876fb013d003bf6c7c2ca5b11eaa28940564bc3480c53d1ccd516b62964ba30",
+    "artifactDigest": "a0f42ca10ed10b8abf9b7efeab5d7470f4df8ea7b9a5418a80e40c36ddaecd49",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000176-f0fc9dbc65.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}
