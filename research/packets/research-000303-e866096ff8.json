@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000303-e866096ff8",
+  "topic": "Affine space",
+  "role": "adversarial-reviewer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Affine space generalizes Euclidean geometry by removing the concepts of distance and angle, retaining only parallelism and ratios of parallel segments. It consists of points with no distinguished origin; one cannot add points together or multiply them by scalars. However, subtracting two points yields a free vector (displacement), and adding a vector to a point produces a new point. Affine combinations, where coefficients sum to 1, produce the same point regardless of the chosen origin. Any vector space can be viewed as an affine space by forgetting the zero vector's special role. The dimension of an affine space equals the dimension of its associated vector space of translations. Affine subspaces are obtained by translating linear subspaces, and parallel affine subspaces share the same direction.",
+    "mechanisms": [
+      {
+        "title": "Point-vector duality via subtraction and addition",
+        "explanation": "In affine space, points have no intrinsic origin. Subtracting one point from another yields a unique free vector (displacement). Adding that vector to a third point produces a new point, enabling coordinate-free translation. This duality allows affine combinations with coefficients summing to 1 to yield consistent results regardless of origin choice.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Affine subspaces as translated linear subspaces",
+        "explanation": "An affine subspace is formed by taking a linear subspace (a vector subspace containing the origin) and adding a fixed translation vector to every element. This shifts the subspace away from the origin, producing a flat that does not necessarily contain the origin. Parallel affine subspaces share the same direction (the associated linear subspace).",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How arbitrary non-origin-preserving coordinate systems map onto affine structure without additional constraints",
+      "Whether affine space properties extend uniformly to infinite-dimensional vector spaces beyond the finite-dimensional case",
+      "The precise mechanism by which barycentric coordinates generalize to affine spaces of dimension greater than three",
+      "Whether any affine space can be embedded isometrically into a Euclidean space of minimal dimension"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Affine space",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1388212117",
+    "revision": "1388212117",
+    "observedAt": "2026-11-28T09:15:16.265Z",
+    "sourceTimestamp": "2026-11-27T02:28:51Z",
+    "sha256": "1382f34a582c2df6ac304ebea0d2e61f789ab4c0be1c7abfd94a117573643de7",
+    "excerptSha256": "e9b0b47e891cac73e24e03e6d910184957dd42e583bacd7d4b0c3f902b46e81c",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 51633,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-7bdbbe0c-e770-4f06-bf5c-a4b3a74ed1a0",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4004,
+    "outputTokens": 449
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3bac71499577cf70d6d040a8269b52c37b9ef097df1d4e825b572c1709783e3e",
+  "artifactDigest": "123d912088bfd5c899e5fb540fc1e9814913991633cfee462868b5a7f2d2f4a8"
+}
