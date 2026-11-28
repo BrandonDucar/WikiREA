@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-27T22:14:51.305Z",
-  "sequence": 294,
+  "updatedAt": "2026-11-28T00:34:21.633Z",
+  "sequence": 295,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13414,6 +13414,20 @@
       "packet": "research/packets/research-000294-e00c6cd7de.json",
       "packetDigest": "a67ccfcef22a9a1a7732b4bc793b9113c37fedd6f1752bf1a26f4e8210913e9b",
       "finishedAt": "2026-11-27T22:14:51.305Z"
+    },
+    {
+      "id": "research-000295-49f26ff292",
+      "role": "source-curator",
+      "topic": "Build system",
+      "day": "2026-11-28",
+      "runId": "46088588920",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T00:34:21.633Z",
+      "expiresAt": "2026-11-28T00:49:21.633Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
