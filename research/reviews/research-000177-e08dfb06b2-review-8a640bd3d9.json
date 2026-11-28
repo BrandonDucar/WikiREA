@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000177-e08dfb06b2-review-8a640bd3d9",
+  "parentJobId": "research-000177-e08dfb06b2",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "3bd22b1372cbfd2b4174c824735f462fc4b83db4f2a7da8083002389fd6d05d5",
+  "sourcePin": {
+    "id": "S1",
+    "title": "ACM Computing Surveys",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1369939508",
+    "revision": "1369939508",
+    "observedAt": "2026-11-22T02:20:16.876Z",
+    "sourceTimestamp": "2026-08-18T03:28:39Z",
+    "sha256": "deadcb54d64eed9842484e36d3575287cd75da652fda6782da51c9db148de9dc",
+    "excerptSha256": "deadcb54d64eed9842484e36d3575287cd75da652fda6782da51c9db148de9dc",
+    "inspectedCharacters": 2822,
+    "totalCharacters": 2822,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on journal scope, publisher, history, impact factor, and ranking",
+      "Mechanisms correctly describe survey/tutorial publication model and ranking indicators as presented in source",
+      "Unknowns appropriately identify gaps not covered in source material",
+      "No unsupported mechanisms or invented execution details present",
+      "Qualifiers like 'reflect community perception' properly distinguish metrics from technical operation"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-c85eb526-5dc6-4717-a65c-e729baa40a44",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 1340,
+    "outputTokens": 89
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
