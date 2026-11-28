@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000302-121677f94b",
+  "topic": "Mozart",
+  "role": "music-events",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Mozart was a Classical-era composer and musician who created over 800 works spanning symphonies, concertos, chamber music, opera, and choral music. Born in Salzburg in 1756, he emerged as a child prodigy under his father's tutelage, performing across Europe before establishing himself in Vienna, where he achieved fame and composed many of his most celebrated pieces, including his final symphonies and operas, before dying at 35.",
+    "mechanisms": [
+      {
+        "title": "Early training and prodigy development",
+        "explanation": "Mozart's father Leopold, a skilled pedagogue and composer, provided his only musical instruction. By age five, Mozart was composing little pieces and demonstrating keyboard and violin proficiency, having begun his training while his sister Nannerl studied. His father eventually ceased composing upon recognizing his son's superior talents.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Vienna career and mature compositions",
+        "explanation": "After being dismissed from the Salzburg court in 1781, Mozart chose to remain in Vienna, where he achieved fame and some financial success. During his Vienna years, he composed more than a dozen piano concertos considered masterpieces, the \"Haydn\" Quartets, and notable operas such as \"Die Entf\" and the final trilogy including \"Le nozze di Figaro,\" \"Don Giovanni,\" \"Così fan tutte,\" and \"Die Zauberflöte.\"",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact nature of Mozart's compositional method beyond documented sketches and autographs",
+      "Whether his musical precocity was primarily self-directed or systematically guided by his father",
+      "The specific reasons for his dismissal from the Salzburg court beyond stated quarrels",
+      "The full circumstances and motivations behind the incomplete state of his Requiem at death"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Wolfgang Amadeus Mozart",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1387407355",
+    "revision": "1387407355",
+    "observedAt": "2026-11-28T08:17:49.940Z",
+    "sourceTimestamp": "2026-11-23T20:43:33Z",
+    "sha256": "182d441f93160c036ea7debfdefe6a7e52a3ff99c26f12afb7432d00d7be4ad9",
+    "excerptSha256": "13e648640a99d816cb50765aaabe3e686864c98c13ad9605bd0abd298187c263",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 111715,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-2bb116f4-12d7-4faf-bd3c-3fb46295ed55",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4144,
+    "outputTokens": 420
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "ccd50b5a230943faa913780cc2443e7fdcb645a5c5018f3f0b801cac534001bf",
+  "artifactDigest": "fa4d1ea443b6919be114b0af4f33efef0794c4e39f55ee2e113b73941652c723"
+}

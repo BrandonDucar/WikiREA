@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T08:17:46.882Z",
+  "updatedAt": "2026-11-28T08:17:52.642Z",
   "sequence": 302,
   "jobs": [
     {
@@ -13752,13 +13752,44 @@
       "topic": "Mozart",
       "day": "2026-11-28",
       "runId": "46125126827",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-28T08:17:46.882Z",
       "expiresAt": "2026-11-28T08:32:46.882Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Wolfgang Amadeus Mozart",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1387407355",
+        "revision": "1387407355",
+        "observedAt": "2026-11-28T08:17:49.940Z",
+        "sourceTimestamp": "2026-11-23T20:43:33Z",
+        "sha256": "182d441f93160c036ea7debfdefe6a7e52a3ff99c26f12afb7432d00d7be4ad9",
+        "excerptSha256": "13e648640a99d816cb50765aaabe3e686864c98c13ad9605bd0abd298187c263",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 111715,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-2bb116f4-12d7-4faf-bd3c-3fb46295ed55",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4144,
+        "outputTokens": 420
+      },
+      "packet": "research/packets/research-000302-121677f94b.json",
+      "packetDigest": "fa4d1ea443b6919be114b0af4f33efef0794c4e39f55ee2e113b73941652c723",
+      "finishedAt": "2026-11-28T08:17:52.642Z"
     }
   ],
   "discovered": [
@@ -13786,11 +13817,6 @@
       "title": "Allotropes of iron",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000031-03dd95243d"
-    },
-    {
-      "title": "Mozart",
-      "role": "music-events",
-      "discoveredFrom": "research-000032-ed1306e349"
     },
     {
       "title": "3-D computer graphics software",
@@ -21051,6 +21077,41 @@
       "title": "Capital One",
       "role": "market-data-researcher",
       "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "1775–1795 in Western fashion",
+      "role": "music-events",
+      "discoveredFrom": "research-000302-121677f94b"
+    },
+    {
+      "title": "ABRSM",
+      "role": "music-events",
+      "discoveredFrom": "research-000302-121677f94b"
+    },
+    {
+      "title": "Accademia Filarmonica di Bologna",
+      "role": "music-events",
+      "discoveredFrom": "research-000302-121677f94b"
+    },
+    {
+      "title": "Adrien-Louis de Bonnières, duc de Guînes",
+      "role": "music-events",
+      "discoveredFrom": "research-000302-121677f94b"
+    },
+    {
+      "title": "Alan Tyson",
+      "role": "music-events",
+      "discoveredFrom": "research-000302-121677f94b"
+    },
+    {
+      "title": "Alex Ross (music critic)",
+      "role": "music-events",
+      "discoveredFrom": "research-000302-121677f94b"
+    },
+    {
+      "title": "Alexander Wheelock Thayer",
+      "role": "music-events",
+      "discoveredFrom": "research-000302-121677f94b"
     }
   ],
   "reviewJobs": [
