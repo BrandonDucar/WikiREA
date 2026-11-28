@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000296-490a1c08dc",
+  "topic": "AMosaic",
+  "role": "application-tracer",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "AMosaic is a discontinued 1993 AmigaOS web browser port of Mosaic, notable as the first graphical browser for the Amiga platform. It introduced user-customizable interfaces via the Magic User Interface system, supported extensible image decoding through AmigaOS Datatypes, and featured an ARexx scripting interface for inter-application communication. The browser relied on Amiga networking stacks such as DNet, AmiTCP, or AS225 for connectivity.",
+    "mechanisms": [
+      {
+        "title": "User-customizable interface via Magic User Interface",
+        "explanation": "The MUI system enabled full user customization of fonts, colors, and background patterns, going beyond standard Mosaic capabilities at the time.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Extensible image decoding via AmigaOS Datatypes",
+        "explanation": "AMosaic used AmigaOS Datatypes for external and inline image decoding, allowing users to add support for new image formats by installing operating system plugins.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact implementation details of the ARexx inter-application communication interface beyond documented scripting capabilities",
+      "Whether the browser included support for inline image formats beyond those covered by available Datatypes plugins",
+      "Specific networking stack configuration requirements for stable page rendering across different AmigaOS versions",
+      "The full extent of user-extensibility features demonstrated in the 1994 conference presentation versus those present in released versions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "AMosaic",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1384671936",
+    "revision": "1384671936",
+    "observedAt": "2026-11-28T01:16:23.928Z",
+    "sourceTimestamp": "2026-11-09T13:46:09Z",
+    "sha256": "0da888121a21aae8f9837ee2fa44cab89ef13bc7783e8100950b109dde076613",
+    "excerptSha256": "0da888121a21aae8f9837ee2fa44cab89ef13bc7783e8100950b109dde076613",
+    "inspectedCharacters": 6186,
+    "totalCharacters": 6186,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-f8c8af9b-b7bc-43e8-8ad8-e6d5cf4631d5",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2170,
+    "outputTokens": 339
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1387af7fba34830de7e1ced1abc83bb7588c05db9d48e926fe94b5830c647bf5",
+  "artifactDigest": "2943a0e58395aab25377a7fabddaa9656ec4b5a8b5a91ff15835adbed426b657"
+}
