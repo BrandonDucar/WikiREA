@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T03:27:32.378Z",
-  "sequence": 298,
+  "updatedAt": "2026-11-28T04:16:56.428Z",
+  "sequence": 299,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13602,6 +13602,20 @@
       "packet": "research/packets/research-000298-698175d4f3.json",
       "packetDigest": "673b2c073eef0477bae1eb2a02ad1eacf6c73148ab39bb17ebc6d83cd72693ce",
       "finishedAt": "2026-11-28T03:17:11.095Z"
+    },
+    {
+      "id": "research-000299-8ae6db6f9b",
+      "role": "simulation-researcher",
+      "topic": "Baron Munchausen",
+      "day": "2026-11-28",
+      "runId": "46106787299",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T04:16:56.428Z",
+      "expiresAt": "2026-11-28T04:31:56.428Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
