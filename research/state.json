@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T00:34:26.299Z",
-  "sequence": 295,
+  "updatedAt": "2026-11-28T01:16:21.819Z",
+  "sequence": 296,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13459,6 +13459,20 @@
       "packet": "research/packets/research-000295-49f26ff292.json",
       "packetDigest": "77b2bc09c86deced0457aca067b9d888416a9c0b601babe1ba02e95932e2e90e",
       "finishedAt": "2026-11-28T00:34:26.299Z"
+    },
+    {
+      "id": "research-000296-490a1c08dc",
+      "role": "application-tracer",
+      "topic": "AMosaic",
+      "day": "2026-11-28",
+      "runId": "46092246330",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T01:16:21.819Z",
+      "expiresAt": "2026-11-28T01:31:21.819Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
