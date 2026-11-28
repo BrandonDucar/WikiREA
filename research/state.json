@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T06:22:15.378Z",
+  "updatedAt": "2026-11-28T06:22:19.312Z",
   "sequence": 300,
   "jobs": [
     {
@@ -13658,13 +13658,44 @@
       "topic": "Aircraft skin",
       "day": "2026-11-28",
       "runId": "46116275022",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-28T06:22:15.378Z",
       "expiresAt": "2026-11-28T06:37:15.378Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Skin (aeronautics)",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1378640139",
+        "revision": "1378640139",
+        "observedAt": "2026-11-28T06:22:17.796Z",
+        "sourceTimestamp": "2026-10-05T11:23:14Z",
+        "sha256": "9b2ca402d3325d0526371a0f687989fcd2bfcc98739006c549897d1fcca017a0",
+        "excerptSha256": "9b2ca402d3325d0526371a0f687989fcd2bfcc98739006c549897d1fcca017a0",
+        "inspectedCharacters": 1309,
+        "totalCharacters": 1309,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-eaeab393-f385-4a09-96cc-edb9d53a5e6f",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 526,
+        "outputTokens": 274
+      },
+      "packet": "research/packets/research-000300-8e89a2d342.json",
+      "packetDigest": "5bbdd044ac228a9eee8b4ba9060fb9f9980c85a934057fd9ea001c7a419ed524",
+      "finishedAt": "2026-11-28T06:22:19.312Z"
     }
   ],
   "discovered": [
@@ -13677,11 +13708,6 @@
       "title": "Black start",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000030-5a4bfec956"
-    },
-    {
-      "title": "Aircraft skin",
-      "role": "hardware-interoperability-scout",
-      "discoveredFrom": "research-000031-03dd95243d"
     },
     {
       "title": "Airframe",
@@ -20887,6 +20913,46 @@
       "title": "Adolf Ellissen",
       "role": "simulation-researcher",
       "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "Aluminium alloy",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Aluminum",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Copper",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Fuselage",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Index of aviation articles",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Magnesium",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Wing",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Zinc",
+      "role": "hardware-interoperability-scout",
+      "discoveredFrom": "research-000300-8e89a2d342"
     }
   ],
   "reviewJobs": [

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000300-8e89a2d342",
+  "topic": "Aircraft skin",
+  "role": "hardware-interoperability-scout",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Aircraft skin forms the outer covering of wings and fuselage, primarily constructed from aluminum alloys mixed with zinc, magnesium, and copper. These materials balance cost, repairability, and weight, though they are prone to corrosion and fatigue. Modern advances explore hybrid material approaches to optimize fuel efficiency through weight reduction and durability improvements.",
+    "mechanisms": [
+      {
+        "title": "Structural Load Distribution",
+        "explanation": "The skin serves as the primary outer surface covering the wings and fuselage, forming part of the aircraft's structural shell that distributes aerodynamic loads across the airframe.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Material Composition and Properties",
+        "explanation": "Most skins use aluminum-based alloys combined with metals like zinc, magnesium, and copper, which provide a balance of cost-effectiveness and repairability while being susceptible to corrosion and fatigue over time.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact manufacturing processes for advanced hybrid material skins",
+      "Long-term durability performance of composite-metal hybrid skins in operational service",
+      "Specific maintenance protocols for corrosion prevention in mixed-material skins",
+      "Quantified weight savings versus cost trade-offs for next-generation skin materials"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Skin (aeronautics)",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1378640139",
+    "revision": "1378640139",
+    "observedAt": "2026-11-28T06:22:17.796Z",
+    "sourceTimestamp": "2026-10-05T11:23:14Z",
+    "sha256": "9b2ca402d3325d0526371a0f687989fcd2bfcc98739006c549897d1fcca017a0",
+    "excerptSha256": "9b2ca402d3325d0526371a0f687989fcd2bfcc98739006c549897d1fcca017a0",
+    "inspectedCharacters": 1309,
+    "totalCharacters": 1309,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-eaeab393-f385-4a09-96cc-edb9d53a5e6f",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 526,
+    "outputTokens": 274
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "c9c31469563b5da9af35c3c1bd399c87768c986f2bb5f095d878ffa93bac7cd3",
+  "artifactDigest": "5bbdd044ac228a9eee8b4ba9060fb9f9980c85a934057fd9ea001c7a419ed524"
+}
