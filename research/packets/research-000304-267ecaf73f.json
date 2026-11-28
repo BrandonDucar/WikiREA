@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000304-267ecaf73f",
+  "topic": "Apache Kafka",
+  "role": "glossary-and-mechanics-editor",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Apache Kafka is an open-source distributed event store and stream-processing platform written in Java and Scala, designed for high-throughput, low-latency handling of real-time data feeds. It retains messages in a durable, append-only log and guarantees ordering within individual partitions rather than across entire topics. The system uses a binary TCP-based protocol optimized for efficiency via a \"message set\" abstraction, which groups messages to reduce network roundtrip overhead and enables contiguous disk writes. Data import and export are facilitated by Kafka Connect, while stream-processing applications are built using the Kafka Streams library, which can maintain local state with RocksDB for fault tolerance.",
+    "mechanisms": [
+      {
+        "title": "Append-only partitioned log",
+        "explanation": "Kafka stores messages in a durable, append-only log organized into partitions. Ordering is guaranteed only within individual partitions, not across entire topics. Consumers manage offsets manually, allowing them to control retries and failure handling without forcing other partitions to stall.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Message set TCP protocol",
+        "explanation": "Kafka employs a binary protocol over TCP that uses a \"message set\" abstraction to group messages together. This design reduces network roundtrip overhead by enabling larger sequential disk operations and contiguous memory blocks, turning a bursty stream of random writes into efficient linear writes.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact partition count determination logic for share groups versus consumer groups",
+      "Internal state migration path when transitioning from consumer groups to share groups",
+      "Precise RocksDB write amplification characteristics within Kafka Streams state stores",
+      "Whether \"Queues for Kafka\" KIP-932 fully resolves the over-partitioning challenge or introduces new coordination overhead"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Apache Kafka",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382882648",
+    "revision": "1382882648",
+    "observedAt": "2026-11-28T10:13:40.192Z",
+    "sourceTimestamp": "2026-10-30T20:29:07Z",
+    "sha256": "44ee22809ad7e8a32c9f96c85382314acf4ebb7c2c79ceb94c12b58f4a92b9a1",
+    "excerptSha256": "44ee22809ad7e8a32c9f96c85382314acf4ebb7c2c79ceb94c12b58f4a92b9a1",
+    "inspectedCharacters": 9058,
+    "totalCharacters": 9058,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-777bb6a3-89c5-4cc2-8b10-4b9ca1bf0984",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2623,
+    "outputTokens": 391
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "47bf33643c641521471e2576546fb6df989ef99f397f91a4e93f66e0a63feb5b",
+  "artifactDigest": "75735cdf900fc96cd08c4adeb3400eed39cf10c4c7d03a56275f8c50dae4be14"
+}
