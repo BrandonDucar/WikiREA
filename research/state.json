@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T06:22:19.312Z",
-  "sequence": 300,
+  "updatedAt": "2026-11-28T07:15:04.795Z",
+  "sequence": 301,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13696,6 +13696,20 @@
       "packet": "research/packets/research-000300-8e89a2d342.json",
       "packetDigest": "5bbdd044ac228a9eee8b4ba9060fb9f9980c85a934057fd9ea001c7a419ed524",
       "finishedAt": "2026-11-28T06:22:19.312Z"
+    },
+    {
+      "id": "research-000301-44f6c97471",
+      "role": "market-data-researcher",
+      "topic": "Chief data officer",
+      "day": "2026-11-28",
+      "runId": "46120315431",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T07:15:04.795Z",
+      "expiresAt": "2026-11-28T07:30:04.795Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
