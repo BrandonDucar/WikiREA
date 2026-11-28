@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000179-0f88570dfa-review-8a640bd3d9",
+  "parentJobId": "research-000179-0f88570dfa",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "fed05d38bc0b8c1f05b940b89cafaf4fc6b1f5ad64f2ca5c5d1d289ea7d141c8",
+  "sourcePin": {
+    "id": "S1",
+    "title": "Abstract Wiener space",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1352731002",
+    "revision": "1352731002",
+    "observedAt": "2026-11-22T04:16:40.319Z",
+    "sourceTimestamp": "2026-05-05T23:11:51Z",
+    "sha256": "dec3580a06a5e456738cd9c69fbd6fbb1fe90376bf2f96e71d57ab30fe3a71cd",
+    "excerptSha256": "a9cb5b174abe952d121e2c01921d3094d3e5824b0d6d26a513ac25443011f77e",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 15425,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on abstract Wiener space construction, classical example, and universal framework",
+      "Mechanisms correctly capture cylinder set extension and Cameron-Martin geometry governing measure properties",
+      "Unknowns properly identify gaps in source regarding divergence explanation, precise quantitative condition, white noise generalization, and Radonifying relationship",
+      "No unsupported mechanisms or invented execution present",
+      "All claims traceable to source text with appropriate qualifiers preserved"
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-f9bfcced-326e-4f7c-8214-97b050ce748d",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4606,
+    "outputTokens": 97
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
