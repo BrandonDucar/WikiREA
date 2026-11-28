@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T07:24:56.786Z",
-  "sequence": 301,
+  "updatedAt": "2026-11-28T08:17:46.882Z",
+  "sequence": 302,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13745,6 +13745,20 @@
       "packet": "research/packets/research-000301-44f6c97471.json",
       "packetDigest": "051be6fd10c65a3162c4caaf7919ef34da2aedf9b0cc0941b08ea0575ae2a19d",
       "finishedAt": "2026-11-28T07:15:09.427Z"
+    },
+    {
+      "id": "research-000302-121677f94b",
+      "role": "music-events",
+      "topic": "Mozart",
+      "day": "2026-11-28",
+      "runId": "46125126827",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T08:17:46.882Z",
+      "expiresAt": "2026-11-28T08:32:46.882Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
