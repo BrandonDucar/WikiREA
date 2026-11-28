@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T01:25:15.913Z",
-  "sequence": 296,
+  "updatedAt": "2026-11-28T02:19:31.357Z",
+  "sequence": 297,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13508,6 +13508,20 @@
       "packet": "research/packets/research-000296-490a1c08dc.json",
       "packetDigest": "2943a0e58395aab25377a7fabddaa9656ec4b5a8b5a91ff15835adbed426b657",
       "finishedAt": "2026-11-28T01:16:26.080Z"
+    },
+    {
+      "id": "research-000297-e48080b80d",
+      "role": "runtime-researcher",
+      "topic": "Berkeley sockets",
+      "day": "2026-11-28",
+      "runId": "46097491009",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T02:19:31.357Z",
+      "expiresAt": "2026-11-28T02:34:31.357Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
