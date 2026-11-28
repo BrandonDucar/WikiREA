@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000178-d56994492a-review-8a640bd3d9",
+  "parentJobId": "research-000178-d56994492a",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "56920a6fa3b5a6092a6599f826d60ad7c6b07b18d5522b72cd70d90c46196985",
+  "sourcePin": {
+    "id": "S1",
+    "title": "2.5D",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1383601898",
+    "revision": "1383601898",
+    "observedAt": "2026-11-22T03:17:37.587Z",
+    "sourceTimestamp": "2026-11-03T16:52:50Z",
+    "sha256": "597ded39dd5fcbb47dd5ff5603a86fa443c3bf526ef8b8f19b3ccbda5b54c22e",
+    "excerptSha256": "ad14cfc65ce00b5be8eca26b53618d6b129d5d5e25af61f3f9d075d473e3b88b",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 36957,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately captures the core definition of 2.5D as restricted 2D plane movement within a simulated 3D environment, distinguishing it from pseudo-3D and true 2D/3D.",
+      "Mechanism descriptions for axonometric/oblique projection and billboarding/Z-axis scaling are well-supported by the source text with correct technical details.",
+      "Unknowns list appropriately identifies gaps not addressed in the source, such as hardware limitations and algorithmic specifics.",
+      "No unsupported mechanisms or invented execution details are present in the draft.",
+      "Qualifiers like 'commonly used' and 'such as' are preserved from the source, avoiding overstatement."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-41bcc27d-2759-411e-be30-5d01c874f2ce",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4133,
+    "outputTokens": 147
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
