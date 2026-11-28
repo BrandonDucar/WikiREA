@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T08:17:52.642Z",
-  "sequence": 302,
+  "updatedAt": "2026-11-28T09:15:13.816Z",
+  "sequence": 303,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13790,6 +13790,20 @@
       "packet": "research/packets/research-000302-121677f94b.json",
       "packetDigest": "fa4d1ea443b6919be114b0af4f33efef0794c4e39f55ee2e113b73941652c723",
       "finishedAt": "2026-11-28T08:17:52.642Z"
+    },
+    {
+      "id": "research-000303-e866096ff8",
+      "role": "adversarial-reviewer",
+      "topic": "Affine space",
+      "day": "2026-11-28",
+      "runId": "46129577026",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T09:15:13.816Z",
+      "expiresAt": "2026-11-28T09:30:13.816Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
