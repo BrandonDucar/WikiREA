@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T03:17:06.198Z",
+  "updatedAt": "2026-11-28T03:17:11.095Z",
   "sequence": 298,
   "jobs": [
     {
@@ -13560,13 +13560,44 @@
       "topic": "2D image",
       "day": "2026-11-28",
       "runId": "46102094906",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-28T03:17:06.198Z",
       "expiresAt": "2026-11-28T03:32:06.198Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Image",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380595299",
+        "revision": "1380595299",
+        "observedAt": "2026-11-28T03:17:08.374Z",
+        "sourceTimestamp": "2026-10-16T18:28:40Z",
+        "sha256": "0d9b7a5cc29a31c289f0c5965c871f8e51d78ec9cdd0656497c8af9e39fed699",
+        "excerptSha256": "b27d2a95ea68d9ea7d4ac4dad5359d6d5427801ec051c4c96a77660c05f6863d",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 23869,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-913811f5-4299-4dea-9000-68e1eb013f69",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3550,
+        "outputTokens": 345
+      },
+      "packet": "research/packets/research-000298-698175d4f3.json",
+      "packetDigest": "673b2c073eef0477bae1eb2a02ad1eacf6c73148ab39bb17ebc6d83cd72693ce",
+      "finishedAt": "2026-11-28T03:17:11.095Z"
     }
   ],
   "discovered": [
@@ -13609,11 +13640,6 @@
       "title": "Mozart",
       "role": "music-events",
       "discoveredFrom": "research-000032-ed1306e349"
-    },
-    {
-      "title": "2D image",
-      "role": "game-mechanic-researcher",
-      "discoveredFrom": "research-000033-a2037c0afa"
     },
     {
       "title": "3-D computer graphics software",
@@ -18116,11 +18142,6 @@
       "discoveredFrom": "research-000205-870b6638dc"
     },
     {
-      "title": "2D image",
-      "role": "application-tracer",
-      "discoveredFrom": "research-000206-e8bfdd2f7a"
-    },
-    {
       "title": "3-D computer graphics software",
       "role": "application-tracer",
       "discoveredFrom": "research-000206-e8bfdd2f7a"
@@ -20729,6 +20750,41 @@
       "title": "Backward compatible",
       "role": "runtime-researcher",
       "discoveredFrom": "research-000297-e48080b80d"
+    },
+    {
+      "title": "Abrahamic religions",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000298-698175d4f3"
+    },
+    {
+      "title": "Aesthetics",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000298-698175d4f3"
+    },
+    {
+      "title": "Allegory of the cave",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000298-698175d4f3"
+    },
+    {
+      "title": "Amplitude",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000298-698175d4f3"
+    },
+    {
+      "title": "Andy Warhol",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000298-698175d4f3"
+    },
+    {
+      "title": "Animation",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000298-698175d4f3"
+    },
+    {
+      "title": "Banner",
+      "role": "game-mechanic-researcher",
+      "discoveredFrom": "research-000298-698175d4f3"
     }
   ],
   "reviewJobs": [

@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000298-698175d4f3",
+  "topic": "2D image",
+  "role": "game-mechanic-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "A 2D image is a visual representation of color amplitude distributed across a plane, traditionally formed by light waves or recorded via photography, painting, or digital generation. It may be static or animated through rapid sequential display, creating the illusion of motion. Images serve representational, communicative, and aesthetic functions across cultures, though their meaning depends on viewer context rather than inherent truth.",
+    "mechanisms": [
+      {
+        "title": "Light-based formation and capture",
+        "explanation": "In optics, an image is the reproduction of an object formed by light waves. Photographic and digital processes capture or generate this distributed amplitude of color on a two-dimensional surface, relying on electromagnetic radiation within or beyond the visible spectrum, converted into recognizable visual form.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Sequential display for motion illusion",
+        "explanation": "Moving 2D images are perceived as continuous motion when still frames are displayed in succession, typically at rates above the flicker fusion threshold. This relies on the persistence of retinal impressions and cognitive processing of temporal sequences, not on actual movement of the image itself.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "How exactly the visual system integrates color and brightness across wavelengths to form a unified image perception",
+      "The precise neural mechanisms underlying flicker fusion and phi phenomenon in motion perception",
+      "Whether automatic rendering via computer graphics preserves the same representational properties as light-formed images",
+      "The extent to which cultural and educational context shapes the interpretation of image semantics beyond documented semiotic categories"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Image",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1380595299",
+    "revision": "1380595299",
+    "observedAt": "2026-11-28T03:17:08.374Z",
+    "sourceTimestamp": "2026-10-16T18:28:40Z",
+    "sha256": "0d9b7a5cc29a31c289f0c5965c871f8e51d78ec9cdd0656497c8af9e39fed699",
+    "excerptSha256": "b27d2a95ea68d9ea7d4ac4dad5359d6d5427801ec051c4c96a77660c05f6863d",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 23869,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-913811f5-4299-4dea-9000-68e1eb013f69",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3550,
+    "outputTokens": 345
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "1f5d59abd7daff2736b8cf02ed766df649bcead7151af997d33febdaba32cd1c",
+  "artifactDigest": "673b2c073eef0477bae1eb2a02ad1eacf6c73148ab39bb17ebc6d83cd72693ce"
+}
