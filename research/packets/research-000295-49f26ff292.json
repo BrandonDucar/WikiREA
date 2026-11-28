@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000295-49f26ff292",
+  "topic": "Build system",
+  "role": "source-curator",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Build automation configures software systems to run in an unattended fashion, sequencing tasks via non-interactive tools and executing on shared servers. It manages dependencies, resolves conflicts, and ensures consistent builds across environments, eliminating roadblocks and accelerating development velocity for large organizations where most builds are triggered automatically. Build systems act as repositories of essential build knowledge, enabling engineers to share resources and results efficiently.",
+    "mechanisms": [
+      {
+        "title": "Dependency Management and Sequencing",
+        "explanation": "Build automation tools sequence build operations via non-interactive interfaces, resolving and tracking dependencies between code components to ensure correct ordering and conflict resolution, particularly when projects involve multiple programming languages or compiling units.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Incremental Build via Dependency Graphs",
+        "explanation": "Build systems use dependency graphs to map relationships between files and modules, recompiling only changed components since the last build. This leverages caching and selective compilation to reduce build time, though accuracy of tracking and stale artifacts can pose challenges.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Physical teardown or private internals of specific build tools",
+      "Complete reverse engineering of build system source code",
+      "Correctness guarantees of incremental builds in all contexts",
+      "Direct causal relationship between dependency tracking and build correctness"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Build automation",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1358827837",
+    "revision": "1358827837",
+    "observedAt": "2026-11-28T00:34:24.601Z",
+    "sourceTimestamp": "2026-06-11T05:41:50Z",
+    "sha256": "34f30284fafc1beaf512461086160d16c46a3f9136ca1b67faebd965f19b81b9",
+    "excerptSha256": "34f30284fafc1beaf512461086160d16c46a3f9136ca1b67faebd965f19b81b9",
+    "inspectedCharacters": 11463,
+    "totalCharacters": 11463,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-dc4b4231-df62-4f6a-a817-11a8bc681884",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3115,
+    "outputTokens": 298
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "b7078aa1df88165878d09d5af4a8794745de41903fac97993823ba0e1264a684",
+  "artifactDigest": "77b2bc09c86deced0457aca067b9d888416a9c0b601babe1ba02e95932e2e90e"
+}
