@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T07:15:04.795Z",
+  "updatedAt": "2026-11-28T07:15:09.427Z",
   "sequence": 301,
   "jobs": [
     {
@@ -13703,13 +13703,44 @@
       "topic": "Chief data officer",
       "day": "2026-11-28",
       "runId": "46120315431",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-28T07:15:04.795Z",
       "expiresAt": "2026-11-28T07:30:04.795Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Chief data officer",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1352642239",
+        "revision": "1352642239",
+        "observedAt": "2026-11-28T07:15:06.737Z",
+        "sourceTimestamp": "2026-05-05T12:09:57Z",
+        "sha256": "b6ee12dc3da3a0b16d2426810590094e5cc48707946c889a2849a2cbe4cd3783",
+        "excerptSha256": "b6ee12dc3da3a0b16d2426810590094e5cc48707946c889a2849a2cbe4cd3783",
+        "inspectedCharacters": 10617,
+        "totalCharacters": 10617,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-567a80cd-6a88-4449-867d-80a0a64f07f4",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 2952,
+        "outputTokens": 377
+      },
+      "packet": "research/packets/research-000301-44f6c97471.json",
+      "packetDigest": "051be6fd10c65a3162c4caaf7919ef34da2aedf9b0cc0941b08ea0575ae2a19d",
+      "finishedAt": "2026-11-28T07:15:09.427Z"
     }
   ],
   "discovered": [
@@ -14772,11 +14803,6 @@
       "title": "ASIC",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000080-0033b77269"
-    },
-    {
-      "title": "Chief data officer",
-      "role": "market-data-researcher",
-      "discoveredFrom": "research-000081-ee73a932d9"
     },
     {
       "title": "Code (metadata)",
@@ -20967,6 +20993,46 @@
       "title": "Zinc",
       "role": "hardware-interoperability-scout",
       "discoveredFrom": "research-000300-8e89a2d342"
+    },
+    {
+      "title": "Account manager",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "AllState",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "Ashok Srivastava",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "Automation",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "Barclays",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "Board of directors",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "COVID-19 pandemic",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
+    },
+    {
+      "title": "Capital One",
+      "role": "market-data-researcher",
+      "discoveredFrom": "research-000301-44f6c97471"
     }
   ],
   "reviewJobs": [

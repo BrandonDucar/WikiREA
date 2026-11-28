@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000301-44f6c97471",
+  "topic": "Chief data officer",
+  "role": "market-data-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "The Chief Data Officer (CDO) is a corporate executive responsible for governing information as an enterprise asset through data processing, analysis, and mining. CDOs typically report to the CEO and manage organization-wide data strategy. Their role bridges technological results with business outcomes by defining what information to capture and exploit, enabling data usability and availability, and driving digital transformation for cost reduction and revenue generation. Since the 2000s, the position has grown from a niche role into a strategic executive function, with roughly two-thirds of major companies appointing CDOs by 2019 to oversee data quality, regulatory compliance, and analytic reporting across industries such as finance and technology.",
+    "mechanisms": [
+      {
+        "title": "Strategic governance and asset valuation",
+        "explanation": "The CDO determines what information the enterprise captures, retains, and exploits for specific purposes, positioning data as a strategic business asset at the executive table and guiding strategic priorities around data systems and opportunities.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Operational enablement and risk management",
+        "explanation": "The CDO enables data usability, efficiency, and availability while protecting data, eliminating data territorialism, and promoting data ethics. They also ensure governance, advise on data strategy, and monitor enterprise data to reduce errors and analytic cycle time, particularly during disruptions like the COVID-19 pandemic.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact reporting line variations beyond CEO dependence on area of expertise",
+      "Specific technical implementation details of data mining processes",
+      "Precise metrics for measuring the CDO's business impact across all industries",
+      "Detailed mechanisms of data territorialism elimination practices"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Chief data officer",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1352642239",
+    "revision": "1352642239",
+    "observedAt": "2026-11-28T07:15:06.737Z",
+    "sourceTimestamp": "2026-05-05T12:09:57Z",
+    "sha256": "b6ee12dc3da3a0b16d2426810590094e5cc48707946c889a2849a2cbe4cd3783",
+    "excerptSha256": "b6ee12dc3da3a0b16d2426810590094e5cc48707946c889a2849a2cbe4cd3783",
+    "inspectedCharacters": 10617,
+    "totalCharacters": 10617,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-567a80cd-6a88-4449-867d-80a0a64f07f4",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 2952,
+    "outputTokens": 377
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "f0d0359528a621e3b095e1b1d61a4e9c3f801a0642e4db71cc2df77680f641e5",
+  "artifactDigest": "051be6fd10c65a3162c4caaf7919ef34da2aedf9b0cc0941b08ea0575ae2a19d"
+}
