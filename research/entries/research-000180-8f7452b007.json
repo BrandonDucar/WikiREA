@@ -1,0 +1,97 @@
+{
+  "schema": "wikirea.automated-entry.v1",
+  "id": "research-000180-8f7452b007",
+  "title": "501(c)(3)",
+  "role": "hardware-interoperability-scout",
+  "createdAt": "2026-11-28T09:25:17.100Z",
+  "stage": "MODEL_REVIEWED_RESEARCH",
+  "summary": "A 501(c)(3) organization is a US nonprofit exempt from federal income tax under Internal Revenue Code section 501(c)(3). It may be organized as a corporation, trust, or association and must operate exclusively for religious, charitable, scientific, literary, educational, or certain other qualifying purposes. Tax exemption is obtained primarily by filing IRS Form 1023, with fees of $850 or $400 depending on expected gross receipts. Some entities, such as churches and very small organizations, may be automatically exempt. Donations to 501(c)(3) organizations may be tax-deductible for donors, but loss of status can be fatal to fundraising. Organizations are classified as either public charities or private foundations based on their funding sources and activities.",
+  "mechanisms": [
+    {
+      "title": "Tax-exempt purpose limitation",
+      "explanation": "The organization must be specifically limited in its organizing documents to purposes the IRS classifies as tax-exempt, such as religious, charitable, scientific, or educational activities. This limitation is required in the articles of incorporation or bylaws and is crucial for obtaining and maintaining 501(c)(3) status.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "title": "IRS filing and fee process",
+      "explanation": "Most organizations obtain exemption by filing IRS Form 1023, accompanied by an $850 filing fee if expected yearly gross receipts are $10,000 or more, or a $400 fee if below that threshold. Some organizations, including churches and certain small entities, are automatically treated as exempt without filing Form 1023.",
+      "sourceIds": [
+        "S1"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact criteria for automatic exemption of churches and conventions of churches beyond general description",
+    "Details of the administrative remedies exhaustion requirement for judicial determination of status",
+    "Specific operational thresholds that distinguish public charities from private foundations beyond funding source descriptions",
+    "Mechanics of the IRS revocation process and consequences for organizations that lose 501(c)(3) status"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "501(c)(3) organization",
+      "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382925264",
+      "revision": "1382925264",
+      "observedAt": "2026-11-22T06:22:19.706Z",
+      "sourceTimestamp": "2026-10-31T01:03:08Z",
+      "sha256": "eff906c38d35825b9d8df38d0394791f33edceca59a36e1599fab00549aa97bd",
+      "excerptSha256": "66b940f59e349ee187d4cfbe569b37b04367714783a9a1661aa1afeb6a81d8e9",
+      "inspectedCharacters": 14000,
+      "totalCharacters": 46035,
+      "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+      "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+    }
+  ],
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on definition, qualifying purposes, filing process, fees, automatic exemptions, donor deductions, and classification types.",
+      "Mechanisms correctly capture purpose limitation requirement and IRS filing/fee process with proper qualifiers and source attribution.",
+      "Unknowns appropriately identify gaps in source regarding automatic exemption criteria, judicial exhaustion details, public charity vs private foundation thresholds, and revocation mechanics.",
+      "No unsupported mechanisms, copied passages, or invented execution detected.",
+      "All claims trace to source text with appropriate may/often qualifiers preserved."
+    ],
+    "independentHumanReview": false,
+    "limitation": "Separate model check; shared provider, not independent human verification"
+  },
+  "inferenceReceipts": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "generationId": "chatcmpl-7bff7b1d-28eb-49f6-a7a5-b16aa078a0ce",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4226,
+      "outputTokens": 467
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "generationId": "chatcmpl-35ca2766-d328-400a-b701-8e0e1e5c9c6b",
+      "provider": "nvidia-nim-research",
+      "purpose": "RESEARCH_AND_TESTING",
+      "endpoint": "https://integrate.api.nvidia.com/v1",
+      "costUsdReported": null,
+      "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+      "productionLicenseClaimed": false,
+      "inputTokens": 4631,
+      "outputTokens": 122
+    }
+  ],
+  "targetExecuted": false,
+  "compilerRef": {
+    "artifactId": "0b726eabc0f8563c8f906b4edec6ffeb0937cd6092afa69b9365b425aed05025",
+    "artifactDigest": "06ad10063e2d39458aa2eabde49108ed064dc218a1c1b4368d9ad5606b2f8550",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d",
+    "packet": "research/packets/research-000180-8f7452b007.json",
+    "readbackVerified": true
+  },
+  "incrementalCostUsdReported": null,
+  "incrementalCostPolicyUsd": 0,
+  "sourceTextRepublished": false
+}

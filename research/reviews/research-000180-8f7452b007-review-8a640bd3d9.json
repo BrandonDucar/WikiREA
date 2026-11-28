@@ -1,0 +1,46 @@
+{
+  "schema": "wikirea.senior-review.v1",
+  "id": "research-000180-8f7452b007-review-8a640bd3d9",
+  "parentJobId": "research-000180-8f7452b007",
+  "binding": "8a640bd3d9181be57b7c2ad5607151489eb07edcd4cb4423451653ae62af7235",
+  "packetDigest": "06ad10063e2d39458aa2eabde49108ed064dc218a1c1b4368d9ad5606b2f8550",
+  "sourcePin": {
+    "id": "S1",
+    "title": "501(c)(3) organization",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1382925264",
+    "revision": "1382925264",
+    "observedAt": "2026-11-22T06:22:19.706Z",
+    "sourceTimestamp": "2026-10-31T01:03:08Z",
+    "sha256": "eff906c38d35825b9d8df38d0394791f33edceca59a36e1599fab00549aa97bd",
+    "excerptSha256": "66b940f59e349ee187d4cfbe569b37b04367714783a9a1661aa1afeb6a81d8e9",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 46035,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "review": {
+    "accepted": true,
+    "reasons": [
+      "Summary accurately reflects source content on definition, qualifying purposes, filing process, fees, automatic exemptions, donor deductions, and classification types.",
+      "Mechanisms correctly capture purpose limitation requirement and IRS filing/fee process with proper qualifiers and source attribution.",
+      "Unknowns appropriately identify gaps in source regarding automatic exemption criteria, judicial exhaustion details, public charity vs private foundation thresholds, and revocation mechanics.",
+      "No unsupported mechanisms, copied passages, or invented execution detected.",
+      "All claims trace to source text with appropriate may/often qualifiers preserved."
+    ]
+  },
+  "receipt": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "generationId": "chatcmpl-35ca2766-d328-400a-b701-8e0e1e5c9c6b",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4631,
+    "outputTokens": 122
+  },
+  "targetExecuted": false,
+  "independentHumanReview": false
+}
