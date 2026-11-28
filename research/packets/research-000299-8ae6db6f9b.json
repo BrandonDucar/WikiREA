@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000299-8ae6db6f9b",
+  "topic": "Baron Munchausen",
+  "role": "simulation-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Baron Munchausen is a fictional German nobleman created by Rudolf Erich Raspe in 1785, loosely based on the real 18th-century aristocrat Hieronymus Karl Friedrich von Münchhausen. The character originated from Raspe's adaptation of the real Münchhausen's exaggerated storytelling, first published anonymously as a short English travelogue. The stories, narrated in the first person, depict impossible feats such as riding cannonballs and traveling to the Moon, blending satire with absurdist tall tales. Over successive editions, the character was expanded by various editors and illustrators, becoming a staple of European popular culture and inspiring memorials, museums, and medical eponyms, though the original author remained anonymous until posthumous attribution.",
+    "mechanisms": [
+      {
+        "title": "Narrative framing and exaggeration",
+        "explanation": "The character's impossible feats are presented as first-person accounts, relying on the absurdity and inconsistency of the narrator's claims for comedic and satirical effect. The stories play on the gap between the narrator's confidence and the physical impossibility of the events described.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Iterative textual evolution",
+        "explanation": "The work originated as anonymous magazine pieces, was adapted into a 1785 book, and underwent multiple pirated and revised editions by publishers such as G. Kearsley, who added new stories, engravings, and prose rewrites. Each edition transformed the character through cumulative editorial changes, shaping the definitive visual and narrative traits.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact proportion of Raspe's material derived from older sources versus the real Münchhausen's oral tales",
+      "Identity of the original illustrator of the character's early depictions",
+      "Full extent of publisher-driven alterations between the first and third editions",
+      "Precise mechanisms by which the character's visual traits (beaked nose, moustache) became standardized across later editions"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Baron Munchausen",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1386101596",
+    "revision": "1386101596",
+    "observedAt": "2026-11-28T04:16:59.667Z",
+    "sourceTimestamp": "2026-11-16T23:13:34Z",
+    "sha256": "3601696b15340c0d427ea466246cf9759460cdb152f18caaf88cbd4b55a5b524",
+    "excerptSha256": "61a77466aa14e9949cb4b2d821e9523ce959af0d3797001b1318051a90afee91",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 74244,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-ef777d91-b175-4f50-8fcb-f200e0d377c3",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 4276,
+    "outputTokens": 446
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "7074dd03ad9a709d882fc89c3de118904652acd0dd541a897e40c804e92785e2",
+  "artifactDigest": "b9b348b897c64f368489d5f63d6ca04f976048c198873b5c1bbeca4cd35ec109"
+}

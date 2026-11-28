@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T04:16:56.428Z",
+  "updatedAt": "2026-11-28T04:17:02.582Z",
   "sequence": 299,
   "jobs": [
     {
@@ -13609,21 +13609,47 @@
       "topic": "Baron Munchausen",
       "day": "2026-11-28",
       "runId": "46106787299",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-28T04:16:56.428Z",
       "expiresAt": "2026-11-28T04:31:56.428Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Baron Munchausen",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1386101596",
+        "revision": "1386101596",
+        "observedAt": "2026-11-28T04:16:59.667Z",
+        "sourceTimestamp": "2026-11-16T23:13:34Z",
+        "sha256": "3601696b15340c0d427ea466246cf9759460cdb152f18caaf88cbd4b55a5b524",
+        "excerptSha256": "61a77466aa14e9949cb4b2d821e9523ce959af0d3797001b1318051a90afee91",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 74244,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-ef777d91-b175-4f50-8fcb-f200e0d377c3",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 4276,
+        "outputTokens": 446
+      },
+      "packet": "research/packets/research-000299-8ae6db6f9b.json",
+      "packetDigest": "b9b348b897c64f368489d5f63d6ca04f976048c198873b5c1bbeca4cd35ec109",
+      "finishedAt": "2026-11-28T04:17:02.582Z"
     }
   ],
   "discovered": [
-    {
-      "title": "Baron Munchausen",
-      "role": "simulation-researcher",
-      "discoveredFrom": "research-000030-5a4bfec956"
-    },
     {
       "title": "Bible",
       "role": "simulation-researcher",
@@ -20803,6 +20829,46 @@
       "title": "Banner",
       "role": "game-mechanic-researcher",
       "discoveredFrom": "research-000298-698175d4f3"
+    },
+    {
+      "title": "12mo",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "14014 Münchhausen",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "18th-century history of Germany",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "A House-Boat on the Styx",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "A Trip to the Moon",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "Aarne–Thompson–Uther classification system",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "Abraham Gotthelf Kästner",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
+    },
+    {
+      "title": "Adolf Ellissen",
+      "role": "simulation-researcher",
+      "discoveredFrom": "research-000299-8ae6db6f9b"
     }
   ],
   "reviewJobs": [
