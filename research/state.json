@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T02:19:36.022Z",
-  "sequence": 297,
+  "updatedAt": "2026-11-28T03:17:06.198Z",
+  "sequence": 298,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13553,6 +13553,20 @@
       "packet": "research/packets/research-000297-e48080b80d.json",
       "packetDigest": "644e99581d5a3fd5305d61950c7c694ccc2e80f2eb77dab05517b4fa47a8d9fb",
       "finishedAt": "2026-11-28T02:19:36.022Z"
+    },
+    {
+      "id": "research-000298-698175d4f3",
+      "role": "game-mechanic-researcher",
+      "topic": "2D image",
+      "day": "2026-11-28",
+      "runId": "46102094906",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T03:17:06.198Z",
+      "expiresAt": "2026-11-28T03:32:06.198Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
