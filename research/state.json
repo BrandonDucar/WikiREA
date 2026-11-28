@@ -1,7 +1,7 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T05:25:08.189Z",
-  "sequence": 299,
+  "updatedAt": "2026-11-28T06:22:15.378Z",
+  "sequence": 300,
   "jobs": [
     {
       "id": "research-000001-07e600e22d",
@@ -13651,6 +13651,20 @@
       "packet": "research/packets/research-000299-8ae6db6f9b.json",
       "packetDigest": "b9b348b897c64f368489d5f63d6ca04f976048c198873b5c1bbeca4cd35ec109",
       "finishedAt": "2026-11-28T04:17:02.582Z"
+    },
+    {
+      "id": "research-000300-8e89a2d342",
+      "role": "hardware-interoperability-scout",
+      "topic": "Aircraft skin",
+      "day": "2026-11-28",
+      "runId": "46116275022",
+      "status": "RESERVED",
+      "reservedAt": "2026-11-28T06:22:15.378Z",
+      "expiresAt": "2026-11-28T06:37:15.378Z",
+      "callsReserved": 2,
+      "callsAttempted": 0,
+      "targetExecuted": false,
+      "costUsdReported": null
     }
   ],
   "discovered": [
