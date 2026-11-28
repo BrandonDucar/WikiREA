@@ -1,6 +1,6 @@
 {
   "schema": "wikirea.research-state.v1",
-  "updatedAt": "2026-11-28T02:19:31.357Z",
+  "updatedAt": "2026-11-28T02:19:36.022Z",
   "sequence": 297,
   "jobs": [
     {
@@ -13515,13 +13515,44 @@
       "topic": "Berkeley sockets",
       "day": "2026-11-28",
       "runId": "46097491009",
-      "status": "RESERVED",
+      "status": "COMPILED",
       "reservedAt": "2026-11-28T02:19:31.357Z",
       "expiresAt": "2026-11-28T02:34:31.357Z",
       "callsReserved": 2,
-      "callsAttempted": 0,
+      "callsAttempted": 1,
       "targetExecuted": false,
-      "costUsdReported": null
+      "costUsdReported": null,
+      "lastStage": "compiler",
+      "sourcePin": {
+        "id": "S1",
+        "title": "Berkeley sockets",
+        "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1381165892",
+        "revision": "1381165892",
+        "observedAt": "2026-11-28T02:19:33.557Z",
+        "sourceTimestamp": "2026-10-20T11:47:42Z",
+        "sha256": "7b8e2d3266fd7e45812ce7b1eb5b88bb06100f849a94e2fa2ca10e212fd5de8a",
+        "excerptSha256": "6dbe23e8047f9abab934ab2367a15edf782a8d4383faf558065d9bf31a4f8480",
+        "inspectedCharacters": 14000,
+        "totalCharacters": 30665,
+        "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+        "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+      },
+      "writerReceipt": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "generationId": "chatcmpl-398a41a6-fb7b-43c6-991e-bcae57f4fc60",
+        "provider": "nvidia-nim-research",
+        "purpose": "RESEARCH_AND_TESTING",
+        "endpoint": "https://integrate.api.nvidia.com/v1",
+        "costUsdReported": null,
+        "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+        "productionLicenseClaimed": false,
+        "inputTokens": 3695,
+        "outputTokens": 450
+      },
+      "packet": "research/packets/research-000297-e48080b80d.json",
+      "packetDigest": "644e99581d5a3fd5305d61950c7c694ccc2e80f2eb77dab05517b4fa47a8d9fb",
+      "finishedAt": "2026-11-28T02:19:36.022Z"
     }
   ],
   "discovered": [
@@ -14734,11 +14765,6 @@
       "title": "Crowdfunding",
       "role": "application-tracer",
       "discoveredFrom": "research-000086-074bf12801"
-    },
-    {
-      "title": "Berkeley sockets",
-      "role": "runtime-researcher",
-      "discoveredFrom": "research-000087-564644db83"
     },
     {
       "title": "Blocking (computing)",
@@ -20659,6 +20685,36 @@
       "title": "ARexx",
       "role": "application-tracer",
       "discoveredFrom": "research-000296-490a1c08dc"
+    },
+    {
+      "title": "AT&T Corporation",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000297-e48080b80d"
+    },
+    {
+      "title": "AX.25",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000297-e48080b80d"
+    },
+    {
+      "title": "Addison-Wesley Professional",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000297-e48080b80d"
+    },
+    {
+      "title": "AppleTalk",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000297-e48080b80d"
+    },
+    {
+      "title": "Asynchronous Transfer Mode",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000297-e48080b80d"
+    },
+    {
+      "title": "Backward compatible",
+      "role": "runtime-researcher",
+      "discoveredFrom": "research-000297-e48080b80d"
     }
   ],
   "reviewJobs": [

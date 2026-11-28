@@ -1,0 +1,74 @@
+{
+  "schema": "wikirea.research-packet.v1",
+  "id": "research-000297-e48080b80d",
+  "topic": "Berkeley sockets",
+  "role": "runtime-researcher",
+  "stage": "UNREVIEWED_RESEARCH",
+  "proofLevel": "P0",
+  "findings": {
+    "summary": "Berkeley sockets is a POSIX-compatible API for inter-process communication over network and Unix domain sockets, originally introduced in 4.2BSD (1983). It represents endpoints as file descriptors and provides functions for creating, binding, listening, connecting, accepting, sending, receiving, and closing sockets. The API evolved into the POSIX socket standard, adding IPv6 support and protocol-agnostic lookup functions. Most modern operating systems implement a version of this interface, including Windows via Winsock. The C API is commonly wrapped by higher-level language libraries.",
+    "mechanisms": [
+      {
+        "title": "Socket creation and file descriptor abstraction",
+        "explanation": "The socket() function creates an endpoint and returns an integer file descriptor. The domain argument selects the protocol family (e.g., PF_INET for IPv4, PF_INET6 for IPv6, PF_UNIX for local sockets). The type argument selects the communication style (e.g., SOCK_STREAM for reliable byte streams, SOCK_DGRAM for datagrams). The protocol argument chooses a specific transport protocol such as TCP or UDP. A return value of -1 indicates error.",
+        "sourceIds": [
+          "S1"
+        ]
+      },
+      {
+        "title": "Connection lifecycle: bind, listen, accept, connect",
+        "explanation": "The server binds a socket to a local IP address and port using bind(). It then calls listen() to queue pending connections. The accept() function blocks until a client initiates a connection, returning a new socket for that session. The client uses connect() to establish a connection to the server's address. For datagram sockets, accept() is not required; the receiver may respond directly via the listening socket.",
+        "sourceIds": [
+          "S1"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Exact kernel-level data structures beyond the file descriptor abstraction",
+      "Whether all implementations enforce the documented error-handling behavior for connect() failures",
+      "Details of the translation layer used by non-Unix systems to expose the Berkeley socket API",
+      "The specific mechanism by which the backlog parameter is capped by the operating system"
+    ]
+  },
+  "sourcePin": {
+    "id": "S1",
+    "title": "Berkeley sockets",
+    "kind": "PINNED_ENCYCLOPEDIA_REVISION",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381165892",
+    "revision": "1381165892",
+    "observedAt": "2026-11-28T02:19:33.557Z",
+    "sourceTimestamp": "2026-10-20T11:47:42Z",
+    "sha256": "7b8e2d3266fd7e45812ce7b1eb5b88bb06100f849a94e2fa2ca10e212fd5de8a",
+    "excerptSha256": "6dbe23e8047f9abab934ab2367a15edf782a8d4383faf558065d9bf31a4f8480",
+    "inspectedCharacters": 14000,
+    "totalCharacters": 30665,
+    "license": "CC BY-SA; original synthesis with attribution; no source text republished",
+    "limitation": "Documented architecture and explanations, not proprietary implementation access or a physical teardown"
+  },
+  "writerReceipt": {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generationId": "chatcmpl-398a41a6-fb7b-43c6-991e-bcae57f4fc60",
+    "provider": "nvidia-nim-research",
+    "purpose": "RESEARCH_AND_TESTING",
+    "endpoint": "https://integrate.api.nvidia.com/v1",
+    "costUsdReported": null,
+    "costBasis": "EXISTING_FREE_DEVELOPER_RESEARCH_ACCESS",
+    "productionLicenseClaimed": false,
+    "inputTokens": 3695,
+    "outputTokens": 450
+  },
+  "tests": {
+    "targetExecuted": false,
+    "runtimeTests": [],
+    "scope": "Source research only; no target execution or physical teardown"
+  },
+  "compiler": {
+    "id": "wikirea-research-packet",
+    "version": "1.0.0",
+    "sourceDigest": "8e9c95ec1f73737bcd881827c6302ad142c314d7dd5883c8f0bd797801fa754d"
+  },
+  "consumerAcceptance": false,
+  "publicationApproved": false,
+  "artifactId": "3a84934676e69d2f22ac12e2b4c61af302063ab12a968f6a26b69ae461564cfc",
+  "artifactDigest": "644e99581d5a3fd5305d61950c7c694ccc2e80f2eb77dab05517b4fa47a8d9fb"
+}
